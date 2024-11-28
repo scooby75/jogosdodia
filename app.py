@@ -59,14 +59,14 @@ if all([jogos_dia_file, melhores_casa_file, melhores_away_file, piores_away_file
 
     # Comparação com Melhores_Equipes_Casa
     st.subheader("Jogos com Melhores Equipes em Casa")
-    melhores_casa_jogos = jogos_dia_validos[
+    melhores_casa_jogos = jogos_dia_validos[ 
         jogos_dia_validos['Time_Casa'].apply(
             lambda x: any(fuzz.partial_ratio(x, equipe) > 80 for equipe in melhores_casa['Equipe'])
         )
     ]
     st.dataframe(melhores_casa_jogos)
 
-    # Comparação com Melhores_Equipes_Fora
+    # Comparação com Melhores_Equipes_Away
     st.subheader("Jogos com Melhores Equipes Fora")
     melhores_away_jogos = jogos_dia_validos[
         jogos_dia_validos['Time_Fora'].apply(
@@ -77,15 +77,18 @@ if all([jogos_dia_file, melhores_casa_file, melhores_away_file, piores_away_file
 
     # Comparação com Piores_Equipes_Fora
     st.subheader("Jogos com Piores Equipes Fora")
-    # Garantir que a coluna 'Home' seja numérica e remover valores inválidos
-    jogos_dia_validos['Home'] = pd.to_numeric(jogos_dia_validos['Home'], errors='coerce')
-    
+    # Corrigir a manipulação das odds e da coluna 'Home' 
+    jogos_dia_validos['Home'] = jogos_dia_validos['Home'].apply(
+        lambda x: pd.to_numeric(x.split('(')[0].replace(",", "").strip()) if isinstance(x, str) else x
+    )
+
+    # Filtrar jogos onde as odds indicam que o time da casa é fraco (<= 2.5 odds)
     piores_away_jogos = jogos_dia_validos[
         jogos_dia_validos['Time_Fora'].apply(
             lambda x: any(fuzz.partial_ratio(x, equipe) > 80 for equipe in piores_away['Equipe'])
         ) & (jogos_dia_validos['Home'] <= 2.5)  # Filtrar onde a coluna Home seja <= 2.5
     ]
-    
+
     st.dataframe(piores_away_jogos)
 
     # Análise H2H: Melhores Times em Casa vs Piores Times Fora
