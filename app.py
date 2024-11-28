@@ -11,7 +11,7 @@ st.subheader("Envie os arquivos necessários")
 # Upload de cada arquivo individualmente
 jogos_dia_file = st.file_uploader("Envie o arquivo 'Jogos do dia Betfair.csv'", type="csv")
 melhores_casa_file = st.file_uploader("Envie o arquivo 'Melhores_Equipes_Casa.csv'", type="csv")
-melhores_away_file = st.file_uploader("Envie o arquivo 'Melhores_Equipes_Away.csv'", type="csv")
+melhores_away_file = st.file_uploader("Envie o arquivo 'Melhores_Equipes_Fora.csv'", type="csv")
 piores_away_file = st.file_uploader("Envie o arquivo 'Piores_Equipes_Fora.csv'", type="csv")
 
 # Verificar se todos os arquivos foram enviados
