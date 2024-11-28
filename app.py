@@ -109,13 +109,14 @@ if jogos_dia_file:
 
     # Análise "HA 0.25"
     st.subheader("Análise HA 0.25")
-    ha_filtrados = melhores_casa[(melhores_casa['W'] >= 6) & (melhores_casa['D'] >= 6)]  # Filtrar W e D >= 6
+    ha_filtrados = melhores_casa[(melhores_casa['W'] + melhores_casa['D']) >= 6]  # Soma de W e D >= 6
     ha_jogos = jogos_dia_validos[
         jogos_dia_validos['Time_Casa'].apply(
             lambda x: any(fuzz.partial_ratio(x, equipe) > 80 for equipe in ha_filtrados['Equipe'])
         ) & (jogos_dia_validos['Home'] <= 2.3)  # Odds Home <= 2.3 para HA 0.25
     ]
     st.dataframe(ha_jogos)
+
 
 else:
     st.info("Por favor, envie o arquivo 'Jogos do dia Betfair.csv' para realizar a análise.")
