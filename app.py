@@ -56,7 +56,7 @@ if all([jogos_dia_file, melhores_casa_file, melhores_away_file, piores_away_file
     jogos_dia_validos['Time_Fora'] = jogos_dia_validos['Evento'].apply(extract_time_fora)
 
     # Exibir os jogos válidos
-    st.subheader("Jogos válidos com Time_Casa e Time_Fora (sem UEFA)")
+    st.subheader("Jogos válidos")
     st.dataframe(jogos_dia_validos)
 
     # Comparação com Melhores_Equipes_Casa
