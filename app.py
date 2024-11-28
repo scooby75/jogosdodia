@@ -75,12 +75,12 @@ if all([jogos_dia_file, melhores_casa_file, melhores_away_file, piores_away_file
     ]
     st.dataframe(melhores_away_jogos)
 
-    # Comparação com Piores_Equipes_Fora
+   # Comparação com Piores_Equipes_Fora
     st.subheader("Jogos com Piores Equipes Fora")
     piores_away_jogos = jogos_dia_validos[
         jogos_dia_validos['Time_Fora'].apply(
             lambda x: any(fuzz.partial_ratio(x, equipe) > 80 for equipe in piores_away['Equipe'])
-        )
+        ) & (jogos_dia_validos['Home'] <= 2.5)  # Filtrar onde a coluna Home seja <= 2.5
     ]
     st.dataframe(piores_away_jogos)
 
