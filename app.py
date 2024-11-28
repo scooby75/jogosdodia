@@ -37,8 +37,6 @@ if all([jogos_dia_file, melhores_casa_file, melhores_away_file, piores_away_file
     # Filtrar jogos que não contêm 'UEFA', 'AFC Champions', 'Reservas', 'Friendlies Women's International', ou 'U21' na coluna 'Competição'
     jogos_dia_validos = jogos_dia_validos[~jogos_dia_validos['Competição'].str.contains('UEFA|AFC Champions|Reservas|Friendlies Women\'s International|U21', case=False, na=False)]
 
-
-
     # Adicionar colunas Time_Casa e Time_Fora
     def extract_time_casa(evento):
         try:
@@ -86,8 +84,8 @@ if all([jogos_dia_file, melhores_casa_file, melhores_away_file, piores_away_file
     ]
     st.dataframe(piores_away_jogos)
 
-    # Nova análise H2H
-    st.subheader("Análise H2H: Melhores Times em Casa vs Piores Times Fora")
+    # Análise H2H: Melhores Times em Casa vs Piores Times Fora
+    st.subheader("H2H: Melhores Times em Casa vs Piores Times Fora")
 
     # Filtrar os melhores times em casa com W >= 4
     melhores_casa_filtrados = melhores_casa[melhores_casa['W'] >= 4]
