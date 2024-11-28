@@ -35,7 +35,8 @@ if all([jogos_dia_file, melhores_casa_file, melhores_away_file, piores_away_file
     jogos_dia_validos = jogos_dia[jogos_dia['Evento'].str.contains(' v ', na=False)]
 
     # Filtrar jogos que não contêm 'UEFA', 'AFC Champions', 'Reservas', 'Friendlies Women's International', ou 'U21' na coluna 'Competição'
-    jogos_dia_validos = jogos_dia_validos[~jogos_dia_validos['Competição'].str.contains('UEFA|AFC Champions|Reservas|Friendlies Women's International|U21', case=False, na=False)]
+    jogos_dia_validos = jogos_dia_validos[~jogos_dia_validos['Competição'].str.contains('UEFA|AFC Champions|Reservas|Friendlies Women\'s International|U21', case=False, na=False)]
+
 
 
     # Adicionar colunas Time_Casa e Time_Fora
