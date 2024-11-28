@@ -91,7 +91,7 @@ if all([jogos_dia_file, melhores_casa_file, melhores_away_file, piores_away_file
     melhores_casa_filtrados = melhores_casa[melhores_casa['W'] >= 4]
 
     # Filtrar os piores times fora com L >= 4
-    piores_away_filtrados = piores_away[piores_away['L'] >= 4]
+    piores_away_filtrados = piores_away[piores_away['L'] >= 5]
 
     # Combinar as equipes para análise H2H
     h2h_jogos = jogos_dia_validos[
