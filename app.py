@@ -5,14 +5,10 @@ from rapidfuzz import fuzz
 # Título do aplicativo
 st.title("Comparação de Jogos do Dia")
 
-# Upload de arquivos separados
-st.subheader("Envie os arquivos necessários")
-
-# Upload de cada arquivo individualmente
-jogos_dia_file = st.file_uploader("Envie o arquivo 'Jogos do dia Betfair.csv'", type="csv")
-melhores_casa_file = st.file_uploader("Envie o arquivo 'Melhores_Equipes_Casa.csv'", type="csv")
-melhores_away_file = st.file_uploader("Envie o arquivo 'Melhores_Equipes_Fora.csv'", type="csv")
-piores_away_file = st.file_uploader("Envie o arquivo 'Piores_Equipes_Fora.csv'", type="csv")
+# URLs dos arquivos no GitHub
+url_melhores_casa = "https://raw.githubusercontent.com/scooby75/jogosdodia/main/Melhores_Equipes_Casa.csv"
+url_melhores_away = "https://raw.githubusercontent.com/scooby75/jogosdodia/main/Melhores_Equipes_Fora.csv"
+url_piores_away = "https://raw.githubusercontent.com/scooby75/jogosdodia/main/Piores_Equipes_Fora.csv"
 
 # Função para limpar e extrair odds
 def extrair_odds(valor):
@@ -23,13 +19,17 @@ def extrair_odds(valor):
             return None
     return valor
 
-# Verificar se todos os arquivos foram enviados
-if all([jogos_dia_file, melhores_casa_file, melhores_away_file, piores_away_file]):
-    # Ler os dados dos arquivos CSV
+# Upload do arquivo "Jogos do Dia"
+jogos_dia_file = st.file_uploader("Envie o arquivo 'Jogos do dia Betfair.csv'", type="csv")
+
+if jogos_dia_file:
+    # Ler o arquivo "Jogos do Dia"
     jogos_dia = pd.read_csv(jogos_dia_file)
-    melhores_casa = pd.read_csv(melhores_casa_file)
-    melhores_away = pd.read_csv(melhores_away_file)
-    piores_away = pd.read_csv(piores_away_file)
+
+    # Carregar os arquivos diretamente das URLs
+    melhores_casa = pd.read_csv(url_melhores_casa)
+    melhores_away = pd.read_csv(url_melhores_away)
+    piores_away = pd.read_csv(url_piores_away)
 
     # Verificar e corrigir o formato da coluna Evento
     st.subheader("Verificação dos dados na coluna 'Evento'")
@@ -133,4 +133,4 @@ if all([jogos_dia_file, melhores_casa_file, melhores_away_file, piores_away_file
     else:
         st.info("Não há jogos com os melhores times em casa contra os piores times fora.")
 else:
-    st.info("Por favor, envie todos os arquivos para realizar a análise.")
+    st.info("Por favor, envie o arquivo 'Jogos do dia Betfair.csv' para realizar a análise.")
