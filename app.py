@@ -106,6 +106,6 @@ h2h_jogos = jogos_dia_validos[
 ]
 
 # Exibir os resultados da análise H2H
-st.subheader("Jogos H2H: Melhores Times Casa vs Piores Times Fora")
+st.subheader("H2H: Casa vs Pior Fora")
 st.dataframe(h2h_jogos)
 
