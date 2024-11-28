@@ -35,7 +35,7 @@ if all([jogos_dia_file, melhores_casa_file, melhores_away_file, piores_away_file
     jogos_dia_validos = jogos_dia[jogos_dia['Evento'].str.contains(' v ', na=False)]
 
     # Filtrar jogos que não contêm 'UEFA' na coluna 'Competição'
-    jogos_dia_validos = jogos_dia_validos[~jogos_dia_validos['Competição'].str.contains('UEFA', na=False)]
+    jogos_dia_validos = jogos_dia_validos[~jogos_dia_validos['Competição'].str.contains('UEFA', 'AFC Champions', ' Reservas', na=False)]
 
     # Adicionar colunas Time_Casa e Time_Fora
     def extract_time_casa(evento):
