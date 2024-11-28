@@ -22,26 +22,28 @@ if all([jogos_dia_file, melhores_casa_file, melhores_away_file, piores_away_file
     melhores_away = pd.read_csv(melhores_away_file)
     piores_away = pd.read_csv(piores_away_file)
 
-    # Identificar e tratar problemas no formato da coluna Evento
+    # Verificar e corrigir o formato da coluna Evento
     st.subheader("Verificação dos dados na coluna 'Evento'")
-    problemas = jogos_dia[~jogos_dia['Evento'].str.contains(' vs ', na=False)]
+    problemas = jogos_dia[~jogos_dia['Evento'].str.contains(' v ', na=False)]
     if not problemas.empty:
         st.warning("Foram encontrados problemas no formato da coluna 'Evento':")
         st.dataframe(problemas)
+    else:
+        st.success("Todos os dados estão no formato esperado.")
 
     # Filtrar apenas linhas válidas
-    jogos_dia_validos = jogos_dia[jogos_dia['Evento'].str.contains(' vs ', na=False)]
+    jogos_dia_validos = jogos_dia[jogos_dia['Evento'].str.contains(' v ', na=False)]
 
     # Adicionar colunas Time_Casa e Time_Fora
     def extract_time_casa(evento):
         try:
-            return evento.split(' vs ')[0]
+            return evento.split(' v ')[0].strip()
         except IndexError:
             return None
 
     def extract_time_fora(evento):
         try:
-            return evento.split(' vs ')[1]
+            return evento.split(' v ')[1].strip()
         except IndexError:
             return None
 
