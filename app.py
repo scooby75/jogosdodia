@@ -107,30 +107,15 @@ if jogos_dia_file:
     ]
     st.dataframe(piores_away_jogos)
 
-    # Análise H2H: Melhores Times em Casa vs Piores Times Fora
-    st.subheader("H2H: Melhores Times em Casa vs Piores Times Fora")
-
-    # Filtrar os melhores times em casa com W >= 5
-    melhores_casa_h2h = melhores_casa_filtrados
-
-    # Filtrar os piores times fora com L <= 1
-    piores_away_h2h = piores_away_filtrados
-
-    # Combinar as equipes para análise H2H
-    h2h_jogos = jogos_dia_validos[
-        jogos_dia_validos.apply(
-            lambda row: any(
-                fuzz.partial_ratio(row['Time_Casa'], casa) > 80 for casa in melhores_casa_h2h['Equipe']
-            ) and any(
-                fuzz.partial_ratio(row['Time_Fora'], fora) > 80 for fora in piores_away_h2h['Equipe']
-            ),
-            axis=1
-        )
+    # Análise "HA 0.25"
+    st.subheader("Análise HA 0.25")
+    ha_filtrados = melhores_casa[(melhores_casa['W'] >= 6) & (melhores_casa['D'] >= 6)]  # Filtrar W e D >= 6
+    ha_jogos = jogos_dia_validos[
+        jogos_dia_validos['Time_Casa'].apply(
+            lambda x: any(fuzz.partial_ratio(x, equipe) > 80 for equipe in ha_filtrados['Equipe'])
+        ) & (jogos_dia_validos['Home'] <= 2.3)  # Odds Home <= 2.3 para HA 0.25
     ]
+    st.dataframe(ha_jogos)
 
-    if not h2h_jogos.empty:
-        st.dataframe(h2h_jogos)
-    else:
-        st.info("Não há jogos com os melhores times em casa contra os piores times fora.")
 else:
     st.info("Por favor, envie o arquivo 'Jogos do dia Betfair.csv' para realizar a análise.")
