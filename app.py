@@ -14,6 +14,16 @@ melhores_casa_file = st.file_uploader("Envie o arquivo 'Melhores_Equipes_Casa.cs
 melhores_away_file = st.file_uploader("Envie o arquivo 'Melhores_Equipes_Fora.csv'", type="csv")
 piores_away_file = st.file_uploader("Envie o arquivo 'Piores_Equipes_Fora.csv'", type="csv")
 
+# Função para limpar e extrair odds
+def extrair_odds(valor):
+    if isinstance(valor, str):
+        # Extrair o valor da odd antes do parêntese
+        try:
+            return pd.to_numeric(valor.split('(')[0].replace(",", "").strip())
+        except ValueError:
+            return None
+    return valor
+
 # Verificar se todos os arquivos foram enviados
 if all([jogos_dia_file, melhores_casa_file, melhores_away_file, piores_away_file]):
     # Ler os dados dos arquivos CSV
@@ -53,6 +63,11 @@ if all([jogos_dia_file, melhores_casa_file, melhores_away_file, piores_away_file
     jogos_dia_validos['Time_Casa'] = jogos_dia_validos['Evento'].apply(extract_time_casa)
     jogos_dia_validos['Time_Fora'] = jogos_dia_validos['Evento'].apply(extract_time_fora)
 
+    # Corrigir as odds para Home, Away e The Draw
+    jogos_dia_validos['Home'] = jogos_dia_validos['Home'].apply(extrair_odds)
+    jogos_dia_validos['Away'] = jogos_dia_validos['Away'].apply(extrair_odds)
+    jogos_dia_validos['The Draw'] = jogos_dia_validos['The Draw'].apply(extrair_odds)
+
     # Exibir os jogos válidos
     st.subheader("Jogos válidos")
     st.dataframe(jogos_dia_validos)
@@ -77,11 +92,6 @@ if all([jogos_dia_file, melhores_casa_file, melhores_away_file, piores_away_file
 
     # Comparação com Piores_Equipes_Fora
     st.subheader("Jogos com Piores Equipes Fora")
-    # Corrigir a manipulação das odds e da coluna 'Home' 
-    jogos_dia_validos['Home'] = jogos_dia_validos['Home'].apply(
-        lambda x: pd.to_numeric(x.split('(')[0].replace(",", "").strip()) if isinstance(x, str) else x
-    )
-
     # Filtrar jogos onde as odds indicam que o time da casa é fraco (<= 2.5 odds)
     piores_away_jogos = jogos_dia_validos[
         jogos_dia_validos['Time_Fora'].apply(
