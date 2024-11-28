@@ -34,6 +34,9 @@ if all([jogos_dia_file, melhores_casa_file, melhores_away_file, piores_away_file
     # Filtrar apenas linhas válidas
     jogos_dia_validos = jogos_dia[jogos_dia['Evento'].str.contains(' v ', na=False)]
 
+    # Filtrar jogos que não contêm 'UEFA' na coluna 'Competição'
+    jogos_dia_validos = jogos_dia_validos[~jogos_dia_validos['Competição'].str.contains('UEFA', na=False)]
+
     # Adicionar colunas Time_Casa e Time_Fora
     def extract_time_casa(evento):
         try:
@@ -51,7 +54,7 @@ if all([jogos_dia_file, melhores_casa_file, melhores_away_file, piores_away_file
     jogos_dia_validos['Time_Fora'] = jogos_dia_validos['Evento'].apply(extract_time_fora)
 
     # Exibir os jogos válidos
-    st.subheader("Jogos válidos com Time_Casa e Time_Fora")
+    st.subheader("Jogos válidos com Time_Casa e Time_Fora (sem UEFA)")
     st.dataframe(jogos_dia_validos)
 
     # Comparação com Melhores_Equipes_Casa
@@ -81,31 +84,30 @@ if all([jogos_dia_file, melhores_casa_file, melhores_away_file, piores_away_file
     ]
     st.dataframe(piores_away_jogos)
 
+    # Nova análise H2H
+    st.subheader("Análise H2H: Melhores Times em Casa vs Piores Times Fora")
+
+    # Filtrar os melhores times em casa com W >= 4
+    melhores_casa_filtrados = melhores_casa[melhores_casa['W'] >= 4]
+
+    # Filtrar os piores times fora com L >= 4
+    piores_away_filtrados = piores_away[piores_away['L'] >= 4]
+
+    # Combinar as equipes para análise H2H
+    h2h_jogos = jogos_dia_validos[
+        jogos_dia_validos.apply(
+            lambda row: any(
+                fuzz.partial_ratio(row['Time_Casa'], casa) > 80 for casa in melhores_casa_filtrados['Equipe']
+            ) and any(
+                fuzz.partial_ratio(row['Time_Fora'], fora) > 80 for fora in piores_away_filtrados['Equipe']
+            ),
+            axis=1
+        )
+    ]
+
+    if not h2h_jogos.empty:
+        st.dataframe(h2h_jogos)
+    else:
+        st.info("Não há jogos com os melhores times em casa contra os piores times fora.")
 else:
     st.info("Por favor, envie todos os arquivos para realizar a análise.")
-
-# Nova análise H2H
-#st.subheader("Análise H2H: Melhores Times em Casa vs Piores Times Fora")
-
-# Filtrar os melhores times em casa com W >= 4
-melhores_casa_filtrados = melhores_casa[melhores_casa['W'] >= 4]
-
-# Filtrar os piores times fora com L >= 4
-piores_away_filtrados = piores_away[piores_away['L'] >= 4]
-
-# Combinar as equipes para análise H2H
-h2h_jogos = jogos_dia_validos[
-    jogos_dia_validos.apply(
-        lambda row: any(
-            fuzz.partial_ratio(row['Time_Casa'], casa) > 80 for casa in melhores_casa_filtrados['Equipe']
-        ) and any(
-            fuzz.partial_ratio(row['Time_Fora'], fora) > 80 for fora in piores_away_filtrados['Equipe']
-        ),
-        axis=1
-    )
-]
-
-# Exibir os resultados da análise H2H
-st.subheader("H2H: Casa vs Pior Fora")
-st.dataframe(h2h_jogos)
-
