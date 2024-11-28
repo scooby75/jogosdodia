@@ -85,7 +85,7 @@ else:
     st.info("Por favor, envie todos os arquivos para realizar a análise.")
 
 # Nova análise H2H
-st.subheader("Análise H2H: Melhores Times em Casa vs Piores Times Fora")
+#st.subheader("Análise H2H: Melhores Times em Casa vs Piores Times Fora")
 
 # Filtrar os melhores times em casa com W >= 4
 melhores_casa_filtrados = melhores_casa[melhores_casa['W'] >= 4]
