@@ -46,7 +46,7 @@ if jogos_dia_file:
     # Filtrar jogos que não contêm palavras-chave indesejadas
     jogos_dia_validos = jogos_dia_validos[
         ~jogos_dia_validos['Competição'].str.contains(
-            'UEFA|AFC Champions|Reservas|Friendlies Women\'s International|U21|English Premier League 2|Israeli Cup|Friendly Matches|Copa de França', 
+            'UEFA|AFC Champions|Reservas|Friendlies Women\'s International|U21|English Premier League 2|Israeli Cup|Friendly Matches|Malaysian Cup|Copa de França', 
             case=False, 
             na=False
         )
