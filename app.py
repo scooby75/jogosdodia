@@ -117,6 +117,16 @@ if jogos_dia_file:
     ]
     st.dataframe(ha_jogos)
 
+    # Análise "HA +1"
+    st.subheader("Análise HA +1")
+    ha_filtrados = melhores_away[(melhores_away['W'] + melhores_casa['D']) >= 4] 
+    ha_jogos = jogos_dia_validos[
+        jogos_dia_validos['Time_Fora'].apply(
+            lambda x: any(fuzz.partial_ratio(x, equipe) > 80 for equipe in ha_filtrados['Equipe'])
+        ) & (jogos_dia_validos['Away'] >= 1.80) & (jogos_dia_validos['Home'] <= 2.4)
+    ]
+    st.dataframe(ha_jogos)
+
 
 else:
     st.info("Por favor, envie o arquivo 'Jogos do dia Betfair.csv' para realizar a análise.")
