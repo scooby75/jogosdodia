@@ -83,7 +83,7 @@ if jogos_dia_file:
     melhores_casa_jogos = jogos_dia_validos[
         jogos_dia_validos['Time_Casa'].apply(
             lambda x: any(fuzz.partial_ratio(x, equipe) > 80 for equipe in melhores_casa_filtrados['Equipe'])
-        ) & (jogos_dia_validos['Home'] <= 2.2)  # Filtrar jogos com odds Home <= 2.2
+        ) & (jogos_dia_validos['Home'] >= 1.45) & (jogos_dia_validos['Home'] <= 2.2)
     ]
     st.dataframe(melhores_casa_jogos)
 
@@ -93,7 +93,7 @@ if jogos_dia_file:
     melhores_away_jogos = jogos_dia_validos[
         jogos_dia_validos['Time_Fora'].apply(
             lambda x: any(fuzz.partial_ratio(x, equipe) > 80 for equipe in melhores_away_filtrados['Equipe'])
-        ) & (jogos_dia_validos['Away'] <= 2.2)  # Filtrar jogos com odds Away <= 2.2
+        ) & (jogos_dia_validos['Away'] >= 1.45) & (jogos_dia_validos['Away'] <= 2.2)
     ]
     st.dataframe(melhores_away_jogos)
 
