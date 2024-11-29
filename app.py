@@ -98,7 +98,7 @@ if jogos_dia_file:
     st.dataframe(melhores_away_jogos)
 
     # Comparação com Piores_Equipes_Fora
-    st.subheader("Jogos com Piores Equipes Fora")
+    st.subheader("HA -0.25")
     piores_away_filtrados = piores_away[piores_away['L'] <= 1]  # Filtrar L <= 1
     piores_away_jogos = jogos_dia_validos[
         jogos_dia_validos['Time_Fora'].apply(
