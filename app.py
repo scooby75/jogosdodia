@@ -113,7 +113,7 @@ if jogos_dia_file:
     ha_jogos = jogos_dia_validos[
         jogos_dia_validos['Time_Casa'].apply(
             lambda x: any(fuzz.partial_ratio(x, equipe) > 80 for equipe in ha_filtrados['Equipe'])
-        ) & (jogos_dia_validos['Home'] <= 2.3)  # Odds Home <= 2.3 para HA 0.25
+        ) & (jogos_dia_validos['Home'] >= 1.60) & (jogos_dia_validos['Home'] <= 2.3)
     ]
     st.dataframe(ha_jogos)
 
