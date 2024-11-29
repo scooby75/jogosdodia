@@ -78,7 +78,7 @@ if jogos_dia_file:
     st.dataframe(jogos_dia_validos)
 
     # Comparação com Melhores_Equipes_Casa
-    st.subheader("Jogos com Melhores Equipes em Casa")
+    st.subheader("Back Home")
     melhores_casa_filtrados = melhores_casa[melhores_casa['W'] >= 5]  # Filtrar W >= 5
     melhores_casa_jogos = jogos_dia_validos[
         jogos_dia_validos['Time_Casa'].apply(
@@ -88,7 +88,7 @@ if jogos_dia_file:
     st.dataframe(melhores_casa_jogos)
 
     # Comparação com Melhores_Equipes_Fora
-    st.subheader("Jogos com Melhores Equipes Fora")
+    st.subheader("Back Away")
     melhores_away_filtrados = melhores_away[melhores_away['W'] >= 5]  # Filtrar W >= 5
     melhores_away_jogos = jogos_dia_validos[
         jogos_dia_validos['Time_Fora'].apply(
@@ -108,7 +108,7 @@ if jogos_dia_file:
     st.dataframe(piores_away_jogos)
 
     # Análise "HA 0.25"
-    st.subheader("Análise HA 0.25")
+    st.subheader("HA +0.25")
     ha_filtrados = melhores_casa[(melhores_casa['W'] + melhores_casa['D']) >= 6]  # Soma de W e D >= 6
     ha_jogos = jogos_dia_validos[
         jogos_dia_validos['Time_Casa'].apply(
@@ -118,7 +118,7 @@ if jogos_dia_file:
     st.dataframe(ha_jogos)
 
     # Análise "HA +1"
-    st.subheader("Análise HA +1")
+    st.subheader("HA +1")
     ha_filtrados = melhores_away[(melhores_away['W'] + melhores_casa['D']) >= 4] 
     ha_jogos = jogos_dia_validos[
         jogos_dia_validos['Time_Fora'].apply(
