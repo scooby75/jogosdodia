@@ -116,7 +116,7 @@ if jogos_dia_file:
     ha_mais_um_jogos = jogos_dia_validos[
         jogos_dia_validos['Time_Fora'].apply(
             lambda x: any(fuzz.partial_ratio(x, equipe) > 80 for equipe in ha_mais_um_filtrados['Equipe'])
-        ) & (jogos_dia_validos['Home'] >= 2.40) & (jogos_dia_validos['Away'] >= 2.4)
+        ) & (jogos_dia_validos['Home'] >= 3.40) & (jogos_dia_validos['Away'] >= 2.4)
     ]
     st.dataframe(ha_mais_um_jogos)
 
