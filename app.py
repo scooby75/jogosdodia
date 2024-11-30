@@ -99,7 +99,7 @@ if jogos_dia_file:
 
     # Comparação com Piores_Equipes_Fora
     st.subheader("HA -0.25")
-    piores_away_filtrados = piores_away[piores_away['L'] <= 1]  # Filtrar L <= 1
+    piores_away_filtrados = piores_away[piores_away['L'] >= 4]  
     piores_away_jogos = jogos_dia_validos[
         jogos_dia_validos['Time_Fora'].apply(
             lambda x: any(fuzz.partial_ratio(x, equipe) > 80 for equipe in piores_away_filtrados['Equipe'])
