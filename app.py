@@ -109,14 +109,24 @@ if jogos_dia_file:
     st.dataframe(ha_pos_jogos)
 
     # Análise: HA +1
-    st.subheader("HA +1")
+    # Filtro: Equipes visitantes em boa forma
     ha_mais_um_filtrados = melhores_away[(melhores_away['W'] + melhores_away['D']) >= 4]
+    
+    # Filtro: Mandantes fracos
     melhores_home_filtrados = melhores_casa[melhores_casa['W'] <= 2]
+    
+    # Filtrar jogos do dia válidos
+    def is_similar(team_name, filtered_teams):
+        return any(fuzz.partial_ratio(team_name, equipe) > 80 for equipe in filtered_teams)
+    
     ha_mais_um_jogos = jogos_dia_validos[
-        jogos_dia_validos['Time_Fora'].apply(
-            lambda x: any(fuzz.partial_ratio(x, equipe) > 80 for equipe in ha_mais_um_filtrados['Equipe'])
-        ) & (jogos_dia_validos['Home'] >= 2.40) & (jogos_dia_validos['Away'] >= 2.4)
+        jogos_dia_validos['Time_Fora'].apply(lambda x: is_similar(x, ha_mais_um_filtrados['Equipe']))
+        & (jogos_dia_validos['Home'] >= 2.40)
+        & (jogos_dia_validos['Away'] >= 2.40)
     ]
+    
+    # Exibir resultado
+    st.subheader("HA +1")
     st.dataframe(ha_mais_um_jogos)
 
 else:
