@@ -1,6 +1,5 @@
 Equipe,GP,W,D,L,GF,GA,GD,Pts,Liga
 NC Magra,6,0,2,4,2,9,-7,2,algeria
-Belgrano,8,1,6,1,7,6,1,9,argentina
 Rosario Central,8,1,3,4,5,8,-3,6,argentina
 Banfield,8,1,3,4,5,9,-4,6,argentina
 Boca Juniors,8,1,3,4,5,10,-5,6,argentina
@@ -26,16 +25,16 @@ Hartberg,6,1,2,3,7,10,-3,5,austria
 BW Linz,7,1,2,4,8,15,-7,5,austria
 Altach,7,1,1,5,5,11,-6,4,austria
 Stripfing,7,0,4,3,4,9,-5,4,austria2
-Lafnitz,7,1,1,5,6,17,-11,4,austria2
+Lafnitz,8,1,1,6,6,20,-14,4,austria2
 Sumqayit,6,1,1,4,3,7,-4,4,azerbaijan
 Neftci,7,0,4,3,5,12,-7,4,azerbaijan
 Kapaz,7,0,1,6,3,17,-14,1,azerbaijan
-Sebail,7,0,0,7,6,16,-10,0,azerbaijan
+Sebail,8,0,0,8,6,17,-11,0,azerbaijan
 Slavia Mozyr,8,1,4,3,4,9,-5,7,belarus
 Arsenal D.,8,1,3,4,7,9,-2,6,belarus
 S. Soligorsk,8,1,3,4,3,9,-6,6,belarus
-Smorgon,8,0,3,5,7,13,-6,3,belarus
 Dnepr Mogilev,8,0,3,5,8,20,-12,3,belarus
+Smorgon,8,0,2,6,9,18,-9,2,belarus
 Bumprom,8,0,4,4,1,9,-8,4,belarus2
 Energetik-BGU,8,1,1,6,6,15,-9,4,belarus2
 Lokomotiv Gomel,8,0,3,5,4,13,-9,3,belarus2
@@ -51,7 +50,7 @@ Kortrijk,8,1,1,6,4,21,-17,4,belgium
 Beerschot,8,0,1,7,4,22,-18,1,belgium
 Real Tomayapo,8,1,1,6,7,16,-9,4,bolivia2
 Royal Pari,8,0,3,5,6,17,-11,3,bolivia2
-Guabira,8,0,1,7,6,23,-17,1,bolivia2
+Guabira,8,0,1,7,5,22,-17,1,bolivia2
 Gremio,8,1,4,3,7,9,-2,7,brazil
 Atletico MG,8,1,3,4,7,12,-5,6,brazil
 Vasco da Gama,8,1,3,4,6,16,-10,6,brazil
@@ -119,7 +118,7 @@ Pardubice,8,1,2,5,6,13,-7,5,czechrepublic
 Dukla Praha,8,0,2,6,3,18,-15,2,czechrepublic
 C. Budejovice,6,0,0,6,4,22,-18,0,czechrepublic
 Viborg,8,1,4,3,12,11,1,7,denmark
-Aalborg BK,8,1,3,4,8,15,-7,6,denmark
+Aalborg BK,8,1,3,4,8,13,-5,6,denmark
 SonderjyskE,8,1,1,6,7,19,-12,4,denmark
 Lyngby,8,0,3,5,6,12,-6,3,denmark
 Vejle BK,8,0,1,7,7,20,-13,1,denmark
@@ -144,7 +143,7 @@ Leicester City,6,1,2,3,9,14,-5,5,england
 Ipswich Town,6,1,2,3,8,14,-6,5,england
 Crystal Palace,6,0,3,3,7,10,-3,3,england
 Brentford,6,0,1,5,4,11,-7,1,england
-Southampton,6,0,0,6,3,13,-10,0,england
+Southampton,7,0,1,6,4,14,-10,1,england
 Millwall,7,1,4,2,6,7,-1,7,england2
 Coventry City,8,1,4,3,8,11,-3,7,england2
 Derby County,8,1,3,4,7,11,-4,6,england2
@@ -213,6 +212,7 @@ Kolkheti Poti,8,1,2,5,7,16,-9,5,georgia
 Telavi,8,0,4,4,6,14,-8,4,georgia
 Kolkheti Khobi,8,1,1,6,6,21,-15,4,georgia2
 Union Berlin,6,1,2,3,3,6,-3,5,germany
+Holstein Kiel,6,0,2,4,9,14,-5,2,germany
 Bochum,6,0,0,6,6,19,-13,0,germany
 Ulm,7,1,4,2,6,7,-1,7,germany2
 Schalke 04,7,1,3,3,7,11,-4,6,germany2
@@ -297,7 +297,7 @@ Udinese,7,1,2,4,8,13,-5,5,italy
 Como,8,1,2,5,6,13,-7,5,italy
 AS Roma,7,0,4,3,5,11,-6,4,italy
 Lecce,7,1,1,5,1,8,-7,4,italy
-Hellas Verona,6,1,0,5,7,15,-8,3,italy
+Hellas Verona,7,1,0,6,7,16,-9,3,italy
 Venezia,7,0,2,5,5,14,-9,2,italy
 Reggiana,7,1,3,3,5,8,-3,6,italy2
 Cesena,6,1,2,3,6,8,-2,5,italy2
@@ -312,10 +312,10 @@ Harbour View,6,1,1,4,4,13,-9,4,jamaica
 Tivoli Gardens,6,0,2,4,5,9,-4,2,jamaica
 Racing United,6,0,1,5,3,12,-9,1,jamaica
 Dunbeholden,6,0,1,5,2,13,-11,1,jamaica
-Urawa RD,8,1,5,2,5,6,-1,8,japan
+Urawa RD,8,1,4,3,5,7,-2,7,japan
 Avispa Fukuoka,8,0,6,2,5,7,-2,6,japan
 Nagoya G.,8,1,2,5,9,15,-6,5,japan
-Sagan Tosu,8,1,1,6,10,21,-11,4,japan
+Sagan Tosu,8,1,1,6,9,18,-9,4,japan
 Tochigi SC,8,1,4,3,6,7,-1,7,japan2
 Oita Trinita,8,1,2,5,8,15,-7,5,japan2
 R. Yamaguchi,8,1,2,5,6,17,-11,5,japan2
@@ -330,7 +330,7 @@ Turan,8,0,2,6,3,21,-18,2,kazakhstan
 S. Karagandy,8,0,0,8,4,19,-15,0,kazakhstan
 Ballkani,7,1,4,2,8,7,1,7,kosovo
 Gjilani,7,1,3,3,12,12,0,6,kosovo
-Suhareka,7,1,3,3,6,11,-5,6,kosovo
+Suhareka,8,1,3,4,7,14,-7,6,kosovo
 Feronikeli,7,0,1,6,5,15,-10,1,kosovo
 Grobina,8,1,1,6,3,19,-16,4,latvia
 FS Jelgava,8,1,1,6,9,29,-20,4,latvia
@@ -376,20 +376,20 @@ Heracles Almelo,6,1,1,4,3,14,-11,4,netherlands
 FC Groningen,7,1,1,5,5,19,-14,4,netherlands
 PEC Zwolle,7,0,3,4,4,14,-10,3,netherlands
 Almere City,6,0,2,4,2,11,-9,2,netherlands
-RKC Waalwijk,6,0,1,5,6,19,-13,1,netherlands
+RKC Waalwijk,7,0,2,5,7,20,-13,2,netherlands
 Heerenveen,7,0,0,7,2,23,-21,0,netherlands
 Jong Utrecht,7,0,4,3,7,12,-5,4,netherlands2
 MVV Maastricht,8,0,4,4,8,15,-7,4,netherlands2
 TOP Oss,8,0,4,4,4,15,-11,4,netherlands2
+Export Sebaco,8,1,4,3,7,10,-3,7,nicaragua
 Managua FC,8,1,3,4,9,15,-6,6,nicaragua
-Export Sebaco,8,0,4,4,5,13,-8,4,nicaragua
 Rancho Santana,8,1,1,6,5,17,-12,4,nicaragua
-UNAN Managua,7,1,0,6,5,16,-11,3,nicaragua
+UNAN Managua,8,1,0,7,6,20,-14,3,nicaragua
 D. Ocotal,8,0,2,6,4,21,-17,2,nicaragua
-Jalapa,8,0,1,7,7,28,-21,1,nicaragua
+Jalapa,8,0,2,6,6,25,-19,2,nicaragua
 Carrick Rangers,8,0,3,5,5,16,-11,3,northernireland
 Loughgall,8,1,0,7,5,19,-14,3,northernireland
-Annagh Utd,8,1,2,5,8,11,-3,5,northernireland2
+Annagh Utd,8,1,2,5,7,11,-4,5,northernireland2
 Newington,8,1,0,7,6,23,-17,3,northernireland2
 Newry City,8,0,2,6,8,18,-10,2,northernireland2
 Pelister,8,1,2,5,4,12,-8,5,northmacedonia
@@ -433,7 +433,7 @@ Comerciantes U.,8,0,1,7,5,19,-14,1,peru2
 Union Comercio,8,0,1,7,2,18,-16,1,peru2
 Cesar Vallejo,8,0,0,8,6,20,-14,0,peru2
 Lechia Gdansk,8,1,3,4,12,18,-6,6,poland
-Zaglebie Lubin,8,1,2,5,5,15,-10,5,poland
+Zaglebie Lubin,8,1,3,4,6,14,-8,6,poland
 Pogon Szczecin,8,1,1,6,9,15,-6,4,poland
 Stal Mielec,8,1,1,6,6,13,-7,4,poland
 Slask Wroclaw,8,0,3,5,6,15,-9,3,poland
@@ -455,6 +455,7 @@ Farense,6,0,2,4,2,8,-6,2,portugal
 Gil Vicente,6,0,2,4,5,14,-9,2,portugal
 Alverca,6,1,3,2,6,7,-1,6,portugal2
 Portimonense,6,1,3,2,7,9,-2,6,portugal2
+Leixoes,6,1,2,3,3,6,-3,5,portugal2
 FC Porto B,6,0,3,3,5,11,-6,3,portugal2
 Al Shahaniya,6,1,1,4,10,15,-5,4,qatar
 Farul Constanta,8,1,4,3,6,12,-6,7,romania
@@ -469,16 +470,16 @@ Akhmat Grozny,8,1,2,5,6,14,-8,5,russia
 Fakel Voronezh,8,1,1,6,7,19,-12,4,russia
 Orenburg,7,0,1,6,4,16,-12,1,russia
 Shinnik,8,1,5,2,4,7,-3,8,russia2
-Arsenal Tula,8,0,7,1,7,8,-1,7,russia2
 SKA Khabarovsk,8,1,4,3,8,13,-5,7,russia2
+Arsenal Tula,8,0,6,2,7,10,-3,6,russia2
 Rodina Moskva,8,1,3,4,6,10,-4,6,russia2
+A. Vladikavkaz,8,1,3,4,2,10,-8,6,russia2
 Ufa,8,1,2,5,5,12,-7,5,russia2
 Sokol Saratov,8,1,2,5,4,17,-13,5,russia2
 Neftekhimik,8,0,4,4,4,9,-5,4,russia2
 Tyumen,8,1,1,6,7,16,-9,4,russia2
 Yenisey,8,1,1,6,7,17,-10,4,russia2
-Al Kholood,6,1,2,3,5,8,-3,5,saudiarabia
-Al Orubah,7,1,1,5,8,19,-11,4,saudiarabia
+Damak,6,1,0,5,8,14,-6,3,saudiarabia
 Al Feiha,6,0,3,3,3,9,-6,3,saudiarabia
 Al Batin,6,1,4,1,7,7,0,7,saudiarabia2
 Al Adalha,6,1,2,3,5,9,-4,5,saudiarabia2
@@ -502,9 +503,9 @@ Forfar Athletic,7,1,0,6,5,11,-6,3,scotland4
 Clyde,6,0,2,4,5,13,-8,2,scotland4
 Cukaricki,8,1,5,2,11,14,-3,8,serbia
 Napredak,8,1,4,3,4,8,-4,7,serbia
+S. Subotica,8,1,3,4,5,11,-6,6,serbia
 IMT N. Beograd,8,1,1,6,9,16,-7,4,serbia
 Tekstilac Odzac,8,1,1,6,3,14,-11,4,serbia
-S. Subotica,8,0,3,5,5,13,-8,3,serbia
 Jedinstvo U.,8,0,1,7,5,20,-15,1,serbia
 Zemun,8,0,6,2,6,10,-4,6,serbia2
 S. Mitrovica,8,0,5,3,4,10,-6,5,serbia2
@@ -527,7 +528,6 @@ Domzale,8,1,1,6,5,19,-14,4,slovenia
 Nafta,8,0,1,7,3,16,-13,1,slovenia
 TS Galaxy,6,1,2,3,6,7,-1,5,southafrica
 Highbury,6,1,3,2,6,5,1,6,southafrica2
-Baroka,6,1,2,3,4,8,-4,5,southafrica2
 Venda FC,6,1,1,4,6,10,-4,4,southafrica2
 Cape Town Spurs,6,0,2,4,0,6,-6,2,southafrica2
 Suwon City,8,1,3,4,8,12,-4,6,southkorea
@@ -543,7 +543,7 @@ Celta Vigo,6,1,1,4,9,15,-6,4,spain
 Alaves,8,1,0,7,8,17,-9,3,spain
 Valladolid,7,1,0,6,5,20,-15,3,spain
 Getafe,6,0,2,4,3,7,-4,2,spain
-Valencia,6,0,2,4,2,11,-9,2,spain
+Valencia,7,0,2,5,3,13,-10,2,spain
 Espanyol,7,0,1,6,4,17,-13,1,spain
 Malaga,8,0,7,1,8,10,-2,7,spain2
 Racing Ferrol,7,1,3,3,3,7,-4,6,spain2
@@ -577,7 +577,7 @@ N. Bua Pitchaya,6,0,2,4,8,18,-10,2,thailand
 Nakhon Pathom,8,0,2,6,6,17,-11,2,thailand
 Kanchanaburi,6,1,5,0,10,9,1,8,thailand2
 Pattaya United,7,1,2,4,11,10,1,5,thailand2
-Chanthaburi,6,1,2,3,2,4,-2,5,thailand2
+Chanthaburi,7,1,2,4,4,10,-6,5,thailand2
 Chainat,7,0,4,3,3,6,-3,4,thailand2
 Mahasarakham,6,1,1,4,4,8,-4,4,thailand2
 Trat FC,6,1,1,4,4,8,-4,4,thailand2
@@ -598,15 +598,15 @@ Sakaryaspor,7,1,3,3,9,13,-4,6,turkey2
 Sanliurfaspor,7,1,2,4,5,10,-5,5,turkey2
 Erzurum BB,6,1,1,4,4,8,-4,4,turkey2
 Ankaragucu,6,1,0,5,5,8,-3,3,turkey2
-Adanaspor,6,0,3,3,3,15,-12,3,turkey2
+Adanaspor,7,0,3,4,3,17,-14,3,turkey2
 Y. Malatyaspor,6,0,0,6,3,21,-18,0,turkey2
 Rukh Lviv,7,1,4,2,7,7,0,7,ukraine
 Kolos Kovalivka,7,1,3,3,5,7,-2,6,ukraine
 Vorskla Poltava,8,1,3,4,7,12,-5,6,ukraine
 Livyi Bereh,7,1,2,4,3,8,-5,5,ukraine
 LNZ Cherkasy,7,1,2,4,6,14,-8,5,ukraine
+Inhulets,8,1,2,5,7,17,-10,5,ukraine
 Obolon,6,1,0,5,1,12,-11,3,ukraine
-Inhulets,8,0,3,5,6,19,-13,3,ukraine
 Chornomorets,6,0,2,4,4,9,-5,2,ukraine
 New York RB,8,1,4,3,10,10,0,7,usa
 New York City,8,1,4,3,12,13,-1,7,usa
