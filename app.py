@@ -97,15 +97,23 @@ if jogos_dia_file:
     ]
     st.dataframe(melhores_away_jogos)
 
-    # Comparação com Piores_Equipes_Fora
     st.subheader("HA -0.25")
     piores_away_filtrados = piores_away[piores_away['L'] >= 4]  
+    
+    # Aplicação da lógica `melhores_home >= 3` 
+    melhores_home_filtrados = melhores_home[melhores_home['W'] >= 3]
+    
     piores_away_jogos = jogos_dia_validos[
         jogos_dia_validos['Time_Fora'].apply(
             lambda x: any(fuzz.partial_ratio(x, equipe) > 80 for equipe in piores_away_filtrados['Equipe'])
-        ) & (jogos_dia_validos['Home'] <= 2.5)  # Filtrar jogos com odds Home <= 2.5
+        ) 
+        & (jogos_dia_validos['Home'] <= 2.5)  # Filtrar jogos com odds Home <= 2.5
+        & jogos_dia_validos['Time_Casa'].apply(
+            lambda x: any(fuzz.partial_ratio(x, equipe) > 80 for equipe in melhores_home_filtrados['Equipe'])
+        )  # Adicionando a lógica `melhores_home >= 3`
     ]
-    st.dataframe(piores_away_jogos)
+
+st.dataframe(piores_away_jogos)
 
     # Análise "HA 0.25"
     st.subheader("HA +0.25")
