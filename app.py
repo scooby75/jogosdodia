@@ -110,32 +110,14 @@ if jogos_dia_file:
 
     # Análise: HA +1
       
-    # Garantir que as colunas necessárias sejam numéricas
-    melhores_away['W'] = pd.to_numeric(melhores_away['W'], errors='coerce').fillna(0)
-    melhores_away['D'] = pd.to_numeric(melhores_away['D'], errors='coerce').fillna(0)
-    melhores_casa['W'] = pd.to_numeric(melhores_casa['W'], errors='coerce').fillna(0)
-    
-    # Filtro: Equipes visitantes em boa forma (pelo menos 4 resultados positivos combinados)
-    ha_mais_um_filtrados = melhores_away[(melhores_away['W'] + melhores_away['D']) >= 4]
-    
-    # Filtro: Mandantes fracos (2 ou menos vitórias)
-    melhores_home_filtrados = melhores_casa[melhores_casa['W'] <= 2]
-    
-    # Função para verificar similaridade entre nomes de equipes
-    def is_similar(team_name, filtered_teams):
-        return any(fuzz.partial_ratio(team_name, equipe) > 80 for equipe in filtered_teams)
-    
-    # Filtrar jogos do dia válidos
-    ha_mais_um_jogos = jogos_dia_validos[
-        jogos_dia_validos['Time_Fora'].apply(lambda x: is_similar(x, ha_mais_um_filtrados['Equipe']))
-        & (jogos_dia_validos['Home'] >= 2.40)
-        & (jogos_dia_validos['Away'] >= 2.40)
-    ]
-    
-    # Exibir resultado no Streamlit
     st.subheader("HA +1")
-    st.write("Equipes visitantes em boa forma:", ha_mais_um_filtrados[['Equipe', 'W', 'D']])
-    st.write("Mandantes fracos:", melhores_home_filtrados[['Equipe', 'W']])
+    ha_mais_um_filtrados = melhores_away[(melhores_away['W'] + melhores_away['D']) >= 4]
+    melhores_home_filtrados = melhores_casa[melhores_casa['W'] <= 2]
+    ha_mais_um_jogos = jogos_dia_validos[
+        jogos_dia_validos['Time_Fora'].apply(
+            lambda x: any(fuzz.partial_ratio(x, equipe) > 80 for equipe in ha_mais_um_filtrados['Equipe'])
+        ) & (jogos_dia_validos['Home'] >= 2.40) & (jogos_dia_validos['Away'] >= 2.4)
+    ]
     st.dataframe(ha_mais_um_jogos)
 
 
