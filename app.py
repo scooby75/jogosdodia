@@ -113,7 +113,7 @@ if jogos_dia_file:
         )  # Adicionando a lógica `melhores_home >= 3`
     ]
 
-st.dataframe(piores_away_jogos)
+    st.dataframe(piores_away_jogos)
 
     # Análise "HA 0.25"
     st.subheader("HA +0.25")
