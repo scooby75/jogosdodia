@@ -51,9 +51,7 @@ if jogos_dia_file:
     palavras_indesejadas = (
         'UEFA|AFC Champions|Reservas|Friendlies Women\'s International|U21|English Premier League 2|Israeli Cup|Friendly Matches|Malaysian Cup|Copa de França|Copa de Inglaterra|Scottish FA Cup'
     )
-    jogos_dia_validos = jogos_dia_validos[
-        ~jogos_dia_validos['Competição'].str.contains(palavras_indesejadas, case=False, na=False)
-    ]
+    jogos_dia_validos = jogos_dia_validos[~jogos_dia_validos['Competição'].str.contains(palavras_indesejadas, case=False, na=False)]
 
     # Adicionar colunas Time_Casa e Time_Fora
     jogos_dia_validos['Time_Casa'] = jogos_dia_validos['Evento'].apply(lambda x: x.split(' v ')[0].strip())
@@ -63,9 +61,13 @@ if jogos_dia_file:
     for coluna in ['Home', 'Away', 'The Draw']:
         jogos_dia_validos[coluna] = jogos_dia_validos[coluna].apply(extrair_odds)
 
-    # Exibir os jogos válidos
-    st.subheader("Jogos válidos")
-    st.dataframe(jogos_dia_validos)
+    # Merge com equipes_casa e equipes_fora para adicionar pts_casa e pts_fora
+    jogos_dia_validos = jogos_dia_validos.merge(equipes_casa[['Equipe', 'pts_casa']], left_on='Time_Casa', right_on='Equipe', how='left')
+    jogos_dia_validos = jogos_dia_validos.merge(equipes_fora[['Equipe', 'pts_fora']], left_on='Time_Fora', right_on='Equipe', how='left')
+
+    # Exibir os jogos válidos com as colunas de pontos
+    st.subheader("Jogos válidos com Pontos")
+    st.dataframe(jogos_dia_validos[['Evento', 'Time_Casa', 'Time_Fora', 'pts_casa', 'pts_fora', 'Home', 'Away', 'The Draw']])
 
     # Análise: Back Home
     st.subheader("Back Home")
@@ -113,7 +115,6 @@ if jogos_dia_file:
     st.dataframe(ha_pos_jogos)
 
     # Análise: HA +1
-      
     st.subheader("HA +1")
     ha_mais_um_filtrados = melhores_away[
         (melhores_away['W'] + melhores_away['D']) >= 6
@@ -128,6 +129,5 @@ if jogos_dia_file:
     
     st.dataframe(ha_mais_um_jogos)
 
-   
 else:
     st.info("Por favor, envie o arquivo 'Jogos do dia Betfair.csv' para realizar a análise.")
