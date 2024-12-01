@@ -9,6 +9,8 @@ st.title("Comparação de Jogos do Dia")
 url_melhores_casa = "https://raw.githubusercontent.com/scooby75/jogosdodia/main/Melhores_Equipes_Casa.csv"
 url_melhores_away = "https://raw.githubusercontent.com/scooby75/jogosdodia/main/Melhores_Equipes_Fora.csv"
 url_piores_away = "https://raw.githubusercontent.com/scooby75/jogosdodia/main/Piores_Equipes_Fora.csv"
+url_equipes_casa = "https://raw.githubusercontent.com/scooby75/jogosdodia/refs/heads/main/equipes_casa.csv"
+url_equipes_fora = "https://raw.githubusercontent.com/scooby75/jogosdodia/refs/heads/main/equipes_fora.csv"
 
 # Função para limpar e extrair odds
 def extrair_odds(valor):
@@ -30,6 +32,8 @@ if jogos_dia_file:
     melhores_casa = pd.read_csv(url_melhores_casa)
     melhores_away = pd.read_csv(url_melhores_away)
     piores_away = pd.read_csv(url_piores_away)
+    equipes_casa = pd.read_csv(url_equipes_casa)
+    equipes_fora = pd.read_csv(url_equipes_fora)
 
     # Verificar e corrigir o formato da coluna Evento
     st.subheader("Verificação dos dados na coluna 'Evento'")
