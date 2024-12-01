@@ -163,7 +163,7 @@ if jogos_dia_file:
     back_home_jogos = back_home_jogos[
         back_home_jogos['Time_Casa'].apply(
             lambda x: any(fuzz.partial_ratio(x, equipe) > 80 for equipe in melhores_casa_filtrados['Equipe'])
-        ) & (back_home_jogos['Home'] >= 1.45) & (back_home_jogos['Home'] <= 2.2)
+        ) & (back_home_jogos['Home'] >= 1.5) & (back_home_jogos['Home'] <= 2.2)
     ]
     
     # Exibindo a tabela com os jogos filtrados
