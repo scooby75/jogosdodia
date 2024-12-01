@@ -129,8 +129,8 @@ if jogos_dia_file:
     st.dataframe(ha_mais_um_jogos)
 
     # BACK PTS    
-    
-       
+ 
+
     # Carregar os dados das equipes da casa e fora
     equipes_casa = pd.read_csv(url_equipes_casa)
     equipes_fora = pd.read_csv(url_equipes_fora)
@@ -167,7 +167,7 @@ if jogos_dia_file:
     st.subheader("Back Home")
     
     # Filtrando jogos onde a diferença de pontos é maior que 10
-    back_home_jogos = jogos_dia_validos[
+    back_home_jogos = jogos_dia_validos.loc[
         (jogos_dia_validos['Pts_Casa'] - jogos_dia_validos['Pts_Fora']) > 10
     ]
     
@@ -181,6 +181,7 @@ if jogos_dia_file:
     
     # Exibindo a tabela com os jogos filtrados
     st.dataframe(back_home_jogos)
+
 
 else:
     st.info("Por favor, envie o arquivo 'Jogos do dia Betfair.csv' para realizar a análise.")
