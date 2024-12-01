@@ -131,14 +131,12 @@ if jogos_dia_file:
     # BACK PTS    
  
 
+    
     # Carregar os dados das equipes da casa e fora
     equipes_casa = pd.read_csv(url_equipes_casa)
     equipes_fora = pd.read_csv(url_equipes_fora)
     
-    # Verificar as colunas para garantir que a coluna de pontos existe
-    st.write("Colunas do DataFrame das equipes da casa:", equipes_casa.columns)
-    st.write("Colunas do DataFrame das equipes de fora:", equipes_fora.columns)
-    
+      
     # Adicionando a coluna de pontos das equipes
     equipes_casa.set_index('Equipe', inplace=True)
     equipes_fora.set_index('Equipe', inplace=True)
@@ -147,10 +145,7 @@ if jogos_dia_file:
     equipes_casa['Pts_Casa'] = pd.to_numeric(equipes_casa['Pts_Casa'], errors='coerce')
     equipes_fora['Pts_Fora'] = pd.to_numeric(equipes_fora['Pts_Fora'], errors='coerce')
     
-    # Verificar os tipos de dados das colunas
-    st.write(f"Tipo de dados de Pts_Casa: {equipes_casa['Pts_Casa'].dtype}")
-    st.write(f"Tipo de dados de Pts_Fora: {equipes_fora['Pts_Fora'].dtype}")
-    
+       
     # Adicionando os pontos das equipes nas colunas correspondentes de 'jogos_dia_validos'
     jogos_dia_validos['Pts_Casa'] = jogos_dia_validos['Time_Casa'].apply(
         lambda x: equipes_casa.loc[x, 'Pts_Casa'] if x in equipes_casa.index else 0
@@ -167,9 +162,8 @@ if jogos_dia_file:
     st.subheader("Back Home")
     
     # Filtrando jogos onde a diferença de pontos é maior que 10
-    back_home_jogos = jogos_dia_validos.loc[
-        (jogos_dia_validos['Pts_Casa'] - jogos_dia_validos['Pts_Fora']) > 10
-    ]
+    back_home_jogos = jogos_dia_validos[jogos_dia_validos.apply(
+        lambda row: (row['Pts_Casa'] - row['Pts_Fora']) > 10, axis=1)]
     
     # Aplicando outros filtros (com base na sua lógica anterior)
     melhores_casa_filtrados = melhores_casa[melhores_casa['W'] >= 5]
