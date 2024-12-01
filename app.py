@@ -9,7 +9,6 @@ st.title("Comparação de Jogos do Dia")
 url_melhores_casa = "https://raw.githubusercontent.com/scooby75/jogosdodia/main/Melhores_Equipes_Casa.csv"
 url_melhores_away = "https://raw.githubusercontent.com/scooby75/jogosdodia/main/Melhores_Equipes_Fora.csv"
 url_piores_away = "https://raw.githubusercontent.com/scooby75/jogosdodia/main/Piores_Equipes_Fora.csv"
-url_equipes_fora = "https://raw.githubusercontent.com/scooby75/jogosdodia/refs/heads/main/equipes_fora.csv" 
 
 # Função para limpar e extrair odds
 def extrair_odds(valor):
@@ -31,7 +30,6 @@ if jogos_dia_file:
     melhores_casa = pd.read_csv(url_melhores_casa)
     melhores_away = pd.read_csv(url_melhores_away)
     piores_away = pd.read_csv(url_piores_away)
-    #equipes_fora = pd.read.csv(url_equipes_fora)
 
     # Verificar e corrigir o formato da coluna Evento
     st.subheader("Verificação dos dados na coluna 'Evento'")
@@ -66,32 +64,14 @@ if jogos_dia_file:
     st.dataframe(jogos_dia_validos)
 
     # Análise: Back Home
-    
-    
-    # Subtítulo da análise
     st.subheader("Back Home")
-    
-    # Filtrar melhores times em casa e piores times fora de casa
     melhores_casa_filtrados = melhores_casa[melhores_casa['W'] >= 5]
-    url_equipes_fora = equipes_fora[equipes_fora['W'] <= 1]
-    
-    # Filtrar jogos do dia válidos para o "Back Home"
     back_home_jogos = jogos_dia_validos[
         jogos_dia_validos['Time_Casa'].apply(
-            lambda x: any(
-                fuzz.token_sort_ratio(x, equipe) > 85  # Similaridade mais robusta
-                for equipe in melhores_casa_filtrados['Equipe']
-            )
-        ) 
-        & (jogos_dia_validos['Home'] >= 1.45) 
-        & (jogos_dia_validos['Home'] <= 2.2)
+            lambda x: any(fuzz.partial_ratio(x, equipe) > 80 for equipe in melhores_casa_filtrados['Equipe'])
+        ) & (jogos_dia_validos['Home'] >= 1.45) & (jogos_dia_validos['Home'] <= 2.2)
     ]
-    
-    # Exibir resultados ou mensagem caso não existam jogos válidos
-    if back_home_jogos.empty:
-        st.write("Nenhum jogo corresponde aos critérios de 'Back Home' hoje.")
-    else:
-        st.dataframe(back_home_jogos)
+    st.dataframe(back_home_jogos)
 
     # Análise: Back Away
     st.subheader("Back Away")
