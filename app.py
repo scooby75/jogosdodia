@@ -9,7 +9,7 @@ st.title("Comparação de Jogos do Dia")
 url_melhores_casa = "https://raw.githubusercontent.com/scooby75/jogosdodia/main/Melhores_Equipes_Casa.csv"
 url_melhores_away = "https://raw.githubusercontent.com/scooby75/jogosdodia/main/Melhores_Equipes_Fora.csv"
 url_piores_away = "https://raw.githubusercontent.com/scooby75/jogosdodia/main/Piores_Equipes_Fora.csv"
-url_equipes_fora = "https://raw.githubusercontent.com/scooby75/jogosdodia/main/equipes_fora.csv"
+url_equipes_fora = "https://github.com/scooby75/jogosdodia/blob/main/equipes_fora.csv" 
 
 # Função para limpar e extrair odds
 def extrair_odds(valor):
@@ -31,7 +31,7 @@ if jogos_dia_file:
     melhores_casa = pd.read_csv(url_melhores_casa)
     melhores_away = pd.read_csv(url_melhores_away)
     piores_away = pd.read_csv(url_piores_away)
-    equipes_fora = pd.read_csv(url_equipes_fora)
+    equipes_fora = pd.read.csv(url_equipes_fora)
 
     # Verificar e corrigir o formato da coluna Evento
     st.subheader("Verificação dos dados na coluna 'Evento'")
@@ -49,7 +49,9 @@ if jogos_dia_file:
     palavras_indesejadas = (
         'UEFA|AFC Champions|Reservas|Friendlies Women\'s International|U21|English Premier League 2|Israeli Cup|Friendly Matches|Malaysian Cup|Copa de França|Copa de Inglaterra|Scottish FA Cup'
     )
-    jogos_dia_validos = jogos_dia_validos[~jogos_dia_validos['Competição'].str.contains(palavras_indesejadas, case=False, na=False)]
+    jogos_dia_validos = jogos_dia_validos[
+        ~jogos_dia_validos['Competição'].str.contains(palavras_indesejadas, case=False, na=False)
+    ]
 
     # Adicionar colunas Time_Casa e Time_Fora
     jogos_dia_validos['Time_Casa'] = jogos_dia_validos['Evento'].apply(lambda x: x.split(' v ')[0].strip())
@@ -64,29 +66,32 @@ if jogos_dia_file:
     st.dataframe(jogos_dia_validos)
 
     # Análise: Back Home
+    
+    
+    # Subtítulo da análise
     st.subheader("Back Home")
     
     # Filtrar melhores times em casa e piores times fora de casa
     melhores_casa_filtrados = melhores_casa[melhores_casa['W'] >= 5]
+    url_equipes_fora = equipes_fora[equipes_fora['W'] <= 1]
     
-    
-    # Aplicar os filtros para identificar jogos válidos
+    # Filtrar jogos do dia válidos para o "Back Home"
     back_home_jogos = jogos_dia_validos[
         jogos_dia_validos['Time_Casa'].apply(
-            lambda x: any(fuzz.token_sort_ratio(x, equipe) > 85 for equipe in melhores_casa_filtrados['Equipe'])
-        ) &
-        jogos_dia_validos['Time_Fora'].apply(
-            lambda x: any(fuzz.token_sort_ratio(x, equipe) > 85 for equipe in equipes_fora_filtradas['Equipe'])
-        ) &
-        (jogos_dia_validos['Home'] >= 1.45) & (jogos_dia_validos['Home'] <= 2.2)
+            lambda x: any(
+                fuzz.token_sort_ratio(x, equipe) > 85  # Similaridade mais robusta
+                for equipe in melhores_casa_filtrados['Equipe']
+            )
+        ) 
+        & (jogos_dia_validos['Home'] >= 1.45) 
+        & (jogos_dia_validos['Home'] <= 2.2)
     ]
     
-    # Exibir os resultados ou mensagem caso não existam jogos válidos
+    # Exibir resultados ou mensagem caso não existam jogos válidos
     if back_home_jogos.empty:
         st.write("Nenhum jogo corresponde aos critérios de 'Back Home' hoje.")
     else:
         st.dataframe(back_home_jogos)
-
 
     # Análise: Back Away
     st.subheader("Back Away")
@@ -105,7 +110,9 @@ if jogos_dia_file:
     ha_negativo_jogos = jogos_dia_validos[
         jogos_dia_validos['Time_Fora'].apply(
             lambda x: any(fuzz.partial_ratio(x, equipe) > 80 for equipe in piores_away_filtrados['Equipe'])
-        ) & (jogos_dia_validos['Home'] <= 2.5) & jogos_dia_validos['Time_Casa'].apply(
+        )
+        & (jogos_dia_validos['Home'] <= 2.5)
+        & jogos_dia_validos['Time_Casa'].apply(
             lambda x: any(fuzz.partial_ratio(x, equipe) > 80 for equipe in melhores_home_filtrados['Equipe'])
         )
     ]
@@ -122,16 +129,19 @@ if jogos_dia_file:
     st.dataframe(ha_pos_jogos)
 
     # Análise: HA +1
+      
     st.subheader("HA +1")
     ha_mais_um_filtrados = melhores_away[
         (melhores_away['W'] + melhores_away['D']) >= 6
-        & (melhores_away['GD'] > 0)
+        & (melhores_away['GD'] > 0)  
     ]
+    
     ha_mais_um_jogos = jogos_dia_validos[
         jogos_dia_validos['Time_Fora'].apply(
             lambda x: any(fuzz.partial_ratio(x, equipe) > 80 for equipe in ha_mais_um_filtrados['Equipe'])
         ) & (jogos_dia_validos['Home'] >= 2.60) & (jogos_dia_validos['Away'] >= 2.4)
     ]
+    
     st.dataframe(ha_mais_um_jogos)
 
 else:
