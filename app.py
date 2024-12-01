@@ -130,7 +130,7 @@ if jogos_dia_file:
 
     # BACK PTS    
      
-    # Carregar os dados das equipes da casa e fora
+        # Carregar os dados das equipes da casa e fora
     equipes_casa = pd.read_csv(url_equipes_casa)
     equipes_fora = pd.read_csv(url_equipes_fora)
     
@@ -146,17 +146,13 @@ if jogos_dia_file:
     equipes_casa['Pts_Casa'] = pd.to_numeric(equipes_casa['Pts_Casa'], errors='coerce')
     equipes_fora['Pts_Fora'] = pd.to_numeric(equipes_fora['Pts_Fora'], errors='coerce')
     
-    # Verificar os tipos de dados das colunas
-    st.write(f"Tipo de dados de Pts_Casa: {equipes_casa['Pts_Casa'].dtype}")
-    st.write(f"Tipo de dados de Pts_Fora: {equipes_fora['Pts_Fora'].dtype}")
-    
     # Adicionando os pontos das equipes nas colunas correspondentes de 'jogos_dia_validos'
     jogos_dia_validos['Pts_Casa'] = jogos_dia_validos['Time_Casa'].apply(
-        lambda x: equipes_casa.loc[x, 'Pts_Casa'] if x in equipes_casa.index else None
+        lambda x: equipes_casa.loc[x, 'Pts_Casa'] if x in equipes_casa.index else 0
     )
     
     jogos_dia_validos['Pts_Fora'] = jogos_dia_validos['Time_Fora'].apply(
-        lambda x: equipes_fora.loc[x, 'Pts_Fora'] if x in equipes_fora.index else None
+        lambda x: equipes_fora.loc[x, 'Pts_Fora'] if x in equipes_fora.index else 0
     )
     
     # Filtrar os jogos onde ambos os times existem nas respectivas tabelas
@@ -187,6 +183,7 @@ if jogos_dia_file:
     
     # Exibindo a tabela com os jogos filtrados
     st.dataframe(back_home_jogos)
+
 
 else:
     st.info("Por favor, envie o arquivo 'Jogos do dia Betfair.csv' para realizar a análise.")
