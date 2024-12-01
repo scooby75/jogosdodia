@@ -64,15 +64,32 @@ if jogos_dia_file:
     st.dataframe(jogos_dia_validos)
 
     # Análise: Back Home
+    
+    
+    # Subtítulo da análise
     st.subheader("Back Home")
+    
+    # Filtrar melhores times em casa e piores times fora de casa
     melhores_casa_filtrados = melhores_casa[melhores_casa['W'] >= 5]
     piores_away_filtrados = piores_away[piores_away['W'] <= 1]
+    
+    # Filtrar jogos do dia válidos para o "Back Home"
     back_home_jogos = jogos_dia_validos[
         jogos_dia_validos['Time_Casa'].apply(
-            lambda x: any(fuzz.partial_ratio(x, equipe) > 80 for equipe in melhores_casa_filtrados['Equipe'])
-        ) & (jogos_dia_validos['Home'] >= 1.45) & (jogos_dia_validos['Home'] <= 2.2)
+            lambda x: any(
+                fuzz.token_sort_ratio(x, equipe) > 85  # Similaridade mais robusta
+                for equipe in melhores_casa_filtrados['Equipe']
+            )
+        ) 
+        & (jogos_dia_validos['Home'] >= 1.45) 
+        & (jogos_dia_validos['Home'] <= 2.2)
     ]
-    st.dataframe(back_home_jogos)
+    
+    # Exibir resultados ou mensagem caso não existam jogos válidos
+    if back_home_jogos.empty:
+        st.write("Nenhum jogo corresponde aos critérios de 'Back Home' hoje.")
+    else:
+        st.dataframe(back_home_jogos)
 
     # Análise: Back Away
     st.subheader("Back Away")
