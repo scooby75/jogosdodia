@@ -113,7 +113,7 @@ if jogos_dia_file:
     # Análise: HA +0.25 Away
   
     st.subheader("HA +0.25 Away")
-    melhores_home_filtrados = melhores_casa[melhores_casa['W'] >= 3]
+    #melhores_home_filtrados = melhores_casa[melhores_casa['W'] >= 3]
     melhores_away_filtrados = melhores_away[melhores_away['W'] >= 4]  
     ha_25_away = jogos_dia_validos[
         jogos_dia_validos['Time_Fora'].apply(
