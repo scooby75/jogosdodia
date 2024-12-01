@@ -95,7 +95,7 @@ if jogos_dia_file:
         jogos_dia_validos['Time_Fora'].apply(
             lambda x: any(fuzz.partial_ratio(x, equipe) > 80 for equipe in piores_away_filtrados['Equipe'])
         )
-        & (jogos_dia_validos['Home'] <= 2.5)
+        & (jogos_dia_validos['Home'] >= 3.20) & (jogos_dia_validos['Away'] >= 2.2)
         & jogos_dia_validos['Time_Casa'].apply(
             lambda x: any(fuzz.partial_ratio(x, equipe) > 80 for equipe in melhores_home_filtrados['Equipe'])
         )
