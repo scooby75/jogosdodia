@@ -115,7 +115,7 @@ if jogos_dia_file:
     # Análise: HA +0.25 Away
     st.subheader("HA +0.25 Away")
     melhores_home_filtrados = melhores_casa[melhores_casa['W'] >= 3]
-    melhores_away_filtrados = melhores_fora[melhores_fora['W'] >= 3]
+    melhores_away_filtrados = melhores_fora[melhores_away['W'] >= 3]
     ha_25_away = jogos_dia_validos[
         jogos_dia_validos['Time_Fora'].apply(
             lambda x: any(fuzz.partial_ratio(x, equipe) > 80 for equipe in melhores_away_filtrados['Equipe'])
