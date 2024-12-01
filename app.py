@@ -62,12 +62,12 @@ if jogos_dia_file:
         jogos_dia_validos[coluna] = jogos_dia_validos[coluna].apply(extrair_odds)
 
     # Merge com equipes_casa e equipes_fora para adicionar pts_casa e pts_fora
-    jogos_dia_validos = jogos_dia_validos.merge(equipes_casa[['Equipe', 'pts_casa']], left_on='Time_Casa', right_on='Equipe', how='left')
-    jogos_dia_validos = jogos_dia_validos.merge(equipes_fora[['Equipe', 'pts_fora']], left_on='Time_Fora', right_on='Equipe', how='left')
+    jogos_dia_validos = jogos_dia_validos.merge(equipes_casa[['Equipe', 'Pts_Casa']], left_on='Time_Casa', right_on='Equipe', how='left')
+    jogos_dia_validos = jogos_dia_validos.merge(equipes_fora[['Equipe', 'Pts_Fora']], left_on='Time_Fora', right_on='Equipe', how='left')
 
     # Exibir os jogos válidos com as colunas de pontos
     st.subheader("Jogos válidos com Pontos")
-    st.dataframe(jogos_dia_validos[['Evento', 'Time_Casa', 'Time_Fora', 'pts_casa', 'pts_fora', 'Home', 'Away', 'The Draw']])
+    st.dataframe(jogos_dia_validos[['Evento', 'Time_Casa', 'Time_Fora', 'Pts_Casa', 'Pts_Fora', 'Home', 'Away', 'The Draw']])
 
     # Análise: Back Home
     st.subheader("Back Home")
