@@ -130,6 +130,7 @@ if jogos_dia_file:
 
     # BACK PTS    
         
+    
     # Carregar os dados das equipes da casa e fora
     equipes_casa = pd.read_csv(url_equipes_casa)
     equipes_fora = pd.read_csv(url_equipes_fora)
@@ -143,15 +144,18 @@ if jogos_dia_file:
     equipes_fora['Pts'] = pd.to_numeric(equipes_fora['Pts'], errors='coerce')
     
     # Adicionando os pontos das equipes nas colunas correspondentes de 'jogos_dia_validos'
-    jogos_dia_validos['Pts_Casa'] = jogos_dia_validos['Time_Casa'].apply(lambda x: equipes_casa.loc[x, 'Pts'] if x in equipes_casa.index else 0)
-    jogos_dia_validos['Pts_Fora'] = jogos_dia_validos['Time_Fora'].apply(lambda x: equipes_fora.loc[x, 'Pts'] if x in equipes_fora.index else 0)
+    jogos_dia_validos['Pts_Casa'] = jogos_dia_validos['Time_Casa'].apply(lambda x: equipes_casa.loc[x, 'Pts'] if x in equipes_casa.index else None)
+    jogos_dia_validos['Pts_Fora'] = jogos_dia_validos['Time_Fora'].apply(lambda x: equipes_fora.loc[x, 'Pts'] if x in equipes_fora.index else None)
+    
+    # Tratar valores ausentes (NaN) ao calcular a diferença de pontos
+    jogos_dia_validos = jogos_dia_validos.dropna(subset=['Pts_Casa', 'Pts_Fora'])
     
     # Análise: Back Home
     st.subheader("Back Home")
     
     # Filtrando jogos em que a equipe da casa tem mais de 10 pontos a mais que a equipe visitante
     back_home_jogos = jogos_dia_validos[
-        jogos_dia_validos['Pts_Casa'] - jogos_dia_validos['Pts_Fora'] > 10
+        (jogos_dia_validos['Pts_Casa'] - jogos_dia_validos['Pts_Fora']) > 10
     ]
     
     # Aplicando outros filtros (com base na sua lógica anterior)
@@ -164,7 +168,6 @@ if jogos_dia_file:
     
     # Exibindo a tabela com os jogos filtrados
     st.dataframe(back_home_jogos)
-    
 
 else:
     st.info("Por favor, envie o arquivo 'Jogos do dia Betfair.csv' para realizar a análise.")
