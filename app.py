@@ -128,62 +128,6 @@ if jogos_dia_file:
     
     st.dataframe(ha_mais_um_jogos)
 
-    # BACK PTS    
-     
-        # Carregar os dados das equipes da casa e fora
-    equipes_casa = pd.read_csv(url_equipes_casa)
-    equipes_fora = pd.read_csv(url_equipes_fora)
-    
-    # Verificar as colunas para garantir que a coluna de pontos existe
-    st.write("Colunas do DataFrame das equipes da casa:", equipes_casa.columns)
-    st.write("Colunas do DataFrame das equipes de fora:", equipes_fora.columns)
-    
-    # Adicionando a coluna de pontos das equipes
-    equipes_casa.set_index('Equipe', inplace=True)
-    equipes_fora.set_index('Equipe', inplace=True)
-    
-    # Garantir que as colunas de pontos sejam numéricas
-    equipes_casa['Pts_Casa'] = pd.to_numeric(equipes_casa['Pts_Casa'], errors='coerce')
-    equipes_fora['Pts_Fora'] = pd.to_numeric(equipes_fora['Pts_Fora'], errors='coerce')
-    
-    # Adicionando os pontos das equipes nas colunas correspondentes de 'jogos_dia_validos'
-    jogos_dia_validos['Pts_Casa'] = jogos_dia_validos['Time_Casa'].apply(
-        lambda x: equipes_casa.loc[x, 'Pts_Casa'] if x in equipes_casa.index else 0
-    )
-    
-    jogos_dia_validos['Pts_Fora'] = jogos_dia_validos['Time_Fora'].apply(
-        lambda x: equipes_fora.loc[x, 'Pts_Fora'] if x in equipes_fora.index else 0
-    )
-    
-    # Filtrar os jogos onde ambos os times existem nas respectivas tabelas
-    jogos_validos = jogos_dia_validos[
-        jogos_dia_validos['Pts_Casa'].notna() & jogos_dia_validos['Pts_Fora'].notna()
-    ]
-    
-    # Garantir que não haja valores inválidos antes da comparação
-    jogos_validos['Pts_Casa'] = jogos_validos['Pts_Casa'].fillna(0)
-    jogos_validos['Pts_Fora'] = jogos_validos['Pts_Fora'].fillna(0)
-    
-    # Exibindo as colunas para verificação
-    st.write("Colunas após adição dos pontos:", jogos_validos.columns)
-    
-    # Análise: Back Home
-    st.subheader("Back Home")
-    
-    # Filtrando jogos onde a diferença de pontos é maior que 10
-    back_home_jogos = jogos_validos[jogos_validos['Pts_Casa'] - jogos_validos['Pts_Fora'] > 10]
-    
-    # Aplicando outros filtros (com base na sua lógica anterior)
-    melhores_casa_filtrados = melhores_casa[melhores_casa['W'] >= 5]
-    back_home_jogos = back_home_jogos[
-        back_home_jogos['Time_Casa'].apply(
-            lambda x: any(fuzz.partial_ratio(x, equipe) > 80 for equipe in melhores_casa_filtrados['Equipe'])
-        ) & (back_home_jogos['Home'] >= 1.5) & (back_home_jogos['Home'] <= 2.2)
-    ]
-    
-    # Exibindo a tabela com os jogos filtrados
-    st.dataframe(back_home_jogos)
-
-
+   
 else:
     st.info("Por favor, envie o arquivo 'Jogos do dia Betfair.csv' para realizar a análise.")
