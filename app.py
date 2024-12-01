@@ -131,6 +131,10 @@ if jogos_dia_file:
     # BACK PTS    
     
     
+    import pandas as pd
+    import streamlit as st
+    from fuzzywuzzy import fuzz
+    
     # Carregar os dados das equipes da casa e fora
     equipes_casa = pd.read_csv(url_equipes_casa)
     equipes_fora = pd.read_csv(url_equipes_fora)
@@ -140,24 +144,28 @@ if jogos_dia_file:
     st.write("Colunas do DataFrame das equipes de fora:", equipes_fora.columns)
     
     # Adicionando a coluna de pontos das equipes
-    # Aqui, substituímos 'Pts' por 'Pts_Casa' e 'Pts_Fora'
     equipes_casa.set_index('Equipe', inplace=True)
     equipes_fora.set_index('Equipe', inplace=True)
     
-    # Garantir que as colunas de pontos sejam numéricas e tratar valores ausentes
+    # Garantir que as colunas de pontos sejam numéricas
     equipes_casa['Pts_Casa'] = pd.to_numeric(equipes_casa['Pts_Casa'], errors='coerce')
     equipes_fora['Pts_Fora'] = pd.to_numeric(equipes_fora['Pts_Fora'], errors='coerce')
     
+    # Verificar os tipos de dados das colunas
+    st.write(f"Tipo de dados de Pts_Casa: {equipes_casa['Pts_Casa'].dtype}")
+    st.write(f"Tipo de dados de Pts_Fora: {equipes_fora['Pts_Fora'].dtype}")
+    
     # Adicionando os pontos das equipes nas colunas correspondentes de 'jogos_dia_validos'
     jogos_dia_validos['Pts_Casa'] = jogos_dia_validos['Time_Casa'].apply(
-        lambda x: equipes_casa.loc[x, 'Pts_Casa'] if x in equipes_casa.index else None
+        lambda x: equipes_casa.loc[x, 'Pts_Casa'] if x in equipes_casa.index else 0
     )
     jogos_dia_validos['Pts_Fora'] = jogos_dia_validos['Time_Fora'].apply(
-        lambda x: equipes_fora.loc[x, 'Pts_Fora'] if x in equipes_fora.index else None
+        lambda x: equipes_fora.loc[x, 'Pts_Fora'] if x in equipes_fora.index else 0
     )
     
-    # Remover os jogos com valores ausentes nas colunas de pontos
-    jogos_dia_validos = jogos_dia_validos.dropna(subset=['Pts_Casa', 'Pts_Fora'])
+    # Garantir que não haja valores inválidos antes da comparação
+    jogos_dia_validos['Pts_Casa'] = jogos_dia_validos['Pts_Casa'].fillna(0)
+    jogos_dia_validos['Pts_Fora'] = jogos_dia_validos['Pts_Fora'].fillna(0)
     
     # Análise: Back Home
     st.subheader("Back Home")
@@ -168,7 +176,6 @@ if jogos_dia_file:
     ]
     
     # Aplicando outros filtros (com base na sua lógica anterior)
-    # Filtra para equipes que têm pelo menos 5 vitórias
     melhores_casa_filtrados = melhores_casa[melhores_casa['W'] >= 5]
     back_home_jogos = back_home_jogos[
         back_home_jogos['Time_Casa'].apply(
