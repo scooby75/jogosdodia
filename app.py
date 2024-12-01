@@ -130,11 +130,7 @@ if jogos_dia_file:
 
     # BACK PTS    
     
-    
-    import pandas as pd
-    import streamlit as st
-    from fuzzywuzzy import fuzz
-    
+       
     # Carregar os dados das equipes da casa e fora
     equipes_casa = pd.read_csv(url_equipes_casa)
     equipes_fora = pd.read_csv(url_equipes_fora)
