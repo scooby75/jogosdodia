@@ -31,7 +31,7 @@ if jogos_dia_file:
     melhores_casa = pd.read_csv(url_melhores_casa)
     melhores_away = pd.read_csv(url_melhores_away)
     piores_away = pd.read_csv(url_piores_away)
-    equipes_fora = pd.read.csv(url_equipes_fora)
+    #equipes_fora = pd.read.csv(url_equipes_fora)
 
     # Verificar e corrigir o formato da coluna Evento
     st.subheader("Verificação dos dados na coluna 'Evento'")
