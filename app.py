@@ -9,6 +9,7 @@ st.title("Comparação de Jogos do Dia")
 url_melhores_casa = "https://raw.githubusercontent.com/scooby75/jogosdodia/main/Melhores_Equipes_Casa.csv"
 url_melhores_away = "https://raw.githubusercontent.com/scooby75/jogosdodia/main/Melhores_Equipes_Fora.csv"
 url_piores_away = "https://raw.githubusercontent.com/scooby75/jogosdodia/main/Piores_Equipes_Fora.csv"
+url_equipes_fora = "https://github.com/scooby75/jogosdodia/blob/main/equipes_fora.csv" 
 
 # Função para limpar e extrair odds
 def extrair_odds(valor):
@@ -30,6 +31,7 @@ if jogos_dia_file:
     melhores_casa = pd.read_csv(url_melhores_casa)
     melhores_away = pd.read_csv(url_melhores_away)
     piores_away = pd.read_csv(url_piores_away)
+    equipes_fora = pd.read.csv(url_equipes_fora)
 
     # Verificar e corrigir o formato da coluna Evento
     st.subheader("Verificação dos dados na coluna 'Evento'")
@@ -71,7 +73,7 @@ if jogos_dia_file:
     
     # Filtrar melhores times em casa e piores times fora de casa
     melhores_casa_filtrados = melhores_casa[melhores_casa['W'] >= 5]
-    piores_away_filtrados = piores_away[piores_away['W'] <= 1]
+    url_equipes_fora = equipes_fora[equipes_fora['W'] <= 1]
     
     # Filtrar jogos do dia válidos para o "Back Home"
     back_home_jogos = jogos_dia_validos[
