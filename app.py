@@ -129,25 +129,31 @@ if jogos_dia_file:
     st.dataframe(ha_mais_um_jogos)
 
     # BACK PTS    
-        
+    
+    
     # Carregar os dados das equipes da casa e fora
     equipes_casa = pd.read_csv(url_equipes_casa)
     equipes_fora = pd.read_csv(url_equipes_fora)
     
+    # Verificar as colunas para garantir que a coluna de pontos existe
+    st.write("Colunas do DataFrame das equipes da casa:", equipes_casa.columns)
+    st.write("Colunas do DataFrame das equipes de fora:", equipes_fora.columns)
+    
     # Adicionando a coluna de pontos das equipes
+    # Aqui, substituímos 'Pts' por 'Pts_Casa' e 'Pts_Fora'
     equipes_casa.set_index('Equipe', inplace=True)
     equipes_fora.set_index('Equipe', inplace=True)
     
-    # Garantir que as colunas 'Pts' sejam numéricas e tratar valores ausentes
-    equipes_casa['Pts'] = pd.to_numeric(equipes_casa['Pts'], errors='coerce')
-    equipes_fora['Pts'] = pd.to_numeric(equipes_fora['Pts'], errors='coerce')
+    # Garantir que as colunas de pontos sejam numéricas e tratar valores ausentes
+    equipes_casa['Pts_Casa'] = pd.to_numeric(equipes_casa['Pts_Casa'], errors='coerce')
+    equipes_fora['Pts_Fora'] = pd.to_numeric(equipes_fora['Pts_Fora'], errors='coerce')
     
     # Adicionando os pontos das equipes nas colunas correspondentes de 'jogos_dia_validos'
     jogos_dia_validos['Pts_Casa'] = jogos_dia_validos['Time_Casa'].apply(
-        lambda x: equipes_casa.loc[x, 'Pts'] if x in equipes_casa.index else None
+        lambda x: equipes_casa.loc[x, 'Pts_Casa'] if x in equipes_casa.index else None
     )
     jogos_dia_validos['Pts_Fora'] = jogos_dia_validos['Time_Fora'].apply(
-        lambda x: equipes_fora.loc[x, 'Pts'] if x in equipes_fora.index else None
+        lambda x: equipes_fora.loc[x, 'Pts_Fora'] if x in equipes_fora.index else None
     )
     
     # Remover os jogos com valores ausentes nas colunas de pontos
