@@ -67,12 +67,20 @@ if jogos_dia_file:
 
     # Análise: Back Home
     st.subheader("Back Home")
+    # Filtrando as equipes e os jogos
     melhores_casa_filtrados = melhores_casa[melhores_casa['W'] >= 5]
     back_home_jogos = jogos_dia_validos[
         jogos_dia_validos['Time_Casa'].apply(
             lambda x: any(fuzz.partial_ratio(x, equipe) > 80 for equipe in melhores_casa_filtrados['Equipe'])
         ) & (jogos_dia_validos['Home'] >= 1.45) & (jogos_dia_validos['Home'] <= 2.2)
     ]
+    
+    # Adicionando as colunas 'GD' e 'Pts' ao DataFrame de jogos filtrados
+    back_home_jogos = back_home_jogos.merge(melhores_casa_filtrados[['Equipe', 'GD', 'Pts']], 
+                                            left_on='Time_Casa', right_on='Equipe', 
+                                            how='left')
+    
+    # Exibindo os jogos com as colunas adicionais
     st.dataframe(back_home_jogos)
 
     # Análise: Back Away
