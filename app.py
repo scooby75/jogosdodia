@@ -140,21 +140,31 @@ if jogos_dia_file:
     
     st.dataframe(ha_mais_um_jogos)
 
-    # Análise: Back Home (GD)
+   # Análise: Back Home (GD)
     st.subheader("Back Home (GD)")
     
-    # Filtrar equipes onde o GD da casa é maior que o GD do visitante
+    # Criar dicionários para mapear equipes ao seu GD
+    gd_casa_dict = dict(zip(melhores_casa['Equipe'], melhores_casa['GD']))
+    gd_fora_dict = dict(zip(melhores_away['Equipe'], melhores_away['GD']))
+    
+    # Filtrar jogos onde o GD da equipe da casa é maior que o GD da equipe visitante
+    def verifica_back_home_gd(time_casa, time_fora):
+        # Comparar apenas se ambas as equipes estiverem nos dicionários
+        if time_casa in gd_casa_dict and time_fora in gd_fora_dict:
+            return gd_casa_dict[time_casa] > gd_fora_dict[time_fora]
+        return False
+    
+    # Aplicar a lógica de filtragem
     back_home_gd_jogos = jogos_dia_validos[
-        jogos_dia_validos['Time_Casa'].apply(
-            lambda casa: any(
-                fuzz.partial_ratio(casa, equipe_casa) > 80
-                and gd_casa > gd_fora
-                for equipe_casa, gd_casa in zip(melhores_casa['Equipe'], melhores_casa['GD'])
-                for equipe_fora, gd_fora in zip(melhores_away['Equipe'], melhores_away['GD'])
-            )
+        jogos_dia_validos.apply(
+            lambda row: verifica_back_home_gd(row['Time_Casa'], row['Time_Fora']),
+            axis=1
         )
     ]
-    
+
+# Exibir os jogos filtrados
+st.dataframe(back_home_gd_jogos)
+
     # Exibir os jogos filtrados
     st.dataframe(back_home_gd_jogos)
 
