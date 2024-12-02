@@ -162,9 +162,6 @@ if jogos_dia_file:
         )
     ]
 
-# Exibir os jogos filtrados
-st.dataframe(back_home_gd_jogos)
-
     # Exibir os jogos filtrados
     st.dataframe(back_home_gd_jogos)
 
