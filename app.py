@@ -111,19 +111,15 @@ if jogos_dia_file:
     st.dataframe(ha_pos_jogos)
 
     # Análise: HA +0.25 Away
-  
     st.subheader("HA +0.25 Away")
-    
-    melhores_away_filtrados = melhores_away[melhores_away['W'] >= 4]  
+    melhores_away_filtrados = melhores_away[melhores_away['W'] >= 4]
     ha_25_away = jogos_dia_validos[
         jogos_dia_validos['Time_Fora'].apply(
             lambda x: any(fuzz.partial_ratio(x, equipe) > 80 for equipe in melhores_away_filtrados['Equipe'])
         )
         & (jogos_dia_validos['Home'] >= 1.80) & (jogos_dia_validos['Away'] >= 1.8)
-        
     ]
     st.dataframe(ha_25_away)
-
 
     # Análise: HA +1
     st.subheader("HA +1")
@@ -131,18 +127,14 @@ if jogos_dia_file:
         (melhores_away['W'] + melhores_away['D']) >= 6
         & (melhores_away['GD'] > 0)
     ]
-    
     ha_mais_um_jogos = jogos_dia_validos[
         jogos_dia_validos['Time_Fora'].apply(
             lambda x: any(fuzz.partial_ratio(x, equipe) > 80 for equipe in ha_mais_um_filtrados['Equipe'])
         ) & (jogos_dia_validos['Home'] >= 2.60) & (jogos_dia_validos['Away'] >= 2.4)
     ]
-    
     st.dataframe(ha_mais_um_jogos)
 
-   # Análise: Back Home (GD)
-  
-     # Análise: Back Home (GD 2x, Pts e Odd Home entre 1.45 e 2.2)
+    # Análise: Back Home (GD)
     st.subheader("Back Home (GD)")
     
     # Criar dicionários para mapear equipes ao seu GD e Pts
@@ -151,36 +143,12 @@ if jogos_dia_file:
     pts_casa_dict = dict(zip(melhores_casa['Equipe'], melhores_casa['Pts']))
     pts_fora_dict = dict(zip(melhores_away['Equipe'], melhores_away['Pts']))
     
-    # Filtrar jogos onde o GD, Pts e Odd Home atendem aos critérios
-    def verifica_back_home_gd_pts_odd_intervalo(time_casa, time_fora, odd_home):
-        # Verifica se ambas as equipes estão nos dicionários
-        if (
-            time_casa in gd_casa_dict and 
-            time_fora in gd_fora_dict and 
-            time_casa in pts_casa_dict and 
-            time_fora in pts_fora_dict
-        ):
-            # Verifica condições de GD (2x maior), Pts e Odd Home no intervalo
-            return (
-                gd_casa_dict[time_casa] >= 2 * gd_fora_dict[time_fora] and
-                pts_casa_dict[time_casa] > pts_fora_dict[time_fora] and
-                1.45 <= odd_home <= 2.2
-            )
-        return False
-    
-    # Aplicar a lógica de filtragem
-    back_home_gd_pts_odd_intervalo_jogos = jogos_dia_validos[
+    # Filtrar jogos onde o GD, Pts e Odds estejam dentro do intervalo esperado
+    jogos_back_home_gd_pts = jogos_dia_validos[
         jogos_dia_validos.apply(
-            lambda row: verifica_back_home_gd_pts_odd_intervalo(row['Time_Casa'], row['Time_Fora'], row['Odd_Home']),
+            lambda row: verifica_back_home_gd_pts_odd_intervalo(row['Time_Casa'], row['Time_Fora'], row['Home']),
             axis=1
         )
     ]
-
-    # Exibir os jogos filtrados
-    st.dataframe(back_home_gd_pts_odd_intervalo_jogos)
-
-
-
-
-else:
-    st.info("Por favor, envie o arquivo 'Jogos do dia Betfair.csv' para realizar a análise.")
+    st.dataframe(jogos_back_home_gd_pts)
+    
