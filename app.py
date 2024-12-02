@@ -141,29 +141,42 @@ if jogos_dia_file:
     st.dataframe(ha_mais_um_jogos)
 
    # Análise: Back Home (GD)
-    st.subheader("Back Home (GD)")
+  
+    st.subheader("Back Home (GD e Pts)")
     
-    # Criar dicionários para mapear equipes ao seu GD
+    # Criar dicionários para mapear equipes ao seu GD e Pts
     gd_casa_dict = dict(zip(melhores_casa['Equipe'], melhores_casa['GD']))
     gd_fora_dict = dict(zip(melhores_away['Equipe'], melhores_away['GD']))
+    pts_casa_dict = dict(zip(melhores_casa['Equipe'], melhores_casa['Pts']))
+    pts_fora_dict = dict(zip(melhores_away['Equipe'], melhores_away['Pts']))
     
-    # Filtrar jogos onde o GD da equipe da casa é maior que o GD da equipe visitante
-    def verifica_back_home_gd(time_casa, time_fora):
-        # Comparar apenas se ambas as equipes estiverem nos dicionários
-        if time_casa in gd_casa_dict and time_fora in gd_fora_dict:
-            return gd_casa_dict[time_casa] > gd_fora_dict[time_fora]
+    # Filtrar jogos onde o GD e Pts da equipe da casa são maiores que os da equipe visitante
+    def verifica_back_home_gd_pts(time_casa, time_fora):
+        # Verifica se ambas as equipes estão nos dicionários
+        if (
+            time_casa in gd_casa_dict and 
+            time_fora in gd_fora_dict and 
+            time_casa in pts_casa_dict and 
+            time_fora in pts_fora_dict
+        ):
+            # Verifica condições de GD e Pts
+            return (
+                gd_casa_dict[time_casa] > gd_fora_dict[time_fora] and
+                pts_casa_dict[time_casa] > pts_fora_dict[time_fora]
+            )
         return False
     
     # Aplicar a lógica de filtragem
-    back_home_gd_jogos = jogos_dia_validos[
+    back_home_gd_pts_jogos = jogos_dia_validos[
         jogos_dia_validos.apply(
-            lambda row: verifica_back_home_gd(row['Time_Casa'], row['Time_Fora']),
+            lambda row: verifica_back_home_gd_pts(row['Time_Casa'], row['Time_Fora']),
             axis=1
         )
     ]
-
+    
     # Exibir os jogos filtrados
-    st.dataframe(back_home_gd_jogos)
+    st.dataframe(back_home_gd_pts_jogos)
+
 
 
 else:
