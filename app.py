@@ -142,7 +142,8 @@ if jogos_dia_file:
 
    # Análise: Back Home (GD)
   
-    st.subheader("Back Home (GD e Pts)")
+     # Análise: Back Home (GD 2x, Pts e Odd Home entre 1.45 e 2.2)
+    st.subheader("Back Home (GD)")
     
     # Criar dicionários para mapear equipes ao seu GD e Pts
     gd_casa_dict = dict(zip(melhores_casa['Equipe'], melhores_casa['GD']))
@@ -150,8 +151,8 @@ if jogos_dia_file:
     pts_casa_dict = dict(zip(melhores_casa['Equipe'], melhores_casa['Pts']))
     pts_fora_dict = dict(zip(melhores_away['Equipe'], melhores_away['Pts']))
     
-    # Filtrar jogos onde o GD e Pts da equipe da casa são maiores que os da equipe visitante
-    def verifica_back_home_gd_pts(time_casa, time_fora):
+    # Filtrar jogos onde o GD, Pts e Odd Home atendem aos critérios
+    def verifica_back_home_gd_pts_odd_intervalo(time_casa, time_fora, odd_home):
         # Verifica se ambas as equipes estão nos dicionários
         if (
             time_casa in gd_casa_dict and 
@@ -159,23 +160,25 @@ if jogos_dia_file:
             time_casa in pts_casa_dict and 
             time_fora in pts_fora_dict
         ):
-            # Verifica condições de GD e Pts
+            # Verifica condições de GD (2x maior), Pts e Odd Home no intervalo
             return (
                 gd_casa_dict[time_casa] >= 2 * gd_fora_dict[time_fora] and
-                pts_casa_dict[time_casa] > pts_fora_dict[time_fora]
+                pts_casa_dict[time_casa] > pts_fora_dict[time_fora] and
+                1.45 <= odd_home <= 2.2
             )
         return False
     
     # Aplicar a lógica de filtragem
-    back_home_gd_pts_jogos = jogos_dia_validos[
+    back_home_gd_pts_odd_intervalo_jogos = jogos_dia_validos[
         jogos_dia_validos.apply(
-            lambda row: verifica_back_home_gd_pts(row['Time_Casa'], row['Time_Fora']),
+            lambda row: verifica_back_home_gd_pts_odd_intervalo(row['Time_Casa'], row['Time_Fora'], row['Odd_Home']),
             axis=1
         )
     ]
-    
-    # Exibir os jogos filtrados
-    st.dataframe(back_home_gd_pts_jogos)
+
+# Exibir os jogos filtrados
+st.dataframe(back_home_gd_pts_odd_intervalo_jogos)
+
 
 
 
