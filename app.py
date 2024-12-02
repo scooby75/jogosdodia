@@ -140,5 +140,24 @@ if jogos_dia_file:
     
     st.dataframe(ha_mais_um_jogos)
 
+    # Análise: Back Home (GD)
+    st.subheader("Back Home (GD)")
+    
+    # Filtrar equipes onde o GD da casa é maior que o GD do visitante
+    back_home_gd_jogos = jogos_dia_validos[
+        jogos_dia_validos['Time_Casa'].apply(
+            lambda casa: any(
+                fuzz.partial_ratio(casa, equipe_casa) > 80
+                and gd_casa > gd_fora
+                for equipe_casa, gd_casa in zip(melhores_casa['Equipe'], melhores_casa['GD'])
+                for equipe_fora, gd_fora in zip(melhores_away['Equipe'], melhores_away['GD'])
+            )
+        )
+    ]
+    
+    # Exibir os jogos filtrados
+    st.dataframe(back_home_gd_jogos)
+
+
 else:
     st.info("Por favor, envie o arquivo 'Jogos do dia Betfair.csv' para realizar a análise.")
