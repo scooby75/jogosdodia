@@ -21,6 +21,23 @@ def extrair_odds(valor):
             return None
     return valor
 
+# Função para verificar GD, Pts e odds dentro do intervalo esperado
+def verifica_back_home_gd_pts_odd_intervalo(time_casa, time_fora, odd_home):
+    # Criar as verificações para os valores de GD e Pts
+    gd_casa = gd_casa_dict.get(time_casa, 0)  # Default to 0 if not found
+    gd_fora = gd_fora_dict.get(time_fora, 0)
+    pts_casa = pts_casa_dict.get(time_casa, 0)
+    pts_fora = pts_fora_dict.get(time_fora, 0)
+
+    # Defina os intervalos desejados para a análise
+    if 1.45 <= odd_home <= 2.2:  # Condição para odds de time da casa
+        # Condições baseadas em GD e Pts (exemplo, ajuste conforme necessário)
+        if gd_casa > 0 and pts_casa >= 6:
+            return True
+        elif gd_fora < 0 and pts_fora <= 4:
+            return True
+    return False
+
 # Upload do arquivo "Jogos do Dia"
 jogos_dia_file = st.file_uploader("Envie o arquivo 'Jogos do dia Betfair.csv'", type="csv")
 
@@ -130,25 +147,7 @@ if jogos_dia_file:
     ha_mais_um_jogos = jogos_dia_validos[
         jogos_dia_validos['Time_Fora'].apply(
             lambda x: any(fuzz.partial_ratio(x, equipe) > 80 for equipe in ha_mais_um_filtrados['Equipe'])
-        ) & (jogos_dia_validos['Home'] >= 2.60) & (jogos_dia_validos['Away'] >= 2.4)
+        )
+        & (jogos_dia_validos['Home'] >= 1.70) & (jogos_dia_validos['Away'] >= 1.90)
     ]
     st.dataframe(ha_mais_um_jogos)
-
-    # Análise: Back Home (GD)
-    st.subheader("Back Home (GD)")
-    
-    # Criar dicionários para mapear equipes ao seu GD e Pts
-    gd_casa_dict = dict(zip(melhores_casa['Equipe'], melhores_casa['GD']))
-    gd_fora_dict = dict(zip(melhores_away['Equipe'], melhores_away['GD']))
-    pts_casa_dict = dict(zip(melhores_casa['Equipe'], melhores_casa['Pts']))
-    pts_fora_dict = dict(zip(melhores_away['Equipe'], melhores_away['Pts']))
-    
-    # Filtrar jogos onde o GD, Pts e Odds estejam dentro do intervalo esperado
-    jogos_back_home_gd_pts = jogos_dia_validos[
-        jogos_dia_validos.apply(
-            lambda row: verifica_back_home_gd_pts_odd_intervalo(row['Time_Casa'], row['Time_Fora'], row['Home']),
-            axis=1
-        )
-    ]
-    st.dataframe(jogos_back_home_gd_pts)
-    
