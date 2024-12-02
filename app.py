@@ -21,23 +21,6 @@ def extrair_odds(valor):
             return None
     return valor
 
-# Função para verificar GD, Pts e odds dentro do intervalo esperado
-def verifica_back_home_gd_pts_odd_intervalo(time_casa, time_fora, odd_home):
-    # Criar as verificações para os valores de GD e Pts
-    gd_casa = gd_casa_dict.get(time_casa, 0)  # Default to 0 if not found
-    gd_fora = gd_fora_dict.get(time_fora, 0)
-    pts_casa = pts_casa_dict.get(time_casa, 0)
-    pts_fora = pts_fora_dict.get(time_fora, 0)
-
-    # Defina os intervalos desejados para a análise
-    if 1.45 <= odd_home <= 2.2:  # Condição para odds de time da casa
-        # Condições baseadas em GD e Pts (exemplo, ajuste conforme necessário)
-        if gd_casa > 0 and pts_casa >= 6:
-            return True
-        elif gd_fora < 0 and pts_fora <= 4:
-            return True
-    return False
-
 # Upload do arquivo "Jogos do Dia"
 jogos_dia_file = st.file_uploader("Envie o arquivo 'Jogos do dia Betfair.csv'", type="csv")
 
