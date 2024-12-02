@@ -49,7 +49,7 @@ if jogos_dia_file:
 
     # Filtrar jogos que não contêm palavras-chave indesejadas
     palavras_indesejadas = (
-        'UEFA|AFC Champions|Reservas|Friendlies Women\'s International|U21|English Premier League 2|Israeli Cup|Friendly Matches|Malaysian Cup|Copa de França|Copa de Inglaterra|Scottish FA Cup|Sub23|U23'
+        'UEFA|AFC Champions|Reservas|Friendlies Women\'s International|U21|English Premier League 2|Israeli Cup|Friendly Matches|Malaysian Cup|Copa de França|Copa de Inglaterra|Scottish FA Cup'
     )
     jogos_dia_validos = jogos_dia_validos[~jogos_dia_validos['Competição'].str.contains(palavras_indesejadas, case=False, na=False)]
 
@@ -67,26 +67,12 @@ if jogos_dia_file:
 
     # Análise: Back Home
     st.subheader("Back Home")
-    # Filtrando as equipes e os jogos
     melhores_casa_filtrados = melhores_casa[melhores_casa['W'] >= 5]
-    piores_away_filtrados = piores_away[piores_away['W'] <= 2]
-    
     back_home_jogos = jogos_dia_validos[
         jogos_dia_validos['Time_Casa'].apply(
             lambda x: any(fuzz.partial_ratio(x, equipe) > 80 for equipe in melhores_casa_filtrados['Equipe'])
         ) & (jogos_dia_validos['Home'] >= 1.45) & (jogos_dia_validos['Home'] <= 2.2)
     ]
-    
-    # Adicionando as colunas 'GD' e 'Pts' de 'melhores_casa' e 'melhores_away' ao DataFrame de jogos filtrados
-    back_home_jogos = back_home_jogos.merge(melhores_casa_filtrados[['Equipe', 'GD', 'Pts']], 
-                                            left_on='Time_Casa', right_on='Equipe', 
-                                            how='left', suffixes=('_Home', '_Casa'))
-    
-    back_home_jogos = back_home_jogos.merge(piores_away_filtrados[['Equipe', 'GD', 'Pts']], 
-                                            left_on='Time_Fora', right_on='Equipe', 
-                                            how='left', suffixes=('_Home', '_Away'))
-    
-    # Exibindo os jogos com as colunas adicionais
     st.dataframe(back_home_jogos)
 
     # Análise: Back Away
@@ -125,15 +111,19 @@ if jogos_dia_file:
     st.dataframe(ha_pos_jogos)
 
     # Análise: HA +0.25 Away
+  
     st.subheader("HA +0.25 Away")
-    melhores_away_filtrados = melhores_away[melhores_away['W'] >= 4]
+    
+    melhores_away_filtrados = melhores_away[melhores_away['W'] >= 4]  
     ha_25_away = jogos_dia_validos[
         jogos_dia_validos['Time_Fora'].apply(
             lambda x: any(fuzz.partial_ratio(x, equipe) > 80 for equipe in melhores_away_filtrados['Equipe'])
         )
         & (jogos_dia_validos['Home'] >= 1.80) & (jogos_dia_validos['Away'] >= 1.8)
+        
     ]
     st.dataframe(ha_25_away)
+
 
     # Análise: HA +1
     st.subheader("HA +1")
@@ -141,10 +131,14 @@ if jogos_dia_file:
         (melhores_away['W'] + melhores_away['D']) >= 6
         & (melhores_away['GD'] > 0)
     ]
+    
     ha_mais_um_jogos = jogos_dia_validos[
         jogos_dia_validos['Time_Fora'].apply(
             lambda x: any(fuzz.partial_ratio(x, equipe) > 80 for equipe in ha_mais_um_filtrados['Equipe'])
-        )
-        & (jogos_dia_validos['Home'] >= 1.70) & (jogos_dia_validos['Away'] >= 1.90)
+        ) & (jogos_dia_validos['Home'] >= 2.60) & (jogos_dia_validos['Away'] >= 2.4)
     ]
+    
     st.dataframe(ha_mais_um_jogos)
+
+else:
+    st.info("Por favor, envie o arquivo 'Jogos do dia Betfair.csv' para realizar a análise.")
