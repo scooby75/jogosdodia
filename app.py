@@ -161,7 +161,7 @@ if jogos_dia_file:
         ):
             # Verifica condições de GD e Pts
             return (
-                gd_casa_dict[time_casa] > gd_fora_dict[time_fora] and
+                gd_casa_dict[time_casa] >= 2 * gd_fora_dict[time_fora] and
                 pts_casa_dict[time_casa] > pts_fora_dict[time_fora]
             )
         return False
