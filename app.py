@@ -66,6 +66,7 @@ if jogos_dia_file:
     st.dataframe(jogos_dia_validos)
 
     # Análise: Back Home
+    st.subheader("Back Home")
 
     # Converter W para numérico
     equipes_fora['W'] = pd.to_numeric(equipes_fora['W'], errors='coerce')
