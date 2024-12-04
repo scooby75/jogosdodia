@@ -95,6 +95,14 @@ if jogos_dia_file:
     
     # Exibir os jogos filtrados
     st.dataframe(back_home_jogos)
+    # Verificar tipos de dados
+    print(equipes_fora.dtypes)
+    
+    # Exibir uma amostra dos dados de equipes_fora
+    print(equipes_fora.head())
+    # Checar valores únicos da coluna W
+    print(equipes_fora['W'].unique())
+
 
     # Análise: Back Away
     st.subheader("Back Away")
