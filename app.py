@@ -67,6 +67,7 @@ if jogos_dia_file:
 
     # Análise: Back Home  
    
+    print(jogos_dia_validos.columns)
 
     # Converter W para numérico
     equipes_casa['W'] = pd.to_numeric(equipes_casa['W'], errors='coerce')
