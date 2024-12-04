@@ -66,13 +66,14 @@ if jogos_dia_file:
     st.dataframe(jogos_dia_validos)
 
     # Análise: Back Home
+# Análise: Back Home
     st.subheader("Back Home")
-
+    
     # Converter W para numérico
     equipes_casa['W'] = pd.to_numeric(equipes_casa['W'], errors='coerce')
     equipes_fora['W'] = pd.to_numeric(equipes_fora['W'], errors='coerce')
-
-    # Exibir as colunas 'W' de equipe_casa e equipe_fora
+    
+    # Exibir as colunas 'W' de equipes_casa e equipes_fora
     st.dataframe(equipes_casa[['Equipe', 'W']], use_container_width=True)
     st.dataframe(equipes_fora[['Equipe', 'W']], use_container_width=True)
     
@@ -103,9 +104,16 @@ if jogos_dia_file:
         ) & (jogos_dia_validos['Home'] >= 1.45) & (jogos_dia_validos['Home'] <= 2.2)
     ]
     
-    # Exibir os jogos filtrados
-    st.dataframe(back_home_jogos)
-   
+    # Exibir os jogos filtrados com a coluna 'W'
+    if not back_home_jogos.empty:
+        colunas_selecionadas = ['Time_Casa', 'Time_Fora', 'W']
+        if all(col in back_home_jogos.columns for col in colunas_selecionadas):
+            st.dataframe(back_home_jogos[colunas_selecionadas], use_container_width=True)
+        else:
+            st.warning("A coluna 'W' não está presente nos dados filtrados.")
+    else:
+        st.warning("Nenhum jogo atende aos critérios do filtro.")
+
 
 
     # Análise: Back Away
