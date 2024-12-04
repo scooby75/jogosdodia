@@ -66,13 +66,34 @@ if jogos_dia_file:
     st.dataframe(jogos_dia_validos)
 
     # Análise: Back Home
-    st.subheader("Back Home")
-    melhores_casa_filtrados = melhores_casa[melhores_casa['W'] >= 5]
+    # Filtrar as melhores equipes jogando em casa
+    melhores_casa_filtrados = equipes_casa[equipes_casa['W'] >= 5]
+    
+    # Filtrar as piores equipes jogando fora de casa
+    piores_fora_filtrados = equipes_fora[equipes_fora['W'] <= 1]
+    
+    # Preprocessar nomes das equipes para melhorar eficiência
+    melhores_casa_nomes = melhores_casa_filtrados['Equipe'].str.strip().str.lower()
+    piores_fora_nomes = piores_fora_filtrados['Equipe'].str.strip().str.lower()
+    
+    # Função para verificar similaridade com times bons em casa e ruins fora
+    def verifica_criterios(time_casa, time_fora):
+        time_casa_normalizado = time_casa.strip().lower()
+        time_fora_normalizado = time_fora.strip().lower()
+    
+        casa_match = any(fuzz.partial_ratio(time_casa_normalizado, equipe) > 80 for equipe in melhores_casa_nomes)
+        fora_match = any(fuzz.partial_ratio(time_fora_normalizado, equipe) > 80 for equipe in piores_fora_nomes)
+        
+        return casa_match and fora_match
+    
+    # Aplicar filtro nos jogos do dia
     back_home_jogos = jogos_dia_validos[
-        jogos_dia_validos['Time_Casa'].apply(
-            lambda x: any(fuzz.partial_ratio(x, equipe) > 80 for equipe in melhores_casa_filtrados['Equipe'])
+        jogos_dia_validos.apply(
+            lambda row: verifica_criterios(row['Time_Casa'], row['Time_Fora']), axis=1
         ) & (jogos_dia_validos['Home'] >= 1.45) & (jogos_dia_validos['Home'] <= 2.2)
     ]
+    
+    # Exibir os jogos filtrados
     st.dataframe(back_home_jogos)
 
     # Análise: Back Away
