@@ -67,7 +67,12 @@ if jogos_dia_file:
 
     # Análise: Back Home
     st.subheader("Back Home")
-    melhores_casa_filtrados = melhores_casa[melhores_casa['W'] >= 5]
+
+    equipes_casa['W'] = pd.to_numeric(equipes_casa['W'], errors='coerce')
+    equipes_fora['W'] = pd.to_numeric(equipes_fora['W'], errors='coerce')
+
+    melhores_casa_filtrados = equipes_casa[equipes_casa['W'] >= 5]
+    piores_fora_filtrados = equipes_fora[equipes_fora['W'] <= 1]
     back_home_jogos = jogos_dia_validos[
         jogos_dia_validos['Time_Casa'].apply(
             lambda x: any(fuzz.partial_ratio(x, equipe) > 80 for equipe in melhores_casa_filtrados['Equipe'])
