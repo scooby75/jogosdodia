@@ -60,13 +60,14 @@ Standard Liege,8,5,2,1,8,4,4,17,belgium
 Anderlecht,8,4,3,1,17,5,12,15,belgium
 Sint-Truiden,8,3,4,1,13,12,1,13,belgium
 OH Leuven,8,2,5,1,9,6,3,11,belgium
+Gualberto V. SJ,8,6,2,0,26,5,21,20,bolivia2
 Wilstermann,8,5,3,0,17,6,11,18,bolivia2
 The Strongest,8,5,3,0,17,7,10,18,bolivia2
-Gualberto V. SJ,8,5,2,1,22,5,17,17,bolivia2
 Bolivar,8,5,2,1,17,4,13,17,bolivia2
 Aurora,8,5,2,1,14,4,10,17,bolivia2
+Blooming,8,5,2,1,15,8,7,17,bolivia2
+Corinthians,8,7,1,0,22,7,15,22,brazil
 Internacional,8,7,1,0,18,4,14,22,brazil
-Corinthians,8,6,2,0,20,8,12,20,brazil
 Fortaleza,8,6,2,0,12,2,10,20,brazil
 Sao Paulo,8,6,1,1,15,8,7,19,brazil
 Botafogo,8,4,4,0,13,4,9,16,brazil
@@ -83,7 +84,7 @@ Avai,8,4,3,1,10,5,5,15,brazil2
 Guarani,8,3,4,1,6,5,1,13,brazil2
 Ludogorets,8,7,1,0,17,1,16,22,bulgaria
 Arda,8,7,1,0,15,6,9,22,bulgaria
-Cherno More,8,5,3,0,11,3,8,18,bulgaria
+Cherno More,8,6,2,0,15,3,12,20,bulgaria
 Botev Plovdiv,7,5,1,1,10,4,6,16,bulgaria
 Forge,8,7,0,1,16,4,12,21,canada
 HFX Wanderers,8,5,3,0,17,9,8,18,canada
@@ -169,17 +170,16 @@ Norwich City,8,4,3,1,23,11,12,15,england2
 Plymouth,8,4,3,1,15,11,4,15,england2
 Preston,8,2,5,1,9,7,2,11,england2
 West Brom,8,2,5,1,4,3,1,11,england2
-Wrexham,8,7,1,0,17,2,15,22,england3
-Reading,7,6,0,1,14,4,10,18,england3
+Wrexham,8,7,1,0,15,2,13,22,england3
+Reading,8,7,0,1,17,4,13,21,england3
 Wycombe,7,6,0,1,14,5,9,18,england3
 Birmingham City,7,5,2,0,13,6,7,17,england3
-Charlton,7,3,3,1,9,6,3,12,england3
 Barnsley,8,2,5,1,13,11,2,11,england3
 Milton Keynes,8,5,2,1,14,7,7,17,england4
-Walsall,8,5,2,1,17,12,5,17,england4
+Walsall,8,5,2,1,19,14,5,17,england4
 Crewe Alexandra,8,5,2,1,12,7,5,17,england4
+Bradford,8,4,3,1,12,7,5,15,england4
 Port Vale,8,4,3,1,13,9,4,15,england4
-Bradford,7,4,2,1,11,6,5,14,england4
 Accrington,8,2,5,1,11,10,1,11,england4
 Fleetwood,8,2,5,1,6,5,1,11,england4
 Chesterfield,8,2,5,1,10,11,-1,11,england4
@@ -300,6 +300,7 @@ Persib,7,5,2,0,13,4,9,17,indonesia
 PSM,8,4,3,1,10,3,7,15,indonesia
 Persija,6,4,2,0,12,3,9,14,indonesia
 Persebaya S.,6,4,2,0,8,4,4,14,indonesia
+Dewa Utd,6,3,2,1,12,10,2,11,indonesia
 Sepahan,6,4,1,1,7,3,4,13,iran
 E. Khuzestan,6,3,2,1,6,4,2,11,iran
 St. Patricks,8,6,1,1,17,8,9,19,ireland
@@ -417,9 +418,9 @@ Bangor,8,6,1,1,18,7,11,19,northernireland2
 Annagh Utd,8,5,2,1,13,4,9,17,northernireland2
 Shkendija,8,6,2,0,21,7,14,20,northmacedonia
 Rabotnicki,8,6,2,0,14,4,10,20,northmacedonia
-Gostivar,8,5,3,0,16,4,12,18,northmacedonia
 Sileks,8,5,2,1,15,5,10,17,northmacedonia
-Pelister,8,2,5,1,4,3,1,11,northmacedonia
+Gostivar,8,4,4,0,14,4,10,16,northmacedonia
+Pelister,8,3,4,1,4,2,2,13,northmacedonia
 Viking,8,6,2,0,21,9,12,20,norway
 Bodo/Glimt,8,6,1,1,29,10,19,19,norway
 Rosenborg,8,6,1,1,16,5,11,19,norway
@@ -511,6 +512,7 @@ Al Nassr,7,3,3,1,11,5,6,12,saudiarabia
 Damak,6,3,2,1,10,7,3,11,saudiarabia
 Al Hazm,6,5,1,0,12,3,9,16,saudiarabia2
 Jeddah,6,3,3,0,7,2,5,12,saudiarabia2
+Al Arabi,6,3,2,1,13,8,5,11,saudiarabia2
 Al Zulfi,6,3,2,1,6,1,5,11,saudiarabia2
 Al Jabalain,6,2,3,1,6,5,1,9,saudiarabia2
 Aberdeen,7,7,0,0,17,6,11,21,scotland
@@ -653,6 +655,6 @@ N. Colorado,8,6,1,1,19,5,14,19,usa3
 Union Omaha,8,6,1,1,18,6,12,19,usa3
 Forward Madison,8,4,3,1,8,3,5,15,usa3
 AGMK,8,6,1,1,13,7,6,19,uzbekistan
-Penybont,8,5,2,1,17,6,11,17,wales
+Penybont,8,6,1,1,18,6,12,19,wales
 Haverfordwest,8,3,4,1,9,3,6,13,wales
 Cardiff MU,8,3,4,1,13,9,4,13,wales
