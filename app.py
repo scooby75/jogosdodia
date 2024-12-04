@@ -69,7 +69,9 @@ if jogos_dia_file:
     st.subheader("Back Home")
 
     # Converter W para numérico
+    equipes_casa['W'] = pd.to_numeric(equipes_casa['W'], errors='coerce')
     equipes_fora['W'] = pd.to_numeric(equipes_fora['W'], errors='coerce')
+    
     # Filtrar as melhores equipes jogando em casa
     melhores_casa_filtrados = equipes_casa[equipes_casa['W'] >= 5]
     
