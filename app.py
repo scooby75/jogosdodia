@@ -71,6 +71,10 @@ if jogos_dia_file:
     # Converter W para numérico
     equipes_casa['W'] = pd.to_numeric(equipes_casa['W'], errors='coerce')
     equipes_fora['W'] = pd.to_numeric(equipes_fora['W'], errors='coerce')
+
+    # Exibir as colunas 'W' de equipe_casa e equipe_fora
+    st.dataframe(equipes_casa[['Equipe', 'W']], use_container_width=True)
+    st.dataframe(equipes_fora[['Equipe', 'W']], use_container_width=True)
     
     # Filtrar as melhores equipes jogando em casa
     melhores_casa_filtrados = equipes_casa[equipes_casa['W'] >= 5]
