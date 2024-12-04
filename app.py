@@ -66,6 +66,9 @@ if jogos_dia_file:
     st.dataframe(jogos_dia_validos)
 
     # Análise: Back Home
+
+    # Converter W para numérico
+    equipes_fora['W'] = pd.to_numeric(equipes_fora['W'], errors='coerce')
     # Filtrar as melhores equipes jogando em casa
     melhores_casa_filtrados = equipes_casa[equipes_casa['W'] >= 5]
     
@@ -95,13 +98,7 @@ if jogos_dia_file:
     
     # Exibir os jogos filtrados
     st.dataframe(back_home_jogos)
-    # Verificar tipos de dados
-    print(equipes_fora.dtypes)
-    
-    # Exibir uma amostra dos dados de equipes_fora
-    print(equipes_fora.head())
-    # Checar valores únicos da coluna W
-    print(equipes_fora['W'].unique())
+   
 
 
     # Análise: Back Away
