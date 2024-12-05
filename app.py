@@ -147,6 +147,10 @@ if jogos_dia_file:
 
     # Análise: HA +0.25 (GD)
     st.subheader("HA +0.25(GD)")
+
+    equipes_casa['GD'] = pd.to_numeric(equipes_casa['GD'], errors='coerce')
+    equipes_fora['GD'] = pd.to_numeric(equipes_fora['GD'], errors='coerce')
+    
     ha_mais_gd = equipes_fora[
         (equipes_casa['GD']) >= 10
         & (equipes_fora['GD'] <= 10)
