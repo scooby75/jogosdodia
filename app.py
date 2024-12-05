@@ -147,34 +147,34 @@ if jogos_dia_file:
 
     
     # Análise: HA +0.25 (GD)
-    st.subheader("HA +0.25(GD)")
+ 
 
+    # Debug: visualizar equipes_fora antes do processamento
     print(equipes_fora.head())
     print(equipes_fora.info())
     print(equipes_fora['W'].unique())
-
     
-    # Supondo que 'equipes_fora' seja um dataframe contendo os resultados da equipe visitante
+    # Converter coluna 'W' para numérico e tratar NaNs
     equipes_fora['W'] = pd.to_numeric(equipes_fora['W'], errors='coerce')
+    equipes_fora = equipes_fora.dropna(subset=['W'])
     
-    # Filtrando equipes que não venceram
-    ha_mais_gd = equipes_fora[
-        (equipes_fora['W']) == 0
-    ]
+    # Filtrar equipes sem vitórias
+    ha_mais_gd = equipes_fora[equipes_fora['W'] == 0]
+    print("Equipes com W == 0:", ha_mais_gd[['Equipe', 'W']])
     
-    # Certificando-se de que 'ha_mais_gd_filtrados' esteja definido
-    ha_mais_gd_filtrados = ha_mais_gd[['Equipe']]  # Ou outro filtro necessário
+    # Filtrar equipes para fuzz matching
+    ha_mais_gd_filtrados = ha_mais_gd[['Equipe']]
     
-    # Filtrando os jogos com base nas equipes da casa e odds
+    # Aplicar filtro nos jogos válidos
     ha_mais_gd_jogos = jogos_dia_validos[
-        jogos_dia_validos['Time_Casa'].apply(
-            lambda x: any(fuzz.partial_ratio(x, equipe) > 80 for equipe in ha_mais_gd_filtrados['Equipe'])
+        jogos_dia_validos['Time_Casa'].str.lower().apply(
+            lambda x: any(fuzz.partial_ratio(x, equipe.lower()) > 80 for equipe in ha_mais_gd_filtrados['Equipe'])
         ) & (jogos_dia_validos['Home'] >= 1.50) & (jogos_dia_validos['Home'] <= 2.4)
     ]
     
-    # Exibindo o dataframe filtrado
+    # Debug: Verificar jogos filtrados
+    print("Jogos filtrados:", ha_mais_gd_jogos)
     st.dataframe(ha_mais_gd_jogos)
-
 
 else:
     st.info("Por favor, envie o arquivo 'Jogos do dia Betfair.csv' para realizar a análise.")
