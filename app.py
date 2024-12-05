@@ -148,6 +148,11 @@ if jogos_dia_file:
     
     # Análise: HA +0.25 (GD)
     st.subheader("HA +0.25(GD)")
+
+    print(equipes_fora.head())
+    print(equipes_fora.info())
+    print(equipes_fora['W'].unique())
+
     
     # Supondo que 'equipes_fora' seja um dataframe contendo os resultados da equipe visitante
     equipes_fora['W'] = pd.to_numeric(equipes_fora['W'], errors='coerce')
