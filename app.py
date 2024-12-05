@@ -148,18 +148,17 @@ if jogos_dia_file:
     # Análise: HA +0.25 (GD)
     st.subheader("HA +0.25(GD)")
 
-    equipes_casa['GD'] = pd.to_numeric(equipes_casa['GD'], errors='coerce')
-    equipes_fora['GD'] = pd.to_numeric(equipes_fora['GD'], errors='coerce')
+    equipes_fora['W'] = pd.to_numeric(equipes_fora['W'], errors='coerce')
     
     ha_mais_gd = equipes_fora[
-        (equipes_casa['GD']) >= 10
-        & (equipes_fora['GD'] <= 10)
+        (equipes_fora['W']) == 0
+        
     ]
     
     ha_mais_gd = jogos_dia_validos[
         jogos_dia_validos['Time_Fora'].apply(
             lambda x: any(fuzz.partial_ratio(x, equipe) > 80 for equipe in ha_mais_um_filtrados['Equipe'])
-        ) & (jogos_dia_validos['Home'] >= 1.50) & (jogos_dia_validos['Home'] >= 2.2)
+        ) & (jogos_dia_validos['Home'] >= 1.50) & (jogos_dia_validos['Home'] >= 2.4)
     ]
     
     st.dataframe(ha_mais_um_jogos)
