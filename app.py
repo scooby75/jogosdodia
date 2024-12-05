@@ -149,16 +149,25 @@ if jogos_dia_file:
     # Análise: HA +0.25 (GD)
  
 
+   # Análise: HA +0.25 (GD)
+    
+    st.subheader("HA +0.25(GD)")
+    
     # Debug: visualizar equipes_fora antes do processamento
     print(equipes_fora.head())
     print(equipes_fora.info())
-    print(equipes_fora['W'].unique())
+    print(equipes_fora['W'].unique())  # Verificar os valores únicos na coluna 'W' para entender se há algum valor inesperado
     
     # Converter coluna 'W' para numérico e tratar NaNs
     equipes_fora['W'] = pd.to_numeric(equipes_fora['W'], errors='coerce')
+    
+    # Verificar os valores após conversão
+    print(equipes_fora['W'].unique())
+    
+    # Remover linhas onde 'W' é NaN
     equipes_fora = equipes_fora.dropna(subset=['W'])
     
-    # Filtrar equipes sem vitórias
+    # Filtrar equipes com 'W' == 0
     ha_mais_gd = equipes_fora[equipes_fora['W'] == 0]
     print("Equipes com W == 0:", ha_mais_gd[['Equipe', 'W']])
     
@@ -175,6 +184,7 @@ if jogos_dia_file:
     # Debug: Verificar jogos filtrados
     print("Jogos filtrados:", ha_mais_gd_jogos)
     st.dataframe(ha_mais_gd_jogos)
+
 
 else:
     st.info("Por favor, envie o arquivo 'Jogos do dia Betfair.csv' para realizar a análise.")
