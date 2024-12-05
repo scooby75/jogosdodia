@@ -153,21 +153,24 @@ if jogos_dia_file:
     
     st.subheader("HA +0.25(GD)")
     
+     
+    
     # Debug: visualizar equipes_fora antes do processamento
     print(equipes_fora.head())
     print(equipes_fora.info())
     print(equipes_fora['W'].unique())  # Verificar os valores únicos na coluna 'W' para entender se há algum valor inesperado
     
-    # Converter coluna 'W' para numérico e tratar NaNs
-    equipes_fora['W'] = pd.to_numeric(equipes_fora['W'], errors='coerce')
+    # Tratar valores de 'W' que podem estar como string ou outros formatos
+    # Vamos forçar os valores a serem numéricos, tratando strings e valores inesperados
+    equipes_fora['W'] = equipes_fora['W'].apply(lambda x: pd.to_numeric(x, errors='coerce'))
     
-    # Verificar os valores após conversão
-    print(equipes_fora['W'].unique())
+    # Verificar os valores após a conversão
+    print("Valores únicos após conversão de 'W':", equipes_fora['W'].unique())
     
-    # Remover linhas onde 'W' é NaN
+    # Remover linhas onde 'W' é NaN (caso algum valor tenha sido transformado em NaN)
     equipes_fora = equipes_fora.dropna(subset=['W'])
     
-    # Filtrar equipes com 'W' == 0
+    # Filtrar equipes com 'W' == 0 (agora garantido que 'W' seja numérico)
     ha_mais_gd = equipes_fora[equipes_fora['W'] == 0]
     print("Equipes com W == 0:", ha_mais_gd[['Equipe', 'W']])
     
