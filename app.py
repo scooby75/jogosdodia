@@ -146,22 +146,34 @@ if jogos_dia_file:
     st.dataframe(ha_mais_um_jogos)
 
     # Análise: HA +0.25 (GD)
-    st.subheader("HA +0.25(GD)")
+   import pandas as pd
+import fuzzywuzzy.fuzz as fuzz
+import streamlit as st
 
-    equipes_fora['W'] = pd.to_numeric(equipes_fora['W'], errors='coerce')
-    
-    ha_mais_gd = equipes_fora[
-        (equipes_fora['W']) == 0
-        
-    ]
-    
-    ha_mais_gd = jogos_dia_validos[
-        jogos_dia_validos['Time_Fora'].apply(
-            lambda x: any(fuzz.partial_ratio(x, equipe) > 80 for equipe in ha_mais_um_filtrados['Equipe'])
-        ) & (jogos_dia_validos['Home'] >= 1.50) & (jogos_dia_validos['Home'] >= 2.4)
-    ]
-    
-    st.dataframe(ha_mais_um_jogos)
+# Análise: HA +0.25 (GD)
+st.subheader("HA +0.25(GD)")
+
+# Supondo que 'equipes_fora' seja um dataframe contendo os resultados da equipe visitante
+equipes_fora['W'] = pd.to_numeric(equipes_fora['W'], errors='coerce')
+
+# Filtrando equipes que não venceram
+ha_mais_gd = equipes_fora[
+    (equipes_fora['W']) == 0
+]
+
+# Certificando-se de que 'ha_mais_gd_filtrados' esteja definido
+ha_mais_gd_filtrados = ha_mais_gd[['Equipe']]  # Ou outro filtro necessário
+
+# Filtrando os jogos com base nas equipes da casa e odds
+ha_mais_gd_jogos = jogos_dia_validos[
+    jogos_dia_validos['Time_Casa'].apply(
+        lambda x: any(fuzz.partial_ratio(x, equipe) > 80 for equipe in ha_mais_gd_filtrados['Equipe'])
+    ) & (jogos_dia_validos['Home'] >= 1.50) & (jogos_dia_validos['Home'] <= 2.4)
+]
+
+# Exibindo o dataframe filtrado
+st.dataframe(ha_mais_gd_jogos)
+
 
 else:
     st.info("Por favor, envie o arquivo 'Jogos do dia Betfair.csv' para realizar a análise.")
