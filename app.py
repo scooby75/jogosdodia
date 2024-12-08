@@ -434,7 +434,7 @@ if jogos_dia_file:
     piores_fora_filtrados = equipes_fora[equipes_fora['PIH'] <= 0.1]
     
     # Filtrar jogos com base nos critérios
-    haaway_jogos = jogos_dia_validos[
+    hagd_jogos = jogos_dia_validos[
         jogos_dia_validos['Time_Fora'].apply(
             lambda x: any(fuzz.token_sort_ratio(x, equipe) > 80 for equipe in melhores_fora_filtrados['Equipe'])
         ) &
@@ -446,14 +446,14 @@ if jogos_dia_file:
     ]
 
     # Adicionar as colunas de aproveitamento ao dataframe 'haaway_jogos'
-    haaway_jogos = haaway_jogos.merge(
+    hagd_jogos = hagd_jogos.merge(
         equipes_casa[['Equipe', 'PIH']],
         left_on='Time_Casa',
         right_on='Equipe',
         how='left'
     ).drop(columns=['Equipe'])
     
-    haaway_jogos = haaway_jogos.merge(
+    hagd_jogos = hagd_jogos.merge(
         equipes_fora[['Equipe', 'PIA_HA']],
         left_on='Time_Fora',
         right_on='Equipe',
@@ -461,7 +461,7 @@ if jogos_dia_file:
     ).drop(columns=['Equipe'])
 
     # Adicionar a coluna Odd_Justa_MO ao dataframe 'back_home_jogos'
-    haaway_jogos = haaway_jogos.merge(
+    hagd_jogos = hagd_jogos.merge(
         equipes_fora[['Equipe', 'Odd_Justa_HA']],
         left_on='Time_Fora',
         right_on='Equipe',
@@ -469,11 +469,11 @@ if jogos_dia_file:
     ).drop(columns=['Equipe'])
     
     # Verificar se há jogos filtrados
-    if haaway_jogos.empty:
+    if hagd_jogos.empty:
         st.write("Nenhum jogo atende aos critérios!")
     else:
         #st.write("Jogos filtrados para HA +0.25 (Fora):")
-        st.dataframe(haaway_jogos[['Hora','Time_Casa', 'Time_Fora', 'Home', 'Away', 'PIH', 'PIA_HA','Odd_Justa_HA']])
+        st.dataframe(hagd_jogos[['Hora','Time_Casa', 'Time_Fora', 'Home', 'Away', 'PIH', 'PIA_HA','Odd_Justa_HA']])
 
 else:
     st.info("Por favor, envie o arquivo 'Jogos do dia Betfair.csv' para realizar a análise.")
