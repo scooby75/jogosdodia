@@ -183,6 +183,14 @@ if jogos_dia_file:
         right_on='Equipe',
         how='left'
     ).drop(columns=['Equipe'])
+
+     # Adicionar a coluna Odd_Justa_MO ao dataframe 'back_home_jogos'
+    back_away_jogos = back_away_jogos.merge(
+        equipes_fora[['Equipe', 'Odd_Justa_MO']],
+        left_on='Time_Fora',
+        right_on='Equipe',
+        how='left'
+    ).drop(columns=['Equipe'])
     
     # Verificar se há jogos filtrados
     if back_away_jogos.empty:
