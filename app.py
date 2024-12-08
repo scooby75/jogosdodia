@@ -121,7 +121,7 @@ if jogos_dia_file:
         if away_home_jogos.empty:
             st.write("Nenhum jogo atende aos critérios!")
         else:
-            st.write("Jogos filtrados para Back Home:")
+            st.write("Jogos filtrados para Back Away:")
             st.dataframe(away_home_jogos)
 
     # Análise: HA -0.25
