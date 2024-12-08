@@ -70,15 +70,15 @@ if jogos_dia_file:
     
     # Garantir que a coluna 'Aproveitamento' está no formato correto (numérico)
     equipes_casa['Aproveitamento'] = pd.to_numeric(equipes_casa['Aproveitamento'], errors='coerce')
-    equipes_fora['Aproveitamento'] = pd.to_numeric(equipes_fora['Aproveitamento'], errors='coerce')
+    equipes_fora['Aproveitamento_Fora'] = pd.to_numeric(equipes_fora['Aproveitamento_Fora'], errors='coerce')
     
     # Remover valores nulos de 'Aproveitamento'
     equipes_casa = equipes_casa.dropna(subset=['Aproveitamento'])
-    equipes_fora = equipes_fora.dropna(subset=['Aproveitamento'])
+    equipes_fora = equipes_fora.dropna(subset=['Aproveitamento_Fora'])
     
     # Filtrar as melhores equipes em casa e piores fora
     melhores_casa_filtrados = equipes_casa[equipes_casa['Aproveitamento'] >= 0.65]
-    piores_fora_filtrados = equipes_fora[equipes_fora['Aproveitamento'] <= 0.30]
+    piores_fora_filtrados = equipes_fora[equipes_fora['Aproveitamento_Fora'] <= 0.30]
     
    # Filtrar jogos com base nos critérios
     back_home_jogos = jogos_dia_validos[
@@ -100,14 +100,14 @@ if jogos_dia_file:
         
     # Garantir que a coluna 'Aproveitamento' está no formato correto (numérico)
         equipes_casa['Aproveitamento'] = pd.to_numeric(equipes_casa['Aproveitamento'], errors='coerce')
-        equipes_fora['Aproveitamento'] = pd.to_numeric(equipes_fora['Aproveitamento'], errors='coerce')
+        equipes_fora['Aproveitamento_Fora'] = pd.to_numeric(equipes_fora['Aproveitamento_Fora'], errors='coerce')
         
         # Remover valores nulos de 'Aproveitamento'
         equipes_casa = equipes_casa.dropna(subset=['Aproveitamento'])
-        equipes_fora = equipes_fora.dropna(subset=['Aproveitamento'])
+        equipes_fora = equipes_fora.dropna(subset=['Aproveitamento_Fora'])
         
         # Filtrar as melhores equipes em casa e piores fora
-        melhores_fora_filtrados = equipes_fora[equipes_fora['Aproveitamento'] >= 0.65]
+        melhores_fora_filtrados = equipes_fora[equipes_fora['Aproveitamento_Fora'] >= 0.65]
         piores_casa_filtrados = equipes_casa[equipes_casa['Aproveitamento'] <= 0.30]
         
        # Filtrar jogos com base nos critérios
@@ -142,16 +142,16 @@ if jogos_dia_file:
     # Análise: HA +0.25
     st.subheader("HA +0.25")
     # Garantir que a coluna 'Aproveitamento' está no formato correto (numérico)
-    equipes_casa['Aproveitamento'] = pd.to_numeric(equipes_casa['Aproveitamento'], errors='coerce')
-    equipes_fora['Aproveitamento'] = pd.to_numeric(equipes_fora['Aproveitamento'], errors='coerce')
+    equipes_casa['Aproveitamento_HA'] = pd.to_numeric(equipes_casa['Aproveitamento_HA'], errors='coerce')
+    equipes_fora['Aproveitamento_HA_Fora'] = pd.to_numeric(equipes_fora['Aproveitamento_HA_Fora'], errors='coerce')
         
     # Remover valores nulos de 'Aproveitamento'
-    equipes_casa = equipes_casa.dropna(subset=['Aproveitamento'])
-    equipes_fora = equipes_fora.dropna(subset=['Aproveitamento'])
+    equipes_casa = equipes_casa.dropna(subset=['Aproveitamento_HA'])
+    equipes_fora = equipes_fora.dropna(subset=['Aproveitamento_HA_Fora'])
         
     # Filtrar as melhores equipes em casa e piores fora
-    melhores_casa_filtrados = equipes_casa[equipes_casa['Aproveitamento'] >= 0.75]
-    piores_fora_filtrados = equipes_fora[equipes_fora['Aproveitamento'] <= 0.30]
+    melhores_casa_filtrados = equipes_casa[equipes_casa['Aproveitamento_HA'] >= 0.75]
+    piores_fora_filtrados = equipes_fora[equipes_fora['Aproveitamento_HA_Fora'] <= 0.30]
         
     # Filtrar jogos com base nos critérios
     ha_jogos = jogos_dia_validos[
@@ -172,16 +172,16 @@ if jogos_dia_file:
     st.subheader("HA +0.25 Away")
     
    # Garantir que a coluna 'Aproveitamento' está no formato correto (numérico)
-    equipes_casa['Aproveitamento'] = pd.to_numeric(equipes_casa['Aproveitamento'], errors='coerce')
-    equipes_fora['Aproveitamento'] = pd.to_numeric(equipes_fora['Aproveitamento'], errors='coerce')
+    equipes_casa['Aproveitamento_HA'] = pd.to_numeric(equipes_casa['Aproveitamento_HA'], errors='coerce')
+    equipes_fora['Aproveitamento_HA_Fora'] = pd.to_numeric(equipes_fora['Aproveitamento_HA_Fora'], errors='coerce')
         
     # Remover valores nulos de 'Aproveitamento'
-    equipes_casa = equipes_casa.dropna(subset=['Aproveitamento'])
-    equipes_fora = equipes_fora.dropna(subset=['Aproveitamento'])
+    equipes_casa = equipes_casa.dropna(subset=['Aproveitamento_HA'])
+    equipes_fora = equipes_fora.dropna(subset=['Aproveitamento_HA_Fora'])
         
     # Filtrar as melhores equipes em casa e piores fora
-    melhores_fora_filtrados = equipes_fora[equipes_fora['Aproveitamento'] >= 0.75]
-    piores_fora_filtrados = equipes_casa[equipes_casa['Aproveitamento'] <= 0.30]
+    melhores_fora_filtrados = equipes_fora[equipes_fora['Aproveitamento_HA_Fora'] >= 0.75]
+    piores_home_filtrados = equipes_casa[equipes_casa['Aproveitamento_HA'] <= 0.30]
         
     # Filtrar jogos com base nos critérios
     haa_jogos = jogos_dia_validos[
