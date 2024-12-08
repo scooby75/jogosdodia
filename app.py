@@ -412,13 +412,12 @@ if jogos_dia_file:
     # Análise: HA +0.25 (GD)
     
     st.subheader("HA +0.25(GD)")
-   
-              
-    # Garantir que as colunas 'Aproveitamento' e 'Aproveitamento_Fora' estão no formato correto (numérico)
+    
+    # Garantir que as colunas 'PIH' e 'PIA_HA' estão no formato correto (numérico)
     equipes_casa['PIH'] = pd.to_numeric(equipes_casa['PIH'], errors='coerce')
     equipes_fora['PIA_HA'] = pd.to_numeric(equipes_fora['PIA_HA'], errors='coerce')
     
-    # Remover valores nulos de 'Aproveitamento'
+    # Remover valores nulos de 'PIH' e 'PIA_HA'
     equipes_casa = equipes_casa.dropna(subset=['PIH'])
     equipes_fora = equipes_fora.dropna(subset=['PIA_HA'])
     
@@ -429,23 +428,23 @@ if jogos_dia_file:
     equipes_casa = equipes_casa[equipes_casa['Equipe'].apply(lambda x: filtrar_sufixos(x, sufixos_diferentes))]
     equipes_fora = equipes_fora[equipes_fora['Equipe'].apply(lambda x: filtrar_sufixos(x, sufixos_diferentes))]
     
-    # Filtrar as melhores equipes em casa e piores fora
+    # Filtrar as melhores equipes em casa (PIH >= 0.5) e piores fora (PIA_HA <= 0.1)
     melhores_casa_filtrados = equipes_casa[equipes_casa['PIH'] >= 0.5]
     piores_fora_filtrados = equipes_fora[equipes_fora['PIA_HA'] <= 0.1]
     
     # Filtrar jogos com base nos critérios
     hagd_jogos = jogos_dia_validos[
         jogos_dia_validos['Time_Casa'].apply(
-            lambda x: any(fuzz.token_sort_ratio(x, equipe) > 80 for equipe in melhores_fora_filtrados['Equipe'])
+            lambda x: any(fuzz.token_sort_ratio(x, equipe) > 80 for equipe in melhores_casa_filtrados['Equipe'])
         ) &
         jogos_dia_validos['Time_Fora'].apply(
-            lambda x: any(fuzz.token_sort_ratio(x, equipe) > 80 for equipe in piores_casa_filtrados['Equipe'])
+            lambda x: any(fuzz.token_sort_ratio(x, equipe) > 80 for equipe in piores_fora_filtrados['Equipe'])
         ) &
         (jogos_dia_validos['Away'] >= 3) &
         (jogos_dia_validos['Away'] <= 6)
     ]
-
-    # Adicionar as colunas de aproveitamento ao dataframe 'haaway_jogos'
+    
+    # Adicionar as colunas de aproveitamento ao dataframe 'hagd_jogos'
     hagd_jogos = hagd_jogos.merge(
         equipes_casa[['Equipe', 'PIH']],
         left_on='Time_Casa',
@@ -459,8 +458,8 @@ if jogos_dia_file:
         right_on='Equipe',
         how='left'
     ).drop(columns=['Equipe'])
-
-    # Adicionar a coluna Odd_Justa_MO ao dataframe 'back_home_jogos'
+    
+    # Adicionar a coluna Odd_Justa_HA ao dataframe 'hagd_jogos'
     hagd_jogos = hagd_jogos.merge(
         equipes_fora[['Equipe', 'Odd_Justa_HA']],
         left_on='Time_Fora',
@@ -472,8 +471,8 @@ if jogos_dia_file:
     if hagd_jogos.empty:
         st.write("Nenhum jogo atende aos critérios!")
     else:
-        #st.write("Jogos filtrados para HA +0.25 (Fora):")
         st.dataframe(hagd_jogos[['Hora','Time_Casa', 'Time_Fora', 'Home', 'Away', 'PIH', 'PIA_HA','Odd_Justa_HA']])
+
 
 else:
     st.info("Por favor, envie o arquivo 'Jogos do dia Betfair.csv' para realizar a análise.")
