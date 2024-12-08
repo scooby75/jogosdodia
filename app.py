@@ -329,6 +329,14 @@ if jogos_dia_file:
         right_on='Equipe',
         how='left'
     ).drop(columns=['Equipe'])
+
+    # Adicionar a coluna Odd_Justa_MO ao dataframe 'back_home_jogos'
+    haaway_jogos = haaway_jogos.merge(
+        equipes_fora[['Equipe', 'Odd_Justa_HA']],
+        left_on='Time_Fora',
+        right_on='Equipe',
+        how='left'
+    ).drop(columns=['Equipe'])
     
     # Verificar se há jogos filtrados
     if haaway_jogos.empty:
