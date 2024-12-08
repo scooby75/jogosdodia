@@ -344,14 +344,14 @@ if jogos_dia_file:
     ]
 
     # Adicionar as colunas de aproveitamento ao dataframe 'haum_jogos'
-    haum_jogos = haaway_jogos.merge(
+    haum_jogos = haum_jogos.merge(
         equipes_casa[['Equipe', 'Aproveitamento']],
         left_on='Time_Casa',
         right_on='Equipe',
         how='left'
     ).drop(columns=['Equipe'])
     
-    haum_jogos = haaway_jogos.merge(
+    haum_jogos = haum_jogos.merge(
         equipes_fora[['Equipe', 'Aproveitamento_HA_Fora']],
         left_on='Time_Fora',
         right_on='Equipe',
