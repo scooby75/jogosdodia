@@ -217,7 +217,6 @@ if jogos_dia_file:
 
     # Análise: HA +0.25
     st.subheader("HA +0.25 (casa)")
-          
     # Garantir que as colunas 'Aproveitamento' e 'Aproveitamento_Fora' estão no formato correto (numérico)
     equipes_casa['PIH_HA'] = pd.to_numeric(equipes_casa['PIH_HA'], errors='coerce')
     equipes_fora['PIA'] = pd.to_numeric(equipes_fora['PIA'], errors='coerce')
@@ -248,7 +247,7 @@ if jogos_dia_file:
         (jogos_dia_validos['Home'] >= 1.6) &
         (jogos_dia_validos['Home'] <= 2.4)
     ]
-
+    
     # Adicionar as colunas de aproveitamento ao dataframe 'hahome_jogos'
     hahome_jogos = hahome_jogos.merge(
         equipes_casa[['Equipe', 'PIH_HA']],
@@ -263,9 +262,9 @@ if jogos_dia_file:
         right_on='Equipe',
         how='left'
     ).drop(columns=['Equipe'])
-
-     # Adicionar a coluna Odd_Justa_MO ao dataframe 'back_home_jogos'
-   hahome_jogos = hahome_jogos.merge(
+    
+    # Adicionar a coluna Odd_Justa_MO ao dataframe 'back_home_jogos'
+    hahome_jogos = hahome_jogos.merge(
         equipes_casa[['Equipe', 'Odd_Justa_HA']],
         left_on='Time_Casa',
         right_on='Equipe',
@@ -276,8 +275,9 @@ if jogos_dia_file:
     if hahome_jogos.empty:
         st.write("Nenhum jogo atende aos critérios!")
     else:
-        #st.write("Jogos filtrados para HA +0.25 (Casa):")
-        st.dataframe(hahome_jogos[['Hora','Time_Casa', 'Time_Fora', 'Home', 'Away', 'PIH_HA', 'PIA', 'Odd_Justa_HA']])
+        # Corrigindo a exibição das colunas no st.dataframe
+        st.dataframe(hahome_jogos[['Hora', 'Time_Casa', 'Time_Fora', 'Home', 'Away', 'PIH_HA', 'PIA', 'Odd_Justa_HA']])
+
 
     
     # Análise: HA +0.25 Away
