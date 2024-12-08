@@ -130,7 +130,7 @@ if jogos_dia_file:
         st.write("Nenhum jogo atende aos critérios!")
     else:
         # Exibir os jogos com a coluna 'Odd_Justa_MO'
-        st.dataframe(back_home_jogos[['Hora', 'Time_Casa', 'Home', 'Time_Fora', 'Away', 'PIH', 'PIA', 'Odd_Justa_MO']])
+        st.dataframe(back_home_jogos[['Hora', 'Time_Casa', 'Time_Fora', 'Home', 'Away', 'PIH', 'PIA', 'Odd_Justa_MO']])
 
 
 
@@ -197,7 +197,7 @@ if jogos_dia_file:
         st.write("Nenhum jogo atende aos critérios!")
     else:
         #st.write("Jogos filtrados para Back Away:")
-        st.dataframe(back_away_jogos[['Hora','Time_Casa', 'Home', 'Time_Fora', 'Away', 'PIH', 'PIA', 'Odd_Justa_MO']])
+        st.dataframe(back_away_jogos[['Hora','Time_Casa', 'Time_Fora', 'Home', 'Away', 'PIH', 'PIA', 'Odd_Justa_MO']])
 
 
     # Análise: HA -0.25
@@ -263,13 +263,21 @@ if jogos_dia_file:
         right_on='Equipe',
         how='left'
     ).drop(columns=['Equipe'])
+
+     # Adicionar a coluna Odd_Justa_MO ao dataframe 'back_home_jogos'
+   hahome_jogos = hahome_jogos.merge(
+        equipes_casa[['Equipe', 'Odd_Justa_HA']],
+        left_on='Time_Casa',
+        right_on='Equipe',
+        how='left'
+    ).drop(columns=['Equipe'])
     
     # Verificar se há jogos filtrados
     if hahome_jogos.empty:
         st.write("Nenhum jogo atende aos critérios!")
     else:
         #st.write("Jogos filtrados para HA +0.25 (Casa):")
-        st.dataframe(hahome_jogos[['Hora','Time_Casa', 'Home', 'Time_Fora', 'Away', 'PIH_HA', 'PIA', 'Odd_Justa_HA']])
+        st.dataframe(hahome_jogos[['Hora','Time_Casa', 'Time_Fora', 'Home, 'Away', 'PIH_HA', 'PIA', 'Odd_Justa_HA']])
 
     
     # Análise: HA +0.25 Away
