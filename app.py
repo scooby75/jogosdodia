@@ -114,7 +114,7 @@ if jogos_dia_file:
         away_home_jogos = jogos_dia_validos[
             jogos_dia_validos['Time_Fora'].apply(
                 lambda x: any(fuzz.token_sort_ratio(x, equipe) > 80 for equipe in melhores_fora_filtrados['Equipe'])
-            ) & (jogos_dia_validos['Home'] >= 1.45) & (jogos_dia_validos['Home'] <= 2.2)
+            ) & (jogos_dia_validos['Away'] >= 1.45) & (jogos_dia_validos['Away'] <= 2.2)
         ]
         
         # Verificar se há jogos filtrados
