@@ -95,14 +95,32 @@ if jogos_dia_file:
         st.dataframe(back_home_jogos)
 
     # Análise: Back Away
-    st.subheader("Back Away")
-    melhores_away_filtrados = melhores_away[melhores_away['W'] >= 5]
-    back_away_jogos = jogos_dia_validos[
-        jogos_dia_validos['Time_Fora'].apply(
-            lambda x: any(fuzz.partial_ratio(x, equipe) > 80 for equipe in melhores_away_filtrados['Equipe'])
-        ) & (jogos_dia_validos['Away'] >= 1.45) & (jogos_dia_validos['Away'] <= 2.2)
-    ]
-    st.dataframe(back_away_jogos)
+        
+    # Garantir que a coluna 'Aproveitamento' está no formato correto (numérico)
+        equipes_casa['Aproveitamento'] = pd.to_numeric(equipes_casa['Aproveitamento'], errors='coerce')
+        equipes_fora['Aproveitamento'] = pd.to_numeric(equipes_fora['Aproveitamento'], errors='coerce')
+        
+        # Remover valores nulos de 'Aproveitamento'
+        equipes_casa = equipes_casa.dropna(subset=['Aproveitamento'])
+        equipes_fora = equipes_fora.dropna(subset=['Aproveitamento'])
+        
+        # Filtrar as melhores equipes em casa e piores fora
+        melhores_fora_filtrados = equipes_fora[equipes_fora['Aproveitamento'] >= 0.65]
+        piores_casa_filtrados = equipes_casa[equipes_casa['Aproveitamento'] <= 0.30]
+        
+       # Filtrar jogos com base nos critérios
+        away_home_jogos = jogos_dia_validos[
+            jogos_dia_validos['Time_Fora'].apply(
+                lambda x: any(fuzz.token_sort_ratio(x, equipe) > 80 for equipe in melhores_fora_filtrados['Equipe'])
+            ) & (jogos_dia_validos['Home'] >= 1.45) & (jogos_dia_validos['Home'] <= 2.2)
+        ]
+        
+        # Verificar se há jogos filtrados
+        if away_home_jogos.empty:
+            st.write("Nenhum jogo atende aos critérios!")
+        else:
+            st.write("Jogos filtrados para Back Home:")
+            st.dataframe(away_home_jogos)
 
     # Análise: HA -0.25
     st.subheader("HA -0.25")
