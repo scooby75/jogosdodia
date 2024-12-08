@@ -91,9 +91,14 @@ if jogos_dia_file:
     back_home_jogos = jogos_dia_validos[
         jogos_dia_validos['Time_Casa'].apply(
             lambda x: any(fuzz.token_sort_ratio(x, equipe) > 80 for equipe in melhores_casa_filtrados['Equipe'])
-        ) & (jogos_dia_validos['Home'] >= 1.45) & (jogos_dia_validos['Home'] <= 2.2)
+        ) &
+        jogos_dia_validos['Time_Fora'].apply(
+            lambda x: any(fuzz.token_sort_ratio(x, equipe) > 80 for equipe in piores_fora_filtrados['Equipe'])
+        ) &
+        (jogos_dia_validos['Home'] >= 1.45) &
+        (jogos_dia_validos['Home'] <= 2.2)
     ]
-    
+
     # Adicionar as colunas de aproveitamento ao dataframe 'back_home_jogos'
     back_home_jogos = back_home_jogos.merge(
         equipes_casa[['Equipe', 'Aproveitamento']],
