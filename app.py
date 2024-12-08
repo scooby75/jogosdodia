@@ -95,6 +95,8 @@ if jogos_dia_file:
         st.dataframe(back_home_jogos)
 
     # Análise: Back Away
+
+        st.subheader("Back Away")
         
     # Garantir que a coluna 'Aproveitamento' está no formato correto (numérico)
         equipes_casa['Aproveitamento'] = pd.to_numeric(equipes_casa['Aproveitamento'], errors='coerce')
