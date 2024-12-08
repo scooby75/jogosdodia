@@ -69,12 +69,12 @@ if jogos_dia_file:
     st.subheader("Back Home")
       
     # Garantir que as colunas 'Aproveitamento' e 'Aproveitamento_Fora' estão no formato correto (numérico)
-    equipes_casa['Aproveitamento'] = pd.to_numeric(equipes_casa['Aproveitamento'], errors='coerce')
-    equipes_fora['Aproveitamento_Fora'] = pd.to_numeric(equipes_fora['Aproveitamento_Fora'], errors='coerce')
+    equipes_casa['PIH'] = pd.to_numeric(equipes_casa['PIH'], errors='coerce')
+    equipes_fora['PIA'] = pd.to_numeric(equipes_fora['PIA'], errors='coerce')
     
     # Remover valores nulos de 'Aproveitamento'
-    equipes_casa = equipes_casa.dropna(subset=['Aproveitamento'])
-    equipes_fora = equipes_fora.dropna(subset=['Aproveitamento_Fora'])
+    equipes_casa = equipes_casa.dropna(subset=['PIH'])
+    equipes_fora = equipes_fora.dropna(subset=['PIA'])
     
     def filtrar_sufixos(time, lista_sufixos):
         return not any(sufixo in time for sufixo in lista_sufixos)
@@ -84,8 +84,8 @@ if jogos_dia_file:
     equipes_fora = equipes_fora[equipes_fora['Equipe'].apply(lambda x: filtrar_sufixos(x, sufixos_diferentes))]
     
     # Filtrar as melhores equipes em casa e piores fora
-    melhores_casa_filtrados = equipes_casa[equipes_casa['Aproveitamento'] >= 0.65]
-    piores_fora_filtrados = equipes_fora[equipes_fora['Aproveitamento_Fora'] <= 0.30]
+    melhores_casa_filtrados = equipes_casa[equipes_casa['PIH'] >= 0.65]
+    piores_fora_filtrados = equipes_fora[equipes_fora['PIA'] <= 0.30]
     
     # Filtrar jogos com base nos critérios
     back_home_jogos = jogos_dia_validos[
@@ -101,14 +101,14 @@ if jogos_dia_file:
 
     # Adicionar as colunas de aproveitamento ao dataframe 'back_home_jogos'
     back_home_jogos = back_home_jogos.merge(
-        equipes_casa[['Equipe', 'Aproveitamento']],
+        equipes_casa[['Equipe', 'PIH']],
         left_on='Time_Casa',
         right_on='Equipe',
         how='left'
     ).drop(columns=['Equipe'])
     
     back_home_jogos = back_home_jogos.merge(
-        equipes_fora[['Equipe', 'Aproveitamento_Fora']],
+        equipes_fora[['Equipe', 'PIA']],
         left_on='Time_Fora',
         right_on='Equipe',
         how='left'
@@ -119,19 +119,19 @@ if jogos_dia_file:
         st.write("Nenhum jogo atende aos critérios!")
     else:
         #st.write("Jogos filtrados para Back Home:")
-        st.dataframe(back_home_jogos[['Hora','Time_Casa', 'Home', 'Time_Fora', 'Away', 'Aproveitamento', 'Aproveitamento_Fora']])
+        st.dataframe(back_home_jogos[['Hora','Time_Casa', 'Home', 'Time_Fora', 'Away', 'PIH', 'PIA', 'Odd_Justa_MO']])
 
     # BACK AWAY
     
     st.subheader("Back Away")
     
     # Garantir que as colunas 'Aproveitamento' e 'Aproveitamento_Fora' estão no formato correto (numérico)
-    equipes_casa['Aproveitamento'] = pd.to_numeric(equipes_casa['Aproveitamento'], errors='coerce')
-    equipes_fora['Aproveitamento_Fora'] = pd.to_numeric(equipes_fora['Aproveitamento_Fora'], errors='coerce')
+    equipes_casa['PIH'] = pd.to_numeric(equipes_casa['PIH'], errors='coerce')
+    equipes_fora['PIA'] = pd.to_numeric(equipes_fora['PIA'], errors='coerce')
     
     # Remover valores nulos de 'Aproveitamento'
-    equipes_casa = equipes_casa.dropna(subset=['Aproveitamento'])
-    equipes_fora = equipes_fora.dropna(subset=['Aproveitamento_Fora'])
+    equipes_casa = equipes_casa.dropna(subset=['PIH'])
+    equipes_fora = equipes_fora.dropna(subset=['PIA'])
     
     def filtrar_sufixos(time, lista_sufixos):
         return not any(sufixo in time for sufixo in lista_sufixos)
@@ -141,8 +141,8 @@ if jogos_dia_file:
     equipes_fora = equipes_fora[equipes_fora['Equipe'].apply(lambda x: filtrar_sufixos(x, sufixos_diferentes))]
     
     # Filtrar as melhores equipes fora e piores em casa
-    melhores_fora_filtrados = equipes_fora[equipes_fora['Aproveitamento_Fora'] >= 0.65]
-    piores_casa_filtrados = equipes_casa[equipes_casa['Aproveitamento'] <= 0.30]
+    melhores_fora_filtrados = equipes_fora[equipes_fora['PIA'] >= 0.65]
+    piores_casa_filtrados = equipes_casa[equipes_casa['PIH'] <= 0.30]
     
     # Filtrar jogos com base nos critérios
     back_away_jogos = jogos_dia_validos[
@@ -158,14 +158,14 @@ if jogos_dia_file:
     
     # Adicionar as colunas de aproveitamento ao dataframe 'back_away_jogos'
     back_away_jogos = back_away_jogos.merge(
-        equipes_casa[['Equipe', 'Aproveitamento']],
+        equipes_casa[['Equipe', 'PIH']],
         left_on='Time_Casa',
         right_on='Equipe',
         how='left'
     ).drop(columns=['Equipe'])
     
     back_away_jogos = back_away_jogos.merge(
-        equipes_fora[['Equipe', 'Aproveitamento_Fora']],
+        equipes_fora[['Equipe', 'PIA']],
         left_on='Time_Fora',
         right_on='Equipe',
         how='left'
@@ -176,7 +176,7 @@ if jogos_dia_file:
         st.write("Nenhum jogo atende aos critérios!")
     else:
         #st.write("Jogos filtrados para Back Away:")
-        st.dataframe(back_away_jogos[['Hora','Time_Casa', 'Home', 'Time_Fora', 'Away', 'Aproveitamento', 'Aproveitamento_Fora']])
+        st.dataframe(back_away_jogos[['Hora','Time_Casa', 'Home', 'Time_Fora', 'Away', 'PIH', 'PIA', 'Odd_Justa_MO']])
 
 
     # Análise: HA -0.25
@@ -198,12 +198,12 @@ if jogos_dia_file:
     st.subheader("HA +0.25 (casa)")
           
     # Garantir que as colunas 'Aproveitamento' e 'Aproveitamento_Fora' estão no formato correto (numérico)
-    equipes_casa['Aproveitamento_HA'] = pd.to_numeric(equipes_casa['Aproveitamento_HA'], errors='coerce')
-    equipes_fora['Aproveitamento_Fora'] = pd.to_numeric(equipes_fora['Aproveitamento_Fora'], errors='coerce')
+    equipes_casa['PIH_HA'] = pd.to_numeric(equipes_casa['PIH_HA'], errors='coerce')
+    equipes_fora['PIA'] = pd.to_numeric(equipes_fora['PIA'], errors='coerce')
     
     # Remover valores nulos de 'Aproveitamento'
-    equipes_casa = equipes_casa.dropna(subset=['Aproveitamento_HA'])
-    equipes_fora = equipes_fora.dropna(subset=['Aproveitamento_Fora'])
+    equipes_casa = equipes_casa.dropna(subset=['PIH_HA'])
+    equipes_fora = equipes_fora.dropna(subset=['PIA'])
     
     def filtrar_sufixos(time, lista_sufixos):
         return not any(sufixo in time for sufixo in lista_sufixos)
@@ -213,8 +213,8 @@ if jogos_dia_file:
     equipes_fora = equipes_fora[equipes_fora['Equipe'].apply(lambda x: filtrar_sufixos(x, sufixos_diferentes))]
     
     # Filtrar as melhores equipes em casa e piores fora
-    melhores_casa_filtrados = equipes_casa[equipes_casa['Aproveitamento_HA'] >= 0.75]
-    piores_fora_filtrados = equipes_fora[equipes_fora['Aproveitamento_Fora'] <= 0.2]
+    melhores_casa_filtrados = equipes_casa[equipes_casa['PIH_HA'] >= 0.75]
+    piores_fora_filtrados = equipes_fora[equipes_fora['PIA'] <= 0.2]
     
     # Filtrar jogos com base nos critérios
     hahome_jogos = jogos_dia_validos[
@@ -230,14 +230,14 @@ if jogos_dia_file:
 
     # Adicionar as colunas de aproveitamento ao dataframe 'hahome_jogos'
     hahome_jogos = hahome_jogos.merge(
-        equipes_casa[['Equipe', 'Aproveitamento_HA']],
+        equipes_casa[['Equipe', 'PIH_HA']],
         left_on='Time_Casa',
         right_on='Equipe',
         how='left'
     ).drop(columns=['Equipe'])
     
     hahome_jogos = hahome_jogos.merge(
-        equipes_fora[['Equipe', 'Aproveitamento_Fora']],
+        equipes_fora[['Equipe', 'PIA']],
         left_on='Time_Fora',
         right_on='Equipe',
         how='left'
@@ -248,7 +248,7 @@ if jogos_dia_file:
         st.write("Nenhum jogo atende aos critérios!")
     else:
         #st.write("Jogos filtrados para HA +0.25 (Casa):")
-        st.dataframe(hahome_jogos[['Hora','Time_Casa', 'Home', 'Time_Fora', 'Away', 'Aproveitamento_HA', 'Aproveitamento_Fora']])
+        st.dataframe(hahome_jogos[['Hora','Time_Casa', 'Home', 'Time_Fora', 'Away', 'PIH_HA', 'PIA', 'Odd_Justa_HA]])
 
     
     # Análise: HA +0.25 Away
@@ -256,12 +256,12 @@ if jogos_dia_file:
     st.subheader("HA +0.25 Away")
               
     # Garantir que as colunas 'Aproveitamento' e 'Aproveitamento_Fora' estão no formato correto (numérico)
-    equipes_casa['Aproveitamento'] = pd.to_numeric(equipes_casa['Aproveitamento'], errors='coerce')
-    equipes_fora['Aproveitamento_HA_Fora'] = pd.to_numeric(equipes_fora['Aproveitamento_HA_Fora'], errors='coerce')
+    equipes_casa['PIH'] = pd.to_numeric(equipes_casa['PIH'], errors='coerce')
+    equipes_fora['PIA_HA'] = pd.to_numeric(equipes_fora['PIA_HA'], errors='coerce')
     
     # Remover valores nulos de 'Aproveitamento'
-    equipes_casa = equipes_casa.dropna(subset=['Aproveitamento'])
-    equipes_fora = equipes_fora.dropna(subset=['Aproveitamento_HA_Fora'])
+    equipes_casa = equipes_casa.dropna(subset=['PIH'])
+    equipes_fora = equipes_fora.dropna(subset=['PIA_HA'])
     
     def filtrar_sufixos(time, lista_sufixos):
         return not any(sufixo in time for sufixo in lista_sufixos)
@@ -271,8 +271,8 @@ if jogos_dia_file:
     equipes_fora = equipes_fora[equipes_fora['Equipe'].apply(lambda x: filtrar_sufixos(x, sufixos_diferentes))]
     
     # Filtrar as melhores equipes em casa e piores fora
-    melhores_fora_filtrados = equipes_fora[equipes_fora['Aproveitamento_HA_Fora'] >= 0.75]
-    piores_casa_filtrados = equipes_casa[equipes_casa['Aproveitamento'] <= 0.2]
+    melhores_fora_filtrados = equipes_fora[equipes_fora['PIA_HA'] >= 0.75]
+    piores_casa_filtrados = equipes_casa[equipes_casa['PIH'] <= 0.2]
     
     # Filtrar jogos com base nos critérios
     haaway_jogos = jogos_dia_validos[
@@ -288,14 +288,14 @@ if jogos_dia_file:
 
     # Adicionar as colunas de aproveitamento ao dataframe 'haaway_jogos'
     haaway_jogos = haaway_jogos.merge(
-        equipes_casa[['Equipe', 'Aproveitamento']],
+        equipes_casa[['Equipe', 'PIH']],
         left_on='Time_Casa',
         right_on='Equipe',
         how='left'
     ).drop(columns=['Equipe'])
     
     haaway_jogos = haaway_jogos.merge(
-        equipes_fora[['Equipe', 'Aproveitamento_HA_Fora']],
+        equipes_fora[['Equipe', 'PIA_HA']],
         left_on='Time_Fora',
         right_on='Equipe',
         how='left'
@@ -306,19 +306,19 @@ if jogos_dia_file:
         st.write("Nenhum jogo atende aos critérios!")
     else:
         #st.write("Jogos filtrados para HA +0.25 (Fora):")
-        st.dataframe(haaway_jogos[['Hora','Time_Casa', 'Home', 'Time_Fora', 'Away', 'Aproveitamento', 'Aproveitamento_HA_Fora']])
+        st.dataframe(haaway_jogos[['Hora','Time_Casa', 'Home', 'Time_Fora', 'Away', 'PIH', 'PIA_HA','Odd_Justa_HA']])
 
     # Análise: HA +1
    
     st.subheader("HA +1")
    
     # Garantir que as colunas 'Aproveitamento' e 'Aproveitamento_Fora' estão no formato correto (numérico)
-    equipes_casa['Aproveitamento'] = pd.to_numeric(equipes_casa['Aproveitamento'], errors='coerce')
-    equipes_fora['Aproveitamento_HA_Fora'] = pd.to_numeric(equipes_fora['Aproveitamento_HA_Fora'], errors='coerce')
+    equipes_casa['PIH'] = pd.to_numeric(equipes_casa['PIH'], errors='coerce')
+    equipes_fora['PIA_HA'] = pd.to_numeric(equipes_fora['PIA_HA'], errors='coerce')
     
     # Remover valores nulos de 'Aproveitamento'
-    equipes_casa = equipes_casa.dropna(subset=['Aproveitamento'])
-    equipes_fora = equipes_fora.dropna(subset=['Aproveitamento_HA_Fora'])
+    equipes_casa = equipes_casa.dropna(subset=['PIH'])
+    equipes_fora = equipes_fora.dropna(subset=['PIA_HA'])
     
     def filtrar_sufixos(time, lista_sufixos):
         return not any(sufixo in time for sufixo in lista_sufixos)
@@ -328,8 +328,8 @@ if jogos_dia_file:
     equipes_fora = equipes_fora[equipes_fora['Equipe'].apply(lambda x: filtrar_sufixos(x, sufixos_diferentes))]
     
     # Filtrar as melhores equipes em casa e piores fora
-    melhores_fora_filtrados = equipes_fora[equipes_fora['Aproveitamento_HA_Fora'] >= 0.6]
-    piores_casa_filtrados = equipes_casa[equipes_casa['Aproveitamento'] <= 0.2]
+    melhores_fora_filtrados = equipes_fora[equipes_fora['PIA_HA'] >= 0.6]
+    piores_casa_filtrados = equipes_casa[equipes_casa['PIH'] <= 0.2]
     
     # Filtrar jogos com base nos critérios
     haum_jogos = jogos_dia_validos[
@@ -345,14 +345,14 @@ if jogos_dia_file:
 
     # Adicionar as colunas de aproveitamento ao dataframe 'haum_jogos'
     haum_jogos = haum_jogos.merge(
-        equipes_casa[['Equipe', 'Aproveitamento']],
+        equipes_casa[['Equipe', 'PIH']],
         left_on='Time_Casa',
         right_on='Equipe',
         how='left'
     ).drop(columns=['Equipe'])
     
     haum_jogos = haum_jogos.merge(
-        equipes_fora[['Equipe', 'Aproveitamento_HA_Fora']],
+        equipes_fora[['Equipe', 'PIA_HA']],
         left_on='Time_Fora',
         right_on='Equipe',
         how='left'
@@ -363,7 +363,7 @@ if jogos_dia_file:
         st.write("Nenhum jogo atende aos critérios!")
     else:
         #st.write("Jogos filtrados para HA +1 (Fora):")
-        st.dataframe(haum_jogos[['Hora','Time_Casa', 'Home', 'Time_Fora', 'Away', 'Aproveitamento', 'Aproveitamento_HA_Fora']])
+        st.dataframe(haum_jogos[['Hora','Time_Casa', 'Home', 'Time_Fora', 'Away', 'PIH', 'PIA_HA', 'Odd_Justa_HA']])
         
     # Análise: HA +0.25 (GD)
     
