@@ -441,7 +441,7 @@ if jogos_dia_file:
             lambda x: any(fuzz.token_sort_ratio(x, equipe) > 80 for equipe in piores_fora_filtrados['Equipe'])
         ) &
         (jogos_dia_validos['Away'] >= 3) &
-        (jogos_dia_validos['Away'] <= 6)
+        (jogos_dia_validos['Away'] <= 10)
     ]
     
     # Adicionar as colunas de aproveitamento ao dataframe 'hagd_jogos'
