@@ -218,7 +218,7 @@ if jogos_dia_file:
     piores_fora_filtrados = equipes_fora[equipes_fora['Aproveitamento_Fora'] <= 0.2]
     
     # Filtrar jogos com base nos critérios
-    back_home_jogos = jogos_dia_validos[
+    hahome_jogos = jogos_dia_validos[
         jogos_dia_validos['Time_Casa'].apply(
             lambda x: any(fuzz.token_sort_ratio(x, equipe) > 80 for equipe in melhores_casa_filtrados['Equipe'])
         ) &
@@ -229,7 +229,7 @@ if jogos_dia_file:
         (jogos_dia_validos['Home'] <= 2.4)
     ]
 
-    # Adicionar as colunas de aproveitamento ao dataframe 'back_home_jogos'
+    # Adicionar as colunas de aproveitamento ao dataframe 'hahome_jogos'
     hahome_jogos = hahome_jogos.merge(
         equipes_casa[['Equipe', 'Aproveitamento']],
         left_on='Time_Casa',
