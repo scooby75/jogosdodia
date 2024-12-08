@@ -49,7 +49,7 @@ if jogos_dia_file:
 
     # Filtrar jogos que não contêm palavras-chave indesejadas
     palavras_indesejadas = (
-        'UEFA|AFC Champions|Reservas|Friendlies Women\'s International|U21|English Premier League 2|Israeli Cup|Friendly Matches|Malaysian Cup|Copa de França|Copa de Inglaterra|Scottish FA Cup|U23|Sub23|Cup|Copa'
+        'UEFA|AFC Champions|Reservas|Friendlies Women\'s International|U21|English Premier League 2|Israeli Cup|Friendly Matches|Malaysian Cup|Copa de França|Copa de Inglaterra|Scottish FA Cup|U23|Sub23|Cup|Copa|CAF Champions League'
     )
     jogos_dia_validos = jogos_dia_validos[~jogos_dia_validos['Competição'].str.contains(palavras_indesejadas, case=False, na=False)]
 
@@ -68,11 +68,11 @@ if jogos_dia_file:
     # Análise: Back Home
     st.subheader("Back Home")
 
-    equipes_casa['W'] = pd.to_numeric(equipes_casa['W'], errors='coerce')
-    equipes_fora['W'] = pd.to_numeric(equipes_fora['W'], errors='coerce')
+    equipes_casa['W'] = pd.to_numeric(equipes_casa['Aproveitamento'], errors='coerce')
+    equipes_fora['W'] = pd.to_numeric(equipes_fora['Aproveitamento'], errors='coerce')
 
-    melhores_casa_filtrados = equipes_casa[equipes_casa['W'] >= 5]
-    piores_fora_filtrados = equipes_fora[equipes_fora['W'] <= 1]
+    melhores_casa_filtrados = equipes_casa[equipes_casa['Aproveitamento'] >= 0.65]
+    piores_fora_filtrados = equipes_fora[equipes_fora['Aproveitamento'] <= 0.30]
     back_home_jogos = jogos_dia_validos[
         jogos_dia_validos['Time_Casa'].apply(
             lambda x: any(fuzz.partial_ratio(x, equipe) > 80 for equipe in melhores_casa_filtrados['Equipe'])
