@@ -119,7 +119,7 @@ if jogos_dia_file:
         st.write("Nenhum jogo atende aos critérios!")
     else:
         st.write("Jogos filtrados para Back Home:")
-        st.dataframe(back_home_jogos[['Time_Casa', 'Time_Fora', 'Aproveitamento', 'Aproveitamento_Fora']])
+        st.dataframe(back_home_jogos[['Time_Casa', 'Time_Fora','Home', 'Away', 'Aproveitamento', 'Aproveitamento_Fora']])
 
 
     # Análise: Back Away
