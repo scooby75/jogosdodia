@@ -199,11 +199,11 @@ if jogos_dia_file:
     st.subheader("Back Home")
       
     # Garantir que as colunas 'Aproveitamento' e 'Aproveitamento_Fora' estão no formato correto (numérico)
-    equipes_casa['Aproveitamento'] = pd.to_numeric(equipes_casa['Aproveitamento'], errors='coerce')
+    equipes_casa['Aproveitamento_HA'] = pd.to_numeric(equipes_casa['Aproveitamento_HA'], errors='coerce')
     equipes_fora['Aproveitamento_Fora'] = pd.to_numeric(equipes_fora['Aproveitamento_Fora'], errors='coerce')
     
     # Remover valores nulos de 'Aproveitamento'
-    equipes_casa = equipes_casa.dropna(subset=['Aproveitamento'])
+    equipes_casa = equipes_casa.dropna(subset=['Aproveitamento_HA'])
     equipes_fora = equipes_fora.dropna(subset=['Aproveitamento_Fora'])
     
     def filtrar_sufixos(time, lista_sufixos):
