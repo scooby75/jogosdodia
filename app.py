@@ -119,7 +119,7 @@ if jogos_dia_file:
         st.write("Nenhum jogo atende aos critérios!")
     else:
         #st.write("Jogos filtrados para Back Home:")
-        st.dataframe(back_home_jogos[['Time_Casa', 'Home', 'Time_Fora', 'Away', 'Aproveitamento', 'Aproveitamento_Fora']])
+        st.dataframe(back_home_jogos[['Hora','Time_Casa', 'Home', 'Time_Fora', 'Away', 'Aproveitamento', 'Aproveitamento_Fora']])
 
     # BACK AWAY
     
@@ -176,7 +176,7 @@ if jogos_dia_file:
         st.write("Nenhum jogo atende aos critérios!")
     else:
         #st.write("Jogos filtrados para Back Away:")
-        st.dataframe(back_away_jogos[['Time_Casa', 'Home', 'Time_Fora', 'Away', 'Aproveitamento', 'Aproveitamento_Fora']])
+        st.dataframe(back_away_jogos[['Hora','Time_Casa', 'Home', 'Time_Fora', 'Away', 'Aproveitamento', 'Aproveitamento_Fora']])
 
 
     # Análise: HA -0.25
@@ -248,7 +248,7 @@ if jogos_dia_file:
         st.write("Nenhum jogo atende aos critérios!")
     else:
         #st.write("Jogos filtrados para HA +0.25 (Casa):")
-        st.dataframe(hahome_jogos[['Time_Casa', 'Home', 'Time_Fora', 'Away', 'Aproveitamento_HA', 'Aproveitamento_Fora']])
+        st.dataframe(hahome_jogos[['Hora','Time_Casa', 'Home', 'Time_Fora', 'Away', 'Aproveitamento_HA', 'Aproveitamento_Fora']])
 
     
     # Análise: HA +0.25 Away
@@ -306,7 +306,7 @@ if jogos_dia_file:
         st.write("Nenhum jogo atende aos critérios!")
     else:
         #st.write("Jogos filtrados para HA +0.25 (Fora):")
-        st.dataframe(haaway_jogos[['Time_Casa', 'Home', 'Time_Fora', 'Away', 'Aproveitamento', 'Aproveitamento_HA_Fora']])
+        st.dataframe(haaway_jogos[['Hora','Time_Casa', 'Home', 'Time_Fora', 'Away', 'Aproveitamento', 'Aproveitamento_HA_Fora']])
 
     # Análise: HA +1
    
@@ -363,7 +363,7 @@ if jogos_dia_file:
         st.write("Nenhum jogo atende aos critérios!")
     else:
         #st.write("Jogos filtrados para HA +1 (Fora):")
-        st.dataframe(haum_jogos[['Time_Casa', 'Home', 'Time_Fora', 'Away', 'Aproveitamento', 'Aproveitamento_HA_Fora']])
+        st.dataframe(haum_jogos[['Hora','Time_Casa', 'Home', 'Time_Fora', 'Away', 'Aproveitamento', 'Aproveitamento_HA_Fora']])
         
     # Análise: HA +0.25 (GD)
     
