@@ -196,8 +196,7 @@ if jogos_dia_file:
 
     # Análise: HA +0.25
     st.subheader("HA +0.25")
-    st.subheader("Back Home")
-      
+          
     # Garantir que as colunas 'Aproveitamento' e 'Aproveitamento_Fora' estão no formato correto (numérico)
     equipes_casa['Aproveitamento_HA'] = pd.to_numeric(equipes_casa['Aproveitamento_HA'], errors='coerce')
     equipes_fora['Aproveitamento_Fora'] = pd.to_numeric(equipes_fora['Aproveitamento_Fora'], errors='coerce')
@@ -248,7 +247,7 @@ if jogos_dia_file:
     if hahome_jogos.empty:
         st.write("Nenhum jogo atende aos critérios!")
     else:
-        st.write("Jogos filtrados para Back Home:")
+        #st.write("Jogos filtrados para Back Home:")
         st.dataframe(hahome_jogos[['Time_Casa', 'Home', 'Time_Fora', 'Away', 'Aproveitamento_HA', 'Aproveitamento_Fora']])
 
     
