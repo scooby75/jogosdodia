@@ -306,7 +306,7 @@ if jogos_dia_file:
         st.write("Nenhum jogo atende aos critérios!")
     else:
         #st.write("Jogos filtrados para HA +0.25 (Fora):")
-        st.dataframe(haaway_jogos[['Time_Casa', 'Home', 'Time_Fora', 'Away', 'Aproveitamento_HA', 'Aproveitamento_Fora']])
+        st.dataframe(haaway_jogos[['Time_Casa', 'Home', 'Time_Fora', 'Away', 'Aproveitamento', 'Aproveitamento_HA_Fora']])
 
     # Análise: HA +1
     st.subheader("HA +1")
