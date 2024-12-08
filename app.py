@@ -226,7 +226,7 @@ if jogos_dia_file:
         
     # Filtrar as melhores equipes em casa e piores fora
   
-    piores_fora_filtrados = equipes_fora[equipes_fora['Aproveitamento_Fora'] <= 0.10]
+    piores_fora_filtrados = equipes_fora[equipes_fora['Aproveitamento_Fora'] <= 0.20]
         
     # Filtrar jogos com base nos critérios
     gd_jogos = jogos_dia_validos[
