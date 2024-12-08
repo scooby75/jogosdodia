@@ -218,39 +218,29 @@ if jogos_dia_file:
     
     st.subheader("HA +0.25(GD)")
    
-    # Debug: visualizar equipes_fora antes do processamento
-    print(equipes_fora.head())
-    print(equipes_fora.info())
-    print(equipes_fora['W'].unique())  # Verificar os valores únicos na coluna 'W' para entender se há algum valor inesperado
-    
-    # Forçar a conversão da coluna 'W' para numérico, tratando strings e valores inesperados
-    equipes_fora['W'] = pd.to_numeric(equipes_fora['W'], errors='coerce')
-    
-    # Se houver valores inesperados (como strings ou valores não numéricos), isso será tratado como NaN
-    
-    # Verificar os valores após conversão
-    print("Valores únicos após conversão de 'W':", equipes_fora['W'].unique())
-    
-    # Remover linhas onde 'W' é NaN
-    equipes_fora = equipes_fora.dropna(subset=['W'])
-    
-    # Certificar-se de que 'W' é numérico e filtrar apenas os valores W == 0
-    ha_mais_gd = equipes_fora[equipes_fora['W'] == 0]
-    print("Equipes com W == 0:", ha_mais_gd[['Equipe', 'W']])
-    
-    # Filtrar equipes para fuzz matching
-    ha_mais_gd_filtrados = ha_mais_gd[['Equipe']]
-    
-    # Aplicar filtro nos jogos válidos
-    ha_mais_gd_jogos = jogos_dia_validos[
-        jogos_dia_validos['Time_Casa'].str.lower().apply(
-            lambda x: any(fuzz.partial_ratio(x, equipe.lower()) > 80 for equipe in ha_mais_gd_filtrados['Equipe'])
-        ) & (jogos_dia_validos['Home'] >= 1.50) & (jogos_dia_validos['Home'] <= 2.4)
-    ]
-    
-    # Debug: Verificar jogos filtrados
-    print("Jogos filtrados:", ha_mais_gd_jogos)
-    st.dataframe(ha_mais_gd_jogos)
+     # Garantir que a coluna 'Aproveitamento' está no formato correto (numérico)
+    equipes_fora['Aproveitamento_Fora'] = pd.to_numeric(equipes_fora['Aproveitamento_Fora'], errors='coerce')
+        
+    # Remover valores nulos de 'Aproveitamento'   
+    equipes_fora = equipes_fora.dropna(subset=['Aproveitamento_Fora'])
+        
+    # Filtrar as melhores equipes em casa e piores fora
+  
+    piores_fora_filtrados = equipes_fora[equipes_fora['Aproveitamento_Fora'] <= 0.10]
+        
+    # Filtrar jogos com base nos critérios
+    gd_jogos = jogos_dia_validos[
+        jogos_dia_validos['Time_Fora'].apply(
+            lambda x: any(fuzz.token_sort_ratio(x, equipe) > 80 for equipe in melhores_fora_filtrados['Equipe'])
+            ) & (jogos_dia_validos['Away'] >= 3) & (jogos_dia_validos['Away'] <= 6)
+        ]
+        
+    # Verificar se há jogos filtrados
+    if gd_jogos.empty:
+            st.write("Nenhum jogo atende aos critérios!")
+    else:
+            st.write("Jogos filtrados para HA +0.25 (GD):")
+            st.dataframe(gd_jogos)
 
 
 
