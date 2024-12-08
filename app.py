@@ -68,7 +68,7 @@ if jogos_dia_file:
     # Análise: Back Home
     st.subheader("Back Home")
       
-    # Garantir que as colunas 'Aproveitamento' e 'Aproveitamento_Fora' estão no formato correto (numérico)
+   # Garantir que as colunas 'Aproveitamento' e 'Aproveitamento_Fora' estão no formato correto (numérico)
     equipes_casa['PIH'] = pd.to_numeric(equipes_casa['PIH'], errors='coerce')
     equipes_fora['PIA'] = pd.to_numeric(equipes_fora['PIA'], errors='coerce')
     Odd_Justa_MO['Odd_Justa_MO'] = pd.to_numeric(Odd_Justa_MO['Odd_Justa_MO'], errors='coerce')
@@ -99,7 +99,7 @@ if jogos_dia_file:
         (jogos_dia_validos['Home'] >= 1.45) &
         (jogos_dia_validos['Home'] <= 2.2)
     ]
-
+    
     # Adicionar as colunas de aproveitamento ao dataframe 'back_home_jogos'
     back_home_jogos = back_home_jogos.merge(
         equipes_casa[['Equipe', 'PIH']],
@@ -115,12 +115,21 @@ if jogos_dia_file:
         how='left'
     ).drop(columns=['Equipe'])
     
+    # Adicionar a coluna Odd_Justa_MO ao dataframe 'back_home_jogos'
+    back_home_jogos = back_home_jogos.merge(
+        Odd_Justa_MO[['Equipe', 'Odd_Justa_MO']],
+        left_on='Time_Casa',
+        right_on='Equipe',
+        how='left'
+    ).drop(columns=['Equipe'])
+    
     # Verificar se há jogos filtrados
     if back_home_jogos.empty:
         st.write("Nenhum jogo atende aos critérios!")
     else:
-        #st.write("Jogos filtrados para Back Home:")
+        # Exibir os jogos com a coluna 'Odd_Justa_MO'
         st.dataframe(back_home_jogos[['Hora','Time_Casa', 'Home', 'Time_Fora', 'Away', 'PIH', 'PIA', 'Odd_Justa_MO']])
+
 
     # BACK AWAY
     
