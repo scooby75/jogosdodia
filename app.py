@@ -67,40 +67,55 @@ if jogos_dia_file:
 
     # Análise: Back Home
     st.subheader("Back Home")
-    
-    # Garantir que a coluna 'Aproveitamento' está no formato correto (numérico)
+      
+    # Garantir que as colunas 'Aproveitamento' e 'Aproveitamento_Fora' estão no formato correto (numérico)
     equipes_casa['Aproveitamento'] = pd.to_numeric(equipes_casa['Aproveitamento'], errors='coerce')
     equipes_fora['Aproveitamento_Fora'] = pd.to_numeric(equipes_fora['Aproveitamento_Fora'], errors='coerce')
     
     # Remover valores nulos de 'Aproveitamento'
     equipes_casa = equipes_casa.dropna(subset=['Aproveitamento'])
     equipes_fora = equipes_fora.dropna(subset=['Aproveitamento_Fora'])
-
+    
     def filtrar_sufixos(time, lista_sufixos):
         return not any(sufixo in time for sufixo in lista_sufixos)
-
+    
     sufixos_diferentes = ["B", "II", "Sub-23"]
     equipes_casa = equipes_casa[equipes_casa['Equipe'].apply(lambda x: filtrar_sufixos(x, sufixos_diferentes))]
     equipes_fora = equipes_fora[equipes_fora['Equipe'].apply(lambda x: filtrar_sufixos(x, sufixos_diferentes))]
-
-      
+    
     # Filtrar as melhores equipes em casa e piores fora
     melhores_casa_filtrados = equipes_casa[equipes_casa['Aproveitamento'] >= 0.65]
     piores_fora_filtrados = equipes_fora[equipes_fora['Aproveitamento_Fora'] <= 0.30]
     
-   # Filtrar jogos com base nos critérios
+    # Filtrar jogos com base nos critérios
     back_home_jogos = jogos_dia_validos[
         jogos_dia_validos['Time_Casa'].apply(
             lambda x: any(fuzz.token_sort_ratio(x, equipe) > 80 for equipe in melhores_casa_filtrados['Equipe'])
         ) & (jogos_dia_validos['Home'] >= 1.45) & (jogos_dia_validos['Home'] <= 2.2)
     ]
     
+    # Adicionar as colunas de aproveitamento ao dataframe 'back_home_jogos'
+    back_home_jogos = back_home_jogos.merge(
+        equipes_casa[['Equipe', 'Aproveitamento']],
+        left_on='Time_Casa',
+        right_on='Equipe',
+        how='left'
+    ).drop(columns=['Equipe'])
+    
+    back_home_jogos = back_home_jogos.merge(
+        equipes_fora[['Equipe', 'Aproveitamento_Fora']],
+        left_on='Time_Fora',
+        right_on='Equipe',
+        how='left'
+    ).drop(columns=['Equipe'])
+    
     # Verificar se há jogos filtrados
     if back_home_jogos.empty:
         st.write("Nenhum jogo atende aos critérios!")
     else:
         st.write("Jogos filtrados para Back Home:")
-        st.dataframe(back_home_jogos)
+        st.dataframe(back_home_jogos[['Time_Casa', 'Time_Fora', 'Aproveitamento', 'Aproveitamento_Fora']])
+
 
     # Análise: Back Away
 
