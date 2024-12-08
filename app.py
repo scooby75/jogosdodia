@@ -80,14 +80,7 @@ if jogos_dia_file:
     melhores_casa_filtrados = equipes_casa[equipes_casa['Aproveitamento'] >= 0.65]
     piores_fora_filtrados = equipes_fora[equipes_fora['Aproveitamento'] <= 0.30]
     
-    # Log para depuração
-    st.write("Melhores equipes em casa:")
-    st.dataframe(melhores_casa_filtrados)
-    
-    st.write("Piores equipes fora:")
-    st.dataframe(piores_fora_filtrados)
-    
-    # Filtrar jogos com base nos critérios
+   # Filtrar jogos com base nos critérios
     back_home_jogos = jogos_dia_validos[
         jogos_dia_validos['Time_Casa'].apply(
             lambda x: any(fuzz.token_sort_ratio(x, equipe) > 80 for equipe in melhores_casa_filtrados['Equipe'])
