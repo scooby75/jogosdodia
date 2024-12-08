@@ -77,7 +77,7 @@ if jogos_dia_file:
     equipes_fora = equipes_fora.dropna(subset=['Aproveitamento_Fora'])
 
     def filtrar_sufixos(time, lista_sufixos):
-    return not any(sufixo in time for sufixo in lista_sufixos)
+        return not any(sufixo in time for sufixo in lista_sufixos)
 
     sufixos_diferentes = ["B", "II", "Sub-23"]
     equipes_casa = equipes_casa[equipes_casa['Equipe'].apply(lambda x: filtrar_sufixos(x, sufixos_diferentes))]
