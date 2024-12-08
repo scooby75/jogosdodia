@@ -121,63 +121,56 @@ if jogos_dia_file:
         st.write("Jogos filtrados para Back Home:")
         st.dataframe(back_home_jogos[['Time_Casa', 'Home', 'Time_Fora', 'Away', 'Aproveitamento', 'Aproveitamento_Fora']])
 
-
-    # Análise: Back Away
-
-    st.subheader("Back Away")
-      
-        # Garantir que as colunas 'Aproveitamento' e 'Aproveitamento_Fora' estão no formato correto (numérico)
-        equipes_casa['Aproveitamento'] = pd.to_numeric(equipes_casa['Aproveitamento'], errors='coerce')
-        equipes_fora['Aproveitamento_Fora'] = pd.to_numeric(equipes_fora['Aproveitamento_Fora'], errors='coerce')
-        
-        # Remover valores nulos de 'Aproveitamento'
-        equipes_casa = equipes_casa.dropna(subset=['Aproveitamento'])
-        equipes_fora = equipes_fora.dropna(subset=['Aproveitamento_Fora'])
-        
-        def filtrar_sufixos(time, lista_sufixos):
-            return not any(sufixo in time for sufixo in lista_sufixos)
-        
-        sufixos_diferentes = ["B", "II", "Sub-23"]
-        equipes_casa = equipes_casa[equipes_casa['Equipe'].apply(lambda x: filtrar_sufixos(x, sufixos_diferentes))]
-        equipes_fora = equipes_fora[equipes_fora['Equipe'].apply(lambda x: filtrar_sufixos(x, sufixos_diferentes))]
-        
-        # Filtrar as melhores equipes em casa e piores fora
-        melhores_fora_filtrados = equipes_fora[equipes_fora['Aproveitamento_Fora'] >= 0.65]
-        piores_casa_filtrados = equipes_casa[equipes_casa['Aproveitamento'] <= 0.30]
-        
-        # Filtrar jogos com base nos critérios
-        back_home_jogos = jogos_dia_validos[
-            jogos_dia_validos['Time_Fora'].apply(
-                lambda x: any(fuzz.token_sort_ratio(x, equipe) > 80 for equipe in melhores_fora_filtrados['Equipe'])
-            ) &
-            jogos_dia_validos['Time_Casa'].apply(
-                lambda x: any(fuzz.token_sort_ratio(x, equipe) > 80 for equipe in piores_casa_filtrados['Equipe'])
-            ) &
-            (jogos_dia_validos['Away'] >= 1.45) &
-            (jogos_dia_validos['Away'] <= 2.2)
-        ]
+    # BACK AWAY
     
-        # Adicionar as colunas de aproveitamento ao dataframe 'back_home_jogos'
-        back_away_jogos = back_away_jogos.merge(
-            equipes_fora[['Equipe', 'Aproveitamento_Fora']],
-            left_on='Time_Fora',
-            right_on='Equipe',
-            how='left'
-        ).drop(columns=['Equipe'])
-        
-        back_away_jogos = back_away_jogos.merge(
-            equipes_fora[['Equipe', 'Aproveitamento]],
-            left_on='Time_Fora',
-            right_on='Equipe',
-            how='left'
-        ).drop(columns=['Equipe'])
-        
-        # Verificar se há jogos filtrados
-        if back_away_jogos.empty:
-            st.write("Nenhum jogo atende aos critérios!")
-        else:
-            st.write("Jogos filtrados para Back Away:")
-            st.dataframe(back_home_jogos[['Time_Casa', 'Home', 'Time_Fora', 'Away', 'Aproveitamento', 'Aproveitamento_Fora']])
+    st.subheader("Back Away")
+    
+    # Garantir que as colunas estão no formato correto
+    equipes_casa['Aproveitamento'] = pd.to_numeric(equipes_casa['Aproveitamento'], errors='coerce')
+    equipes_fora['Aproveitamento_Fora'] = pd.to_numeric(equipes_fora['Aproveitamento_Fora'], errors='coerce')
+    
+    # Remover valores nulos
+    equipes_casa = equipes_casa.dropna(subset=['Aproveitamento'])
+    equipes_fora = equipes_fora.dropna(subset=['Aproveitamento_Fora'])
+    
+    # Remover equipes com sufixos indesejados
+    def filtrar_sufixos(time, lista_sufixos):
+        return not any(sufixo in time for sufixo in lista_sufixos)
+    
+    sufixos_diferentes = ["B", "II", "Sub-23"]
+    equipes_casa = equipes_casa[equipes_casa['Equipe'].apply(lambda x: filtrar_sufixos(x, sufixos_diferentes))]
+    equipes_fora = equipes_fora[equipes_fora['Equipe'].apply(lambda x: filtrar_sufixos(x, sufixos_diferentes))]
+    
+    # Filtrar melhores e piores equipes
+    aproveitamento_fora_min, aproveitamento_casa_max = 0.65, 0.30
+    melhores_fora_filtrados = filtrar_equipes(equipes_fora, 'Aproveitamento_Fora', aproveitamento_fora_min, tipo='melhor')
+    piores_casa_filtrados = filtrar_equipes(equipes_casa, 'Aproveitamento', aproveitamento_casa_max, tipo='pior')
+    
+    # Filtrar jogos
+    odd_min, odd_max = 1.45, 2.2
+    back_away_jogos = filtrar_jogos(jogos_dia_validos, melhores_fora_filtrados, piores_casa_filtrados, odd_min, odd_max)
+    
+    # Adicionar colunas de aproveitamento
+    back_away_jogos = back_away_jogos.merge(
+        equipes_fora[['Equipe', 'Aproveitamento_Fora']],
+        left_on='Time_Fora',
+        right_on='Equipe',
+        how='left'
+    ).drop(columns=['Equipe'])
+    
+    back_away_jogos = back_away_jogos.merge(
+        equipes_casa[['Equipe', 'Aproveitamento']],
+        left_on='Time_Casa',
+        right_on='Equipe',
+        how='left'
+    ).drop(columns=['Equipe'])
+    
+    # Exibir resultados
+    if back_away_jogos.empty:
+        st.write("Nenhum jogo atende aos critérios!")
+    else:
+        st.write("Jogos filtrados para Back Away:")
+        st.dataframe(back_away_jogos[['Time_Casa', 'Home', 'Time_Fora', 'Away', 'Aproveitamento', 'Aproveitamento_Fora']])
 
     # Análise: HA -0.25
     st.subheader("HA -0.25")
