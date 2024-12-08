@@ -309,21 +309,62 @@ if jogos_dia_file:
         st.dataframe(haaway_jogos[['Time_Casa', 'Home', 'Time_Fora', 'Away', 'Aproveitamento', 'Aproveitamento_HA_Fora']])
 
     # Análise: HA +1
+   
     st.subheader("HA +1")
-    ha_mais_um_filtrados = melhores_away[
-        (melhores_away['W'] + melhores_away['D']) >= 6
-        & (melhores_away['GD'] > 0)
-    ]
+   
+    # Garantir que as colunas 'Aproveitamento' e 'Aproveitamento_Fora' estão no formato correto (numérico)
+    equipes_casa['Aproveitamento'] = pd.to_numeric(equipes_casa['Aproveitamento'], errors='coerce')
+    equipes_fora['Aproveitamento_HA_Fora'] = pd.to_numeric(equipes_fora['Aproveitamento_HA_Fora'], errors='coerce')
     
-    ha_mais_um_jogos = jogos_dia_validos[
+    # Remover valores nulos de 'Aproveitamento'
+    equipes_casa = equipes_casa.dropna(subset=['Aproveitamento'])
+    equipes_fora = equipes_fora.dropna(subset=['Aproveitamento_HA_Fora'])
+    
+    def filtrar_sufixos(time, lista_sufixos):
+        return not any(sufixo in time for sufixo in lista_sufixos)
+    
+    sufixos_diferentes = ["B", "II", "Sub-23"]
+    equipes_casa = equipes_casa[equipes_casa['Equipe'].apply(lambda x: filtrar_sufixos(x, sufixos_diferentes))]
+    equipes_fora = equipes_fora[equipes_fora['Equipe'].apply(lambda x: filtrar_sufixos(x, sufixos_diferentes))]
+    
+    # Filtrar as melhores equipes em casa e piores fora
+    melhores_fora_filtrados = equipes_fora[equipes_fora['Aproveitamento_HA_Fora'] >= 0.6]
+    piores_casa_filtrados = equipes_casa[equipes_casa['Aproveitamento'] <= 0.2]
+    
+    # Filtrar jogos com base nos critérios
+    haum_jogos = jogos_dia_validos[
         jogos_dia_validos['Time_Fora'].apply(
-            lambda x: any(fuzz.partial_ratio(x, equipe) > 80 for equipe in ha_mais_um_filtrados['Equipe'])
-        ) & (jogos_dia_validos['Home'] >= 2.60) & (jogos_dia_validos['Away'] >= 2.4)
+            lambda x: any(fuzz.token_sort_ratio(x, equipe) > 80 for equipe in melhores_fora_filtrados['Equipe'])
+        ) &
+        jogos_dia_validos['Time_Casa'].apply(
+            lambda x: any(fuzz.token_sort_ratio(x, equipe) > 80 for equipe in piores_casa_filtrados['Equipe'])
+        ) &
+        (jogos_dia_validos['Home'] >= 2.6) &
+        (jogos_dia_validos['Away'] >= 2.2)
     ]
-    
-    st.dataframe(ha_mais_um_jogos)
 
+    # Adicionar as colunas de aproveitamento ao dataframe 'haum_jogos'
+    haum_jogos = haaway_jogos.merge(
+        equipes_casa[['Equipe', 'Aproveitamento']],
+        left_on='Time_Casa',
+        right_on='Equipe',
+        how='left'
+    ).drop(columns=['Equipe'])
     
+    haum_jogos = haaway_jogos.merge(
+        equipes_fora[['Equipe', 'Aproveitamento_HA_Fora']],
+        left_on='Time_Fora',
+        right_on='Equipe',
+        how='left'
+    ).drop(columns=['Equipe'])
+    
+    # Verificar se há jogos filtrados
+    if haum_jogos.empty:
+        st.write("Nenhum jogo atende aos critérios!")
+    else:
+        #st.write("Jogos filtrados para HA +1 (Fora):")
+        st.dataframe(haum_jogos[['Time_Casa', 'Home', 'Time_Fora', 'Away', 'Aproveitamento', 'Aproveitamento_HA_Fora']])
+        
     # Análise: HA +0.25 (GD)
     
     st.subheader("HA +0.25(GD)")
