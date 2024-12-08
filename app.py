@@ -343,7 +343,7 @@ if jogos_dia_file:
         st.write("Nenhum jogo atende aos critérios!")
     else:
         #st.write("Jogos filtrados para HA +0.25 (Fora):")
-        st.dataframe(haaway_jogos[['Hora','Time_Casa', 'Home', 'Time_Fora', 'Away', 'PIH', 'PIA_HA','Odd_Justa_HA']])
+        st.dataframe(haaway_jogos[['Hora','Time_Casa', 'Time_Fora', 'Home', 'Away', 'PIH', 'PIA_HA','Odd_Justa_HA']])
 
     # Análise: HA +1
    
@@ -394,13 +394,20 @@ if jogos_dia_file:
         right_on='Equipe',
         how='left'
     ).drop(columns=['Equipe'])
+
+    haum_jogos = haum_jogos.merge(
+        equipes_fora[['Equipe', 'Odd_Justa_HA']],
+        left_on='Time_Fora',
+        right_on='Equipe',
+        how='left'
+    ).drop(columns=['Equipe'])
     
     # Verificar se há jogos filtrados
     if haum_jogos.empty:
         st.write("Nenhum jogo atende aos critérios!")
     else:
         #st.write("Jogos filtrados para HA +1 (Fora):")
-        st.dataframe(haum_jogos[['Hora','Time_Casa', 'Home', 'Time_Fora', 'Away', 'PIH', 'PIA_HA', 'Odd_Justa_HA']])
+        st.dataframe(haum_jogos[['Hora','Time_Casa', 'Time_Fora', 'Home', 'Away', 'PIH', 'PIA_HA', 'Odd_Justa_HA']])
         
     # Análise: HA +0.25 (GD)
     
