@@ -67,16 +67,15 @@ if jogos_dia_file:
 
     # Análise: Back Home
     st.subheader("Back Home")
-      
-   # Garantir que as colunas 'Aproveitamento' e 'Aproveitamento_Fora' estão no formato correto (numérico)
+    # Garantir que as colunas 'Aproveitamento' e 'Aproveitamento_Fora' estão no formato correto (numérico)
     equipes_casa['PIH'] = pd.to_numeric(equipes_casa['PIH'], errors='coerce')
     equipes_fora['PIA'] = pd.to_numeric(equipes_fora['PIA'], errors='coerce')
-   
     
     # Remover valores nulos de 'Aproveitamento'
     equipes_casa = equipes_casa.dropna(subset=['PIH'])
     equipes_fora = equipes_fora.dropna(subset=['PIA'])
     
+    # Função para filtrar sufixos das equipes
     def filtrar_sufixos(time, lista_sufixos):
         return not any(sufixo in time for sufixo in lista_sufixos)
     
@@ -115,9 +114,12 @@ if jogos_dia_file:
         how='left'
     ).drop(columns=['Equipe'])
     
+    # Garantir que a coluna 'Odd_Justa_MO' do DataFrame 'equipes_casa' esteja no formato numérico
+    equipes_casa['Odd_Justa_MO'] = pd.to_numeric(equipes_casa['Odd_Justa_MO'], errors='coerce')
+    
     # Adicionar a coluna Odd_Justa_MO ao dataframe 'back_home_jogos'
     back_home_jogos = back_home_jogos.merge(
-        Odd_Justa_MO[['Equipe', 'Odd_Justa_MO']],
+        equipes_casa[['Equipe', 'Odd_Justa_MO']],
         left_on='Time_Casa',
         right_on='Equipe',
         how='left'
@@ -128,7 +130,8 @@ if jogos_dia_file:
         st.write("Nenhum jogo atende aos critérios!")
     else:
         # Exibir os jogos com a coluna 'Odd_Justa_MO'
-        st.dataframe(back_home_jogos[['Hora','Time_Casa', 'Home', 'Time_Fora', 'Away', 'PIH', 'PIA', 'Odd_Justa_MO']])
+        st.dataframe(back_home_jogos[['Hora', 'Time_Casa', 'Home', 'Time_Fora', 'Away', 'PIH', 'PIA', 'Odd_Justa_MO']])
+
 
 
     # BACK AWAY
