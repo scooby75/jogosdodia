@@ -71,7 +71,7 @@ if jogos_dia_file:
    # Garantir que as colunas 'Aproveitamento' e 'Aproveitamento_Fora' estão no formato correto (numérico)
     equipes_casa['PIH'] = pd.to_numeric(equipes_casa['PIH'], errors='coerce')
     equipes_fora['PIA'] = pd.to_numeric(equipes_fora['PIA'], errors='coerce')
-    Odd_Justa_MO['Odd_Justa_MO'] = pd.to_numeric(Odd_Justa_MO['Odd_Justa_MO'], errors='coerce')
+   
     
     # Remover valores nulos de 'Aproveitamento'
     equipes_casa = equipes_casa.dropna(subset=['PIH'])
