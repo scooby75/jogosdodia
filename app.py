@@ -231,7 +231,7 @@ if jogos_dia_file:
 
     # Adicionar as colunas de aproveitamento ao dataframe 'hahome_jogos'
     hahome_jogos = hahome_jogos.merge(
-        equipes_casa[['Equipe', 'Aproveitamento']],
+        equipes_casa[['Equipe', 'Aproveitamento_HA']],
         left_on='Time_Casa',
         right_on='Equipe',
         how='left'
@@ -249,7 +249,7 @@ if jogos_dia_file:
         st.write("Nenhum jogo atende aos critérios!")
     else:
         st.write("Jogos filtrados para Back Home:")
-        st.dataframe(hahome_jogos[['Time_Casa', 'Home', 'Time_Fora', 'Away', 'Aproveitamento', 'Aproveitamento_Fora']])
+        st.dataframe(hahome_jogos[['Time_Casa', 'Home', 'Time_Fora', 'Away', 'Aproveitamento_HA', 'Aproveitamento_Fora']])
 
     
     # Análise: HA +0.25 Away
