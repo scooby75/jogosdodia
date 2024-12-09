@@ -504,9 +504,18 @@ if jogos_dia_file:
         how='left'
     ).drop(columns=['Equipe'])
     
-    # Adicionar a coluna Odd_Justa_HA ao dataframe 'hagd_jogos'
+    # Adicionar a coluna GD Home
     hagd_jogos = hagd_jogos.merge(
-        equipes_fora[['Equipe', 'GD']],
+        equipes_casa[['Equipe', 'GD_Home']],
+        left_on='Time_Casa',
+        right_on='Equipe',
+        how='left'
+    ).drop(columns=['Equipe'])
+    
+    
+    # Adicionar a coluna GD Away
+    hagd_jogos = hagd_jogos.merge(
+        equipes_fora[['Equipe', 'GD_Away']],
         left_on='Time_Fora',
         right_on='Equipe',
         how='left'
