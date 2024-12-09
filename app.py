@@ -313,7 +313,7 @@ if jogos_dia_file:
     piores_fora_filtrados = equipes_fora[equipes_fora['PIA'] <= 0.25]
     
     # Filtrar jogos com base nos critérios
-    hastrong_jogos = jogos_dia_validos[
+    hahome_jogos = jogos_dia_validos[
         jogos_dia_validos['Time_Casa'].apply(
             lambda x: any(fuzz.token_sort_ratio(x, equipe) > 80 for equipe in melhores_casa_filtrados['Equipe'])
         ) &
@@ -325,14 +325,14 @@ if jogos_dia_file:
     ]
     
     # Adicionar as colunas de aproveitamento ao dataframe 'hahome_jogos'
-    hastrong_jogos = hastrong_jogos.merge(
+    hahome_jogos = hahome_jogos.merge(
         equipes_casa[['Equipe', 'PIH_HA']],
         left_on='Time_Casa',
         right_on='Equipe',
         how='left'
     ).drop(columns=['Equipe'])
     
-    hastrong_jogos = hastrong_jogos.merge(
+    hahome_jogos = hahome_jogos.merge(
         equipes_fora[['Equipe', 'PIA']],
         left_on='Time_Fora',
         right_on='Equipe',
@@ -340,7 +340,7 @@ if jogos_dia_file:
     ).drop(columns=['Equipe'])
     
     # Adicionar a coluna Odd_Justa_MO ao dataframe 'back_home_jogos'
-    hastrong_jogos = hastrong_jogos.merge(
+    hahome_jogos = hahome_jogos.merge(
         equipes_casa[['Equipe', 'Odd_Justa_HA']],
         left_on='Time_Casa',
         right_on='Equipe',
@@ -355,7 +355,7 @@ if jogos_dia_file:
         how='left'
     ).drop(columns=['Equipe'])
     
-    hastrong_jogos = hastrong_jogos.merge(
+   hahome_jogos = hahome_jogos.merge(
         equipes_fora[['Equipe', 'Pts_Away']],
         left_on='Time_Fora',
         right_on='Equipe',
@@ -363,14 +363,14 @@ if jogos_dia_file:
     ).drop(columns=['Equipe'])
 
     # Adicionar as colunas de aproveitamento ao dataframe 'back_home_jogos'
-    hastrong_jogos = hastrong_jogos.merge(
+    hahome_jogos = hahome_jogos.merge(
         equipes_casa[['Equipe', 'GD_Home']],
         left_on='Time_Casa',
         right_on='Equipe',
         how='left'
     ).drop(columns=['Equipe'])
     
-    hastrong_jogos = hastrong_jogos.merge(
+    hahome_jogos = hahome_jogos.merge(
         equipes_fora[['Equipe', 'GD_Away']],
         left_on='Time_Fora',
         right_on='Equipe',
@@ -378,7 +378,7 @@ if jogos_dia_file:
     ).drop(columns=['Equipe'])
     
     # Verificar se há jogos filtrados
-    if hastrong_jogos.empty:
+    if hahome_jogos.empty:
         st.write("Nenhum jogo atende aos critérios!")
     else:
         # Corrigindo a exibição das colunas no st.dataframe
