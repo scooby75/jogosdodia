@@ -638,14 +638,15 @@ if jogos_dia_file:
     
     st.subheader("Lay Away")
     
-    # Garantir que as colunas 'Aproveitamento' e 'Aproveitamento_Fora' estão no formato correto (numérico)
+    # Garantir que as colunas de aproveitamento estão no formato correto
     equipes_casa['PIH'] = pd.to_numeric(equipes_casa['PIH'], errors='coerce')
     equipes_fora['PIA'] = pd.to_numeric(equipes_fora['PIA'], errors='coerce')
     
-    # Remover valores nulos de 'Aproveitamento'
-    equipes_casa = equipes_casa.dropna(subset=['PIH'])
-    equipes_fora = equipes_fora.dropna(subset=['PIA'])
+    # Remover valores nulos
+    equipes_casa.dropna(subset=['PIH'], inplace=True)
+    equipes_fora.dropna(subset=['PIA'], inplace=True)
     
+    # Função para filtrar equipes com sufixos indesejados
     def filtrar_sufixos(time, lista_sufixos):
         return not any(sufixo in time for sufixo in lista_sufixos)
     
@@ -653,12 +654,12 @@ if jogos_dia_file:
     equipes_casa = equipes_casa[equipes_casa['Equipe'].apply(lambda x: filtrar_sufixos(x, sufixos_diferentes))]
     equipes_fora = equipes_fora[equipes_fora['Equipe'].apply(lambda x: filtrar_sufixos(x, sufixos_diferentes))]
     
-    # Filtrar as melhores equipes fora e piores em casa
+    # Filtrar melhores equipes em casa e piores fora
     melhores_casa_filtrados = equipes_casa[equipes_casa['PIH'] >= 0.6]
     piores_fora_filtrados = equipes_fora[equipes_fora['PIA'] <= 0.10]
     
-    # Filtrar jogos com base nos critérios
-   lay_away_jogos = jogos_dia_validos[
+    # Filtrar jogos do dia com base nos critérios
+    lay_away_jogos = jogos_dia_validos[
         jogos_dia_validos['Time_Casa'].apply(
             lambda x: any(fuzz.token_sort_ratio(x, equipe) > 80 for equipe in melhores_casa_filtrados['Equipe'])
         ) &
@@ -666,10 +667,9 @@ if jogos_dia_file:
             lambda x: any(fuzz.token_sort_ratio(x, equipe) > 80 for equipe in piores_fora_filtrados['Equipe'])
         ) &
         (jogos_dia_validos['Away'] >= 5)
-       
     ]
     
-    # Adicionar as colunas de aproveitamento ao dataframe 'back_away_jogos'
+    # Mesclar dados adicionais ao DataFrame filtrado
     lay_away_jogos = lay_away_jogos.merge(
         equipes_casa[['Equipe', 'PIH']],
         left_on='Time_Casa',
@@ -683,8 +683,7 @@ if jogos_dia_file:
         right_on='Equipe',
         how='left'
     ).drop(columns=['Equipe'])
-
-     # Adicionar a coluna Odd_Justa_MO ao dataframe 'back_home_jogos'
+    
     lay_away_jogos = lay_away_jogos.merge(
         equipes_fora[['Equipe', 'Odd_Justa_MO']],
         left_on='Time_Fora',
@@ -692,12 +691,12 @@ if jogos_dia_file:
         how='left'
     ).drop(columns=['Equipe'])
     
-    # Verificar se há jogos filtrados
+    # Exibição dos resultados
     if lay_away_jogos.empty:
         st.write("Nenhum jogo atende aos critérios!")
     else:
-        #st.write("Jogos filtrados para Back Away:")
-        st.dataframe(lay_away_jogos[['Hora','Time_Casa', 'Time_Fora', 'Home', 'Away', 'PIH', 'PIA', 'Odd_Justa_MO']])
+        st.dataframe(lay_away_jogos[['Hora', 'Time_Casa', 'Time_Fora', 'Home', 'Away', 'PIH', 'PIA', 'Odd_Justa_MO']])
+
 
 else:
     st.info("Por favor, envie o arquivo 'Jogos do dia Betfair.csv' para realizar a análise.")
