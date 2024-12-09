@@ -445,7 +445,7 @@ if jogos_dia_file:
         how='left'
     ).drop(columns=['Equipe'])
 
-     haaway_jogos = haaway_jogos.merge(
+    haaway_jogos = haaway_jogos.merge(
         equipes_casa[['Equipe', 'GD_Home']],
         left_on='Time_Casa',
         right_on='Equipe',
