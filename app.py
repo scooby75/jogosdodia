@@ -576,33 +576,32 @@ if jogos_dia_file:
         (jogos_dia_validos['Away'] >= 5)
     ]
     
-    # Mesclar dados adicionais ao DataFrame filtrado
-    lay_away_jogos = lay_away_jogos.merge(
-        equipes_casa[['Equipe', 'PIH']],
-        left_on='Time_Casa',
-        right_on='Equipe',
-        how='left'
-    ).drop(columns=['Equipe'])
+      # Adicionar as colunas ao dataframe 'hagd_jogos'
+    colunas_para_merge = [
+        ('PIH', 'Time_Casa', equipes_casa),
+        ('PIA_HA', 'Time_Fora', equipes_fora),
+        ('GD_Home', 'Time_Casa', equipes_casa),
+        ('GD_Away', 'Time_Fora', equipes_fora),
+        ('Pts_Home', 'Time_Casa', equipes_casa),
+        ('Pts_Away', 'Time_Fora', equipes_fora)
+    ]
     
-    lay_away_jogos = lay_away_jogos.merge(
-        equipes_fora[['Equipe', 'PIA']],
-        left_on='Time_Fora',
-        right_on='Equipe',
-        how='left'
-    ).drop(columns=['Equipe'])
+    for coluna, chave, df_merge in colunas_para_merge:
+       lay_away_jogos = lay_away_jogos.merge(
+            df_merge[['Equipe', coluna]],
+            left_on=chave,
+            right_on='Equipe',
+            how='left'
+        ).drop(columns=['Equipe'])
     
-    lay_away_jogos = lay_away_jogos.merge(
-        equipes_fora[['Equipe', 'Odd_Justa_MO']],
-        left_on='Time_Fora',
-        right_on='Equipe',
-        how='left'
-    ).drop(columns=['Equipe'])
+    # Remover linhas com valores nulos nas colunas essenciais
+    lay_away_jogos = lay_away_jogos.dropna(subset=['PIH', 'PIA_HA', 'GD_Home', 'GD_Away', 'Pts_Home', 'Pts_Away'])
     
-    # Exibição dos resultados
+    # Verificar se há jogos filtrados
     if lay_away_jogos.empty:
-        st.write("Nenhum jogo atende aos critérios!")
+        st.write("Nenhum jogo atende aos critérios ou possui dados suficientes!")
     else:
-        st.dataframe(lay_away_jogos[['Hora', 'Time_Casa', 'Time_Fora', 'Home', 'Away', 'PIH', 'PIA', 'Odd_Justa_MO']])
+        st.dataframe(lay_away_jogos[['Hora', 'Time_Casa', 'Time_Fora', 'Home', 'Away', 'PIH', 'PIA_HA', 'GD_Home', 'GD_Away', 'Pts_Home', 'Pts_Away']])
 
 else:
     st.info("Por favor, envie o arquivo 'Jogos do dia Betfair.csv' para realizar a análise.")
