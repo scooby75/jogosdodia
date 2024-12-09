@@ -81,7 +81,7 @@ if jogos_dia_file:
     
     # Filtrar as melhores equipes em casa e piores fora
     melhores_casa_filtrados = equipes_casa[equipes_casa['PIH'] >= 0.65]
-    piores_fora_filtrados = equipes_fora[equipes_fora['PIA'] <= 0.30]
+    piores_fora_filtrados = equipes_fora[equipes_fora['PIA'] <= 0.20]
     
     # Filtrar jogos com base nos critérios
     back_home_jogos = jogos_dia_validos[
@@ -151,7 +151,7 @@ if jogos_dia_file:
     
     # Filtrar as melhores equipes fora e piores em casa
     melhores_fora_filtrados = equipes_fora[equipes_fora['PIA'] >= 0.65]
-    piores_casa_filtrados = equipes_casa[equipes_casa['PIH'] <= 0.30]
+    piores_casa_filtrados = equipes_casa[equipes_casa['PIH'] <= 0.20]
     
     # Filtrar jogos com base nos critérios
     back_away_jogos = jogos_dia_validos[
@@ -279,7 +279,7 @@ if jogos_dia_file:
     
     # Filtrar as melhores equipes em casa e piores fora
     melhores_casa_filtrados = equipes_casa[equipes_casa['PIH_HA'] >= 0.75]
-    piores_fora_filtrados = equipes_fora[equipes_fora['PIA'] <= 0.2]
+    piores_fora_filtrados = equipes_fora[equipes_fora['PIA'] <= 0.25]
     
     # Filtrar jogos com base nos critérios
     hahome_jogos = jogos_dia_validos[
@@ -346,7 +346,7 @@ if jogos_dia_file:
     
     # Filtrar as melhores equipes em casa e piores fora
     melhores_fora_filtrados = equipes_fora[equipes_fora['PIA_HA'] >= 0.75]
-    piores_casa_filtrados = equipes_casa[equipes_casa['PIH'] <= 0.2]
+    piores_casa_filtrados = equipes_casa[equipes_casa['PIH'] <= 0.25]
     
     # Filtrar jogos com base nos critérios
     haaway_jogos = jogos_dia_validos[
