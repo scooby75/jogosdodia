@@ -109,6 +109,21 @@ if jogos_dia_file:
         right_on='Equipe',
         how='left'
     ).drop(columns=['Equipe'])
+
+    # Adicionar as colunas de aproveitamento ao dataframe 'back_home_jogos'
+    back_home_jogos = back_home_jogos.merge(
+        equipes_casa[['Equipe', 'Pts_Home']],
+        left_on='Time_Casa',
+        right_on='Equipe',
+        how='left'
+    ).drop(columns=['Equipe'])
+    
+    back_home_jogos = back_home_jogos.merge(
+        equipes_fora[['Equipe', 'Pts_Away']],
+        left_on='Time_Fora',
+        right_on='Equipe',
+        how='left'
+    ).drop(columns=['Equipe'])
     
     # Garantir que a coluna 'Odd_Justa_MO' do DataFrame 'equipes_casa' esteja no formato numérico
     equipes_casa['Odd_Justa_MO'] = pd.to_numeric(equipes_casa['Odd_Justa_MO'], errors='coerce')
@@ -126,7 +141,7 @@ if jogos_dia_file:
         st.write("Nenhum jogo atende aos critérios!")
     else:
         # Exibir os jogos com a coluna 'Odd_Justa_MO'
-        st.dataframe(back_home_jogos[['Hora', 'Time_Casa', 'Time_Fora', 'Home', 'Away', 'PIH', 'PIA', 'Odd_Justa_MO']])
+        st.dataframe(back_home_jogos[['Hora', 'Time_Casa', 'Time_Fora', 'Home', 'Away', 'PIH', 'PIA', 'Odd_Justa_MO', 'Pts_Home', 'Pts_Away']])
 
 
 
