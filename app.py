@@ -258,7 +258,7 @@ if jogos_dia_file:
         st.write("Nenhum jogo atende aos critérios!")
     else:
         # Corrigindo a exibição das colunas no st.dataframe
-        st.dataframe(hahome_jogos[['Hora', 'Time_Casa', 'Time_Fora', 'Home', 'Away', 'PIH_HA', 'PIA', 'Odd_Justa_HA']])
+        st.dataframe(hastrong_jogos[['Hora', 'Time_Casa', 'Time_Fora', 'Home', 'Away', 'PIH_HA', 'PIA', 'Odd_Justa_HA']])
 
     # Análise: HA +0.25
     st.subheader("HA +0.25 (casa)")
