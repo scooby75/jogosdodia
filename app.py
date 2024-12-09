@@ -565,7 +565,7 @@ if jogos_dia_file:
     
     # Filtrar as melhores equipes em casa (PIH >= 0.5) e piores fora (PIA_HA <= 0.1)
     melhores_casa_filtrados = equipes_casa[equipes_casa['GD_Home'] >= 6]
-    piores_fora_filtrados = equipes_fora[equipes_fora['GD_Away'] <= -2.]
+    piores_fora_filtrados = equipes_fora[equipes_fora['GD_Away'] >= -6.]
     
     # Filtrar jogos com base nos critérios
     hagd_jogos = jogos_dia_validos[
@@ -575,8 +575,8 @@ if jogos_dia_file:
         jogos_dia_validos['Time_Fora'].apply(
             lambda x: any(fuzz.token_sort_ratio(x, equipe) > 80 for equipe in piores_fora_filtrados['Equipe'])
         ) &
-        (jogos_dia_validos['Away'] >= 3) &
-        (jogos_dia_validos['Away'] <= 10)
+        (jogos_dia_validos['Home'] >= 1.6) &
+        (jogos_dia_validos['Home'] <= 2.40)
     ]
     
     # Adicionar as colunas de aproveitamento ao dataframe 'hagd_jogos'
