@@ -63,6 +63,7 @@ if jogos_dia_file:
 
     # Análise: Back Home
     st.subheader("Back Home")
+   
     # Garantir que as colunas 'Aproveitamento' e 'Aproveitamento_Fora' estão no formato correto (numérico)
     equipes_casa['PIH'] = pd.to_numeric(equipes_casa['PIH'], errors='coerce')
     equipes_fora['PIA'] = pd.to_numeric(equipes_fora['PIA'], errors='coerce')
@@ -509,14 +510,17 @@ if jogos_dia_file:
     
     st.subheader("HA +0.25(GD_Away > 5)")
     
-    # Garantir que as colunas 'PIH' e 'PIA_HA' estão no formato correto (numérico)
+    # Garantir que as colunas 'PIH', 'PIA_HA', 'GD_Home' e 'GD_Away' estão no formato correto (numérico)
+    equipes_casa['PIH'] = pd.to_numeric(equipes_casa['PIH'], errors='coerce')
+    equipes_fora['PIA_HA'] = pd.to_numeric(equipes_fora['PIA_HA'], errors='coerce')
     equipes_casa['GD_Home'] = pd.to_numeric(equipes_casa['GD_Home'], errors='coerce')
     equipes_fora['GD_Away'] = pd.to_numeric(equipes_fora['GD_Away'], errors='coerce')
     
-    # Remover valores nulos de 'PIH' e 'PIA_HA'
-    equipes_casa = equipes_casa.dropna(subset=['GD_Home'])
-    equipes_fora = equipes_fora.dropna(subset=['GD_Away'])
+    # Remover valores nulos nas colunas essenciais
+    equipes_casa = equipes_casa.dropna(subset=['PIH', 'GD_Home'])
+    equipes_fora = equipes_fora.dropna(subset=['PIA_HA', 'GD_Away'])
     
+    # Filtrar equipes com base nos sufixos
     def filtrar_sufixos(time, lista_sufixos):
         return not any(sufixo in time for sufixo in lista_sufixos)
     
@@ -524,7 +528,7 @@ if jogos_dia_file:
     equipes_casa = equipes_casa[equipes_casa['Equipe'].apply(lambda x: filtrar_sufixos(x, sufixos_diferentes))]
     equipes_fora = equipes_fora[equipes_fora['Equipe'].apply(lambda x: filtrar_sufixos(x, sufixos_diferentes))]
     
-    # Filtrar as melhores equipes em casa (PIH >= 0.5) e piores fora (PIA_HA <= 0.1)
+    # Filtrar as melhores equipes em casa (GD_Home >= 6) e piores fora (GD_Away <= -5)
     melhores_casa_filtrados = equipes_casa[equipes_casa['GD_Home'] >= 6]
     piores_fora_filtrados = equipes_fora[equipes_fora['GD_Away'] >= -5]
     
@@ -540,60 +544,32 @@ if jogos_dia_file:
         (jogos_dia_validos['Home'] <= 2.40)
     ]
     
-    # Adicionar as colunas de aproveitamento ao dataframe 'hagd_jogos'
-    hagd_jogos = hagd_jogos.merge(
-        equipes_casa[['Equipe', 'PIH']],
-        left_on='Time_Casa',
-        right_on='Equipe',
-        how='left'
-    ).drop(columns=['Equipe'])
+    # Adicionar as colunas ao dataframe 'hagd_jogos'
+    colunas_para_merge = [
+        ('PIH', 'Time_Casa', equipes_casa),
+        ('PIA_HA', 'Time_Fora', equipes_fora),
+        ('GD_Home', 'Time_Casa', equipes_casa),
+        ('GD_Away', 'Time_Fora', equipes_fora),
+        ('Pts_Home', 'Time_Casa', equipes_casa),
+        ('Pts_Away', 'Time_Fora', equipes_fora)
+    ]
     
-    hagd_jogos = hagd_jogos.merge(
-        equipes_fora[['Equipe', 'PIA_HA']],
-        left_on='Time_Fora',
-        right_on='Equipe',
-        how='left'
-    ).drop(columns=['Equipe'])
+    for coluna, chave, df_merge in colunas_para_merge:
+        hagd_jogos = hagd_jogos.merge(
+            df_merge[['Equipe', coluna]],
+            left_on=chave,
+            right_on='Equipe',
+            how='left'
+        ).drop(columns=['Equipe'])
     
-    # Adicionar a coluna GD Home
-    hagd_jogos = hagd_jogos.merge(
-        equipes_casa[['Equipe', 'GD_Home']],
-        left_on='Time_Casa',
-        right_on='Equipe',
-        how='left'
-    ).drop(columns=['Equipe'])
-    
-    
-    # Adicionar a coluna GD Away
-    hagd_jogos = hagd_jogos.merge(
-        equipes_fora[['Equipe', 'GD_Away']],
-        left_on='Time_Fora',
-        right_on='Equipe',
-        how='left'
-    ).drop(columns=['Equipe'])
-
-     # Adicionar a coluna GD Home
-    hagd_jogos = hagd_jogos.merge(
-        equipes_casa[['Equipe', 'Pts_Home']],
-        left_on='Time_Casa',
-        right_on='Equipe',
-        how='left'
-    ).drop(columns=['Equipe'])
-    
-    
-    # Adicionar a coluna GD Away
-    hagd_jogos = hagd_jogos.merge(
-        equipes_fora[['Equipe', 'Pts_Away']],
-        left_on='Time_Fora',
-        right_on='Equipe',
-        how='left'
-    ).drop(columns=['Equipe'])
+    # Remover linhas com valores nulos nas colunas essenciais
+    hagd_jogos = hagd_jogos.dropna(subset=['PIH', 'PIA_HA', 'GD_Home', 'GD_Away', 'Pts_Home', 'Pts_Away'])
     
     # Verificar se há jogos filtrados
     if hagd_jogos.empty:
-        st.write("Nenhum jogo atende aos critérios!")
+        st.write("Nenhum jogo atende aos critérios ou possui dados suficientes!")
     else:
-        st.dataframe(hagd_jogos[['Hora','Time_Casa', 'Time_Fora', 'Home', 'Away', 'PIH', 'PIA_HA','GD_Home', 'GD_Away','Pts_Home','Pts_Away']])
+        st.dataframe(hagd_jogos[['Hora', 'Time_Casa', 'Time_Fora', 'Home', 'Away', 'PIH', 'PIA_HA', 'GD_Home', 'GD_Away', 'Pts_Home', 'Pts_Away']])
 
     # LAY AWAY
     
