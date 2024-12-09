@@ -565,9 +565,7 @@ if jogos_dia_file:
     melhores_casa_filtrados = equipes_casa[equipes_casa['PIH'] >= 0.5]
     piores_fora_filtrados = equipes_fora[equipes_fora['PIA'] <= 0.10]
 
-    # Filtrar as melhores equipes em casa (GD_Home >= 6) e piores fora (GD_Away <= -5)
-    #melhores_casa_filtrados = equipes_casa[equipes_casa['GD_Home'] >= 6]
-    piores_fora_filtrados = equipes_fora[equipes_fora['GD_Away'] >= -5]
+    
     
     # Filtrar jogos do dia com base nos critérios
     lay_away_jogos = jogos_dia_validos[
