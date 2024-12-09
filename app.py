@@ -582,12 +582,29 @@ if jogos_dia_file:
         right_on='Equipe',
         how='left'
     ).drop(columns=['Equipe'])
+
+     # Adicionar a coluna GD Home
+    hagd_jogos = hagd_jogos.merge(
+        equipes_casa[['Equipe', 'Pts_Home']],
+        left_on='Time_Casa',
+        right_on='Equipe',
+        how='left'
+    ).drop(columns=['Equipe'])
+    
+    
+    # Adicionar a coluna GD Away
+    hagd_jogos = hagd_jogos.merge(
+        equipes_fora[['Equipe', 'Pts_Away']],
+        left_on='Time_Fora',
+        right_on='Equipe',
+        how='left'
+    ).drop(columns=['Equipe'])
     
     # Verificar se há jogos filtrados
     if hagd_jogos.empty:
         st.write("Nenhum jogo atende aos critérios!")
     else:
-        st.dataframe(hagd_jogos[['Hora','Time_Casa', 'Time_Fora', 'Home', 'Away', 'PIH', 'PIA_HA','GD_Home', 'GD_Away']])
+        st.dataframe(hagd_jogos[['Hora','Time_Casa', 'Time_Fora', 'Home', 'Away', 'PIH', 'PIA_HA','GD_Home', 'GD_Away','Pts_Home','Pts_Away']])
 
 
 else:
