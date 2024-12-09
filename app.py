@@ -562,7 +562,7 @@ if jogos_dia_file:
     equipes_fora = equipes_fora.dropna()
     
     # Filtrar melhores equipes em casa e piores fora
-    melhores_casa_filtrados = equipes_casa[equipes_casa['PIH'] >= 0.6]
+    melhores_casa_filtrados = equipes_casa[equipes_casa['PIH'] >= 0.5]
     piores_fora_filtrados = equipes_fora[equipes_fora['PIA'] <= 0.10]
     
     # Filtrar jogos do dia com base nos critérios
@@ -573,7 +573,7 @@ if jogos_dia_file:
         jogos_dia_validos['Time_Fora'].apply(
             lambda x: any(fuzz.token_sort_ratio(x, equipe) > 80 for equipe in piores_fora_filtrados['Equipe'])
         ) &
-        (jogos_dia_validos['Away'] >= 5)
+        (jogos_dia_validos['Away'] >= 3)
     ]
     
       # Adicionar as colunas ao dataframe 'hagd_jogos'
