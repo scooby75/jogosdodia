@@ -506,7 +506,7 @@ if jogos_dia_file:
     
     # Adicionar a coluna Odd_Justa_HA ao dataframe 'hagd_jogos'
     hagd_jogos = hagd_jogos.merge(
-        equipes_fora[['Equipe', 'Odd_Justa_HA']],
+        equipes_fora[['Equipe', 'GD']],
         left_on='Time_Fora',
         right_on='Equipe',
         how='left'
@@ -516,7 +516,7 @@ if jogos_dia_file:
     if hagd_jogos.empty:
         st.write("Nenhum jogo atende aos critérios!")
     else:
-        st.dataframe(hagd_jogos[['Hora','Time_Casa', 'Time_Fora', 'Home', 'Away', 'PIH', 'PIA_HA','Odd_Justa_HA']])
+        st.dataframe(hagd_jogos[['Hora','Time_Casa', 'Time_Fora', 'Home', 'Away', 'PIH', 'PIA_HA','GD']])
 
 
 else:
