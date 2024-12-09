@@ -428,6 +428,8 @@ if jogos_dia_file:
     # Filtrar as melhores equipes em casa e piores fora
     melhores_fora_filtrados = equipes_fora[equipes_fora['PIA_HA'] >= 0.6]
     piores_casa_filtrados = equipes_casa[equipes_casa['PIH'] <= 0.2]
+
+    
     
     # Filtrar jogos com base nos critérios
     haum_jogos = jogos_dia_validos[
@@ -543,9 +545,9 @@ if jogos_dia_file:
     equipes_casa['PIH'] = pd.to_numeric(equipes_casa['PIH'], errors='coerce')
     equipes_fora['PIA'] = pd.to_numeric(equipes_fora['PIA'], errors='coerce')
     
-    # Remover valores nulos
-    equipes_casa.dropna(subset=['PIH'], inplace=True)
-    equipes_fora.dropna(subset=['PIA'], inplace=True)
+    # Remover valores nulos das colunas de aproveitamento
+    equipes_casa = equipes_casa.dropna(subset=['PIH'])
+    equipes_fora = equipes_fora.dropna(subset=['PIA'])
     
     # Função para filtrar equipes com sufixos indesejados
     def filtrar_sufixos(time, lista_sufixos):
@@ -554,6 +556,10 @@ if jogos_dia_file:
     sufixos_diferentes = ["B", "II", "Sub-23"]
     equipes_casa = equipes_casa[equipes_casa['Equipe'].apply(lambda x: filtrar_sufixos(x, sufixos_diferentes))]
     equipes_fora = equipes_fora[equipes_fora['Equipe'].apply(lambda x: filtrar_sufixos(x, sufixos_diferentes))]
+    
+    # Remover valores nulos após filtrar por sufixos indesejados
+    equipes_casa = equipes_casa.dropna()
+    equipes_fora = equipes_fora.dropna()
     
     # Filtrar melhores equipes em casa e piores fora
     melhores_casa_filtrados = equipes_casa[equipes_casa['PIH'] >= 0.6]
@@ -597,7 +603,6 @@ if jogos_dia_file:
         st.write("Nenhum jogo atende aos critérios!")
     else:
         st.dataframe(lay_away_jogos[['Hora', 'Time_Casa', 'Time_Fora', 'Home', 'Away', 'PIH', 'PIA', 'Odd_Justa_MO']])
-
 
 else:
     st.info("Por favor, envie o arquivo 'Jogos do dia Betfair.csv' para realizar a análise.")
