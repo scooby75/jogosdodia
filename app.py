@@ -586,7 +586,7 @@ if jogos_dia_file:
     if hagd_jogos.empty:
         st.write("Nenhum jogo atende aos critérios!")
     else:
-        st.dataframe(hagd_jogos[['Hora','Time_Casa', 'Time_Fora', 'Home', 'Away', 'PIH', 'PIA_HA','GD_Home', 'GD_Away]])
+        st.dataframe(hagd_jogos[['Hora','Time_Casa', 'Time_Fora', 'Home', 'Away', 'PIH', 'PIA_HA','GD_Home', 'GD_Away']])
 
 
 else:
