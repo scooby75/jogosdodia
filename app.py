@@ -274,7 +274,7 @@ if jogos_dia_file:
         right_on='Equipe',
         how='left'
     ).drop(columns=['Equipe'])
-    
+        
     # Adicionar a coluna Odd_Justa_MO ao dataframe 'back_home_jogos'
     hastrong_jogos = hastrong_jogos.merge(
         equipes_casa[['Equipe', 'Odd_Justa_HA']],
@@ -282,6 +282,7 @@ if jogos_dia_file:
         right_on='Equipe',
         how='left'
     ).drop(columns=['Equipe'])
+    
     
     # Verificar se há jogos filtrados
     if hastrong_jogos.empty:
@@ -345,13 +346,43 @@ if jogos_dia_file:
         right_on='Equipe',
         how='left'
     ).drop(columns=['Equipe'])
+
+     # Adicionar as colunas de aproveitamento ao dataframe 'back_home_jogos'
+    hahome_jogos = hahome_jogos.merge(
+        equipes_casa[['Equipe', 'Pts_Home']],
+        left_on='Time_Casa',
+        right_on='Equipe',
+        how='left'
+    ).drop(columns=['Equipe'])
+    
+    hahome_jogos = hahome_jogos.merge(
+        equipes_fora[['Equipe', 'Pts_Away']],
+        left_on='Time_Fora',
+        right_on='Equipe',
+        how='left'
+    ).drop(columns=['Equipe'])
+
+    # Adicionar as colunas de aproveitamento ao dataframe 'back_home_jogos'
+    hahome_jogos = hahome_jogos.merge(
+        equipes_casa[['Equipe', 'GD_Home']],
+        left_on='Time_Casa',
+        right_on='Equipe',
+        how='left'
+    ).drop(columns=['Equipe'])
+    
+    hahome_jogos = back_home_jogos.merge(
+        equipes_fora[['Equipe', 'GD_Away']],
+        left_on='Time_Fora',
+        right_on='Equipe',
+        how='left'
+    ).drop(columns=['Equipe'])
     
     # Verificar se há jogos filtrados
     if hahome_jogos.empty:
         st.write("Nenhum jogo atende aos critérios!")
     else:
         # Corrigindo a exibição das colunas no st.dataframe
-        st.dataframe(hahome_jogos[['Hora', 'Time_Casa', 'Time_Fora', 'Home', 'Away', 'PIH_HA', 'PIA', 'Odd_Justa_HA']])
+        st.dataframe(hahome_jogos[['Hora', 'Time_Casa', 'Time_Fora', 'Home', 'Away', 'PIH_HA', 'PIA', 'Odd_Justa_HA', 'GD_Home', 'GD_Away', 'Pts_Home', 'Pts_Away']])
 
 
     
@@ -555,7 +586,7 @@ if jogos_dia_file:
     if hagd_jogos.empty:
         st.write("Nenhum jogo atende aos critérios!")
     else:
-        st.dataframe(hagd_jogos[['Hora','Time_Casa', 'Time_Fora', 'Home', 'Away', 'PIH', 'PIA_HA','GD']])
+        st.dataframe(hagd_jogos[['Hora','Time_Casa', 'Time_Fora', 'Home', 'Away', 'PIH', 'PIA_HA','GD_Home', 'GD_Away]])
 
 
 else:
