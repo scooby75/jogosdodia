@@ -193,14 +193,15 @@ if jogos_dia_file:
     # Análise: HA -0.25
     st.subheader("HA -0.25")
     
-    # Garantir que as colunas 'Aproveitamento' e 'Aproveitamento_Fora' estão no formato correto (numérico)
+    # Garantir que as colunas 'PIH_HA' e 'PIA' estão no formato correto (numérico)
     equipes_casa['PIH_HA'] = pd.to_numeric(equipes_casa['PIH_HA'], errors='coerce')
     equipes_fora['PIA'] = pd.to_numeric(equipes_fora['PIA'], errors='coerce')
     
-    # Remover valores nulos de 'Aproveitamento'
+    # Remover valores nulos de 'PIH_HA' e 'PIA'
     equipes_casa = equipes_casa.dropna(subset=['PIH_HA'])
     equipes_fora = equipes_fora.dropna(subset=['PIA'])
     
+    # Função para filtrar equipes com sufixos indesejados
     def filtrar_sufixos(time, lista_sufixos):
         return not any(sufixo in time for sufixo in lista_sufixos)
     
@@ -224,7 +225,7 @@ if jogos_dia_file:
         (jogos_dia_validos['Home'] <= 2.4)
     ]
     
-    # Adicionar as colunas de aproveitamento ao dataframe 'hahome_jogos'
+    # Adicionar as colunas de aproveitamento ao dataframe 'hastrong_jogos'
     hastrong_jogos = hastrong_jogos.merge(
         equipes_casa[['Equipe', 'PIH_HA']],
         left_on='Time_Casa',
@@ -238,8 +239,8 @@ if jogos_dia_file:
         right_on='Equipe',
         how='left'
     ).drop(columns=['Equipe'])
-        
-    # Adicionar a coluna Odd_Justa_MO ao dataframe 'back_home_jogos'
+    
+    # Adicionar a coluna 'Odd_Justa_HA' ao dataframe 'hastrong_jogos'
     hastrong_jogos = hastrong_jogos.merge(
         equipes_casa[['Equipe', 'Odd_Justa_HA']],
         left_on='Time_Casa',
@@ -247,13 +248,13 @@ if jogos_dia_file:
         how='left'
     ).drop(columns=['Equipe'])
     
-    
     # Verificar se há jogos filtrados
     if hastrong_jogos.empty:
         st.write("Nenhum jogo atende aos critérios!")
     else:
-        # Corrigindo a exibição das colunas no st.dataframe
+        # Exibir os jogos filtrados com as colunas especificadas
         st.dataframe(hastrong_jogos[['Hora', 'Time_Casa', 'Time_Fora', 'Home', 'Away', 'PIH_HA', 'PIA', 'Odd_Justa_HA']])
+
 
     # Análise: HA +0.25
     st.subheader("HA +0.25 (casa)")
