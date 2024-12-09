@@ -27,9 +27,7 @@ if jogos_dia_file:
     jogos_dia = pd.read_csv(jogos_dia_file)
 
     # Carregar os arquivos diretamente das URLs
-    melhores_casa = pd.read_csv(url_melhores_casa)
-    melhores_away = pd.read_csv(url_melhores_away)
-    piores_away = pd.read_csv(url_piores_away)
+    
     equipes_casa = pd.read_csv(url_equipes_casa)
     equipes_fora = pd.read_csv(url_equipes_fora)
 
