@@ -564,7 +564,7 @@ if jogos_dia_file:
     equipes_fora = equipes_fora[equipes_fora['Equipe'].apply(lambda x: filtrar_sufixos(x, sufixos_diferentes))]
     
     # Filtrar as melhores equipes em casa (PIH >= 0.5) e piores fora (PIA_HA <= 0.1)
-    #melhores_casa_filtrados = equipes_casa[equipes_casa['GD_Home'] >= 6]
+    melhores_casa_filtrados = equipes_casa[equipes_casa['GD_Home'] >= 6]
     piores_fora_filtrados = equipes_fora[equipes_fora['GD_Away'] >= -5]
     
     # Filtrar jogos com base nos critérios
