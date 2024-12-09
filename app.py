@@ -315,7 +315,7 @@ if jogos_dia_file:
     melhores_casa_filtrados = equipes_casa[equipes_casa['PIH_HA'] >= 0.75]
     piores_fora_filtrados = equipes_fora[equipes_fora['PIA'] <= 0.25]
     
-    # Filtrar jogos válidos com critérios
+    # Filtrar jogos com base nos critérios
     hahome_jogos = jogos_dia_validos[
         jogos_dia_validos['Time_Casa'].apply(
             lambda x: any(fuzz.token_sort_ratio(x, equipe) > 80 for equipe in melhores_casa_filtrados['Equipe'])
@@ -327,31 +327,46 @@ if jogos_dia_file:
         (jogos_dia_validos['Home'] <= 2.4)
     ]
     
-    # Adicionando colunas de aproveitamento e outras ao dataframe de jogos
-    colunas_para_merge = ['PIH_HA', 'Odd_Justa_HA', 'Pts_Home', 'GD_Home']
-    for coluna in colunas_para_merge:
-        hahome_jogos = hahome_jogos.merge(
-            equipes_casa[['Equipe', coluna]],
-            left_on='Time_Casa',
-            right_on='Equipe',
-            how='left'
-        ).drop(columns=['Equipe'])
+    # Adicionar as colunas de aproveitamento ao dataframe 'hahome_jogos'
+    hahome_jogos = hahome_jogos.merge(
+        equipes_casa[['Equipe', 'PIH_HA']],
+        left_on='Time_Casa',
+        right_on='Equipe',
+        how='left'
+    ).drop(columns=['Equipe'])
     
-    colunas_para_merge_fora = ['PIA', 'Pts_Away', 'GD_Away']
-    for coluna in colunas_para_merge_fora:
-        hahome_jogos = hahome_jogos.merge(
-            equipes_fora[['Equipe', coluna]],
-            left_on='Time_Fora',
-            right_on='Equipe',
-            how='left'
-        ).drop(columns=['Equipe'])
+    hahome_jogos = hahome_jogos.merge(
+        equipes_fora[['Equipe', 'PIA']],
+        left_on='Time_Fora',
+        right_on='Equipe',
+        how='left'
+    ).drop(columns=['Equipe'])
     
-    # Exibição de resultados
+    # Adicionar outras colunas relevantes
+    hahome_jogos = hahome_jogos.merge(
+        equipes_casa[['Equipe', 'Odd_Justa_HA', 'Pts_Home', 'GD_Home']],
+        left_on='Time_Casa',
+        right_on='Equipe',
+        how='left'
+    ).drop(columns=['Equipe'])
+    
+    hahome_jogos = hahome_jogos.merge(
+        equipes_fora[['Equipe', 'Pts_Away', 'GD_Away']],
+        left_on='Time_Fora',
+        right_on='Equipe',
+        how='left'
+    ).drop(columns=['Equipe'])
+    
+    # Garantir que todos os valores necessários estão preenchidos
+    hahome_jogos = hahome_jogos.dropna(subset=['PIH_HA', 'PIA', 'Odd_Justa_HA', 'GD_Home', 'GD_Away', 'Pts_Home', 'Pts_Away'])
+    
+    # Verificar se há jogos válidos para exibir
     if hahome_jogos.empty:
-        st.write("Nenhum jogo atende aos critérios! Verifique os dados de aproveitamento ou ajuste os critérios de filtragem.")
+        st.write("Nenhum jogo atende aos critérios ou possui dados suficientes!")
     else:
+        # Exibir jogos válidos
         st.dataframe(hahome_jogos[['Hora', 'Time_Casa', 'Time_Fora', 'Home', 'Away', 'PIH_HA', 'PIA', 'Odd_Justa_HA', 'GD_Home', 'GD_Away', 'Pts_Home', 'Pts_Away']])
-    
+
 
     
     # Análise: HA +0.25 Away
