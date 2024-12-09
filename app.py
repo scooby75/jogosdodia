@@ -294,14 +294,16 @@ if jogos_dia_file:
     # Análise: HA +0.25
     st.subheader("HA +0.25 (casa)")
     
-    # Garantir que as colunas 'Aproveitamento' e 'Aproveitamento_Fora' estão no formato correto (numérico)
-    equipes_casa['PIH_HA'] = pd.to_numeric(equipes_casa['PIH_HA'], errors='coerce')
-    equipes_fora['PIA'] = pd.to_numeric(equipes_fora['PIA'], errors='coerce')
+    # Validação e conversão de colunas
+    def validar_converter_coluna(df, coluna):
+        if coluna in df.columns:
+            df[coluna] = pd.to_numeric(df[coluna], errors='coerce')
+        return df.dropna(subset=[coluna])
     
-    # Remover valores nulos de 'Aproveitamento'
-    equipes_casa = equipes_casa.dropna(subset=['PIH_HA'])
-    equipes_fora = equipes_fora.dropna(subset=['PIA'])
+    equipes_casa = validar_converter_coluna(equipes_casa, 'PIH_HA')
+    equipes_fora = validar_converter_coluna(equipes_fora, 'PIA')
     
+    # Filtragem por sufixos indesejados
     def filtrar_sufixos(time, lista_sufixos):
         return not any(sufixo in time for sufixo in lista_sufixos)
     
@@ -313,7 +315,7 @@ if jogos_dia_file:
     melhores_casa_filtrados = equipes_casa[equipes_casa['PIH_HA'] >= 0.75]
     piores_fora_filtrados = equipes_fora[equipes_fora['PIA'] <= 0.25]
     
-    # Filtrar jogos com base nos critérios
+    # Filtrar jogos válidos com critérios
     hahome_jogos = jogos_dia_validos[
         jogos_dia_validos['Time_Casa'].apply(
             lambda x: any(fuzz.token_sort_ratio(x, equipe) > 80 for equipe in melhores_casa_filtrados['Equipe'])
@@ -325,64 +327,29 @@ if jogos_dia_file:
         (jogos_dia_validos['Home'] <= 2.4)
     ]
     
-    # Adicionar as colunas de aproveitamento ao dataframe 'hahome_jogos'
-    hahome_jogos = hahome_jogos.merge(
-        equipes_casa[['Equipe', 'PIH_HA']],
-        left_on='Time_Casa',
-        right_on='Equipe',
-        how='left'
-    ).drop(columns=['Equipe'])
+    # Adicionando colunas de aproveitamento e outras ao dataframe de jogos
+    colunas_para_merge = ['PIH_HA', 'Odd_Justa_HA', 'Pts_Home', 'GD_Home']
+    for coluna in colunas_para_merge:
+        hahome_jogos = hahome_jogos.merge(
+            equipes_casa[['Equipe', coluna]],
+            left_on='Time_Casa',
+            right_on='Equipe',
+            how='left'
+        ).drop(columns=['Equipe'])
     
-    hahome_jogos = hahome_jogos.merge(
-        equipes_fora[['Equipe', 'PIA']],
-        left_on='Time_Fora',
-        right_on='Equipe',
-        how='left'
-    ).drop(columns=['Equipe'])
+    colunas_para_merge_fora = ['PIA', 'Pts_Away', 'GD_Away']
+    for coluna in colunas_para_merge_fora:
+        hahome_jogos = hahome_jogos.merge(
+            equipes_fora[['Equipe', coluna]],
+            left_on='Time_Fora',
+            right_on='Equipe',
+            how='left'
+        ).drop(columns=['Equipe'])
     
-    # Adicionar a coluna Odd_Justa_HA ao dataframe 'hahome_jogos'
-    hahome_jogos = hahome_jogos.merge(
-        equipes_casa[['Equipe', 'Odd_Justa_HA']],
-        left_on='Time_Casa',
-        right_on='Equipe',
-        how='left'
-    ).drop(columns=['Equipe'])
-    
-    # Adicionar as colunas de aproveitamento ao dataframe 'hahome_jogos'
-    hahome_jogos = hahome_jogos.merge(
-        equipes_casa[['Equipe', 'Pts_Home']],
-        left_on='Time_Casa',
-        right_on='Equipe',
-        how='left'
-    ).drop(columns=['Equipe'])
-    
-    hahome_jogos = hahome_jogos.merge(
-        equipes_fora[['Equipe', 'Pts_Away']],
-        left_on='Time_Fora',
-        right_on='Equipe',
-        how='left'
-    ).drop(columns=['Equipe'])
-    
-    # Adicionar as colunas de aproveitamento ao dataframe 'hahome_jogos'
-    hahome_jogos = hahome_jogos.merge(
-        equipes_casa[['Equipe', 'GD_Home']],
-        left_on='Time_Casa',
-        right_on='Equipe',
-        how='left'
-    ).drop(columns=['Equipe'])
-    
-    hahome_jogos = hahome_jogos.merge(
-        equipes_fora[['Equipe', 'GD_Away']],
-        left_on='Time_Fora',
-        right_on='Equipe',
-        how='left'
-    ).drop(columns=['Equipe'])
-    
-    # Verificar se há jogos filtrados
+    # Exibição de resultados
     if hahome_jogos.empty:
-        st.write("Nenhum jogo atende aos critérios!")
+        st.write("Nenhum jogo atende aos critérios! Verifique os dados de aproveitamento ou ajuste os critérios de filtragem.")
     else:
-        # Corrigindo a exibição das colunas no st.dataframe
         st.dataframe(hahome_jogos[['Hora', 'Time_Casa', 'Time_Fora', 'Home', 'Away', 'PIH_HA', 'PIA', 'Odd_Justa_HA', 'GD_Home', 'GD_Away', 'Pts_Home', 'Pts_Away']])
     
 
