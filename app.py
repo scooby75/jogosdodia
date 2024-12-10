@@ -241,12 +241,6 @@ if jogos_dia_file:
     
     # Filtrar jogos com base nos critérios, sem usar fuzz
     hahome_jogos = jogos_dia_validos[
-        jogos_dia_validos['Time_Casa'].apply(
-            lambda x: any(equipe in x for equipe in melhores_casa_filtrados['Equipe'])
-        ) &
-        jogos_dia_validos['Time_Fora'].apply(
-            lambda x: any(equipe in x for equipe in piores_fora_filtrados['Equipe'])
-        ) &
         (jogos_dia_validos['Home'] >= 1.6) &
         (jogos_dia_validos['Home'] <= 2.4)
     ]
