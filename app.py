@@ -2,9 +2,11 @@ import streamlit as st
 import pandas as pd
 import re
 
-# Função para comparar substrings dos nomes das equipes
+# Função para comparar substrings dos nomes das equipes de forma mais flexível
 def comparar_nomes_substrings(nome1, nome2):
-    return nome1.lower() in nome2.lower() or nome2.lower() in nome1.lower()
+    nome1 = nome1.lower().replace("fc", "").strip()  # Remover "FC" e normalizar
+    nome2 = nome2.lower().replace("fc", "").strip()  # Remover "FC" e normalizar
+    return nome1 in nome2 or nome2 in nome1
 
 # URLs dos arquivos no GitHub
 url_equipes_casa = "https://raw.githubusercontent.com/scooby75/jogosdodia/refs/heads/main/equipes_casa.csv"
@@ -53,7 +55,7 @@ if jogos_dia_file:
             similar_times_fora = equipes_fora_filtradas[equipes_fora_filtradas['Equipe_Fora'].apply(lambda x: comparar_nomes_substrings(time_fora, x))]
             
             if not similar_times_casa.empty and not similar_times_fora.empty:
-                st.write(f"Jogo: {evento}, Equipes encontradas - Casa: {similar_times_casa}, Fora: {similar_times_fora}")
+                st.write(f"Jogo: {evento}, Equipes encontradas - Casa: {similar_times_casa['Equipe_Casa'].values[0]}, Fora: {similar_times_fora['Equipe_Fora'].values[0]}")
             else:
                 st.warning(f"Não encontrou times correspondentes para o evento: {evento}")
         else:
