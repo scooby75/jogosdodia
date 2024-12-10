@@ -61,6 +61,14 @@ if jogos_dia_file:
     st.subheader("Jogos válidos")
     st.dataframe(jogos_dia_validos)
 
+    # Adicionar a lógica de filtro para a coluna 'Home'
+    jogos_filtrados = jogos_dia_validos[(jogos_dia_validos['Home'] >= 1.8) & (jogos_dia_validos['Home'] <= 2.4)]
+    
+    # Exibir os jogos filtrados
+    st.subheader("Jogos filtrados (Home >= 1.8 e <= 2.4)")
+    st.dataframe(jogos_filtrados)
+
+
    
 else:
     st.info("Por favor, envie o arquivo 'Jogos do dia Betfair.csv' para realizar a análise.")
