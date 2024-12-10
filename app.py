@@ -65,7 +65,7 @@ if jogos_dia_file:
     # Análise: Back Home
     st.subheader("Back Home")
    
-    # Função para filtrar equipes com sufixos indesejados
+     # Função para filtrar equipes com sufixos indesejados
     def filtrar_sufixos(time, lista_sufixos):
         return not any(sufixo in time for sufixo in lista_sufixos)
     
@@ -74,9 +74,13 @@ if jogos_dia_file:
     equipes_fora = equipes_fora[equipes_fora['Equipe'].apply(lambda x: filtrar_sufixos(x, sufixos_diferentes))]
     
     # Filtrar melhores equipes em casa e piores equipes fora
-    melhores_casa_filtrados = equipes_casa[equipes_casa['PIH'] >= 0.65]
-    melhores_casa_filtrados = melhores_casa_filtrados[melhores_casa_filtrados['GD_Home'] >= 5]  # Filtrando com GD_Home
+    # Certificando-se de que GD_Home é numérico
+    equipes_casa['GD_Home'] = pd.to_numeric(equipes_casa['GD_Home'], errors='coerce')
     
+    # Filtrando os melhores times em casa (PIH >= 0.65) e GD_Home >= 5
+    melhores_casa_filtrados = equipes_casa[(equipes_casa['PIH'] >= 0.65) & (equipes_casa['GD_Home'] >= 5)]
+    
+    # Filtrando os piores times fora
     piores_fora_filtrados = equipes_fora[equipes_fora['PIA'] <= 0.20]
     
     # Filtrar jogos com odds entre 1.45 e 2.2 para a casa
@@ -113,7 +117,6 @@ if jogos_dia_file:
     else:
         # Exibir DataFrame com as colunas selecionadas
         st.dataframe(back_home_jogos[['Hora', 'Time_Casa', 'Time_Fora', 'Home', 'Away', 'PIH', 'PIA', 'Odd_Justa_MO', 'GD_Home', 'GD_Away', 'Pts_Home', 'Pts_Away']])
-    
 
     # BACK AWAY
     
