@@ -13,6 +13,10 @@ df_fora = pd.read_csv(url_equipes_fora)
 df_casa.columns = df_casa.columns.str.strip().str.lower()
 df_fora.columns = df_fora.columns.str.strip().str.lower()
 
+# Verificar as colunas de cada DataFrame
+st.write("Colunas do DataFrame Casa:", df_casa.columns)
+st.write("Colunas do DataFrame Fora:", df_fora.columns)
+
 # Renomear as colunas para garantir que sejam consistentes entre as duas fontes
 df_casa = df_casa.rename(columns={
     'pts_home': 'pts',  # Renomeando para um nome comum
@@ -34,11 +38,21 @@ df_fora = df_fora.rename(columns={
 df_casa['tipo'] = 'casa'
 df_fora['tipo'] = 'fora'
 
+# Verificar novamente as colunas após o renomeio
+st.write("Colunas do DataFrame Casa após renomeação:", df_casa.columns)
+st.write("Colunas do DataFrame Fora após renomeação:", df_fora.columns)
+
 # Concatenar os dois DataFrames
+# Antes de concatenar, vamos garantir que ambos tenham a mesma estrutura
+df_casa = df_casa[['equipe', 'pts', 'pi', 'gd', 'odd_mo', 'odd_ha', 'tipo', 'liga']]  # Alinhar as colunas
+df_fora = df_fora[['equipe', 'pts', 'pi', 'gd', 'odd_mo', 'odd_ha', 'tipo', 'liga']]  # Alinhar as colunas
+
+# Concatenar e resetar o índice
 df = pd.concat([df_casa, df_fora], ignore_index=True)
 
-# Verificar as colunas do DataFrame
-st.write("Colunas do DataFrame:", df.columns)
+# Exibir as colunas e alguns dados para garantir que a concatenação ocorreu corretamente
+st.write("Colunas do DataFrame concatenado:", df.columns)
+st.write("Primeiras linhas do DataFrame concatenado:", df.head())
 
 # Definir filtros
 st.title("Filtro de Equipes")
