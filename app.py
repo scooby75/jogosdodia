@@ -73,18 +73,19 @@ if jogos_dia_file:
     equipes_casa = equipes_casa[equipes_casa['Equipe'].apply(lambda x: filtrar_sufixos(x, sufixos_diferentes))]
     equipes_fora = equipes_fora[equipes_fora['Equipe'].apply(lambda x: filtrar_sufixos(x, sufixos_diferentes))]
     
-    # Filtrar melhores equipes em casa e piores fora
+    # Filtrar melhores equipes em casa e piores equipes fora
     melhores_casa_filtrados = equipes_casa[equipes_casa['PIH'] >= 0.65]
-    piores_fora_filtrados = equipes_fora[equipes_fora['PIA'] <= 0.20]
-    melhores_casa_filtrados = equipes_casa[equipes_casa['GD_Home'] >= 5]
+    melhores_casa_filtrados = melhores_casa_filtrados[melhores_casa_filtrados['GD_Home'] >= 5]  # Filtrando com GD_Home
     
-    # Filtrar jogos com base nos critérios definidos
+    piores_fora_filtrados = equipes_fora[equipes_fora['PIA'] <= 0.20]
+    
+    # Filtrar jogos com odds entre 1.45 e 2.2 para a casa
     back_home_jogos = jogos_dia_validos[
         (jogos_dia_validos['Home'] >= 1.45) &
         (jogos_dia_validos['Home'] <= 2.2)
     ]
     
-    # Adicionar colunas de métricas de desempenho ao DataFrame
+    # Adicionar as métricas de desempenho ao DataFrame
     metricas = [
         ('PIH', equipes_casa),
         ('PIA', equipes_fora),
@@ -111,9 +112,8 @@ if jogos_dia_file:
         st.write("Nenhum jogo atende aos critérios!")
     else:
         # Exibir DataFrame com as colunas selecionadas
-        st.dataframe(back_home_jogos[['Hora', 'Time_Casa', 'Time_Fora', 'Home', 'Away', 'PIH', 'PIA', 'Odd_Justa_MO', 'GD_Home', 'GD_Away','Pts_Home', 'Pts_Away']])
-
-
+        st.dataframe(back_home_jogos[['Hora', 'Time_Casa', 'Time_Fora', 'Home', 'Away', 'PIH', 'PIA', 'Odd_Justa_MO', 'GD_Home', 'GD_Away', 'Pts_Home', 'Pts_Away']])
+    
 
     # BACK AWAY
     
