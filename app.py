@@ -254,7 +254,7 @@ if jogos_dia_file:
     
     # Filtrar jogos com base nos critérios (Odds entre 1.8 e 2.4 e comparação de equipes)
     hahome_jogos = jogos_dia_validos[
-        (jogos_dia_validos['Home'] >= 1.8) 
+        (jogos_dia_validos['Home'] >= 1.8) & (jogos_dia_validos['Home'] <= 2.4)
     ]
     
     # Adicionar as colunas de aproveitamento e dados extras
