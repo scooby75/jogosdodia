@@ -81,12 +81,12 @@ if jogos_dia_file:
     piores_fora_filtrados = equipes_fora[equipes_fora['PIA_HA'] >= 0.75]
     
     # Filtrar jogos com base nos critérios
-    hahome_jogos = jogos_dia_validos[
+    hahome_jogos = jogos_dia_validos[    
         jogos_dia_validos['Time_Casa'].apply(
-            lambda x: any(fuzz.token_sort_ratio(x, equipe) > 80 for equipe in melhores_casa_filtrados['Equipe'])
-        ) &
+            lambda x: any(fuzz.token_sort_ratio(x, equipe) > 80 for equipe in melhores_casa_filtrados['Equipe_Casa'])
+        ) & 
         jogos_dia_validos['Time_Fora'].apply(
-            lambda x: any(fuzz.token_sort_ratio(x, equipe) > 80 for equipe in piores_fora_filtrados['Equipe'])
+            lambda x: any(fuzz.token_sort_ratio(x, equipe) > 80 for equipe in piores_fora_filtrados['Equipe_Fora'])
         ) &
         (jogos_dia_validos['Home'] >= 1.6) &
         (jogos_dia_validos['Home'] <= 2.4)
