@@ -18,16 +18,10 @@ def extrair_odds(valor):
             return None
     return valor
 
-# Função para calcular similaridade entre o primeiro e segundo nome
-def similaridade_nome_parte(nome1, nome2, parte=1, limiar=80):
-    # Dividir os nomes em partes (palavras)
-    nome1_partes = nome1.lower().split()
-    nome2_partes = nome2.lower().split()
-    
-    # Garantir que ambos os nomes têm a parte solicitada
-    if len(nome1_partes) > parte - 1 and len(nome2_partes) > parte - 1:
-        return fuzz.ratio(nome1_partes[parte - 1], nome2_partes[parte - 1]) >= limiar
-    return False
+# Função para calcular similaridade entre nomes completos
+def similaridade_nome_completo(nome1, nome2, limiar=80):
+    # Comparar os nomes completos das equipes
+    return fuzz.ratio(nome1.lower(), nome2.lower()) >= limiar
 
 # Upload do arquivo "Jogos do Dia"
 jogos_dia_file = st.file_uploader("Envie o arquivo 'Jogos do dia Betfair.csv'", type="csv")
@@ -94,8 +88,8 @@ if jogos_dia_file:
     for _, jogo in jogos_dia_validos.iterrows():
         nome_time_casa = jogo['Time_Casa']
         
-        # Encontrar a linha correspondente em equipes_casa com base na similaridade de partes do nome
-        similar_times = equipes_casa[equipes_casa['Equipe_Casa_CSV'].apply(lambda x: similaridade_nome_parte(nome_time_casa, x, parte=1))]  # Comparando o 1º nome
+        # Encontrar a linha correspondente em equipes_casa com base na similaridade de nome completo
+        similar_times = equipes_casa[equipes_casa['Equipe_Casa_CSV'].apply(lambda x: similaridade_nome_completo(nome_time_casa, x))]  # Comparando nomes completos
         
         if not similar_times.empty:
             jogo_merged = pd.merge(pd.DataFrame([jogo]), similar_times, left_on='Time_Casa', right_on='Equipe_Casa_CSV', how='left')
