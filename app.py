@@ -158,6 +158,9 @@ if jogos_dia_file:
         right_on='Equipe',
         how='left'
     ).drop(columns=['Equipe'])
+
+    # Remover jogos com qualquer valor vazio
+    back_away_jogos = back_away_jogos.dropna()
     
     # Verificar se há jogos filtrados
     if back_away_jogos.empty:
@@ -206,6 +209,9 @@ if jogos_dia_file:
             right_on='Equipe',
             how='left'
         ).drop(columns=['Equipe'])
+
+        # Remover jogos com qualquer valor vazio
+        hastrong_jogos = hastrong_jogos.dropna()
     
         # Exibir os jogos filtrados com as colunas especificadas
         st.dataframe(hastrong_jogos[[
@@ -270,6 +276,9 @@ if jogos_dia_file:
     
     # Garantir que todos os valores necessários estão preenchidos
     hahome_jogos = hahome_jogos.dropna(subset=['PIH_HA', 'PIA_HA', 'Odd_Justa_HA', 'GD_Home', 'GD_Away', 'Pts_Home', 'Pts_Away'])
+
+     # Remover jogos com qualquer valor vazio
+    hahome_jogos = hahome_jogos.dropna()
     
     # Verificar se há jogos válidos para exibir
     if hahome_jogos.empty:
