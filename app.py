@@ -16,6 +16,9 @@ if jogos_dia_file:
     # Ler o arquivo "Jogos do Dia"
     jogos_dia = pd.read_csv(jogos_dia_file)
 
+    # Exibir as colunas do arquivo "Jogos do Dia"
+    st.write("Colunas do arquivo 'Jogos do Dia':", jogos_dia.columns)
+    
     # Carregar os arquivos diretamente das URLs
     equipes_casa = pd.read_csv(url_equipes_casa)
     equipes_fora = pd.read_csv(url_equipes_fora)
@@ -33,7 +36,8 @@ if jogos_dia_file:
     # Comparação de equipes
     jogos_merged = []
     for _, jogo in jogos_dia.iterrows():
-        nome_time_fora = jogo['Time_Fora']
+        # Acesse o nome da coluna corretamente
+        nome_time_fora = jogo['Time_Fora']  # Ajuste o nome da coluna conforme necessário
         
         # Encontrar a linha correspondente em equipes_fora com base na comparação de substrings
         similar_times_fora = equipes_fora_filtradas[equipes_fora_filtradas['Equipe_Fora'].apply(lambda x: comparar_nomes_substrings(nome_time_fora, x))]
