@@ -81,8 +81,7 @@ if jogos_dia_file:
     back_home_jogos = jogos_dia_validos[
         (jogos_dia_validos['Home'] >= 1.6) &
         (jogos_dia_validos['Home'] <= 2.4) &
-        (equipes_casa['PIH'] >= 0.6) &
-        (equipes_fora['PIA'] <= 0.2)
+        (equipes_casa['PIH'] >= 0.6) 
     ]
     
     # Adicionar as colunas de aproveitamento ao dataframe 'back_home_jogos'
