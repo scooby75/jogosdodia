@@ -1,5 +1,6 @@
 import streamlit as st
 import pandas as pd
+import re
 
 # Função para comparar substrings dos nomes das equipes
 def comparar_nomes_substrings(nome1, nome2):
@@ -36,16 +37,27 @@ if jogos_dia_file:
     # Comparação de equipes
     jogos_merged = []
     for _, jogo in jogos_dia.iterrows():
-        # Acesse o nome da coluna corretamente
-        nome_time_fora = jogo['Away']  # Ajuste o nome da coluna conforme necessário
+        # Separar os times da coluna 'Evento' (exemplo: 'Persija Jakarta v Pusamania Borneo FC')
+        evento = jogo['Evento']
         
-        # Encontrar a linha correspondente em equipes_fora com base na comparação de substrings
-        similar_times_fora = equipes_fora_filtradas[equipes_fora_filtradas['Equipe_Fora'].apply(lambda x: comparar_nomes_substrings(nome_time_fora, x))]
-        
-        if not similar_times_fora.empty:
-            st.write(f"Jogo: {nome_time_fora}, Equipes encontradas: {similar_times_fora}")
+        # Usar expressão regular para separar os times
+        match = re.match(r"(.+) v (.+)", evento)
+        if match:
+            time_casa = match.group(1).strip()
+            time_fora = match.group(2).strip()
+            
+            # Comparar time da casa com equipes_casa
+            similar_times_casa = equipes_casa[equipes_casa['Equipe_Casa'].apply(lambda x: comparar_nomes_substrings(time_casa, x))]
+            
+            # Comparar time de fora com equipes_fora
+            similar_times_fora = equipes_fora_filtradas[equipes_fora_filtradas['Equipe_Fora'].apply(lambda x: comparar_nomes_substrings(time_fora, x))]
+            
+            if not similar_times_casa.empty and not similar_times_fora.empty:
+                st.write(f"Jogo: {evento}, Equipes encontradas - Casa: {similar_times_casa}, Fora: {similar_times_fora}")
+            else:
+                st.warning(f"Não encontrou times correspondentes para o evento: {evento}")
         else:
-            st.warning(f"Não encontrou time correspondente para: {nome_time_fora}")
+            st.warning(f"Formato inválido para o evento: {evento}")
     
 else:
     st.info("Por favor, envie o arquivo 'Jogos do dia Betfair.csv' para realizar a análise.")
