@@ -313,14 +313,14 @@ if jogos_dia_file:
     ]
     
     # Adicionar as colunas de aproveitamento ao dataframe 'hahome_jogos'
-    hahome_jogos = hahome_jogos.merge(
+    haaway_jogos = haaway_jogos.merge(
         equipes_casa[['Equipe', 'PIH_HA']],
         left_on='Time_Casa',
         right_on='Equipe',
         how='left'
     ).drop(columns=['Equipe'])
     
-    hahome_jogos = hahome_jogos.merge(
+    haaway_jogos = haaway_jogos.merge(
         equipes_fora[['Equipe', 'PIA']],
         left_on='Time_Fora',
         right_on='Equipe',
@@ -328,26 +328,28 @@ if jogos_dia_file:
     ).drop(columns=['Equipe'])
     
     # Adicionar outras colunas relevantes
-    hahome_jogos = hahome_jogos.merge(
+    haaway_jogos = haaway_jogos.merge(
         equipes_casa[['Equipe', 'Odd_Justa_HA', 'Pts_Home', 'GD_Home']],
         left_on='Time_Casa',
         right_on='Equipe',
         how='left'
     ).drop(columns=['Equipe'])
     
-    hahome_jogos = hahome_jogos.merge(
+    haaway_jogos = haaway_jogos.merge(
         equipes_fora[['Equipe', 'Pts_Away', 'GD_Away']],
         left_on='Time_Fora',
         right_on='Equipe',
         how='left'
     ).drop(columns=['Equipe'])
+    # Remover jogos com qualquer valor vazio
+    haaway_home_jogos = haaway_home_jogos.dropna()
     
     # Verificar se há jogos válidos para exibir
-    if hahome_jogos.empty or hahome_jogos[['PIH_HA', 'PIA']].isnull().any(axis=None):
+    if haaway_jogos.empty or haaway_jogos[['PIH_HA', 'PIA']].isnull().any(axis=None):
         st.write("Nenhum jogo atende aos critérios ou possui dados suficientes!")
     else:
         # Corrigindo a exibição das colunas no st.dataframe
-        st.dataframe(hahome_jogos[['Hora', 'Time_Casa', 'Time_Fora', 'Home', 'Away', 'PIH_HA', 'PIA', 'Odd_Justa_HA', 'GD_Home', 'GD_Away', 'Pts_Home', 'Pts_Away']])
+        st.dataframe(haaway_jogos[['Hora', 'Time_Casa', 'Time_Fora', 'Home', 'Away', 'PIH_HA', 'PIA', 'Odd_Justa_HA', 'GD_Home', 'GD_Away', 'Pts_Home', 'Pts_Away']])
 
     # Análise: HA +1
    
@@ -393,6 +395,9 @@ if jogos_dia_file:
         right_on='Equipe',
         how='left'
     ).drop(columns=['Equipe'])
+    
+    # Remover jogos com qualquer valor vazio
+    haum_home_jogos = haum_home_jogos.dropna()
     
     # Verificar se há jogos filtrados
     if haum_jogos.empty:
@@ -443,6 +448,9 @@ if jogos_dia_file:
     
     # Remover linhas com valores nulos nas colunas essenciais
     hagd_jogos = hagd_jogos.dropna(subset=['PIH', 'PIA_HA', 'GD_Home', 'GD_Away', 'Pts_Home', 'Pts_Away'])
+
+    # Remover jogos com qualquer valor vazio
+    hagd_jogos = hagd_jogos.dropna()
     
     # Verificar se há jogos filtrados
     if hagd_jogos.empty:
@@ -495,6 +503,9 @@ if jogos_dia_file:
     
     # Remover linhas com valores nulos nas colunas essenciais
     lay_away_jogos = lay_away_jogos.dropna(subset=['PIH', 'PIA_HA', 'GD_Home', 'GD_Away', 'Pts_Home', 'Pts_Away'])
+    
+    # Remover jogos com qualquer valor vazio
+    lay_away_jogos = lay_away_jogos.dropna()
     
     # Verificar se há jogos filtrados
     if lay_away_jogos.empty:
