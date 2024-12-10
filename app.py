@@ -1,26 +1,13 @@
 import streamlit as st
 import pandas as pd
 
-# Título do aplicativo
-st.title("Comparação de Jogos do Dia")
+# Função para comparar substrings dos nomes das equipes
+def comparar_nomes_substrings(nome1, nome2):
+    return nome1.lower() in nome2.lower() or nome2.lower() in nome1.lower()
 
 # URLs dos arquivos no GitHub
 url_equipes_casa = "https://raw.githubusercontent.com/scooby75/jogosdodia/refs/heads/main/equipes_casa.csv"
 url_equipes_fora = "https://raw.githubusercontent.com/scooby75/jogosdodia/refs/heads/main/equipes_fora.csv"
-
-# Função para limpar e extrair odds
-def extrair_odds(valor):
-    if isinstance(valor, str):
-        try:
-            return pd.to_numeric(valor.split('(')[0].replace(",", "").strip())
-        except ValueError:
-            return None
-    return valor
-
-# Função para comparar substrings dos nomes das equipes
-def comparar_nomes_substrings(nome1, nome2):
-    # Verifica se uma string é substring da outra, ignorando maiúsculas e minúsculas
-    return nome1.lower() in nome2.lower() or nome2.lower() in nome1.lower()
 
 # Upload do arquivo "Jogos do Dia"
 jogos_dia_file = st.file_uploader("Envie o arquivo 'Jogos do dia Betfair.csv'", type="csv")
@@ -33,101 +20,28 @@ if jogos_dia_file:
     equipes_casa = pd.read_csv(url_equipes_casa)
     equipes_fora = pd.read_csv(url_equipes_fora)
 
-    # Verificar e corrigir o formato da coluna Evento
-    st.subheader("Verificação dos dados na coluna 'Evento'")
-    problemas = jogos_dia[~jogos_dia['Evento'].str.contains(' v ', na=False)]
-    if not problemas.empty:
-        st.warning("Foram encontrados problemas no formato da coluna 'Evento':")
-        st.dataframe(problemas)
-    else:
-        st.success("Todos os dados estão no formato esperado.")
-
-    # Filtrar apenas linhas válidas
-    jogos_dia_validos = jogos_dia[jogos_dia['Evento'].str.contains(' v ', na=False)]
-
-    # Filtrar jogos que não contêm palavras-chave indesejadas
-    palavras_indesejadas = (
-        'UEFA|AFC Champions|Reservas|Friendlies Women\'s International|U21|English Premier League 2|Israeli Cup|Friendly Matches|Malaysian Cup|Copa de França|Copa de Inglaterra|Scottish FA Cup|U23|Sub23|Cup|Copa|CAF Champions League|(W)|EFL Trophy'
-    )
-    jogos_dia_validos = jogos_dia_validos[~jogos_dia_validos['Competição'].str.contains(palavras_indesejadas, case=False, na=False)]
-
-    # Adicionar colunas Time_Casa e Time_Fora
-    jogos_dia_validos['Time_Casa'] = jogos_dia_validos['Evento'].apply(lambda x: x.split(' v ')[0].strip())
-    jogos_dia_validos['Time_Fora'] = jogos_dia_validos['Evento'].apply(lambda x: x.split(' v ')[1].strip())
-
-    # Corrigir as odds para Home, Away e The Draw
-    for coluna in ['Home', 'Away', 'The Draw']:
-        jogos_dia_validos[coluna] = jogos_dia_validos[coluna].apply(extrair_odds)
-
-    # Exibir os jogos válidos
-    st.subheader("Jogos válidos")
-    st.dataframe(jogos_dia_validos)
-
-    # Adicionar a lógica de filtro para a coluna 'Home'
-    jogos_filtrados = jogos_dia_validos[(jogos_dia_validos['Home'] >= 1.8) & (jogos_dia_validos['Home'] <= 2.4)]
+    # Exibir as colunas do arquivo equipes_fora.csv
+    st.write("Colunas do arquivo equipes_fora.csv:", equipes_fora.columns)
     
-    # Exibir os jogos filtrados
-    st.subheader("Jogos filtrados (Home entre 1.8 e 2.4)")
-    st.dataframe(jogos_filtrados)
+    # Aplicar o filtro de PIA_HA >= 0.75
+    equipes_fora_filtradas = equipes_fora[equipes_fora['PIA_HA'] >= 0.75]
 
-    # Verificar e ajustar os nomes das colunas
-    equipes_casa.columns = equipes_casa.columns.str.strip()  # Remove espaços em branco dos nomes das colunas
+    # Exibir equipes fora com o filtro PIA_HA >= 0.75
+    st.subheader("Equipes fora com PIA_HA >= 0.75")
+    st.dataframe(equipes_fora_filtradas)
     
-    # Renomear as colunas para evitar conflitos e garantir consistência
-    if "Equipe_Casa" in equipes_casa.columns and "PIH_HA" in equipes_casa.columns:
-        equipes_casa.rename(columns={"Equipe_Casa": "Equipe_Casa_CSV", "PIH_HA": "PIH_HA_CSV"}, inplace=True)
-    else:
-        st.error("As colunas esperadas não foram encontradas no arquivo equipes_casa.csv.")
-    
-    if "Equipe_Fora" in equipes_fora.columns and "PIA_HA" in equipes_fora.columns:
-        equipes_fora.rename(columns={"Equipe_Fora": "Equipe_Fora_CSV", "PIA_HA": "PIA_HA_CSV"}, inplace=True)
-    else:
-        st.error("As colunas esperadas não foram encontradas no arquivo equipes_fora.csv.")
-    
-    # Confirmar se as colunas do DataFrame foram renomeadas corretamente
-    st.write("Colunas após renomear:", equipes_casa.columns)
-    
-    # Aplicar a lógica de comparação usando substrings
+    # Comparação de equipes
     jogos_merged = []
-    for _, jogo in jogos_dia_validos.iterrows():
-        nome_time_casa = jogo['Time_Casa']
+    for _, jogo in jogos_dia.iterrows():
+        nome_time_fora = jogo['Time_Fora']
         
-        # Encontrar a linha correspondente em equipes_casa com base na comparação de substrings
-        similar_times_casa = equipes_casa[equipes_casa['Equipe_Casa_CSV'].apply(lambda x: comparar_nomes_substrings(nome_time_casa, x))]
+        # Encontrar a linha correspondente em equipes_fora com base na comparação de substrings
+        similar_times_fora = equipes_fora_filtradas[equipes_fora_filtradas['Equipe_Fora'].apply(lambda x: comparar_nomes_substrings(nome_time_fora, x))]
         
-        if not similar_times_casa.empty:
-            nome_time_fora = jogo['Time_Fora']
-            
-            # Encontrar a linha correspondente em equipes_fora com base na comparação de substrings
-            similar_times_fora = equipes_fora[equipes_fora['Equipe_Fora_CSV'].apply(lambda x: comparar_nomes_substrings(nome_time_fora, x))]
-            
-            # Realizar o merge entre equipes da casa e da fora
-            jogo_merged = pd.merge(pd.DataFrame([jogo]), similar_times_casa, left_on='Time_Casa', right_on='Equipe_Casa_CSV', how='left')
-            jogo_merged = pd.merge(jogo_merged, similar_times_fora, left_on='Time_Fora', right_on='Equipe_Fora_CSV', how='left')
-            jogos_merged.append(jogo_merged)
-
-    # Concatenar todos os jogos encontrados no merge
-    if jogos_merged:
-        jogos_merged_df = pd.concat(jogos_merged, ignore_index=True)
-    else:
-        jogos_merged_df = pd.DataFrame()
-
-    # Exibir os jogos com merge realizado
-    st.subheader("Jogos com informações das equipes da casa e fora")
-    st.dataframe(jogos_merged_df)
-
-    # Aplicar o filtro de PIH_HA >= 0.75 para equipes da casa e PIA_HA >= 0.75 para equipes de fora
-    jogos_filtrados_pih_pia = jogos_merged_df[
-        (jogos_merged_df['PIH_HA_CSV'] >= 0.75) &
-        (jogos_merged_df['PIA_HA_CSV'] >= 0.75) &
-        (jogos_merged_df['Home'] >= 1.7) &
-        (jogos_merged_df['Home'] <= 2.4)
-    ]
+        if not similar_times_fora.empty:
+            st.write(f"Jogo: {nome_time_fora}, Equipes encontradas: {similar_times_fora}")
+        else:
+            st.warning(f"Não encontrou time correspondente para: {nome_time_fora}")
     
-    # Exibir os jogos filtrados com PIH_HA e PIA_HA
-    st.subheader("Jogos filtrados com PIH_HA >= 0.75 e PIA_HA >= 0.75")
-    st.dataframe(jogos_filtrados_pih_pia)
-
 else:
     st.info("Por favor, envie o arquivo 'Jogos do dia Betfair.csv' para realizar a análise.")
-
