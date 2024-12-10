@@ -266,7 +266,7 @@ if jogos_dia_file:
         return df.dropna(subset=[coluna])
     
     equipes_casa = validar_converter_coluna(equipes_casa, 'PIH_HA')
-    equipes_fora = validar_converter_coluna(equipes_fora, 'PIA')
+    equipes_fora = validar_converter_coluna(equipes_fora, 'PIA_HA')
     
     # Filtragem por sufixos indesejados
     def filtrar_sufixos(time, lista_sufixos):
@@ -278,7 +278,7 @@ if jogos_dia_file:
     
     # Filtrar as melhores equipes em casa e piores fora
     melhores_casa_filtrados = equipes_casa[equipes_casa['PIH_HA'] >= 0.75]
-    piores_fora_filtrados = equipes_fora[equipes_fora['PIA'] <= 0.25]
+    piores_fora_filtrados = equipes_fora[equipes_fora['PIA_HA'] >= 0.75]
     
     # Filtrar jogos com base nos critérios
     hahome_jogos = jogos_dia_validos[
@@ -301,7 +301,7 @@ if jogos_dia_file:
     ).drop(columns=['Equipe'])
     
     hahome_jogos = hahome_jogos.merge(
-        equipes_fora[['Equipe', 'PIA']],
+        equipes_fora[['Equipe', 'PIA_HA']],
         left_on='Time_Fora',
         right_on='Equipe',
         how='left'
@@ -323,14 +323,14 @@ if jogos_dia_file:
     ).drop(columns=['Equipe'])
     
     # Garantir que todos os valores necessários estão preenchidos
-    hahome_jogos = hahome_jogos.dropna(subset=['PIH_HA', 'PIA', 'Odd_Justa_HA', 'GD_Home', 'GD_Away', 'Pts_Home', 'Pts_Away'])
+    hahome_jogos = hahome_jogos.dropna(subset=['PIH_HA', 'PIA_HA', 'Odd_Justa_HA', 'GD_Home', 'GD_Away', 'Pts_Home', 'Pts_Away'])
     
     # Verificar se há jogos válidos para exibir
     if hahome_jogos.empty:
         st.write("Nenhum jogo atende aos critérios ou possui dados suficientes!")
     else:
         # Exibir jogos válidos
-        st.dataframe(hahome_jogos[['Hora', 'Time_Casa', 'Time_Fora', 'Home', 'Away', 'PIH_HA', 'PIA', 'Odd_Justa_HA', 'GD_Home', 'GD_Away', 'Pts_Home', 'Pts_Away']])
+        st.dataframe(hahome_jogos[['Hora', 'Time_Casa', 'Time_Fora', 'Home', 'Away', 'PIH_HA', 'PIA_HA', 'Odd_Justa_HA', 'GD_Home', 'GD_Away', 'Pts_Home', 'Pts_Away']])
 
 
     
