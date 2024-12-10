@@ -1,81 +1,44 @@
 import streamlit as st
 import pandas as pd
 
-# Carregar os dados das URLs
+# URLs dos arquivos CSV
 url_equipes_casa = "https://raw.githubusercontent.com/scooby75/jogosdodia/refs/heads/main/equipes_casa.csv"
 url_equipes_fora = "https://raw.githubusercontent.com/scooby75/jogosdodia/refs/heads/main/equipes_fora.csv"
 
-# Leitura dos dados
+# Ler os arquivos CSV
 df_casa = pd.read_csv(url_equipes_casa)
 df_fora = pd.read_csv(url_equipes_fora)
 
-# Normalizar os nomes das colunas para facilitar a manipulação
-df_casa.columns = df_casa.columns.str.strip().str.lower()
-df_fora.columns = df_fora.columns.str.strip().str.lower()
+# Verificar os tipos de dados das colunas
+st.write("Tipos de dados das colunas de equipes_casa:", df_casa.dtypes)
+st.write("Tipos de dados das colunas de equipes_fora:", df_fora.dtypes)
 
-# Verificar as colunas de cada DataFrame
-st.write("Colunas do DataFrame Casa:", df_casa.columns)
-st.write("Colunas do DataFrame Fora:", df_fora.columns)
+# Concatenar os DataFrames
+try:
+    df = pd.concat([df_casa, df_fora], ignore_index=True)
+    st.write("DataFrame concatenado com sucesso!")
+except Exception as e:
+    st.error(f"Ocorreu um erro ao concatenar os DataFrames: {e}")
 
-# Renomear as colunas para garantir que sejam consistentes entre as duas fontes
-df_casa = df_casa.rename(columns={
-    'pts_home': 'pts',  # Renomeando para um nome comum
-    'pih': 'pi',  # Renomeando para um nome comum
-    'gd_home': 'gd',
-    'odd_justa_mo': 'odd_mo',
-    'odd_justa_ha': 'odd_ha'
-})
+# Verificar valores nulos no DataFrame concatenado
+st.write("Valores nulos no DataFrame:", df.isnull().sum())
 
-df_fora = df_fora.rename(columns={
-    'pts_away': 'pts',  # Renomeando para um nome comum
-    'pia': 'pi',  # Renomeando para um nome comum
-    'gd_away': 'gd',
-    'odd_justa_mo': 'odd_mo',
-    'odd_justa_ha': 'odd_ha'
-})
+# Substituir valores nulos por um valor padrão, se necessário
+df.fillna({'Odd_Justa_MO': 0, 'Odd_Justa_HA': 0, 'GD_Home': 0, 'PIH': 0, 'PIH_HA': 0}, inplace=True)
 
-# Adicionar uma coluna para identificar se é time da casa ou fora
-df_casa['tipo'] = 'casa'
-df_fora['tipo'] = 'fora'
+# Exibir as primeiras 10 linhas do DataFrame
+st.write("Primeiras 10 linhas do DataFrame concatenado:", df.head(10))
 
-# Verificar novamente as colunas após o renomeio
-st.write("Colunas do DataFrame Casa após renomeação:", df_casa.columns)
-st.write("Colunas do DataFrame Fora após renomeação:", df_fora.columns)
+# Seleção de equipe da casa
+equipes_casa = st.selectbox("Selecione a Equipe da Casa", df['Equipe'].unique())
+st.write(f"Você selecionou a equipe da casa: {equipes_casa}")
 
-# Concatenar os dois DataFrames
-# Antes de concatenar, vamos garantir que ambos tenham a mesma estrutura
-df_casa = df_casa[['equipe', 'pts', 'pi', 'gd', 'odd_mo', 'odd_ha', 'tipo', 'liga']]  # Alinhar as colunas
-df_fora = df_fora[['equipe', 'pts', 'pi', 'gd', 'odd_mo', 'odd_ha', 'tipo', 'liga']]  # Alinhar as colunas
+# Filtrar os dados pela equipe da casa
+df_casa_selecionada = df[df['Equipe'] == equipes_casa]
 
-# Concatenar e resetar o índice
-df = pd.concat([df_casa, df_fora], ignore_index=True)
+# Exibir os dados filtrados da equipe da casa
+st.write(f"Dados da equipe da casa {equipes_casa}:", df_casa_selecionada)
 
-# Exibir as colunas e alguns dados para garantir que a concatenação ocorreu corretamente
-st.write("Colunas do DataFrame concatenado:", df.columns)
-st.write("Primeiras linhas do DataFrame concatenado:", df.head())
-
-# Definir filtros
-st.title("Filtro de Equipes")
-equipes_casa = st.selectbox("Selecione a Equipe da Casa", df[df['tipo'] == 'casa']['equipe'].unique())
-equipes_fora = st.selectbox("Selecione a Equipe de Fora", df[df['tipo'] == 'fora']['equipe'].unique())
-
-# Filtros para outras colunas
-liga = st.selectbox("Selecione a Liga", df['liga'].unique())
-odd_justa_ha = st.slider("Filtrar Odd Justa HA", min_value=df['odd_ha'].min(), max_value=df['odd_ha'].max(), step=0.01)
-odd_justa_mo = st.slider("Filtrar Odd Justa MO", min_value=df['odd_mo'].min(), max_value=df['odd_mo'].max(), step=0.01)
-
-# Aplicar os filtros
-filtered_df = df[
-    (df['equipe'] == equipes_casa) &
-    (df['equipe'] == equipes_fora) &
-    (df['liga'] == liga) &
-    (df['odd_ha'] >= odd_justa_ha) &
-    (df['odd_mo'] >= odd_justa_mo)
-]
-
-# Mostrar o dataframe filtrado
-st.write("Dados filtrados:", filtered_df)
-
-# Exibir algumas estatísticas (opcional)
-st.write("Estatísticas das colunas numéricas:")
-st.write(filtered_df.describe())
+# Filtragem adicional, se necessário
+# Exemplo de filtrar apenas as colunas de interesse
+st.write("Primeiras 10 linhas com colunas selecionadas:", df[['Equipe', 'GP', 'W', 'D', 'L', 'GF', 'GA', 'GD', 'Pts_Home', 'Odd_Justa_MO']].head(10))
