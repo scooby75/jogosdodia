@@ -62,7 +62,6 @@ if jogos_dia_file:
     st.subheader("Jogos válidos")
     st.dataframe(jogos_dia_validos)
 
-    # Análise: Back Home
     st.subheader("Back Home")
     
     # Função para filtrar equipes com sufixos indesejados
@@ -77,8 +76,8 @@ if jogos_dia_file:
     equipes_fora = equipes_fora[equipes_fora['Equipe'].apply(lambda x: filtrar_sufixos(x, sufixos_diferentes))]
     
     # Filtrar as melhores equipes fora e piores em casa
-    melhores_fora_filtrados = equipes_fora[equipes_fora['PIA'] >= 0.65]
-    piores_casa_filtrados = equipes_casa[equipes_casa['PIH'] <= 0.20]
+    melhores_casa_filtrados = equipes_casa[equipes_casa['PIH'] >= 0.65]
+    piores_fora_filtrados = equipes_fora[equipes_fora['PIA'] <= 0.20]
     
     # Filtrar jogos com base nos critérios
     back_home_jogos = jogos_dia_validos[
@@ -87,9 +86,6 @@ if jogos_dia_file:
         (jogos_dia_validos['PIH_HA'] >= 0.75) &
         (jogos_dia_validos['PIA_HA'] >= 0.75)
     ]
-    
-    # Verifique as colunas de jogos_dia_validos para garantir que 'PIH_HA' e 'PIA_HA' existem
-    st.write(jogos_dia_validos.columns)
     
     # Adicionar as colunas de aproveitamento ao dataframe 'back_home_jogos'
     back_home_jogos = back_home_jogos.merge(
@@ -122,7 +118,6 @@ if jogos_dia_file:
         st.write("Nenhum jogo atende aos critérios!")
     else:
         st.dataframe(back_home_jogos[['Hora', 'Time_Casa', 'Time_Fora', 'Home', 'Away', 'PIH', 'PIA', 'Odd_Justa_MO']])
-
 
     # BACK AWAY
     
