@@ -6,7 +6,6 @@ from rapidfuzz import fuzz
 st.title("Comparação de Jogos do Dia")
 
 # URLs dos arquivos no GitHub
-
 url_equipes_casa = "https://raw.githubusercontent.com/scooby75/jogosdodia/refs/heads/main/equipes_casa.csv"
 url_equipes_fora = "https://raw.githubusercontent.com/scooby75/jogosdodia/refs/heads/main/equipes_fora.csv"
 
@@ -26,10 +25,14 @@ if jogos_dia_file:
     # Ler o arquivo "Jogos do Dia"
     jogos_dia = pd.read_csv(jogos_dia_file)
 
-    # Carregar os arquivos diretamente das URLs
-    
-    equipes_casa = pd.read_csv(url_equipes_casa)
-    equipes_fora = pd.read_csv(url_equipes_fora)
+    # Carregar os arquivos diretamente das URLs com verificação de erro
+    try:
+        equipes_casa = pd.read_csv(url_equipes_casa)
+        equipes_fora = pd.read_csv(url_equipes_fora)
+    except Exception as e:
+        st.error(f"Erro ao carregar os arquivos das equipes: {e}")
+        equipes_casa = pd.DataFrame()  # Criação de dataframe vazio em caso de erro
+        equipes_fora = pd.DataFrame()  # Criação de dataframe vazio em caso de erro
 
     # Verificar e corrigir o formato da coluna Evento
     st.subheader("Verificação dos dados na coluna 'Evento'")
@@ -60,3 +63,74 @@ if jogos_dia_file:
     # Exibir os jogos válidos
     st.subheader("Jogos válidos")
     st.dataframe(jogos_dia_validos)
+
+    # Análise: HA +0.25
+    st.subheader("HA +0.25 (casa)")
+    
+    # Validação e conversão de colunas
+    def validar_converter_coluna(df, coluna):
+        if coluna in df.columns:
+            df[coluna] = pd.to_numeric(df[coluna], errors='coerce')
+        return df.dropna(subset=[coluna])
+    
+    equipes_casa = validar_converter_coluna(equipes_casa, 'PIH_HA')
+    equipes_fora = validar_converter_coluna(equipes_fora, 'PIA_HA')
+    
+    # Filtrar as melhores equipes em casa e piores fora
+    melhores_casa_filtrados = equipes_casa[equipes_casa['PIH_HA'] >= 0.75]
+    piores_fora_filtrados = equipes_fora[equipes_fora['PIA_HA'] >= 0.75]
+    
+    # Filtrar jogos com base nos critérios
+    hahome_jogos = jogos_dia_validos[
+        jogos_dia_validos['Time_Casa'].apply(
+            lambda x: any(fuzz.token_sort_ratio(x, equipe) > 80 for equipe in melhores_casa_filtrados['Equipe'])
+        ) &
+        jogos_dia_validos['Time_Fora'].apply(
+            lambda x: any(fuzz.token_sort_ratio(x, equipe) > 80 for equipe in piores_fora_filtrados['Equipe'])
+        ) &
+        (jogos_dia_validos['Home'] >= 1.6) &
+        (jogos_dia_validos['Home'] <= 2.4)
+    ]
+    
+    # Adicionar as colunas de aproveitamento ao dataframe 'hahome_jogos'
+    hahome_jogos = hahome_jogos.merge(
+        equipes_casa[['Equipe_Casa', 'PIH_HA']],
+        left_on='Time_Casa',
+        right_on='Equipe',
+        how='left'
+    ).drop(columns=['Equipe'])
+    
+    hahome_jogos = hahome_jogos.merge(
+        equipes_fora[['Equipe_Fora', 'PIA_HA']],
+        left_on='Time_Fora',
+        right_on='Equipe',
+        how='left'
+    ).drop(columns=['Equipe'])
+    
+    # Adicionar outras colunas relevantes
+    hahome_jogos = hahome_jogos.merge(
+        equipes_casa[['Equipe_Casa', 'Odd_Justa_HA', 'Pts_Home', 'GD_Home']],
+        left_on='Time_Casa',
+        right_on='Equipe',
+        how='left'
+    ).drop(columns=['Equipe'])
+    
+    hahome_jogos = hahome_jogos.merge(
+        equipes_fora[['Equipe_Fora', 'Pts_Away', 'GD_Away']],
+        left_on='Time_Fora',
+        right_on='Equipe',
+        how='left'
+    ).drop(columns=['Equipe'])
+    
+    # Garantir que todos os valores necessários estão preenchidos
+    hahome_jogos = hahome_jogos.dropna(subset=['PIH_HA', 'PIA_HA', 'Odd_Justa_HA', 'GD_Home', 'GD_Away', 'Pts_Home', 'Pts_Away'])
+    
+    # Verificar se há jogos válidos para exibir
+    if hahome_jogos.empty:
+        st.write("Nenhum jogo atende aos critérios ou possui dados suficientes!")
+    else:
+        # Exibir jogos válidos
+        st.dataframe(hahome_jogos[['Hora', 'Time_Casa', 'Time_Fora', 'Home', 'Away', 'PIH_HA', 'PIA_HA', 'Odd_Justa_HA', 'GD_Home', 'GD_Away', 'Pts_Home', 'Pts_Away']])
+
+else:
+    st.info("Por favor, envie o arquivo 'Jogos do dia Betfair.csv' para realizar a análise.")
