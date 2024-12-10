@@ -76,6 +76,7 @@ if jogos_dia_file:
     # Filtrar melhores equipes em casa e piores fora
     melhores_casa_filtrados = equipes_casa[equipes_casa['PIH'] >= 0.65]
     piores_fora_filtrados = equipes_fora[equipes_fora['PIA'] <= 0.20]
+    melhores_casa_filtrados = equipes_casa[equipes_casa['GD_Home'] >= 5]
     
     # Filtrar jogos com base nos critérios definidos
     back_home_jogos = jogos_dia_validos[
