@@ -17,17 +17,11 @@ jogos_dia_file = st.file_uploader("Envie o arquivo 'Jogos do dia Betfair.csv'", 
 
 if jogos_dia_file:
     # Ler o arquivo "Jogos do Dia"
-    jogos_dia = pd.read_csv(jogos_dia_file)
-
-    # Exibir as colunas do arquivo "Jogos do Dia"
-    st.write("Colunas do arquivo 'Jogos do Dia':", jogos_dia.columns)
+    jogos_dia = pd.read_csv(jogos_dia_file)    
     
     # Carregar os arquivos diretamente das URLs
     equipes_casa = pd.read_csv(url_equipes_casa)
-    equipes_fora = pd.read_csv(url_equipes_fora)
-
-    # Exibir as colunas do arquivo equipes_fora.csv
-    st.write("Colunas do arquivo equipes_fora.csv:", equipes_fora.columns)
+    equipes_fora = pd.read_csv(url_equipes_fora)   
     
     # Aplicar o filtro de PIA_HA >= 0.75
     equipes_fora_filtradas = equipes_fora[equipes_fora['PIA_HA'] >= 0.75]
