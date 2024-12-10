@@ -71,19 +71,13 @@ if jogos_dia_file:
     
     sufixos_diferentes = ["B", "II", "Sub-23"]
     equipes_casa = equipes_casa[equipes_casa['Equipe'].apply(lambda x: filtrar_sufixos(x, sufixos_diferentes))]
-    equipes_fora = equipes_fora[equipes_fora['Equipe'].apply(lambda x: filtrar_sufixos(x, sufixos_diferentes))]
+    equipes_fora = equipes_fora[equipes_fora['Equipe'].apply(lambda x: filtrar_sufixos(x, sufixos_diferentes))]    
     
-      
-    # Filtrando os melhores times em casa (PIH >= 0.65) e GD_Home >= 5
-    melhores_casa_filtrados = equipes_casa[(equipes_casa['GD_Home'] >= 5)]
-    
-    # Filtrando os piores times fora
-    piores_fora_filtrados = equipes_fora[equipes_fora['PIA'] <= 0.20]
     
     # Filtrar jogos com odds entre 1.45 e 2.2 para a casa
     back_home_jogos = jogos_dia_validos[
-        (jogos_dia_validos['Home'] >= 1.45) &
-        (jogos_dia_validos['Home'] <= 2.2)
+        (jogos_dia_validos['Home'] >= 1.6) &
+        (jogos_dia_validos['Home'] <= 2.4)
     ]
     
     # Adicionar as métricas de desempenho ao DataFrame
