@@ -191,12 +191,12 @@ if jogos_dia_file:
 
 
     # Análise: HA -0.25
-    st.subheader("HA -0.25 (GD_Home >= 1.5 e GD_Away <= 0.80")
+    st.subheader("HA -0.25")
 
           
     # Filtrar as melhores equipes em casa e piores fora
     melhores_casa_filtrados = equipes_casa[equipes_casa['GD_Home'] >= 1.5]
-    piores_fora_filtrados = equipes_fora[equipes_fora['GD_Away'] <= 0.8]
+    piores_fora_filtrados = equipes_fora[equipes_fora['GD_Away'] <= -1]
     
     # Filtrar jogos com base nos critérios
     hastrong_jogos = jogos_dia_validos[
