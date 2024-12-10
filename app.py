@@ -18,6 +18,10 @@ def extrair_odds(valor):
             return None
     return valor
 
+# Função para calcular similaridade de nomes
+def similaridade_nome(nome1, nome2, limiar=80):
+    return fuzz.ratio(nome1.lower(), nome2.lower()) >= limiar
+
 # Upload do arquivo "Jogos do Dia"
 jogos_dia_file = st.file_uploader("Envie o arquivo 'Jogos do dia Betfair.csv'", type="csv")
 
@@ -78,18 +82,33 @@ if jogos_dia_file:
     # Confirmar se as colunas do DataFrame foram renomeadas corretamente
     st.write("Colunas após renomear:", equipes_casa.columns)
     
-    # Fazer o merge entre os jogos válidos e o arquivo 'equipes_casa'
-    jogos_merged = pd.merge(jogos_dia_validos, equipes_casa, left_on="Time_Casa", right_on="Equipe_Casa_CSV", how="left")
+    # Aplicar a lógica de similaridade para fazer o merge
+    jogos_merged = []
+    for _, jogo in jogos_dia_validos.iterrows():
+        nome_time_casa = jogo['Time_Casa']
+        
+        # Encontrar a linha correspondente em equipes_casa com base na similaridade de nomes
+        similar_times = equipes_casa[equipes_casa['Equipe_Casa_CSV'].apply(lambda x: similaridade_nome(nome_time_casa, x))]
+        
+        if not similar_times.empty:
+            jogo_merged = pd.merge(pd.DataFrame([jogo]), similar_times, left_on='Time_Casa', right_on='Equipe_Casa_CSV', how='left')
+            jogos_merged.append(jogo_merged)
     
-    # Verificar se o merge foi feito corretamente
+    # Concatenar todos os jogos encontrados no merge
+    if jogos_merged:
+        jogos_merged_df = pd.concat(jogos_merged, ignore_index=True)
+    else:
+        jogos_merged_df = pd.DataFrame()
+
+    # Exibir os jogos com merge realizado
     st.subheader("Jogos com informações das equipes da casa")
-    st.dataframe(jogos_merged)
+    st.dataframe(jogos_merged_df)
 
     # Aplicar o filtro de PIH_HA >= 0.75
-    jogos_filtrados_pih = jogos_merged[
-        (jogos_merged['PIH_HA_CSV'] >= 0.75) &
-        (jogos_merged['Home'] >= 1.7) &
-        (jogos_merged['Home'] <= 2.4)
+    jogos_filtrados_pih = jogos_merged_df[
+        (jogos_merged_df['PIH_HA_CSV'] >= 0.75) &
+        (jogos_merged_df['Home'] >= 1.7) &
+        (jogos_merged_df['Home'] <= 2.4)
     ]
     
     # Exibir os jogos filtrados com PIH_HA
@@ -98,4 +117,3 @@ if jogos_dia_file:
     
 else:
     st.info("Por favor, envie o arquivo 'Jogos do dia Betfair.csv' para realizar a análise.")
-
