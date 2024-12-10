@@ -210,8 +210,8 @@ if jogos_dia_file:
     equipes_fora = equipes_fora[equipes_fora['Equipe'].apply(lambda x: filtrar_sufixos(x, sufixos_diferentes))]
     
     # Filtrar as melhores equipes em casa e piores fora
-    melhores_casa_filtrados = equipes_casa[equipes_casa['PIH_HA'] >= 0.6]
-    piores_fora_filtrados = equipes_fora[equipes_fora['PIA_HA'] >= 0.6]
+    melhores_casa_filtrados = equipes_casa[equipes_casa['PIH_HA'] >= 0.7]
+    piores_fora_filtrados = equipes_fora[equipes_fora['PIA_HA'] >= 0.7]
     
     # Filtrar jogos com base nos critérios
     hastrong_jogos = jogos_dia_validos[
