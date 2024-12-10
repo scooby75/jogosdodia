@@ -64,28 +64,32 @@ if jogos_dia_file:
     # Adicionar a lógica de filtro para a coluna 'Home'
     jogos_filtrados = jogos_dia_validos[(jogos_dia_validos['Home'] >= 1.8) & (jogos_dia_validos['Home'] <= 2.4)]
     
-    # Carregar o arquivo 'equipes_casa.csv' diretamente da URL
-    equipes_casa = pd.read_csv("https://raw.githubusercontent.com/scooby75/jogosdodia/refs/heads/main/equipes_casa.csv")
+        # Verificar e ajustar os nomes das colunas
+    equipes_casa.columns = equipes_casa.columns.str.strip()  # Remove espaços em branco dos nomes das colunas
     
-    # Renomear colunas para evitar confusão com o arquivo 'Jogos do Dia'
-    equipes_casa.rename(columns={"Equipe_Casa": "Equipe_Casa_CSV", "PIH_HA": "PIH_HA_CSV"}, inplace=True)
+    # Renomear as colunas para evitar conflitos e garantir consistência
+    if "Equipe_Casa" in equipes_casa.columns and "PIH_HA" in equipes_casa.columns:
+        equipes_casa.rename(columns={"Equipe_Casa": "Equipe_Casa_CSV", "PIH_HA": "PIH_HA_CSV"}, inplace=True)
+    else:
+        st.error("As colunas esperadas não foram encontradas no arquivo equipes_casa.csv.")
     
-    # Adicionar colunas Time_Casa e Time_Fora no arquivo de jogos válidos
-    jogos_dia_validos['Time_Casa'] = jogos_dia_validos['Evento'].apply(lambda x: x.split(' v ')[0].strip())
-    jogos_dia_validos['Time_Fora'] = jogos_dia_validos['Evento'].apply(lambda x: x.split(' v ')[1].strip())
+    # Confirmar se as colunas do DataFrame foram renomeadas corretamente
+    st.write("Colunas após renomear:", equipes_casa.columns)
     
     # Fazer o merge entre os jogos válidos e o arquivo 'equipes_casa'
     jogos_merged = pd.merge(jogos_dia_validos, equipes_casa, left_on="Time_Casa", right_on="Equipe_Casa_CSV", how="left")
     
     # Aplicar o filtro de PIH_HA >= 0.75
-    jogos_filtrados_pih = jogos_merged[(jogos_merged['PIH_HA_CSV'] >= 0.75) & 
-                                       (jogos_merged['Home'] >= 1.8) & 
-                                       (jogos_merged['Home'] <= 2.4)]
+    jogos_filtrados_pih = jogos_merged[
+        (jogos_merged['PIH_HA_CSV'] >= 0.75) &
+        (jogos_merged['Home'] >= 1.8) &
+        (jogos_merged['Home'] <= 2.4)
+    ]
     
     # Exibir os jogos filtrados
     st.subheader("Jogos filtrados com PIH_HA >= 0.75 e Home entre 1.8 e 2.4")
     st.dataframe(jogos_filtrados_pih)
-
+    
 
    
 else:
