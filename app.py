@@ -195,11 +195,11 @@ if jogos_dia_file:
     
     # Garantir que as colunas 'PIH_HA' e 'PIA' estão no formato correto (numérico)
     equipes_casa['PIH_HA'] = pd.to_numeric(equipes_casa['PIH_HA'], errors='coerce')
-    equipes_fora['PIA'] = pd.to_numeric(equipes_fora['PIA'], errors='coerce')
+    equipes_fora['PIA_HA'] = pd.to_numeric(equipes_fora['PIA_HA'], errors='coerce')
     
     # Remover valores nulos de 'PIH_HA' e 'PIA'
     equipes_casa = equipes_casa.dropna(subset=['PIH_HA'])
-    equipes_fora = equipes_fora.dropna(subset=['PIA'])
+    equipes_fora = equipes_fora.dropna(subset=['PIA_HA'])
     
     # Função para filtrar equipes com sufixos indesejados
     def filtrar_sufixos(time, lista_sufixos):
@@ -211,7 +211,7 @@ if jogos_dia_file:
     
     # Filtrar as melhores equipes em casa e piores fora
     melhores_casa_filtrados = equipes_casa[equipes_casa['PIH_HA'] >= 0.6]
-    piores_fora_filtrados = equipes_fora[equipes_fora['PIA'] <= 0.1]
+    piores_fora_filtrados = equipes_fora[equipes_fora['PIA_HA'] >= 0.6]
     
     # Filtrar jogos com base nos critérios
     hastrong_jogos = jogos_dia_validos[
@@ -234,7 +234,7 @@ if jogos_dia_file:
     ).drop(columns=['Equipe'])
     
     hastrong_jogos = hastrong_jogos.merge(
-        equipes_fora[['Equipe', 'PIA']],
+        equipes_fora[['Equipe', 'PIA_HA']],
         left_on='Time_Fora',
         right_on='Equipe',
         how='left'
@@ -253,7 +253,7 @@ if jogos_dia_file:
         st.write("Nenhum jogo atende aos critérios!")
     else:
         # Exibir os jogos filtrados com as colunas especificadas
-        st.dataframe(hastrong_jogos[['Hora', 'Time_Casa', 'Time_Fora', 'Home', 'Away', 'PIH_HA', 'PIA', 'Odd_Justa_HA']])
+        st.dataframe(hastrong_jogos[['Hora', 'Time_Casa', 'Time_Fora', 'Home', 'Away', 'PIH_HA', 'PIA_HA', 'Odd_Justa_HA']])
 
 
     # Análise: HA +0.25
