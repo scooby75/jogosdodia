@@ -36,49 +36,6 @@ if jogos_dia_file:
     st.subheader("Equipes fora com PIA_HA >= 0.75")
     st.dataframe(equipes_fora_filtradas)
     
-    # Lista para armazenar os dados das equipes encontradas
-    equipes_encontradas = []
-
-    # Comparação de equipes
-    for _, jogo in jogos_dia.iterrows():
-        # Separar os times da coluna 'Evento' (exemplo: 'Persija Jakarta v Pusamania Borneo FC')
-        evento = jogo['Evento']
-        
-        # Usar expressão regular para separar os times
-        match = re.match(r"(.+) v (.+)", evento)
-        if match:
-            time_casa = match.group(1).strip()
-            time_fora = match.group(2).strip()
-            
-            # Comparar time da casa com equipes_casa
-            similar_times_casa = equipes_casa[equipes_casa['Equipe_Casa'].apply(lambda x: comparar_nomes_substrings(time_casa, x))]
-            
-            # Comparar time de fora com equipes_fora
-            similar_times_fora = equipes_fora_filtradas[equipes_fora_filtradas['Equipe_Fora'].apply(lambda x: comparar_nomes_substrings(time_fora, x))]
-            
-            if not similar_times_casa.empty and not similar_times_fora.empty:
-                # Adicionar as equipes encontradas na lista
-                equipes_encontradas.append({
-                    "Evento": evento,
-                    "Equipe_Casa": similar_times_casa['Equipe_Casa'].values[0],
-                    "Equipe_Fora": similar_times_fora['Equipe_Fora'].values[0],
-                    "PIA_HA_Casa": similar_times_casa['PIA_HA'].values[0],
-                    "PIA_HA_Fora": similar_times_fora['PIA_HA'].values[0],
-                    "Odd_Justa_MO_Casa": similar_times_casa['Odd_Justa_MO'].values[0],
-                    "Odd_Justa_MO_Fora": similar_times_fora['Odd_Justa_MO'].values[0]
-                })
-            else:
-                st.warning(f"Não encontrou times correspondentes para o evento: {evento}")
-        else:
-            st.warning(f"Formato inválido para o evento: {evento}")
-    
-    # Criar DataFrame com as equipes encontradas
-    if equipes_encontradas:
-        df_equipes_encontradas = pd.DataFrame(equipes_encontradas)
-        st.subheader("Equipes Encontradas")
-        st.dataframe(df_equipes_encontradas)
-    else:
-        st.info("Nenhuma equipe encontrada para os eventos.")
 
 else:
     st.info("Por favor, envie o arquivo 'Jogos do dia Betfair.csv' para realizar a análise.")
