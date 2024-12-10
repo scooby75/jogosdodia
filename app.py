@@ -73,12 +73,9 @@ if jogos_dia_file:
     equipes_casa = equipes_casa[equipes_casa['Equipe'].apply(lambda x: filtrar_sufixos(x, sufixos_diferentes))]
     equipes_fora = equipes_fora[equipes_fora['Equipe'].apply(lambda x: filtrar_sufixos(x, sufixos_diferentes))]
     
-    # Filtrar melhores equipes em casa e piores equipes fora
-    # Certificando-se de que GD_Home é numérico
-    equipes_casa['GD_Home'] = pd.to_numeric(equipes_casa['GD_Home'], errors='coerce')
-    
+      
     # Filtrando os melhores times em casa (PIH >= 0.65) e GD_Home >= 5
-    melhores_casa_filtrados = equipes_casa[(equipes_casa['PIH'] >= 0.65) & (equipes_casa['GD_Home'] >= 5)]
+    melhores_casa_filtrados = equipes_casa[(equipes_casa['GD_Home'] >= 5)]
     
     # Filtrando os piores times fora
     piores_fora_filtrados = equipes_fora[equipes_fora['PIA'] <= 0.20]
