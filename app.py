@@ -82,8 +82,8 @@ if jogos_dia_file:
     ]
     
     # Listar as colunas que precisam ser mescladas
-    colunas_casa = ['Equipe', 'PIH', 'GD_Home', 'Pts_Home']
-    colunas_fora = ['Equipe', 'PIA', 'Odd_Justa_MO', 'GD_Fora', 'Pts_Fora']
+    colunas_casa = ['Equipe', 'PIH', 'Odd_Justa_MO', 'GD_Home', 'Pts_Home']
+    colunas_fora = ['Equipe', 'PIA', 'GD_Fora', 'Pts_Fora']
     
     # Realizar os merges de uma vez
     back_home_jogos = back_home_jogos.merge(
