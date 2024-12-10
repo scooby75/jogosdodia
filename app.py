@@ -201,13 +201,7 @@ if jogos_dia_file:
     equipes_casa['GD_Home'] = pd.to_numeric(equipes_casa['GD_Home'], errors='coerce')
     equipes_fora['GD_Away'] = pd.to_numeric(equipes_fora['GD_Away'], errors='coerce')
 
-    def filtrar_sufixos(time, lista_sufixos):
-        return not any(sufixo in time for sufixo in lista_sufixos)
-    
-    sufixos_diferentes = ["FC", "CF", "FK", "CD", "SV"]
-    equipes_casa = equipes_casa[equipes_casa['Equipe'].apply(lambda x: filtrar_sufixos(x, sufixos_diferentes))]
-    equipes_fora = equipes_fora[equipes_fora['Equipe'].apply(lambda x: filtrar_sufixos(x, sufixos_diferentes))]
-    
+        
     # Filtrar as melhores equipes em casa e piores fora
     melhores_casa_filtrados = equipes_casa[equipes_casa['GD_Home'] >= 1.5]
     piores_fora_filtrados = equipes_fora[equipes_fora['GD_Away'] <= 0.8]
