@@ -193,15 +193,7 @@ if jogos_dia_file:
     # Análise: HA -0.25
     st.subheader("HA -0.25 (GD_Home >= 1.5 e GD_Away <= 0.80")
 
-    # Certifique-se de que as colunas de aproveitamento e pontuação não têm valores nulos
-    equipes_casa = equipes_casa.dropna(subset=['GD_Home', 'PIH', 'Pts_Home', 'Odd_Justa_HA'])
-    equipes_fora = equipes_fora.dropna(subset=['GD_Away', 'PIA', 'Pts_Away'])
-    
-    # Garantir que as colunas 'GD_Home' e 'GD_Away' estão no formato correto
-    equipes_casa['GD_Home'] = pd.to_numeric(equipes_casa['GD_Home'], errors='coerce')
-    equipes_fora['GD_Away'] = pd.to_numeric(equipes_fora['GD_Away'], errors='coerce')
-
-        
+          
     # Filtrar as melhores equipes em casa e piores fora
     melhores_casa_filtrados = equipes_casa[equipes_casa['GD_Home'] >= 1.5]
     piores_fora_filtrados = equipes_fora[equipes_fora['GD_Away'] <= 0.8]
