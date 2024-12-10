@@ -96,31 +96,31 @@ if jogos_dia_file:
     hahome_jogos = hahome_jogos.merge(
         equipes_casa[['Equipe_Casa', 'PIH_HA']],
         left_on='Time_Casa',
-        right_on='Equipe',
+        right_on='Equipe_Casa',
         how='left'
-    ).drop(columns=['Equipe'])
+    ).drop(columns=['Equipe_Casa'])
     
     hahome_jogos = hahome_jogos.merge(
         equipes_fora[['Equipe_Fora', 'PIA_HA']],
         left_on='Time_Fora',
-        right_on='Equipe',
+        right_on='Equipe_Fora',
         how='left'
-    ).drop(columns=['Equipe'])
+    ).drop(columns=['Equipe_Fora'])
     
     # Adicionar outras colunas relevantes
     hahome_jogos = hahome_jogos.merge(
         equipes_casa[['Equipe_Casa', 'Odd_Justa_HA', 'Pts_Home', 'GD_Home']],
         left_on='Time_Casa',
-        right_on='Equipe',
+        right_on='Equipe_Casa',
         how='left'
-    ).drop(columns=['Equipe'])
+    ).drop(columns=['Equipe_Casa'])
     
     hahome_jogos = hahome_jogos.merge(
         equipes_fora[['Equipe_Fora', 'Pts_Away', 'GD_Away']],
         left_on='Time_Fora',
-        right_on='Equipe',
+        right_on='Equipe_Fora',
         how='left'
-    ).drop(columns=['Equipe'])
+    ).drop(columns=['Equipe_Fora'])
     
     # Garantir que todos os valores necessários estão preenchidos
     hahome_jogos = hahome_jogos.dropna(subset=['PIH_HA', 'PIA_HA', 'Odd_Justa_HA', 'GD_Home', 'GD_Away', 'Pts_Home', 'Pts_Away'])
