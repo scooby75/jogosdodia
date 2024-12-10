@@ -233,17 +233,13 @@ if jogos_dia_file:
     equipes_casa = equipes_casa[equipes_casa['Equipe'].apply(lambda x: filtrar_sufixos(x, sufixos_diferentes))]
     equipes_fora = equipes_fora[equipes_fora['Equipe'].apply(lambda x: filtrar_sufixos(x, sufixos_diferentes))]
                
-    # Filtrar as melhores equipes em casa e piores fora
-    melhores_casa_filtrados = equipes_casa[equipes_casa['PIH_HA'] >= 0.75]
-    piores_fora_filtrados = equipes_fora[equipes_fora['PIA_HA'] >= 0.75]
-   
-     
-   
-    # Filtrar jogos com base nos critérios, sem usar fuzz
     hahome_jogos = jogos_dia_validos[
-        (jogos_dia_validos['Home'] >= 1.6) &
-        (jogos_dia_validos['Home'] <= 2.4)
-    ]
+    (jogos_dia_validos['Home'] >= 1.6) &
+    (jogos_dia_validos['Home'] <= 2.4) &
+    (jogos_dia_validos['PIH_HA'] >= 0.75) &
+    (jogos_dia_validos['PIA_HA'] >= 0.75)
+]
+
 
         
     # Adicionar as colunas de aproveitamento ao dataframe 'hahome_jogos'
