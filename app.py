@@ -192,7 +192,8 @@ if jogos_dia_file:
 
     # Análise: HA -0.25
     st.subheader("HA -0.25")
-    
+
+    # Garantir que as colunas 'PIH_HA' e 'PIA_HA' estão no formato correto (numérico)
     equipes_casa['PIH_HA'] = pd.to_numeric(equipes_casa['GD_Home'], errors='coerce')
     equipes_fora['PIA_HA'] = pd.to_numeric(equipes_fora['GD_Away'], errors='coerce')
     
@@ -216,7 +217,7 @@ if jogos_dia_file:
         (jogos_dia_validos['Home'] <= 2.2)
     ]
     
-    # Adicionar as colunas de aproveitamento ao dataframe 'hastrong_jogos'
+    # Adicionar colunas de aproveitamento e pontuação
     hastrong_jogos = hastrong_jogos.merge(
         equipes_casa[['Equipe', 'GD_Home']],
         left_on='Time_Casa',
@@ -245,7 +246,22 @@ if jogos_dia_file:
         how='left'
     ).drop(columns=['Equipe'])
     
-    # Adicionar a coluna 'Odd_Justa_HA' ao dataframe 'hastrong_jogos'
+    # Adicionar colunas de pontuação
+    hastrong_jogos = hastrong_jogos.merge(
+        equipes_casa[['Equipe', 'Pts_Home']],
+        left_on='Time_Casa',
+        right_on='Equipe',
+        how='left'
+    ).drop(columns=['Equipe'])
+    
+    hastrong_jogos = hastrong_jogos.merge(
+        equipes_fora[['Equipe', 'Pts_Away']],
+        left_on='Time_Fora',
+        right_on='Equipe',
+        how='left'
+    ).drop(columns=['Equipe'])
+    
+    # Adicionar coluna de Odd_Justa_HA
     hastrong_jogos = hastrong_jogos.merge(
         equipes_casa[['Equipe', 'Odd_Justa_HA']],
         left_on='Time_Casa',
@@ -258,7 +274,8 @@ if jogos_dia_file:
         st.write("Nenhum jogo atende aos critérios!")
     else:
         # Exibir os jogos filtrados com as colunas especificadas
-        st.dataframe(hastrong_jogos[['Hora', 'Time_Casa', 'Time_Fora', 'Home', 'Away', 'PIH', 'PIA', 'GD_Home', 'GD_Away', 'Odd_Justa_HA']])
+        st.dataframe(hastrong_jogos[['Hora', 'Time_Casa', 'Time_Fora', 'Home', 'Away', 'Odd_Justa_HA', 'PIH', 'PIA', 'GD_Home', 'GD_Away', 'Pts_Home', 'Pts_Away']])
+
 
 
 
