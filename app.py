@@ -6,7 +6,6 @@ from rapidfuzz import fuzz
 st.title("Comparação de Jogos do Dia")
 
 # URLs dos arquivos no GitHub
-
 url_equipes_casa = "https://raw.githubusercontent.com/scooby75/jogosdodia/refs/heads/main/equipes_casa.csv"
 url_equipes_fora = "https://raw.githubusercontent.com/scooby75/jogosdodia/refs/heads/main/equipes_fora.csv"
 
@@ -27,7 +26,6 @@ if jogos_dia_file:
     jogos_dia = pd.read_csv(jogos_dia_file)
 
     # Carregar os arquivos diretamente das URLs
-    
     equipes_casa = pd.read_csv(url_equipes_casa)
     equipes_fora = pd.read_csv(url_equipes_fora)
 
@@ -64,7 +62,11 @@ if jogos_dia_file:
     # Adicionar a lógica de filtro para a coluna 'Home'
     jogos_filtrados = jogos_dia_validos[(jogos_dia_validos['Home'] >= 1.8) & (jogos_dia_validos['Home'] <= 2.4)]
     
-        # Verificar e ajustar os nomes das colunas
+    # Exibir os jogos filtrados
+    st.subheader("Jogos filtrados (Home entre 1.8 e 2.4)")
+    st.dataframe(jogos_filtrados)
+
+    # Verificar e ajustar os nomes das colunas
     equipes_casa.columns = equipes_casa.columns.str.strip()  # Remove espaços em branco dos nomes das colunas
     
     # Renomear as colunas para evitar conflitos e garantir consistência
@@ -79,6 +81,10 @@ if jogos_dia_file:
     # Fazer o merge entre os jogos válidos e o arquivo 'equipes_casa'
     jogos_merged = pd.merge(jogos_dia_validos, equipes_casa, left_on="Time_Casa", right_on="Equipe_Casa_CSV", how="left")
     
+    # Verificar se o merge foi feito corretamente
+    st.subheader("Jogos com informações das equipes da casa")
+    st.dataframe(jogos_merged)
+
     # Aplicar o filtro de PIH_HA >= 0.75
     jogos_filtrados_pih = jogos_merged[
         (jogos_merged['PIH_HA_CSV'] >= 0.75) &
@@ -86,11 +92,10 @@ if jogos_dia_file:
         (jogos_merged['Home'] <= 2.4)
     ]
     
-    # Exibir os jogos filtrados
-    st.subheader("Jogos filtrados com PIH_HA >= 0.75 e Home entre 1.8 e 2.4")
+    # Exibir os jogos filtrados com PIH_HA
+    st.subheader("Jogos filtrados com PIH_HA >= 0.75")
     st.dataframe(jogos_filtrados_pih)
     
-
-   
 else:
     st.info("Por favor, envie o arquivo 'Jogos do dia Betfair.csv' para realizar a análise.")
+
