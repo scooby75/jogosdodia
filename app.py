@@ -239,18 +239,18 @@ if jogos_dia_file:
     def similaridade(str1, str2):
         return SequenceMatcher(None, str1, str2).ratio()
     
-    # Filtrar jogos com base nos critérios, usando SequenceMatcher
+    # Filtrar jogos com base nos critérios, sem usar fuzz
     hahome_jogos = jogos_dia_validos[
         jogos_dia_validos['Time_Casa'].apply(
-            lambda x: any(similaridade(x, equipe) > 0.8 for equipe in melhores_casa_filtrados['Equipe'])
+            lambda x: any(equipe in x for equipe in melhores_casa_filtrados['Equipe'])
         ) &
         jogos_dia_validos['Time_Fora'].apply(
-            lambda x: any(similaridade(x, equipe) > 0.8 for equipe in piores_fora_filtrados['Equipe'])
+            lambda x: any(equipe in x for equipe in piores_fora_filtrados['Equipe'])
         ) &
         (jogos_dia_validos['Home'] >= 1.6) &
         (jogos_dia_validos['Home'] <= 2.4)
     ]
-    
+
         
     # Adicionar as colunas de aproveitamento ao dataframe 'hahome_jogos'
     hahome_jogos = hahome_jogos.merge(
