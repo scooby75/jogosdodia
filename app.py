@@ -256,15 +256,15 @@ if jogos_dia_file:
             df[coluna] = pd.to_numeric(df[coluna], errors='coerce')
         return df.dropna(subset=[coluna])
     
+    # Garantir que as colunas estão corretamente convertidas e sem NaN
     equipes_casa = validar_converter_coluna(equipes_casa, 'PIH_HA')
     equipes_fora = validar_converter_coluna(equipes_fora, 'PIA_HA')
     
-       
-    # Filtrar as melhores equipes em casa e piores fora
+    # Filtrar as melhores equipes em casa e piores fora com base no índice PIH_HA e PIA_HA >= 0.75
     melhores_casa_filtrados = equipes_casa[equipes_casa['PIH_HA'] >= 0.75]
     piores_fora_filtrados = equipes_fora[equipes_fora['PIA_HA'] >= 0.75]
     
-    # Filtrar jogos com base nos critérios
+    # Filtrar jogos com base nos critérios (Odds entre 1.8 e 2.4 e comparação de equipes)
     hahome_jogos = jogos_dia_validos[
         jogos_dia_validos['Time_Casa'].apply(
             lambda x: any(fuzz.token_sort_ratio(x, equipe) > 80 for equipe in melhores_casa_filtrados['Equipe'])
@@ -272,11 +272,11 @@ if jogos_dia_file:
         jogos_dia_validos['Time_Fora'].apply(
             lambda x: any(fuzz.token_sort_ratio(x, equipe) > 80 for equipe in piores_fora_filtrados['Equipe'])
         ) &
-        (jogos_dia_validos['Home'] >= 1.6) &
+        (jogos_dia_validos['Home'] >= 1.8) &  # Garantir que as odds estejam entre 1.8 e 2.4
         (jogos_dia_validos['Home'] <= 2.4)
     ]
     
-    # Adicionar as colunas de aproveitamento ao dataframe 'hahome_jogos'
+    # Adicionar as colunas de aproveitamento e dados extras
     hahome_jogos = hahome_jogos.merge(
         equipes_casa[['Equipe', 'PIH_HA']],
         left_on='Time_Casa',
@@ -291,7 +291,7 @@ if jogos_dia_file:
         how='left'
     ).drop(columns=['Equipe'])
     
-    # Adicionar outras colunas relevantes
+    # Adicionar outras colunas relevantes (Odds, GD, Pontuação)
     hahome_jogos = hahome_jogos.merge(
         equipes_casa[['Equipe', 'Odd_Justa_HA', 'Pts_Home', 'GD_Home']],
         left_on='Time_Casa',
@@ -306,7 +306,7 @@ if jogos_dia_file:
         how='left'
     ).drop(columns=['Equipe'])
     
-    # Garantir que todos os valores necessários estão preenchidos
+    # Garantir que todos os valores necessários estão preenchidos (sem NaN)
     hahome_jogos = hahome_jogos.dropna(subset=['PIH_HA', 'PIA_HA', 'Odd_Justa_HA', 'GD_Home', 'GD_Away', 'Pts_Home', 'Pts_Away'])
     
     # Verificar se há jogos válidos para exibir
@@ -315,7 +315,6 @@ if jogos_dia_file:
     else:
         # Exibir jogos válidos
         st.dataframe(hahome_jogos[['Hora', 'Time_Casa', 'Time_Fora', 'Home', 'Away', 'PIH_HA', 'PIA_HA', 'Odd_Justa_HA', 'GD_Home', 'GD_Away', 'Pts_Home', 'Pts_Away']])
-
 
     
     # Análise: HA +0.25 Away
