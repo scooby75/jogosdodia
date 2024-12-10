@@ -65,14 +65,6 @@ if jogos_dia_file:
     # Análise: Back Home
     st.subheader("Back Home")
    
-    # Garantir que as colunas de aproveitamento estão no formato correto (numérico)
-    equipes_casa['PIH'] = pd.to_numeric(equipes_casa['PIH'], errors='coerce')
-    equipes_fora['PIA'] = pd.to_numeric(equipes_fora['PIA'], errors='coerce')
-    
-    # Remover valores nulos nas colunas de aproveitamento
-    equipes_casa = equipes_casa.dropna(subset=['PIH'])
-    equipes_fora = equipes_fora.dropna(subset=['PIA'])
-    
     # Função para filtrar equipes com sufixos indesejados
     def filtrar_sufixos(time, lista_sufixos):
         return not any(sufixo in time for sufixo in lista_sufixos)
@@ -87,12 +79,6 @@ if jogos_dia_file:
     
     # Filtrar jogos com base nos critérios definidos
     back_home_jogos = jogos_dia_validos[
-        jogos_dia_validos['Time_Casa'].apply(
-            lambda x: any(fuzz.token_sort_ratio(x, equipe) > 80 for equipe in melhores_casa_filtrados['Equipe'])
-        ) &
-        jogos_dia_validos['Time_Fora'].apply(
-            lambda x: any(fuzz.token_sort_ratio(x, equipe) > 80 for equipe in piores_fora_filtrados['Equipe'])
-        ) &
         (jogos_dia_validos['Home'] >= 1.45) &
         (jogos_dia_validos['Home'] <= 2.2)
     ]
@@ -128,7 +114,14 @@ if jogos_dia_file:
     # BACK AWAY
     
     st.subheader("Back Away")
+
+    # Função para filtrar equipes com sufixos indesejados
+    def filtrar_sufixos(time, lista_sufixos):
+        return not any(sufixo in time for sufixo in lista_sufixos)
     
+    sufixos_diferentes = ["B", "II", "Sub-23"]
+    equipes_casa = equipes_casa[equipes_casa['Equipe'].apply(lambda x: filtrar_sufixos(x, sufixos_diferentes))]
+    equipes_fora = equipes_fora[equipes_fora['Equipe'].apply(lambda x: filtrar_sufixos(x, sufixos_diferentes))]
        
     # Filtrar as melhores equipes fora e piores em casa
     melhores_fora_filtrados = equipes_fora[equipes_fora['PIA'] >= 0.65]
@@ -136,12 +129,6 @@ if jogos_dia_file:
     
     # Filtrar jogos com base nos critérios
     back_away_jogos = jogos_dia_validos[
-        jogos_dia_validos['Time_Fora'].apply(
-            lambda x: any(fuzz.token_sort_ratio(x, equipe) > 80 for equipe in melhores_fora_filtrados['Equipe'])
-        ) &
-        jogos_dia_validos['Time_Casa'].apply(
-            lambda x: any(fuzz.token_sort_ratio(x, equipe) > 80 for equipe in piores_casa_filtrados['Equipe'])
-        ) &
         (jogos_dia_validos['Away'] >= 1.45) &
         (jogos_dia_validos['Away'] <= 2.2)
     ]
@@ -180,6 +167,13 @@ if jogos_dia_file:
     # Análise: HA -0.25
     st.subheader("HA -0.25")
 
+    # Função para filtrar equipes com sufixos indesejados
+    def filtrar_sufixos(time, lista_sufixos):
+        return not any(sufixo in time for sufixo in lista_sufixos)
+    
+    sufixos_diferentes = ["B", "II", "Sub-23"]
+    equipes_casa = equipes_casa[equipes_casa['Equipe'].apply(lambda x: filtrar_sufixos(x, sufixos_diferentes))]
+    equipes_fora = equipes_fora[equipes_fora['Equipe'].apply(lambda x: filtrar_sufixos(x, sufixos_diferentes))]
           
     # Filtrar as melhores equipes em casa e piores fora
     melhores_casa_filtrados = equipes_casa[equipes_casa['GD_Home'] >= 2.00]
@@ -187,12 +181,6 @@ if jogos_dia_file:
     
     # Filtrar jogos com base nos critérios
     hastrong_jogos = jogos_dia_validos[
-        jogos_dia_validos['Time_Casa'].apply(
-            lambda x: any(fuzz.token_sort_ratio(x, equipe) > 80 for equipe in melhores_casa_filtrados['Equipe'])
-        ) &
-        jogos_dia_validos['Time_Fora'].apply(
-            lambda x: any(fuzz.token_sort_ratio(x, equipe) > 80 for equipe in piores_fora_filtrados['Equipe'])
-        ) &
         (jogos_dia_validos['Home'] >= 1.6) &
         (jogos_dia_validos['Home'] <= 2.2)
     ]
@@ -223,22 +211,23 @@ if jogos_dia_file:
             'Pts_Home', 'Pts_Away'
         ]])
 
-
-
-
     # Análise: HA +0.25
     st.subheader("HA +0.25 (casa)")
+
+    # Função para filtrar equipes com sufixos indesejados
+    def filtrar_sufixos(time, lista_sufixos):
+        return not any(sufixo in time for sufixo in lista_sufixos)
     
+    sufixos_diferentes = ["B", "II", "Sub-23"]
+    equipes_casa = equipes_casa[equipes_casa['Equipe'].apply(lambda x: filtrar_sufixos(x, sufixos_diferentes))]
+    equipes_fora = equipes_fora[equipes_fora['Equipe'].apply(lambda x: filtrar_sufixos(x, sufixos_diferentes))]
                
     # Filtrar as melhores equipes em casa e piores fora
     melhores_casa_filtrados = equipes_casa[equipes_casa['PIH_HA'] >= 0.75]
     piores_fora_filtrados = equipes_fora[equipes_fora['PIA_HA'] >= 0.75]
-    
-       
-    # Função para calcular a similaridade entre duas strings
-    def similaridade(str1, str2):
-        return SequenceMatcher(None, str1, str2).ratio()
-    
+   
+     
+   
     # Filtrar jogos com base nos critérios, sem usar fuzz
     hahome_jogos = jogos_dia_validos[
         (jogos_dia_validos['Home'] >= 1.6) &
@@ -291,7 +280,14 @@ if jogos_dia_file:
     # Análise: HA +0.25 Away
   
     st.subheader("HA +0.25 Away")
-              
+    
+    # Função para filtrar equipes com sufixos indesejados
+    def filtrar_sufixos(time, lista_sufixos):
+        return not any(sufixo in time for sufixo in lista_sufixos)
+    
+    sufixos_diferentes = ["B", "II", "Sub-23"]
+    equipes_casa = equipes_casa[equipes_casa['Equipe'].apply(lambda x: filtrar_sufixos(x, sufixos_diferentes))]
+    equipes_fora = equipes_fora[equipes_fora['Equipe'].apply(lambda x: filtrar_sufixos(x, sufixos_diferentes))]          
  
     
     # Filtrar as melhores equipes em casa e piores fora
@@ -300,12 +296,6 @@ if jogos_dia_file:
     
     # Filtrar jogos com base nos critérios
     hahome_jogos = jogos_dia_validos[
-        jogos_dia_validos['Time_Casa'].apply(
-            lambda x: any(fuzz.token_sort_ratio(x, equipe) > 80 for equipe in melhores_casa_filtrados['Equipe'])
-        ) &
-        jogos_dia_validos['Time_Fora'].apply(
-            lambda x: any(fuzz.token_sort_ratio(x, equipe) > 80 for equipe in piores_fora_filtrados['Equipe'])
-        ) &
         (jogos_dia_validos['Home'] >= 1.6) &
         (jogos_dia_validos['Home'] <= 2.4)
     ]
@@ -350,7 +340,14 @@ if jogos_dia_file:
     # Análise: HA +1
    
     st.subheader("HA +1")
-   
+    
+    # Função para filtrar equipes com sufixos indesejados
+    def filtrar_sufixos(time, lista_sufixos):
+        return not any(sufixo in time for sufixo in lista_sufixos)
+    
+    sufixos_diferentes = ["B", "II", "Sub-23"]
+    equipes_casa = equipes_casa[equipes_casa['Equipe'].apply(lambda x: filtrar_sufixos(x, sufixos_diferentes))]
+    equipes_fora = equipes_fora[equipes_fora['Equipe'].apply(lambda x: filtrar_sufixos(x, sufixos_diferentes))]
     
     # Filtrar as melhores equipes em casa e piores fora
     melhores_fora_filtrados = equipes_fora[equipes_fora['PIA_HA'] >= 0.7]
@@ -359,12 +356,6 @@ if jogos_dia_file:
     
     # Filtrar jogos com base nos critérios
     haum_jogos = jogos_dia_validos[
-        jogos_dia_validos['Time_Fora'].apply(
-            lambda x: any(fuzz.token_sort_ratio(x, equipe) > 80 for equipe in melhores_fora_filtrados['Equipe'])
-        ) &
-        jogos_dia_validos['Time_Casa'].apply(
-            lambda x: any(fuzz.token_sort_ratio(x, equipe) > 80 for equipe in piores_casa_filtrados['Equipe'])
-        ) &
         (jogos_dia_validos['Home'] >= 2.6) &
         (jogos_dia_validos['Away'] >= 2.2)
     ]
@@ -402,6 +393,13 @@ if jogos_dia_file:
     
     st.subheader("HA +0.25(GD_Away > 5)")
     
+    # Função para filtrar equipes com sufixos indesejados
+    def filtrar_sufixos(time, lista_sufixos):
+        return not any(sufixo in time for sufixo in lista_sufixos)
+    
+    sufixos_diferentes = ["B", "II", "Sub-23"]
+    equipes_casa = equipes_casa[equipes_casa['Equipe'].apply(lambda x: filtrar_sufixos(x, sufixos_diferentes))]
+    equipes_fora = equipes_fora[equipes_fora['Equipe'].apply(lambda x: filtrar_sufixos(x, sufixos_diferentes))]
        
     # Filtrar as melhores equipes em casa (GD_Home >= 6) e piores fora (GD_Away <= -5)
     melhores_casa_filtrados = equipes_casa[equipes_casa['GD_Home'] >= 6]
@@ -409,12 +407,6 @@ if jogos_dia_file:
     
     # Filtrar jogos com base nos critérios
     hagd_jogos = jogos_dia_validos[
-        jogos_dia_validos['Time_Casa'].apply(
-            lambda x: any(fuzz.token_sort_ratio(x, equipe) > 80 for equipe in melhores_casa_filtrados['Equipe'])
-        ) &
-        jogos_dia_validos['Time_Fora'].apply(
-            lambda x: any(fuzz.token_sort_ratio(x, equipe) > 80 for equipe in piores_fora_filtrados['Equipe'])
-        ) &
         (jogos_dia_validos['Home'] >= 1.6) &
         (jogos_dia_validos['Home'] <= 2.40)
     ]
@@ -450,14 +442,6 @@ if jogos_dia_file:
     
     st.subheader("Lay Away")
     
-    # Garantir que as colunas de aproveitamento estão no formato correto
-    equipes_casa['PIH'] = pd.to_numeric(equipes_casa['PIH'], errors='coerce')
-    equipes_fora['PIA'] = pd.to_numeric(equipes_fora['PIA'], errors='coerce')
-    
-    # Remover valores nulos das colunas de aproveitamento
-    equipes_casa = equipes_casa.dropna(subset=['PIH'])
-    equipes_fora = equipes_fora.dropna(subset=['PIA'])
-    
     # Função para filtrar equipes com sufixos indesejados
     def filtrar_sufixos(time, lista_sufixos):
         return not any(sufixo in time for sufixo in lista_sufixos)
@@ -466,24 +450,16 @@ if jogos_dia_file:
     equipes_casa = equipes_casa[equipes_casa['Equipe'].apply(lambda x: filtrar_sufixos(x, sufixos_diferentes))]
     equipes_fora = equipes_fora[equipes_fora['Equipe'].apply(lambda x: filtrar_sufixos(x, sufixos_diferentes))]
     
-    # Remover valores nulos após filtrar por sufixos indesejados
-    equipes_casa = equipes_casa.dropna()
-    equipes_fora = equipes_fora.dropna()
+    # Remover valores nulos das colunas de aproveitamento
+    equipes_casa = equipes_casa.dropna(subset=['PIH'])
+    equipes_fora = equipes_fora.dropna(subset=['PIA'])   
     
     # Filtrar melhores equipes em casa e piores fora
     melhores_casa_filtrados = equipes_casa[equipes_casa['PIH'] >= 0.5]
-    piores_fora_filtrados = equipes_fora[equipes_fora['PIA'] <= 0.10]
-
-    
+    piores_fora_filtrados = equipes_fora[equipes_fora['PIA'] <= 0.10]   
     
     # Filtrar jogos do dia com base nos critérios
     lay_away_jogos = jogos_dia_validos[
-        jogos_dia_validos['Time_Casa'].apply(
-            lambda x: any(fuzz.token_sort_ratio(x, equipe) > 80 for equipe in melhores_casa_filtrados['Equipe'])
-        ) &
-        jogos_dia_validos['Time_Fora'].apply(
-            lambda x: any(fuzz.token_sort_ratio(x, equipe) > 80 for equipe in piores_fora_filtrados['Equipe'])
-        ) &
         (jogos_dia_validos['Away'] >= 3)
     ]
     
