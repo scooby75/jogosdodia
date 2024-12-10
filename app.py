@@ -191,7 +191,7 @@ if jogos_dia_file:
 
 
     # Análise: HA -0.25
-    st.subheader("HA -0.25")
+    st.subheader("HA -0.25 (GD_Home >= 1.5 e GD_Away <= 0.80")
 
     # Certifique-se de que as colunas de aproveitamento e pontuação não têm valores nulos
     equipes_casa = equipes_casa.dropna(subset=['GD_Home', 'PIH', 'Pts_Home', 'Odd_Justa_HA'])
