@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 from rapidfuzz import fuzz
+from difflib import SequenceMatcher
 
 # Título do aplicativo
 st.title("Comparação de Jogos do Dia")
@@ -231,20 +232,26 @@ if jogos_dia_file:
                
     # Filtrar as melhores equipes em casa e piores fora
     melhores_casa_filtrados = equipes_casa[equipes_casa['PIH_HA'] >= 0.75]
-    #piores_fora_filtrados = equipes_fora[equipes_fora['PIA_HA'] >= 0.75]
+    piores_fora_filtrados = equipes_fora[equipes_fora['PIA_HA'] >= 0.75]
     
-    # Filtrar jogos com base nos critérios
+       
+    # Função para calcular a similaridade entre duas strings
+    def similaridade(str1, str2):
+        return SequenceMatcher(None, str1, str2).ratio()
+    
+    # Filtrar jogos com base nos critérios, usando SequenceMatcher
     hahome_jogos = jogos_dia_validos[
         jogos_dia_validos['Time_Casa'].apply(
-            lambda x: any(fuzz.token_sort_ratio(x, equipe) > 80 for equipe in melhores_casa_filtrados['Equipe'])
+            lambda x: any(similaridade(x, equipe) > 0.8 for equipe in melhores_casa_filtrados['Equipe'])
         ) &
         jogos_dia_validos['Time_Fora'].apply(
-            lambda x: any(fuzz.token_sort_ratio(x, equipe) > 80 for equipe in piores_fora_filtrados['Equipe'])
+            lambda x: any(similaridade(x, equipe) > 0.8 for equipe in piores_fora_filtrados['Equipe'])
         ) &
         (jogos_dia_validos['Home'] >= 1.6) &
         (jogos_dia_validos['Home'] <= 2.4)
     ]
     
+        
     # Adicionar as colunas de aproveitamento ao dataframe 'hahome_jogos'
     hahome_jogos = hahome_jogos.merge(
         equipes_casa[['Equipe', 'PIH_HA']],
