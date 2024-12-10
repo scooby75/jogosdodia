@@ -254,13 +254,7 @@ if jogos_dia_file:
     
     # Filtrar jogos com base nos critérios (Odds entre 1.8 e 2.4 e comparação de equipes)
     hahome_jogos = jogos_dia_validos[
-        jogos_dia_validos['Time_Casa'].apply(
-            lambda x: any(fuzz.token_sort_ratio(x, equipe) > 80 for equipe in melhores_casa_filtrados['Equipe'])
-        ) &
-        jogos_dia_validos['Time_Fora'].apply(
-            lambda x: any(fuzz.token_sort_ratio(x, equipe) > 80 for equipe in piores_fora_filtrados['Equipe'])
-        ) &
-        (jogos_dia_validos['Home'] >= 1.8) &  # Garantir que as odds estejam entre 1.8 e 2.4
+        (jogos_dia_validos['Home'] >= 1.8) & 
         (jogos_dia_validos['Home'] <= 2.4)
     ]
     
