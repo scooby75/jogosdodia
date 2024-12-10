@@ -234,11 +234,11 @@ if jogos_dia_file:
     equipes_fora = equipes_fora[equipes_fora['Equipe'].apply(lambda x: filtrar_sufixos(x, sufixos_diferentes))]
                
     hahome_jogos = jogos_dia_validos[
-    (jogos_dia_validos['Home'] >= 1.6) &
-    (jogos_dia_validos['Home'] <= 2.4) &
-    (jogos_dia_validos['PIH_HA'] >= 0.75) &
-    (jogos_dia_validos['PIA_HA'] >= 0.75)
-]
+        (jogos_dia_validos['Home'] >= 1.6) &
+        (jogos_dia_validos['Home'] <= 2.4) &
+        (jogos_dia_validos['PIH_HA'] >= 0.75) &
+        (jogos_dia_validos['PIA_HA'] >= 0.75)
+    ]
 
 
         
