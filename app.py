@@ -268,14 +268,7 @@ if jogos_dia_file:
     equipes_casa = validar_converter_coluna(equipes_casa, 'PIH_HA')
     equipes_fora = validar_converter_coluna(equipes_fora, 'PIA_HA')
     
-    # Filtragem por sufixos indesejados
-    def filtrar_sufixos(time, lista_sufixos):
-        return not any(sufixo in time for sufixo in lista_sufixos)
-    
-    sufixos_diferentes = ["B", "II", "Sub-23"]
-    equipes_casa = equipes_casa[equipes_casa['Equipe'].apply(lambda x: filtrar_sufixos(x, sufixos_diferentes))]
-    equipes_fora = equipes_fora[equipes_fora['Equipe'].apply(lambda x: filtrar_sufixos(x, sufixos_diferentes))]
-    
+       
     # Filtrar as melhores equipes em casa e piores fora
     melhores_casa_filtrados = equipes_casa[equipes_casa['PIH_HA'] >= 0.75]
     piores_fora_filtrados = equipes_fora[equipes_fora['PIA_HA'] >= 0.75]
