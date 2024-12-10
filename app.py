@@ -238,7 +238,7 @@ if jogos_dia_file:
         jogos_dia_validos['Time_Casa'].apply(
             lambda x: any(fuzz.token_sort_ratio(x, equipe) > 80 for equipe in melhores_casa_filtrados['Equipe'])
         ) &
-        #jogos_dia_validos['Time_Fora'].apply(
+        jogos_dia_validos['Time_Fora'].apply(
             lambda x: any(fuzz.token_sort_ratio(x, equipe) > 80 for equipe in piores_fora_filtrados['Equipe'])
         ) &
         (jogos_dia_validos['Home'] >= 1.6) &
