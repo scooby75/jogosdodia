@@ -341,8 +341,9 @@ if jogos_dia_file:
         right_on='Equipe',
         how='left'
     ).drop(columns=['Equipe'])
+    
     # Remover jogos com qualquer valor vazio
-    haaway_home_jogos = haaway_home_jogos.dropna()
+    haaway_jogos = haaway_jogos.dropna()
     
     # Verificar se há jogos válidos para exibir
     if haaway_jogos.empty or haaway_jogos[['PIH_HA', 'PIA']].isnull().any(axis=None):
