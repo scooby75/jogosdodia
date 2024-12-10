@@ -82,7 +82,7 @@ if jogos_dia_file:
     # Aplicar o filtro de PIH_HA >= 0.75
     jogos_filtrados_pih = jogos_merged[
         (jogos_merged['PIH_HA_CSV'] >= 0.75) &
-        (jogos_merged['Home'] >= 1.8) &
+        (jogos_merged['Home'] >= 1.7) &
         (jogos_merged['Home'] <= 2.4)
     ]
     
