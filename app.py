@@ -102,13 +102,16 @@ if jogos_dia_file:
             how='left'
         ).drop(columns=['Equipe'])
     
+    # Remover jogos com qualquer valor vazio
+    back_home_jogos = back_home_jogos.dropna()
+    
     # Verificar se há jogos que atendem aos critérios
     if back_home_jogos.empty:
         st.write("Nenhum jogo atende aos critérios!")
     else:
         # Exibir DataFrame com as colunas selecionadas
-        st.dataframe(back_home_jogos[['Hora', 'Time_Casa', 'Time_Fora', 'Home', 'Away', 'PIH', 'PIA', 'Odd_Justa_MO', 'GD_Home', 'GD_Away','Pts_Home', 'Pts_Away'
-        ]])
+        st.dataframe(back_home_jogos[['Hora', 'Time_Casa', 'Time_Fora', 'Home', 'Away', 'PIH', 'PIA', 'Odd_Justa_MO', 'GD_Home', 'GD_Away','Pts_Home', 'Pts_Away']])
+
 
 
     # BACK AWAY
