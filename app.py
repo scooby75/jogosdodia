@@ -69,52 +69,61 @@ if jogos_dia_file:
     def filtrar_sufixos(time, lista_sufixos):
         return not any(sufixo in time for sufixo in lista_sufixos)
     
+    # Definir os sufixos indesejados
     sufixos_diferentes = ["B", "II", "Sub-23"]
+    
+    # Filtrar as equipes
     equipes_casa = equipes_casa[equipes_casa['Equipe'].apply(lambda x: filtrar_sufixos(x, sufixos_diferentes))]
     equipes_fora = equipes_fora[equipes_fora['Equipe'].apply(lambda x: filtrar_sufixos(x, sufixos_diferentes))]
-       
-    # Filtrar as melhores equipes fora e piores em casa
-    melhores_casa_filtrados = equipes_casa[equipes_casa['PIH'] >= 0.65]
-    piores_fora_filtrados = equipes_fora[equipes_fora['PIA'] <= 0.20]
     
-    # Filtrar jogos com base nos critérios
-    back_home_jogos = jogos_dia_validos[
-        (jogos_dia_validos['Away'] >= 1.6) &
-        (jogos_dia_validos['Away'] <= 2.2)
+    # Filtrar os jogos com odds e aproveitamento adequados
+    hahome_jogos = jogos_dia_validos[
+        (jogos_dia_validos['Home'] >= 1.6) &
+        (jogos_dia_validos['Home'] <= 2.4) &
+        (jogos_dia_validos['PIH_HA'] >= 0.75) &
+        (jogos_dia_validos['PIA_HA'] >= 0.75)
     ]
     
-    # Adicionar as colunas de aproveitamento ao dataframe 'back_away_jogos'
-    back_home_jogos = back_home_jogos.merge(
-        equipes_casa[['Equipe', 'PIH']],
+    # Adicionar as colunas de aproveitamento ao dataframe 'hahome_jogos'
+    hahome_jogos = hahome_jogos.merge(
+        equipes_casa[['Equipe', 'PIH_HA']],  # Certifique-se de que 'PIH_HA' está no DataFrame 'equipes_casa'
+        left_on='Time_Casa',  # Coluna correspondente no DataFrame 'jogos_dia_validos'
+        right_on='Equipe',    # Coluna correspondente no DataFrame 'equipes_casa'
+        how='left'
+    ).drop(columns=['Equipe'])
+    
+    # Adicionar as outras colunas de 'PIA_HA' para o time visitante
+    hahome_jogos = hahome_jogos.merge(
+        equipes_fora[['Equipe', 'PIA_HA']],  # Certifique-se de que 'PIA_HA' está no DataFrame 'equipes_fora'
+        left_on='Time_Fora',  # Coluna correspondente no DataFrame 'jogos_dia_validos'
+        right_on='Equipe',    # Coluna correspondente no DataFrame 'equipes_fora'
+        how='left'
+    ).drop(columns=['Equipe'])
+    
+    # Adicionar outras colunas relevantes para time da casa e time visitante
+    hahome_jogos = hahome_jogos.merge(
+        equipes_casa[['Equipe', 'Odd_Justa_HA', 'Pts_Home', 'GD_Home']],
         left_on='Time_Casa',
         right_on='Equipe',
         how='left'
     ).drop(columns=['Equipe'])
     
-    back_home_jogos = back_home_jogos.merge(
-        equipes_fora[['Equipe', 'PIA']],
+    hahome_jogos = hahome_jogos.merge(
+        equipes_fora[['Equipe', 'Pts_Away', 'GD_Away']],
         left_on='Time_Fora',
         right_on='Equipe',
         how='left'
     ).drop(columns=['Equipe'])
-
-     # Adicionar a coluna Odd_Justa_MO ao dataframe 'back_home_jogos'
-    back_home_jogos = back_home_jogos.merge(
-        equipes_fora[['Equipe', 'Odd_Justa_MO']],
-        left_on='Time_Fora',
-        right_on='Equipe',
-        how='left'
-    ).drop(columns=['Equipe'])
-
-    # Remover jogos com qualquer valor vazio
-    back_home_jogos = back_home_jogos.dropna()
     
-    # Verificar se há jogos filtrados
-    if back_home_jogos.empty:
-        st.write("Nenhum jogo atende aos critérios!")
+    # Garantir que todos os valores necessários estão preenchidos
+    hahome_jogos = hahome_jogos.dropna(subset=['PIH_HA', 'PIA_HA', 'Odd_Justa_HA', 'GD_Home', 'GD_Away', 'Pts_Home', 'Pts_Away'])
+    
+    # Verificar se há jogos válidos para exibir
+    if hahome_jogos.empty:
+        st.write("Nenhum jogo atende aos critérios ou possui dados suficientes!")
     else:
-        #st.write("Jogos filtrados para Back Away:")
-        st.dataframe(back_home_jogos[['Hora','Time_Casa', 'Time_Fora', 'Home', 'Away', 'PIH', 'PIA', 'Odd_Justa_MO']])
+        # Exibir jogos válidos
+        st.dataframe(hahome_jogos[['Hora', 'Time_Casa', 'Time_Fora', 'Home', 'Away', 'PIH_HA', 'PIA_HA', 'Odd_Justa_HA', 'GD_Home', 'GD_Away', 'Pts_Home', 'Pts_Away']])
 
     # BACK AWAY
     
