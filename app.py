@@ -80,8 +80,7 @@ if jogos_dia_file:
     # Filtrar jogos com base nos critérios
     back_home_jogos = jogos_dia_validos[
         (jogos_dia_validos['Home'] >= 1.6) &
-        (jogos_dia_validos['Home'] <= 2.4) &
-        (equipes_casa['PIH'] >= 0.6) 
+        (jogos_dia_validos['Home'] <= 2.4) 
     ]
     
     # Adicionar as colunas de aproveitamento ao dataframe 'back_home_jogos'
@@ -102,11 +101,41 @@ if jogos_dia_file:
     # Adicionar a coluna Odd_Justa_MO ao dataframe 'back_home_jogos'
     back_home_jogos = back_home_jogos.merge(
         equipes_fora[['Equipe', 'Odd_Justa_MO']],
-        left_on='Time_Fora',
+        left_on='Time_Home',
         right_on='Equipe',
         how='left'
     ).drop(columns=['Equipe'])
     
+        back_home_jogos = back_home_jogos.merge(
+        equipes_fora[['Equipe', 'GD_Home']],
+        left_on='Time_Home',
+        right_on='Equipe',
+        how='left'
+    ).drop(columns=['Equipe'])
+    
+    # Adicionar a coluna Odd_Justa_MO ao dataframe 'back_home_jogos'
+    back_home_jogos = back_home_jogos.merge(
+        equipes_fora[['Equipe', 'GD_Fora']],
+        left_on='Time_Fora',
+        right_on='Equipe',
+        how='left'
+    ).drop(columns=['Equipe'])
+
+        back_home_jogos = back_home_jogos.merge(
+        equipes_fora[['Equipe', 'Pts_Home']],
+        left_on='Time_Home',
+        right_on='Equipe',
+        how='left'
+    ).drop(columns=['Equipe'])
+    
+    # Adicionar a coluna Odd_Justa_MO ao dataframe 'back_home_jogos'
+    back_home_jogos = back_home_jogos.merge(
+        equipes_fora[['Equipe', 'Pts_Fora']],
+        left_on='Time_Fora',
+        right_on='Equipe',
+        how='left'
+    ).drop(columns=['Equipe'])
+
     # Remover jogos com qualquer valor vazio
     back_home_jogos = back_home_jogos.dropna()
     
@@ -114,7 +143,7 @@ if jogos_dia_file:
     if back_home_jogos.empty:
         st.write("Nenhum jogo atende aos critérios!")
     else:
-        st.dataframe(back_home_jogos[['Hora', 'Time_Casa', 'Time_Fora', 'Home', 'Away', 'PIH', 'PIA', 'Odd_Justa_MO']])
+        st.dataframe(back_home_jogos[['Hora', 'Time_Casa', 'Time_Fora', 'Home', 'Away','Odd_Justa_MO','PIH', 'PIA', 'GD_Home', 'GD_Fora', 'Pts_Home','Pts_Fora']])
 
     # BACK AWAY
     
