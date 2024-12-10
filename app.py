@@ -37,7 +37,7 @@ if jogos_dia_file:
     jogos_merged = []
     for _, jogo in jogos_dia.iterrows():
         # Acesse o nome da coluna corretamente
-        nome_time_fora = jogo['Time_Fora']  # Ajuste o nome da coluna conforme necessário
+        nome_time_fora = jogo['Away']  # Ajuste o nome da coluna conforme necessário
         
         # Encontrar a linha correspondente em equipes_fora com base na comparação de substrings
         similar_times_fora = equipes_fora_filtradas[equipes_fora_filtradas['Equipe_Fora'].apply(lambda x: comparar_nomes_substrings(nome_time_fora, x))]
