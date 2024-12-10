@@ -65,49 +65,56 @@ if jogos_dia_file:
     # Análise: Back Home
     st.subheader("Back Home")
    
-     # Função para filtrar equipes com sufixos indesejados
+    # Função para filtrar equipes com sufixos indesejados
     def filtrar_sufixos(time, lista_sufixos):
         return not any(sufixo in time for sufixo in lista_sufixos)
     
     sufixos_diferentes = ["B", "II", "Sub-23"]
     equipes_casa = equipes_casa[equipes_casa['Equipe'].apply(lambda x: filtrar_sufixos(x, sufixos_diferentes))]
-    equipes_fora = equipes_fora[equipes_fora['Equipe'].apply(lambda x: filtrar_sufixos(x, sufixos_diferentes))]    
+    equipes_fora = equipes_fora[equipes_fora['Equipe'].apply(lambda x: filtrar_sufixos(x, sufixos_diferentes))]
+       
+    # Filtrar as melhores equipes fora e piores em casa
+    melhores_casa_filtrados = equipes_casa[equipes_casa['PIH'] >= 0.65]
+    piores_fora_filtrados = equipes_fora[equipes_fora['PIA'] <= 0.20]
     
-    
-    # Filtrar jogos com odds entre 1.45 e 2.2 para a casa
+    # Filtrar jogos com base nos critérios
     back_home_jogos = jogos_dia_validos[
-        (jogos_dia_validos['Home'] >= 1.6) &
-        (jogos_dia_validos['Home'] <= 2.4)
+        (jogos_dia_validos['Away'] >= 1.6) &
+        (jogos_dia_validos['Away'] <= 2.2)
     ]
     
-    # Adicionar as métricas de desempenho ao DataFrame
-    metricas = [
-        ('PIH', equipes_casa),
-        ('PIA', equipes_fora),
-        ('Pts_Home', equipes_casa),
-        ('Pts_Away', equipes_fora),
-        ('GD_Home', equipes_casa),
-        ('GD_Away', equipes_fora),
-        ('Odd_Justa_MO', equipes_casa)
-    ]
+    # Adicionar as colunas de aproveitamento ao dataframe 'back_away_jogos'
+    back_home_jogos = back_home_jogos.merge(
+        equipes_casa[['Equipe', 'PIH']],
+        left_on='Time_Casa',
+        right_on='Equipe',
+        how='left'
+    ).drop(columns=['Equipe'])
     
-    for coluna, dataframe in metricas:
-        back_home_jogos = back_home_jogos.merge(
-            dataframe[['Equipe', coluna]],
-            left_on='Time_Casa' if 'Home' in coluna or 'Odd_Justa_MO' in coluna else 'Time_Fora',
-            right_on='Equipe',
-            how='left'
-        ).drop(columns=['Equipe'])
-    
+    back_home_jogos = back_home_jogos.merge(
+        equipes_fora[['Equipe', 'PIA']],
+        left_on='Time_Fora',
+        right_on='Equipe',
+        how='left'
+    ).drop(columns=['Equipe'])
+
+     # Adicionar a coluna Odd_Justa_MO ao dataframe 'back_home_jogos'
+    back_home_jogos = back_home_jogos.merge(
+        equipes_fora[['Equipe', 'Odd_Justa_MO']],
+        left_on='Time_Fora',
+        right_on='Equipe',
+        how='left'
+    ).drop(columns=['Equipe'])
+
     # Remover jogos com qualquer valor vazio
     back_home_jogos = back_home_jogos.dropna()
     
-    # Verificar se há jogos que atendem aos critérios
+    # Verificar se há jogos filtrados
     if back_home_jogos.empty:
         st.write("Nenhum jogo atende aos critérios!")
     else:
-        # Exibir DataFrame com as colunas selecionadas
-        st.dataframe(back_home_jogos[['Hora', 'Time_Casa', 'Time_Fora', 'Home', 'Away', 'PIH', 'PIA', 'Odd_Justa_MO', 'GD_Home', 'GD_Away', 'Pts_Home', 'Pts_Away']])
+        #st.write("Jogos filtrados para Back Away:")
+        st.dataframe(back_home_jogos[['Hora','Time_Casa', 'Time_Fora', 'Home', 'Away', 'PIH', 'PIA', 'Odd_Justa_MO']])
 
     # BACK AWAY
     
