@@ -75,67 +75,31 @@ if jogos_dia_file:
     equipes_casa = equipes_casa[equipes_casa['Equipe'].apply(lambda x: filtrar_sufixos(x, sufixos_diferentes))]
     equipes_fora = equipes_fora[equipes_fora['Equipe'].apply(lambda x: filtrar_sufixos(x, sufixos_diferentes))]
     
-   
-    
     # Filtrar jogos com base nos critérios
     back_home_jogos = jogos_dia_validos[
         (jogos_dia_validos['Home'] >= 1.6) &
-        (jogos_dia_validos['Home'] <= 2.4) 
+        (jogos_dia_validos['Home'] <= 2.4)
     ]
     
-    # Adicionar as colunas de aproveitamento ao dataframe 'back_home_jogos'
+    # Listar as colunas que precisam ser mescladas
+    colunas_casa = ['Equipe', 'PIH', 'GD_Home', 'Pts_Home']
+    colunas_fora = ['Equipe', 'PIA', 'Odd_Justa_MO', 'GD_Fora', 'Pts_Fora']
+    
+    # Realizar os merges de uma vez
     back_home_jogos = back_home_jogos.merge(
-        equipes_casa[['Equipe', 'PIH']],
+        equipes_casa[colunas_casa],
         left_on='Time_Casa',
         right_on='Equipe',
         how='left'
     ).drop(columns=['Equipe'])
     
     back_home_jogos = back_home_jogos.merge(
-        equipes_fora[['Equipe', 'PIA']],
+        equipes_fora[colunas_fora],
         left_on='Time_Fora',
         right_on='Equipe',
         how='left'
     ).drop(columns=['Equipe'])
     
-    # Adicionar a coluna Odd_Justa_MO ao dataframe 'back_home_jogos'
-    back_home_jogos = back_home_jogos.merge(
-        equipes_fora[['Equipe', 'Odd_Justa_MO']],
-        left_on='Time_Home',
-        right_on='Equipe',
-        how='left'
-    ).drop(columns=['Equipe'])
-    
-        back_home_jogos = back_home_jogos.merge(
-        equipes_fora[['Equipe', 'GD_Home']],
-        left_on='Time_Home',
-        right_on='Equipe',
-        how='left'
-    ).drop(columns=['Equipe'])
-    
-    # Adicionar a coluna Odd_Justa_MO ao dataframe 'back_home_jogos'
-    back_home_jogos = back_home_jogos.merge(
-        equipes_fora[['Equipe', 'GD_Fora']],
-        left_on='Time_Fora',
-        right_on='Equipe',
-        how='left'
-    ).drop(columns=['Equipe'])
-
-        back_home_jogos = back_home_jogos.merge(
-        equipes_fora[['Equipe', 'Pts_Home']],
-        left_on='Time_Home',
-        right_on='Equipe',
-        how='left'
-    ).drop(columns=['Equipe'])
-    
-    # Adicionar a coluna Odd_Justa_MO ao dataframe 'back_home_jogos'
-    back_home_jogos = back_home_jogos.merge(
-        equipes_fora[['Equipe', 'Pts_Fora']],
-        left_on='Time_Fora',
-        right_on='Equipe',
-        how='left'
-    ).drop(columns=['Equipe'])
-
     # Remover jogos com qualquer valor vazio
     back_home_jogos = back_home_jogos.dropna()
     
@@ -143,7 +107,7 @@ if jogos_dia_file:
     if back_home_jogos.empty:
         st.write("Nenhum jogo atende aos critérios!")
     else:
-        st.dataframe(back_home_jogos[['Hora', 'Time_Casa', 'Time_Fora', 'Home', 'Away','Odd_Justa_MO','PIH', 'PIA', 'GD_Home', 'GD_Fora', 'Pts_Home','Pts_Fora']])
+        st.dataframe(back_home_jogos[['Hora', 'Time_Casa', 'Time_Fora', 'Home', 'Away', 'Odd_Justa_MO', 'PIH', 'PIA', 'GD_Home', 'GD_Fora', 'Pts_Home', 'Pts_Fora']])
 
     # BACK AWAY
     
