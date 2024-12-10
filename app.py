@@ -196,7 +196,7 @@ if jogos_dia_file:
           
     # Filtrar as melhores equipes em casa e piores fora
     melhores_casa_filtrados = equipes_casa[equipes_casa['GD_Home'] >= 1.5]
-    piores_fora_filtrados = equipes_fora[equipes_fora['GD_Away'] <= -1]
+    piores_fora_filtrados = equipes_fora[equipes_fora['GD_Away'] <= -2.00]
     
     # Filtrar jogos com base nos critérios
     hastrong_jogos = jogos_dia_validos[
@@ -242,15 +242,7 @@ if jogos_dia_file:
     # Análise: HA +0.25
     st.subheader("HA +0.25 (casa)")
     
-    # Validação e conversão de colunas
-    def validar_converter_coluna(df, coluna):
-        if coluna in df.columns:
-            df[coluna] = pd.to_numeric(df[coluna], errors='coerce')
-        return df.dropna(subset=[coluna])
-    
-    equipes_casa = validar_converter_coluna(equipes_casa, 'PIH_HA')
-    equipes_fora = validar_converter_coluna(equipes_fora, 'PIA_HA')
-    
+        
        
     # Filtrar as melhores equipes em casa e piores fora
     melhores_casa_filtrados = equipes_casa[equipes_casa['PIH_HA'] >= 0.75]
