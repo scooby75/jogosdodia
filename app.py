@@ -232,16 +232,14 @@ if jogos_dia_file:
     sufixos_diferentes = ["B", "II", "Sub-23"]
     equipes_casa = equipes_casa[equipes_casa['Equipe'].apply(lambda x: filtrar_sufixos(x, sufixos_diferentes))]
     equipes_fora = equipes_fora[equipes_fora['Equipe'].apply(lambda x: filtrar_sufixos(x, sufixos_diferentes))]
-               
+    
     hahome_jogos = jogos_dia_validos[
         (jogos_dia_validos['Home'] >= 1.6) &
         (jogos_dia_validos['Home'] <= 2.4) &
         (jogos_dia_validos['PIH_HA'] >= 0.75) &
         (jogos_dia_validos['PIA_HA'] >= 0.75)
     ]
-
-
-        
+    
     # Adicionar as colunas de aproveitamento ao dataframe 'hahome_jogos'
     hahome_jogos = hahome_jogos.merge(
         equipes_casa[['Equipe', 'PIH_HA']],
@@ -274,9 +272,6 @@ if jogos_dia_file:
     
     # Garantir que todos os valores necessários estão preenchidos
     hahome_jogos = hahome_jogos.dropna(subset=['PIH_HA', 'PIA_HA', 'Odd_Justa_HA', 'GD_Home', 'GD_Away', 'Pts_Home', 'Pts_Away'])
-
-     # Remover jogos com qualquer valor vazio
-    hahome_jogos = hahome_jogos.dropna()
     
     # Verificar se há jogos válidos para exibir
     if hahome_jogos.empty:
@@ -284,8 +279,7 @@ if jogos_dia_file:
     else:
         # Exibir jogos válidos
         st.dataframe(hahome_jogos[['Hora', 'Time_Casa', 'Time_Fora', 'Home', 'Away', 'PIH_HA', 'PIA_HA', 'Odd_Justa_HA', 'GD_Home', 'GD_Away', 'Pts_Home', 'Pts_Away']])
-
-
+    
     
     # Análise: HA +0.25 Away
   
