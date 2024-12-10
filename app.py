@@ -1,6 +1,5 @@
 import streamlit as st
 import pandas as pd
-from rapidfuzz import fuzz
 
 # Título do aplicativo
 st.title("Comparação de Jogos do Dia")
@@ -18,10 +17,10 @@ def extrair_odds(valor):
             return None
     return valor
 
-# Função para calcular a similaridade parcial entre os nomes das equipes
-def similaridade_nome_parcial(nome1, nome2, limiar=80):
-    # Utiliza fuzz.partial_ratio para comparação parcial
-    return fuzz.partial_ratio(nome1.lower(), nome2.lower()) >= limiar
+# Função para comparar substrings dos nomes das equipes
+def comparar_nomes_substrings(nome1, nome2):
+    # Verifica se uma string é substring da outra, ignorando maiúsculas e minúsculas
+    return nome1.lower() in nome2.lower() or nome2.lower() in nome1.lower()
 
 # Upload do arquivo "Jogos do Dia"
 jogos_dia_file = st.file_uploader("Envie o arquivo 'Jogos do dia Betfair.csv'", type="csv")
@@ -83,13 +82,13 @@ if jogos_dia_file:
     # Confirmar se as colunas do DataFrame foram renomeadas corretamente
     st.write("Colunas após renomear:", equipes_casa.columns)
     
-    # Aplicar a lógica de similaridade parcial para fazer o merge
+    # Aplicar a lógica de comparação usando substrings
     jogos_merged = []
     for _, jogo in jogos_dia_validos.iterrows():
         nome_time_casa = jogo['Time_Casa']
         
-        # Encontrar a linha correspondente em equipes_casa com base na similaridade de nome completo
-        similar_times = equipes_casa[equipes_casa['Equipe_Casa_CSV'].apply(lambda x: similaridade_nome_parcial(nome_time_casa, x))]  # Comparando nomes completos ou partes deles
+        # Encontrar a linha correspondente em equipes_casa com base na comparação de substrings
+        similar_times = equipes_casa[equipes_casa['Equipe_Casa_CSV'].apply(lambda x: comparar_nomes_substrings(nome_time_casa, x))]  # Comparando substrings
         
         if not similar_times.empty:
             jogo_merged = pd.merge(pd.DataFrame([jogo]), similar_times, left_on='Time_Casa', right_on='Equipe_Casa_CSV', how='left')
