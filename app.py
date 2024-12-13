@@ -46,16 +46,16 @@ else:
 
     # Filtrar os dados para as equipes selecionadas
     home_filtered = home_data[home_data[home_team_col] == equipe_home][[
-        "Pts_Home", "PIH", "PIH_HA", "GD_Home", 
+        "Liga","Pts_Home", "PIH", "PIH_HA", "GD_Home", 
         "GF_AVG_Home", "Odd_Justa_MO", "Odd_Justa_HA"
     ]]
 
     away_filtered = away_data[away_data[away_team_col] == equipe_away][[
-        "Pts_Away", "PIA", "PIA_HA", "GD_Away", "GF_AVG_Away", "Odd_Justa_MO", "Odd_Justa_HA"
+        "Liga","Pts_Away", "PIA", "PIA_HA", "GD_Away", "GF_AVG_Away", "Odd_Justa_MO", "Odd_Justa_HA"
     ]]
 
     away_fav_filtered = away_fav_data[away_fav_data[away_fav_team_col] == equipe_away_fav][[
-        "Pts_Away", "PIA", "PIA_HA", "GD_Away", "GF_AVG_Away", "Odd_Justa_MO", "Odd_Justa_HA"
+        "Liga","Pts_Away", "PIA", "PIA_HA", "GD_Away", "GF_AVG_Away", "Odd_Justa_MO", "Odd_Justa_HA"
     ]]
 
     # Limpeza adicional: remover linhas vazias e colunas desnecessárias
