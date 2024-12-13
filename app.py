@@ -24,15 +24,20 @@ away_team_col = "Equipe_Fora"
 if home_team_col not in home_data.columns or away_team_col not in away_data.columns:
     st.error("Erro: Não foi possível identificar a coluna de equipes nos dados carregados.")
 else:
-    # Sidebar para seleção de equipe
-    equipe = st.sidebar.selectbox(
-        "Selecione a equipe:",
-        sorted(set(home_data[home_team_col].unique()).union(away_data[away_team_col].unique()))
+    # Sidebar para seleção de equipes
+    equipe_home = st.sidebar.selectbox(
+        "Selecione a equipe Home:",
+        sorted(home_data[home_team_col].unique())
     )
 
-    # Filtrar os dados para Home e Away simultaneamente
-    home_filtered = home_data[home_data[home_team_col] == equipe] if equipe else home_data
-    away_filtered = away_data[away_data[away_team_col] == equipe] if equipe else away_data
+    equipe_away = st.sidebar.selectbox(
+        "Selecione a equipe Away:",
+        sorted(away_data[away_team_col].unique())
+    )
+
+    # Filtrar os dados para Home e Away
+    home_filtered = home_data[home_data[home_team_col] == equipe_home] if equipe_home else home_data
+    away_filtered = away_data[away_data[away_team_col] == equipe_away] if equipe_away else away_data
 
     # Exibir os dados filtrados para Home
     st.subheader("Jogos - Home")
