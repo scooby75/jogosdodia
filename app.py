@@ -18,6 +18,11 @@ home_data = load_data(home_url)
 away_data = load_data(away_url)
 away_fav_data = load_data(away_fav_url)
 
+# Exibir as colunas para verificar os nomes
+st.write("Colunas do arquivo Home:", home_data.columns)
+st.write("Colunas do arquivo Away:", away_data.columns)
+st.write("Colunas do arquivo Away (Favorito):", away_fav_data.columns)
+
 # Colunas específicas para filtragem
 home_team_col = "Equipe"
 away_team_col = "Equipe_Fora"
@@ -62,14 +67,12 @@ else:
         "Pts_Away", "PIA", "PIA_HA", "GD_Away", "GF_AVG_Away", "Odd_Justa_MO", "Odd_Justa_HA"
     ]]
 
-    # Exibir os dados filtrados para Home
+    # Exibir os dados filtrados para Home, Away e Away (Favorito) sem o índice
     st.subheader("Jogos - Home")
-    st.dataframe(home_filtered)
+    st.dataframe(home_filtered.reset_index(drop=True))  # Remover o índice
 
-    # Exibir os dados filtrados para Away
     st.subheader("Jogos - Away")
-    st.dataframe(away_filtered)
+    st.dataframe(away_filtered.reset_index(drop=True))  # Remover o índice
 
-    # Exibir os dados filtrados para Away (Favorito)
     st.subheader("Jogos - Away (Favorito)")
-    st.dataframe(away_fav_filtered)
+    st.dataframe(away_fav_filtered.reset_index(drop=True))  # Remover o índice
