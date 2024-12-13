@@ -16,31 +16,39 @@ def load_data(url):
 home_data = load_data(home_url)
 away_data = load_data(away_url)
 
-# Sidebar para seleção de equipe
-equipe = st.sidebar.selectbox(
-    "Selecione a equipe:",
-    sorted(set(home_data['team'].unique()).union(away_data['team'].unique()))
-)
+# Colunas específicas para filtragem
+home_team_col = "Equipe"
+away_team_col = "Equipe_Fora"
 
-# Filtrar os dados para Home e Away simultaneamente
-home_filtered = home_data[home_data['team'] == equipe] if equipe else home_data
-away_filtered = away_data[away_data['team'] == equipe] if equipe else away_data
-
-# Exibir os dados filtrados para Home
-st.subheader("Jogos - Home")
-st.dataframe(home_filtered)
-
-# Exibir os dados filtrados para Away
-st.subheader("Jogos - Away")
-st.dataframe(away_filtered)
-
-# Comparação de resultados
-if not home_filtered.empty and not away_filtered.empty:
-    st.subheader("Comparação de Resultados")
-    comparison = pd.merge(
-        home_filtered, away_filtered, 
-        on=['team'], 
-        suffixes=('_home', '_away'), 
-        how='outer'
+# Verificar se as colunas existem
+if home_team_col not in home_data.columns or away_team_col not in away_data.columns:
+    st.error("Erro: Não foi possível identificar a coluna de equipes nos dados carregados.")
+else:
+    # Sidebar para seleção de equipe
+    equipe = st.sidebar.selectbox(
+        "Selecione a equipe:",
+        sorted(set(home_data[home_team_col].unique()).union(away_data[away_team_col].unique()))
     )
-    st.dataframe(comparison)
+
+    # Filtrar os dados para Home e Away simultaneamente
+    home_filtered = home_data[home_data[home_team_col] == equipe] if equipe else home_data
+    away_filtered = away_data[away_data[away_team_col] == equipe] if equipe else away_data
+
+    # Exibir os dados filtrados para Home
+    st.subheader("Jogos - Home")
+    st.dataframe(home_filtered)
+
+    # Exibir os dados filtrados para Away
+    st.subheader("Jogos - Away")
+    st.dataframe(away_filtered)
+
+    # Comparação de resultados
+    if not home_filtered.empty and not away_filtered.empty:
+        st.subheader("Comparação de Resultados")
+        comparison = pd.merge(
+            home_filtered, away_filtered, 
+            left_on=home_team_col, right_on=away_team_col, 
+            suffixes=('_home', '_away'), 
+            how='outer'
+        )
+        st.dataframe(comparison)
