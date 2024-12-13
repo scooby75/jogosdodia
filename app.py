@@ -62,7 +62,7 @@ else:
         "Pts_Away", "PIA", "PIA_HA", "GD_Away", "GF_AVG_Away", "Odd_Justa_MO", "Odd_Justa_HA"
     ]]
 
-    # Exibir os dados filtrados para Home, Away e Away (Favorito) sem o índice
+    # Remover a coluna extra de índice caso exista e exibir os dados filtrados
     st.subheader("Jogos - Home")
     st.dataframe(home_filtered.reset_index(drop=True))  # Remover o índice
 
