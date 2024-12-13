@@ -18,10 +18,15 @@ home_data = load_data(home_url)
 away_data = load_data(away_url)
 away_fav_data = load_data(away_fav_url)
 
+# Exibir as colunas para verificar os nomes
+st.write("Colunas do arquivo Home:", home_data.columns)
+st.write("Colunas do arquivo Away:", away_data.columns)
+st.write("Colunas do arquivo Away (Favorito):", away_fav_data.columns)
+
 # Colunas específicas para filtragem
 home_team_col = "Equipe"
 away_team_col = "Equipe_Fora"
-away_fav_team_col = "Equipe_Favorita"
+away_fav_team_col = "Equipe_Fora"  # Corrigido para "Equipe_Fora"
 
 # Verificar se as colunas existem
 if home_team_col not in home_data.columns or away_team_col not in away_data.columns or away_fav_team_col not in away_fav_data.columns:
@@ -57,9 +62,9 @@ else:
     ]]
 
     away_fav_filtered = away_fav_data[away_fav_data[away_fav_team_col] == equipe_away_fav][[
-        "Pts_Away_Fav", "PIA_Fav", "PIA_HA_Fav", "GD_Away_Fav", "GF_AVG_Away_Fav", "Odd_Justa_MO_Fav", "Odd_Justa_HA_Fav"
+        "Pts_Away", "PIA", "PIA_HA", "GD_Away", "GF_AVG_Away", "Odd_Justa_MO", "Odd_Justa_HA"
     ]] if equipe_away_fav else away_fav_data[[
-        "Pts_Away_Fav", "PIA_Fav", "PIA_HA_Fav", "GD_Away_Fav", "GF_AVG_Away_Fav", "Odd_Justa_MO_Fav", "Odd_Justa_HA_Fav"
+        "Pts_Away", "PIA", "PIA_HA", "GD_Away", "GF_AVG_Away", "Odd_Justa_MO", "Odd_Justa_HA"
     ]]
 
     # Exibir os dados filtrados para Home
