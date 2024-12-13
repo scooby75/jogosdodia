@@ -18,10 +18,6 @@ home_data = load_data(home_url)
 away_data = load_data(away_url)
 away_fav_data = load_data(away_fav_url)
 
-# Exibir as colunas para verificar os nomes
-st.write("Colunas do arquivo Home:", home_data.columns)
-st.write("Colunas do arquivo Away:", away_data.columns)
-st.write("Colunas do arquivo Away (Favorito):", away_fav_data.columns)
 
 # Colunas específicas para filtragem
 home_team_col = "Equipe"
