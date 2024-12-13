@@ -68,9 +68,9 @@ else:
     away_fav_filtered = away_fav_filtered.dropna(how="all")  # Remove todas as linhas com NaN
 
     # Remover qualquer coluna indesejada (como 'Unnamed' ou outras extras)
-    home_filtered = home_filtered.loc[:, ~home_filtered.columns.str.contains('^Unnamed')]
-    away_filtered = away_filtered.loc[:, ~away_filtered.columns.str.contains('^Unnamed')]
-    away_fav_filtered = away_fav_filtered.loc[:, ~away_fav_filtered.columns.str.contains('^Unnamed')]
+    home_filtered = home_filtered.loc[:, ~home_filtered.columns.str.contains('0')]
+    away_filtered = away_filtered.loc[:, ~away_filtered.columns.str.contains('0')]
+    away_fav_filtered = away_fav_filtered.loc[:, ~away_fav_filtered.columns.str.contains('0')]
 
     # Exibir os dados filtrados para Home, Away e Away (Favorito)
     st.subheader("Jogos - Home")
