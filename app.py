@@ -62,7 +62,12 @@ else:
         "Pts_Away", "PIA", "PIA_HA", "GD_Away", "GF_AVG_Away", "Odd_Justa_MO", "Odd_Justa_HA"
     ]]
 
-    # Remover a coluna extra de índice caso exista e exibir os dados filtrados
+    # Remover qualquer índice ou coluna indesejada (como 'Unnamed')
+    home_filtered = home_filtered.loc[:, ~home_filtered.columns.str.contains('^Unnamed')]
+    away_filtered = away_filtered.loc[:, ~away_filtered.columns.str.contains('^Unnamed')]
+    away_fav_filtered = away_fav_filtered.loc[:, ~away_fav_filtered.columns.str.contains('^Unnamed')]
+
+    # Exibir os dados filtrados para Home, Away e Away (Favorito)
     st.subheader("Jogos - Home")
     st.dataframe(home_filtered.reset_index(drop=True))  # Remover o índice
 
