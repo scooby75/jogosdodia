@@ -2,30 +2,31 @@ import streamlit as st
 import pandas as pd
 
 # Configurar o título do aplicativo
-st.title("H2H")
+st.title("H2H - Análise de Confrontos Diretos")
 
 # URLs dos arquivos CSV
 home_url = "https://raw.githubusercontent.com/scooby75/jogosdodia/refs/heads/main/equipes_casa.csv"
 away_url = "https://raw.githubusercontent.com/scooby75/jogosdodia/refs/heads/main/equipes_fora.csv"
 away_fav_url = "https://raw.githubusercontent.com/scooby75/jogosdodia/refs/heads/main/equipes_fora_favorito.csv"
 
-# Carregar os dados
+# Função para carregar os dados
 @st.cache_data
 def load_data(url):
     return pd.read_csv(url)
 
+# Carregar os dados das URLs
 home_data = load_data(home_url)
 away_data = load_data(away_url)
 away_fav_data = load_data(away_fav_url)
 
-# Colunas específicas para filtragem
+# Definir as colunas principais para filtragem
 home_team_col = "Equipe"
 away_team_col = "Equipe_Fora"
-away_fav_team_col = "Equipe_Fora"  # Corrigido para "Equipe_Fora"
+away_fav_team_col = "Equipe_Fora"
 
-# Verificar se as colunas existem
+# Verificar se as colunas necessárias existem nos datasets
 if home_team_col not in home_data.columns or away_team_col not in away_data.columns or away_fav_team_col not in away_fav_data.columns:
-    st.error("Erro: Não foi possível identificar a coluna de equipes nos dados carregados.")
+    st.error("Erro: Não foi possível identificar as colunas necessárias nos dados carregados.")
 else:
     # Sidebar para seleção de equipes
     equipe_home = st.sidebar.selectbox(
@@ -43,41 +44,41 @@ else:
         sorted(away_fav_data[away_fav_team_col].unique())
     )
 
-    # Filtrar os dados para Home, Away e Away (Favorito)
+    # Filtrar os dados para as equipes selecionadas
     home_filtered = home_data[home_data[home_team_col] == equipe_home][[
-        "Pts_Home", "PIH", "PIH_HA", "GD_Home", "GF_AVG_Home", "Odd_Justa_MO", "Odd_Justa_HA"
-    ]] if equipe_home else home_data[[
-        "Pts_Home", "PIH", "PIH_HA", "GD_Home", "GF_AVG_Home", "Odd_Justa_MO", "Odd_Justa_HA"
+        "Equipe", "GP", "W", "D", "L", "GF", "GA", "GD", 
+        "Pts_Home", "Liga", "PIH", "PIH_HA", "GD_Home", 
+        "GF_AVG_Home", "Odd_Justa_MO", "Odd_Justa_HA"
     ]]
 
     away_filtered = away_data[away_data[away_team_col] == equipe_away][[
-        "Pts_Away", "PIA", "PIA_HA", "GD_Away", "GF_AVG_Away", "Odd_Justa_MO", "Odd_Justa_HA"
-    ]] if equipe_away else away_data[[
-        "Pts_Away", "PIA", "PIA_HA", "GD_Away", "GF_AVG_Away", "Odd_Justa_MO", "Odd_Justa_HA"
+        "Equipe_Fora", "GP", "W", "D", "L", "GF", "GA", "GD", 
+        "Pts_Away", "Liga", "PIA", "PIA_HA", "GD_Away", 
+        "GF_AVG_Away", "Odd_Justa_MO", "Odd_Justa_HA"
     ]]
 
     away_fav_filtered = away_fav_data[away_fav_data[away_fav_team_col] == equipe_away_fav][[
-        "Pts_Away", "PIA", "PIA_HA", "GD_Away", "GF_AVG_Away", "Odd_Justa_MO", "Odd_Justa_HA"
-    ]] if equipe_away_fav else away_fav_data[[
-        "Pts_Away", "PIA", "PIA_HA", "GD_Away", "GF_AVG_Away", "Odd_Justa_MO", "Odd_Justa_HA"
+        "Equipe_Fora", "GP", "W", "D", "L", "GF", "GA", "GD", 
+        "Pts_Away", "Liga", "PIA", "PIA_HA", "GD_Away", 
+        "GF_AVG_Away", "Odd_Justa_MO", "Odd_Justa_HA"
     ]]
 
-    # Remover qualquer índice ou coluna indesejada (como 'Unnamed' e linhas com apenas NaN)
-    home_filtered = home_filtered.dropna(how="all")  # Remove todas as linhas com NaN
-    away_filtered = away_filtered.dropna(how="all")  # Remove todas as linhas com NaN
-    away_fav_filtered = away_fav_filtered.dropna(how="all")  # Remove todas as linhas com NaN
+    # Limpeza adicional: remover linhas vazias e colunas desnecessárias
+    def clean_data(df):
+        df = df.dropna(how="all")  # Remove linhas onde todos os valores são NaN
+        df = df.loc[:, ~df.columns.str.contains('^Unnamed|^0')]  # Remove colunas "Unnamed" ou que contenham "0"
+        return df
 
-    # Remover qualquer coluna indesejada (como 'Unnamed' ou outras extras)
-    home_filtered = home_filtered.loc[:, ~home_filtered.columns.str.contains('0')]
-    away_filtered = away_filtered.loc[:, ~away_filtered.columns.str.contains('0')]
-    away_fav_filtered = away_fav_filtered.loc[:, ~away_fav_filtered.columns.str.contains('0')]
+    home_filtered = clean_data(home_filtered)
+    away_filtered = clean_data(away_filtered)
+    away_fav_filtered = clean_data(away_fav_filtered)
 
-    # Exibir os dados filtrados para Home, Away e Away (Favorito)
+    # Exibir os dados filtrados
     st.subheader("Jogos - Home")
-    st.dataframe(home_filtered.reset_index(drop=True))  # Remover o índice
+    st.dataframe(home_filtered.reset_index(drop=True))
 
     st.subheader("Jogos - Away")
-    st.dataframe(away_filtered.reset_index(drop=True))  # Remover o índice
+    st.dataframe(away_filtered.reset_index(drop=True))
 
     st.subheader("Jogos - Away (Favorito)")
-    st.dataframe(away_fav_filtered.reset_index(drop=True))  # Remover o índice
+    st.dataframe(away_fav_filtered.reset_index(drop=True))
