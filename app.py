@@ -36,8 +36,17 @@ else:
     )
 
     # Filtrar os dados para Home e Away
-    home_filtered = home_data[home_data[home_team_col] == equipe_home] if equipe_home else home_data
-    away_filtered = away_data[away_data[away_team_col] == equipe_away] if equipe_away else away_data
+    home_filtered = home_data[home_data[home_team_col] == equipe_home][[
+        "Pts_Home", "PIH", "PIH_HA", "GD_Home", "GF_AVG_Home", "Odd_Justa_MO", "Odd_Justa_HA"
+    ]] if equipe_home else home_data[[
+        "Pts_Home", "PIH", "PIH_HA", "GD_Home", "GF_AVG_Home", "Odd_Justa_MO", "Odd_Justa_HA"
+    ]]
+
+    away_filtered = away_data[away_data[away_team_col] == equipe_away][[
+        "Pts_Away", "PIA", "PIA_HA", "GD_Away", "GF_AVG_Away", "Odd_Justa_MO", "Odd_Justa_HA"
+    ]] if equipe_away else away_data[[
+        "Pts_Away", "PIA", "PIA_HA", "GD_Away", "GF_AVG_Away", "Odd_Justa_MO", "Odd_Justa_HA"
+    ]]
 
     # Exibir os dados filtrados para Home
     st.subheader("Jogos - Home")
@@ -46,15 +55,3 @@ else:
     # Exibir os dados filtrados para Away
     st.subheader("Jogos - Away")
     st.dataframe(away_filtered)
-
-    # Comparação de resultados
-    if not home_filtered.empty and not away_filtered.empty:
-        st.subheader("Comparação de Resultados")
-        # Unir os dados de Home e Away para exibição em formato empilhado
-        home_filtered = home_filtered.rename(columns=lambda col: f"{col}_home")
-        away_filtered = away_filtered.rename(columns=lambda col: f"{col}_away")
-        home_filtered["Tipo"] = "Home"
-        away_filtered["Tipo"] = "Away"
-
-        comparison = pd.concat([home_filtered, away_filtered], axis=0, ignore_index=True)
-        st.dataframe(comparison)
