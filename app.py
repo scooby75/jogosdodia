@@ -50,10 +50,11 @@ else:
     # Comparação de resultados
     if not home_filtered.empty and not away_filtered.empty:
         st.subheader("Comparação de Resultados")
+        # Comparar utilizando colunas em comum, como "Liga" ou outras informações relevantes
         comparison = pd.merge(
             home_filtered, away_filtered, 
-            left_on=home_team_col, right_on=away_team_col, 
+            left_on="Liga", right_on="Liga", 
             suffixes=('_home', '_away'), 
-            how='outer'
+            how='inner'
         )
         st.dataframe(comparison)
