@@ -18,7 +18,6 @@ home_data = load_data(home_url)
 away_data = load_data(away_url)
 away_fav_data = load_data(away_fav_url)
 
-
 # Colunas específicas para filtragem
 home_team_col = "Equipe"
 away_team_col = "Equipe_Fora"
