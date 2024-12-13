@@ -7,6 +7,7 @@ st.title("H2H")
 # URLs dos arquivos CSV
 home_url = "https://raw.githubusercontent.com/scooby75/jogosdodia/refs/heads/main/equipes_casa.csv"
 away_url = "https://raw.githubusercontent.com/scooby75/jogosdodia/refs/heads/main/equipes_fora.csv"
+away_fav_url = "https://raw.githubusercontent.com/scooby75/jogosdodia/refs/heads/main/equipes_fora_favorito.csv"
 
 # Carregar os dados
 @st.cache_data
@@ -15,13 +16,15 @@ def load_data(url):
 
 home_data = load_data(home_url)
 away_data = load_data(away_url)
+away_fav_data = load_data(away_fav_url)
 
 # Colunas específicas para filtragem
 home_team_col = "Equipe"
 away_team_col = "Equipe_Fora"
+away_fav_team_col = "Equipe_Favorita"
 
 # Verificar se as colunas existem
-if home_team_col not in home_data.columns or away_team_col not in away_data.columns:
+if home_team_col not in home_data.columns or away_team_col not in away_data.columns or away_fav_team_col not in away_fav_data.columns:
     st.error("Erro: Não foi possível identificar a coluna de equipes nos dados carregados.")
 else:
     # Sidebar para seleção de equipes
@@ -35,7 +38,12 @@ else:
         sorted(away_data[away_team_col].unique())
     )
 
-    # Filtrar os dados para Home e Away
+    equipe_away_fav = st.sidebar.selectbox(
+        "Selecione a equipe Away (Favorito):",
+        sorted(away_fav_data[away_fav_team_col].unique())
+    )
+
+    # Filtrar os dados para Home, Away e Away (Favorito)
     home_filtered = home_data[home_data[home_team_col] == equipe_home][[
         "Pts_Home", "PIH", "PIH_HA", "GD_Home", "GF_AVG_Home", "Odd_Justa_MO", "Odd_Justa_HA"
     ]] if equipe_home else home_data[[
@@ -48,6 +56,12 @@ else:
         "Pts_Away", "PIA", "PIA_HA", "GD_Away", "GF_AVG_Away", "Odd_Justa_MO", "Odd_Justa_HA"
     ]]
 
+    away_fav_filtered = away_fav_data[away_fav_data[away_fav_team_col] == equipe_away_fav][[
+        "Pts_Away_Fav", "PIA_Fav", "PIA_HA_Fav", "GD_Away_Fav", "GF_AVG_Away_Fav", "Odd_Justa_MO_Fav", "Odd_Justa_HA_Fav"
+    ]] if equipe_away_fav else away_fav_data[[
+        "Pts_Away_Fav", "PIA_Fav", "PIA_HA_Fav", "GD_Away_Fav", "GF_AVG_Away_Fav", "Odd_Justa_MO_Fav", "Odd_Justa_HA_Fav"
+    ]]
+
     # Exibir os dados filtrados para Home
     st.subheader("Jogos - Home")
     st.dataframe(home_filtered)
@@ -55,3 +69,7 @@ else:
     # Exibir os dados filtrados para Away
     st.subheader("Jogos - Away")
     st.dataframe(away_filtered)
+
+    # Exibir os dados filtrados para Away (Favorito)
+    st.subheader("Jogos - Away (Favorito)")
+    st.dataframe(away_fav_filtered)
