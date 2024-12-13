@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 
 # Configurar o título do aplicativo
-st.title("H2H - Análise de Confrontos Diretos")
+st.title("Análise de Confrontos Diretos")
 
 # URLs dos arquivos CSV
 home_url = "https://raw.githubusercontent.com/scooby75/jogosdodia/refs/heads/main/equipes_casa.csv"
