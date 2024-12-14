@@ -26,10 +26,6 @@ home_data = normalize_columns(home_data)
 away_data = normalize_columns(away_data)
 away_fav_data = normalize_columns(away_fav_data)
 
-# Verificar as colunas disponíveis
-st.write("Colunas Home:", home_data.columns.tolist())
-st.write("Colunas Away:", away_data.columns.tolist())
-st.write("Colunas Away (Favorito):", away_fav_data.columns.tolist())
 
 # Definir as colunas principais para filtragem
 home_team_col = "Equipe"
