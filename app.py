@@ -19,15 +19,24 @@ home_data = load_data(home_url)
 away_data = load_data(away_url)
 away_fav_data = load_data(away_fav_url)
 
+# Verificar as colunas disponíveis
+st.write("Colunas Home:", home_data.columns.tolist())
+st.write("Colunas Away:", away_data.columns.tolist())
+st.write("Colunas Away (Favorito):", away_fav_data.columns.tolist())
+
 # Definir as colunas principais para filtragem
 home_team_col = "Equipe"
 away_team_col = "Equipe_Fora"
 away_fav_team_col = "Equipe_Fora"
 
 # Verificar se as colunas necessárias existem nos datasets
-if home_team_col not in home_data.columns or away_team_col not in away_data.columns or away_fav_team_col not in away_fav_data.columns:
-    st.error("Erro: Não foi possível identificar as colunas necessárias nos dados carregados.")
-else:
+required_columns_home = ["PIH", "PIH_HA", "GD_Home", "GF_AVG_Home", "Odd_Justa_MO", "Odd_Justa_HA", "Rank_Home", "Pts_Home"]
+required_columns_away = ["PIA", "PIA_HA", "GD_Away", "GF_AVG_Away", "Odd_Justa_MO", "Odd_Justa_HA", "Rank_Away", "Pts_Away"]
+
+if set(required_columns_home).issubset(home_data.columns) and \
+   set(required_columns_away).issubset(away_data.columns) and \
+   set(required_columns_away).issubset(away_fav_data.columns):
+    
     # Sidebar para seleção de equipes
     equipe_home = st.sidebar.selectbox(
         "Selecione a equipe Home:",
@@ -45,27 +54,9 @@ else:
     )
 
     # Filtrar os dados para as equipes selecionadas
-    home_filtered = home_data[home_data[home_team_col] == equipe_home][[
-        "PIH", "PIH_HA", "GD_Home", "GF_AVG_Home", "Odd_Justa_MO", "Odd_Justa_HA","Rank_Home","Pts_Home"
-    ]]
-
-    away_filtered = away_data[away_data[away_team_col] == equipe_away][[
-        "PIA", "PIA_HA", "GD_Away", "GF_AVG_Away", "Odd_Justa_MO", "Odd_Justa_HA","Rank_Away","Pts_Away"
-    ]]
-
-    away_fav_filtered = away_fav_data[away_fav_data[away_fav_team_col] == equipe_away_fav][[
-        "PIA", "PIA_HA", "GD_Away", "GF_AVG_Away", "Odd_Justa_MO", "Odd_Justa_HA","Rank_Away","Pts_Away"
-    ]]
-
-    # Limpeza adicional: remover linhas vazias e colunas desnecessárias
-    def clean_data(df):
-        df = df.dropna(how="all")  # Remove linhas onde todos os valores são NaN
-        df = df.loc[:, ~df.columns.str.contains('^Unnamed|^0')]  # Remove colunas "Unnamed" ou que contenham "0"
-        return df
-
-    home_filtered = clean_data(home_filtered)
-    away_filtered = clean_data(away_filtered)
-    away_fav_filtered = clean_data(away_fav_filtered)
+    home_filtered = home_data[home_data[home_team_col] == equipe_home][required_columns_home]
+    away_filtered = away_data[away_data[away_team_col] == equipe_away][required_columns_away]
+    away_fav_filtered = away_fav_data[away_fav_data[away_fav_team_col] == equipe_away_fav][required_columns_away]
 
     # Exibir os dados filtrados
     st.subheader("Home")
@@ -76,3 +67,5 @@ else:
 
     st.subheader("Away (Favorito)")
     st.dataframe(away_fav_filtered.reset_index(drop=True))
+else:
+    st.error("Colunas necessárias ausentes em um ou mais datasets.")
