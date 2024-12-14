@@ -1,9 +1,6 @@
 import streamlit as st
 import pandas as pd
 
-# Configurar o título do aplicativo
-st.title("Análise de Confrontos Diretos")
-
 # URLs dos arquivos CSV
 home_url = "https://raw.githubusercontent.com/scooby75/jogosdodia/refs/heads/main/equipes_casa.csv"
 away_url = "https://raw.githubusercontent.com/scooby75/jogosdodia/refs/heads/main/equipes_fora.csv"
@@ -19,6 +16,16 @@ home_data = load_data(home_url)
 away_data = load_data(away_url)
 away_fav_data = load_data(away_fav_url)
 
+# Função para normalizar os nomes das colunas (remove espaços extras, etc.)
+def normalize_columns(df):
+    df.columns = df.columns.str.strip()
+    return df
+
+# Normalizar os nomes das colunas
+home_data = normalize_columns(home_data)
+away_data = normalize_columns(away_data)
+away_fav_data = normalize_columns(away_fav_data)
+
 # Verificar as colunas disponíveis
 st.write("Colunas Home:", home_data.columns.tolist())
 st.write("Colunas Away:", away_data.columns.tolist())
@@ -29,14 +36,25 @@ home_team_col = "Equipe"
 away_team_col = "Equipe_Fora"
 away_fav_team_col = "Equipe_Fora"
 
-# Verificar se as colunas necessárias existem nos datasets
+# Listar as colunas necessárias para cada dataset
 required_columns_home = ["PIH", "PIH_HA", "GD_Home", "GF_AVG_Home", "Odd_Justa_MO", "Odd_Justa_HA", "Rank_Home", "Pts_Home"]
 required_columns_away = ["PIA", "PIA_HA", "GD_Away", "GF_AVG_Away", "Odd_Justa_MO", "Odd_Justa_HA", "Rank_Away", "Pts_Away"]
 
-if set(required_columns_home).issubset(home_data.columns) and \
-   set(required_columns_away).issubset(away_data.columns) and \
-   set(required_columns_away).issubset(away_fav_data.columns):
-    
+# Verificar se as colunas necessárias estão presentes
+missing_columns_home = [col for col in required_columns_home if col not in home_data.columns]
+missing_columns_away = [col for col in required_columns_away if col not in away_data.columns]
+missing_columns_away_fav = [col for col in required_columns_away if col not in away_fav_data.columns]
+
+# Exibir mensagens de erro se houver colunas ausentes
+if missing_columns_home:
+    st.error(f"Colunas ausentes no dataset Home: {missing_columns_home}")
+if missing_columns_away:
+    st.error(f"Colunas ausentes no dataset Away: {missing_columns_away}")
+if missing_columns_away_fav:
+    st.error(f"Colunas ausentes no dataset Away (Favorito): {missing_columns_away_fav}")
+
+# Prosseguir apenas se não houver colunas ausentes
+if not (missing_columns_home or missing_columns_away or missing_columns_away_fav):
     # Sidebar para seleção de equipes
     equipe_home = st.sidebar.selectbox(
         "Selecione a equipe Home:",
@@ -68,4 +86,4 @@ if set(required_columns_home).issubset(home_data.columns) and \
     st.subheader("Away (Favorito)")
     st.dataframe(away_fav_filtered.reset_index(drop=True))
 else:
-    st.error("Colunas necessárias ausentes em um ou mais datasets.")
+    st.error("Corrija os problemas com as colunas ausentes antes de prosseguir.")
