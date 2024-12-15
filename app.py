@@ -87,13 +87,13 @@ if not (missing_columns_home or missing_columns_away or missing_columns_away_fav
     away_fav_filtered_team = away_fav_data[away_fav_data[away_fav_team_col] == equipe_away_fav][required_columns_away]
 
     # Exibir os dados filtrados
-    st.subheader("Home (Equipe Selecionada)")
+    st.subheader("Home")
     st.dataframe(home_filtered_team.reset_index(drop=True))
 
-    st.subheader("Away (Equipe Selecionada)")
+    st.subheader("Away (Zebra)")
     st.dataframe(away_filtered_team.reset_index(drop=True))
 
-    st.subheader("Away (Favorito - Equipe Selecionada)")
+    st.subheader("Away (Favorito)")
     st.dataframe(away_fav_filtered_team.reset_index(drop=True))
 
     st.subheader("Home (Filtro por PIH)")
