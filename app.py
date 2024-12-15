@@ -26,7 +26,6 @@ home_data = normalize_columns(home_data)
 away_data = normalize_columns(away_data)
 away_fav_data = normalize_columns(away_fav_data)
 
-
 # Definir as colunas principais para filtragem
 home_team_col = "Equipe"
 away_team_col = "Equipe_Fora"
@@ -67,10 +66,26 @@ if not (missing_columns_home or missing_columns_away or missing_columns_away_fav
         sorted(away_fav_data[away_fav_team_col].unique())
     )
 
-    # Filtrar os dados para as equipes selecionadas
-    home_filtered = home_data[home_data[home_team_col] == equipe_home][required_columns_home]
-    away_filtered = away_data[away_data[away_team_col] == equipe_away][required_columns_away]
-    away_fav_filtered = away_fav_data[away_fav_data[away_fav_team_col] == equipe_away_fav][required_columns_away]
+    # Filtros de PIH e PIA
+    pih_min, pih_max = st.sidebar.slider("Intervalo de PIH", float(home_data["PIH"].min()), float(home_data["PIH"].max()), (0.0, 1.0))
+    pia_min, pia_max = st.sidebar.slider("Intervalo de PIA", float(away_data["PIA"].min()), float(away_data["PIA"].max()), (0.0, 1.0))
+
+    # Filtrar os dados para as equipes e filtros selecionados
+    home_filtered = home_data[
+        (home_data[home_team_col] == equipe_home) &
+        (home_data["PIH"] >= pih_min) & 
+        (home_data["PIH"] <= pih_max)
+    ][required_columns_home]
+
+    away_filtered = away_data[
+        (away_data[away_team_col] == equipe_away) &
+        (away_data["PIA"] >= pia_min) & 
+        (away_data["PIA"] <= pia_max)
+    ][required_columns_away]
+
+    away_fav_filtered = away_fav_data[
+        (away_fav_data[away_fav_team_col] == equipe_away_fav)
+    ][required_columns_away]
 
     # Exibir os dados filtrados
     st.subheader("Home")
