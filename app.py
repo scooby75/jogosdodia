@@ -50,7 +50,7 @@ if missing_columns_away_fav:
 
 # Prosseguir apenas se não houver colunas ausentes
 if not (missing_columns_home or missing_columns_away or missing_columns_away_fav):
-    # Sidebar para seleção de equipes
+    # Filtros para seleção de equipes
     equipe_home = st.sidebar.selectbox(
         "Selecione a equipe Home:",
         sorted(home_data[home_team_col].unique())
@@ -66,35 +66,40 @@ if not (missing_columns_home or missing_columns_away or missing_columns_away_fav
         sorted(away_fav_data[away_fav_team_col].unique())
     )
 
-    # Filtros de PIH e PIA
+    # Filtros independentes para PIH e PIA
     pih_min, pih_max = st.sidebar.slider("Intervalo de PIH", float(home_data["PIH"].min()), float(home_data["PIH"].max()), (0.0, 1.0))
     pia_min, pia_max = st.sidebar.slider("Intervalo de PIA", float(away_data["PIA"].min()), float(away_data["PIA"].max()), (0.0, 1.0))
 
-    # Filtrar os dados para as equipes e filtros selecionados
-    home_filtered = home_data[
-        (home_data[home_team_col] == equipe_home) &
+    # Aplicar filtros de PIH e PIA nos datasets completos
+    home_filtered_pih = home_data[
         (home_data["PIH"] >= pih_min) & 
         (home_data["PIH"] <= pih_max)
-    ][required_columns_home]
+    ][[home_team_col] + required_columns_home]
 
-    away_filtered = away_data[
-        (away_data[away_team_col] == equipe_away) &
+    away_filtered_pia = away_data[
         (away_data["PIA"] >= pia_min) & 
         (away_data["PIA"] <= pia_max)
-    ][required_columns_away]
+    ][[away_team_col] + required_columns_away]
 
-    away_fav_filtered = away_fav_data[
-        (away_fav_data[away_fav_team_col] == equipe_away_fav)
-    ][required_columns_away]
+    # Filtrar os dados para as equipes selecionadas
+    home_filtered_team = home_data[home_data[home_team_col] == equipe_home][required_columns_home]
+    away_filtered_team = away_data[away_data[away_team_col] == equipe_away][required_columns_away]
+    away_fav_filtered_team = away_fav_data[away_fav_data[away_fav_team_col] == equipe_away_fav][required_columns_away]
 
     # Exibir os dados filtrados
-    st.subheader("Home")
-    st.dataframe(home_filtered.reset_index(drop=True))
+    st.subheader("Home (Equipe Selecionada)")
+    st.dataframe(home_filtered_team.reset_index(drop=True))
 
-    st.subheader("Away")
-    st.dataframe(away_filtered.reset_index(drop=True))
+    st.subheader("Away (Equipe Selecionada)")
+    st.dataframe(away_filtered_team.reset_index(drop=True))
 
-    st.subheader("Away (Favorito)")
-    st.dataframe(away_fav_filtered.reset_index(drop=True))
+    st.subheader("Away (Favorito - Equipe Selecionada)")
+    st.dataframe(away_fav_filtered_team.reset_index(drop=True))
+
+    st.subheader("Home (Filtro por PIH)")
+    st.dataframe(home_filtered_pih.reset_index(drop=True))
+
+    st.subheader("Away (Filtro por PIA)")
+    st.dataframe(away_filtered_pia.reset_index(drop=True))
 else:
     st.error("Corrija os problemas com as colunas ausentes antes de prosseguir.")
