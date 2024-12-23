@@ -85,15 +85,14 @@ if not (missing_columns_home or missing_columns_away or missing_columns_away_fav
     piha_min, piha_max = st.sidebar.slider("Intervalo de PIH_HA", float(home_data["PIH_HA"].min()), float(home_data["PIH_HA"].max()), (0.0, 1.0))
     piah_min, piah_max = st.sidebar.slider("Intervalo de PIA_HA", float(away_data["PIA_HA"].min()), float(away_data["PIA_HA"].max()), (0.0, 1.0))
 
-    # Aplicar filtros de PIH e PIA nos datasets completos
-    home_filtered_pih = home_data[
-        (home_data["PIH"] >= pih_min) & 
-        (home_data["PIH"] <= pih_max)
+    home_filtered_piha = home_data[
+        (home_data["PIH_HA"] >= piha_min) & 
+        (home_data["PIH_HA"] <= piha_max)
     ][[home_team_col] + required_columns_home]
 
-    away_filtered_pia = away_data[
-        (away_data["PIA"] >= pia_min) & 
-        (away_data["PIA"] <= pia_max)
+    away_filtered_piah = away_data[
+        (away_data["PIA_HA"] >= piah_min) & 
+        (away_data["PIA_HA"] <= piah_max)
     ][[away_team_col] + required_columns_away]
 
     # Filtrar os dados para as equipes selecionadas
