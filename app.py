@@ -81,6 +81,21 @@ if not (missing_columns_home or missing_columns_away or missing_columns_away_fav
         (away_data["PIA"] <= pia_max)
     ][[away_team_col] + required_columns_away]
 
+    # Filtros independentes para PIH_HA e PIA_HA
+    piha_min, piha_max = st.sidebar.slider("Intervalo de PIH_HA", float(home_data["PIH_HA"].min()), float(home_data["PIH_HA"].max()), (0.0, 1.0))
+    piah_min, piah_max = st.sidebar.slider("Intervalo de PIA_HA", float(away_data["PIA_HA"].min()), float(away_data["PIA_HA"].max()), (0.0, 1.0))
+
+    # Aplicar filtros de PIH e PIA nos datasets completos
+    home_filtered_pih = home_data[
+        (home_data["PIH"] >= pih_min) & 
+        (home_data["PIH"] <= pih_max)
+    ][[home_team_col] + required_columns_home]
+
+    away_filtered_pia = away_data[
+        (away_data["PIA"] >= pia_min) & 
+        (away_data["PIA"] <= pia_max)
+    ][[away_team_col] + required_columns_away]
+
     # Filtrar os dados para as equipes selecionadas
     home_filtered_team = home_data[home_data[home_team_col] == equipe_home][required_columns_home]
     away_filtered_team = away_data[away_data[away_team_col] == equipe_away][required_columns_away]
@@ -101,5 +116,12 @@ if not (missing_columns_home or missing_columns_away or missing_columns_away_fav
 
     st.subheader("Away (Filtro por PIA)")
     st.dataframe(away_filtered_pia.reset_index(drop=True))
+    
+    st.subheader("Home (Filtro por PIH_HA)")
+    st.dataframe(home_filtered_piha.reset_index(drop=True))
+
+    st.subheader("Away (Filtro por PIA_HA)")
+    st.dataframe(away_filtered_piah.reset_index(drop=True))
+
 else:
     st.error("Corrija os problemas com as colunas ausentes antes de prosseguir.")
