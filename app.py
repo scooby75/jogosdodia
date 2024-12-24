@@ -151,10 +151,10 @@ if not (missing_columns_home or missing_columns_away or missing_columns_away_fav
     st.dataframe(away_filtered_piah.reset_index(drop=True))
 
     # Exibir os dados filtrados
-    st.subheader("Média de Gols Casa (GF_AVG_Home)")
+    st.subheader("Média de Gols (Casa)")
     st.dataframe(home_filtered_gf_avg.reset_index(drop=True))
     
-    st.subheader("Média de Gols Visitante (GF_AVG_Away)")
+    st.subheader("Média de Gols (Visitante)")
     st.dataframe(away_filtered_gf_avg.reset_index(drop=True))
 
 else:
