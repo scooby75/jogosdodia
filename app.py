@@ -102,7 +102,7 @@ if not (missing_columns_home or missing_columns_away or missing_columns_away_fav
 
     # Filtros independentes para GF_AVG_Home (Média de Gols Casa)
     gf_avg_home_min, gf_avg_home_max = st.sidebar.slider(
-        "Intervalo de Média de Gols Casa (GF_AVG_Home)", 
+        "Média de Gols (Home)", 
         float(home_data["GF_AVG_Home"].min()), 
         float(home_data["GF_AVG_Home"].max()), 
         (home_data["GF_AVG_Home"].min(), home_data["GF_AVG_Home"].max())
@@ -116,7 +116,7 @@ if not (missing_columns_home or missing_columns_away or missing_columns_away_fav
     
     # Filtros independentes para GF_AVG_Away (Média de Gols Visitante)
     gf_avg_away_min, gf_avg_away_max = st.sidebar.slider(
-        "Intervalo de Média de Gols Visitante (GF_AVG_Away)", 
+        "Média de Gols (Visitante)", 
         float(away_data["GF_AVG_Away"].min()), 
         float(away_data["GF_AVG_Away"].max()), 
         (away_data["GF_AVG_Away"].min(), away_data["GF_AVG_Away"].max())
