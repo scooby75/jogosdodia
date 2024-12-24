@@ -87,7 +87,7 @@ if not (missing_columns_home or missing_columns_away or missing_columns_away_fav
 
     home_filtered_piha = home_data[
         (home_data["PIH_HA"] >= piha_min) & 
-        (home_data["PIH_HA"] <= piha_max)
+        (home_data["PIH_HA"] <= piha_max) 
     ][[home_team_col] + required_columns_home]
 
     away_filtered_piah = away_data[
@@ -110,16 +110,16 @@ if not (missing_columns_home or missing_columns_away or missing_columns_away_fav
     st.subheader("Away (Favorito)")
     st.dataframe(away_fav_filtered_team.reset_index(drop=True))
 
-    st.subheader("Home (Filtro por PIH)")
+    st.subheader("1x2 (Home)")
     st.dataframe(home_filtered_pih.reset_index(drop=True))
 
-    st.subheader("Away (Filtro por PIA)")
+    st.subheader("1x2 (Away)")
     st.dataframe(away_filtered_pia.reset_index(drop=True))
     
-    st.subheader("Home (Filtro por PIH_HA)")
+    st.subheader("HA +0.25 (Home)")
     st.dataframe(home_filtered_piha.reset_index(drop=True))
 
-    st.subheader("Away (Filtro por PIA_HA)")
+    st.subheader("HA +0.25 (Away)")
     st.dataframe(away_filtered_piah.reset_index(drop=True))
 
 else:
