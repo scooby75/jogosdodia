@@ -67,8 +67,8 @@ if not (missing_columns_home or missing_columns_away or missing_columns_away_fav
     )
 
     # Filtros independentes para PIH e PIA
-    pih_min, pih_max = st.sidebar.slider("Intervalo de PIH", float(home_data["PIH"].min()), float(home_data["PIH"].max()), (0.0, 1.0))
-    pia_min, pia_max = st.sidebar.slider("Intervalo de PIA", float(away_data["PIA"].min()), float(away_data["PIA"].max()), (0.0, 1.0))
+    pih_min, pih_max = st.sidebar.slider("1x2 (Home)", float(home_data["PIH"].min()), float(home_data["PIH"].max()), (0.0, 1.0))
+    pia_min, pia_max = st.sidebar.slider("1x2 (Away)", float(away_data["PIA"].min()), float(away_data["PIA"].max()), (0.0, 1.0))
 
     # Aplicar filtros de PIH e PIA nos datasets completos
     home_filtered_pih = home_data[
@@ -82,8 +82,8 @@ if not (missing_columns_home or missing_columns_away or missing_columns_away_fav
     ][[away_team_col] + required_columns_away]
 
     # Filtros independentes para PIH_HA e PIA_HA
-    piha_min, piha_max = st.sidebar.slider("Intervalo de PIH_HA", float(home_data["PIH_HA"].min()), float(home_data["PIH_HA"].max()), (0.0, 1.0))
-    piah_min, piah_max = st.sidebar.slider("Intervalo de PIA_HA", float(away_data["PIA_HA"].min()), float(away_data["PIA_HA"].max()), (0.0, 1.0))
+    piha_min, piha_max = st.sidebar.slider("HA +0.25 (Home)", float(home_data["PIH_HA"].min()), float(home_data["PIH_HA"].max()), (0.0, 1.0))
+    piah_min, piah_max = st.sidebar.slider("HA +0.25 (Away)", float(away_data["PIA_HA"].min()), float(away_data["PIA_HA"].max()), (0.0, 1.0))
 
     home_filtered_piha = home_data[
         (home_data["PIH_HA"] >= piha_min) & 
@@ -116,7 +116,7 @@ if not (missing_columns_home or missing_columns_away or missing_columns_away_fav
     
     # Filtros independentes para GF_AVG_Away (Média de Gols Visitante)
     gf_avg_away_min, gf_avg_away_max = st.sidebar.slider(
-        "Média de Gols (Visitante)", 
+        "Média de Gols (Away)", 
         float(away_data["GF_AVG_Away"].min()), 
         float(away_data["GF_AVG_Away"].max()), 
         (away_data["GF_AVG_Away"].min(), away_data["GF_AVG_Away"].max())
@@ -154,7 +154,7 @@ if not (missing_columns_home or missing_columns_away or missing_columns_away_fav
     st.subheader("Média de Gols (Casa)")
     st.dataframe(home_filtered_gf_avg.reset_index(drop=True))
     
-    st.subheader("Média de Gols (Visitante)")
+    st.subheader("Média de Gols (Away)")
     st.dataframe(away_filtered_gf_avg.reset_index(drop=True))
 
 else:
