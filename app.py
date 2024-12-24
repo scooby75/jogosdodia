@@ -100,6 +100,34 @@ if not (missing_columns_home or missing_columns_away or missing_columns_away_fav
     away_filtered_team = away_data[away_data[away_team_col] == equipe_away][required_columns_away]
     away_fav_filtered_team = away_fav_data[away_fav_data[away_fav_team_col] == equipe_away_fav][required_columns_away]
 
+    # Filtros independentes para GF_AVG_Home (Média de Gols Casa)
+    gf_avg_home_min, gf_avg_home_max = st.sidebar.slider(
+        "Intervalo de Média de Gols Casa (GF_AVG_Home)", 
+        float(home_data["GF_AVG_Home"].min()), 
+        float(home_data["GF_AVG_Home"].max()), 
+        (home_data["GF_AVG_Home"].min(), home_data["GF_AVG_Home"].max())
+    )
+    
+    # Filtrar os dados de acordo com GF_AVG_Home
+    home_filtered_gf_avg = home_data[
+        (home_data["GF_AVG_Home"] >= gf_avg_home_min) & 
+        (home_data["GF_AVG_Home"] <= gf_avg_home_max)
+    ][[home_team_col] + required_columns_home]
+    
+    # Filtros independentes para GF_AVG_Away (Média de Gols Visitante)
+    gf_avg_away_min, gf_avg_away_max = st.sidebar.slider(
+        "Intervalo de Média de Gols Visitante (GF_AVG_Away)", 
+        float(away_data["GF_AVG_Away"].min()), 
+        float(away_data["GF_AVG_Away"].max()), 
+        (away_data["GF_AVG_Away"].min(), away_data["GF_AVG_Away"].max())
+    )
+    
+    # Filtrar os dados de acordo com GF_AVG_Away
+    away_filtered_gf_avg = away_data[
+        (away_data["GF_AVG_Away"] >= gf_avg_away_min) & 
+        (away_data["GF_AVG_Away"] <= gf_avg_away_max)
+    ][[away_team_col] + required_columns_away]
+
     # Exibir os dados filtrados
     st.subheader("Home")
     st.dataframe(home_filtered_team.reset_index(drop=True))
@@ -121,6 +149,13 @@ if not (missing_columns_home or missing_columns_away or missing_columns_away_fav
 
     st.subheader("HA +0.25 (Away)")
     st.dataframe(away_filtered_piah.reset_index(drop=True))
+
+    # Exibir os dados filtrados
+    st.subheader("Média de Gols Casa (GF_AVG_Home)")
+    st.dataframe(home_filtered_gf_avg.reset_index(drop=True))
+    
+    st.subheader("Média de Gols Visitante (GF_AVG_Away)")
+    st.dataframe(away_filtered_gf_avg.reset_index(drop=True))
 
 else:
     st.error("Corrija os problemas com as colunas ausentes antes de prosseguir.")
