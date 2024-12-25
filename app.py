@@ -32,8 +32,8 @@ away_team_col = "Equipe_Fora"
 away_fav_team_col = "Equipe_Fora"
 
 # Listar as colunas necessárias para cada dataset
-required_columns_home = ["PIH", "PIH_HA", "GD_Home", "GF_AVG_Home", "Odd_Justa_MO", "Odd_Justa_HA", "Rank_Home", "Pts_Home"]
-required_columns_away = ["PIA", "PIA_HA", "GD_Away", "GF_AVG_Away", "Odd_Justa_MO", "Odd_Justa_HA", "Rank_Away", "Pts_Away"]
+required_columns_home = ["GP", "Liga","PIH", "PIH_HA", "GD_Home", "GF_AVG_Home", "Odd_Justa_MO", "Odd_Justa_HA", "Rank_Home", "Pts_Home"]
+required_columns_away = ["GP", "Liga","PIA", "PIA_HA", "GD_Away", "GF_AVG_Away", "Odd_Justa_MO", "Odd_Justa_HA", "Rank_Away", "Pts_Away"]
 
 # Verificar se as colunas necessárias estão presentes
 missing_columns_home = [col for col in required_columns_home if col not in home_data.columns]
