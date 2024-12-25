@@ -1,4 +1,16 @@
-Equipe,GP,W,D,L,GF,GA,GD,Pts_Home,Liga,PIH,PIH_HA,GD_Home,GF_AVG_Home,Odd_Justa_MO,Odd_Justa_HA,Rank_Home
+Equipe,GP,W,D,L,GF,GA,GD,Pts,Liga,PIH,PIH_HA,GD_Home,GF_AVG_Home,Odd_Justa_MO,Odd_Justa_HA,Rank_Home
+Equipe,2,3,4,5,6,7,8,9,Liga,1.5,3.5,-1,3.0,0.67,0.29,1
+,0,0,0,0,0,0,0,0,Albania - Abissnet Superiore,0.0,0.0,0,0.0,0.0,0.0,8
+Dinamo Tirana,8,6,1,1,14,8,6,19,Albania - Abissnet Superiore,0.75,0.88,6,1.75,1.33,1.14,1
+Vllaznia S.,8,5,2,1,15,8,7,17,Albania - Abissnet Superiore,0.62,0.88,7,1.88,1.61,1.14,2
+Egnatia R.,8,4,3,1,11,5,6,15,Albania - Abissnet Superiore,0.5,0.88,6,1.38,2.0,1.14,3
+Laci,8,4,3,1,11,5,6,15,Albania - Abissnet Superiore,0.5,0.88,6,1.38,2.0,1.14,3
+Partizani T.,8,3,5,0,10,6,4,14,Albania - Abissnet Superiore,0.38,1.0,4,1.25,2.63,1.0,4
+KF Tirana,8,2,5,1,11,7,4,11,Albania - Abissnet Superiore,0.25,0.88,4,1.38,4.0,1.14,5
+Bylis,8,3,2,3,9,7,2,11,Albania - Abissnet Superiore,0.38,0.62,2,1.12,2.63,1.61,5
+Teuta Durres,8,2,5,1,9,7,2,11,Albania - Abissnet Superiore,0.25,0.88,2,1.12,4.0,1.14,5
+AF Elbasani,8,2,4,2,8,11,-3,10,Albania - Abissnet Superiore,0.25,0.75,-3,1.0,4.0,1.33,6
+Skenderbeu K.,8,1,3,4,8,13,-5,6,Albania - Abissnet Superiore,0.12,0.5,-5,1.0,8.33,2.0,7
 MC Oran,7,5,2,0,7,0,7,17,Algeria - Ligue 1,0.71,1.0,7,1.0,1.41,1.0,1
 CS Constantine,7,5,2,0,9,4,5,17,Algeria - Ligue 1,0.71,1.0,5,1.29,1.41,1.0,1
 JS Kabylie,8,5,1,2,13,8,5,16,Algeria - Ligue 1,0.62,0.75,5,1.62,1.61,1.33,2
@@ -223,6 +235,16 @@ Bahrain SC,3,1,0,2,4,5,-1,3,Bahrain - Premier League,0.33,0.33,-1,1.33,3.03,3.03
 AAli FC,3,1,0,2,3,5,-2,3,Bahrain - Premier League,0.33,0.33,-2,1.0,3.03,3.03,6
 Al Shabbab,3,0,2,1,2,4,-2,2,Bahrain - Premier League,0.0,0.67,-2,0.67,0.0,1.49,7
 East Riffa,4,0,1,3,3,8,-5,1,Bahrain - Premier League,0.0,0.25,-5,0.75,0.0,4.0,8
+Bashundhara K.,2,2,0,0,11,1,10,6,Bangladesh - Premier League,1.0,1.0,10,5.5,1.0,1.0,1
+Rahmatgonj,2,2,0,0,6,2,4,6,Bangladesh - Premier League,1.0,1.0,4,3.0,1.0,1.0,1
+Brothers Union,2,2,0,0,4,1,3,6,Bangladesh - Premier League,1.0,1.0,3,2.0,1.0,1.0,1
+Abahani,2,2,0,0,2,0,2,6,Bangladesh - Premier League,1.0,1.0,2,1.0,1.0,1.0,1
+Mohammedan,2,2,0,0,2,0,2,6,Bangladesh - Premier League,1.0,1.0,2,1.0,1.0,1.0,1
+B. Police,2,1,0,1,5,4,1,3,Bangladesh - Premier League,0.5,0.5,1,2.5,2.0,2.0,2
+Fortis,2,0,2,0,2,2,0,2,Bangladesh - Premier League,0.0,1.0,0,1.0,0.0,1.0,3
+Chittagong,2,0,0,2,0,4,-4,0,Bangladesh - Premier League,0.0,0.0,-4,0.0,0.0,0.0,4
+Fakirerpool,2,0,0,2,0,5,-5,0,Bangladesh - Premier League,0.0,0.0,-5,0.0,0.0,0.0,4
+Dhaka Wanderers,2,0,0,2,0,10,-10,0,Bangladesh - Premier League,0.0,0.0,-10,0.0,0.0,0.0,4
 Dinamo Minsk,8,8,0,0,15,0,15,24,Belarus - Vysshaya Liga,1.0,1.0,15,1.88,1.0,1.0,1
 Dinamo Brest,8,5,2,1,17,8,9,17,Belarus - Vysshaya Liga,0.62,0.88,9,2.12,1.61,1.14,2
 Neman Grodno,8,5,2,1,13,6,7,17,Belarus - Vysshaya Liga,0.62,0.88,7,1.62,1.61,1.14,2
@@ -257,199 +279,311 @@ Orsha,8,2,2,4,10,13,-3,8,Belarus - First League,0.25,0.5,-3,1.25,4.0,2.0,11
 Ostrovets,8,2,1,5,8,17,-9,7,Belarus - First League,0.25,0.38,-9,1.0,4.0,2.63,12
 ABFF U17,8,1,3,4,3,8,-5,6,Belarus - First League,0.12,0.5,-5,0.38,8.33,2.0,13
 T. Zhodhino B,8,1,0,7,9,24,-15,3,Belarus - First League,0.12,0.12,-15,1.12,8.33,8.33,14
-KRC Genk,8,8,0,0,20,5,15,24,belgium,1.0,1.0,15,2.5,1.0,1.0,1
-Club Brugge,8,6,1,1,22,7,15,19,belgium,0.75,0.88,15,2.75,1.33,1.14,2
-KV Mechelen,8,5,2,1,21,6,15,17,belgium,0.62,0.88,15,2.62,1.61,1.14,3
-Gent,8,5,2,1,18,5,13,17,belgium,0.62,0.88,13,2.25,1.61,1.14,3
-Charleroi,8,5,2,1,10,5,5,17,belgium,0.62,0.88,5,1.25,1.61,1.14,3
-Antwerp,8,5,1,2,21,6,15,16,belgium,0.62,0.75,15,2.62,1.61,1.33,4
-Anderlecht,8,4,3,1,18,6,12,15,belgium,0.5,0.88,12,2.25,2.0,1.14,5
-Royale Union SG,8,4,3,1,15,7,8,15,belgium,0.5,0.88,8,1.88,2.0,1.14,5
-Standard Liege,8,4,2,2,8,6,2,14,belgium,0.5,0.75,2,1.0,2.0,1.33,6
-Sint-Truiden,8,3,4,1,12,10,2,13,belgium,0.38,0.88,2,1.5,2.63,1.14,7
-Kortrijk,8,4,1,3,9,11,-2,13,belgium,0.5,0.62,-2,1.12,2.0,1.61,7
-Cercle Brugge,8,3,3,2,8,10,-2,12,belgium,0.38,0.75,-2,1.0,2.63,1.33,8
-OH Leuven,8,2,5,1,7,5,2,11,belgium,0.25,0.88,2,0.88,4.0,1.14,9
-Westerlo,8,2,4,2,14,10,4,10,belgium,0.25,0.75,4,1.75,4.0,1.33,10
-Beerschot,8,2,4,2,10,12,-2,10,belgium,0.25,0.75,-2,1.25,4.0,1.33,10
-Dender,8,2,2,4,8,14,-6,8,belgium,0.25,0.5,-6,1.0,4.0,2.0,11
-Zulte-Waregem,8,6,1,1,19,7,12,19,belgium2,0.75,0.88,12,2.38,1.33,1.14,1
-Lierse K.,8,5,2,1,18,9,9,17,belgium2,0.62,0.88,9,2.25,1.61,1.14,2
-La Louviere,8,5,2,1,15,6,9,17,belgium2,0.62,0.88,9,1.88,1.61,1.14,2
-Beveren,8,4,3,1,11,5,6,15,belgium2,0.5,0.88,6,1.38,2.0,1.14,3
-Patro Eisden,8,4,2,2,20,11,9,14,belgium2,0.5,0.75,9,2.5,2.0,1.33,4
-RWDM,7,4,2,1,10,6,4,14,belgium2,0.57,0.86,4,1.43,1.75,1.16,4
-Club Brugge B,8,4,1,3,14,12,2,13,belgium2,0.5,0.62,2,1.75,2.0,1.61,5
-Anderlecht B,6,2,1,3,9,9,0,7,belgium2,0.33,0.5,0,1.5,3.03,2.0,6
-RFC Liege,7,1,4,2,7,10,-3,7,belgium2,0.14,0.71,-3,1.0,7.14,1.41,6
-Lommel SK,6,1,3,2,6,8,-2,6,belgium2,0.17,0.67,-2,1.0,5.88,1.49,7
-KRC Genk B,8,2,0,6,10,18,-8,6,belgium2,0.25,0.25,-8,1.25,4.0,4.0,7
-Lokeren-Temse,7,1,1,5,7,10,-3,4,belgium2,0.14,0.29,-3,1.0,7.14,3.45,8
-Francs Borains,8,1,1,6,9,15,-6,4,belgium2,0.12,0.25,-6,1.12,8.33,4.0,8
-Eupen,7,1,1,5,9,16,-7,4,belgium2,0.14,0.29,-7,1.29,7.14,3.45,8
-Seraing,8,0,3,5,8,16,-8,3,belgium2,0.0,0.38,-8,1.0,0.0,2.63,9
-Deinze,0,0,0,0,0,0,0,0,belgium2,0.0,0.0,0,0.0,0.0,0.0,10
-Gualberto V. SJ,8,7,1,0,31,6,25,22,bolivia2,0.88,1.0,25,3.88,1.14,1.0,1
-The Strongest,8,7,1,0,27,6,21,22,bolivia2,0.88,1.0,21,3.38,1.14,1.0,1
-Bolivar,8,6,1,1,25,8,17,19,bolivia2,0.75,0.88,17,3.12,1.33,1.14,2
-Nacional Potosi,8,5,1,2,17,8,9,16,bolivia2,0.62,0.75,9,2.12,1.61,1.33,3
-Aurora,8,5,1,2,15,8,7,16,bolivia2,0.62,0.75,7,1.88,1.61,1.33,3
-Real Tomayapo,8,5,1,2,12,8,4,16,bolivia2,0.62,0.75,4,1.5,1.61,1.33,3
-Always Ready,8,4,2,2,15,11,4,14,bolivia2,0.5,0.75,4,1.88,2.0,1.33,4
-Wilstermann,8,3,4,1,15,11,4,13,bolivia2,0.38,0.88,4,1.88,2.63,1.14,5
-Blooming,8,3,4,1,11,7,4,13,bolivia2,0.38,0.88,4,1.38,2.63,1.14,5
-Oriente P.,8,4,1,3,18,15,3,13,bolivia2,0.5,0.62,3,2.25,2.0,1.61,5
-Guabira,8,4,1,3,11,9,2,13,bolivia2,0.5,0.62,2,1.38,2.0,1.61,5
-Royal Pari,8,4,1,3,9,7,2,13,bolivia2,0.5,0.62,2,1.12,2.0,1.61,5
-I. Petrolero,8,3,2,3,17,18,-1,11,bolivia2,0.38,0.62,-1,2.12,2.63,1.61,6
-U. de Vinto,8,3,1,4,11,12,-1,10,bolivia2,0.38,0.5,-1,1.38,2.63,2.0,7
-SA Bulo Bulo,8,1,2,5,15,20,-5,5,bolivia2,0.12,0.38,-5,1.88,8.33,2.63,8
-Santa Cruz,8,1,1,6,7,17,-10,4,bolivia2,0.12,0.25,-10,0.88,8.33,4.0,9
-Corinthians,8,7,1,0,22,7,15,22,brazil,0.88,1.0,15,2.75,1.14,1.0,1
-Fortaleza,8,6,2,0,14,2,12,20,brazil,0.75,1.0,12,1.75,1.33,1.0,2
-Internacional,8,6,1,1,16,4,12,19,brazil,0.75,0.88,12,2.0,1.33,1.14,3
-Palmeiras,8,5,1,2,18,8,10,16,brazil,0.62,0.75,10,2.25,1.61,1.33,4
-Botafogo,8,4,4,0,11,4,7,16,brazil,0.5,1.0,7,1.38,2.0,1.0,4
-Sao Paulo,8,5,1,2,15,10,5,16,brazil,0.62,0.75,5,1.88,1.61,1.33,4
-Fluminense,8,4,3,1,9,5,4,15,brazil,0.5,0.88,4,1.12,2.0,1.14,5
-Flamengo,8,4,3,1,13,10,3,15,brazil,0.5,0.88,3,1.62,2.0,1.14,5
-Vasco da Gama,8,4,2,2,11,8,3,14,brazil,0.5,0.75,3,1.38,2.0,1.33,6
-Vitoria,8,4,2,2,10,7,3,14,brazil,0.5,0.75,3,1.25,2.0,1.33,6
-Atletico GO,8,4,2,2,7,5,2,14,brazil,0.5,0.75,2,0.88,2.0,1.33,6
-Gremio,8,4,1,3,16,15,1,13,brazil,0.5,0.62,1,2.0,2.0,1.61,7
-Athletico PR,8,3,2,3,10,7,3,11,brazil,0.38,0.62,3,1.25,2.63,1.61,8
-Atletico MG,8,3,2,3,11,11,0,11,brazil,0.38,0.62,0,1.38,2.63,1.61,8
-Bahia,8,3,2,3,8,8,0,11,brazil,0.38,0.62,0,1.0,2.63,1.61,8
-Bragantino,8,1,6,1,11,8,3,9,brazil,0.12,0.88,3,1.38,8.33,1.14,9
-Cruzeiro,8,2,3,3,9,9,0,9,brazil,0.25,0.62,0,1.12,4.0,1.61,9
-Cuiaba,8,2,2,4,7,8,-1,8,brazil,0.25,0.5,-1,0.88,4.0,2.0,10
-Criciuma,8,2,2,4,6,10,-4,8,brazil,0.25,0.5,-4,0.75,4.0,2.0,10
-Juventude,8,2,2,4,10,16,-6,8,brazil,0.25,0.5,-6,1.25,4.0,2.0,10
-Ceara,8,8,0,0,14,2,12,24,brazil2,1.0,1.0,12,1.75,1.0,1.0,1
-America MG,8,6,2,0,17,6,11,20,brazil2,0.75,1.0,11,2.12,1.33,1.0,2
-Mirassol,8,6,2,0,11,1,10,20,brazil2,0.75,1.0,10,1.38,1.33,1.0,2
-Goias,8,6,0,2,11,4,7,18,brazil2,0.75,0.75,7,1.38,1.33,1.33,3
-Operario PR,8,5,3,0,11,6,5,18,brazil2,0.62,1.0,5,1.38,1.61,1.0,3
-Paysandu,8,6,0,2,10,5,5,18,brazil2,0.75,0.75,5,1.25,1.33,1.33,3
-Sport Recife,8,5,2,1,16,7,9,17,brazil2,0.62,0.88,9,2.0,1.61,1.14,4
-Santos,8,5,2,1,13,8,5,17,brazil2,0.62,0.88,5,1.62,1.61,1.14,4
-Novorizontino,8,5,1,2,11,6,5,16,brazil2,0.62,0.75,5,1.38,1.61,1.33,5
-Vila Nova,8,5,1,2,12,11,1,16,brazil2,0.62,0.75,1,1.5,1.61,1.33,5
-Chapecoense,8,5,1,2,11,11,0,16,brazil2,0.62,0.75,0,1.38,1.61,1.33,5
-Amazonas,8,5,1,2,9,9,0,16,brazil2,0.62,0.75,0,1.12,1.61,1.33,5
-Avai,8,4,3,1,10,5,5,15,brazil2,0.5,0.88,5,1.25,2.0,1.14,6
-Coritiba,8,4,2,2,12,10,2,14,brazil2,0.5,0.75,2,1.5,2.0,1.33,7
-Guarani,8,3,4,1,6,5,1,13,brazil2,0.38,0.88,1,0.75,2.63,1.14,8
-Brusque,8,4,0,4,8,7,1,12,brazil2,0.5,0.5,1,1.0,2.0,2.0,9
-Ituano,8,3,0,5,7,10,-3,9,brazil2,0.38,0.38,-3,0.88,2.63,2.63,10
-CRB,8,2,2,4,8,10,-2,8,brazil2,0.25,0.5,-2,1.0,4.0,2.0,11
-Botafogo SP,8,2,2,4,6,11,-5,8,brazil2,0.25,0.5,-5,0.75,4.0,2.0,11
-Ponte Preta,8,2,0,6,5,15,-10,6,brazil2,0.25,0.25,-10,0.62,4.0,4.0,12
-Botafogo PB,8,7,1,0,19,10,9,22,brazil3,0.88,1.0,9,2.38,1.14,1.0,1
-Athletic Club,8,7,0,1,17,9,8,21,brazil3,0.88,0.88,8,2.12,1.14,1.14,2
-Caxias,8,6,1,1,13,6,7,19,brazil3,0.75,0.88,7,1.62,1.33,1.14,3
-Remo,8,6,1,1,10,3,7,19,brazil3,0.75,0.88,7,1.25,1.33,1.14,3
-Ferroviaria,8,5,3,0,12,4,8,18,brazil3,0.62,1.0,8,1.5,1.61,1.0,4
-Confianca,8,5,2,1,13,4,9,17,brazil3,0.62,0.88,9,1.62,1.61,1.14,5
-Sao Bernardo,8,5,2,1,9,2,7,17,brazil3,0.62,0.88,7,1.12,1.61,1.14,5
-Volta Redonda,8,5,2,1,13,8,5,17,brazil3,0.62,0.88,5,1.62,1.61,1.14,5
-Ypiranga,8,5,2,1,9,4,5,17,brazil3,0.62,0.88,5,1.12,1.61,1.14,5
-Londrina,8,4,4,0,14,7,7,16,brazil3,0.5,1.0,7,1.75,2.0,1.0,6
-Nautico,8,4,2,2,17,9,8,14,brazil3,0.5,0.75,8,2.12,2.0,1.33,7
-Sampaio Correa,8,4,2,2,12,9,3,14,brazil3,0.5,0.75,3,1.5,2.0,1.33,7
-ABC,8,4,2,2,9,6,3,14,brazil3,0.5,0.75,3,1.12,2.0,1.33,7
-Figueirense,8,3,4,1,7,3,4,13,brazil3,0.38,0.88,4,0.88,2.63,1.14,8
-Tombense,8,2,4,2,8,6,2,10,brazil3,0.25,0.75,2,1.0,4.0,1.33,9
-CSA,8,2,4,2,10,13,-3,10,brazil3,0.25,0.75,-3,1.25,4.0,1.33,9
-Ferroviario,8,2,4,2,9,13,-4,10,brazil3,0.25,0.75,-4,1.12,4.0,1.33,9
-Floresta,8,3,1,4,9,14,-5,10,brazil3,0.38,0.5,-5,1.12,2.63,2.0,9
-EC Sao Jose,8,2,2,4,5,5,0,8,brazil3,0.25,0.5,0,0.62,4.0,2.0,10
-Aparecidense,8,1,5,2,8,9,-1,8,brazil3,0.12,0.75,-1,1.0,8.33,1.33,10
-Maringa,7,7,0,0,15,1,14,21,brazil4,1.0,1.0,14,2.14,1.0,1.0,1
-Iguatu,7,7,0,0,10,0,10,21,brazil4,1.0,1.0,10,1.43,1.0,1.0,1
-Manauara,7,6,1,0,21,4,17,19,brazil4,0.86,1.0,17,3.0,1.16,1.0,2
-Porto Velho,7,6,1,0,21,4,17,19,brazil4,0.86,1.0,17,3.0,1.16,1.0,2
-Nova Iguacu,7,6,1,0,13,1,12,19,brazil4,0.86,1.0,12,1.86,1.16,1.0,2
-Brasiliense,7,6,1,0,14,3,11,19,brazil4,0.86,1.0,11,2.0,1.16,1.0,2
-America RN,7,6,1,0,12,2,10,19,brazil4,0.86,1.0,10,1.71,1.16,1.0,2
-Retro,7,6,0,1,14,4,10,18,brazil4,0.86,0.86,10,2.0,1.16,1.16,3
-Treze,7,5,2,0,13,3,10,17,brazil4,0.71,1.0,10,1.86,1.41,1.0,4
-Itabaiana,7,5,1,1,13,4,9,16,brazil4,0.71,0.86,9,1.86,1.41,1.16,5
-Inter Limeira,7,5,1,1,12,4,8,16,brazil4,0.71,0.86,8,1.71,1.41,1.16,5
-Jacuipense,7,5,1,1,10,4,6,16,brazil4,0.71,0.86,6,1.43,1.41,1.16,5
-Agua Santa,7,5,1,1,8,4,4,16,brazil4,0.71,0.86,4,1.14,1.41,1.16,5
-Maranhao,7,5,0,2,14,4,10,15,brazil4,0.71,0.71,10,2.0,1.41,1.41,6
-Portuguesa RJ,7,4,3,0,12,2,10,15,brazil4,0.57,1.0,10,1.71,1.75,1.0,6
-Brasil de P.,7,5,0,2,12,5,7,15,brazil4,0.71,0.71,7,1.71,1.41,1.41,6
-Mixto,7,4,3,0,11,5,6,15,brazil4,0.57,1.0,6,1.57,1.75,1.0,6
-Manaus,7,5,0,2,10,8,2,15,brazil4,0.71,0.71,2,1.43,1.41,1.41,6
-P. do Solimoes,7,4,2,1,14,6,8,14,brazil4,0.57,0.86,8,2.0,1.75,1.16,7
-Real Noroeste,7,4,2,1,11,5,6,14,brazil4,0.57,0.86,6,1.57,1.75,1.16,7
-CRAC,7,4,2,1,9,3,6,14,brazil4,0.57,0.86,6,1.29,1.75,1.16,7
-Concordia,7,4,2,1,9,4,5,14,brazil4,0.57,0.86,5,1.29,1.75,1.16,7
-Tocantinopolis,7,4,2,1,10,6,4,14,brazil4,0.57,0.86,4,1.43,1.75,1.16,7
-Avenida,7,4,2,1,8,4,4,14,brazil4,0.57,0.86,4,1.14,1.75,1.16,7
-Altos,7,4,1,2,12,7,5,13,brazil4,0.57,0.71,5,1.71,1.75,1.41,8
-Cameta,7,4,1,2,12,8,4,13,brazil4,0.57,0.71,4,1.71,1.75,1.41,8
-Santa Cruz de N,7,4,1,2,14,11,3,13,brazil4,0.57,0.71,3,2.0,1.75,1.41,8
-ASA,7,4,1,2,7,4,3,13,brazil4,0.57,0.71,3,1.0,1.75,1.41,8
-Costa Rica MS,7,4,1,2,11,11,0,13,brazil4,0.57,0.71,0,1.57,1.75,1.41,8
-Ludogorets,8,7,1,0,15,0,15,22,bulgaria,0.88,1.0,15,1.88,1.14,1.0,1
-Cherno More,8,6,2,0,15,3,12,20,bulgaria,0.75,1.0,12,1.88,1.33,1.0,2
-Arda,8,6,1,1,14,10,4,19,bulgaria,0.75,0.88,4,1.75,1.33,1.14,3
-Levski Sofia,8,6,0,2,13,7,6,18,bulgaria,0.75,0.75,6,1.62,1.33,1.33,4
-Botev Plovdiv,8,6,0,2,11,6,5,18,bulgaria,0.75,0.75,5,1.38,1.33,1.33,4
-Slavia Sofia,8,4,1,3,10,9,1,13,bulgaria,0.5,0.62,1,1.25,2.0,1.61,5
-Beroe,8,4,0,4,11,6,5,12,bulgaria,0.5,0.5,5,1.38,2.0,2.0,6
-CSKA Sofia,8,3,3,2,12,9,3,12,bulgaria,0.38,0.75,3,1.5,2.63,1.33,6
-Spartak Varna,8,3,2,3,11,11,0,11,bulgaria,0.38,0.62,0,1.38,2.63,1.61,7
-L. Krumovgrad,8,2,2,4,6,8,-2,8,bulgaria,0.25,0.5,-2,0.75,4.0,2.0,8
-Botev Vratsa,8,2,2,4,8,13,-5,8,bulgaria,0.25,0.5,-5,1.0,4.0,2.0,8
-Septemvri Sofia,8,2,1,5,8,12,-4,7,bulgaria,0.25,0.38,-4,1.0,4.0,2.63,9
-CSKA 1948 Sofia,8,2,1,5,9,15,-6,7,bulgaria,0.25,0.38,-6,1.12,4.0,2.63,9
-Hebar,8,1,3,4,6,9,-3,6,bulgaria,0.12,0.5,-3,0.75,8.33,2.0,10
-Lokomotiv Sofia,8,1,3,4,3,9,-6,6,bulgaria,0.12,0.5,-6,0.38,8.33,2.0,10
-Lok. Plovdiv,8,0,3,5,8,15,-7,3,bulgaria,0.0,0.38,-7,1.0,0.0,2.63,11
-Forge,8,7,0,1,16,4,12,21,canada,0.88,0.88,12,2.0,1.14,1.14,1
-HFX Wanderers,8,5,3,0,17,9,8,18,canada,0.62,1.0,8,2.12,1.61,1.0,2
-Cavalry,8,3,4,1,12,10,2,13,canada,0.38,0.88,2,1.5,2.63,1.14,3
-York Utd,8,3,2,3,10,9,1,11,canada,0.38,0.62,1,1.25,2.63,1.61,4
-A. Ottawa,8,2,4,2,10,10,0,10,canada,0.25,0.75,0,1.25,4.0,1.33,5
-Pacific,8,3,1,4,10,13,-3,10,canada,0.38,0.5,-3,1.25,2.63,2.0,5
-Valour,8,2,2,4,7,9,-2,8,canada,0.25,0.5,-2,0.88,4.0,2.0,6
-Vancouver FC,8,1,2,5,5,12,-7,5,canada,0.12,0.38,-7,0.62,8.33,2.63,7
-Colo-Colo,8,8,0,0,16,4,12,24,chile,1.0,1.0,12,2.0,1.0,1.0,1
-U. de Chile,8,6,2,0,12,2,10,20,chile,0.75,1.0,10,1.5,1.33,1.0,2
-D. Iquique,8,6,1,1,18,8,10,19,chile,0.75,0.88,10,2.25,1.33,1.14,3
-Cobresal,8,6,1,1,18,11,7,19,chile,0.75,0.88,7,2.25,1.33,1.14,3
-Palestino,8,5,1,2,17,9,8,16,chile,0.62,0.75,8,2.12,1.61,1.33,4
-Huachipato,8,4,3,1,10,7,3,15,chile,0.5,0.88,3,1.25,2.0,1.14,5
-Audax Italiano,8,4,1,3,12,8,4,13,chile,0.5,0.62,4,1.5,2.0,1.61,6
-Union La Calera,8,4,1,3,13,11,2,13,chile,0.5,0.62,2,1.62,2.0,1.61,6
-Cobreloa,8,4,1,3,12,10,2,13,chile,0.5,0.62,2,1.5,2.0,1.61,6
-Union Espanola,8,4,0,4,15,12,3,12,chile,0.5,0.5,3,1.88,2.0,2.0,7
-Everton,8,3,3,2,8,6,2,12,chile,0.38,0.75,2,1.0,2.63,1.33,7
-U. Catolica,8,3,2,3,15,10,5,11,chile,0.38,0.62,5,1.88,2.63,1.61,8
-Nublense,8,3,2,3,9,8,1,11,chile,0.38,0.62,1,1.12,2.63,1.61,8
-Coquimbo Unido,8,2,4,2,9,8,1,10,chile,0.25,0.75,1,1.12,4.0,1.33,9
-Copiapo,8,2,2,4,13,15,-2,8,chile,0.25,0.5,-2,1.62,4.0,2.0,10
-OHiggins,8,1,3,4,7,16,-9,6,chile,0.12,0.5,-9,0.88,8.33,2.0,11
-La Serena,8,7,1,0,13,3,10,22,chile2,0.88,1.0,10,1.62,1.14,1.0,1
-Magallanes,8,4,3,1,14,6,8,15,chile2,0.5,0.88,8,1.75,2.0,1.14,2
-Deportes Temuco,8,4,2,2,11,5,6,14,chile2,0.5,0.75,6,1.38,2.0,1.33,3
-U. Concepcion,8,4,2,2,14,9,5,14,chile2,0.5,0.75,5,1.75,2.0,1.33,3
-CD Santa Cruz,8,4,2,2,11,7,4,14,chile2,0.5,0.75,4,1.38,2.0,1.33,3
-Recoleta,8,3,4,1,14,8,6,13,chile2,0.38,0.88,6,1.75,2.63,1.14,4
-Rangers,8,3,4,1,11,6,5,13,chile2,0.38,0.88,5,1.38,2.63,1.14,4
-Barnechea,8,4,1,3,13,11,2,13,chile2,0.5,0.62,2,1.62,2.0,1.61,4
-S. Wanderers,8,3,3,2,13,8,5,12,chile2,0.38,0.75,5,1.62,2.63,1.33,5
-U. San Felipe,8,2,5,1,7,5,2,11,chile2,0.25,0.88,2,0.88,4.0,1.14,6
-Antofagasta,8,2,4,2,10,10,0,10,chile2,0.25,0.75,0,1.25,4.0,1.33,7
-S. Morning,8,3,0,5,5,8,-3,9,chile2,0.38,0.38,-3,0.62,2.63,2.63,8
-D. Limache,8,2,2,4,9,12,-3,8,chile2,0.25,0.5,-3,1.12,4.0,2.0,9
-Curico Unido,8,2,1,5,7,14,-7,7,chile2,0.25,0.38,-7,0.88,4.0,2.63,10
-San Marcos,8,1,3,4,8,12,-4,6,chile2,0.12,0.5,-4,1.0,8.33,2.0,11
-San Luis,8,0,3,5,4,16,-12,3,chile2,0.0,0.38,-12,0.5,0.0,2.63,12
+KRC Genk,8,8,0,0,20,5,15,24,Belgium - Pro League,1.0,1.0,15,2.5,1.0,1.0,1
+Club Brugge,8,6,1,1,22,7,15,19,Belgium - Pro League,0.75,0.88,15,2.75,1.33,1.14,2
+KV Mechelen,8,5,2,1,21,6,15,17,Belgium - Pro League,0.62,0.88,15,2.62,1.61,1.14,3
+Gent,8,5,2,1,18,5,13,17,Belgium - Pro League,0.62,0.88,13,2.25,1.61,1.14,3
+Charleroi,8,5,2,1,10,5,5,17,Belgium - Pro League,0.62,0.88,5,1.25,1.61,1.14,3
+Antwerp,8,5,1,2,21,6,15,16,Belgium - Pro League,0.62,0.75,15,2.62,1.61,1.33,4
+Anderlecht,8,4,3,1,18,6,12,15,Belgium - Pro League,0.5,0.88,12,2.25,2.0,1.14,5
+Royale Union SG,8,4,3,1,15,7,8,15,Belgium - Pro League,0.5,0.88,8,1.88,2.0,1.14,5
+Standard Liege,8,4,2,2,8,6,2,14,Belgium - Pro League,0.5,0.75,2,1.0,2.0,1.33,6
+Sint-Truiden,8,3,4,1,12,10,2,13,Belgium - Pro League,0.38,0.88,2,1.5,2.63,1.14,7
+Kortrijk,8,4,1,3,9,11,-2,13,Belgium - Pro League,0.5,0.62,-2,1.12,2.0,1.61,7
+Cercle Brugge,8,3,3,2,8,10,-2,12,Belgium - Pro League,0.38,0.75,-2,1.0,2.63,1.33,8
+OH Leuven,8,2,5,1,7,5,2,11,Belgium - Pro League,0.25,0.88,2,0.88,4.0,1.14,9
+Westerlo,8,2,4,2,14,10,4,10,Belgium - Pro League,0.25,0.75,4,1.75,4.0,1.33,10
+Beerschot,8,2,4,2,10,12,-2,10,Belgium - Pro League,0.25,0.75,-2,1.25,4.0,1.33,10
+Dender,8,2,2,4,8,14,-6,8,Belgium - Pro League,0.25,0.5,-6,1.0,4.0,2.0,11
+Zulte-Waregem,8,6,1,1,19,7,12,19,Belgium - Challenger Pro League,0.75,0.88,12,2.38,1.33,1.14,1
+Lierse K.,8,5,2,1,18,9,9,17,Belgium - Challenger Pro League,0.62,0.88,9,2.25,1.61,1.14,2
+La Louviere,8,5,2,1,15,6,9,17,Belgium - Challenger Pro League,0.62,0.88,9,1.88,1.61,1.14,2
+Beveren,8,4,3,1,11,5,6,15,Belgium - Challenger Pro League,0.5,0.88,6,1.38,2.0,1.14,3
+Patro Eisden,8,4,2,2,20,11,9,14,Belgium - Challenger Pro League,0.5,0.75,9,2.5,2.0,1.33,4
+RWDM,7,4,2,1,10,6,4,14,Belgium - Challenger Pro League,0.57,0.86,4,1.43,1.75,1.16,4
+Club Brugge B,8,4,1,3,14,12,2,13,Belgium - Challenger Pro League,0.5,0.62,2,1.75,2.0,1.61,5
+Anderlecht B,6,2,1,3,9,9,0,7,Belgium - Challenger Pro League,0.33,0.5,0,1.5,3.03,2.0,6
+RFC Liege,7,1,4,2,7,10,-3,7,Belgium - Challenger Pro League,0.14,0.71,-3,1.0,7.14,1.41,6
+Lommel SK,6,1,3,2,6,8,-2,6,Belgium - Challenger Pro League,0.17,0.67,-2,1.0,5.88,1.49,7
+KRC Genk B,8,2,0,6,10,18,-8,6,Belgium - Challenger Pro League,0.25,0.25,-8,1.25,4.0,4.0,7
+Lokeren-Temse,7,1,1,5,7,10,-3,4,Belgium - Challenger Pro League,0.14,0.29,-3,1.0,7.14,3.45,8
+Francs Borains,8,1,1,6,9,15,-6,4,Belgium - Challenger Pro League,0.12,0.25,-6,1.12,8.33,4.0,8
+Eupen,7,1,1,5,9,16,-7,4,Belgium - Challenger Pro League,0.14,0.29,-7,1.29,7.14,3.45,8
+Seraing,8,0,3,5,8,16,-8,3,Belgium - Challenger Pro League,0.0,0.38,-8,1.0,0.0,2.63,9
+Deinze,0,0,0,0,0,0,0,0,Belgium - Challenger Pro League,0.0,0.0,0,0.0,0.0,0.0,10
+Aurora,4,4,0,0,13,4,9,12,Bolivia - Primera Div. - Apertura,1.0,1.0,9,3.25,1.0,1.0,1
+The Strongest,4,4,0,0,9,2,7,12,Bolivia - Primera Div. - Apertura,1.0,1.0,7,2.25,1.0,1.0,1
+U. de Vinto,4,4,0,0,6,2,4,12,Bolivia - Primera Div. - Apertura,1.0,1.0,4,1.5,1.0,1.0,1
+SA Bulo Bulo,4,3,1,0,10,2,8,10,Bolivia - Primera Div. - Apertura,0.75,1.0,8,2.5,1.33,1.0,2
+Bolivar,4,3,1,0,13,8,5,10,Bolivia - Primera Div. - Apertura,0.75,1.0,5,3.25,1.33,1.0,2
+Nacional Potosi,4,3,1,0,9,4,5,10,Bolivia - Primera Div. - Apertura,0.75,1.0,5,2.25,1.33,1.0,2
+Guabira,4,3,0,1,9,5,4,9,Bolivia - Primera Div. - Apertura,0.75,0.75,4,2.25,1.33,1.33,3
+Blooming,4,3,0,1,5,4,1,9,Bolivia - Primera Div. - Apertura,0.75,0.75,1,1.25,1.33,1.33,3
+I. Petrolero,4,2,2,0,6,4,2,8,Bolivia - Primera Div. - Apertura,0.5,1.0,2,1.5,2.0,1.0,4
+Real Tomayapo,4,2,1,1,6,5,1,7,Bolivia - Primera Div. - Apertura,0.5,0.75,1,1.5,2.0,1.33,5
+Gualberto V. SJ,4,2,1,1,6,6,0,7,Bolivia - Primera Div. - Apertura,0.5,0.75,0,1.5,2.0,1.33,5
+Oriente P.,4,2,1,1,3,3,0,7,Bolivia - Primera Div. - Apertura,0.5,0.75,0,0.75,2.0,1.33,5
+Always Ready,4,1,2,1,3,3,0,5,Bolivia - Primera Div. - Apertura,0.25,0.75,0,0.75,4.0,1.33,6
+Wilstermann,4,1,1,2,8,7,1,4,Bolivia - Primera Div. - Apertura,0.25,0.5,1,2.0,4.0,2.0,7
+Royal Pari,4,0,2,2,2,4,-2,2,Bolivia - Primera Div. - Apertura,0.0,0.5,-2,0.5,0.0,2.0,8
+Santa Cruz,4,0,1,3,4,9,-5,1,Bolivia - Primera Div. - Apertura,0.0,0.25,-5,1.0,0.0,4.0,9
+Gualberto V. SJ,8,7,1,0,31,6,25,22,Bolivia - Primera Div. - Clausura,0.88,1.0,25,3.88,1.14,1.0,1
+The Strongest,8,7,1,0,27,6,21,22,Bolivia - Primera Div. - Clausura,0.88,1.0,21,3.38,1.14,1.0,1
+Bolivar,8,6,1,1,25,8,17,19,Bolivia - Primera Div. - Clausura,0.75,0.88,17,3.12,1.33,1.14,2
+Nacional Potosi,8,5,1,2,17,8,9,16,Bolivia - Primera Div. - Clausura,0.62,0.75,9,2.12,1.61,1.33,3
+Aurora,8,5,1,2,15,8,7,16,Bolivia - Primera Div. - Clausura,0.62,0.75,7,1.88,1.61,1.33,3
+Real Tomayapo,8,5,1,2,12,8,4,16,Bolivia - Primera Div. - Clausura,0.62,0.75,4,1.5,1.61,1.33,3
+Always Ready,8,4,2,2,15,11,4,14,Bolivia - Primera Div. - Clausura,0.5,0.75,4,1.88,2.0,1.33,4
+Wilstermann,8,3,4,1,15,11,4,13,Bolivia - Primera Div. - Clausura,0.38,0.88,4,1.88,2.63,1.14,5
+Blooming,8,3,4,1,11,7,4,13,Bolivia - Primera Div. - Clausura,0.38,0.88,4,1.38,2.63,1.14,5
+Oriente P.,8,4,1,3,18,15,3,13,Bolivia - Primera Div. - Clausura,0.5,0.62,3,2.25,2.0,1.61,5
+Guabira,8,4,1,3,11,9,2,13,Bolivia - Primera Div. - Clausura,0.5,0.62,2,1.38,2.0,1.61,5
+Royal Pari,8,4,1,3,9,7,2,13,Bolivia - Primera Div. - Clausura,0.5,0.62,2,1.12,2.0,1.61,5
+I. Petrolero,8,3,2,3,17,18,-1,11,Bolivia - Primera Div. - Clausura,0.38,0.62,-1,2.12,2.63,1.61,6
+U. de Vinto,8,3,1,4,11,12,-1,10,Bolivia - Primera Div. - Clausura,0.38,0.5,-1,1.38,2.63,2.0,7
+SA Bulo Bulo,8,1,2,5,15,20,-5,5,Bolivia - Primera Div. - Clausura,0.12,0.38,-5,1.88,8.33,2.63,8
+Santa Cruz,8,1,1,6,7,17,-10,4,Bolivia - Primera Div. - Clausura,0.12,0.25,-10,0.88,8.33,4.0,9
+Corinthians,8,7,1,0,22,7,15,22,Brazil - Serie A,0.88,1.0,15,2.75,1.14,1.0,1
+Fortaleza,8,6,2,0,14,2,12,20,Brazil - Serie A,0.75,1.0,12,1.75,1.33,1.0,2
+Internacional,8,6,1,1,16,4,12,19,Brazil - Serie A,0.75,0.88,12,2.0,1.33,1.14,3
+Palmeiras,8,5,1,2,18,8,10,16,Brazil - Serie A,0.62,0.75,10,2.25,1.61,1.33,4
+Botafogo,8,4,4,0,11,4,7,16,Brazil - Serie A,0.5,1.0,7,1.38,2.0,1.0,4
+Sao Paulo,8,5,1,2,15,10,5,16,Brazil - Serie A,0.62,0.75,5,1.88,1.61,1.33,4
+Fluminense,8,4,3,1,9,5,4,15,Brazil - Serie A,0.5,0.88,4,1.12,2.0,1.14,5
+Flamengo,8,4,3,1,13,10,3,15,Brazil - Serie A,0.5,0.88,3,1.62,2.0,1.14,5
+Vasco da Gama,8,4,2,2,11,8,3,14,Brazil - Serie A,0.5,0.75,3,1.38,2.0,1.33,6
+Vitoria,8,4,2,2,10,7,3,14,Brazil - Serie A,0.5,0.75,3,1.25,2.0,1.33,6
+Atletico GO,8,4,2,2,7,5,2,14,Brazil - Serie A,0.5,0.75,2,0.88,2.0,1.33,6
+Gremio,8,4,1,3,16,15,1,13,Brazil - Serie A,0.5,0.62,1,2.0,2.0,1.61,7
+Athletico PR,8,3,2,3,10,7,3,11,Brazil - Serie A,0.38,0.62,3,1.25,2.63,1.61,8
+Atletico MG,8,3,2,3,11,11,0,11,Brazil - Serie A,0.38,0.62,0,1.38,2.63,1.61,8
+Bahia,8,3,2,3,8,8,0,11,Brazil - Serie A,0.38,0.62,0,1.0,2.63,1.61,8
+Bragantino,8,1,6,1,11,8,3,9,Brazil - Serie A,0.12,0.88,3,1.38,8.33,1.14,9
+Cruzeiro,8,2,3,3,9,9,0,9,Brazil - Serie A,0.25,0.62,0,1.12,4.0,1.61,9
+Cuiaba,8,2,2,4,7,8,-1,8,Brazil - Serie A,0.25,0.5,-1,0.88,4.0,2.0,10
+Criciuma,8,2,2,4,6,10,-4,8,Brazil - Serie A,0.25,0.5,-4,0.75,4.0,2.0,10
+Juventude,8,2,2,4,10,16,-6,8,Brazil - Serie A,0.25,0.5,-6,1.25,4.0,2.0,10
+Ceara,8,8,0,0,14,2,12,24,Brazil - Serie B,1.0,1.0,12,1.75,1.0,1.0,1
+America MG,8,6,2,0,17,6,11,20,Brazil - Serie B,0.75,1.0,11,2.12,1.33,1.0,2
+Mirassol,8,6,2,0,11,1,10,20,Brazil - Serie B,0.75,1.0,10,1.38,1.33,1.0,2
+Goias,8,6,0,2,11,4,7,18,Brazil - Serie B,0.75,0.75,7,1.38,1.33,1.33,3
+Operario PR,8,5,3,0,11,6,5,18,Brazil - Serie B,0.62,1.0,5,1.38,1.61,1.0,3
+Paysandu,8,6,0,2,10,5,5,18,Brazil - Serie B,0.75,0.75,5,1.25,1.33,1.33,3
+Sport Recife,8,5,2,1,16,7,9,17,Brazil - Serie B,0.62,0.88,9,2.0,1.61,1.14,4
+Santos,8,5,2,1,13,8,5,17,Brazil - Serie B,0.62,0.88,5,1.62,1.61,1.14,4
+Novorizontino,8,5,1,2,11,6,5,16,Brazil - Serie B,0.62,0.75,5,1.38,1.61,1.33,5
+Vila Nova,8,5,1,2,12,11,1,16,Brazil - Serie B,0.62,0.75,1,1.5,1.61,1.33,5
+Chapecoense,8,5,1,2,11,11,0,16,Brazil - Serie B,0.62,0.75,0,1.38,1.61,1.33,5
+Amazonas,8,5,1,2,9,9,0,16,Brazil - Serie B,0.62,0.75,0,1.12,1.61,1.33,5
+Avai,8,4,3,1,10,5,5,15,Brazil - Serie B,0.5,0.88,5,1.25,2.0,1.14,6
+Coritiba,8,4,2,2,12,10,2,14,Brazil - Serie B,0.5,0.75,2,1.5,2.0,1.33,7
+Guarani,8,3,4,1,6,5,1,13,Brazil - Serie B,0.38,0.88,1,0.75,2.63,1.14,8
+Brusque,8,4,0,4,8,7,1,12,Brazil - Serie B,0.5,0.5,1,1.0,2.0,2.0,9
+Ituano,8,3,0,5,7,10,-3,9,Brazil - Serie B,0.38,0.38,-3,0.88,2.63,2.63,10
+CRB,8,2,2,4,8,10,-2,8,Brazil - Serie B,0.25,0.5,-2,1.0,4.0,2.0,11
+Botafogo SP,8,2,2,4,6,11,-5,8,Brazil - Serie B,0.25,0.5,-5,0.75,4.0,2.0,11
+Ponte Preta,8,2,0,6,5,15,-10,6,Brazil - Serie B,0.25,0.25,-10,0.62,4.0,4.0,12
+Botafogo PB,8,7,1,0,19,10,9,22,Brazil - Serie C,0.88,1.0,9,2.38,1.14,1.0,1
+Athletic Club,8,7,0,1,17,9,8,21,Brazil - Serie C,0.88,0.88,8,2.12,1.14,1.14,2
+Caxias,8,6,1,1,13,6,7,19,Brazil - Serie C,0.75,0.88,7,1.62,1.33,1.14,3
+Remo,8,6,1,1,10,3,7,19,Brazil - Serie C,0.75,0.88,7,1.25,1.33,1.14,3
+Ferroviaria,8,5,3,0,12,4,8,18,Brazil - Serie C,0.62,1.0,8,1.5,1.61,1.0,4
+Confianca,8,5,2,1,13,4,9,17,Brazil - Serie C,0.62,0.88,9,1.62,1.61,1.14,5
+Sao Bernardo,8,5,2,1,9,2,7,17,Brazil - Serie C,0.62,0.88,7,1.12,1.61,1.14,5
+Volta Redonda,8,5,2,1,13,8,5,17,Brazil - Serie C,0.62,0.88,5,1.62,1.61,1.14,5
+Ypiranga,8,5,2,1,9,4,5,17,Brazil - Serie C,0.62,0.88,5,1.12,1.61,1.14,5
+Londrina,8,4,4,0,14,7,7,16,Brazil - Serie C,0.5,1.0,7,1.75,2.0,1.0,6
+Nautico,8,4,2,2,17,9,8,14,Brazil - Serie C,0.5,0.75,8,2.12,2.0,1.33,7
+Sampaio Correa,8,4,2,2,12,9,3,14,Brazil - Serie C,0.5,0.75,3,1.5,2.0,1.33,7
+ABC,8,4,2,2,9,6,3,14,Brazil - Serie C,0.5,0.75,3,1.12,2.0,1.33,7
+Figueirense,8,3,4,1,7,3,4,13,Brazil - Serie C,0.38,0.88,4,0.88,2.63,1.14,8
+Tombense,8,2,4,2,8,6,2,10,Brazil - Serie C,0.25,0.75,2,1.0,4.0,1.33,9
+CSA,8,2,4,2,10,13,-3,10,Brazil - Serie C,0.25,0.75,-3,1.25,4.0,1.33,9
+Ferroviario,8,2,4,2,9,13,-4,10,Brazil - Serie C,0.25,0.75,-4,1.12,4.0,1.33,9
+Floresta,8,3,1,4,9,14,-5,10,Brazil - Serie C,0.38,0.5,-5,1.12,2.63,2.0,9
+EC Sao Jose,8,2,2,4,5,5,0,8,Brazil - Serie C,0.25,0.5,0,0.62,4.0,2.0,10
+Aparecidense,8,1,5,2,8,9,-1,8,Brazil - Serie C,0.12,0.75,-1,1.0,8.33,1.33,10
+Maringa,7,7,0,0,15,1,14,21,Brazil - Serie D,1.0,1.0,14,2.14,1.0,1.0,1
+Iguatu,7,7,0,0,10,0,10,21,Brazil - Serie D,1.0,1.0,10,1.43,1.0,1.0,1
+Manauara,7,6,1,0,21,4,17,19,Brazil - Serie D,0.86,1.0,17,3.0,1.16,1.0,2
+Porto Velho,7,6,1,0,21,4,17,19,Brazil - Serie D,0.86,1.0,17,3.0,1.16,1.0,2
+Nova Iguacu,7,6,1,0,13,1,12,19,Brazil - Serie D,0.86,1.0,12,1.86,1.16,1.0,2
+Brasiliense,7,6,1,0,14,3,11,19,Brazil - Serie D,0.86,1.0,11,2.0,1.16,1.0,2
+America RN,7,6,1,0,12,2,10,19,Brazil - Serie D,0.86,1.0,10,1.71,1.16,1.0,2
+Retro,7,6,0,1,14,4,10,18,Brazil - Serie D,0.86,0.86,10,2.0,1.16,1.16,3
+Treze,7,5,2,0,13,3,10,17,Brazil - Serie D,0.71,1.0,10,1.86,1.41,1.0,4
+Itabaiana,7,5,1,1,13,4,9,16,Brazil - Serie D,0.71,0.86,9,1.86,1.41,1.16,5
+Inter Limeira,7,5,1,1,12,4,8,16,Brazil - Serie D,0.71,0.86,8,1.71,1.41,1.16,5
+Jacuipense,7,5,1,1,10,4,6,16,Brazil - Serie D,0.71,0.86,6,1.43,1.41,1.16,5
+Agua Santa,7,5,1,1,8,4,4,16,Brazil - Serie D,0.71,0.86,4,1.14,1.41,1.16,5
+Maranhao,7,5,0,2,14,4,10,15,Brazil - Serie D,0.71,0.71,10,2.0,1.41,1.41,6
+Portuguesa RJ,7,4,3,0,12,2,10,15,Brazil - Serie D,0.57,1.0,10,1.71,1.75,1.0,6
+Brasil de P.,7,5,0,2,12,5,7,15,Brazil - Serie D,0.71,0.71,7,1.71,1.41,1.41,6
+Mixto,7,4,3,0,11,5,6,15,Brazil - Serie D,0.57,1.0,6,1.57,1.75,1.0,6
+Manaus,7,5,0,2,10,8,2,15,Brazil - Serie D,0.71,0.71,2,1.43,1.41,1.41,6
+P. do Solimoes,7,4,2,1,14,6,8,14,Brazil - Serie D,0.57,0.86,8,2.0,1.75,1.16,7
+Real Noroeste,7,4,2,1,11,5,6,14,Brazil - Serie D,0.57,0.86,6,1.57,1.75,1.16,7
+CRAC,7,4,2,1,9,3,6,14,Brazil - Serie D,0.57,0.86,6,1.29,1.75,1.16,7
+Concordia,7,4,2,1,9,4,5,14,Brazil - Serie D,0.57,0.86,5,1.29,1.75,1.16,7
+Tocantinopolis,7,4,2,1,10,6,4,14,Brazil - Serie D,0.57,0.86,4,1.43,1.75,1.16,7
+Avenida,7,4,2,1,8,4,4,14,Brazil - Serie D,0.57,0.86,4,1.14,1.75,1.16,7
+Altos,7,4,1,2,12,7,5,13,Brazil - Serie D,0.57,0.71,5,1.71,1.75,1.41,8
+Cameta,7,4,1,2,12,8,4,13,Brazil - Serie D,0.57,0.71,4,1.71,1.75,1.41,8
+Santa Cruz de N,7,4,1,2,14,11,3,13,Brazil - Serie D,0.57,0.71,3,2.0,1.75,1.41,8
+ASA,7,4,1,2,7,4,3,13,Brazil - Serie D,0.57,0.71,3,1.0,1.75,1.41,8
+Costa Rica MS,7,4,1,2,11,11,0,13,Brazil - Serie D,0.57,0.71,0,1.57,1.75,1.41,8
+Flamengo,6,6,0,0,17,0,17,18,Brazil - Carioca,1.0,1.0,17,2.83,1.0,1.0,1
+Vasco da Gama,6,5,1,0,11,1,10,16,Brazil - Carioca,0.83,1.0,10,1.83,1.2,1.0,2
+Fluminense,6,4,1,1,12,6,6,13,Brazil - Carioca,0.67,0.83,6,2.0,1.49,1.2,3
+Boavista,5,3,2,0,13,9,4,11,Brazil - Carioca,0.6,1.0,4,2.6,1.67,1.0,4
+Nova Iguacu,5,3,2,0,7,3,4,11,Brazil - Carioca,0.6,1.0,4,1.4,1.67,1.0,4
+Botafogo,6,3,2,1,10,7,3,11,Brazil - Carioca,0.5,0.83,3,1.67,2.0,1.2,4
+Madureira,5,3,1,1,7,2,5,10,Brazil - Carioca,0.6,0.8,5,1.4,1.67,1.25,5
+Portuguesa RJ,5,3,1,1,4,2,2,10,Brazil - Carioca,0.6,0.8,2,0.8,1.67,1.25,5
+Sampaio Correa,5,2,1,2,7,8,-1,7,Brazil - Carioca,0.4,0.6,-1,1.4,2.5,1.67,6
+Bangu,5,1,2,2,7,10,-3,5,Brazil - Carioca,0.2,0.6,-3,1.4,5.0,1.67,7
+Volta Redonda,6,1,2,3,7,10,-3,5,Brazil - Carioca,0.17,0.5,-3,1.17,5.88,2.0,7
+Audax,6,0,0,6,1,11,-10,0,Brazil - Carioca,0.0,0.0,-10,0.17,0.0,0.0,8
+Athletic Club,4,3,0,1,8,5,3,9,Brazil - Mineiro,0.75,0.75,3,2.0,1.33,1.33,1
+America MG,4,2,2,0,9,1,8,8,Brazil - Mineiro,0.5,1.0,8,2.25,2.0,1.0,2
+Atletico MG,4,2,1,1,8,3,5,7,Brazil - Mineiro,0.5,0.75,5,2.0,2.0,1.33,3
+Tombense,4,2,1,1,7,3,4,7,Brazil - Mineiro,0.5,0.75,4,1.75,2.0,1.33,3
+Cruzeiro,4,2,1,1,6,3,3,7,Brazil - Mineiro,0.5,0.75,3,1.5,2.0,1.33,3
+Patrocinense,4,2,0,2,4,4,0,6,Brazil - Mineiro,0.5,0.5,0,1.0,2.0,2.0,4
+Pouso Alegre,4,2,0,2,4,4,0,6,Brazil - Mineiro,0.5,0.5,0,1.0,2.0,2.0,4
+Ipatinga,4,2,0,2,4,7,-3,6,Brazil - Mineiro,0.5,0.5,-3,1.0,2.0,2.0,4
+Uberlandia,4,1,1,2,4,5,-1,4,Brazil - Mineiro,0.25,0.5,-1,1.0,4.0,2.0,5
+Democrata GV,4,1,1,2,6,9,-3,4,Brazil - Mineiro,0.25,0.5,-3,1.5,4.0,2.0,5
+Itabirito,4,0,2,2,2,6,-4,2,Brazil - Mineiro,0.0,0.5,-4,0.5,0.0,2.0,6
+Villa Nova,4,0,1,3,5,12,-7,1,Brazil - Mineiro,0.0,0.25,-7,1.25,0.0,4.0,7
+Vila Nova,6,6,0,0,13,3,10,18,Brazil - Goiano,1.0,1.0,10,2.17,1.0,1.0,1
+Atletico GO,6,5,1,0,17,2,15,16,Brazil - Goiano,0.83,1.0,15,2.83,1.2,1.0,2
+Anapolis,6,5,1,0,14,0,14,16,Brazil - Goiano,0.83,1.0,14,2.33,1.2,1.0,2
+Goias,6,5,1,0,10,1,9,16,Brazil - Goiano,0.83,1.0,9,1.67,1.2,1.0,2
+Aparecidense,6,2,4,0,9,6,3,10,Brazil - Goiano,0.33,1.0,3,1.5,3.03,1.0,3
+Goiania,5,3,0,2,8,6,2,9,Brazil - Goiano,0.6,0.6,2,1.6,1.67,1.67,4
+Goiatuba EC,5,2,2,1,4,3,1,8,Brazil - Goiano,0.4,0.8,1,0.8,2.5,1.25,5
+Goianesia,5,2,2,1,3,2,1,8,Brazil - Goiano,0.4,0.8,1,0.6,2.5,1.25,5
+Jataiense,5,2,1,2,6,9,-3,7,Brazil - Goiano,0.4,0.6,-3,1.2,2.5,1.67,6
+CRAC,6,1,2,3,2,5,-3,5,Brazil - Goiano,0.17,0.5,-3,0.33,5.88,2.0,7
+Morrinhos,5,1,1,3,3,7,-4,4,Brazil - Goiano,0.2,0.4,-4,0.6,5.0,2.5,8
+Ipora,5,1,1,3,5,10,-5,4,Brazil - Goiano,0.2,0.4,-5,1.0,5.0,2.5,8
+Nautico,5,4,1,0,7,0,7,13,Brazil - Pernambucano,0.8,1.0,7,1.4,1.25,1.0,1
+Sport Recife,5,4,0,1,11,6,5,12,Brazil - Pernambucano,0.8,0.8,5,2.2,1.25,1.25,2
+Santa Cruz,5,3,1,1,9,3,6,10,Brazil - Pernambucano,0.6,0.8,6,1.8,1.67,1.25,3
+Retro,5,3,1,1,7,1,6,10,Brazil - Pernambucano,0.6,0.8,6,1.4,1.67,1.25,3
+Maguary PE,4,2,1,1,10,5,5,7,Brazil - Pernambucano,0.5,0.75,5,2.5,2.0,1.33,4
+Afogados,4,2,0,2,6,6,0,6,Brazil - Pernambucano,0.5,0.5,0,1.5,2.0,2.0,5
+Central,4,1,2,1,6,4,2,5,Brazil - Pernambucano,0.25,0.75,2,1.5,4.0,1.33,6
+Petrolina,5,0,3,2,5,7,-2,3,Brazil - Pernambucano,0.0,0.6,-2,1.0,0.0,1.67,7
+CA Porto,4,1,0,3,6,9,-3,3,Brazil - Pernambucano,0.25,0.25,-3,1.5,4.0,4.0,7
+Flamengo A.,4,0,0,4,4,13,-9,0,Brazil - Pernambucano,0.0,0.0,-9,1.0,0.0,0.0,8
+Palmeiras,8,7,1,0,18,5,13,22,Brazil - Paulista,0.88,1.0,13,2.25,1.14,1.0,1
+Santos,8,6,1,1,13,6,7,19,Brazil - Paulista,0.75,0.88,7,1.62,1.33,1.14,2
+Sao Bernardo,6,5,0,1,7,1,6,15,Brazil - Paulista,0.83,0.83,6,1.17,1.2,1.2,3
+Novorizontino,6,4,1,1,8,3,5,13,Brazil - Paulista,0.67,0.83,5,1.33,1.49,1.2,4
+Sao Paulo,7,3,3,1,11,6,5,12,Brazil - Paulista,0.43,0.86,5,1.57,2.33,1.16,5
+Inter Limeira,6,4,0,2,11,7,4,12,Brazil - Paulista,0.67,0.67,4,1.83,1.49,1.49,5
+Bragantino,7,3,2,2,7,4,3,11,Brazil - Paulista,0.43,0.71,3,1.0,2.33,1.41,6
+Agua Santa,6,3,1,2,6,4,2,10,Brazil - Paulista,0.5,0.67,2,1.0,2.0,1.49,7
+Mirassol,6,2,3,1,10,7,3,9,Brazil - Paulista,0.33,0.83,3,1.67,3.03,1.2,8
+Corinthians,6,3,0,3,8,8,0,9,Brazil - Paulista,0.5,0.5,0,1.33,2.0,2.0,8
+Ponte Preta,6,1,5,0,8,6,2,8,Brazil - Paulista,0.17,1.0,2,1.33,5.88,1.0,9
+Santo Andre,6,1,4,1,3,3,0,7,Brazil - Paulista,0.17,0.83,0,0.5,5.88,1.2,10
+Portuguesa,6,2,1,3,4,7,-3,7,Brazil - Paulista,0.33,0.5,-3,0.67,3.03,2.0,10
+Botafogo SP,6,2,1,3,5,10,-5,7,Brazil - Paulista,0.33,0.5,-5,0.83,3.03,2.0,10
+Guarani,6,1,3,2,6,7,-1,6,Brazil - Paulista,0.17,0.67,-1,1.0,5.88,1.49,11
+Ituano,6,1,2,3,4,8,-4,5,Brazil - Paulista,0.17,0.5,-4,0.67,5.88,2.0,12
+Treze,5,4,0,1,11,3,8,12,Brazil - Paraibano,0.8,0.8,8,2.2,1.25,1.25,1
+Sousa,5,3,1,1,9,3,6,10,Brazil - Paraibano,0.6,0.8,6,1.8,1.67,1.25,2
+Botafogo PB,5,3,1,1,9,4,5,10,Brazil - Paraibano,0.6,0.8,5,1.8,1.67,1.25,2
+Campinense,4,2,1,1,2,1,1,7,Brazil - Paraibano,0.5,0.75,1,0.5,2.0,1.33,3
+Nacional Patos,5,2,0,3,5,6,-1,6,Brazil - Paraibano,0.4,0.4,-1,1.0,2.5,2.5,4
+Serra Branca,4,1,2,1,5,5,0,5,Brazil - Paraibano,0.25,0.75,0,1.25,4.0,1.33,5
+A. Cajazeirense,4,1,1,2,4,3,1,4,Brazil - Paraibano,0.25,0.5,1,1.0,4.0,2.0,6
+Pombal,4,1,0,3,4,6,-2,3,Brazil - Paraibano,0.25,0.25,-2,1.0,4.0,4.0,7
+CSP,4,1,0,3,3,6,-3,3,Brazil - Paraibano,0.25,0.25,-3,0.75,4.0,4.0,7
+SP Crystal,5,0,1,4,1,10,-9,1,Brazil - Paraibano,0.0,0.2,-9,0.2,0.0,5.0,8
+Criciuma,6,5,0,1,11,3,8,15,Brazil - Catarinense,0.83,0.83,8,1.83,1.2,1.2,1
+Marcilio Dias,5,4,1,0,8,3,5,13,Brazil - Catarinense,0.8,1.0,5,1.6,1.25,1.0,2
+Hercilio Luz,6,3,3,0,13,7,6,12,Brazil - Catarinense,0.5,1.0,6,2.17,2.0,1.0,3
+Barra FC,6,3,1,2,7,5,2,10,Brazil - Catarinense,0.5,0.67,2,1.17,2.0,1.49,4
+Avai,6,3,1,2,11,10,1,10,Brazil - Catarinense,0.5,0.67,1,1.83,2.0,1.49,4
+Figueirense,5,2,2,1,7,4,3,8,Brazil - Catarinense,0.4,0.8,3,1.4,2.5,1.25,5
+Brusque,6,1,4,1,6,4,2,7,Brazil - Catarinense,0.17,0.83,2,1.0,5.88,1.2,6
+Chapecoense,6,2,1,3,7,8,-1,7,Brazil - Catarinense,0.33,0.5,-1,1.17,3.03,2.0,6
+Joinville,5,1,2,2,7,8,-1,5,Brazil - Catarinense,0.2,0.6,-1,1.4,5.0,1.67,7
+Concordia,5,1,1,3,5,7,-2,4,Brazil - Catarinense,0.2,0.4,-2,1.0,5.0,2.5,8
+Inter de Lages,5,1,1,3,4,6,-2,4,Brazil - Catarinense,0.2,0.4,-2,0.8,5.0,2.5,8
+Nacao,5,1,0,4,3,11,-8,3,Brazil - Catarinense,0.2,0.2,-8,0.6,5.0,5.0,9
+Gremio,6,5,1,0,18,5,13,16,Brazil - Gaucho,0.83,1.0,13,3.0,1.2,1.0,1
+Internacional,5,5,0,0,12,3,9,15,Brazil - Gaucho,1.0,1.0,9,2.4,1.0,1.0,2
+Juventude,5,3,1,1,12,4,8,10,Brazil - Gaucho,0.6,0.8,8,2.4,1.67,1.25,3
+Guarany de Bage,5,3,1,1,7,4,3,10,Brazil - Gaucho,0.6,0.8,3,1.4,1.67,1.25,3
+Caxias,6,3,1,2,10,8,2,10,Brazil - Gaucho,0.5,0.67,2,1.67,2.0,1.49,3
+Sao Luiz,6,2,4,0,5,3,2,10,Brazil - Gaucho,0.33,1.0,2,0.83,3.03,1.0,3
+Brasil de P.,6,2,3,1,4,2,2,9,Brazil - Gaucho,0.33,0.83,2,0.67,3.03,1.2,4
+EC Sao Jose,5,2,2,1,6,3,3,8,Brazil - Gaucho,0.4,0.8,3,1.2,2.5,1.25,5
+Novo Hamburgo,6,2,1,3,5,7,-2,7,Brazil - Gaucho,0.33,0.5,-2,0.83,3.03,2.0,6
+Ypiranga,5,0,5,0,4,4,0,5,Brazil - Gaucho,0.0,1.0,0,0.8,0.0,1.0,7
+Avenida,5,1,2,2,2,2,0,5,Brazil - Gaucho,0.2,0.6,0,0.4,5.0,1.67,7
+Santa Cruz RS,6,0,4,2,4,7,-3,4,Brazil - Gaucho,0.0,0.67,-3,0.67,0.0,1.49,8
+Ludogorets,8,7,1,0,15,0,15,22,Bulgaria - Parva Liga,0.88,1.0,15,1.88,1.14,1.0,1
+Cherno More,8,6,2,0,15,3,12,20,Bulgaria - Parva Liga,0.75,1.0,12,1.88,1.33,1.0,2
+Arda,8,6,1,1,14,10,4,19,Bulgaria - Parva Liga,0.75,0.88,4,1.75,1.33,1.14,3
+Levski Sofia,8,6,0,2,13,7,6,18,Bulgaria - Parva Liga,0.75,0.75,6,1.62,1.33,1.33,4
+Botev Plovdiv,8,6,0,2,11,6,5,18,Bulgaria - Parva Liga,0.75,0.75,5,1.38,1.33,1.33,4
+Slavia Sofia,8,4,1,3,10,9,1,13,Bulgaria - Parva Liga,0.5,0.62,1,1.25,2.0,1.61,5
+Beroe,8,4,0,4,11,6,5,12,Bulgaria - Parva Liga,0.5,0.5,5,1.38,2.0,2.0,6
+CSKA Sofia,8,3,3,2,12,9,3,12,Bulgaria - Parva Liga,0.38,0.75,3,1.5,2.63,1.33,6
+Spartak Varna,8,3,2,3,11,11,0,11,Bulgaria - Parva Liga,0.38,0.62,0,1.38,2.63,1.61,7
+L. Krumovgrad,8,2,2,4,6,8,-2,8,Bulgaria - Parva Liga,0.25,0.5,-2,0.75,4.0,2.0,8
+Botev Vratsa,8,2,2,4,8,13,-5,8,Bulgaria - Parva Liga,0.25,0.5,-5,1.0,4.0,2.0,8
+Septemvri Sofia,8,2,1,5,8,12,-4,7,Bulgaria - Parva Liga,0.25,0.38,-4,1.0,4.0,2.63,9
+CSKA 1948 Sofia,8,2,1,5,9,15,-6,7,Bulgaria - Parva Liga,0.25,0.38,-6,1.12,4.0,2.63,9
+Hebar,8,1,3,4,6,9,-3,6,Bulgaria - Parva Liga,0.12,0.5,-3,0.75,8.33,2.0,10
+Lokomotiv Sofia,8,1,3,4,3,9,-6,6,Bulgaria - Parva Liga,0.12,0.5,-6,0.38,8.33,2.0,10
+Lok. Plovdiv,8,0,3,5,8,15,-7,3,Bulgaria - Parva Liga,0.0,0.38,-7,1.0,0.0,2.63,11
+Forge,8,7,0,1,16,4,12,21,Canada - Premier League,0.88,0.88,12,2.0,1.14,1.14,1
+HFX Wanderers,8,5,3,0,17,9,8,18,Canada - Premier League,0.62,1.0,8,2.12,1.61,1.0,2
+Cavalry,8,3,4,1,12,10,2,13,Canada - Premier League,0.38,0.88,2,1.5,2.63,1.14,3
+York Utd,8,3,2,3,10,9,1,11,Canada - Premier League,0.38,0.62,1,1.25,2.63,1.61,4
+A. Ottawa,8,2,4,2,10,10,0,10,Canada - Premier League,0.25,0.75,0,1.25,4.0,1.33,5
+Pacific,8,3,1,4,10,13,-3,10,Canada - Premier League,0.38,0.5,-3,1.25,2.63,2.0,5
+Valour,8,2,2,4,7,9,-2,8,Canada - Premier League,0.25,0.5,-2,0.88,4.0,2.0,6
+Vancouver FC,8,1,2,5,5,12,-7,5,Canada - Premier League,0.12,0.38,-7,0.62,8.33,2.63,7
+Colo-Colo,8,8,0,0,16,4,12,24,Chile - Primera Division,1.0,1.0,12,2.0,1.0,1.0,1
+U. de Chile,8,6,2,0,12,2,10,20,Chile - Primera Division,0.75,1.0,10,1.5,1.33,1.0,2
+D. Iquique,8,6,1,1,18,8,10,19,Chile - Primera Division,0.75,0.88,10,2.25,1.33,1.14,3
+Cobresal,8,6,1,1,18,11,7,19,Chile - Primera Division,0.75,0.88,7,2.25,1.33,1.14,3
+Palestino,8,5,1,2,17,9,8,16,Chile - Primera Division,0.62,0.75,8,2.12,1.61,1.33,4
+Huachipato,8,4,3,1,10,7,3,15,Chile - Primera Division,0.5,0.88,3,1.25,2.0,1.14,5
+Audax Italiano,8,4,1,3,12,8,4,13,Chile - Primera Division,0.5,0.62,4,1.5,2.0,1.61,6
+Union La Calera,8,4,1,3,13,11,2,13,Chile - Primera Division,0.5,0.62,2,1.62,2.0,1.61,6
+Cobreloa,8,4,1,3,12,10,2,13,Chile - Primera Division,0.5,0.62,2,1.5,2.0,1.61,6
+Union Espanola,8,4,0,4,15,12,3,12,Chile - Primera Division,0.5,0.5,3,1.88,2.0,2.0,7
+Everton,8,3,3,2,8,6,2,12,Chile - Primera Division,0.38,0.75,2,1.0,2.63,1.33,7
+U. Catolica,8,3,2,3,15,10,5,11,Chile - Primera Division,0.38,0.62,5,1.88,2.63,1.61,8
+Nublense,8,3,2,3,9,8,1,11,Chile - Primera Division,0.38,0.62,1,1.12,2.63,1.61,8
+Coquimbo Unido,8,2,4,2,9,8,1,10,Chile - Primera Division,0.25,0.75,1,1.12,4.0,1.33,9
+Copiapo,8,2,2,4,13,15,-2,8,Chile - Primera Division,0.25,0.5,-2,1.62,4.0,2.0,10
+OHiggins,8,1,3,4,7,16,-9,6,Chile - Primera Division,0.12,0.5,-9,0.88,8.33,2.0,11
+La Serena,8,7,1,0,13,3,10,22,Chile - Primera B,0.88,1.0,10,1.62,1.14,1.0,1
+Magallanes,8,4,3,1,14,6,8,15,Chile - Primera B,0.5,0.88,8,1.75,2.0,1.14,2
+Deportes Temuco,8,4,2,2,11,5,6,14,Chile - Primera B,0.5,0.75,6,1.38,2.0,1.33,3
+U. Concepcion,8,4,2,2,14,9,5,14,Chile - Primera B,0.5,0.75,5,1.75,2.0,1.33,3
+CD Santa Cruz,8,4,2,2,11,7,4,14,Chile - Primera B,0.5,0.75,4,1.38,2.0,1.33,3
+Recoleta,8,3,4,1,14,8,6,13,Chile - Primera B,0.38,0.88,6,1.75,2.63,1.14,4
+Rangers,8,3,4,1,11,6,5,13,Chile - Primera B,0.38,0.88,5,1.38,2.63,1.14,4
+Barnechea,8,4,1,3,13,11,2,13,Chile - Primera B,0.5,0.62,2,1.62,2.0,1.61,4
+S. Wanderers,8,3,3,2,13,8,5,12,Chile - Primera B,0.38,0.75,5,1.62,2.63,1.33,5
+U. San Felipe,8,2,5,1,7,5,2,11,Chile - Primera B,0.25,0.88,2,0.88,4.0,1.14,6
+Antofagasta,8,2,4,2,10,10,0,10,Chile - Primera B,0.25,0.75,0,1.25,4.0,1.33,7
+S. Morning,8,3,0,5,5,8,-3,9,Chile - Primera B,0.38,0.38,-3,0.62,2.63,2.63,8
+D. Limache,8,2,2,4,9,12,-3,8,Chile - Primera B,0.25,0.5,-3,1.12,4.0,2.0,9
+Curico Unido,8,2,1,5,7,14,-7,7,Chile - Primera B,0.25,0.38,-7,0.88,4.0,2.63,10
+San Marcos,8,1,3,4,8,12,-4,6,Chile - Primera B,0.12,0.5,-4,1.0,8.33,2.0,11
+San Luis,8,0,3,5,4,16,-12,3,Chile - Primera B,0.0,0.38,-12,0.5,0.0,2.63,12
 Shanghai Port,8,8,0,0,37,6,31,24,china,1.0,1.0,31,4.62,1.0,1.0,1
 S. Shenhua,8,7,1,0,26,8,18,22,china,0.88,1.0,18,3.25,1.14,1.0,2
 Tianjin T.,8,7,1,0,16,7,9,22,china,0.88,1.0,9,2.0,1.14,1.0,2
