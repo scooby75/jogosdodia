@@ -582,106 +582,126 @@ D. Limache,8,2,2,4,9,12,-3,8,Chile - Primera B,0.25,0.5,-3,1.12,4.0,2.0,9
 Curico Unido,8,2,1,5,7,14,-7,7,Chile - Primera B,0.25,0.38,-7,0.88,4.0,2.63,10
 San Marcos,8,1,3,4,8,12,-4,6,Chile - Primera B,0.12,0.5,-4,1.0,8.33,2.0,11
 San Luis,8,0,3,5,4,16,-12,3,Chile - Primera B,0.0,0.38,-12,0.5,0.0,2.63,12
-Shanghai Port,8,8,0,0,37,6,31,24,china,1.0,1.0,31,4.62,1.0,1.0,1
-S. Shenhua,8,7,1,0,26,8,18,22,china,0.88,1.0,18,3.25,1.14,1.0,2
-Tianjin T.,8,7,1,0,16,7,9,22,china,0.88,1.0,9,2.0,1.14,1.0,2
-Chengdu,8,6,1,1,25,6,19,19,china,0.75,0.88,19,3.12,1.33,1.14,3
-Beijing Guoan,8,5,2,1,22,5,17,17,china,0.62,0.88,17,2.75,1.61,1.14,4
-Changchun Yatai,8,5,2,1,22,10,12,17,china,0.62,0.88,12,2.75,1.61,1.14,4
-Henan SL,8,5,1,2,8,5,3,16,china,0.62,0.75,3,1.0,1.61,1.33,5
-Shandong T.,8,4,2,2,13,5,8,14,china,0.5,0.75,8,1.62,2.0,1.33,6
-Zhejiang,8,4,2,2,23,17,6,14,china,0.5,0.75,6,2.88,2.0,1.33,6
-Sichuan Jiuniu,8,4,2,2,9,11,-2,14,china,0.5,0.75,-2,1.12,2.0,1.33,6
-Qingdao Hainiu,8,4,1,3,11,12,-1,13,china,0.5,0.62,-1,1.38,2.0,1.61,7
-Meizhou Hakka,8,4,1,3,10,12,-2,13,china,0.5,0.62,-2,1.25,2.0,1.61,7
-Qingdao West C.,8,2,4,2,15,13,2,10,china,0.25,0.75,2,1.88,4.0,1.33,8
-Cangzhou,8,2,3,3,7,11,-4,9,china,0.25,0.62,-4,0.88,4.0,1.61,9
-Nantong Zhiyun,8,2,2,4,8,14,-6,8,china,0.25,0.5,-6,1.0,4.0,2.0,10
-Wuhan Three T.,8,2,1,5,8,13,-5,7,china,0.25,0.38,-5,1.0,4.0,2.63,11
-Yunnan Yukun,8,6,2,0,18,1,17,20,china2,0.75,1.0,17,2.25,1.33,1.0,1
-Suzhou Dongwu,8,6,2,0,14,5,9,20,china2,0.75,1.0,9,1.75,1.33,1.0,1
-Dalian Yingbo,8,6,1,1,17,6,11,19,china2,0.75,0.88,11,2.12,1.33,1.14,2
-Liaoning Tieren,8,6,1,1,17,8,9,19,china2,0.75,0.88,9,2.12,1.33,1.14,2
-Guangzhou FC,8,4,4,0,13,4,9,16,china2,0.5,1.0,9,1.62,2.0,1.0,3
-Nanjing City,8,4,3,1,12,7,5,15,china2,0.5,0.88,5,1.5,2.0,1.14,4
-S. Gongfu,8,5,0,3,11,9,2,15,china2,0.62,0.62,2,1.38,1.61,1.61,4
-Chongqing T.,8,3,5,0,12,7,5,14,china2,0.38,1.0,5,1.5,2.63,1.0,5
-Guangxi Baoyun,8,3,4,1,11,10,1,13,china2,0.38,0.88,1,1.38,2.63,1.14,6
-Foshan Nanshi,8,2,5,1,11,7,4,11,china2,0.25,0.88,4,1.38,4.0,1.14,7
-Jiangxi Lushan,8,3,2,3,6,5,1,11,china2,0.38,0.62,1,0.75,2.63,1.61,7
-Shanghai Jiadin,8,2,4,2,6,5,1,10,china2,0.25,0.75,1,0.75,4.0,1.33,8
-Heilongjiang IC,8,2,2,4,5,7,-2,8,china2,0.25,0.5,-2,0.62,4.0,2.0,9
-Qingdao RL,8,1,3,4,6,9,-3,6,china2,0.12,0.5,-3,0.75,8.33,2.0,10
-Wuxi Wugou,8,1,2,5,9,16,-7,5,china2,0.12,0.38,-7,1.12,8.33,2.63,11
-Yanbian Longdin,8,0,4,4,6,15,-9,4,china2,0.0,0.5,-9,0.75,0.0,2.0,12
-Langfang Glory,8,7,1,0,16,3,13,22,china3,0.88,1.0,13,2.0,1.14,1.0,1
-Dalian Kuncheng,8,7,1,0,13,1,12,22,china3,0.88,1.0,12,1.62,1.14,1.0,1
-Rizhao Yuqi,8,7,1,0,15,4,11,22,china3,0.88,1.0,11,1.88,1.14,1.0,1
-Shenzhen J.,8,7,1,0,14,7,7,22,china3,0.88,1.0,7,1.75,1.14,1.0,1
-Shandong T. B,8,6,1,1,14,6,8,19,china3,0.75,0.88,8,1.75,1.33,1.14,2
-Guangdong GZP,8,5,3,0,18,5,13,18,china3,0.62,1.0,13,2.25,1.61,1.0,3
-Jiangxi DH,8,6,0,2,12,4,8,18,china3,0.75,0.75,8,1.5,1.33,1.33,3
-Shaanxi Union,8,4,2,2,13,8,5,14,china3,0.5,0.75,5,1.62,2.0,1.33,4
-Quanzhou Yassin,8,3,3,2,7,7,0,12,china3,0.38,0.75,0,0.88,2.63,1.33,5
-Guangxi H.,8,3,2,3,11,10,1,11,china3,0.38,0.62,1,1.38,2.63,1.61,6
-Xian Ronghai,8,3,2,3,10,9,1,11,china3,0.38,0.62,1,1.25,2.63,1.61,6
-Taian Tiankuang,8,3,2,3,13,13,0,11,china3,0.38,0.62,0,1.62,2.63,1.61,6
-Haikou M.,8,3,2,3,12,12,0,11,china3,0.38,0.62,0,1.5,2.63,1.61,6
-Hunan Billows,8,2,5,1,9,9,0,11,china3,0.25,0.88,0,1.12,4.0,1.14,6
-Hubei Istar,8,2,3,3,12,10,2,9,china3,0.25,0.62,2,1.5,4.0,1.61,7
-Shanghai Port B,8,3,0,5,9,10,-1,9,china3,0.38,0.38,-1,1.12,2.63,2.63,7
-Beijing IT,8,3,0,5,5,8,-3,9,china3,0.38,0.38,-3,0.62,2.63,2.63,7
-Ganzhou Ruishi,8,1,5,2,14,14,0,8,china3,0.12,0.75,0,1.75,8.33,1.33,8
-Guangxi Lanhang,8,1,5,2,10,12,-2,8,china3,0.12,0.75,-2,1.25,8.33,1.33,8
-Nantong Haimen,8,2,1,5,9,15,-6,7,china3,0.25,0.38,-6,1.12,4.0,2.63,9
-Deportivo Pasto,8,6,0,2,14,8,6,18,colombia2,0.75,0.75,6,1.75,1.33,1.33,1
-I. Medelin,8,5,2,1,11,2,9,17,colombia2,0.62,0.88,9,1.38,1.61,1.14,2
-Junior,8,5,2,1,17,9,8,17,colombia2,0.62,0.88,8,2.12,1.61,1.14,2
-Millonarios,8,5,2,1,11,3,8,17,colombia2,0.62,0.88,8,1.38,1.61,1.14,2
-America de Cali,8,5,2,1,9,3,6,17,colombia2,0.62,0.88,6,1.12,1.61,1.14,2
-D. Pereira,8,5,1,2,10,6,4,16,colombia2,0.62,0.75,4,1.25,1.61,1.33,3
-Santa Fe,8,4,3,1,12,5,7,15,colombia2,0.5,0.88,7,1.5,2.0,1.14,4
-Deportes Tolima,8,4,3,1,10,4,6,15,colombia2,0.5,0.88,6,1.25,2.0,1.14,4
-Patriotas,8,4,2,2,14,8,6,14,colombia2,0.5,0.75,6,1.75,2.0,1.33,5
-Once Caldas,8,4,2,2,11,8,3,14,colombia2,0.5,0.75,3,1.38,2.0,1.33,5
-A. Nacional,8,3,4,1,15,11,4,13,colombia2,0.38,0.88,4,1.88,2.63,1.14,6
-A. Petrolera,8,3,3,2,11,8,3,12,colombia2,0.38,0.75,3,1.38,2.63,1.33,7
-Boyaca Chico,8,3,3,2,7,10,-3,12,colombia2,0.38,0.75,-3,0.88,2.63,1.33,7
-Fortaleza CEIF,8,3,2,3,9,9,0,11,colombia2,0.38,0.62,0,1.12,2.63,1.61,8
-La Equidad,8,2,4,2,10,11,-1,10,colombia2,0.25,0.75,-1,1.25,4.0,1.33,9
-Deportivo Cali,8,3,1,4,7,9,-2,10,colombia2,0.38,0.5,-2,0.88,2.63,2.0,9
-R. Aguilas,8,2,3,3,7,9,-2,9,colombia2,0.25,0.62,-2,0.88,4.0,1.61,10
-Jaguares de C.,8,2,3,3,5,8,-3,9,colombia2,0.25,0.62,-3,0.62,4.0,1.61,10
-Envigado,8,2,2,4,4,4,0,8,colombia2,0.25,0.5,0,0.5,4.0,2.0,11
-A. Bucaramanga,8,2,2,4,6,9,-3,8,colombia2,0.25,0.5,-3,0.75,4.0,2.0,11
-Guanacasteca,8,8,0,0,13,3,10,24,costarica,1.0,1.0,10,1.62,1.0,1.0,1
-Alajuelense,8,6,2,0,19,5,14,20,costarica,0.75,1.0,14,2.38,1.33,1.0,2
-Cartagines,8,6,2,0,16,8,8,20,costarica,0.75,1.0,8,2.0,1.33,1.0,2
-Saprissa,8,5,2,1,17,11,6,17,costarica,0.62,0.88,6,2.12,1.61,1.14,3
-Herediano,8,4,1,3,15,14,1,13,costarica,0.5,0.62,1,1.88,2.0,1.61,4
-San Carlos,8,2,6,0,9,6,3,12,costarica,0.25,1.0,3,1.12,4.0,1.0,5
-Santos Guapiles,8,4,0,4,13,11,2,12,costarica,0.5,0.5,2,1.62,2.0,2.0,5
-Zeledon,8,3,3,2,10,8,2,12,costarica,0.38,0.75,2,1.25,2.63,1.33,5
-Santa Ana,8,3,3,2,11,11,0,12,costarica,0.38,0.75,0,1.38,2.63,1.33,5
-Sporting SJ,8,3,1,4,12,11,1,10,costarica,0.38,0.5,1,1.5,2.63,2.0,6
-Puntarenas,8,2,3,3,7,9,-2,9,costarica,0.25,0.62,-2,0.88,4.0,1.61,7
-M. Liberia,8,2,2,4,12,11,1,8,costarica,0.25,0.5,1,1.5,4.0,2.0,8
-Slavia Prague,8,8,0,0,20,3,17,24,czechrepublic,1.0,1.0,17,2.5,1.0,1.0,1
-Viktoria Plzen,8,6,2,0,19,7,12,20,czechrepublic,0.75,1.0,12,2.38,1.33,1.0,2
-Banik Ostrava,8,6,0,2,17,7,10,18,czechrepublic,0.75,0.75,10,2.12,1.33,1.33,3
-Jablonec,8,5,1,2,17,6,11,16,czechrepublic,0.62,0.75,11,2.12,1.61,1.33,4
-Karvina,8,4,3,1,9,4,5,15,czechrepublic,0.5,0.88,5,1.12,2.0,1.14,5
-Sparta Prague,8,4,2,2,15,12,3,14,czechrepublic,0.5,0.75,3,1.88,2.0,1.33,6
-Slovacko,8,3,4,1,6,5,1,13,czechrepublic,0.38,0.88,1,0.75,2.63,1.14,7
-Slovan Liberec,8,3,3,2,13,9,4,12,czechrepublic,0.38,0.75,4,1.62,2.63,1.33,8
-Hradec Kralove,8,3,2,3,8,7,1,11,czechrepublic,0.38,0.62,1,1.0,2.63,1.61,9
-Sigma Olomouc,8,3,2,3,12,15,-3,11,czechrepublic,0.38,0.62,-3,1.5,2.63,1.61,9
-Teplice,8,3,1,4,13,13,0,10,czechrepublic,0.38,0.5,0,1.62,2.63,2.0,10
-Mlada Boleslav,8,2,4,2,10,10,0,10,czechrepublic,0.25,0.75,0,1.25,4.0,1.33,10
-Pardubice,8,2,3,3,9,9,0,9,czechrepublic,0.25,0.62,0,1.12,4.0,1.61,11
-Dukla Praha,8,2,1,5,9,13,-4,7,czechrepublic,0.25,0.38,-4,1.12,4.0,2.63,12
-Bohemians,8,1,4,3,12,18,-6,7,czechrepublic,0.12,0.62,-6,1.5,8.33,1.61,12
-C. Budejovice,8,0,2,6,0,17,-17,2,czechrepublic,0.0,0.25,-17,0.0,0.0,4.0,13
+Shanghai Port,8,8,0,0,37,6,31,24,China - Super League,1.0,1.0,31,4.62,1.0,1.0,1
+S. Shenhua,8,7,1,0,26,8,18,22,China - Super League,0.88,1.0,18,3.25,1.14,1.0,2
+Tianjin T.,8,7,1,0,16,7,9,22,China - Super League,0.88,1.0,9,2.0,1.14,1.0,2
+Chengdu,8,6,1,1,25,6,19,19,China - Super League,0.75,0.88,19,3.12,1.33,1.14,3
+Beijing Guoan,8,5,2,1,22,5,17,17,China - Super League,0.62,0.88,17,2.75,1.61,1.14,4
+Changchun Yatai,8,5,2,1,22,10,12,17,China - Super League,0.62,0.88,12,2.75,1.61,1.14,4
+Henan SL,8,5,1,2,8,5,3,16,China - Super League,0.62,0.75,3,1.0,1.61,1.33,5
+Shandong T.,8,4,2,2,13,5,8,14,China - Super League,0.5,0.75,8,1.62,2.0,1.33,6
+Zhejiang,8,4,2,2,23,17,6,14,China - Super League,0.5,0.75,6,2.88,2.0,1.33,6
+Sichuan Jiuniu,8,4,2,2,9,11,-2,14,China - Super League,0.5,0.75,-2,1.12,2.0,1.33,6
+Qingdao Hainiu,8,4,1,3,11,12,-1,13,China - Super League,0.5,0.62,-1,1.38,2.0,1.61,7
+Meizhou Hakka,8,4,1,3,10,12,-2,13,China - Super League,0.5,0.62,-2,1.25,2.0,1.61,7
+Qingdao West C.,8,2,4,2,15,13,2,10,China - Super League,0.25,0.75,2,1.88,4.0,1.33,8
+Cangzhou,8,2,3,3,7,11,-4,9,China - Super League,0.25,0.62,-4,0.88,4.0,1.61,9
+Nantong Zhiyun,8,2,2,4,8,14,-6,8,China - Super League,0.25,0.5,-6,1.0,4.0,2.0,10
+Wuhan Three T.,8,2,1,5,8,13,-5,7,China - Super League,0.25,0.38,-5,1.0,4.0,2.63,11
+Yunnan Yukun,8,6,2,0,18,1,17,20,China - League One,0.75,1.0,17,2.25,1.33,1.0,1
+Suzhou Dongwu,8,6,2,0,14,5,9,20,China - League One,0.75,1.0,9,1.75,1.33,1.0,1
+Dalian Yingbo,8,6,1,1,17,6,11,19,China - League One,0.75,0.88,11,2.12,1.33,1.14,2
+Liaoning Tieren,8,6,1,1,17,8,9,19,China - League One,0.75,0.88,9,2.12,1.33,1.14,2
+Guangzhou FC,8,4,4,0,13,4,9,16,China - League One,0.5,1.0,9,1.62,2.0,1.0,3
+Nanjing City,8,4,3,1,12,7,5,15,China - League One,0.5,0.88,5,1.5,2.0,1.14,4
+S. Gongfu,8,5,0,3,11,9,2,15,China - League One,0.62,0.62,2,1.38,1.61,1.61,4
+Chongqing T.,8,3,5,0,12,7,5,14,China - League One,0.38,1.0,5,1.5,2.63,1.0,5
+Guangxi Baoyun,8,3,4,1,11,10,1,13,China - League One,0.38,0.88,1,1.38,2.63,1.14,6
+Foshan Nanshi,8,2,5,1,11,7,4,11,China - League One,0.25,0.88,4,1.38,4.0,1.14,7
+Jiangxi Lushan,8,3,2,3,6,5,1,11,China - League One,0.38,0.62,1,0.75,2.63,1.61,7
+Shanghai Jiadin,8,2,4,2,6,5,1,10,China - League One,0.25,0.75,1,0.75,4.0,1.33,8
+Heilongjiang IC,8,2,2,4,5,7,-2,8,China - League One,0.25,0.5,-2,0.62,4.0,2.0,9
+Qingdao RL,8,1,3,4,6,9,-3,6,China - League One,0.12,0.5,-3,0.75,8.33,2.0,10
+Wuxi Wugou,8,1,2,5,9,16,-7,5,China - League One,0.12,0.38,-7,1.12,8.33,2.63,11
+Yanbian Longdin,8,0,4,4,6,15,-9,4,China - League One,0.0,0.5,-9,0.75,0.0,2.0,12
+Langfang Glory,8,7,1,0,16,3,13,22,China - League Two,0.88,1.0,13,2.0,1.14,1.0,1
+Dalian Kuncheng,8,7,1,0,13,1,12,22,China - League Two,0.88,1.0,12,1.62,1.14,1.0,1
+Rizhao Yuqi,8,7,1,0,15,4,11,22,China - League Two,0.88,1.0,11,1.88,1.14,1.0,1
+Shenzhen J.,8,7,1,0,14,7,7,22,China - League Two,0.88,1.0,7,1.75,1.14,1.0,1
+Shandong T. B,8,6,1,1,14,6,8,19,China - League Two,0.75,0.88,8,1.75,1.33,1.14,2
+Guangdong GZP,8,5,3,0,18,5,13,18,China - League Two,0.62,1.0,13,2.25,1.61,1.0,3
+Jiangxi DH,8,6,0,2,12,4,8,18,China - League Two,0.75,0.75,8,1.5,1.33,1.33,3
+Shaanxi Union,8,4,2,2,13,8,5,14,China - League Two,0.5,0.75,5,1.62,2.0,1.33,4
+Quanzhou Yassin,8,3,3,2,7,7,0,12,China - League Two,0.38,0.75,0,0.88,2.63,1.33,5
+Guangxi H.,8,3,2,3,11,10,1,11,China - League Two,0.38,0.62,1,1.38,2.63,1.61,6
+Xian Ronghai,8,3,2,3,10,9,1,11,China - League Two,0.38,0.62,1,1.25,2.63,1.61,6
+Taian Tiankuang,8,3,2,3,13,13,0,11,China - League Two,0.38,0.62,0,1.62,2.63,1.61,6
+Haikou M.,8,3,2,3,12,12,0,11,China - League Two,0.38,0.62,0,1.5,2.63,1.61,6
+Hunan Billows,8,2,5,1,9,9,0,11,China - League Two,0.25,0.88,0,1.12,4.0,1.14,6
+Hubei Istar,8,2,3,3,12,10,2,9,China - League Two,0.25,0.62,2,1.5,4.0,1.61,7
+Shanghai Port B,8,3,0,5,9,10,-1,9,China - League Two,0.38,0.38,-1,1.12,2.63,2.63,7
+Beijing IT,8,3,0,5,5,8,-3,9,China - League Two,0.38,0.38,-3,0.62,2.63,2.63,7
+Ganzhou Ruishi,8,1,5,2,14,14,0,8,China - League Two,0.12,0.75,0,1.75,8.33,1.33,8
+Guangxi Lanhang,8,1,5,2,10,12,-2,8,China - League Two,0.12,0.75,-2,1.25,8.33,1.33,8
+Nantong Haimen,8,2,1,5,9,15,-6,7,China - League Two,0.25,0.38,-6,1.12,4.0,2.63,9
+A. Bucaramanga,8,7,0,1,17,5,12,21,Colombia - Primera A - Apertura,0.88,0.88,12,2.12,1.14,1.14,1
+Deportes Tolima,8,6,2,0,14,6,8,20,Colombia - Primera A - Apertura,0.75,1.0,8,1.75,1.33,1.0,2
+America de Cali,8,5,2,1,14,5,9,17,Colombia - Primera A - Apertura,0.62,0.88,9,1.75,1.61,1.14,3
+Santa Fe,8,5,2,1,11,2,9,17,Colombia - Primera A - Apertura,0.62,0.88,9,1.38,1.61,1.14,3
+Junior,8,5,2,1,11,3,8,17,Colombia - Primera A - Apertura,0.62,0.88,8,1.38,1.61,1.14,3
+Jaguares de C.,8,4,3,1,11,6,5,15,Colombia - Primera A - Apertura,0.5,0.88,5,1.38,2.0,1.14,4
+La Equidad,8,4,2,2,11,5,6,14,Colombia - Primera A - Apertura,0.5,0.75,6,1.38,2.0,1.33,5
+D. Pereira,8,4,2,2,12,8,4,14,Colombia - Primera A - Apertura,0.5,0.75,4,1.5,2.0,1.33,5
+Once Caldas,8,4,2,2,7,5,2,14,Colombia - Primera A - Apertura,0.5,0.75,2,0.88,2.0,1.33,5
+Millonarios,8,4,1,3,12,9,3,13,Colombia - Primera A - Apertura,0.5,0.62,3,1.5,2.0,1.61,6
+Boyaca Chico,8,4,1,3,11,8,3,13,Colombia - Primera A - Apertura,0.5,0.62,3,1.38,2.0,1.61,6
+I. Medelin,8,3,3,2,10,11,-1,12,Colombia - Primera A - Apertura,0.38,0.75,-1,1.25,2.63,1.33,7
+A. Nacional,8,3,2,3,8,6,2,11,Colombia - Primera A - Apertura,0.38,0.62,2,1.0,2.63,1.61,8
+R. Aguilas,8,2,3,3,9,9,0,9,Colombia - Primera A - Apertura,0.25,0.62,0,1.12,4.0,1.61,9
+Fortaleza CEIF,8,2,3,3,8,8,0,9,Colombia - Primera A - Apertura,0.25,0.62,0,1.0,4.0,1.61,9
+Patriotas,8,2,3,3,4,8,-4,9,Colombia - Primera A - Apertura,0.25,0.62,-4,0.5,4.0,1.61,9
+Deportivo Cali,8,2,2,4,9,11,-2,8,Colombia - Primera A - Apertura,0.25,0.5,-2,1.12,4.0,2.0,10
+Deportivo Pasto,8,2,2,4,8,10,-2,8,Colombia - Primera A - Apertura,0.25,0.5,-2,1.0,4.0,2.0,10
+Envigado,8,1,4,3,6,9,-3,7,Colombia - Primera A - Apertura,0.12,0.62,-3,0.75,8.33,1.61,11
+A. Petrolera,8,2,1,5,6,11,-5,7,Colombia - Primera A - Apertura,0.25,0.38,-5,0.75,4.0,2.63,11
+Deportivo Pasto,8,6,0,2,14,8,6,18,Colombia - Primera A - Clausura,0.75,0.75,6,1.75,1.33,1.33,1
+I. Medelin,8,5,2,1,11,2,9,17,Colombia - Primera A - Clausura,0.62,0.88,9,1.38,1.61,1.14,2
+Junior,8,5,2,1,17,9,8,17,Colombia - Primera A - Clausura,0.62,0.88,8,2.12,1.61,1.14,2
+Millonarios,8,5,2,1,11,3,8,17,Colombia - Primera A - Clausura,0.62,0.88,8,1.38,1.61,1.14,2
+America de Cali,8,5,2,1,9,3,6,17,Colombia - Primera A - Clausura,0.62,0.88,6,1.12,1.61,1.14,2
+D. Pereira,8,5,1,2,10,6,4,16,Colombia - Primera A - Clausura,0.62,0.75,4,1.25,1.61,1.33,3
+Santa Fe,8,4,3,1,12,5,7,15,Colombia - Primera A - Clausura,0.5,0.88,7,1.5,2.0,1.14,4
+Deportes Tolima,8,4,3,1,10,4,6,15,Colombia - Primera A - Clausura,0.5,0.88,6,1.25,2.0,1.14,4
+Patriotas,8,4,2,2,14,8,6,14,Colombia - Primera A - Clausura,0.5,0.75,6,1.75,2.0,1.33,5
+Once Caldas,8,4,2,2,11,8,3,14,Colombia - Primera A - Clausura,0.5,0.75,3,1.38,2.0,1.33,5
+A. Nacional,8,3,4,1,15,11,4,13,Colombia - Primera A - Clausura,0.38,0.88,4,1.88,2.63,1.14,6
+A. Petrolera,8,3,3,2,11,8,3,12,Colombia - Primera A - Clausura,0.38,0.75,3,1.38,2.63,1.33,7
+Boyaca Chico,8,3,3,2,7,10,-3,12,Colombia - Primera A - Clausura,0.38,0.75,-3,0.88,2.63,1.33,7
+Fortaleza CEIF,8,3,2,3,9,9,0,11,Colombia - Primera A - Clausura,0.38,0.62,0,1.12,2.63,1.61,8
+La Equidad,8,2,4,2,10,11,-1,10,Colombia - Primera A - Clausura,0.25,0.75,-1,1.25,4.0,1.33,9
+Deportivo Cali,8,3,1,4,7,9,-2,10,Colombia - Primera A - Clausura,0.38,0.5,-2,0.88,2.63,2.0,9
+R. Aguilas,8,2,3,3,7,9,-2,9,Colombia - Primera A - Clausura,0.25,0.62,-2,0.88,4.0,1.61,10
+Jaguares de C.,8,2,3,3,5,8,-3,9,Colombia - Primera A - Clausura,0.25,0.62,-3,0.62,4.0,1.61,10
+Envigado,8,2,2,4,4,4,0,8,Colombia - Primera A - Clausura,0.25,0.5,0,0.5,4.0,2.0,11
+A. Bucaramanga,8,2,2,4,6,9,-3,8,Colombia - Primera A - Clausura,0.25,0.5,-3,0.75,4.0,2.0,11
+Guanacasteca,8,8,0,0,13,3,10,24,Costa Rica - Primera Div. - Apertura,1.0,1.0,10,1.62,1.0,1.0,1
+Alajuelense,8,6,2,0,19,5,14,20,Costa Rica - Primera Div. - Apertura,0.75,1.0,14,2.38,1.33,1.0,2
+Cartagines,8,6,2,0,16,8,8,20,Costa Rica - Primera Div. - Apertura,0.75,1.0,8,2.0,1.33,1.0,2
+Saprissa,8,5,2,1,17,11,6,17,Costa Rica - Primera Div. - Apertura,0.62,0.88,6,2.12,1.61,1.14,3
+Herediano,8,4,1,3,15,14,1,13,Costa Rica - Primera Div. - Apertura,0.5,0.62,1,1.88,2.0,1.61,4
+San Carlos,8,2,6,0,9,6,3,12,Costa Rica - Primera Div. - Apertura,0.25,1.0,3,1.12,4.0,1.0,5
+Santos Guapiles,8,4,0,4,13,11,2,12,Costa Rica - Primera Div. - Apertura,0.5,0.5,2,1.62,2.0,2.0,5
+Zeledon,8,3,3,2,10,8,2,12,Costa Rica - Primera Div. - Apertura,0.38,0.75,2,1.25,2.63,1.33,5
+Santa Ana,8,3,3,2,11,11,0,12,Costa Rica - Primera Div. - Apertura,0.38,0.75,0,1.38,2.63,1.33,5
+Sporting SJ,8,3,1,4,12,11,1,10,Costa Rica - Primera Div. - Apertura,0.38,0.5,1,1.5,2.63,2.0,6
+Puntarenas,8,2,3,3,7,9,-2,9,Costa Rica - Primera Div. - Apertura,0.25,0.62,-2,0.88,4.0,1.61,7
+M. Liberia,8,2,2,4,12,11,1,8,Costa Rica - Primera Div. - Apertura,0.25,0.5,1,1.5,4.0,2.0,8
+Slavia Prague,8,8,0,0,20,3,17,24,CzechRepublic - 1. Liga,1.0,1.0,17,2.5,1.0,1.0,1
+Viktoria Plzen,8,6,2,0,19,7,12,20,CzechRepublic - 1. Liga,0.75,1.0,12,2.38,1.33,1.0,2
+Banik Ostrava,8,6,0,2,17,7,10,18,CzechRepublic - 1. Liga,0.75,0.75,10,2.12,1.33,1.33,3
+Jablonec,8,5,1,2,17,6,11,16,CzechRepublic - 1. Liga,0.62,0.75,11,2.12,1.61,1.33,4
+Karvina,8,4,3,1,9,4,5,15,CzechRepublic - 1. Liga,0.5,0.88,5,1.12,2.0,1.14,5
+Sparta Prague,8,4,2,2,15,12,3,14,CzechRepublic - 1. Liga,0.5,0.75,3,1.88,2.0,1.33,6
+Slovacko,8,3,4,1,6,5,1,13,CzechRepublic - 1. Liga,0.38,0.88,1,0.75,2.63,1.14,7
+Slovan Liberec,8,3,3,2,13,9,4,12,CzechRepublic - 1. Liga,0.38,0.75,4,1.62,2.63,1.33,8
+Hradec Kralove,8,3,2,3,8,7,1,11,CzechRepublic - 1. Liga,0.38,0.62,1,1.0,2.63,1.61,9
+Sigma Olomouc,8,3,2,3,12,15,-3,11,CzechRepublic - 1. Liga,0.38,0.62,-3,1.5,2.63,1.61,9
+Teplice,8,3,1,4,13,13,0,10,CzechRepublic - 1. Liga,0.38,0.5,0,1.62,2.63,2.0,10
+Mlada Boleslav,8,2,4,2,10,10,0,10,CzechRepublic - 1. Liga,0.25,0.75,0,1.25,4.0,1.33,10
+Pardubice,8,2,3,3,9,9,0,9,CzechRepublic - 1. Liga,0.25,0.62,0,1.12,4.0,1.61,11
+Dukla Praha,8,2,1,5,9,13,-4,7,CzechRepublic - 1. Liga,0.25,0.38,-4,1.12,4.0,2.63,12
+Bohemians,8,1,4,3,12,18,-6,7,CzechRepublic - 1. Liga,0.12,0.62,-6,1.5,8.33,1.61,12
+C. Budejovice,8,0,2,6,0,17,-17,2,CzechRepublic - 1. Liga,0.0,0.25,-17,0.0,0.0,4.0,13
 FC Midtjylland,8,7,0,1,16,9,7,21,denmark,0.88,0.88,7,2.0,1.14,1.14,1
 AGF Aarhus,8,5,3,0,20,8,12,18,denmark,0.62,1.0,12,2.5,1.61,1.0,2
 FC Kobenhavn,8,5,3,0,17,8,9,18,denmark,0.62,1.0,9,2.12,1.61,1.0,2
