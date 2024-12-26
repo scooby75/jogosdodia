@@ -27,7 +27,7 @@ home_columns = ["Equipe", "Liga", "GP", "Pts_Home", "Rank_Home", "PIH", "PIH_HA"
 away_columns = ["Equipe", "Liga", "GP", "Pts_Away", "Rank_Away", "PIA", "PIA_HA", "GD_Away", "GF_AVG_Away", "Odd_Justa_MO", "Odd_Justa_HA"]
 
 # Tabs
-tab1, tab2, tab3, tab4 = st.tabs(["Seleção de Equipes", "1x2 (Home e Away)", "HA +0.25", "Média de Gols"])
+tab1, tab2, tab3, tab4 = st.tabs(["h2h", "1x2", "HA +0.25", "Média de Gols"])
 
 with tab1:
     st.header("h2h")
