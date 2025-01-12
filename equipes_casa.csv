@@ -1,14 +1,16 @@
 Equipe,GP,W,D,L,GF,GA,GD,Pts_Home,Liga,PIH,PIH_HA,GD_Home,GF_AVG_Home,Odd_Justa_MO,Odd_Justa_HA,Rank_Home
+Home,2,3,4,5,6,7,8,9,Liga,1.5,3.5,-1,3.0,0.67,0.29,1
+,0,0,0,0,0,0,0,0,Albania - Abissnet Superiore,0.0,0.0,0,0.0,0.0,0.0,9
 Dinamo Tirana,8,6,1,1,14,8,6,19,Albania - Abissnet Superiore,0.75,0.88,6,1.75,1.33,1.14,1
-Vllaznia S.,8,5,2,1,15,8,7,17,Albania - Abissnet Superiore,0.62,0.88,7,1.88,1.61,1.14,2
-Egnatia R.,8,4,3,1,11,5,6,15,Albania - Abissnet Superiore,0.5,0.88,6,1.38,2.0,1.14,3
+Vllaznia S.,8,5,2,1,14,8,6,17,Albania - Abissnet Superiore,0.62,0.88,6,1.75,1.61,1.14,2
 Laci,8,4,3,1,11,5,6,15,Albania - Abissnet Superiore,0.5,0.88,6,1.38,2.0,1.14,3
-Partizani T.,8,3,5,0,10,6,4,14,Albania - Abissnet Superiore,0.38,1.0,4,1.25,2.63,1.0,4
-KF Tirana,8,2,5,1,11,7,4,11,Albania - Abissnet Superiore,0.25,0.88,4,1.38,4.0,1.14,5
-Bylis,8,3,2,3,9,7,2,11,Albania - Abissnet Superiore,0.38,0.62,2,1.12,2.63,1.61,5
-Teuta Durres,8,2,5,1,9,7,2,11,Albania - Abissnet Superiore,0.25,0.88,2,1.12,4.0,1.14,5
-AF Elbasani,8,2,4,2,8,11,-3,10,Albania - Abissnet Superiore,0.25,0.75,-3,1.0,4.0,1.33,6
-Skenderbeu K.,8,1,3,4,8,13,-5,6,Albania - Abissnet Superiore,0.12,0.5,-5,1.0,8.33,2.0,7
+Egnatia R.,8,4,3,1,8,5,3,15,Albania - Abissnet Superiore,0.5,0.88,3,1.0,2.0,1.14,3
+Partizani T.,8,3,5,0,9,5,4,14,Albania - Abissnet Superiore,0.38,1.0,4,1.12,2.63,1.0,4
+Bylis,8,4,1,3,9,6,3,13,Albania - Abissnet Superiore,0.5,0.62,3,1.12,2.0,1.61,5
+KF Tirana,8,2,5,1,11,7,4,11,Albania - Abissnet Superiore,0.25,0.88,4,1.38,4.0,1.14,6
+Teuta Durres,8,2,5,1,9,7,2,11,Albania - Abissnet Superiore,0.25,0.88,2,1.12,4.0,1.14,6
+AF Elbasani,8,2,4,2,10,12,-2,10,Albania - Abissnet Superiore,0.25,0.75,-2,1.25,4.0,1.33,7
+Skenderbeu K.,8,1,3,4,8,13,-5,6,Albania - Abissnet Superiore,0.12,0.5,-5,1.0,8.33,2.0,8
 MC Oran,7,5,2,0,7,0,7,17,Algeria - Ligue 1,0.71,1.0,7,1.0,1.41,1.0,1
 JS Kabylie,8,5,1,2,13,8,5,16,Algeria - Ligue 1,0.62,0.75,5,1.62,1.61,1.33,2
 JS Saoura,7,4,3,0,10,5,5,15,Algeria - Ligue 1,0.57,1.0,5,1.43,1.75,1.0,3
@@ -146,18 +148,18 @@ Alashkert,8,1,3,4,8,19,-11,6,Armenia - Premier League,0.12,0.5,-11,1.0,8.33,2.0,
 Ararat Yerevan,8,1,2,5,7,14,-7,5,Armenia - Premier League,0.12,0.38,-7,0.88,8.33,2.63,7
 Gandzasar,8,0,0,8,2,24,-22,0,Armenia - Premier League,0.0,0.0,-22,0.25,0.0,0.0,8
 Auckland,6,4,1,1,7,5,2,13,Australia - A-League,0.67,0.83,2,1.17,1.49,1.2,1
-Melbourne V.,5,3,2,0,9,4,5,11,Australia - A-League,0.6,1.0,5,1.8,1.67,1.0,2
-Sydney FC,5,3,0,2,14,8,6,9,Australia - A-League,0.6,0.6,6,2.8,1.67,1.67,3
-WS Wanderers,6,2,1,3,16,13,3,7,Australia - A-League,0.33,0.5,3,2.67,3.03,2.0,4
-Melbourne City,5,2,1,2,7,7,0,7,Australia - A-League,0.4,0.6,0,1.4,2.5,1.67,4
-Wellington,5,2,1,2,5,6,-1,7,Australia - A-League,0.4,0.6,-1,1.0,2.5,1.67,4
-Adelaide Utd,5,1,3,1,10,10,0,6,Australia - A-League,0.2,0.8,0,2.0,5.0,1.25,5
-Central Coast,7,1,3,3,4,13,-9,6,Australia - A-League,0.14,0.57,-9,0.57,7.14,1.75,5
-Macarthur FC,6,1,2,3,13,11,2,5,Australia - A-League,0.17,0.5,2,2.17,5.88,2.0,6
-Western United,5,1,2,2,3,5,-2,5,Australia - A-League,0.2,0.6,-2,0.6,5.0,1.67,6
-Newcastle Jets,4,0,1,3,3,6,-3,1,Australia - A-League,0.0,0.25,-3,0.75,0.0,4.0,7
-Brisbane Roar,6,0,0,6,6,15,-9,0,Australia - A-League,0.0,0.0,-9,1.0,0.0,0.0,8
-Perth Glory,6,0,0,6,3,20,-17,0,Australia - A-League,0.0,0.0,-17,0.5,0.0,0.0,8
+Sydney FC,6,4,0,2,18,9,9,12,Australia - A-League,0.67,0.67,9,3.0,1.49,1.49,2
+Melbourne V.,6,3,2,1,12,8,4,11,Australia - A-League,0.5,0.83,4,2.0,2.0,1.2,3
+Melbourne City,6,3,1,2,8,7,1,10,Australia - A-League,0.5,0.67,1,1.33,2.0,1.49,4
+WS Wanderers,6,2,1,3,16,13,3,7,Australia - A-League,0.33,0.5,3,2.67,3.03,2.0,5
+Wellington,6,2,1,3,6,8,-2,7,Australia - A-League,0.33,0.5,-2,1.0,3.03,2.0,5
+Adelaide Utd,5,1,3,1,10,10,0,6,Australia - A-League,0.2,0.8,0,2.0,5.0,1.25,6
+Central Coast,7,1,3,3,4,13,-9,6,Australia - A-League,0.14,0.57,-9,0.57,7.14,1.75,6
+Macarthur FC,6,1,2,3,13,11,2,5,Australia - A-League,0.17,0.5,2,2.17,5.88,2.0,7
+Western United,5,1,2,2,3,5,-2,5,Australia - A-League,0.2,0.6,-2,0.6,5.0,1.67,7
+Perth Glory,7,1,0,6,4,20,-16,3,Australia - A-League,0.14,0.14,-16,0.57,7.14,7.14,8
+Newcastle Jets,5,0,1,4,4,9,-5,1,Australia - A-League,0.0,0.2,-5,0.8,0.0,5.0,9
+Brisbane Roar,6,0,0,6,6,15,-9,0,Australia - A-League,0.0,0.0,-9,1.0,0.0,0.0,10
 Altona Magic,0,0,0,0,0,0,0,0,Australia - NPL Victoria,0.0,0.0,0,0.0,0.0,0.0,1
 Avondale,0,0,0,0,0,0,0,0,Australia - NPL Victoria,0.0,0.0,0,0.0,0.0,0.0,1
 Dandenong City,0,0,0,0,0,0,0,0,Australia - NPL Victoria,0.0,0.0,0,0.0,0.0,0.0,1
@@ -223,27 +225,27 @@ Shamakhi,8,2,2,4,6,8,-2,8,Azerbaijan - Premier League,0.25,0.5,-2,0.75,4.0,2.0,6
 Sebail,8,2,1,5,9,12,-3,7,Azerbaijan - Premier League,0.25,0.38,-3,1.12,4.0,2.63,7
 Kapaz,8,2,1,5,7,19,-12,7,Azerbaijan - Premier League,0.25,0.38,-12,0.88,4.0,2.63,7
 Al-Muharraq,4,4,0,0,16,3,13,12,Bahrain - Premier League,1.0,1.0,13,4.0,1.0,1.0,1
-Al Riffa,3,3,0,0,8,1,7,9,Bahrain - Premier League,1.0,1.0,7,2.67,1.0,1.0,2
+Al Riffa,4,4,0,0,10,1,9,12,Bahrain - Premier League,1.0,1.0,9,2.5,1.0,1.0,1
+Khalidiya,4,4,0,0,8,1,7,12,Bahrain - Premier League,1.0,1.0,7,2.0,1.0,1.0,1
 Al Ahli M.,4,3,0,1,9,4,5,9,Bahrain - Premier League,0.75,0.75,5,2.25,1.33,1.33,2
-Khalidiya,3,3,0,0,5,1,4,9,Bahrain - Premier League,1.0,1.0,4,1.67,1.0,1.0,2
 Sitra,5,3,0,2,9,6,3,9,Bahrain - Premier League,0.6,0.6,3,1.8,1.67,1.67,2
 Malkiya,3,1,2,0,3,2,1,5,Bahrain - Premier League,0.33,1.0,1,1.0,3.03,1.0,3
-Manama,4,1,2,1,3,7,-4,5,Bahrain - Premier League,0.25,0.75,-4,0.75,4.0,1.33,3
+Manama,5,1,2,2,3,9,-6,5,Bahrain - Premier League,0.2,0.6,-6,0.6,5.0,1.67,3
 Al-Najma,3,1,1,1,7,4,3,4,Bahrain - Premier League,0.33,0.67,3,2.33,3.03,1.49,4
 Bahrain SC,3,1,0,2,4,5,-1,3,Bahrain - Premier League,0.33,0.33,-1,1.33,3.03,3.03,5
-AAli FC,3,1,0,2,3,5,-2,3,Bahrain - Premier League,0.33,0.33,-2,1.0,3.03,3.03,5
+AAli FC,4,1,0,3,4,8,-4,3,Bahrain - Premier League,0.25,0.25,-4,1.0,4.0,4.0,5
 Al Shabbab,3,0,2,1,2,4,-2,2,Bahrain - Premier League,0.0,0.67,-2,0.67,0.0,1.49,6
 East Riffa,4,0,1,3,3,8,-5,1,Bahrain - Premier League,0.0,0.25,-5,0.75,0.0,4.0,7
-Rahmatgonj,3,3,0,0,12,3,9,9,Bangladesh - Premier League,1.0,1.0,9,4.0,1.0,1.0,1
-Brothers Union,3,3,0,0,7,1,6,9,Bangladesh - Premier League,1.0,1.0,6,2.33,1.0,1.0,1
-Abahani,3,3,0,0,4,0,4,9,Bangladesh - Premier League,1.0,1.0,4,1.33,1.0,1.0,1
-Mohammedan,3,3,0,0,3,0,3,9,Bangladesh - Premier League,1.0,1.0,3,1.0,1.0,1.0,1
-Bashundhara K.,3,2,1,0,12,2,10,7,Bangladesh - Premier League,0.67,1.0,10,4.0,1.49,1.0,2
-Fortis,3,0,3,0,2,2,0,3,Bangladesh - Premier League,0.0,1.0,0,0.67,0.0,1.0,3
-B. Police,3,1,0,2,5,9,-4,3,Bangladesh - Premier League,0.33,0.33,-4,1.67,3.03,3.03,3
-Dhaka Wanderers,3,1,0,2,1,10,-9,3,Bangladesh - Premier League,0.33,0.33,-9,0.33,3.03,3.03,3
-Chittagong,3,0,0,3,1,9,-8,0,Bangladesh - Premier League,0.0,0.0,-8,0.33,0.0,0.0,4
-Fakirerpool,3,0,0,3,1,11,-10,0,Bangladesh - Premier League,0.0,0.0,-10,0.33,0.0,0.0,4
+Bashundhara K.,4,3,1,0,16,3,13,10,Bangladesh - Premier League,0.75,1.0,13,4.0,1.33,1.0,1
+Rahmatgonj,4,3,0,1,13,6,7,9,Bangladesh - Premier League,0.75,0.75,7,3.25,1.33,1.33,2
+Brothers Union,3,3,0,0,7,1,6,9,Bangladesh - Premier League,1.0,1.0,6,2.33,1.0,1.0,2
+Abahani,3,3,0,0,4,0,4,9,Bangladesh - Premier League,1.0,1.0,4,1.33,1.0,1.0,2
+Mohammedan,3,3,0,0,3,0,3,9,Bangladesh - Premier League,1.0,1.0,3,1.0,1.0,1.0,2
+B. Police,4,1,1,2,6,10,-4,4,Bangladesh - Premier League,0.25,0.5,-4,1.5,4.0,2.0,3
+Fortis,3,0,3,0,2,2,0,3,Bangladesh - Premier League,0.0,1.0,0,0.67,0.0,1.0,4
+Dhaka Wanderers,4,1,0,3,2,14,-12,3,Bangladesh - Premier League,0.25,0.25,-12,0.5,4.0,4.0,4
+Chittagong,3,0,0,3,1,9,-8,0,Bangladesh - Premier League,0.0,0.0,-8,0.33,0.0,0.0,5
+Fakirerpool,3,0,0,3,1,11,-10,0,Bangladesh - Premier League,0.0,0.0,-10,0.33,0.0,0.0,5
 Dinamo Minsk,8,8,0,0,15,0,15,24,Belarus - Vysshaya Liga,1.0,1.0,15,1.88,1.0,1.0,1
 Dinamo Brest,8,5,2,1,17,8,9,17,Belarus - Vysshaya Liga,0.62,0.88,9,2.12,1.61,1.14,2
 Neman Grodno,8,5,2,1,13,6,7,17,Belarus - Vysshaya Liga,0.62,0.88,7,1.62,1.61,1.14,2
@@ -278,28 +280,28 @@ Orsha,8,2,2,4,10,13,-3,8,Belarus - First League,0.25,0.5,-3,1.25,4.0,2.0,11
 Ostrovets,8,2,1,5,8,17,-9,7,Belarus - First League,0.25,0.38,-9,1.0,4.0,2.63,12
 ABFF U17,8,1,3,4,3,8,-5,6,Belarus - First League,0.12,0.5,-5,0.38,8.33,2.0,13
 T. Zhodhino B,8,1,0,7,9,24,-15,3,Belarus - First League,0.12,0.12,-15,1.12,8.33,8.33,14
-KRC Genk,8,8,0,0,20,5,15,24,Belgium - Pro League,1.0,1.0,15,2.5,1.0,1.0,1
+KRC Genk,8,8,0,0,21,5,16,24,Belgium - Pro League,1.0,1.0,16,2.62,1.0,1.0,1
 Club Brugge,8,6,1,1,25,10,15,19,Belgium - Pro League,0.75,0.88,15,3.12,1.33,1.14,2
-Charleroi,8,5,2,1,10,5,5,17,Belgium - Pro League,0.62,0.88,5,1.25,1.61,1.14,3
-KV Mechelen,8,4,3,1,16,4,12,15,Belgium - Pro League,0.5,0.88,12,2.0,2.0,1.14,4
-Royale Union SG,8,4,3,1,15,7,8,15,Belgium - Pro League,0.5,0.88,8,1.88,2.0,1.14,4
-Anderlecht,8,4,2,2,19,8,11,14,Belgium - Pro League,0.5,0.75,11,2.38,2.0,1.33,5
-Antwerp,8,4,2,2,17,7,10,14,Belgium - Pro League,0.5,0.75,10,2.12,2.0,1.33,5
-Gent,8,4,2,2,15,7,8,14,Belgium - Pro League,0.5,0.75,8,1.88,2.0,1.33,5
-Standard Liege,8,4,2,2,8,6,2,14,Belgium - Pro League,0.5,0.75,2,1.0,2.0,1.33,5
-OH Leuven,8,3,4,1,8,4,4,13,Belgium - Pro League,0.38,0.88,4,1.0,2.63,1.14,6
-Sint-Truiden,8,3,4,1,10,8,2,13,Belgium - Pro League,0.38,0.88,2,1.25,2.63,1.14,6
-Cercle Brugge,8,3,3,2,8,10,-2,12,Belgium - Pro League,0.38,0.75,-2,1.0,2.63,1.33,7
-Westerlo,8,2,4,2,14,10,4,10,Belgium - Pro League,0.25,0.75,4,1.75,4.0,1.33,8
-Beerschot,8,2,4,2,10,12,-2,10,Belgium - Pro League,0.25,0.75,-2,1.25,4.0,1.33,8
-Kortrijk,8,3,1,4,8,12,-4,10,Belgium - Pro League,0.38,0.5,-4,1.0,2.63,2.0,8
+KV Mechelen,8,4,3,1,16,4,12,15,Belgium - Pro League,0.5,0.88,12,2.0,2.0,1.14,3
+Royale Union SG,8,4,3,1,15,7,8,15,Belgium - Pro League,0.5,0.88,8,1.88,2.0,1.14,3
+Anderlecht,8,4,2,2,19,8,11,14,Belgium - Pro League,0.5,0.75,11,2.38,2.0,1.33,4
+Antwerp,8,4,2,2,17,7,10,14,Belgium - Pro League,0.5,0.75,10,2.12,2.0,1.33,4
+Gent,8,4,2,2,15,7,8,14,Belgium - Pro League,0.5,0.75,8,1.88,2.0,1.33,4
+Charleroi,8,4,2,2,10,7,3,14,Belgium - Pro League,0.5,0.75,3,1.25,2.0,1.33,4
+Standard Liege,8,4,2,2,8,6,2,14,Belgium - Pro League,0.5,0.75,2,1.0,2.0,1.33,4
+OH Leuven,8,3,4,1,8,4,4,13,Belgium - Pro League,0.38,0.88,4,1.0,2.63,1.14,5
+Sint-Truiden,8,3,4,1,10,8,2,13,Belgium - Pro League,0.38,0.88,2,1.25,2.63,1.14,5
+Cercle Brugge,8,3,3,2,8,10,-2,12,Belgium - Pro League,0.38,0.75,-2,1.0,2.63,1.33,6
+Beerschot,8,2,4,2,10,12,-2,10,Belgium - Pro League,0.25,0.75,-2,1.25,4.0,1.33,7
+Kortrijk,8,3,1,4,8,12,-4,10,Belgium - Pro League,0.38,0.5,-4,1.0,2.63,2.0,7
+Westerlo,8,2,3,3,14,11,3,9,Belgium - Pro League,0.25,0.62,3,1.75,4.0,1.61,8
 Dender,8,2,2,4,8,14,-6,8,Belgium - Pro League,0.25,0.5,-6,1.0,4.0,2.0,9
-Zulte-Waregem,8,6,1,1,19,7,12,19,Belgium - Challenger Pro League,0.75,0.88,12,2.38,1.33,1.14,1
+Zulte-Waregem,8,7,1,0,22,8,14,22,Belgium - Challenger Pro League,0.88,1.0,14,2.75,1.14,1.0,1
 Lierse K.,8,5,2,1,18,9,9,17,Belgium - Challenger Pro League,0.62,0.88,9,2.25,1.61,1.14,2
 La Louviere,8,5,2,1,15,6,9,17,Belgium - Challenger Pro League,0.62,0.88,9,1.88,1.61,1.14,2
+RWDM,8,5,2,1,12,7,5,17,Belgium - Challenger Pro League,0.62,0.88,5,1.5,1.61,1.14,2
 Beveren,8,4,3,1,11,5,6,15,Belgium - Challenger Pro League,0.5,0.88,6,1.38,2.0,1.14,3
 Patro Eisden,8,4,2,2,20,11,9,14,Belgium - Challenger Pro League,0.5,0.75,9,2.5,2.0,1.33,4
-RWDM,7,4,2,1,10,6,4,14,Belgium - Challenger Pro League,0.57,0.86,4,1.43,1.75,1.16,4
 Club Brugge B,8,4,1,3,14,12,2,13,Belgium - Challenger Pro League,0.5,0.62,2,1.75,2.0,1.61,5
 Anderlecht B,6,2,1,3,9,9,0,7,Belgium - Challenger Pro League,0.33,0.5,0,1.5,3.03,2.0,6
 RFC Liege,7,1,4,2,7,10,-3,7,Belgium - Challenger Pro League,0.14,0.71,-3,1.0,7.14,1.41,6
@@ -431,18 +433,18 @@ Cameta,7,4,1,2,12,8,4,13,Brazil - Serie D,0.57,0.71,4,1.71,1.75,1.41,8
 Santa Cruz de N,7,4,1,2,14,11,3,13,Brazil - Serie D,0.57,0.71,3,2.0,1.75,1.41,8
 ASA,7,4,1,2,7,4,3,13,Brazil - Serie D,0.57,0.71,3,1.0,1.75,1.41,8
 Costa Rica MS,7,4,1,2,11,11,0,13,Brazil - Serie D,0.57,0.71,0,1.57,1.75,1.41,8
-Bangu,0,0,0,0,0,0,0,0,Brazil - Carioca,0.0,0.0,0,0.0,0.0,0.0,1
-Boavista,0,0,0,0,0,0,0,0,Brazil - Carioca,0.0,0.0,0,0.0,0.0,0.0,1
-Botafogo,0,0,0,0,0,0,0,0,Brazil - Carioca,0.0,0.0,0,0.0,0.0,0.0,1
-CFRJ . Marica,0,0,0,0,0,0,0,0,Brazil - Carioca,0.0,0.0,0,0.0,0.0,0.0,1
-Flamengo,0,0,0,0,0,0,0,0,Brazil - Carioca,0.0,0.0,0,0.0,0.0,0.0,1
-Fluminense,0,0,0,0,0,0,0,0,Brazil - Carioca,0.0,0.0,0,0.0,0.0,0.0,1
-Madureira,0,0,0,0,0,0,0,0,Brazil - Carioca,0.0,0.0,0,0.0,0.0,0.0,1
-Nova Iguacu,0,0,0,0,0,0,0,0,Brazil - Carioca,0.0,0.0,0,0.0,0.0,0.0,1
-Portuguesa RJ,0,0,0,0,0,0,0,0,Brazil - Carioca,0.0,0.0,0,0.0,0.0,0.0,1
-Sampaio Correa,0,0,0,0,0,0,0,0,Brazil - Carioca,0.0,0.0,0,0.0,0.0,0.0,1
-Vasco da Gama,0,0,0,0,0,0,0,0,Brazil - Carioca,0.0,0.0,0,0.0,0.0,0.0,1
-Volta Redonda,0,0,0,0,0,0,0,0,Brazil - Carioca,0.0,0.0,0,0.0,0.0,0.0,1
+Nova Iguacu,1,0,1,0,1,1,0,1,Brazil - Carioca,0.0,1.0,0,1.0,0.0,1.0,1
+Boavista,0,0,0,0,0,0,0,0,Brazil - Carioca,0.0,0.0,0,0.0,0.0,0.0,2
+CFRJ . Marica,0,0,0,0,0,0,0,0,Brazil - Carioca,0.0,0.0,0,0.0,0.0,0.0,2
+Flamengo,0,0,0,0,0,0,0,0,Brazil - Carioca,0.0,0.0,0,0.0,0.0,0.0,2
+Fluminense,0,0,0,0,0,0,0,0,Brazil - Carioca,0.0,0.0,0,0.0,0.0,0.0,2
+Madureira,0,0,0,0,0,0,0,0,Brazil - Carioca,0.0,0.0,0,0.0,0.0,0.0,2
+Portuguesa RJ,0,0,0,0,0,0,0,0,Brazil - Carioca,0.0,0.0,0,0.0,0.0,0.0,2
+Sampaio Correa,0,0,0,0,0,0,0,0,Brazil - Carioca,0.0,0.0,0,0.0,0.0,0.0,2
+Vasco da Gama,0,0,0,0,0,0,0,0,Brazil - Carioca,0.0,0.0,0,0.0,0.0,0.0,2
+Volta Redonda,0,0,0,0,0,0,0,0,Brazil - Carioca,0.0,0.0,0,0.0,0.0,0.0,2
+Botafogo,1,0,0,1,1,2,-1,0,Brazil - Carioca,0.0,0.0,-1,1.0,0.0,0.0,2
+Bangu,1,0,0,1,0,1,-1,0,Brazil - Carioca,0.0,0.0,-1,0.0,0.0,0.0,2
 America MG,0,0,0,0,0,0,0,0,Brazil - Mineiro,0.0,0.0,0,0.0,0.0,0.0,1
 Athletic Club,0,0,0,0,0,0,0,0,Brazil - Mineiro,0.0,0.0,0,0.0,0.0,0.0,1
 Atletico MG,0,0,0,0,0,0,0,0,Brazil - Mineiro,0.0,0.0,0,0.0,0.0,0.0,1
@@ -467,17 +469,17 @@ Goiatuba EC,0,0,0,0,0,0,0,0,Brazil - Goiano,0.0,0.0,0,0.0,0.0,0.0,1
 Inhumas,0,0,0,0,0,0,0,0,Brazil - Goiano,0.0,0.0,0,0.0,0.0,0.0,1
 Jataiense,0,0,0,0,0,0,0,0,Brazil - Goiano,0.0,0.0,0,0.0,0.0,0.0,1
 Vila Nova,0,0,0,0,0,0,0,0,Brazil - Goiano,0.0,0.0,0,0.0,0.0,0.0,1
-Afogados,0,0,0,0,0,0,0,0,Brazil - Pernambucano,0.0,0.0,0,0.0,0.0,0.0,1
-Central,0,0,0,0,0,0,0,0,Brazil - Pernambucano,0.0,0.0,0,0.0,0.0,0.0,1
-Decisao,0,0,0,0,0,0,0,0,Brazil - Pernambucano,0.0,0.0,0,0.0,0.0,0.0,1
-Jaguar,0,0,0,0,0,0,0,0,Brazil - Pernambucano,0.0,0.0,0,0.0,0.0,0.0,1
-Maguary PE,0,0,0,0,0,0,0,0,Brazil - Pernambucano,0.0,0.0,0,0.0,0.0,0.0,1
-Nautico,0,0,0,0,0,0,0,0,Brazil - Pernambucano,0.0,0.0,0,0.0,0.0,0.0,1
-Petrolina,0,0,0,0,0,0,0,0,Brazil - Pernambucano,0.0,0.0,0,0.0,0.0,0.0,1
-Retro,0,0,0,0,0,0,0,0,Brazil - Pernambucano,0.0,0.0,0,0.0,0.0,0.0,1
-Santa Cruz,0,0,0,0,0,0,0,0,Brazil - Pernambucano,0.0,0.0,0,0.0,0.0,0.0,1
-Sport Recife,0,0,0,0,0,0,0,0,Brazil - Pernambucano,0.0,0.0,0,0.0,0.0,0.0,1
-Winner Semi-fin,0,0,0,0,0,0,0,0,Brazil - Pernambucano,0.0,0.0,0,0.0,0.0,0.0,1
+Afogados,1,0,1,0,1,1,0,1,Brazil - Pernambucano,0.0,1.0,0,1.0,0.0,1.0,1
+Decisao,1,0,1,0,1,1,0,1,Brazil - Pernambucano,0.0,1.0,0,1.0,0.0,1.0,1
+Nautico,1,0,1,0,1,1,0,1,Brazil - Pernambucano,0.0,1.0,0,1.0,0.0,1.0,1
+Central,0,0,0,0,0,0,0,0,Brazil - Pernambucano,0.0,0.0,0,0.0,0.0,0.0,2
+Jaguar,0,0,0,0,0,0,0,0,Brazil - Pernambucano,0.0,0.0,0,0.0,0.0,0.0,2
+Maguary PE,0,0,0,0,0,0,0,0,Brazil - Pernambucano,0.0,0.0,0,0.0,0.0,0.0,2
+Petrolina,0,0,0,0,0,0,0,0,Brazil - Pernambucano,0.0,0.0,0,0.0,0.0,0.0,2
+Retro,0,0,0,0,0,0,0,0,Brazil - Pernambucano,0.0,0.0,0,0.0,0.0,0.0,2
+Santa Cruz,0,0,0,0,0,0,0,0,Brazil - Pernambucano,0.0,0.0,0,0.0,0.0,0.0,2
+Sport Recife,0,0,0,0,0,0,0,0,Brazil - Pernambucano,0.0,0.0,0,0.0,0.0,0.0,2
+Winner Semi-fin,0,0,0,0,0,0,0,0,Brazil - Pernambucano,0.0,0.0,0,0.0,0.0,0.0,2
 Agua Santa,0,0,0,0,0,0,0,0,Brazil - Paulista,0.0,0.0,0,0.0,0.0,0.0,1
 Botafogo SP,0,0,0,0,0,0,0,0,Brazil - Paulista,0.0,0.0,0,0.0,0.0,0.0,1
 Bragantino,0,0,0,0,0,0,0,0,Brazil - Paulista,0.0,0.0,0,0.0,0.0,0.0,1
@@ -494,28 +496,28 @@ Santos,0,0,0,0,0,0,0,0,Brazil - Paulista,0.0,0.0,0,0.0,0.0,0.0,1
 Sao Bernardo,0,0,0,0,0,0,0,0,Brazil - Paulista,0.0,0.0,0,0.0,0.0,0.0,1
 Sao Paulo,0,0,0,0,0,0,0,0,Brazil - Paulista,0.0,0.0,0,0.0,0.0,0.0,1
 Velo Clube,0,0,0,0,0,0,0,0,Brazil - Paulista,0.0,0.0,0,0.0,0.0,0.0,1
-Auto Esporte,0,0,0,0,0,0,0,0,Brazil - Paraibano,0.0,0.0,0,0.0,0.0,0.0,1
-Botafogo PB,0,0,0,0,0,0,0,0,Brazil - Paraibano,0.0,0.0,0,0.0,0.0,0.0,1
-Campinense,0,0,0,0,0,0,0,0,Brazil - Paraibano,0.0,0.0,0,0.0,0.0,0.0,1
-EC de Patos,0,0,0,0,0,0,0,0,Brazil - Paraibano,0.0,0.0,0,0.0,0.0,0.0,1
-Nacional Patos,0,0,0,0,0,0,0,0,Brazil - Paraibano,0.0,0.0,0,0.0,0.0,0.0,1
-Picuiense,0,0,0,0,0,0,0,0,Brazil - Paraibano,0.0,0.0,0,0.0,0.0,0.0,1
-Pombal,0,0,0,0,0,0,0,0,Brazil - Paraibano,0.0,0.0,0,0.0,0.0,0.0,1
-Serra Branca,0,0,0,0,0,0,0,0,Brazil - Paraibano,0.0,0.0,0,0.0,0.0,0.0,1
-Sousa,0,0,0,0,0,0,0,0,Brazil - Paraibano,0.0,0.0,0,0.0,0.0,0.0,1
-Treze,0,0,0,0,0,0,0,0,Brazil - Paraibano,0.0,0.0,0,0.0,0.0,0.0,1
-Avai,0,0,0,0,0,0,0,0,Brazil - Catarinense,0.0,0.0,0,0.0,0.0,0.0,1
-Barra FC,0,0,0,0,0,0,0,0,Brazil - Catarinense,0.0,0.0,0,0.0,0.0,0.0,1
-Brusque,0,0,0,0,0,0,0,0,Brazil - Catarinense,0.0,0.0,0,0.0,0.0,0.0,1
-Caravaggio,0,0,0,0,0,0,0,0,Brazil - Catarinense,0.0,0.0,0,0.0,0.0,0.0,1
-Chapecoense,0,0,0,0,0,0,0,0,Brazil - Catarinense,0.0,0.0,0,0.0,0.0,0.0,1
-Concordia,0,0,0,0,0,0,0,0,Brazil - Catarinense,0.0,0.0,0,0.0,0.0,0.0,1
-Criciuma,0,0,0,0,0,0,0,0,Brazil - Catarinense,0.0,0.0,0,0.0,0.0,0.0,1
-Figueirense,0,0,0,0,0,0,0,0,Brazil - Catarinense,0.0,0.0,0,0.0,0.0,0.0,1
-Hercilio Luz,0,0,0,0,0,0,0,0,Brazil - Catarinense,0.0,0.0,0,0.0,0.0,0.0,1
-Joinville,0,0,0,0,0,0,0,0,Brazil - Catarinense,0.0,0.0,0,0.0,0.0,0.0,1
-Marcilio Dias,0,0,0,0,0,0,0,0,Brazil - Catarinense,0.0,0.0,0,0.0,0.0,0.0,1
-Santa Catarina,0,0,0,0,0,0,0,0,Brazil - Catarinense,0.0,0.0,0,0.0,0.0,0.0,1
+Serra Branca,1,1,0,0,1,0,1,3,Brazil - Paraibano,1.0,1.0,1,1.0,1.0,1.0,1
+Auto Esporte,0,0,0,0,0,0,0,0,Brazil - Paraibano,0.0,0.0,0,0.0,0.0,0.0,2
+Botafogo PB,0,0,0,0,0,0,0,0,Brazil - Paraibano,0.0,0.0,0,0.0,0.0,0.0,2
+Campinense,0,0,0,0,0,0,0,0,Brazil - Paraibano,0.0,0.0,0,0.0,0.0,0.0,2
+EC de Patos,0,0,0,0,0,0,0,0,Brazil - Paraibano,0.0,0.0,0,0.0,0.0,0.0,2
+Nacional Patos,0,0,0,0,0,0,0,0,Brazil - Paraibano,0.0,0.0,0,0.0,0.0,0.0,2
+Picuiense,0,0,0,0,0,0,0,0,Brazil - Paraibano,0.0,0.0,0,0.0,0.0,0.0,2
+Pombal,0,0,0,0,0,0,0,0,Brazil - Paraibano,0.0,0.0,0,0.0,0.0,0.0,2
+Sousa,0,0,0,0,0,0,0,0,Brazil - Paraibano,0.0,0.0,0,0.0,0.0,0.0,2
+Treze,0,0,0,0,0,0,0,0,Brazil - Paraibano,0.0,0.0,0,0.0,0.0,0.0,2
+Joinville,1,0,1,0,0,0,0,1,Brazil - Catarinense,0.0,1.0,0,0.0,0.0,1.0,1
+Avai,0,0,0,0,0,0,0,0,Brazil - Catarinense,0.0,0.0,0,0.0,0.0,0.0,2
+Barra FC,0,0,0,0,0,0,0,0,Brazil - Catarinense,0.0,0.0,0,0.0,0.0,0.0,2
+Brusque,0,0,0,0,0,0,0,0,Brazil - Catarinense,0.0,0.0,0,0.0,0.0,0.0,2
+Caravaggio,0,0,0,0,0,0,0,0,Brazil - Catarinense,0.0,0.0,0,0.0,0.0,0.0,2
+Chapecoense,0,0,0,0,0,0,0,0,Brazil - Catarinense,0.0,0.0,0,0.0,0.0,0.0,2
+Concordia,0,0,0,0,0,0,0,0,Brazil - Catarinense,0.0,0.0,0,0.0,0.0,0.0,2
+Criciuma,0,0,0,0,0,0,0,0,Brazil - Catarinense,0.0,0.0,0,0.0,0.0,0.0,2
+Figueirense,0,0,0,0,0,0,0,0,Brazil - Catarinense,0.0,0.0,0,0.0,0.0,0.0,2
+Hercilio Luz,0,0,0,0,0,0,0,0,Brazil - Catarinense,0.0,0.0,0,0.0,0.0,0.0,2
+Marcilio Dias,0,0,0,0,0,0,0,0,Brazil - Catarinense,0.0,0.0,0,0.0,0.0,0.0,2
+Santa Catarina,0,0,0,0,0,0,0,0,Brazil - Catarinense,0.0,0.0,0,0.0,0.0,0.0,2
 Avenida,0,0,0,0,0,0,0,0,Brazil - Gaucho,0.0,0.0,0,0.0,0.0,0.0,1
 Brasil de P.,0,0,0,0,0,0,0,0,Brazil - Gaucho,0.0,0.0,0,0.0,0.0,0.0,1
 Caxias,0,0,0,0,0,0,0,0,Brazil - Gaucho,0.0,0.0,0,0.0,0.0,0.0,1
@@ -774,14 +776,14 @@ Ismaily,4,1,3,0,4,3,1,6,Egypt - Premier League,0.25,1.0,1,1.0,4.0,1.0,2
 Pharco,4,2,0,2,7,7,0,6,Egypt - Premier League,0.5,0.5,0,1.75,2.0,2.0,2
 Haras El Hodood,4,1,2,1,4,3,1,5,Egypt - Premier League,0.25,0.75,1,1.0,4.0,1.33,3
 ZED FC,4,1,2,1,3,2,1,5,Egypt - Premier League,0.25,0.75,1,0.75,4.0,1.33,3
-Petrojet,3,1,1,1,3,3,0,4,Egypt - Premier League,0.33,0.67,0,1.0,3.03,1.49,4
+Petrojet,4,1,2,1,3,3,0,5,Egypt - Premier League,0.25,0.75,0,0.75,4.0,1.33,3
+National Bank,4,1,2,1,2,2,0,5,Egypt - Premier League,0.25,0.75,0,0.5,4.0,1.33,3
 ENPPI,3,1,1,1,2,2,0,4,Egypt - Premier League,0.33,0.67,0,0.67,3.03,1.49,4
-Al Ittihad,3,1,1,1,1,1,0,4,Egypt - Premier League,0.33,0.67,0,0.33,3.03,1.49,4
+Al Ittihad,4,1,1,2,1,2,-1,4,Egypt - Premier League,0.25,0.5,-1,0.25,4.0,2.0,4
 Al Masry,3,1,1,1,1,2,-1,4,Egypt - Premier League,0.33,0.67,-1,0.33,3.03,1.49,4
 El Gouna,4,1,1,2,1,2,-1,4,Egypt - Premier League,0.25,0.5,-1,0.25,4.0,2.0,4
 Modern Sport,4,0,3,1,0,1,-1,3,Egypt - Premier League,0.0,0.75,-1,0.0,0.0,1.33,5
-National Bank,3,0,2,1,1,2,-1,2,Egypt - Premier League,0.0,0.67,-1,0.33,0.0,1.49,6
-El Geish,4,0,2,2,2,5,-3,2,Egypt - Premier League,0.0,0.5,-3,0.5,0.0,2.0,6
+El Geish,5,0,2,3,2,6,-4,2,Egypt - Premier League,0.0,0.4,-4,0.4,0.0,2.5,6
 Smouha,3,0,1,2,2,6,-4,1,Egypt - Premier League,0.0,0.33,-4,0.67,0.0,3.03,7
 Ghazl El M.,4,0,1,3,2,8,-6,1,Egypt - Premier League,0.0,0.25,-6,0.5,0.0,4.0,7
 Liverpool,8,6,2,0,18,7,11,20,Premier League,0.75,1.0,11,2.25,1.33,1.0,2
@@ -833,10 +835,10 @@ Reading,8,7,0,1,19,8,11,21,League One,0.88,0.88,11,2.38,1.14,1.14,2
 Birmingham City,8,6,2,0,13,3,10,20,League One,0.75,1.0,10,1.62,1.33,1.0,3
 Leyton Orient,8,6,1,1,13,2,11,19,League One,0.75,0.88,11,1.62,1.33,1.14,4
 Huddersfield,8,5,3,0,12,5,7,18,League One,0.62,1.0,7,1.5,1.61,1.0,5
+Rotherham,8,5,1,2,13,6,7,16,League One,0.62,0.75,7,1.62,1.61,1.33,6
 Stockport,8,5,1,2,16,10,6,16,League One,0.62,0.75,6,2.0,1.61,1.33,6
 Bolton,8,5,1,2,14,9,5,16,League One,0.62,0.75,5,1.75,1.61,1.33,6
 Wycombe,8,4,3,1,11,5,6,15,League One,0.5,0.88,6,1.38,2.0,1.14,7
-Rotherham,8,4,1,3,10,7,3,13,League One,0.5,0.62,3,1.25,2.0,1.61,8
 Charlton,8,3,4,1,9,7,2,13,League One,0.38,0.88,2,1.12,2.63,1.14,8
 Mansfield,8,4,1,3,9,7,2,13,League One,0.5,0.62,2,1.12,2.0,1.61,8
 Blackpool,8,2,5,1,10,7,3,11,League One,0.25,0.88,3,1.25,4.0,1.14,9
@@ -852,19 +854,19 @@ Crawley Town,8,2,2,4,10,13,-3,8,League One,0.25,0.5,-3,1.25,4.0,2.0,12
 Wigan Athletic,8,2,2,4,8,11,-3,8,League One,0.25,0.5,-3,1.0,4.0,2.0,12
 Shrewsbury,8,2,1,5,7,15,-8,7,League One,0.25,0.38,-8,0.88,4.0,2.63,13
 Burton Albion,8,1,2,5,5,10,-5,5,League One,0.12,0.38,-5,0.62,8.33,2.63,14
-Bradford,8,6,1,1,15,8,7,19,League Two,0.75,0.88,7,1.88,1.33,1.14,1
-Crewe Alexandra,8,5,3,0,16,6,10,18,League Two,0.62,1.0,10,2.0,1.61,1.0,2
-Salford City,8,6,0,2,13,4,9,18,League Two,0.75,0.75,9,1.62,1.33,1.33,2
-Walsall,8,5,2,1,16,12,4,17,League Two,0.62,0.88,4,2.0,1.61,1.14,3
+Walsall,8,6,2,0,19,7,12,20,League Two,0.75,1.0,12,2.38,1.33,1.0,1
+Bradford,8,6,1,1,15,8,7,19,League Two,0.75,0.88,7,1.88,1.33,1.14,2
+Crewe Alexandra,8,5,3,0,16,6,10,18,League Two,0.62,1.0,10,2.0,1.61,1.0,3
+Salford City,8,6,0,2,13,4,9,18,League Two,0.75,0.75,9,1.62,1.33,1.33,3
 Notts County,8,4,1,3,8,4,4,13,League Two,0.5,0.62,4,1.0,2.0,1.61,4
 Milton Keynes,8,4,1,3,12,9,3,13,League Two,0.5,0.62,3,1.5,2.0,1.61,4
 Port Vale,8,3,4,1,10,7,3,13,League Two,0.38,0.88,3,1.25,2.63,1.14,4
+Swindon Town,8,3,3,2,13,10,3,12,League Two,0.38,0.75,3,1.62,2.63,1.33,5
 AFC Wimbledon,8,3,3,2,10,7,3,12,League Two,0.38,0.75,3,1.25,2.63,1.33,5
 Cheltenham,8,3,3,2,13,12,1,12,League Two,0.38,0.75,1,1.62,2.63,1.33,5
 Chesterfield,8,3,3,2,11,10,1,12,League Two,0.38,0.75,1,1.38,2.63,1.33,5
 Accrington,8,3,3,2,11,11,0,12,League Two,0.38,0.75,0,1.38,2.63,1.33,5
 Bromley,8,2,5,1,13,10,3,11,League Two,0.25,0.88,3,1.62,4.0,1.14,6
-Swindon Town,8,3,2,3,13,12,1,11,League Two,0.38,0.62,1,1.62,2.63,1.61,6
 Newport,8,3,2,3,13,14,-1,11,League Two,0.38,0.62,-1,1.62,2.63,1.61,6
 Tranmere,8,3,2,3,8,10,-2,11,League Two,0.38,0.62,-2,1.0,2.63,1.61,6
 Doncaster,8,2,4,2,11,10,1,10,League Two,0.25,0.75,1,1.38,4.0,1.33,7
@@ -887,7 +889,7 @@ Gateshead FC,8,5,1,2,14,8,6,16,England - National League,0.62,0.75,6,1.75,1.61,1
 Solihull Moors,8,5,1,2,20,16,4,16,England - National League,0.62,0.75,4,2.5,1.61,1.33,5
 Dagenham & R.,8,4,2,2,23,14,9,14,England - National League,0.5,0.75,9,2.88,2.0,1.33,6
 Tamworth,8,3,4,1,11,9,2,13,England - National League,0.38,0.88,2,1.38,2.63,1.14,7
-Yeovil Town,8,3,3,2,11,8,3,12,England - National League,0.38,0.75,3,1.38,2.63,1.33,8
+Yeovil Town,8,3,3,2,12,9,3,12,England - National League,0.38,0.75,3,1.5,2.63,1.33,8
 Halifax Town,8,3,3,2,11,10,1,12,England - National League,0.38,0.75,1,1.38,2.63,1.33,8
 Woking,8,3,3,2,9,8,1,12,England - National League,0.38,0.75,1,1.12,2.63,1.33,8
 AFC Fylde,8,3,2,3,15,15,0,11,England - National League,0.38,0.62,0,1.88,2.63,1.61,9
@@ -898,7 +900,7 @@ Aldershot Town,8,2,3,3,9,11,-2,9,England - National League,0.25,0.62,-2,1.12,4.0
 Maidenhead Utd,8,2,3,3,10,16,-6,9,England - National League,0.25,0.62,-6,1.25,4.0,1.61,11
 Southend Utd,8,2,2,4,10,11,-1,8,England - National League,0.25,0.5,-1,1.25,4.0,2.0,12
 Eastleigh,8,1,5,2,10,12,-2,8,England - National League,0.12,0.75,-2,1.25,8.33,1.33,12
-Boston Utd,8,1,2,5,8,11,-3,5,England - National League,0.12,0.38,-3,1.0,8.33,2.63,13
+Boston Utd,8,1,3,4,9,11,-2,6,England - National League,0.12,0.5,-2,1.12,8.33,2.0,13
 Ebbsfleet Utd,8,0,3,5,6,19,-13,3,England - National League,0.0,0.38,-13,0.75,0.0,2.63,14
 Chorley,8,6,1,1,13,8,5,19,England - National L. North,0.75,0.88,5,1.62,1.33,1.14,1
 South Shields,8,5,1,2,19,6,13,16,England - National L. North,0.62,0.75,13,2.38,1.61,1.33,2
@@ -906,55 +908,55 @@ Leamington,8,5,1,2,16,8,8,16,England - National L. North,0.62,0.75,8,2.0,1.61,1.
 Hereford Utd,8,5,1,2,12,5,7,16,England - National L. North,0.62,0.75,7,1.5,1.61,1.33,2
 Darlington,8,4,4,0,15,9,6,16,England - National L. North,0.5,1.0,6,1.88,2.0,1.0,2
 Brackley Town,8,5,1,2,8,5,3,16,England - National L. North,0.62,0.75,3,1.0,1.61,1.33,2
-Buxton,8,5,0,3,17,9,8,15,England - National L. North,0.62,0.62,8,2.12,1.61,1.61,3
 Southport,8,4,3,1,11,4,7,15,England - National L. North,0.5,0.88,7,1.38,2.0,1.14,3
 Kings Lynn,8,4,3,1,10,4,6,15,England - National L. North,0.5,0.88,6,1.25,2.0,1.14,3
 Kidderminster,8,4,2,2,10,4,6,14,England - National L. North,0.5,0.75,6,1.25,2.0,1.33,4
 Scunthorpe,8,3,4,1,16,5,11,13,England - National L. North,0.38,0.88,11,2.0,2.63,1.14,5
 Chester,8,3,4,1,9,4,5,13,England - National L. North,0.38,0.88,5,1.12,2.63,1.14,5
-Oxford City,8,3,2,3,14,10,4,11,England - National L. North,0.38,0.62,4,1.75,2.63,1.61,6
-Peterborough S.,8,3,2,3,10,8,2,11,England - National L. North,0.38,0.62,2,1.25,2.63,1.61,6
-Alfreton Town,8,3,2,3,7,8,-1,11,England - National L. North,0.38,0.62,-1,0.88,2.63,1.61,6
-Curzon,8,3,1,4,11,8,3,10,England - National L. North,0.38,0.5,3,1.38,2.63,2.0,7
-Marine,8,3,1,4,11,10,1,10,England - National L. North,0.38,0.5,1,1.38,2.63,2.0,7
-Spennymoor,8,2,4,2,10,10,0,10,England - National L. North,0.25,0.75,0,1.25,4.0,1.33,7
-Scarborough,8,2,4,2,6,7,-1,10,England - National L. North,0.25,0.75,-1,0.75,4.0,1.33,7
-Radcliffe,8,3,0,5,11,17,-6,9,England - National L. North,0.38,0.38,-6,1.38,2.63,2.63,8
-Warrington,8,2,1,5,5,10,-5,7,England - National L. North,0.25,0.38,-5,0.62,4.0,2.63,9
-Needham Market,8,1,2,5,7,12,-5,5,England - National L. North,0.12,0.38,-5,0.88,8.33,2.63,10
-Farsley Celtic,8,1,1,6,6,13,-7,4,England - National L. North,0.12,0.25,-7,0.75,8.33,4.0,11
-Rushall,8,0,3,5,7,13,-6,3,England - National L. North,0.0,0.38,-6,0.88,0.0,2.63,12
-Boreham Wood,8,5,3,0,17,4,13,18,England - National L. South,0.62,1.0,13,2.12,1.61,1.0,1
-Maidstone Utd,8,5,3,0,14,5,9,18,England - National L. South,0.62,1.0,9,1.75,1.61,1.0,1
-Worthing,8,5,3,0,15,8,7,18,England - National L. South,0.62,1.0,7,1.88,1.61,1.0,1
-Torquay Utd,8,5,3,0,13,6,7,18,England - National L. South,0.62,1.0,7,1.62,1.61,1.0,1
-Farnborough,8,5,2,1,15,7,8,17,England - National L. South,0.62,0.88,8,1.88,1.61,1.14,2
-Truro City,8,5,2,1,12,7,5,17,England - National L. South,0.62,0.88,5,1.5,1.61,1.14,2
-Eastbourne,8,4,4,0,11,5,6,16,England - National L. South,0.5,1.0,6,1.38,2.0,1.0,3
-Tonbridge,8,5,1,2,12,9,3,16,England - National L. South,0.62,0.75,3,1.5,1.61,1.33,3
-Hampton & R.,8,4,2,2,14,7,7,14,England - National L. South,0.5,0.75,7,1.75,2.0,1.33,4
-Hornchurch,8,4,2,2,7,6,1,14,England - National L. South,0.5,0.75,1,0.88,2.0,1.33,4
-Slough Town,8,3,4,1,16,11,5,13,England - National L. South,0.38,0.88,5,2.0,2.63,1.14,5
-Dorking,8,3,4,1,12,10,2,13,England - National L. South,0.38,0.88,2,1.5,2.63,1.14,5
-Chelmsford City,8,4,1,3,13,13,0,13,England - National L. South,0.5,0.62,0,1.62,2.0,1.61,5
-Chesham Utd,8,4,1,3,9,11,-2,13,England - National L. South,0.5,0.62,-2,1.12,2.0,1.61,5
-Bath City,8,3,2,3,10,10,0,11,England - National L. South,0.38,0.62,0,1.25,2.63,1.61,6
-Weston-s.-Mare,8,2,4,2,12,11,1,10,England - National L. South,0.25,0.75,1,1.5,4.0,1.33,7
-Welling Utd,8,3,1,4,7,11,-4,10,England - National L. South,0.38,0.5,-4,0.88,2.63,2.0,7
-Salisbury,8,2,2,4,10,10,0,8,England - National L. South,0.25,0.5,0,1.25,4.0,2.0,8
-Aveley,8,2,2,4,10,12,-2,8,England - National L. South,0.25,0.5,-2,1.25,4.0,2.0,8
-St Albans,8,2,2,4,10,13,-3,8,England - National L. South,0.25,0.5,-3,1.25,4.0,2.0,8
-Hemel Hempstead,8,2,2,4,15,24,-9,8,England - National L. South,0.25,0.5,-9,1.88,4.0,2.0,8
-Chippenham,8,2,1,5,7,11,-4,7,England - National L. South,0.25,0.38,-4,0.88,4.0,2.63,9
-Enfield Town,8,2,1,5,10,17,-7,7,England - National L. South,0.25,0.38,-7,1.25,4.0,2.63,9
-Weymouth,8,0,5,3,7,12,-5,5,England - National L. South,0.0,0.62,-5,0.88,0.0,1.61,10
+Buxton,8,4,0,4,17,13,4,12,England - National L. North,0.5,0.5,4,2.12,2.0,2.0,6
+Oxford City,8,3,2,3,14,10,4,11,England - National L. North,0.38,0.62,4,1.75,2.63,1.61,7
+Peterborough S.,8,3,2,3,10,8,2,11,England - National L. North,0.38,0.62,2,1.25,2.63,1.61,7
+Alfreton Town,8,3,2,3,7,8,-1,11,England - National L. North,0.38,0.62,-1,0.88,2.63,1.61,7
+Curzon,8,3,1,4,11,8,3,10,England - National L. North,0.38,0.5,3,1.38,2.63,2.0,8
+Marine,8,3,1,4,11,10,1,10,England - National L. North,0.38,0.5,1,1.38,2.63,2.0,8
+Spennymoor,8,2,4,2,10,10,0,10,England - National L. North,0.25,0.75,0,1.25,4.0,1.33,8
+Scarborough,8,2,4,2,6,7,-1,10,England - National L. North,0.25,0.75,-1,0.75,4.0,1.33,8
+Radcliffe,8,3,0,5,11,17,-6,9,England - National L. North,0.38,0.38,-6,1.38,2.63,2.63,9
+Warrington,8,2,1,5,5,10,-5,7,England - National L. North,0.25,0.38,-5,0.62,4.0,2.63,10
+Rushall,8,1,3,4,8,12,-4,6,England - National L. North,0.12,0.5,-4,1.0,8.33,2.0,11
+Needham Market,8,1,2,5,7,12,-5,5,England - National L. North,0.12,0.38,-5,0.88,8.33,2.63,12
+Farsley Celtic,8,1,1,6,6,13,-7,4,England - National L. North,0.12,0.25,-7,0.75,8.33,4.0,13
+Maidstone Utd,8,6,2,0,16,3,13,20,England - National L. South,0.75,1.0,13,2.0,1.33,1.0,1
+Boreham Wood,8,5,3,0,17,4,13,18,England - National L. South,0.62,1.0,13,2.12,1.61,1.0,2
+Torquay Utd,8,5,3,0,14,6,8,18,England - National L. South,0.62,1.0,8,1.75,1.61,1.0,2
+Worthing,8,5,3,0,15,8,7,18,England - National L. South,0.62,1.0,7,1.88,1.61,1.0,2
+Farnborough,8,5,2,1,15,7,8,17,England - National L. South,0.62,0.88,8,1.88,1.61,1.14,3
+Truro City,8,5,2,1,12,7,5,17,England - National L. South,0.62,0.88,5,1.5,1.61,1.14,3
+Eastbourne,8,4,4,0,10,4,6,16,England - National L. South,0.5,1.0,6,1.25,2.0,1.0,4
+Tonbridge,8,5,1,2,11,8,3,16,England - National L. South,0.62,0.75,3,1.38,1.61,1.33,4
+Hampton & R.,8,4,2,2,14,7,7,14,England - National L. South,0.5,0.75,7,1.75,2.0,1.33,5
+Hornchurch,8,4,2,2,7,6,1,14,England - National L. South,0.5,0.75,1,0.88,2.0,1.33,5
+Slough Town,8,3,4,1,16,11,5,13,England - National L. South,0.38,0.88,5,2.0,2.63,1.14,6
+Dorking,8,3,4,1,12,10,2,13,England - National L. South,0.38,0.88,2,1.5,2.63,1.14,6
+Chelmsford City,8,4,1,3,13,13,0,13,England - National L. South,0.5,0.62,0,1.62,2.0,1.61,6
+Chesham Utd,8,4,1,3,9,11,-2,13,England - National L. South,0.5,0.62,-2,1.12,2.0,1.61,6
+Bath City,8,3,2,3,10,10,0,11,England - National L. South,0.38,0.62,0,1.25,2.63,1.61,7
+Weston-s.-Mare,8,2,4,2,11,10,1,10,England - National L. South,0.25,0.75,1,1.38,4.0,1.33,8
+Welling Utd,8,3,1,4,7,11,-4,10,England - National L. South,0.38,0.5,-4,0.88,2.63,2.0,8
+Aveley,8,2,3,3,10,11,-1,9,England - National L. South,0.25,0.62,-1,1.25,4.0,1.61,9
+Salisbury,8,2,2,4,10,10,0,8,England - National L. South,0.25,0.5,0,1.25,4.0,2.0,10
+St Albans,8,2,2,4,10,13,-3,8,England - National L. South,0.25,0.5,-3,1.25,4.0,2.0,10
+Hemel Hempstead,8,2,2,4,15,23,-8,8,England - National L. South,0.25,0.5,-8,1.88,4.0,2.0,10
+Chippenham,8,2,1,5,7,11,-4,7,England - National L. South,0.25,0.38,-4,0.88,4.0,2.63,11
+Enfield Town,8,2,1,5,10,17,-7,7,England - National L. South,0.25,0.38,-7,1.25,4.0,2.63,11
+Weymouth,8,0,5,3,9,14,-5,5,England - National L. South,0.0,0.62,-5,1.12,0.0,1.61,12
 Billericay Town,8,6,2,0,15,4,11,20,England - Isthmian league,0.75,1.0,11,1.88,1.33,1.0,1
-Horsham,8,6,0,2,21,6,15,18,England - Isthmian league,0.75,0.75,15,2.62,1.33,1.33,2
+Horsham,8,6,0,2,17,6,11,18,England - Isthmian league,0.75,0.75,11,2.12,1.33,1.33,2
+Cray Wanderers,8,5,3,0,9,2,7,18,England - Isthmian league,0.62,1.0,7,1.12,1.61,1.0,2
 Dartford,8,5,2,1,18,8,10,17,England - Isthmian league,0.62,0.88,10,2.25,1.61,1.14,3
 Cray Valley PM,8,5,2,1,18,15,3,17,England - Isthmian league,0.62,0.88,3,2.25,1.61,1.14,3
-Cray Wanderers,8,4,4,0,8,2,6,16,England - Isthmian league,0.5,1.0,6,1.0,2.0,1.0,4
+Chatham Town,8,5,1,2,18,7,11,16,England - Isthmian league,0.62,0.75,11,2.25,1.61,1.33,4
 Folkestone,8,5,0,3,13,11,2,15,England - Isthmian league,0.62,0.62,2,1.62,1.61,1.61,5
-Chatham Town,8,4,2,2,16,7,9,14,England - Isthmian league,0.5,0.75,9,2.0,2.0,1.33,6
 Carshalton,8,4,2,2,15,12,3,14,England - Isthmian league,0.5,0.75,3,1.88,2.0,1.33,6
 Potters Bar,8,4,2,2,15,17,-2,14,England - Isthmian league,0.5,0.75,-2,1.88,2.0,1.33,6
 Hashtag United,8,4,1,3,18,14,4,13,England - Isthmian league,0.5,0.62,4,2.25,2.0,1.61,7
@@ -966,11 +968,11 @@ Hendon,8,3,1,4,16,14,2,10,England - Isthmian league,0.38,0.5,2,2.0,2.63,2.0,10
 Lewes,8,2,4,2,15,14,1,10,England - Isthmian league,0.25,0.75,1,1.88,4.0,1.33,10
 Canvey Island,8,3,0,5,8,9,-1,9,England - Isthmian league,0.38,0.38,-1,1.0,2.63,2.63,11
 Dulwich Hamlet,8,3,0,5,12,17,-5,9,England - Isthmian league,0.38,0.38,-5,1.5,2.63,2.63,11
-Bowers & Pitsea,8,2,2,4,7,12,-5,8,England - Isthmian league,0.25,0.5,-5,0.88,4.0,2.0,12
-Hastings Utd,8,2,1,5,10,16,-6,7,England - Isthmian league,0.25,0.38,-6,1.25,4.0,2.63,13
-Cheshunt,8,1,2,5,7,11,-4,5,England - Isthmian league,0.12,0.38,-4,0.88,8.33,2.63,14
-Bognor Regis,8,0,1,7,8,25,-17,1,England - Isthmian league,0.0,0.12,-17,1.0,0.0,8.33,15
-Macclesfield,8,7,0,1,26,6,20,21,England - Northern league,0.88,0.88,20,3.25,1.14,1.14,1
+Hastings Utd,8,2,1,5,10,16,-6,7,England - Isthmian league,0.25,0.38,-6,1.25,4.0,2.63,12
+Cheshunt,8,1,2,5,7,11,-4,5,England - Isthmian league,0.12,0.38,-4,0.88,8.33,2.63,13
+Bowers & Pitsea,8,1,2,5,6,13,-7,5,England - Isthmian league,0.12,0.38,-7,0.75,8.33,2.63,13
+Bognor Regis,8,0,1,7,8,25,-17,1,England - Isthmian league,0.0,0.12,-17,1.0,0.0,8.33,14
+Macclesfield,8,7,0,1,24,5,19,21,England - Northern league,0.88,0.88,19,3.0,1.14,1.14,1
 Ilkeston Town,8,6,1,1,18,6,12,19,England - Northern league,0.75,0.88,12,2.25,1.33,1.14,2
 Matlock,8,5,1,2,17,11,6,16,England - Northern league,0.62,0.75,6,2.12,1.61,1.33,3
 Hebburn Town,8,5,1,2,18,13,5,16,England - Northern league,0.62,0.75,5,2.25,1.61,1.33,3
@@ -989,31 +991,31 @@ Morpeth Town,8,2,3,3,10,12,-2,9,England - Northern league,0.25,0.62,-2,1.25,4.0,
 Bamber Bridge,8,3,0,5,13,16,-3,9,England - Northern league,0.38,0.38,-3,1.62,2.63,2.63,8
 Hyde Utd,8,2,3,3,13,16,-3,9,England - Northern league,0.25,0.62,-3,1.62,4.0,1.61,8
 Mickleover,8,3,0,5,10,13,-3,9,England - Northern league,0.38,0.38,-3,1.25,2.63,2.63,8
-Gainsborough,8,2,1,5,7,12,-5,7,England - Northern league,0.25,0.38,-5,0.88,4.0,2.63,9
-Basford Utd,8,2,1,5,12,20,-8,7,England - Northern league,0.25,0.38,-8,1.5,4.0,2.63,9
-Blyth Spartans,8,1,3,4,10,17,-7,6,England - Northern league,0.12,0.5,-7,1.25,8.33,2.0,10
+Basford Utd,8,2,2,4,12,16,-4,8,England - Northern league,0.25,0.5,-4,1.5,4.0,2.0,9
+Gainsborough,8,2,1,5,7,12,-5,7,England - Northern league,0.25,0.38,-5,0.88,4.0,2.63,10
+Blyth Spartans,8,1,3,4,10,17,-7,6,England - Northern league,0.12,0.5,-7,1.25,8.33,2.0,11
 Kettering Town,8,7,1,0,18,7,11,22,England - Southern Central,0.88,1.0,11,2.25,1.14,1.0,1
 Telford Utd,8,5,2,1,16,9,7,17,England - Southern Central,0.62,0.88,7,2.0,1.61,1.14,2
-Halesowen Town,8,5,0,3,13,13,0,15,England - Southern Central,0.62,0.62,0,1.62,1.61,1.61,3
-Bedford Town,8,5,0,3,17,18,-1,15,England - Southern Central,0.62,0.62,-1,2.12,1.61,1.61,3
-Leiston,8,4,2,2,14,11,3,14,England - Southern Central,0.5,0.75,3,1.75,2.0,1.33,4
-Spalding United,8,4,2,2,14,11,3,14,England - Southern Central,0.5,0.75,3,1.75,2.0,1.33,4
-Royston,8,4,2,2,11,8,3,14,England - Southern Central,0.5,0.75,3,1.38,2.0,1.33,4
-Lowestoft,8,4,2,2,10,14,-4,14,England - Southern Central,0.5,0.75,-4,1.25,2.0,1.33,4
-Harborough Town,8,4,1,3,15,8,7,13,England - Southern Central,0.5,0.62,7,1.88,2.0,1.61,5
-Barwell,8,4,1,3,14,16,-2,13,England - Southern Central,0.5,0.62,-2,1.75,2.0,1.61,5
-AFC Sudbury,8,3,3,2,10,7,3,12,England - Southern Central,0.38,0.75,3,1.25,2.63,1.33,6
-St. Ives Town,8,4,0,4,13,12,1,12,England - Southern Central,0.5,0.5,1,1.62,2.0,2.0,6
-Stratford Town,8,2,4,2,13,10,3,10,England - Southern Central,0.25,0.75,3,1.62,4.0,1.33,7
-Stourbridge,8,2,4,2,10,10,0,10,England - Southern Central,0.25,0.75,0,1.25,4.0,1.33,7
-Bromsgrove,8,3,1,4,10,11,-1,10,England - Southern Central,0.38,0.5,-1,1.25,2.63,2.0,7
-Stamford,8,3,1,4,13,15,-2,10,England - Southern Central,0.38,0.5,-2,1.62,2.63,2.0,7
-Redditch Utd,8,2,3,3,12,12,0,9,England - Southern Central,0.25,0.62,0,1.5,4.0,1.61,8
-Banbury Utd,8,2,2,4,5,7,-2,8,England - Southern Central,0.25,0.5,-2,0.62,4.0,2.0,9
-Hitchin Town,8,2,2,4,12,17,-5,8,England - Southern Central,0.25,0.5,-5,1.5,4.0,2.0,9
-B. Stortford,8,2,1,5,9,11,-2,7,England - Southern Central,0.25,0.38,-2,1.12,4.0,2.63,10
-Alvechurch,8,2,0,6,4,8,-4,6,England - Southern Central,0.25,0.25,-4,0.5,4.0,4.0,11
-Biggleswade,8,0,3,5,5,15,-10,3,England - Southern Central,0.0,0.38,-10,0.62,0.0,2.63,12
+Harborough Town,8,5,1,2,15,6,9,16,England - Southern Central,0.62,0.75,9,1.88,1.61,1.33,3
+Halesowen Town,8,5,0,3,13,13,0,15,England - Southern Central,0.62,0.62,0,1.62,1.61,1.61,4
+Leiston,8,4,2,2,14,11,3,14,England - Southern Central,0.5,0.75,3,1.75,2.0,1.33,5
+Spalding United,8,4,2,2,14,11,3,14,England - Southern Central,0.5,0.75,3,1.75,2.0,1.33,5
+Royston,8,4,2,2,11,8,3,14,England - Southern Central,0.5,0.75,3,1.38,2.0,1.33,5
+Lowestoft,8,4,2,2,10,14,-4,14,England - Southern Central,0.5,0.75,-4,1.25,2.0,1.33,5
+Barwell,8,4,1,3,14,16,-2,13,England - Southern Central,0.5,0.62,-2,1.75,2.0,1.61,6
+AFC Sudbury,8,3,3,2,10,7,3,12,England - Southern Central,0.38,0.75,3,1.25,2.63,1.33,7
+St. Ives Town,8,4,0,4,13,12,1,12,England - Southern Central,0.5,0.5,1,1.62,2.0,2.0,7
+Bedford Town,8,4,0,4,16,20,-4,12,England - Southern Central,0.5,0.5,-4,2.0,2.0,2.0,7
+Stratford Town,8,2,4,2,13,10,3,10,England - Southern Central,0.25,0.75,3,1.62,4.0,1.33,8
+Stourbridge,8,2,4,2,10,10,0,10,England - Southern Central,0.25,0.75,0,1.25,4.0,1.33,8
+Bromsgrove,8,3,1,4,10,11,-1,10,England - Southern Central,0.38,0.5,-1,1.25,2.63,2.0,8
+Stamford,8,3,1,4,13,15,-2,10,England - Southern Central,0.38,0.5,-2,1.62,2.63,2.0,8
+Redditch Utd,8,2,3,3,12,12,0,9,England - Southern Central,0.25,0.62,0,1.5,4.0,1.61,9
+Banbury Utd,8,2,2,4,5,7,-2,8,England - Southern Central,0.25,0.5,-2,0.62,4.0,2.0,10
+Hitchin Town,8,2,2,4,12,17,-5,8,England - Southern Central,0.25,0.5,-5,1.5,4.0,2.0,10
+B. Stortford,8,2,1,5,9,11,-2,7,England - Southern Central,0.25,0.38,-2,1.12,4.0,2.63,11
+Alvechurch,8,2,0,6,4,8,-4,6,England - Southern Central,0.25,0.25,-4,0.5,4.0,4.0,12
+Biggleswade,8,0,3,5,5,15,-10,3,England - Southern Central,0.0,0.38,-10,0.62,0.0,2.63,13
 Flora,8,8,0,0,22,6,16,24,Estonia - Meistriliiga,1.0,1.0,16,2.75,1.0,1.0,1
 Paide,8,6,1,1,22,10,12,19,Estonia - Meistriliiga,0.75,0.88,12,2.75,1.33,1.14,2
 Levadia,8,5,3,0,18,5,13,18,Estonia - Meistriliiga,0.62,1.0,13,2.25,1.61,1.0,3
@@ -1120,58 +1122,58 @@ JS Hercules,8,3,1,4,14,20,-6,10,Finland - Kakkonen Group C,0.38,0.5,-6,1.75,2.63
 OPS,8,2,3,3,15,14,1,9,Finland - Kakkonen Group C,0.25,0.62,1,1.88,4.0,1.61,7
 OTP,8,1,0,7,12,27,-15,3,Finland - Kakkonen Group C,0.12,0.12,-15,1.5,8.33,8.33,8
 Paris SG,8,7,1,0,24,6,18,22,France - Ligue 1,0.88,1.0,18,3.0,1.14,1.0,1
-Nice,8,5,3,0,21,9,12,18,France - Ligue 1,0.62,1.0,12,2.62,1.61,1.0,2
-Auxerre,8,5,2,1,14,7,7,17,France - Ligue 1,0.62,0.88,7,1.75,1.61,1.14,3
-Rennes,8,5,1,2,16,5,11,16,France - Ligue 1,0.62,0.75,11,2.0,1.61,1.33,4
-Brest,8,5,1,2,17,9,8,16,France - Ligue 1,0.62,0.75,8,2.12,1.61,1.33,4
+Brest,8,6,1,1,18,5,13,19,France - Ligue 1,0.75,0.88,13,2.25,1.33,1.14,2
+Nice,8,5,3,0,21,9,12,18,France - Ligue 1,0.62,1.0,12,2.62,1.61,1.0,3
 Lyon,8,5,1,2,16,11,5,16,France - Ligue 1,0.62,0.75,5,2.0,1.61,1.33,4
+Auxerre,8,4,3,1,12,6,6,15,France - Ligue 1,0.5,0.88,6,1.5,2.0,1.14,5
 Strasbourg,8,4,3,1,14,9,5,15,France - Ligue 1,0.5,0.88,5,1.75,2.0,1.14,5
 Lille,8,4,3,1,14,10,4,15,France - Ligue 1,0.5,0.88,4,1.75,2.0,1.14,5
 Saint-Etienne,8,5,0,3,10,8,2,15,France - Ligue 1,0.62,0.62,2,1.25,1.61,1.61,5
 Monaco,8,4,2,2,13,10,3,14,France - Ligue 1,0.5,0.75,3,1.62,2.0,1.33,6
 Toulouse,8,4,2,2,10,7,3,14,France - Ligue 1,0.5,0.75,3,1.25,2.0,1.33,6
-Marseille,8,3,3,2,14,12,2,12,France - Ligue 1,0.38,0.75,2,1.75,2.63,1.33,7
-Lens,8,3,2,3,8,8,0,11,France - Ligue 1,0.38,0.62,0,1.0,2.63,1.61,8
-Reims,8,2,3,3,9,11,-2,9,France - Ligue 1,0.25,0.62,-2,1.12,4.0,1.61,9
-Montpellier,8,2,3,3,12,19,-7,9,France - Ligue 1,0.25,0.62,-7,1.5,4.0,1.61,9
-Nantes,7,2,2,3,8,9,-1,8,France - Ligue 1,0.29,0.57,-1,1.14,3.45,1.75,10
+Rennes,8,4,1,3,14,7,7,13,France - Ligue 1,0.5,0.62,7,1.75,2.0,1.61,7
+Marseille,8,3,3,2,14,12,2,12,France - Ligue 1,0.38,0.75,2,1.75,2.63,1.33,8
+Lens,8,3,2,3,8,8,0,11,France - Ligue 1,0.38,0.62,0,1.0,2.63,1.61,9
+Nantes,8,2,3,3,10,11,-1,9,France - Ligue 1,0.25,0.62,-1,1.25,4.0,1.61,10
+Reims,8,2,3,3,11,13,-2,9,France - Ligue 1,0.25,0.62,-2,1.38,4.0,1.61,10
+Montpellier,8,2,3,3,12,19,-7,9,France - Ligue 1,0.25,0.62,-7,1.5,4.0,1.61,10
 Angers,8,2,1,5,11,18,-7,7,France - Ligue 1,0.25,0.38,-7,1.38,4.0,2.63,11
 Le Havre,8,2,0,6,5,19,-14,6,France - Ligue 1,0.25,0.25,-14,0.62,4.0,4.0,12
-Lorient,8,8,0,0,22,6,16,24,France - Ligue 2,1.0,1.0,16,2.75,1.0,1.0,1
 USL Dunkerque,8,8,0,0,17,6,11,24,France - Ligue 2,1.0,1.0,11,2.12,1.0,1.0,1
-Annecy,8,6,1,1,13,4,9,19,France - Ligue 2,0.75,0.88,9,1.62,1.33,1.14,2
-Metz,8,5,3,0,15,4,11,18,France - Ligue 2,0.62,1.0,11,1.88,1.61,1.0,3
-Pau FC,8,5,2,1,11,4,7,17,France - Ligue 2,0.62,0.88,7,1.38,1.61,1.14,4
-Guingamp,8,4,2,2,16,9,7,14,France - Ligue 2,0.5,0.75,7,2.0,2.0,1.33,5
-Grenoble,8,4,2,2,12,7,5,14,France - Ligue 2,0.5,0.75,5,1.5,2.0,1.33,5
-Laval,8,4,2,2,13,9,4,14,France - Ligue 2,0.5,0.75,4,1.62,2.0,1.33,5
-SC Bastia,8,3,5,0,10,6,4,14,France - Ligue 2,0.38,1.0,4,1.25,2.63,1.0,5
-Paris FC,8,4,2,2,13,10,3,14,France - Ligue 2,0.5,0.75,3,1.62,2.0,1.33,5
-Amiens,8,4,2,2,9,9,0,14,France - Ligue 2,0.5,0.75,0,1.12,2.0,1.33,5
-Caen,8,3,2,3,10,9,1,11,France - Ligue 2,0.38,0.62,1,1.25,2.63,1.61,6
-Troyes,8,3,2,3,9,8,1,11,France - Ligue 2,0.38,0.62,1,1.12,2.63,1.61,6
-AC Ajaccio,8,3,2,3,8,7,1,11,France - Ligue 2,0.38,0.62,1,1.0,2.63,1.61,6
-Red Star,8,3,2,3,8,12,-4,11,France - Ligue 2,0.38,0.62,-4,1.0,2.63,1.61,6
-Rodez Aveyron,8,3,1,4,14,15,-1,10,France - Ligue 2,0.38,0.5,-1,1.75,2.63,2.0,7
-Clermont,8,2,3,3,9,8,1,9,France - Ligue 2,0.25,0.62,1,1.12,4.0,1.61,8
-Martigues,8,0,1,7,1,16,-15,1,France - Ligue 2,0.0,0.12,-15,0.12,0.0,8.33,9
+Lorient,8,7,1,0,20,6,14,22,France - Ligue 2,0.88,1.0,14,2.5,1.14,1.0,2
+Annecy,8,6,1,1,12,4,8,19,France - Ligue 2,0.75,0.88,8,1.5,1.33,1.14,3
+Metz,8,5,3,0,15,4,11,18,France - Ligue 2,0.62,1.0,11,1.88,1.61,1.0,4
+Pau FC,8,4,3,1,11,5,6,15,France - Ligue 2,0.5,0.88,6,1.38,2.0,1.14,5
+Laval,8,4,3,1,14,9,5,15,France - Ligue 2,0.5,0.88,5,1.75,2.0,1.14,5
+Guingamp,8,4,2,2,16,9,7,14,France - Ligue 2,0.5,0.75,7,2.0,2.0,1.33,6
+SC Bastia,8,3,5,0,13,6,7,14,France - Ligue 2,0.38,1.0,7,1.62,2.63,1.0,6
+Grenoble,8,4,2,2,12,7,5,14,France - Ligue 2,0.5,0.75,5,1.5,2.0,1.33,6
+Paris FC,8,4,2,2,11,8,3,14,France - Ligue 2,0.5,0.75,3,1.38,2.0,1.33,6
+Amiens,8,4,2,2,9,9,0,14,France - Ligue 2,0.5,0.75,0,1.12,2.0,1.33,6
+Rodez Aveyron,8,4,1,3,15,13,2,13,France - Ligue 2,0.5,0.62,2,1.88,2.0,1.61,7
+Troyes,8,3,2,3,9,8,1,11,France - Ligue 2,0.38,0.62,1,1.12,2.63,1.61,8
+AC Ajaccio,8,3,2,3,8,7,1,11,France - Ligue 2,0.38,0.62,1,1.0,2.63,1.61,8
+Red Star,8,3,2,3,8,12,-4,11,France - Ligue 2,0.38,0.62,-4,1.0,2.63,1.61,8
+Caen,8,3,1,4,9,9,0,10,France - Ligue 2,0.38,0.5,0,1.12,2.63,2.0,9
+Clermont,8,2,3,3,9,8,1,9,France - Ligue 2,0.25,0.62,1,1.12,4.0,1.61,10
+Martigues,8,0,1,7,1,16,-15,1,France - Ligue 2,0.0,0.12,-15,0.12,0.0,8.33,11
+Dijon,8,5,2,1,10,1,9,17,France - National,0.62,0.88,9,1.25,1.61,1.14,1
 Boulogne,7,5,2,0,12,4,8,17,France - National,0.71,1.0,8,1.71,1.41,1.0,1
+Valenciennes,8,4,3,1,15,9,6,15,France - National,0.5,0.88,6,1.88,2.0,1.14,2
 Concarneau,8,4,3,1,11,6,5,15,France - National,0.5,0.88,5,1.38,2.0,1.14,2
-Valenciennes,7,4,2,1,14,8,6,14,France - National,0.57,0.86,6,2.0,1.75,1.16,3
-Dijon,7,4,2,1,6,1,5,14,France - National,0.57,0.86,5,0.86,1.75,1.16,3
-Sochaux,8,4,2,2,11,7,4,14,France - National,0.5,0.75,4,1.38,2.0,1.33,3
+Orleans,7,4,2,1,14,8,6,14,France - National,0.57,0.86,6,2.0,1.75,1.16,3
 Rouen,8,3,4,1,12,6,6,13,France - National,0.38,0.88,6,1.5,2.63,1.14,4
 Nancy,6,4,0,2,8,3,5,12,France - National,0.67,0.67,5,1.33,1.49,1.49,5
+Sochaux,8,3,3,2,10,8,2,12,France - National,0.38,0.75,2,1.25,2.63,1.33,5
 Nimes,8,3,3,2,8,7,1,12,France - National,0.38,0.75,1,1.0,2.63,1.33,5
-Orleans,6,3,2,1,12,7,5,11,France - National,0.5,0.83,5,2.0,2.0,1.2,6
 Aubagne,6,3,2,1,10,6,4,11,France - National,0.5,0.83,4,1.67,2.0,1.2,6
 Quevilly Rouen,7,3,2,2,8,6,2,11,France - National,0.43,0.71,2,1.14,2.33,1.41,6
+Villefranche,8,2,4,2,8,9,-1,10,France - National,0.25,0.75,-1,1.0,4.0,1.33,7
 Bourg-en-Bresse,6,3,1,2,6,7,-1,10,France - National,0.5,0.67,-1,1.0,2.0,1.49,7
-Villefranche,7,2,3,2,7,8,-1,9,France - National,0.29,0.71,-1,1.0,3.45,1.41,8
-Versailles,8,2,3,3,8,10,-2,9,France - National,0.25,0.62,-2,1.0,4.0,1.61,8
-Chateauroux,7,2,1,4,10,16,-6,7,France - National,0.29,0.43,-6,1.43,3.45,2.33,9
-Paris 13 A.,7,1,3,3,6,8,-2,6,France - National,0.14,0.57,-2,0.86,7.14,1.75,10
-Le Mans,6,1,2,3,3,9,-6,5,France - National,0.17,0.5,-6,0.5,5.88,2.0,11
+Chateauroux,7,2,1,4,10,16,-6,7,France - National,0.29,0.43,-6,1.43,3.45,2.33,8
+Paris 13 A.,7,1,3,3,6,8,-2,6,France - National,0.14,0.57,-2,0.86,7.14,1.75,9
+Versailles,8,1,3,4,7,11,-4,6,France - National,0.12,0.5,-4,0.88,8.33,2.0,9
+Le Mans,6,1,2,3,3,9,-6,5,France - National,0.17,0.5,-6,0.5,5.88,2.0,10
 Torpedo Kutaisi,8,7,0,1,12,6,6,21,Georgia - Erovnuli Liga,0.88,0.88,6,1.5,1.14,1.14,1
 Iberia,8,5,3,0,18,6,12,18,Georgia - Erovnuli Liga,0.62,1.0,12,2.25,1.61,1.0,2
 Samgurali,8,4,2,2,19,14,5,14,Georgia - Erovnuli Liga,0.5,0.75,5,2.38,2.0,1.33,3
@@ -1192,24 +1194,24 @@ Spaeri,8,3,2,3,15,11,4,11,Georgia - Erovnuli Liga 2,0.38,0.62,4,1.88,2.63,1.61,6
 D. Tbilisi B,8,3,1,4,12,17,-5,10,Georgia - Erovnuli Liga 2,0.38,0.5,-5,1.5,2.63,2.0,7
 WIT Georgia,8,2,0,6,10,17,-7,6,Georgia - Erovnuli Liga 2,0.25,0.25,-7,1.25,4.0,4.0,8
 Kolkheti Khobi,8,0,1,7,2,18,-16,1,Georgia - Erovnuli Liga 2,0.0,0.12,-16,0.25,0.0,8.33,9
-Dortmund,8,6,2,0,20,8,12,20,Germany - Bundesliga,0.75,1.0,12,2.5,1.33,1.0,1
-Bayern Munich,7,6,1,0,22,4,18,19,Germany - Bundesliga,0.86,1.0,18,3.14,1.16,1.0,2
-Leverkusen,8,5,2,1,22,13,9,17,Germany - Bundesliga,0.62,0.88,9,2.75,1.61,1.14,3
-Monchengladbach,8,5,1,2,18,11,7,16,Germany - Bundesliga,0.62,0.75,7,2.25,1.61,1.33,4
-Freiburg,7,5,1,1,14,9,5,16,Germany - Bundesliga,0.71,0.86,5,2.0,1.41,1.16,4
-E. Frankfurt,7,4,2,1,19,11,8,14,Germany - Bundesliga,0.57,0.86,8,2.71,1.75,1.16,5
-Stuttgart,8,4,2,2,18,12,6,14,Germany - Bundesliga,0.5,0.75,6,2.25,2.0,1.33,5
-RB Leipzig,7,4,2,1,11,7,4,14,Germany - Bundesliga,0.57,0.86,4,1.57,1.75,1.16,5
-FC Augsburg,8,4,2,2,12,10,2,14,Germany - Bundesliga,0.5,0.75,2,1.5,2.0,1.33,5
+Bayern Munich,7,6,1,0,22,4,18,19,Germany - Bundesliga,0.86,1.0,18,3.14,1.16,1.0,1
+Freiburg,8,6,1,1,17,11,6,19,Germany - Bundesliga,0.75,0.88,6,2.12,1.33,1.14,1
+Leverkusen,8,5,2,1,22,13,9,17,Germany - Bundesliga,0.62,0.88,9,2.75,1.61,1.14,2
+Dortmund,8,5,2,1,20,11,9,17,Germany - Bundesliga,0.62,0.88,9,2.5,1.61,1.14,2
+Monchengladbach,8,5,1,2,16,9,7,16,Germany - Bundesliga,0.62,0.75,7,2.0,1.61,1.33,3
+E. Frankfurt,7,4,2,1,19,11,8,14,Germany - Bundesliga,0.57,0.86,8,2.71,1.75,1.16,4
+Stuttgart,8,4,2,2,18,12,6,14,Germany - Bundesliga,0.5,0.75,6,2.25,2.0,1.33,4
+RB Leipzig,7,4,2,1,11,7,4,14,Germany - Bundesliga,0.57,0.86,4,1.57,1.75,1.16,4
+FC Augsburg,8,4,2,2,12,10,2,14,Germany - Bundesliga,0.5,0.75,2,1.5,2.0,1.33,4
+FSV Mainz,8,4,1,3,11,9,2,13,Germany - Bundesliga,0.5,0.62,2,1.38,2.0,1.61,5
 Union Berlin,7,3,3,1,8,6,2,12,Germany - Bundesliga,0.43,0.86,2,1.14,2.33,1.16,6
-FSV Mainz,8,3,2,3,10,10,0,11,Germany - Bundesliga,0.38,0.62,0,1.25,2.63,1.61,7
-Hoffenheim,8,3,1,4,16,19,-3,10,Germany - Bundesliga,0.38,0.5,-3,2.0,2.63,2.0,8
-Werder Bremen,7,2,3,2,10,12,-2,9,Germany - Bundesliga,0.29,0.71,-2,1.43,3.45,1.41,9
-Wolfsburg,8,2,2,4,14,18,-4,8,Germany - Bundesliga,0.25,0.5,-4,1.75,4.0,2.0,10
-Holstein Kiel,8,2,0,6,9,20,-11,6,Germany - Bundesliga,0.25,0.25,-11,1.12,4.0,4.0,11
-Sankt Pauli,7,1,2,4,3,9,-6,5,Germany - Bundesliga,0.14,0.43,-6,0.43,7.14,2.33,12
-Bochum,7,1,2,4,6,14,-8,5,Germany - Bundesliga,0.14,0.43,-8,0.86,7.14,2.33,12
-Heidenheim,7,1,1,5,6,14,-8,4,Germany - Bundesliga,0.14,0.29,-8,0.86,7.14,3.45,13
+Werder Bremen,7,2,3,2,10,12,-2,9,Germany - Bundesliga,0.29,0.71,-2,1.43,3.45,1.41,7
+Wolfsburg,8,2,2,4,14,18,-4,8,Germany - Bundesliga,0.25,0.5,-4,1.75,4.0,2.0,8
+Hoffenheim,8,2,1,5,13,18,-5,7,Germany - Bundesliga,0.25,0.38,-5,1.62,4.0,2.63,9
+Heidenheim,8,2,1,5,8,14,-6,7,Germany - Bundesliga,0.25,0.38,-6,1.0,4.0,2.63,9
+Holstein Kiel,8,2,0,6,9,20,-11,6,Germany - Bundesliga,0.25,0.25,-11,1.12,4.0,4.0,10
+Sankt Pauli,8,1,2,5,3,10,-7,5,Germany - Bundesliga,0.12,0.38,-7,0.38,8.33,2.63,11
+Bochum,7,1,2,4,6,14,-8,5,Germany - Bundesliga,0.14,0.43,-8,0.86,7.14,2.33,11
 Hannover 96,8,6,1,1,13,6,7,19,Germany - 2. Bundesliga,0.75,0.88,7,1.62,1.33,1.14,1
 Hamburger SV,8,4,4,0,24,9,15,16,Germany - 2. Bundesliga,0.5,1.0,15,3.0,2.0,1.0,2
 Elversberg,8,5,0,3,17,14,3,15,Germany - 2. Bundesliga,0.62,0.62,3,2.12,1.61,1.61,3
@@ -1268,11 +1270,11 @@ Dreams,8,2,3,3,5,6,-1,9,Ghana - Premier League,0.25,0.62,-1,0.62,4.0,1.61,9
 Karela,8,1,4,3,5,7,-2,7,Ghana - Premier League,0.12,0.62,-2,0.62,8.33,1.61,10
 St Josephs,7,7,0,0,15,4,11,21,Gibraltar - Premier Division,1.0,1.0,11,2.14,1.0,1.0,1
 Lincoln RI,7,6,1,0,18,1,17,19,Gibraltar - Premier Division,0.86,1.0,17,2.57,1.16,1.0,2
-Europa FC,7,4,2,1,17,6,11,14,Gibraltar - Premier Division,0.57,0.86,11,2.43,1.75,1.16,3
+Europa FC,8,5,2,1,19,6,13,17,Gibraltar - Premier Division,0.62,0.88,13,2.38,1.61,1.14,3
 Magpies,7,4,1,2,12,10,2,13,Gibraltar - Premier Division,0.57,0.71,2,1.71,1.75,1.41,4
 Manchester 62,7,3,2,2,14,13,1,11,Gibraltar - Premier Division,0.43,0.71,1,2.0,2.33,1.41,5
 Lions FC,7,3,1,3,14,14,0,10,Gibraltar - Premier Division,0.43,0.57,0,2.0,2.33,1.75,6
-Lynx,7,3,1,3,12,14,-2,10,Gibraltar - Premier Division,0.43,0.57,-2,1.71,2.33,1.75,6
+Lynx,8,3,1,4,13,19,-6,10,Gibraltar - Premier Division,0.38,0.5,-6,1.62,2.63,2.0,6
 Mons Calpe,8,3,0,5,10,17,-7,9,Gibraltar - Premier Division,0.38,0.38,-7,1.25,2.63,2.63,7
 College 1975,8,2,2,4,7,16,-9,8,Gibraltar - Premier Division,0.25,0.5,-9,0.88,4.0,2.0,8
 Glacis Utd,8,2,1,5,11,20,-9,7,Gibraltar - Premier Division,0.25,0.38,-9,1.38,4.0,2.63,9
@@ -1313,13 +1315,13 @@ Genesis,8,3,3,2,11,8,3,12,Honduras - Liga Nacional - Apertura,0.38,0.75,3,1.38,2
 Real Espana,8,3,3,2,8,8,0,12,Honduras - Liga Nacional - Apertura,0.38,0.75,0,1.0,2.63,1.33,6
 Juticalpa,8,2,2,4,6,8,-2,8,Honduras - Liga Nacional - Apertura,0.25,0.5,-2,0.75,4.0,2.0,7
 Real Sociedad,8,1,4,3,5,11,-6,7,Honduras - Liga Nacional - Apertura,0.12,0.62,-6,0.62,8.33,1.61,8
-Tai Po,6,5,1,0,14,4,10,16,Hong Kong - Premier League,0.83,1.0,10,2.33,1.2,1.0,1
+Tai Po,7,6,1,0,15,4,11,19,Hong Kong - Premier League,0.86,1.0,11,2.14,1.16,1.0,1
 Eastern,4,4,0,0,13,2,11,12,Hong Kong - Premier League,1.0,1.0,11,3.25,1.0,1.0,2
 LM Warriors,5,4,0,1,13,6,7,12,Hong Kong - Premier League,0.8,0.8,7,2.6,1.25,1.25,2
 Kitchee,5,3,2,0,20,3,17,11,Hong Kong - Premier League,0.6,1.0,17,4.0,1.67,1.0,3
 Hong Kong FC,6,3,0,3,9,9,0,9,Hong Kong - Premier League,0.5,0.5,0,1.5,2.0,2.0,4
 Kowloon City,4,2,1,1,5,7,-2,7,Hong Kong - Premier League,0.5,0.75,-2,1.25,2.0,1.33,5
-Southern D.,4,1,1,2,4,5,-1,4,Hong Kong - Premier League,0.25,0.5,-1,1.0,4.0,2.0,6
+Southern D.,5,1,2,2,5,6,-1,5,Hong Kong - Premier League,0.2,0.6,-1,1.0,5.0,1.67,6
 North District,5,0,3,2,11,15,-4,3,Hong Kong - Premier League,0.0,0.6,-4,2.2,0.0,1.67,7
 HK Rangers,2,0,1,1,3,6,-3,1,Hong Kong - Premier League,0.0,0.5,-3,1.5,0.0,2.0,8
 Ferencvaros,8,6,2,0,15,6,9,20,Hungary - NB I,0.75,1.0,9,1.88,1.33,1.0,1
@@ -1386,23 +1388,23 @@ Hottur/Huginn,8,3,0,5,10,12,-2,9,Iceland - 2. Deild,0.38,0.38,-2,1.25,2.63,2.63,
 AEggir,8,1,3,4,7,11,-4,6,Iceland - 2. Deild,0.12,0.5,-4,0.88,8.33,2.0,8
 Reynir,8,1,2,5,6,14,-8,5,Iceland - 2. Deild,0.12,0.38,-8,0.75,8.33,2.63,9
 Kormakur/Hvot,8,1,1,6,7,18,-11,4,Iceland - 2. Deild,0.12,0.25,-11,0.88,8.33,4.0,10
-Jamshedpur,8,7,0,1,16,11,5,21,India - Super League,0.88,0.88,5,2.0,1.14,1.14,1
-Mohun Bagan,7,6,1,0,18,6,12,19,India - Super League,0.86,1.0,12,2.57,1.16,1.0,2
-Bengaluru,7,5,2,0,16,6,10,17,India - Super League,0.71,1.0,10,2.29,1.41,1.0,3
+Mohun Bagan,8,7,1,0,19,6,13,22,India - Super League,0.88,1.0,13,2.38,1.14,1.0,1
+Jamshedpur,8,7,0,1,16,11,5,21,India - Super League,0.88,0.88,5,2.0,1.14,1.14,2
+Bengaluru,8,5,2,1,16,7,9,17,India - Super League,0.62,0.88,9,2.0,1.61,1.14,3
 Punjab,7,4,0,3,11,9,2,12,India - Super League,0.57,0.57,2,1.57,1.75,1.75,4
 Odisha FC,8,3,3,2,15,14,1,12,India - Super League,0.38,0.75,1,1.88,2.63,1.33,4
 Goa,7,3,2,2,13,10,3,11,India - Super League,0.43,0.71,3,1.86,2.33,1.41,5
 Mumbai City,7,3,2,2,7,9,-2,11,India - Super League,0.43,0.71,-2,1.0,2.33,1.41,5
 East Bengal,8,3,1,4,11,12,-1,10,India - Super League,0.38,0.5,-1,1.38,2.63,2.0,6
+NorthEast Utd,7,2,3,2,12,9,3,9,India - Super League,0.29,0.71,3,1.71,3.45,1.41,7
 Kerala Blasters,7,3,0,4,11,9,2,9,India - Super League,0.43,0.43,2,1.57,2.33,2.33,7
-NorthEast Utd,6,2,2,2,11,8,3,8,India - Super League,0.33,0.67,3,1.83,3.03,1.49,8
-Chennaiyin,7,1,3,3,8,12,-4,6,India - Super League,0.14,0.57,-4,1.14,7.14,1.75,9
-Mohammedan,7,0,2,5,3,11,-8,2,India - Super League,0.0,0.29,-8,0.43,0.0,3.45,10
-Hyderabad,6,0,2,4,3,16,-13,2,India - Super League,0.0,0.33,-13,0.5,0.0,3.03,10
+Chennaiyin,7,1,3,3,8,12,-4,6,India - Super League,0.14,0.57,-4,1.14,7.14,1.75,8
+Mohammedan,7,0,2,5,3,11,-8,2,India - Super League,0.0,0.29,-8,0.43,0.0,3.45,9
+Hyderabad,6,0,2,4,3,16,-13,2,India - Super League,0.0,0.33,-13,0.5,0.0,3.03,9
+Shillong Lajong,6,2,3,1,11,4,7,9,India - I-League,0.33,0.83,7,1.83,3.03,1.2,1
 Inter Kashi,4,3,0,1,10,5,5,9,India - I-League,0.75,0.75,5,2.5,1.33,1.33,1
 Real Kashmir,4,2,2,0,6,3,3,8,India - I-League,0.5,1.0,3,1.5,2.0,1.0,2
 Namdhari,5,2,1,2,5,5,0,7,India - I-League,0.4,0.6,0,1.0,2.5,1.67,3
-Shillong Lajong,5,1,3,1,10,4,6,6,India - I-League,0.2,0.8,6,2.0,5.0,1.25,4
 Sreenidi Deccan,5,2,0,3,6,7,-1,6,India - I-League,0.4,0.4,-1,1.2,2.5,2.5,4
 Aizawl,5,1,2,2,7,7,0,5,India - I-League,0.2,0.6,0,1.4,5.0,1.67,5
 SC Bengaluru,4,1,2,1,6,6,0,5,India - I-League,0.25,0.75,0,1.5,4.0,1.33,5
@@ -1410,25 +1412,25 @@ Churchill B.,2,1,0,1,2,1,1,3,India - I-League,0.5,0.5,1,1.0,2.0,2.0,6
 Rajasthan,1,1,0,0,2,1,1,3,India - I-League,1.0,1.0,1,2.0,1.0,1.0,6
 Delhi FC,2,1,0,1,3,6,-3,3,India - I-League,0.5,0.5,-3,1.5,2.0,2.0,6
 Gokulam,3,0,2,1,1,2,-1,2,India - I-League,0.0,0.67,-1,0.33,0.0,1.49,7
-Dempo,0,0,0,0,0,0,0,0,India - I-League,0.0,0.0,0,0.0,0.0,0.0,8
+Dempo,1,0,0,1,0,1,-1,0,India - I-League,0.0,0.0,-1,0.0,0.0,0.0,8
 Persib,8,6,2,0,14,4,10,20,Indonesia - Liga 1,0.75,1.0,10,1.75,1.33,1.0,1
 Persebaya S.,8,6,2,0,16,8,8,20,Indonesia - Liga 1,0.75,1.0,8,2.0,1.33,1.0,1
 Persija,8,5,3,0,16,5,11,18,Indonesia - Liga 1,0.62,1.0,11,2.0,1.61,1.0,2
 Borneo,8,5,2,1,12,4,8,17,Indonesia - Liga 1,0.62,0.88,8,1.5,1.61,1.14,3
+Dewa Utd,8,5,2,1,15,9,6,17,Indonesia - Liga 1,0.62,0.88,6,1.88,1.61,1.14,3
 Bali Utd,8,4,4,0,13,5,8,16,Indonesia - Liga 1,0.5,1.0,8,1.62,2.0,1.0,4
-Dewa Utd,8,4,3,1,15,11,4,15,Indonesia - Liga 1,0.5,0.88,4,1.88,2.0,1.14,5
-PSBS Biak N.,8,5,0,3,15,12,3,15,Indonesia - Liga 1,0.62,0.62,3,1.88,1.61,1.61,5
-PSM,8,3,4,1,8,5,3,13,Indonesia - Liga 1,0.38,0.88,3,1.0,2.63,1.14,6
-Persik Kediri,8,4,1,3,6,5,1,13,Indonesia - Liga 1,0.5,0.62,1,0.75,2.0,1.61,6
+PSM,8,3,4,1,8,5,3,13,Indonesia - Liga 1,0.38,0.88,3,1.0,2.63,1.14,5
+PSBS Biak N.,8,4,1,3,13,12,1,13,Indonesia - Liga 1,0.5,0.62,1,1.62,2.0,1.61,5
+Persik Kediri,8,4,1,3,6,5,1,13,Indonesia - Liga 1,0.5,0.62,1,0.75,2.0,1.61,5
+PSS Sleman,8,4,0,4,14,9,5,12,Indonesia - Liga 1,0.5,0.5,5,1.75,2.0,2.0,6
 Arema,7,3,2,2,11,8,3,11,Indonesia - Liga 1,0.43,0.71,3,1.57,2.33,1.41,7
 Persita,8,3,2,3,6,8,-2,11,Indonesia - Liga 1,0.38,0.62,-2,0.75,2.63,1.61,7
-PSS Sleman,8,3,1,4,12,9,3,10,Indonesia - Liga 1,0.38,0.5,3,1.5,2.63,2.0,8
-Malut United,8,2,4,2,9,9,0,10,Indonesia - Liga 1,0.25,0.75,0,1.12,4.0,1.33,8
-PSIS Semarang,8,3,0,5,6,10,-4,9,Indonesia - Liga 1,0.38,0.38,-4,0.75,2.63,2.63,9
-Persis Solo,8,2,2,4,8,8,0,8,Indonesia - Liga 1,0.25,0.5,0,1.0,4.0,2.0,10
-Madura Utd,8,2,2,4,10,12,-2,8,Indonesia - Liga 1,0.25,0.5,-2,1.25,4.0,2.0,10
-Semen Padang,8,1,3,4,5,14,-9,6,Indonesia - Liga 1,0.12,0.5,-9,0.62,8.33,2.0,11
-Barito Putera,8,0,3,5,5,16,-11,3,Indonesia - Liga 1,0.0,0.38,-11,0.62,0.0,2.63,12
+Malut United,8,2,3,3,9,10,-1,9,Indonesia - Liga 1,0.25,0.62,-1,1.12,4.0,1.61,8
+PSIS Semarang,8,3,0,5,6,10,-4,9,Indonesia - Liga 1,0.38,0.38,-4,0.75,2.63,2.63,8
+Persis Solo,8,2,2,4,8,8,0,8,Indonesia - Liga 1,0.25,0.5,0,1.0,4.0,2.0,9
+Madura Utd,8,2,2,4,10,12,-2,8,Indonesia - Liga 1,0.25,0.5,-2,1.25,4.0,2.0,9
+Semen Padang,8,1,3,4,5,14,-9,6,Indonesia - Liga 1,0.12,0.5,-9,0.62,8.33,2.0,10
+Barito Putera,8,0,2,6,5,17,-12,2,Indonesia - Liga 1,0.0,0.25,-12,0.62,0.0,4.0,11
 Sepahan,8,6,1,1,14,4,10,19,Iran - Pro League,0.75,0.88,10,1.75,1.33,1.14,1
 Persepolis,8,5,1,2,11,6,5,16,Iran - Pro League,0.62,0.75,5,1.38,1.61,1.33,2
 Chadormalu,7,4,3,0,6,2,4,15,Iran - Pro League,0.57,1.0,4,0.86,1.75,1.0,3
@@ -1466,55 +1468,55 @@ Cobh Ramblers,8,3,1,4,10,11,-1,10,Ireland - First Division,0.38,0.5,-1,1.25,2.63
 Treaty Utd,8,2,3,3,10,11,-1,9,Ireland - First Division,0.25,0.62,-1,1.25,4.0,1.61,7
 Kerry,8,2,3,3,10,13,-3,9,Ireland - First Division,0.25,0.62,-3,1.25,4.0,1.61,7
 H. Beer Sheva,8,6,2,0,22,7,15,20,Israel - Ligat HaAl,0.75,1.0,15,2.75,1.33,1.0,1
-B. Jerusalem,8,6,2,0,19,7,12,20,Israel - Ligat HaAl,0.75,1.0,12,2.38,1.33,1.0,1
-M. Tel Aviv,8,5,2,1,16,8,8,17,Israel - Ligat HaAl,0.62,0.88,8,2.0,1.61,1.14,2
-Kiryat Shmona,8,5,1,2,12,10,2,16,Israel - Ligat HaAl,0.62,0.75,2,1.5,1.61,1.33,3
-Maccabi Haifa,7,5,0,2,16,8,8,15,Israel - Ligat HaAl,0.71,0.71,8,2.29,1.41,1.41,4
+Maccabi Haifa,8,6,0,2,20,9,11,18,Israel - Ligat HaAl,0.75,0.75,11,2.5,1.33,1.33,2
+B. Jerusalem,8,5,2,1,17,9,8,17,Israel - Ligat HaAl,0.62,0.88,8,2.12,1.61,1.14,3
+M. Tel Aviv,8,5,2,1,16,8,8,17,Israel - Ligat HaAl,0.62,0.88,8,2.0,1.61,1.14,3
+Kiryat Shmona,8,5,1,2,12,10,2,16,Israel - Ligat HaAl,0.62,0.75,2,1.5,1.61,1.33,4
 H. Jerusalem,8,4,2,2,14,10,4,14,Israel - Ligat HaAl,0.5,0.75,4,1.75,2.0,1.33,5
 Hapoel Haifa,7,4,1,2,16,9,7,13,Israel - Ligat HaAl,0.57,0.71,7,2.29,1.75,1.41,6
+Maccabi Netanya,8,4,1,3,15,9,6,13,Israel - Ligat HaAl,0.5,0.62,6,1.88,2.0,1.61,6
 Sakhnin,8,3,3,2,7,9,-2,12,Israel - Ligat HaAl,0.38,0.75,-2,0.88,2.63,1.33,7
-Ironi Tiberias,8,3,2,3,8,9,-1,11,Israel - Ligat HaAl,0.38,0.62,-1,1.0,2.63,1.61,8
-Maccabi Netanya,8,3,1,4,11,11,0,10,Israel - Ligat HaAl,0.38,0.5,0,1.38,2.63,2.0,9
-M. Bnei Raina,8,2,2,4,5,9,-4,8,Israel - Ligat HaAl,0.25,0.5,-4,0.62,4.0,2.0,10
-M. Petah Tikva,8,1,4,3,6,10,-4,7,Israel - Ligat HaAl,0.12,0.62,-4,0.75,8.33,1.61,11
-Hapoel Hadera,8,1,3,4,6,14,-8,6,Israel - Ligat HaAl,0.12,0.5,-8,0.75,8.33,2.0,12
-Ashdod,8,1,1,6,8,16,-8,4,Israel - Ligat HaAl,0.12,0.25,-8,1.0,8.33,4.0,13
+Ironi Tiberias,8,2,3,3,9,11,-2,9,Israel - Ligat HaAl,0.25,0.62,-2,1.12,4.0,1.61,8
+M. Petah Tikva,8,2,3,3,8,10,-2,9,Israel - Ligat HaAl,0.25,0.62,-2,1.0,4.0,1.61,8
+M. Bnei Raina,8,2,2,4,5,9,-4,8,Israel - Ligat HaAl,0.25,0.5,-4,0.62,4.0,2.0,9
+Hapoel Hadera,8,1,3,4,6,14,-8,6,Israel - Ligat HaAl,0.12,0.5,-8,0.75,8.33,2.0,10
+Ashdod,8,1,1,6,8,16,-8,4,Israel - Ligat HaAl,0.12,0.25,-8,1.0,8.33,4.0,11
+Hapoel Tel Aviv,8,6,1,1,19,6,13,19,Israel - Leumit League,0.75,0.88,13,2.38,1.33,1.14,1
 H. Kfar Shalem,8,6,1,1,16,8,8,19,Israel - Leumit League,0.75,0.88,8,2.0,1.33,1.14,1
-H. Ramat Gan,8,6,0,2,20,10,10,18,Israel - Leumit League,0.75,0.75,10,2.5,1.33,1.33,2
-Hapoel Tel Aviv,8,5,2,1,17,6,11,17,Israel - Leumit League,0.62,0.88,11,2.12,1.61,1.14,3
+H. Ramat Gan,8,6,0,2,20,11,9,18,Israel - Leumit League,0.75,0.75,9,2.5,1.33,1.33,2
+M. Herziliya,8,5,2,1,14,12,2,17,Israel - Leumit League,0.62,0.88,2,1.75,1.61,1.14,3
 Ramat Hasharon,8,5,1,2,19,12,7,16,Israel - Leumit League,0.62,0.75,7,2.38,1.61,1.33,4
 Bnei Yehuda,8,5,0,3,11,7,4,15,Israel - Leumit League,0.62,0.62,4,1.38,1.61,1.61,5
-M. Herziliya,8,4,3,1,13,12,1,15,Israel - Leumit League,0.5,0.88,1,1.62,2.0,1.14,5
 H. Petah Tikva,8,4,2,2,12,8,4,14,Israel - Leumit League,0.5,0.75,4,1.5,2.0,1.33,6
-Kafr Qasim,8,3,3,2,10,4,6,12,Israel - Leumit League,0.38,0.75,6,1.25,2.63,1.33,7
-Maccabi Jaffa,8,3,2,3,13,12,1,11,Israel - Leumit League,0.38,0.62,1,1.62,2.63,1.61,8
-H. Kfar Saba,8,1,5,2,13,15,-2,8,Israel - Leumit League,0.12,0.75,-2,1.62,8.33,1.33,9
-Hapoel Raanana,8,1,3,4,8,11,-3,6,Israel - Leumit League,0.12,0.5,-3,1.0,8.33,2.0,10
-H. Ironi Rishon,8,2,0,6,6,11,-5,6,Israel - Leumit League,0.25,0.25,-5,0.75,4.0,4.0,10
-Hapoel Akko,7,2,0,5,5,10,-5,6,Israel - Leumit League,0.29,0.29,-5,0.71,3.45,3.45,10
-H. Umm al-Fahm,8,1,2,5,4,10,-6,5,Israel - Leumit League,0.12,0.38,-6,0.5,8.33,2.63,11
-H. Nof Hagalil,8,1,2,5,10,17,-7,5,Israel - Leumit League,0.12,0.38,-7,1.25,8.33,2.63,11
-Hapoel Afula,8,0,3,5,7,20,-13,3,Israel - Leumit League,0.0,0.38,-13,0.88,0.0,2.63,12
+Kafr Qasim,8,3,2,3,9,5,4,11,Israel - Leumit League,0.38,0.62,4,1.12,2.63,1.61,7
+Maccabi Jaffa,8,3,2,3,13,12,1,11,Israel - Leumit League,0.38,0.62,1,1.62,2.63,1.61,7
+H. Kfar Saba,8,1,5,2,13,15,-2,8,Israel - Leumit League,0.12,0.75,-2,1.62,8.33,1.33,8
+Hapoel Raanana,8,1,3,4,8,11,-3,6,Israel - Leumit League,0.12,0.5,-3,1.0,8.33,2.0,9
+H. Ironi Rishon,8,2,0,6,6,11,-5,6,Israel - Leumit League,0.25,0.25,-5,0.75,4.0,4.0,9
+Hapoel Akko,8,2,0,6,6,12,-6,6,Israel - Leumit League,0.25,0.25,-6,0.75,4.0,4.0,9
+H. Umm al-Fahm,8,1,2,5,4,10,-6,5,Israel - Leumit League,0.12,0.38,-6,0.5,8.33,2.63,10
+H. Nof Hagalil,8,1,2,5,10,17,-7,5,Israel - Leumit League,0.12,0.38,-7,1.25,8.33,2.63,10
+Hapoel Afula,8,0,3,5,7,20,-13,3,Israel - Leumit League,0.0,0.38,-13,0.88,0.0,2.63,11
 Atalanta,8,7,0,1,25,11,14,21,Italy - Serie A,0.88,0.88,14,3.12,1.14,1.14,1
 Napoli,8,6,0,2,10,6,4,18,Italy - Serie A,0.75,0.75,4,1.25,1.33,1.33,2
 Inter Milan,8,5,2,1,19,10,9,17,Italy - Serie A,0.62,0.88,9,2.38,1.61,1.14,3
-Lazio,8,5,2,1,15,12,3,17,Italy - Serie A,0.62,0.88,3,1.88,1.61,1.14,3
+Lazio,8,5,2,1,14,11,3,17,Italy - Serie A,0.62,0.88,3,1.75,1.61,1.14,3
 Fiorentina,8,5,1,2,16,11,5,16,Italy - Serie A,0.62,0.75,5,2.0,1.61,1.33,4
-AC Milan,8,4,3,1,12,3,9,15,Italy - Serie A,0.5,0.88,9,1.5,2.0,1.14,5
 AS Roma,8,5,0,3,16,8,8,15,Italy - Serie A,0.62,0.62,8,2.0,1.61,1.61,5
+AC Milan,8,3,4,1,9,4,5,13,Italy - Serie A,0.38,0.88,5,1.12,2.63,1.14,6
 Bologna,8,3,4,1,10,6,4,13,Italy - Serie A,0.38,0.88,4,1.25,2.63,1.14,6
 Juventus,8,2,6,0,12,9,3,12,Italy - Serie A,0.25,1.0,3,1.5,4.0,1.0,7
 Como,8,3,3,2,12,13,-1,12,Italy - Serie A,0.38,0.75,-1,1.5,2.63,1.33,7
 Venezia,8,3,2,3,11,11,0,11,Italy - Serie A,0.38,0.62,0,1.38,2.63,1.61,8
-Udinese,8,3,1,4,9,12,-3,10,Italy - Serie A,0.38,0.5,-3,1.12,2.63,2.0,9
 Lecce,8,2,4,2,8,13,-5,10,Italy - Serie A,0.25,0.75,-5,1.0,4.0,1.33,9
-Parma,8,2,1,5,13,16,-3,7,Italy - Serie A,0.25,0.38,-3,1.62,4.0,2.63,10
-Cagliari,8,2,1,5,7,17,-10,7,Italy - Serie A,0.25,0.38,-10,0.88,4.0,2.63,10
-Hellas Verona,8,2,1,5,8,19,-11,7,Italy - Serie A,0.25,0.38,-11,1.0,4.0,2.63,10
-Torino,8,1,3,4,4,8,-4,6,Italy - Serie A,0.12,0.5,-4,0.5,8.33,2.0,11
-Empoli,8,1,3,4,3,8,-5,6,Italy - Serie A,0.12,0.5,-5,0.38,8.33,2.0,11
-Genoa,8,0,5,3,7,12,-5,5,Italy - Serie A,0.0,0.62,-5,0.88,0.0,1.61,12
-Monza,8,0,2,6,7,13,-6,2,Italy - Serie A,0.0,0.25,-6,0.88,0.0,4.0,13
+Udinese,8,2,2,4,8,12,-4,8,Italy - Serie A,0.25,0.5,-4,1.0,4.0,2.0,10
+Parma,8,2,1,5,13,16,-3,7,Italy - Serie A,0.25,0.38,-3,1.62,4.0,2.63,11
+Cagliari,8,2,1,5,7,17,-10,7,Italy - Serie A,0.25,0.38,-10,0.88,4.0,2.63,11
+Hellas Verona,8,2,1,5,8,19,-11,7,Italy - Serie A,0.25,0.38,-11,1.0,4.0,2.63,11
+Torino,8,1,3,4,5,9,-4,6,Italy - Serie A,0.12,0.5,-4,0.62,8.33,2.0,12
+Genoa,8,0,5,3,7,12,-5,5,Italy - Serie A,0.0,0.62,-5,0.88,0.0,1.61,13
+Empoli,8,1,2,5,4,11,-7,5,Italy - Serie A,0.12,0.38,-7,0.5,8.33,2.63,13
+Monza,8,0,2,6,7,13,-6,2,Italy - Serie A,0.0,0.25,-6,0.88,0.0,4.0,14
 Sassuolo,8,7,1,0,22,4,18,22,Italy - Serie B,0.88,1.0,18,2.75,1.14,1.0,1
 Spezia,8,6,2,0,17,4,13,20,Italy - Serie B,0.75,1.0,13,2.12,1.33,1.0,2
 Pisa,8,6,2,0,17,6,11,20,Italy - Serie B,0.75,1.0,11,2.12,1.33,1.0,2
@@ -1539,42 +1541,42 @@ Vicenza,8,7,1,0,16,1,15,22,Italy - Serie C - Group A,0.88,1.0,15,2.0,1.14,1.0,1
 FeralpiSalo,8,6,2,0,15,5,10,20,Italy - Serie C - Group A,0.75,1.0,10,1.88,1.33,1.0,2
 Padova,8,6,2,0,11,3,8,20,Italy - Serie C - Group A,0.75,1.0,8,1.38,1.33,1.0,2
 Atalanta B,8,6,1,1,18,7,11,19,Italy - Serie C - Group A,0.75,0.88,11,2.25,1.33,1.14,3
-Trento,8,4,2,2,10,8,2,14,Italy - Serie C - Group A,0.5,0.75,2,1.25,2.0,1.33,4
-Arzignano,8,4,1,3,10,8,2,13,Italy - Serie C - Group A,0.5,0.62,2,1.25,2.0,1.61,5
-Lecco,8,4,1,3,12,11,1,13,Italy - Serie C - Group A,0.5,0.62,1,1.5,2.0,1.61,5
-Novara,8,3,3,2,10,6,4,12,Italy - Serie C - Group A,0.38,0.75,4,1.25,2.63,1.33,6
-Alcione,8,4,0,4,7,7,0,12,Italy - Serie C - Group A,0.5,0.5,0,0.88,2.0,2.0,6
-Virtus Verona,8,3,2,3,11,9,2,11,Italy - Serie C - Group A,0.38,0.62,2,1.38,2.63,1.61,7
-AlbinoLeffe,8,2,5,1,7,6,1,11,Italy - Serie C - Group A,0.25,0.88,1,0.88,4.0,1.14,7
-Pergolettese,8,3,2,3,9,9,0,11,Italy - Serie C - Group A,0.38,0.62,0,1.12,2.63,1.61,7
-Pro Vercelli,8,3,2,3,10,14,-4,11,Italy - Serie C - Group A,0.38,0.62,-4,1.25,2.63,1.61,7
-Lumezzane,8,3,1,4,7,13,-6,10,Italy - Serie C - Group A,0.38,0.5,-6,0.88,2.63,2.0,8
-Pro Patria,8,1,6,1,8,8,0,9,Italy - Serie C - Group A,0.12,0.88,0,1.0,8.33,1.14,9
-Giana Erminio,8,2,3,3,5,7,-2,9,Italy - Serie C - Group A,0.25,0.62,-2,0.62,4.0,1.61,9
-Renate,8,2,3,3,4,6,-2,9,Italy - Serie C - Group A,0.25,0.62,-2,0.5,4.0,1.61,9
-Triestina,8,2,2,4,9,9,0,8,Italy - Serie C - Group A,0.25,0.5,0,1.12,4.0,2.0,10
-Caldiero Terme,8,1,3,4,7,14,-7,6,Italy - Serie C - Group A,0.12,0.5,-7,0.88,8.33,2.0,11
-Clodiense,8,0,3,5,9,15,-6,3,Italy - Serie C - Group A,0.0,0.38,-6,1.12,0.0,2.63,12
-Entella,8,5,2,1,15,6,9,17,Italy - Serie C - Group B,0.62,0.88,9,1.88,1.61,1.14,1
-Ternana,8,4,4,0,17,4,13,16,Italy - Serie C - Group B,0.5,1.0,13,2.12,2.0,1.0,2
+Arzignano,8,4,1,3,10,8,2,13,Italy - Serie C - Group A,0.5,0.62,2,1.25,2.0,1.61,4
+Lecco,8,4,1,3,12,11,1,13,Italy - Serie C - Group A,0.5,0.62,1,1.5,2.0,1.61,4
+Novara,8,3,3,2,10,5,5,12,Italy - Serie C - Group A,0.38,0.75,5,1.25,2.63,1.33,5
+Trento,8,3,3,2,11,10,1,12,Italy - Serie C - Group A,0.38,0.75,1,1.38,2.63,1.33,5
+Alcione,8,4,0,4,7,7,0,12,Italy - Serie C - Group A,0.5,0.5,0,0.88,2.0,2.0,5
+Virtus Verona,8,3,2,3,11,9,2,11,Italy - Serie C - Group A,0.38,0.62,2,1.38,2.63,1.61,6
+AlbinoLeffe,8,2,5,1,7,6,1,11,Italy - Serie C - Group A,0.25,0.88,1,0.88,4.0,1.14,6
+Pergolettese,8,3,2,3,9,9,0,11,Italy - Serie C - Group A,0.38,0.62,0,1.12,2.63,1.61,6
+Pro Vercelli,8,3,2,3,10,14,-4,11,Italy - Serie C - Group A,0.38,0.62,-4,1.25,2.63,1.61,6
+Lumezzane,8,3,1,4,10,13,-3,10,Italy - Serie C - Group A,0.38,0.5,-3,1.25,2.63,2.0,7
+Pro Patria,8,1,6,1,8,8,0,9,Italy - Serie C - Group A,0.12,0.88,0,1.0,8.33,1.14,8
+Renate,8,2,3,3,4,5,-1,9,Italy - Serie C - Group A,0.25,0.62,-1,0.5,4.0,1.61,8
+Triestina,8,2,2,4,9,9,0,8,Italy - Serie C - Group A,0.25,0.5,0,1.12,4.0,2.0,9
+Giana Erminio,8,1,3,4,4,8,-4,6,Italy - Serie C - Group A,0.12,0.5,-4,0.5,8.33,2.0,10
+Caldiero Terme,8,1,3,4,7,13,-6,6,Italy - Serie C - Group A,0.12,0.5,-6,0.88,8.33,2.0,10
+Clodiense,8,0,3,5,9,15,-6,3,Italy - Serie C - Group A,0.0,0.38,-6,1.12,0.0,2.63,11
+Ternana,8,5,3,0,19,5,14,18,Italy - Serie C - Group B,0.62,1.0,14,2.38,1.61,1.0,1
+Entella,8,5,2,1,15,6,9,17,Italy - Serie C - Group B,0.62,0.88,9,1.88,1.61,1.14,2
 Vis Pesaro,8,4,3,1,12,7,5,15,Italy - Serie C - Group B,0.5,0.88,5,1.5,2.0,1.14,3
+Perugia,8,4,2,2,10,5,5,14,Italy - Serie C - Group B,0.5,0.75,5,1.25,2.0,1.33,4
 Pescara,8,4,2,2,9,5,4,14,Italy - Serie C - Group B,0.5,0.75,4,1.12,2.0,1.33,4
 Pineto,8,4,1,3,9,9,0,13,Italy - Serie C - Group B,0.5,0.62,0,1.12,2.0,1.61,5
 Campobasso,8,3,3,2,14,8,6,12,Italy - Serie C - Group B,0.38,0.75,6,1.75,2.63,1.33,6
 Rimini,8,3,3,2,8,4,4,12,Italy - Serie C - Group B,0.38,0.75,4,1.0,2.63,1.33,6
 Pianese,8,3,3,2,10,8,2,12,Italy - Serie C - Group B,0.38,0.75,2,1.25,2.63,1.33,6
 Arezzo,8,2,5,1,10,8,2,11,Italy - Serie C - Group B,0.25,0.88,2,1.25,4.0,1.14,7
-Perugia,8,3,2,3,10,9,1,11,Italy - Serie C - Group B,0.38,0.62,1,1.25,2.63,1.61,7
 Torres,8,3,2,3,8,7,1,11,Italy - Serie C - Group B,0.38,0.62,1,1.0,2.63,1.61,7
 SPAL,8,3,2,3,7,8,-1,11,Italy - Serie C - Group B,0.38,0.62,-1,0.88,2.63,1.61,7
 Athletic Carpi,8,2,4,2,8,8,0,10,Italy - Serie C - Group B,0.25,0.75,0,1.0,4.0,1.33,8
 Gubbio,8,3,1,4,9,10,-1,10,Italy - Serie C - Group B,0.38,0.5,-1,1.12,2.63,2.0,8
 Pontedera,8,2,3,3,13,11,2,9,Italy - Serie C - Group B,0.25,0.62,2,1.62,4.0,1.61,9
 Ascoli,8,2,3,3,9,8,1,9,Italy - Serie C - Group B,0.25,0.62,1,1.12,4.0,1.61,9
-Lucchese,8,1,5,2,11,13,-2,8,Italy - Serie C - Group B,0.12,0.75,-2,1.38,8.33,1.33,10
 AC Milan B,8,2,2,4,9,13,-4,8,Italy - Serie C - Group B,0.25,0.5,-4,1.12,4.0,2.0,10
-Sestri Levante,8,1,3,4,6,12,-6,6,Italy - Serie C - Group B,0.12,0.5,-6,0.75,8.33,2.0,11
+Lucchese,8,1,4,3,10,13,-3,7,Italy - Serie C - Group B,0.12,0.62,-3,1.25,8.33,1.61,11
 Legnago Salus,8,1,2,5,7,14,-7,5,Italy - Serie C - Group B,0.12,0.38,-7,0.88,8.33,2.63,12
+Sestri Levante,8,1,2,5,5,12,-7,5,Italy - Serie C - Group B,0.12,0.38,-7,0.62,8.33,2.63,12
 Benevento,8,5,2,1,18,8,10,17,Italy - Serie C - Group C,0.62,0.88,10,2.25,1.61,1.14,1
 Avellino,8,5,1,2,17,5,12,16,Italy - Serie C - Group C,0.62,0.75,12,2.12,1.61,1.33,2
 Picerno,8,4,3,1,10,5,5,15,Italy - Serie C - Group C,0.5,0.88,5,1.25,2.0,1.14,3
@@ -1584,15 +1586,15 @@ Catania,8,4,2,2,10,5,5,14,Italy - Serie C - Group C,0.5,0.75,5,1.25,2.0,1.33,4
 A. Cerignola,8,3,4,1,12,8,4,13,Italy - Serie C - Group C,0.38,0.88,4,1.5,2.63,1.14,5
 Potenza,8,3,3,2,17,12,5,12,Italy - Serie C - Group C,0.38,0.75,5,2.12,2.63,1.33,6
 Foggia,8,3,3,2,7,6,1,12,Italy - Serie C - Group C,0.38,0.75,1,0.88,2.63,1.33,6
-Altamura,8,3,2,3,10,11,-1,11,Italy - Serie C - Group C,0.38,0.62,-1,1.25,2.63,1.61,7
+Altamura,8,3,2,3,11,12,-1,11,Italy - Serie C - Group C,0.38,0.62,-1,1.38,2.63,1.61,7
 Juventus U23,8,3,2,3,7,8,-1,11,Italy - Serie C - Group C,0.38,0.62,-1,0.88,2.63,1.61,7
 Crotone,8,3,2,3,13,16,-3,11,Italy - Serie C - Group C,0.38,0.62,-3,1.62,2.63,1.61,7
 Cavese,8,3,1,4,8,7,1,10,Italy - Serie C - Group C,0.38,0.5,1,1.0,2.63,2.0,8
 Giugliano,8,3,1,4,12,14,-2,10,Italy - Serie C - Group C,0.38,0.5,-2,1.5,2.63,2.0,8
 Sorrento,8,2,3,3,10,12,-2,9,Italy - Serie C - Group C,0.25,0.62,-2,1.25,4.0,1.61,9
 Latina,8,3,0,5,7,10,-3,9,Italy - Serie C - Group C,0.38,0.38,-3,0.88,2.63,2.63,9
-Taranto,8,2,2,4,6,13,-7,8,Italy - Serie C - Group C,0.25,0.5,-7,0.75,4.0,2.0,10
-Casertana,8,1,4,3,4,8,-4,7,Italy - Serie C - Group C,0.12,0.62,-4,0.5,8.33,1.61,11
+Taranto,8,2,2,4,5,12,-7,8,Italy - Serie C - Group C,0.25,0.5,-7,0.62,4.0,2.0,10
+Casertana,8,1,4,3,3,6,-3,7,Italy - Serie C - Group C,0.12,0.62,-3,0.38,8.33,1.61,11
 ACR Messina,8,1,3,4,5,12,-7,6,Italy - Serie C - Group C,0.12,0.5,-7,0.62,8.33,2.0,12
 Turris,8,1,3,4,6,14,-8,6,Italy - Serie C - Group C,0.12,0.5,-8,0.75,8.33,2.0,12
 Bra,8,7,0,1,26,3,23,21,Italy - Serie D - Group A,0.88,0.88,23,3.25,1.14,1.14,1
@@ -1615,46 +1617,46 @@ Ligorna,8,2,3,3,9,11,-2,9,Italy - Serie D - Group A,0.25,0.62,-2,1.12,4.0,1.61,9
 Chieri,8,1,3,4,6,9,-3,6,Italy - Serie D - Group A,0.12,0.5,-3,0.75,8.33,2.0,10
 Borgaro Nobis,8,1,1,6,5,19,-14,4,Italy - Serie D - Group A,0.12,0.25,-14,0.62,8.33,4.0,11
 Fossano,8,0,2,6,5,14,-9,2,Italy - Serie D - Group A,0.0,0.25,-9,0.62,0.0,4.0,12
-F. Caratese,8,7,1,0,20,6,14,22,Italy - Serie D - Group B,0.88,1.0,14,2.5,1.14,1.0,1
-Chievo,8,6,1,1,15,9,6,19,Italy - Serie D - Group B,0.75,0.88,6,1.88,1.33,1.14,2
-Desenxano,8,5,3,0,12,3,9,18,Italy - Serie D - Group B,0.62,1.0,9,1.5,1.61,1.0,3
+F. Caratese,8,6,2,0,20,7,13,20,Italy - Serie D - Group B,0.75,1.0,13,2.5,1.33,1.0,1
+Desenxano,8,6,2,0,14,4,10,20,Italy - Serie D - Group B,0.75,1.0,10,1.75,1.33,1.0,1
+Chievo,8,6,1,1,14,10,4,19,Italy - Serie D - Group B,0.75,0.88,4,1.75,1.33,1.14,2
 USD Casatese,8,5,3,0,9,3,6,18,Italy - Serie D - Group B,0.62,1.0,6,1.12,1.61,1.0,3
-Varesina,8,4,4,0,13,7,6,16,Italy - Serie D - Group B,0.5,1.0,6,1.62,2.0,1.0,4
-Pro Palazzolo,8,4,3,1,18,6,12,15,Italy - Serie D - Group B,0.5,0.88,12,2.25,2.0,1.14,5
-Ospitaletto,8,4,3,1,15,6,9,15,Italy - Serie D - Group B,0.5,0.88,9,1.88,2.0,1.14,5
-Breno,8,4,2,2,8,6,2,14,Italy - Serie D - Group B,0.5,0.75,2,1.0,2.0,1.33,6
-SantAngelo,8,3,4,1,7,4,3,13,Italy - Serie D - Group B,0.38,0.88,3,0.88,2.63,1.14,7
-Magenta,8,3,4,1,7,7,0,13,Italy - Serie D - Group B,0.38,0.88,0,0.88,2.63,1.14,7
-Fanfulla,8,3,3,2,9,7,2,12,Italy - Serie D - Group B,0.38,0.75,2,1.12,2.63,1.33,8
-Sangiuliano C.,8,3,2,3,9,9,0,11,Italy - Serie D - Group B,0.38,0.62,0,1.12,2.63,1.61,9
-Crema,8,3,1,4,10,11,-1,10,Italy - Serie D - Group B,0.38,0.5,-1,1.25,2.63,2.0,10
-Pro Sesto,8,2,4,2,9,10,-1,10,Italy - Serie D - Group B,0.25,0.75,-1,1.12,4.0,1.33,10
-Vigasio,8,2,3,3,8,7,1,9,Italy - Serie D - Group B,0.25,0.62,1,1.0,4.0,1.61,11
-Arconatese,8,2,3,3,7,9,-2,9,Italy - Serie D - Group B,0.25,0.62,-2,0.88,4.0,1.61,11
-Castellanzese,8,1,4,3,8,13,-5,7,Italy - Serie D - Group B,0.12,0.62,-5,1.0,8.33,1.61,12
-Club Milano,8,2,1,5,6,12,-6,7,Italy - Serie D - Group B,0.25,0.38,-6,0.75,4.0,2.63,12
-Sondrio,8,1,4,3,5,12,-7,7,Italy - Serie D - Group B,0.12,0.62,-7,0.62,8.33,1.61,12
-Ciliverghe,8,1,0,7,7,14,-7,3,Italy - Serie D - Group B,0.12,0.12,-7,0.88,8.33,8.33,13
+Pro Palazzolo,8,4,3,1,18,6,12,15,Italy - Serie D - Group B,0.5,0.88,12,2.25,2.0,1.14,4
+Ospitaletto,8,4,3,1,15,6,9,15,Italy - Serie D - Group B,0.5,0.88,9,1.88,2.0,1.14,4
+Varesina,8,4,3,1,14,9,5,15,Italy - Serie D - Group B,0.5,0.88,5,1.75,2.0,1.14,4
+Magenta,8,3,4,1,7,7,0,13,Italy - Serie D - Group B,0.38,0.88,0,0.88,2.63,1.14,5
+Fanfulla,8,3,3,2,9,7,2,12,Italy - Serie D - Group B,0.38,0.75,2,1.12,2.63,1.33,6
+SantAngelo,8,2,5,1,7,5,2,11,Italy - Serie D - Group B,0.25,0.88,2,0.88,4.0,1.14,7
+Sangiuliano C.,8,3,2,3,9,9,0,11,Italy - Serie D - Group B,0.38,0.62,0,1.12,2.63,1.61,7
+Breno,8,3,2,3,6,7,-1,11,Italy - Serie D - Group B,0.38,0.62,-1,0.75,2.63,1.61,7
+Club Milano,8,3,1,4,10,9,1,10,Italy - Serie D - Group B,0.38,0.5,1,1.25,2.63,2.0,8
+Crema,8,3,1,4,10,11,-1,10,Italy - Serie D - Group B,0.38,0.5,-1,1.25,2.63,2.0,8
+Pro Sesto,8,2,4,2,10,11,-1,10,Italy - Serie D - Group B,0.25,0.75,-1,1.25,4.0,1.33,8
+Vigasio,8,2,3,3,8,7,1,9,Italy - Serie D - Group B,0.25,0.62,1,1.0,4.0,1.61,9
+Arconatese,8,2,3,3,7,9,-2,9,Italy - Serie D - Group B,0.25,0.62,-2,0.88,4.0,1.61,9
+Castellanzese,8,1,4,3,8,13,-5,7,Italy - Serie D - Group B,0.12,0.62,-5,1.0,8.33,1.61,10
+Sondrio,8,1,4,3,5,12,-7,7,Italy - Serie D - Group B,0.12,0.62,-7,0.62,8.33,1.61,10
+Ciliverghe,8,1,0,7,7,14,-7,3,Italy - Serie D - Group B,0.12,0.12,-7,0.88,8.33,8.33,11
 D. Bellunesi,8,7,0,1,13,4,9,21,Italy - Serie D - Group C,0.88,0.88,9,1.62,1.14,1.14,1
 Adriese,8,6,2,0,16,3,13,20,Italy - Serie D - Group C,0.75,1.0,13,2.0,1.33,1.0,2
+Treviso,8,6,2,0,13,4,9,20,Italy - Serie D - Group C,0.75,1.0,9,1.62,1.33,1.0,2
 Calvi Noale,8,6,1,1,14,5,9,19,Italy - Serie D - Group C,0.75,0.88,9,1.75,1.33,1.14,3
-Treviso,8,5,3,0,13,5,8,18,Italy - Serie D - Group C,0.62,1.0,8,1.62,1.61,1.0,4
-Brusaporto,8,5,2,1,16,10,6,17,Italy - Serie D - Group C,0.62,0.88,6,2.0,1.61,1.14,5
-Mestre,8,5,1,2,12,8,4,16,Italy - Serie D - Group C,0.62,0.75,4,1.5,1.61,1.33,6
-Cjarlins Muzane,8,5,1,2,10,6,4,16,Italy - Serie D - Group C,0.62,0.75,4,1.25,1.61,1.33,6
-Caravaggio,8,5,1,2,11,8,3,16,Italy - Serie D - Group C,0.62,0.75,3,1.38,1.61,1.33,6
-Campodarsego,8,4,3,1,17,9,8,15,Italy - Serie D - Group C,0.5,0.88,8,2.12,2.0,1.14,7
-Luparense,8,3,5,0,10,5,5,14,Italy - Serie D - Group C,0.38,1.0,5,1.25,2.63,1.0,8
-Villa Alme,8,4,2,2,13,9,4,14,Italy - Serie D - Group C,0.5,0.75,4,1.62,2.0,1.33,8
-Real Calepina,8,4,1,3,11,6,5,13,Italy - Serie D - Group C,0.5,0.62,5,1.38,2.0,1.61,9
-Bassano Virtus,8,3,4,1,7,3,4,13,Italy - Serie D - Group C,0.38,0.88,4,0.88,2.63,1.14,9
-Este,8,3,3,2,10,10,0,12,Italy - Serie D - Group C,0.38,0.75,0,1.25,2.63,1.33,10
-Brian Lignano,8,3,2,3,10,8,2,11,Italy - Serie D - Group C,0.38,0.62,2,1.25,2.63,1.61,11
-Portogruaro,8,2,4,2,4,6,-2,10,Italy - Serie D - Group C,0.25,0.75,-2,0.5,4.0,1.33,12
-Montecchio M.,8,2,2,4,8,10,-2,8,Italy - Serie D - Group C,0.25,0.5,-2,1.0,4.0,2.0,13
-Chions,8,1,4,3,6,7,-1,7,Italy - Serie D - Group C,0.12,0.62,-1,0.75,8.33,1.61,14
-Ciserano,8,1,3,4,10,14,-4,6,Italy - Serie D - Group C,0.12,0.5,-4,1.25,8.33,2.0,15
-Lavis,8,1,1,6,5,16,-11,4,Italy - Serie D - Group C,0.12,0.25,-11,0.62,8.33,4.0,16
+Brusaporto,8,5,2,1,16,10,6,17,Italy - Serie D - Group C,0.62,0.88,6,2.0,1.61,1.14,4
+Villa Alme,8,5,1,2,13,8,5,16,Italy - Serie D - Group C,0.62,0.75,5,1.62,1.61,1.33,5
+Mestre,8,5,1,2,12,8,4,16,Italy - Serie D - Group C,0.62,0.75,4,1.5,1.61,1.33,5
+Cjarlins Muzane,8,5,1,2,10,6,4,16,Italy - Serie D - Group C,0.62,0.75,4,1.25,1.61,1.33,5
+Luparense,8,3,5,0,10,5,5,14,Italy - Serie D - Group C,0.38,1.0,5,1.25,2.63,1.0,6
+Campodarsego,8,3,4,1,15,8,7,13,Italy - Serie D - Group C,0.38,0.88,7,1.88,2.63,1.14,7
+Real Calepina,8,4,1,3,11,6,5,13,Italy - Serie D - Group C,0.5,0.62,5,1.38,2.0,1.61,7
+Bassano Virtus,8,3,4,1,7,3,4,13,Italy - Serie D - Group C,0.38,0.88,4,0.88,2.63,1.14,7
+Brian Lignano,8,4,1,3,11,8,3,13,Italy - Serie D - Group C,0.5,0.62,3,1.38,2.0,1.61,7
+Caravaggio,8,4,1,3,10,10,0,13,Italy - Serie D - Group C,0.5,0.62,0,1.25,2.0,1.61,7
+Este,8,3,3,2,10,10,0,12,Italy - Serie D - Group C,0.38,0.75,0,1.25,2.63,1.33,8
+Portogruaro,8,2,4,2,4,6,-2,10,Italy - Serie D - Group C,0.25,0.75,-2,0.5,4.0,1.33,9
+Ciserano,8,2,2,4,14,14,0,8,Italy - Serie D - Group C,0.25,0.5,0,1.75,4.0,2.0,10
+Chions,8,1,4,3,6,7,-1,7,Italy - Serie D - Group C,0.12,0.62,-1,0.75,8.33,1.61,11
+Montecchio M.,8,2,1,5,7,10,-3,7,Italy - Serie D - Group C,0.25,0.38,-3,0.88,4.0,2.63,11
+Lavis,8,1,1,6,5,16,-11,4,Italy - Serie D - Group C,0.12,0.25,-11,0.62,8.33,4.0,12
 Tau Altopascio,8,7,0,1,17,6,11,21,Italy - Serie D - Group D,0.88,0.88,11,2.12,1.14,1.14,1
 Pistoiese,8,7,0,1,12,4,8,21,Italy - Serie D - Group D,0.88,0.88,8,1.5,1.14,1.14,1
 Forli,8,6,2,0,22,4,18,20,Italy - Serie D - Group D,0.75,1.0,18,2.75,1.33,1.0,2
@@ -1881,16 +1883,16 @@ Llapi,8,2,5,1,8,5,3,11,kosovo,0.25,0.88,3,1.0,4.0,1.14,6
 Dukagjini,8,3,2,3,7,9,-2,11,kosovo,0.38,0.62,-2,0.88,2.63,1.61,6
 Ferizaj,8,2,2,4,9,11,-2,8,kosovo,0.25,0.5,-2,1.12,4.0,2.0,7
 Feronikeli,8,2,2,4,6,12,-6,8,kosovo,0.25,0.5,-6,0.75,4.0,2.0,7
-Al Kuwait,4,4,0,0,9,0,9,12,kuwait,1.0,1.0,9,2.25,1.0,1.0,1
-Al Arabi SC,4,4,0,0,8,2,6,12,kuwait,1.0,1.0,6,2.0,1.0,1.0,1
-Al Qadsia,5,4,0,1,8,3,5,12,kuwait,0.8,0.8,5,1.6,1.25,1.25,1
-Al Salmiyah,6,3,1,2,13,12,1,10,kuwait,0.5,0.67,1,2.17,2.0,1.49,2
-Al Tadhamon,6,3,1,2,10,11,-1,10,kuwait,0.5,0.67,-1,1.67,2.0,1.49,2
-Al Fahaheel,6,3,0,3,9,9,0,9,kuwait,0.5,0.5,0,1.5,2.0,2.0,3
-Kazma,4,2,1,1,6,4,2,7,kuwait,0.5,0.75,2,1.5,2.0,1.33,4
-Khaitan,4,0,2,2,4,10,-6,2,kuwait,0.0,0.5,-6,1.0,0.0,2.0,5
-Yarmouk,4,0,1,3,7,13,-6,1,kuwait,0.0,0.25,-6,1.75,0.0,4.0,6
-Al Nasar,4,0,1,3,3,12,-9,1,kuwait,0.0,0.25,-9,0.75,0.0,4.0,6
+Al Qadsia,6,5,0,1,10,4,6,15,kuwait,0.83,0.83,6,1.67,1.2,1.2,1
+Al Kuwait,4,4,0,0,9,0,9,12,kuwait,1.0,1.0,9,2.25,1.0,1.0,2
+Al Arabi SC,4,4,0,0,8,2,6,12,kuwait,1.0,1.0,6,2.0,1.0,1.0,2
+Al Salmiyah,6,3,1,2,13,12,1,10,kuwait,0.5,0.67,1,2.17,2.0,1.49,3
+Al Tadhamon,6,3,1,2,10,11,-1,10,kuwait,0.5,0.67,-1,1.67,2.0,1.49,3
+Al Fahaheel,6,3,0,3,9,9,0,9,kuwait,0.5,0.5,0,1.5,2.0,2.0,4
+Kazma,5,2,1,2,6,7,-1,7,kuwait,0.4,0.6,-1,1.2,2.5,1.67,5
+Khaitan,4,0,2,2,4,10,-6,2,kuwait,0.0,0.5,-6,1.0,0.0,2.0,6
+Yarmouk,4,0,1,3,7,13,-6,1,kuwait,0.0,0.25,-6,1.75,0.0,4.0,7
+Al Nasar,5,0,1,4,4,14,-10,1,kuwait,0.0,0.2,-10,0.8,0.0,5.0,7
 Riga FC,8,7,1,0,29,3,26,22,latvia,0.88,1.0,26,3.62,1.14,1.0,1
 RFS,8,6,0,2,27,7,20,18,latvia,0.75,0.75,20,3.38,1.33,1.33,2
 Auda,8,5,2,1,16,4,12,17,latvia,0.62,0.88,12,2.0,1.61,1.14,3
@@ -1948,14 +1950,14 @@ Selangor,7,6,0,1,17,5,12,18,malaysia,0.86,0.86,12,2.43,1.16,1.16,2
 Kuala Lumpur,8,5,1,2,16,10,6,16,malaysia,0.62,0.75,6,2.0,1.61,1.33,3
 Sabah,8,4,2,2,16,10,6,14,malaysia,0.5,0.75,6,2.0,2.0,1.33,4
 Terengganu,7,4,2,1,12,6,6,14,malaysia,0.57,0.86,6,1.71,1.75,1.16,4
-PDRM,8,3,4,1,12,6,6,13,malaysia,0.38,0.88,6,1.5,2.63,1.14,5
+PDRM,8,3,4,1,12,7,5,13,malaysia,0.38,0.88,5,1.5,2.63,1.14,5
 Kuching,8,3,4,1,13,9,4,13,malaysia,0.38,0.88,4,1.62,2.63,1.14,5
 Kedah,8,3,4,1,11,7,4,13,malaysia,0.38,0.88,4,1.38,2.63,1.14,5
 Pulau Pinang,7,2,2,3,7,8,-1,8,malaysia,0.29,0.57,-1,1.0,3.45,1.75,6
 Pahang,7,2,1,4,10,13,-3,7,malaysia,0.29,0.43,-3,1.43,3.45,2.33,7
 Perak,8,1,2,5,8,18,-10,5,malaysia,0.12,0.38,-10,1.0,8.33,2.63,8
-Kelantan United,7,1,1,5,8,18,-10,4,malaysia,0.14,0.29,-10,1.14,7.14,3.45,9
-Negeri Sembilan,6,0,0,6,3,17,-14,0,malaysia,0.0,0.0,-14,0.5,0.0,0.0,10
+Kelantan United,8,1,1,6,8,19,-11,4,malaysia,0.12,0.25,-11,1.0,8.33,4.0,9
+Negeri Sembilan,7,1,0,6,5,18,-13,3,malaysia,0.14,0.14,-13,0.71,7.14,7.14,10
 Sliema,8,6,2,0,16,5,11,20,malta,0.75,1.0,11,2.0,1.33,1.0,1
 Floriana,8,6,1,1,14,3,11,19,malta,0.75,0.88,11,1.75,1.33,1.14,2
 Mosta,7,4,1,2,9,7,2,13,malta,0.57,0.71,2,1.29,1.75,1.41,3
@@ -1999,83 +2001,83 @@ Otrant,8,1,1,6,7,16,-9,4,montenegro,0.12,0.25,-9,0.88,8.33,4.0,8
 Berkane,8,6,1,1,12,3,9,19,morocco,0.75,0.88,9,1.5,1.33,1.14,1
 R. Zemamra,8,5,2,1,14,7,7,17,morocco,0.62,0.88,7,1.75,1.61,1.14,2
 Wydad,8,5,1,2,15,10,5,16,morocco,0.62,0.75,5,1.88,1.61,1.33,3
+Olympic Safi,8,5,1,2,13,8,5,16,morocco,0.62,0.75,5,1.62,1.61,1.33,3
 FAR Rabat,8,4,4,0,11,6,5,16,morocco,0.5,1.0,5,1.38,2.0,1.0,3
 FUS Rabat,8,4,3,1,18,6,12,15,morocco,0.5,0.88,12,2.25,2.0,1.14,4
 Raja Casablanca,8,4,3,1,9,3,6,15,morocco,0.5,0.88,6,1.12,2.0,1.14,4
 Meknes,7,4,2,1,10,4,6,14,morocco,0.57,0.86,6,1.43,1.75,1.16,5
 Difaa El Jadida,8,4,2,2,9,7,2,14,morocco,0.5,0.75,2,1.12,2.0,1.33,5
-JS Sousalem,8,4,2,2,9,8,1,14,morocco,0.5,0.75,1,1.12,2.0,1.33,5
+JS Sousalem,8,4,2,2,10,9,1,14,morocco,0.5,0.75,1,1.25,2.0,1.33,5
 Hassania Agadir,8,4,1,3,12,9,3,13,morocco,0.5,0.62,3,1.5,2.0,1.61,6
-Olympic Safi,8,4,1,3,11,9,2,13,morocco,0.5,0.62,2,1.38,2.0,1.61,6
 Maghreb de Fes,8,4,1,3,5,4,1,13,morocco,0.5,0.62,1,0.62,2.0,1.61,6
 Ittihad Tanger,8,2,4,2,9,8,1,10,morocco,0.25,0.75,1,1.12,4.0,1.33,7
 Union Touarga,8,2,4,2,7,8,-1,10,morocco,0.25,0.75,-1,0.88,4.0,1.33,7
 Moghreb Tetouan,8,1,3,4,7,10,-3,6,morocco,0.12,0.5,-3,0.88,8.33,2.0,8
 C. Mohammedia,8,0,1,7,2,19,-17,1,morocco,0.0,0.12,-17,0.25,0.0,8.33,9
 Dcheira,7,5,1,1,16,5,11,16,morocco2,0.71,0.86,11,2.29,1.41,1.16,1
+Yacoub El Manso,7,4,3,0,15,8,7,15,morocco2,0.57,1.0,7,2.14,1.75,1.0,2
 USM Oujda,7,4,3,0,8,4,4,15,morocco2,0.57,1.0,4,1.14,1.75,1.0,2
-Yacoub El Manso,6,4,2,0,14,7,7,14,morocco2,0.67,1.0,7,2.33,1.49,1.0,3
-Kawkab M.,6,3,3,0,13,6,7,12,morocco2,0.5,1.0,7,2.17,2.0,1.0,4
-R. Beni Mellal,5,3,2,0,11,5,6,11,morocco2,0.6,1.0,6,2.2,1.67,1.0,5
-KAC Kenitra,7,2,4,1,11,6,5,10,morocco2,0.29,0.86,5,1.57,3.45,1.16,6
-RAC Casablanca,6,3,1,2,10,9,1,10,morocco2,0.5,0.67,1,1.67,2.0,1.49,6
-Stade Marocain,6,2,3,1,9,8,1,9,morocco2,0.33,0.83,1,1.5,3.03,1.2,7
-Youssoufia B.,6,2,3,1,4,4,0,9,morocco2,0.33,0.83,0,0.67,3.03,1.2,7
-C. Benguerir,6,2,2,2,4,4,0,8,morocco2,0.33,0.67,0,0.67,3.03,1.49,8
-Chabab Atlas K.,7,1,5,1,3,3,0,8,morocco2,0.14,0.86,0,0.43,7.14,1.16,8
-Wydad Fes,5,2,1,2,5,6,-1,7,morocco2,0.4,0.6,-1,1.0,2.5,1.67,9
-El Massira,5,1,3,1,5,5,0,6,morocco2,0.2,0.8,0,1.0,5.0,1.25,10
-Rapide Oued Z.,6,0,5,1,5,6,-1,5,morocco2,0.0,0.83,-1,0.83,0.0,1.2,11
-Khouribga,6,1,2,3,6,8,-2,5,morocco2,0.17,0.5,-2,1.0,5.88,2.0,11
-Mouloudia Oujda,5,1,2,2,2,4,-2,5,morocco2,0.2,0.6,-2,0.4,5.0,1.67,11
+Kawkab M.,6,3,3,0,13,6,7,12,morocco2,0.5,1.0,7,2.17,2.0,1.0,3
+R. Beni Mellal,6,3,2,1,11,6,5,11,morocco2,0.5,0.83,5,1.83,2.0,1.2,4
+RAC Casablanca,7,3,2,2,10,9,1,11,morocco2,0.43,0.71,1,1.43,2.33,1.41,4
+KAC Kenitra,7,2,4,1,11,6,5,10,morocco2,0.29,0.86,5,1.57,3.45,1.16,5
+Stade Marocain,6,2,3,1,9,8,1,9,morocco2,0.33,0.83,1,1.5,3.03,1.2,6
+C. Benguerir,7,2,3,2,4,4,0,9,morocco2,0.29,0.71,0,0.57,3.45,1.41,6
+Youssoufia B.,6,2,3,1,4,4,0,9,morocco2,0.33,0.83,0,0.67,3.03,1.2,6
+Mouloudia Oujda,6,2,2,2,6,4,2,8,morocco2,0.33,0.67,2,1.0,3.03,1.49,7
+Chabab Atlas K.,7,1,5,1,3,3,0,8,morocco2,0.14,0.86,0,0.43,7.14,1.16,7
+Wydad Fes,6,2,2,2,6,7,-1,8,morocco2,0.33,0.67,-1,1.0,3.03,1.49,7
+El Massira,6,1,4,1,5,5,0,7,morocco2,0.17,0.83,0,0.83,5.88,1.2,8
+Khouribga,7,1,3,3,7,9,-2,6,morocco2,0.14,0.57,-2,1.0,7.14,1.75,9
+Rapide Oued Z.,6,0,5,1,5,6,-1,5,morocco2,0.0,0.83,-1,0.83,0.0,1.2,10
 Yangon Utd,8,6,2,0,21,5,16,20,myanmar,0.75,1.0,16,2.62,1.33,1.0,1
 Shan Utd,7,6,1,0,15,3,12,19,myanmar,0.86,1.0,12,2.14,1.16,1.0,2
 Ispe FC,8,6,0,2,20,7,13,18,myanmar,0.75,0.75,13,2.5,1.33,1.33,3
 Hantharwady,8,5,2,1,13,9,4,17,myanmar,0.62,0.88,4,1.62,1.61,1.14,4
 Dagon,6,5,1,0,13,5,8,16,myanmar,0.83,1.0,8,2.17,1.2,1.0,5
+Sagaing Utd,8,3,2,3,19,18,1,11,myanmar,0.38,0.62,1,2.38,2.63,1.61,6
 Yadanarbon,7,3,2,2,13,15,-2,11,myanmar,0.43,0.71,-2,1.86,2.33,1.41,6
-Sagaing Utd,7,3,1,3,17,16,1,10,myanmar,0.43,0.57,1,2.43,2.33,1.75,7
-Dagon Port,6,2,1,3,10,16,-6,7,myanmar,0.33,0.5,-6,1.67,3.03,2.0,8
-Ayeyawady,7,1,1,5,6,9,-3,4,myanmar,0.14,0.29,-3,0.86,7.14,3.45,9
-Thitsar Arman,7,1,1,5,10,18,-8,4,myanmar,0.14,0.29,-8,1.43,7.14,3.45,9
-Myawady,6,0,1,5,4,11,-7,1,myanmar,0.0,0.17,-7,0.67,0.0,5.88,10
-Rakhine Utd,6,0,1,5,4,24,-20,1,myanmar,0.0,0.17,-20,0.67,0.0,5.88,10
-PSV Eindhoven,8,8,0,0,32,3,29,24,netherlands,1.0,1.0,29,4.0,1.0,1.0,1
-Ajax Amsterdam,8,7,1,0,20,5,15,22,netherlands,0.88,1.0,15,2.5,1.14,1.0,2
-FC Twente,8,5,3,0,17,6,11,18,netherlands,0.62,1.0,11,2.12,1.61,1.0,3
-Heerenveen,8,5,3,0,13,4,9,18,netherlands,0.62,1.0,9,1.62,1.61,1.0,3
-Go Ahead Eagles,8,5,2,1,20,10,10,17,netherlands,0.62,0.88,10,2.5,1.61,1.14,4
-Feyenoord,8,5,2,1,17,9,8,17,netherlands,0.62,0.88,8,2.12,1.61,1.14,4
-Fortuna Sittard,8,5,0,3,13,10,3,15,netherlands,0.62,0.62,3,1.62,1.61,1.61,5
-NAC Breda,8,5,0,3,11,9,2,15,netherlands,0.62,0.62,2,1.38,1.61,1.61,5
-AZ Alkmaar,8,4,1,3,18,10,8,13,netherlands,0.5,0.62,8,2.25,2.0,1.61,6
-FC Utrecht,8,4,1,3,16,20,-4,13,netherlands,0.5,0.62,-4,2.0,2.0,1.61,6
-FC Groningen,8,3,3,2,9,5,4,12,netherlands,0.38,0.75,4,1.12,2.63,1.33,7
-PEC Zwolle,8,4,0,4,11,11,0,12,netherlands,0.5,0.5,0,1.38,2.0,2.0,7
-NEC Nijmegen,8,3,2,3,15,8,7,11,netherlands,0.38,0.62,7,1.88,2.63,1.61,8
-Heracles Almelo,8,2,4,2,13,13,0,10,netherlands,0.25,0.75,0,1.62,4.0,1.33,9
-Willem II,8,2,2,4,11,10,1,8,netherlands,0.25,0.5,1,1.38,4.0,2.0,10
-Almere City,8,2,1,5,8,21,-13,7,netherlands,0.25,0.38,-13,1.0,4.0,2.63,11
-RKC Waalwijk,8,1,2,5,8,16,-8,5,netherlands,0.12,0.38,-8,1.0,8.33,2.63,12
-Sparta,8,0,3,5,7,16,-9,3,netherlands,0.0,0.38,-9,0.88,0.0,2.63,13
+Dagon Port,7,2,1,4,10,19,-9,7,myanmar,0.29,0.43,-9,1.43,3.45,2.33,7
+Ayeyawady,7,1,1,5,6,9,-3,4,myanmar,0.14,0.29,-3,0.86,7.14,3.45,8
+Thitsar Arman,7,1,1,5,10,18,-8,4,myanmar,0.14,0.29,-8,1.43,7.14,3.45,8
+Rakhine Utd,7,1,1,5,6,25,-19,4,myanmar,0.14,0.29,-19,0.86,7.14,3.45,8
+Myawady,6,0,1,5,4,11,-7,1,myanmar,0.0,0.17,-7,0.67,0.0,5.88,9
+PSV Eindhoven,8,7,1,0,29,4,25,22,netherlands,0.88,1.0,25,3.62,1.14,1.0,1
+Ajax Amsterdam,8,7,1,0,21,6,15,22,netherlands,0.88,1.0,15,2.62,1.14,1.0,1
+FC Twente,8,5,3,0,17,6,11,18,netherlands,0.62,1.0,11,2.12,1.61,1.0,2
+Heerenveen,8,5,3,0,13,4,9,18,netherlands,0.62,1.0,9,1.62,1.61,1.0,2
+Go Ahead Eagles,8,5,2,1,20,10,10,17,netherlands,0.62,0.88,10,2.5,1.61,1.14,3
+Feyenoord,8,5,2,1,17,9,8,17,netherlands,0.62,0.88,8,2.12,1.61,1.14,3
+NAC Breda,8,5,0,3,11,9,2,15,netherlands,0.62,0.62,2,1.38,1.61,1.61,4
+AZ Alkmaar,8,4,1,3,18,10,8,13,netherlands,0.5,0.62,8,2.25,2.0,1.61,5
+FC Utrecht,8,4,1,3,16,20,-4,13,netherlands,0.5,0.62,-4,2.0,2.0,1.61,5
+FC Groningen,8,3,3,2,9,5,4,12,netherlands,0.38,0.75,4,1.12,2.63,1.33,6
+PEC Zwolle,8,4,0,4,10,7,3,12,netherlands,0.5,0.5,3,1.25,2.0,2.0,6
+Fortuna Sittard,8,4,0,4,10,13,-3,12,netherlands,0.5,0.5,-3,1.25,2.0,2.0,6
+NEC Nijmegen,8,3,2,3,15,8,7,11,netherlands,0.38,0.62,7,1.88,2.63,1.61,7
+Heracles Almelo,8,2,5,1,13,11,2,11,netherlands,0.25,0.88,2,1.62,4.0,1.14,7
+Willem II,8,2,2,4,11,10,1,8,netherlands,0.25,0.5,1,1.38,4.0,2.0,8
+Almere City,8,2,1,5,8,21,-13,7,netherlands,0.25,0.38,-13,1.0,4.0,2.63,9
+RKC Waalwijk,8,1,2,5,8,16,-8,5,netherlands,0.12,0.38,-8,1.0,8.33,2.63,10
+Sparta,8,0,3,5,7,16,-9,3,netherlands,0.0,0.38,-9,0.88,0.0,2.63,11
 FC Volendam,8,7,0,1,20,8,12,21,netherlands2,0.88,0.88,12,2.5,1.14,1.14,1
-Excelsior,8,6,1,1,18,7,11,19,netherlands2,0.75,0.88,11,2.25,1.33,1.14,2
+Excelsior,8,6,1,1,16,5,11,19,netherlands2,0.75,0.88,11,2.0,1.33,1.14,2
 De Graafschap,8,6,0,2,21,9,12,18,netherlands2,0.75,0.75,12,2.62,1.33,1.33,3
 ADO Den Haag,8,5,2,1,13,5,8,17,netherlands2,0.62,0.88,8,1.62,1.61,1.14,4
 FC Dordrecht,8,4,4,0,21,12,9,16,netherlands2,0.5,1.0,9,2.62,2.0,1.0,5
 Roda JC,8,5,1,2,12,7,5,16,netherlands2,0.62,0.75,5,1.5,1.61,1.33,5
 Telstar,8,3,5,0,17,6,11,14,netherlands2,0.38,1.0,11,2.12,2.63,1.0,6
+TOP Oss,8,4,2,2,9,13,-4,14,netherlands2,0.5,0.75,-4,1.12,2.0,1.33,6
 MVV Maastricht,8,3,4,1,16,10,6,13,netherlands2,0.38,0.88,6,2.0,2.63,1.14,7
 FC Emmen,8,3,3,2,14,11,3,12,netherlands2,0.38,0.75,3,1.75,2.63,1.33,8
 FC Den Bosch,8,3,3,2,13,12,1,12,netherlands2,0.38,0.75,1,1.62,2.63,1.33,8
 Jong Ajax,8,3,2,3,9,5,4,11,netherlands2,0.38,0.62,4,1.12,2.63,1.61,9
 Helmond Sport,8,3,2,3,11,11,0,11,netherlands2,0.38,0.62,0,1.38,2.63,1.61,9
-TOP Oss,8,3,2,3,8,16,-8,11,netherlands2,0.38,0.62,-8,1.0,2.63,1.61,9
 Cambuur,8,3,1,4,8,10,-2,10,netherlands2,0.38,0.5,-2,1.0,2.63,2.0,10
 Vitesse Arnhem,8,2,3,3,9,16,-7,9,netherlands2,0.25,0.62,-7,1.12,4.0,1.61,11
 Jong Utrecht,8,2,2,4,9,17,-8,8,netherlands2,0.25,0.5,-8,1.12,4.0,2.0,12
 Jong PSV,8,2,1,5,17,23,-6,7,netherlands2,0.25,0.38,-6,2.12,4.0,2.63,13
-FC Eindhoven,8,1,3,4,3,14,-11,6,netherlands2,0.12,0.5,-11,0.38,8.33,2.0,14
+FC Eindhoven,8,1,3,4,4,14,-10,6,netherlands2,0.12,0.5,-10,0.5,8.33,2.0,14
 Jong AZ,8,0,3,5,14,19,-5,3,netherlands2,0.0,0.38,-5,1.75,0.0,2.63,15
 VVV,8,0,2,6,4,12,-8,2,netherlands2,0.0,0.25,-8,0.5,0.0,4.0,16
 Diriangen,8,7,0,1,26,5,21,21,nicaragua,0.88,0.88,21,3.25,1.14,1.14,1
@@ -2088,29 +2090,29 @@ Managua FC,8,4,0,4,13,11,2,12,nicaragua,0.5,0.5,2,1.62,2.0,2.0,5
 UNAN Managua,8,3,3,2,9,12,-3,12,nicaragua,0.38,0.75,-3,1.12,2.63,1.33,5
 D. Ocotal,8,3,0,5,9,14,-5,9,nicaragua,0.38,0.38,-5,1.12,2.63,2.63,6
 Rancho Santana,8,2,2,4,9,17,-8,8,nicaragua,0.25,0.5,-8,1.12,4.0,2.0,7
-Portadown,8,5,1,2,8,5,3,16,northernireland,0.62,0.75,3,1.0,1.61,1.33,1
-Linfield,8,5,0,3,11,7,4,15,northernireland,0.62,0.62,4,1.38,1.61,1.61,2
+Linfield,8,6,0,2,14,6,8,18,northernireland,0.75,0.75,8,1.75,1.33,1.33,1
+Portadown,8,5,1,2,8,5,3,16,northernireland,0.62,0.75,3,1.0,1.61,1.33,2
 Coleraine,8,4,2,2,15,11,4,14,northernireland,0.5,0.75,4,1.88,2.0,1.33,3
-Crusaders,8,4,1,3,14,13,1,13,northernireland,0.5,0.62,1,1.75,2.0,1.61,4
-Dungannon,8,4,0,4,12,10,2,12,northernireland,0.5,0.5,2,1.5,2.0,2.0,5
-Glenavon,8,3,3,2,12,11,1,12,northernireland,0.38,0.75,1,1.5,2.63,1.33,5
-Larne,8,3,3,2,8,7,1,12,northernireland,0.38,0.75,1,1.0,2.63,1.33,5
-Glentoran,8,3,3,2,6,5,1,12,northernireland,0.38,0.75,1,0.75,2.63,1.33,5
-Cliftonville,8,3,2,3,9,7,2,11,northernireland,0.38,0.62,2,1.12,2.63,1.61,6
-Carrick Rangers,8,3,2,3,9,9,0,11,northernireland,0.38,0.62,0,1.12,2.63,1.61,6
+Dungannon,8,4,0,4,12,10,2,12,northernireland,0.5,0.5,2,1.5,2.0,2.0,4
+Glenavon,8,3,3,2,12,11,1,12,northernireland,0.38,0.75,1,1.5,2.63,1.33,4
+Larne,8,3,3,2,8,7,1,12,northernireland,0.38,0.75,1,1.0,2.63,1.33,4
+Glentoran,8,3,3,2,6,5,1,12,northernireland,0.38,0.75,1,0.75,2.63,1.33,4
+Cliftonville,8,3,2,3,9,7,2,11,northernireland,0.38,0.62,2,1.12,2.63,1.61,5
+Carrick Rangers,8,3,2,3,9,9,0,11,northernireland,0.38,0.62,0,1.12,2.63,1.61,5
+Crusaders,8,3,1,4,13,17,-4,10,northernireland,0.38,0.5,-4,1.62,2.63,2.0,6
 Ballymena Utd,8,3,0,5,9,12,-3,9,northernireland,0.38,0.38,-3,1.12,2.63,2.63,7
-Loughgall,8,1,1,6,10,24,-14,4,northernireland,0.12,0.25,-14,1.25,8.33,4.0,8
-Bangor,8,6,2,0,16,6,10,20,northernireland2,0.75,1.0,10,2.0,1.33,1.0,1
+Loughgall,8,1,1,6,9,20,-11,4,northernireland,0.12,0.25,-11,1.12,8.33,4.0,8
+Bangor,8,6,2,0,14,5,9,20,northernireland2,0.75,1.0,9,1.75,1.33,1.0,1
 Annagh Utd,8,5,2,1,15,5,10,17,northernireland2,0.62,0.88,10,1.88,1.61,1.14,2
 Limavady,8,5,1,2,14,9,5,16,northernireland2,0.62,0.75,5,1.75,1.61,1.33,3
 Institute,8,4,3,1,14,7,7,15,northernireland2,0.5,0.88,7,1.75,2.0,1.14,4
 HW Welders,8,5,0,3,13,11,2,15,northernireland2,0.62,0.62,2,1.62,1.61,1.61,4
 Dundela,8,4,1,3,13,11,2,13,northernireland2,0.5,0.62,2,1.62,2.0,1.61,5
-Armagh City,8,3,1,4,16,16,0,10,northernireland2,0.38,0.5,0,2.0,2.63,2.0,6
+Armagh City,8,3,2,3,18,15,3,11,northernireland2,0.38,0.62,3,2.25,2.63,1.61,6
 Ballinamallard,8,3,0,5,14,14,0,9,northernireland2,0.38,0.38,0,1.75,2.63,2.63,7
 Newington,8,2,3,3,7,10,-3,9,northernireland2,0.25,0.62,-3,0.88,4.0,1.61,7
 Ards,8,2,2,4,8,10,-2,8,northernireland2,0.25,0.5,-2,1.0,4.0,2.0,8
-Ballyclare,8,2,2,4,13,21,-8,8,northernireland2,0.25,0.5,-8,1.62,4.0,2.0,8
+Ballyclare,8,2,2,4,13,20,-7,8,northernireland2,0.25,0.5,-7,1.62,4.0,2.0,8
 Newry City,8,1,3,4,8,15,-7,6,northernireland2,0.12,0.5,-7,1.0,8.33,2.0,9
 Shkendija,8,6,2,0,20,6,14,20,northmacedonia,0.75,1.0,14,2.5,1.33,1.0,1
 Rabotnicki,8,6,2,0,16,4,12,20,northmacedonia,0.75,1.0,12,2.0,1.33,1.0,1
@@ -2270,13 +2272,13 @@ Sprint-Jeloy,8,1,1,6,7,21,-14,4,norway10,0.12,0.25,-14,0.88,8.33,4.0,10
 Bodo/Glimt B,8,0,1,7,9,33,-24,1,norway10,0.0,0.12,-24,1.12,0.0,8.33,11
 Al Seeb,5,5,0,0,14,2,12,15,oman,1.0,1.0,12,2.8,1.0,1.0,1
 Al-Nahda,5,3,2,0,5,1,4,11,oman,0.6,1.0,4,1.0,1.67,1.0,2
-Oman Club,5,3,1,1,5,4,1,10,oman,0.6,0.8,1,1.0,1.67,1.25,3
+Oman Club,6,3,1,2,5,5,0,10,oman,0.5,0.67,0,0.83,2.0,1.49,3
 Al-Shabab Club,6,3,1,2,6,7,-1,10,oman,0.5,0.67,-1,1.0,2.0,1.49,3
 Bahla,5,2,1,2,6,4,2,7,oman,0.4,0.6,2,1.2,2.5,1.67,4
-Al Nasr,5,2,1,2,9,9,0,7,oman,0.4,0.6,0,1.8,2.5,1.67,4
-Sohar,5,2,1,2,5,5,0,7,oman,0.4,0.6,0,1.0,2.5,1.67,4
+Sohar,6,2,1,3,6,7,-1,7,oman,0.33,0.5,-1,1.0,3.03,2.0,4
 Ibri,6,2,1,3,4,6,-2,7,oman,0.33,0.5,-2,0.67,3.03,2.0,4
 Saham,5,2,1,2,4,7,-3,7,oman,0.4,0.6,-3,0.8,2.5,1.67,4
+Al Nasr,6,2,1,3,9,13,-4,7,oman,0.33,0.5,-4,1.5,3.03,2.0,4
 Al-Rustaq,6,1,3,2,5,6,-1,6,oman,0.17,0.67,-1,0.83,5.88,1.49,5
 Sur,5,2,0,3,2,3,-1,6,oman,0.4,0.4,-1,0.4,2.5,2.5,5
 Al-Khabourah,5,1,1,3,5,8,-3,4,oman,0.2,0.4,-3,1.0,5.0,2.5,6
@@ -2422,18 +2424,18 @@ Pacos Ferreira,8,2,2,4,10,16,-6,8,portugal2,0.25,0.5,-6,1.25,4.0,2.0,10
 Felgueiras,8,1,4,3,7,10,-3,7,portugal2,0.12,0.62,-3,0.88,8.33,1.61,11
 Maritimo,8,1,3,4,8,13,-5,6,portugal2,0.12,0.5,-5,1.0,8.33,2.0,12
 Oliveirense,8,1,0,7,3,17,-14,3,portugal2,0.12,0.12,-14,0.38,8.33,8.33,13
-Al Gharafa,5,4,1,0,12,5,7,13,qatar,0.8,1.0,7,2.4,1.25,1.0,1
-Al Sadd,5,4,0,1,16,8,8,12,qatar,0.8,0.8,8,3.2,1.25,1.25,2
-Al Ahli Doha,6,3,2,1,10,8,2,11,qatar,0.5,0.83,2,1.67,2.0,1.2,3
-Al Duhail,5,3,1,1,12,4,8,10,qatar,0.6,0.8,8,2.4,1.67,1.25,4
-Umm Salal,5,2,2,1,9,9,0,8,qatar,0.4,0.8,0,1.8,2.5,1.25,5
-Al Arabi,6,2,2,2,8,12,-4,8,qatar,0.33,0.67,-4,1.33,3.03,1.49,5
-Al Rayyan,5,2,1,2,10,9,1,7,qatar,0.4,0.6,1,2.0,2.5,1.67,6
-Al Shahaniya,5,2,1,2,6,6,0,7,qatar,0.4,0.6,0,1.2,2.5,1.67,6
-Al Wakrah,6,2,1,3,8,11,-3,7,qatar,0.33,0.5,-3,1.33,3.03,2.0,6
-Al Shamal,5,2,0,3,11,14,-3,6,qatar,0.4,0.4,-3,2.2,2.5,2.5,7
-Qatar SC,7,1,0,6,7,21,-14,3,qatar,0.14,0.14,-14,1.0,7.14,7.14,8
-Al Khor,6,0,2,4,5,11,-6,2,qatar,0.0,0.33,-6,0.83,0.0,3.03,9
+Al Gharafa,6,5,1,0,15,6,9,16,qatar,0.83,1.0,9,2.5,1.2,1.0,1
+Al Ahli Doha,7,4,2,1,16,11,5,14,qatar,0.57,0.86,5,2.29,1.75,1.16,2
+Al Sadd,5,4,0,1,16,8,8,12,qatar,0.8,0.8,8,3.2,1.25,1.25,3
+Al Arabi,7,3,2,2,11,13,-2,11,qatar,0.43,0.71,-2,1.57,2.33,1.41,4
+Al Duhail,5,3,1,1,12,4,8,10,qatar,0.6,0.8,8,2.4,1.67,1.25,5
+Umm Salal,6,2,2,2,11,15,-4,8,qatar,0.33,0.67,-4,1.83,3.03,1.49,6
+Al Rayyan,5,2,1,2,10,9,1,7,qatar,0.4,0.6,1,2.0,2.5,1.67,7
+Al Shahaniya,5,2,1,2,6,6,0,7,qatar,0.4,0.6,0,1.2,2.5,1.67,7
+Al Wakrah,6,2,1,3,8,11,-3,7,qatar,0.33,0.5,-3,1.33,3.03,2.0,7
+Al Shamal,5,2,0,3,11,14,-3,6,qatar,0.4,0.4,-3,2.2,2.5,2.5,8
+Qatar SC,7,1,0,6,7,21,-14,3,qatar,0.14,0.14,-14,1.0,7.14,7.14,9
+Al Khor,6,0,2,4,5,11,-6,2,qatar,0.0,0.33,-6,0.83,0.0,3.03,10
 FCSB,8,5,2,1,14,7,7,17,romania,0.62,0.88,7,1.75,1.61,1.14,1
 Univ. Craiova,8,4,3,1,15,7,8,15,romania,0.5,0.88,8,1.88,2.0,1.14,2
 Rapid Bucharest,8,4,3,1,12,4,8,15,romania,0.5,0.88,8,1.5,2.0,1.14,2
@@ -2486,62 +2488,62 @@ Tyumen,8,1,2,5,7,13,-6,5,russia2,0.12,0.38,-6,0.88,8.33,2.63,10
 A. Vladikavkaz,8,1,2,5,6,12,-6,5,russia2,0.12,0.38,-6,0.75,8.33,2.63,10
 Al Ittihad,7,7,0,0,21,5,16,21,saudiarabia,1.0,1.0,16,3.0,1.0,1.0,1
 Al Hilal,6,6,0,0,17,6,11,18,saudiarabia,1.0,1.0,11,2.83,1.0,1.0,2
-Al Quadisiya,6,5,0,1,9,2,7,15,saudiarabia,0.83,0.83,7,1.5,1.2,1.2,3
-Al Taawon,7,4,2,1,10,6,4,14,saudiarabia,0.57,0.86,4,1.43,1.75,1.16,4
-Al Ahli Jeddah,6,4,1,1,11,5,6,13,saudiarabia,0.67,0.83,6,1.83,1.49,1.2,5
-Al Nassr,7,3,3,1,11,5,6,12,saudiarabia,0.43,0.86,6,1.57,2.33,1.16,6
+Al Ahli Jeddah,7,5,1,1,14,7,7,16,saudiarabia,0.71,0.86,7,2.0,1.41,1.16,3
+Al Nassr,8,4,3,1,14,6,8,15,saudiarabia,0.5,0.88,8,1.75,2.0,1.14,4
+Al Quadisiya,7,5,0,2,9,5,4,15,saudiarabia,0.71,0.71,4,1.29,1.41,1.41,4
+Al Taawon,7,4,2,1,10,6,4,14,saudiarabia,0.57,0.86,4,1.43,1.75,1.16,5
 Damak,7,3,3,1,12,9,3,12,saudiarabia,0.43,0.86,3,1.71,2.33,1.16,6
 Al Shabab,7,3,1,3,10,9,1,10,saudiarabia,0.43,0.57,1,1.43,2.33,1.75,7
 Al Khaleej,7,3,1,3,9,8,1,10,saudiarabia,0.43,0.57,1,1.29,2.33,1.75,7
 Al Riyadh,7,2,2,3,7,9,-2,8,saudiarabia,0.29,0.57,-2,1.0,3.45,1.75,8
 Al Wahda,8,2,2,4,13,16,-3,8,saudiarabia,0.25,0.5,-3,1.62,4.0,2.0,8
-Al Raed,6,2,1,3,8,8,0,7,saudiarabia,0.33,0.5,0,1.33,3.03,2.0,9
-Al Orubah,5,2,0,3,2,6,-4,6,saudiarabia,0.4,0.4,-4,0.4,2.5,2.5,10
+Al Raed,7,2,1,4,8,10,-2,7,saudiarabia,0.29,0.43,-2,1.14,3.45,2.33,9
+Al Orubah,6,2,0,4,2,11,-9,6,saudiarabia,0.33,0.33,-9,0.33,3.03,3.03,10
 Al Akhdoud,7,1,2,4,7,9,-2,5,saudiarabia,0.14,0.43,-2,1.0,7.14,2.33,11
 Al Fateh,8,1,2,5,9,14,-5,5,saudiarabia,0.12,0.38,-5,1.12,8.33,2.63,11
-Al Feiha,6,1,1,4,4,12,-8,4,saudiarabia,0.17,0.33,-8,0.67,5.88,3.03,12
-Al Ittifaq,6,1,0,5,3,13,-10,3,saudiarabia,0.17,0.17,-10,0.5,5.88,5.88,13
-Al Kholood,6,0,2,4,8,16,-8,2,saudiarabia,0.0,0.33,-8,1.33,0.0,3.03,14
+Al Feiha,7,1,2,4,5,13,-8,5,saudiarabia,0.14,0.43,-8,0.71,7.14,2.33,11
+Al Ittifaq,7,1,0,6,5,16,-11,3,saudiarabia,0.14,0.14,-11,0.71,7.14,7.14,12
+Al Kholood,6,0,2,4,8,16,-8,2,saudiarabia,0.0,0.33,-8,1.33,0.0,3.03,13
 Al Adalha,7,6,1,0,16,5,11,19,saudiarabia2,0.86,1.0,11,2.29,1.16,1.0,1
 Al Hazm,8,6,1,1,15,7,8,19,saudiarabia2,0.75,0.88,8,1.88,1.33,1.14,1
 Al Najma,8,6,0,2,16,6,10,18,saudiarabia2,0.75,0.75,10,2.0,1.33,1.33,2
+Neom SC,7,4,3,0,13,4,9,15,saudiarabia2,0.57,1.0,9,1.86,1.75,1.0,3
+Al Arabi,8,4,3,1,17,10,7,15,saudiarabia2,0.5,0.88,7,2.12,2.0,1.14,3
 Al Jabalain,8,4,3,1,8,5,3,15,saudiarabia2,0.5,0.88,3,1.0,2.0,1.14,3
-Neom SC,6,4,2,0,11,2,9,14,saudiarabia2,0.67,1.0,9,1.83,1.49,1.0,4
 Al Zulfi,8,4,2,2,10,5,5,14,saudiarabia2,0.5,0.75,5,1.25,2.0,1.33,4
-Al Jandal,7,4,1,2,10,6,4,13,saudiarabia2,0.57,0.71,4,1.43,1.75,1.41,5
 Jeddah,8,3,4,1,10,6,4,13,saudiarabia2,0.38,0.88,4,1.25,2.63,1.14,5
-Al Arabi,7,3,3,1,15,10,5,12,saudiarabia2,0.43,0.86,5,2.14,2.33,1.16,6
+Al Jandal,8,4,1,3,11,8,3,13,saudiarabia2,0.5,0.62,3,1.38,2.0,1.61,5
+Al Safa,8,4,1,3,13,11,2,13,saudiarabia2,0.5,0.62,2,1.62,2.0,1.61,5
 Abha,7,3,3,1,12,10,2,12,saudiarabia2,0.43,0.86,2,1.71,2.33,1.16,6
 Al Tai,6,3,2,1,13,5,8,11,saudiarabia2,0.5,0.83,8,2.17,2.0,1.2,7
 Al Faisaly,8,3,2,3,10,8,2,11,saudiarabia2,0.38,0.62,2,1.25,2.63,1.61,7
-Al Safa,8,3,1,4,10,12,-2,10,saudiarabia2,0.38,0.5,-2,1.25,2.63,2.0,8
+Al Bukayriyah,8,3,2,3,6,5,1,11,saudiarabia2,0.38,0.62,1,0.75,2.63,1.61,7
 Al Batin,7,3,1,3,9,11,-2,10,saudiarabia2,0.43,0.57,-2,1.29,2.33,1.75,8
-Al Bukayriyah,7,2,2,3,5,5,0,8,saudiarabia2,0.29,0.57,0,0.71,3.45,1.75,9
-Al Jubail,8,2,1,5,7,12,-5,7,saudiarabia2,0.25,0.38,-5,0.88,4.0,2.63,10
-Al Ain,7,1,3,3,3,6,-3,6,saudiarabia2,0.14,0.57,-3,0.43,7.14,1.75,11
-Ohod,8,2,0,6,10,16,-6,6,saudiarabia2,0.25,0.25,-6,1.25,4.0,4.0,11
+Al Jubail,8,2,1,5,7,12,-5,7,saudiarabia2,0.25,0.38,-5,0.88,4.0,2.63,9
+Al Ain,7,1,3,3,3,6,-3,6,saudiarabia2,0.14,0.57,-3,0.43,7.14,1.75,10
+Ohod,8,1,1,6,9,17,-8,4,saudiarabia2,0.12,0.25,-8,1.12,8.33,4.0,11
 Celtic,8,7,1,0,25,2,23,22,scotland,0.88,1.0,23,3.12,1.14,1.0,1
 Rangers,8,7,1,0,17,2,15,22,scotland,0.88,1.0,15,2.12,1.14,1.0,1
 Dundee Utd,8,4,2,2,11,6,5,14,scotland,0.5,0.75,5,1.38,2.0,1.33,2
 Kilmarnock,8,4,2,2,9,4,5,14,scotland,0.5,0.75,5,1.12,2.0,1.33,2
+Hibernian,8,3,4,1,16,12,4,13,scotland,0.38,0.88,4,2.0,2.63,1.14,3
 Hearts,8,4,1,3,13,10,3,13,scotland,0.5,0.62,3,1.62,2.0,1.61,3
 Aberdeen,8,4,1,3,13,11,2,13,scotland,0.5,0.62,2,1.62,2.0,1.61,3
-St. Mirren,8,4,1,3,10,8,2,13,scotland,0.5,0.62,2,1.25,2.0,1.61,3
 Motherwell,8,3,2,3,11,14,-3,11,scotland,0.38,0.62,-3,1.38,2.63,1.61,4
-Hibernian,8,2,4,2,14,13,1,10,scotland,0.25,0.75,1,1.75,4.0,1.33,5
-Dundee FC,8,3,0,5,16,16,0,9,scotland,0.38,0.38,0,2.0,2.63,2.63,6
-Ross County,8,2,3,3,11,14,-3,9,scotland,0.25,0.62,-3,1.38,4.0,1.61,6
+Dundee FC,8,3,1,4,16,15,1,10,scotland,0.38,0.5,1,2.0,2.63,2.0,5
+St. Mirren,8,3,1,4,8,8,0,10,scotland,0.38,0.5,0,1.0,2.63,2.0,5
+Ross County,8,2,2,4,9,15,-6,8,scotland,0.25,0.5,-6,1.12,4.0,2.0,6
 St. Johnstone,8,2,1,5,10,12,-2,7,scotland,0.25,0.38,-2,1.25,4.0,2.63,7
-Falkirk,8,7,1,0,18,2,16,22,scotland2,0.88,1.0,16,2.25,1.14,1.0,1
+Falkirk,8,6,2,0,16,1,15,20,scotland2,0.75,1.0,15,2.0,1.33,1.0,1
 Ayr Utd,8,5,2,1,15,7,8,17,scotland2,0.62,0.88,8,1.88,1.61,1.14,2
 Livingston,8,5,2,1,12,5,7,17,scotland2,0.62,0.88,7,1.5,1.61,1.14,2
 Raith Rovers,8,5,2,1,14,8,6,17,scotland2,0.62,0.88,6,1.75,1.61,1.14,2
-Hamilton,8,5,1,2,14,11,3,16,scotland2,0.62,0.75,3,1.75,1.61,1.33,3
-Partick Thistle,8,4,3,1,13,9,4,15,scotland2,0.5,0.88,4,1.62,2.0,1.14,4
-Dunfermline,8,4,2,2,13,8,5,14,scotland2,0.5,0.75,5,1.62,2.0,1.33,5
-Greenock Morton,8,4,2,2,11,6,5,14,scotland2,0.5,0.75,5,1.38,2.0,1.33,5
-Queens Park,8,4,1,3,9,6,3,13,scotland2,0.5,0.62,3,1.12,2.0,1.61,6
-Airdrieonians,8,0,2,6,3,17,-14,2,scotland2,0.0,0.25,-14,0.38,0.0,4.0,7
+Partick Thistle,8,4,3,1,13,9,4,15,scotland2,0.5,0.88,4,1.62,2.0,1.14,3
+Dunfermline,8,4,2,2,13,8,5,14,scotland2,0.5,0.75,5,1.62,2.0,1.33,4
+Greenock Morton,8,4,2,2,11,6,5,14,scotland2,0.5,0.75,5,1.38,2.0,1.33,4
+Queens Park,8,4,1,3,9,6,3,13,scotland2,0.5,0.62,3,1.12,2.0,1.61,5
+Hamilton,8,4,1,3,14,13,1,13,scotland2,0.5,0.62,1,1.75,2.0,1.61,5
+Airdrieonians,8,0,2,6,3,17,-14,2,scotland2,0.0,0.25,-14,0.38,0.0,4.0,6
 Arbroath,8,6,0,2,13,8,5,18,scotland3,0.75,0.75,5,1.62,1.33,1.33,1
 Queen of South,8,5,2,1,11,9,2,17,scotland3,0.62,0.88,2,1.38,1.61,1.14,2
 Stenhousemuir,8,4,2,2,13,5,8,14,scotland3,0.5,0.75,8,1.62,2.0,1.33,3
@@ -2551,17 +2553,17 @@ Cove Rangers,8,3,2,3,9,10,-1,11,scotland3,0.38,0.62,-1,1.12,2.63,1.61,6
 Dumbarton,8,3,1,4,11,16,-5,10,scotland3,0.38,0.5,-5,1.38,2.63,2.0,7
 Montrose,8,2,3,3,11,11,0,9,scotland3,0.25,0.62,0,1.38,4.0,1.61,8
 Annan Athletic,8,2,3,3,5,10,-5,9,scotland3,0.25,0.62,-5,0.62,4.0,1.61,8
-Alloa Athletic,8,2,2,4,12,12,0,8,scotland3,0.25,0.5,0,1.5,4.0,2.0,9
-East Fife,8,6,1,1,22,6,16,19,scotland4,0.75,0.88,16,2.75,1.33,1.14,1
+Alloa Athletic,8,2,2,4,11,11,0,8,scotland3,0.25,0.5,0,1.38,4.0,2.0,9
+East Fife,8,6,1,1,20,5,15,19,scotland4,0.75,0.88,15,2.5,1.33,1.14,1
 Elgin City,8,5,2,1,17,12,5,17,scotland4,0.62,0.88,5,2.12,1.61,1.14,2
 Clyde,8,4,4,0,14,7,7,16,scotland4,0.5,1.0,7,1.75,2.0,1.0,3
 Bonnyrigg Rose,8,5,1,2,11,5,6,16,scotland4,0.62,0.75,6,1.38,1.61,1.33,3
 Peterhead,8,5,1,2,12,8,4,16,scotland4,0.62,0.75,4,1.5,1.61,1.33,3
-Edinburgh City,8,5,0,3,11,10,1,15,scotland4,0.62,0.62,1,1.38,1.61,1.61,4
+Edinburgh City,8,5,0,3,11,7,4,15,scotland4,0.62,0.62,4,1.38,1.61,1.61,4
 Spartans,8,4,1,3,10,9,1,13,scotland4,0.5,0.62,1,1.25,2.0,1.61,5
-Forfar Athletic,8,2,4,2,11,12,-1,10,scotland4,0.25,0.75,-1,1.38,4.0,1.33,6
-Stirling Albion,8,3,1,4,9,15,-6,10,scotland4,0.38,0.5,-6,1.12,2.63,2.0,6
-Stranraer,8,1,5,2,7,9,-2,8,scotland4,0.12,0.75,-2,0.88,8.33,1.33,7
+Forfar Athletic,8,2,5,1,12,10,2,11,scotland4,0.25,0.88,2,1.5,4.0,1.14,6
+Stirling Albion,8,3,1,4,9,15,-6,10,scotland4,0.38,0.5,-6,1.12,2.63,2.0,7
+Stranraer,8,1,5,2,7,9,-2,8,scotland4,0.12,0.75,-2,0.88,8.33,1.33,8
 Red Star,8,8,0,0,30,6,24,24,serbia,1.0,1.0,24,3.75,1.0,1.0,1
 Partizan,8,4,3,1,16,10,6,15,serbia,0.5,0.88,6,2.0,2.0,1.14,2
 Radnicki 1923,8,4,2,2,12,7,5,14,serbia,0.5,0.75,5,1.5,2.0,1.33,3
@@ -2645,32 +2647,32 @@ Sekhukhune,7,5,1,1,9,4,5,16,southafrica,0.71,0.86,5,1.29,1.41,1.16,2
 Polokwane,7,4,3,0,9,4,5,15,southafrica,0.57,1.0,5,1.29,1.75,1.0,3
 Chippa Utd,7,4,1,2,7,4,3,13,southafrica,0.57,0.71,3,1.0,1.75,1.41,4
 Cape Town City,6,4,1,1,4,1,3,13,southafrica,0.67,0.83,3,0.67,1.49,1.2,4
+Tshakhuma,6,3,2,1,7,4,3,11,southafrica,0.5,0.83,3,1.17,2.0,1.2,5
 SuperSport Utd,6,3,2,1,4,2,2,11,southafrica,0.5,0.83,2,0.67,2.0,1.2,5
 Kaizer Chiefs,5,3,1,1,8,6,2,10,southafrica,0.6,0.8,2,1.6,1.67,1.25,6
-Tshakhuma,5,2,2,1,6,4,2,8,southafrica,0.4,0.8,2,1.2,2.5,1.25,7
 Golden Arrows,6,2,2,2,5,4,1,8,southafrica,0.33,0.67,1,0.83,3.03,1.49,7
 Stellenbosch,5,2,1,2,5,4,1,7,southafrica,0.4,0.6,1,1.0,2.5,1.67,8
 AmaZulu,6,2,1,3,5,7,-2,7,southafrica,0.33,0.5,-2,0.83,3.03,2.0,8
 TS Galaxy,4,1,2,1,2,3,-1,5,southafrica,0.25,0.75,-1,0.5,4.0,1.33,9
 Royal AM,6,1,2,3,6,8,-2,5,southafrica,0.17,0.5,-2,1.0,5.88,2.0,9
 Richards Bay,6,1,1,4,2,7,-5,4,southafrica,0.17,0.33,-5,0.33,5.88,3.03,10
-Magesi,4,0,2,2,2,5,-3,2,southafrica,0.0,0.5,-3,0.5,0.0,2.0,11
-Durban City,7,5,1,1,13,5,8,16,southafrica2,0.71,0.86,8,1.86,1.41,1.16,1
-JDR Stars,6,5,0,1,8,4,4,15,southafrica2,0.83,0.83,4,1.33,1.2,1.2,2
+Magesi,5,0,2,3,2,6,-4,2,southafrica,0.0,0.4,-4,0.4,0.0,2.5,11
+Durban City,8,6,1,1,17,7,10,19,southafrica2,0.75,0.88,10,2.12,1.33,1.14,1
+JDR Stars,7,5,1,1,11,7,4,16,southafrica2,0.71,0.86,4,1.57,1.41,1.16,2
 Baroka,7,4,2,1,15,9,6,14,southafrica2,0.57,0.86,6,2.14,1.75,1.16,3
 Black Leopards,8,3,4,1,9,5,4,13,southafrica2,0.38,0.88,4,1.12,2.63,1.14,4
 Milford,7,4,1,2,8,4,4,13,southafrica2,0.57,0.71,4,1.14,1.75,1.41,4
 Pretoria U.,8,3,4,1,11,9,2,13,southafrica2,0.38,0.88,2,1.38,2.63,1.14,4
 Hungry Lions,7,3,3,1,10,5,5,12,southafrica2,0.43,0.86,5,1.43,2.33,1.16,5
 Orbit College,7,3,2,2,7,4,3,11,southafrica2,0.43,0.71,3,1.0,2.33,1.41,6
+Cape Town Spurs,7,3,2,2,7,6,1,11,southafrica2,0.43,0.71,1,1.0,2.33,1.41,6
 Kruger United,7,3,2,2,7,6,1,11,southafrica2,0.43,0.71,1,1.0,2.33,1.41,6
 Casric Stars,6,3,1,2,9,7,2,10,southafrica2,0.5,0.67,2,1.5,2.0,1.49,7
 Highbury,7,3,1,3,5,6,-1,10,southafrica2,0.43,0.57,-1,0.71,2.33,1.75,7
-Cape Town Spurs,6,2,2,2,6,6,0,8,southafrica2,0.33,0.67,0,1.0,3.03,1.49,8
-Upington City,7,2,2,3,10,11,-1,8,southafrica2,0.29,0.57,-1,1.43,3.45,1.75,8
-Pretoria C.,7,2,2,3,5,8,-3,8,southafrica2,0.29,0.57,-3,0.71,3.45,1.75,8
-Leruma United,8,2,1,5,6,12,-6,7,southafrica2,0.25,0.38,-6,0.75,4.0,2.63,9
-Venda FC,7,1,2,4,3,8,-5,5,southafrica2,0.14,0.43,-5,0.43,7.14,2.33,10
+Upington City,8,2,3,3,10,11,-1,9,southafrica2,0.25,0.62,-1,1.25,4.0,1.61,8
+Pretoria C.,7,2,2,3,5,8,-3,8,southafrica2,0.29,0.57,-3,0.71,3.45,1.75,9
+Venda FC,8,2,2,4,5,8,-3,8,southafrica2,0.25,0.5,-3,0.62,4.0,2.0,9
+Leruma United,8,2,1,5,6,12,-6,7,southafrica2,0.25,0.38,-6,0.75,4.0,2.63,10
 Ulsan,8,7,0,1,18,10,8,21,southkorea,0.88,0.88,8,2.25,1.14,1.14,1
 Gangwon,8,6,2,0,17,7,10,20,southkorea,0.75,1.0,10,2.12,1.33,1.0,2
 Seoul,8,5,2,1,11,6,5,17,southkorea,0.62,0.88,5,1.38,1.61,1.14,3
@@ -2699,85 +2701,85 @@ Cheongju,8,0,3,5,6,16,-10,3,southkorea2,0.0,0.38,-10,0.75,0.0,2.63,8
 Real Madrid,8,7,0,1,21,9,12,21,spain,0.88,0.88,12,2.62,1.14,1.14,1
 Atletico Madrid,8,6,2,0,16,6,10,20,spain,0.75,1.0,10,2.0,1.33,1.0,2
 Athletic Bilbao,8,5,2,1,14,6,8,17,spain,0.62,0.88,8,1.75,1.61,1.14,3
-Sevilla FC,8,5,1,2,7,6,1,16,spain,0.62,0.75,1,0.88,1.61,1.33,4
-FC Barcelona,8,5,0,3,20,8,12,15,spain,0.62,0.62,12,2.5,1.61,1.61,5
-Real Betis,8,4,3,1,12,8,4,15,spain,0.5,0.88,4,1.5,2.0,1.14,5
-Celta Vigo,8,4,2,2,12,7,5,14,spain,0.5,0.75,5,1.5,2.0,1.33,6
-Osasuna,8,4,2,2,16,13,3,14,spain,0.5,0.75,3,2.0,2.0,1.33,6
-Espanyol,8,4,2,2,12,10,2,14,spain,0.5,0.75,2,1.5,2.0,1.33,6
-Girona,8,4,1,3,14,13,1,13,spain,0.5,0.62,1,1.75,2.0,1.61,7
-Mallorca,8,4,1,3,8,10,-2,13,spain,0.5,0.62,-2,1.0,2.0,1.61,7
-Getafe,8,3,3,2,8,5,3,12,spain,0.38,0.75,3,1.0,2.63,1.33,8
-Villarreal,8,3,3,2,16,15,1,12,spain,0.38,0.75,1,2.0,2.63,1.33,8
-Alaves,8,3,3,2,9,9,0,12,spain,0.38,0.75,0,1.12,2.63,1.33,8
-Real Sociedad,8,3,2,3,8,7,1,11,spain,0.38,0.62,1,1.0,2.63,1.61,9
-Las Palmas,8,3,2,3,10,10,0,11,spain,0.38,0.62,0,1.25,2.63,1.61,9
-Valencia,8,2,3,3,12,11,1,9,spain,0.25,0.62,1,1.5,4.0,1.61,10
-Rayo Vallecano,8,2,3,3,12,13,-1,9,spain,0.25,0.62,-1,1.5,4.0,1.61,10
+Sevilla FC,8,5,2,1,8,5,3,17,spain,0.62,0.88,3,1.0,1.61,1.14,3
+FC Barcelona,8,5,0,3,20,8,12,15,spain,0.62,0.62,12,2.5,1.61,1.61,4
+Real Betis,8,4,3,1,12,8,4,15,spain,0.5,0.88,4,1.5,2.0,1.14,4
+Celta Vigo,8,4,2,2,12,7,5,14,spain,0.5,0.75,5,1.5,2.0,1.33,5
+Osasuna,8,4,2,2,16,13,3,14,spain,0.5,0.75,3,2.0,2.0,1.33,5
+Girona,8,4,1,3,14,13,1,13,spain,0.5,0.62,1,1.75,2.0,1.61,6
+Mallorca,8,4,1,3,8,10,-2,13,spain,0.5,0.62,-2,1.0,2.0,1.61,6
+Getafe,8,3,3,2,8,5,3,12,spain,0.38,0.75,3,1.0,2.63,1.33,7
+Villarreal,8,3,3,2,16,15,1,12,spain,0.38,0.75,1,2.0,2.63,1.33,7
+Rayo Vallecano,8,3,3,2,13,12,1,12,spain,0.38,0.75,1,1.62,2.63,1.33,7
+Espanyol,8,3,3,2,11,10,1,12,spain,0.38,0.75,1,1.38,2.63,1.33,7
+Real Sociedad,8,3,2,3,8,7,1,11,spain,0.38,0.62,1,1.0,2.63,1.61,8
+Las Palmas,8,3,2,3,10,10,0,11,spain,0.38,0.62,0,1.25,2.63,1.61,8
+Alaves,8,3,2,3,9,10,-1,11,spain,0.38,0.62,-1,1.12,2.63,1.61,8
+Valencia,8,2,3,3,12,11,1,9,spain,0.25,0.62,1,1.5,4.0,1.61,9
+Valladolid,8,2,2,4,6,12,-6,8,spain,0.25,0.5,-6,0.75,4.0,2.0,10
 Leganes,8,2,1,5,6,14,-8,7,spain,0.25,0.38,-8,0.75,4.0,2.63,11
-Valladolid,8,1,3,4,5,12,-7,6,spain,0.12,0.5,-7,0.62,8.33,2.0,12
 Cordoba,8,6,2,0,18,7,11,20,spain2,0.75,1.0,11,2.25,1.33,1.0,1
 Almeria,8,6,2,0,17,6,11,20,spain2,0.75,1.0,11,2.12,1.33,1.0,1
 Elche,8,6,1,1,14,4,10,19,spain2,0.75,0.88,10,1.75,1.33,1.14,2
-Real Oviedo,8,6,0,2,18,11,7,18,spain2,0.75,0.75,7,2.25,1.33,1.33,3
-Granada,8,5,2,1,18,7,11,17,spain2,0.62,0.88,11,2.25,1.61,1.14,4
-Mirandes,8,5,2,1,11,6,5,17,spain2,0.62,0.88,5,1.38,1.61,1.14,4
-Levante,8,4,4,0,17,10,7,16,spain2,0.5,1.0,7,2.12,2.0,1.0,5
-Huesca,8,4,4,0,16,9,7,16,spain2,0.5,1.0,7,2.0,2.0,1.0,5
-Eibar,8,5,1,2,9,7,2,16,spain2,0.62,0.75,2,1.12,1.61,1.33,5
-Malaga,8,4,3,1,7,4,3,15,spain2,0.5,0.88,3,0.88,2.0,1.14,6
-Sporting Gijon,8,5,0,3,12,10,2,15,spain2,0.62,0.62,2,1.5,1.61,1.61,6
-Castellon,8,4,1,3,13,10,3,13,spain2,0.5,0.62,3,1.62,2.0,1.61,7
-Eldense,8,3,3,2,10,8,2,12,spain2,0.38,0.75,2,1.25,2.63,1.33,8
-Burgos,8,3,3,2,6,6,0,12,spain2,0.38,0.75,0,0.75,2.63,1.33,8
-Racing,8,3,2,3,9,7,2,11,spain2,0.38,0.62,2,1.12,2.63,1.61,9
-Cadiz,8,3,2,3,11,10,1,11,spain2,0.38,0.62,1,1.38,2.63,1.61,9
-Albacete,8,2,5,1,12,12,0,11,spain2,0.25,0.88,0,1.5,4.0,1.14,9
-Deportivo,8,2,4,2,10,10,0,10,spain2,0.25,0.75,0,1.25,4.0,1.33,10
-Tenerife,8,2,3,3,7,9,-2,9,spain2,0.25,0.62,-2,0.88,4.0,1.61,11
-Cartagena,8,2,2,4,5,10,-5,8,spain2,0.25,0.5,-5,0.62,4.0,2.0,12
-Real Zaragoza,8,2,1,5,9,12,-3,7,spain2,0.25,0.38,-3,1.12,4.0,2.63,13
-Racing Ferrol,8,1,3,4,6,16,-10,6,spain2,0.12,0.5,-10,0.75,8.33,2.0,14
+Granada,8,5,2,1,16,5,11,17,spain2,0.62,0.88,11,2.0,1.61,1.14,3
+Mirandes,8,5,2,1,11,6,5,17,spain2,0.62,0.88,5,1.38,1.61,1.14,3
+Levante,8,4,4,0,17,10,7,16,spain2,0.5,1.0,7,2.12,2.0,1.0,4
+Real Oviedo,8,5,1,2,18,12,6,16,spain2,0.62,0.75,6,2.25,1.61,1.33,4
+Huesca,8,4,4,0,13,8,5,16,spain2,0.5,1.0,5,1.62,2.0,1.0,4
+Eibar,8,5,1,2,9,7,2,16,spain2,0.62,0.75,2,1.12,1.61,1.33,4
+Sporting Gijon,8,5,0,3,12,10,2,15,spain2,0.62,0.62,2,1.5,1.61,1.61,5
+Castellon,8,4,1,3,13,10,3,13,spain2,0.5,0.62,3,1.62,2.0,1.61,6
+Malaga,8,3,4,1,7,5,2,13,spain2,0.38,0.88,2,0.88,2.63,1.14,6
+Albacete,8,2,6,0,12,9,3,12,spain2,0.25,1.0,3,1.5,4.0,1.0,7
+Eldense,8,3,3,2,10,8,2,12,spain2,0.38,0.75,2,1.25,2.63,1.33,7
+Tenerife,8,3,3,2,9,8,1,12,spain2,0.38,0.75,1,1.12,2.63,1.33,7
+Burgos,8,3,3,2,6,6,0,12,spain2,0.38,0.75,0,0.75,2.63,1.33,7
+Racing,8,3,2,3,9,7,2,11,spain2,0.38,0.62,2,1.12,2.63,1.61,8
+Cadiz,8,3,2,3,11,10,1,11,spain2,0.38,0.62,1,1.38,2.63,1.61,8
+Deportivo,8,2,4,2,10,10,0,10,spain2,0.25,0.75,0,1.25,4.0,1.33,9
+Cartagena,8,2,2,4,5,10,-5,8,spain2,0.25,0.5,-5,0.62,4.0,2.0,10
+Real Zaragoza,8,2,1,5,9,12,-3,7,spain2,0.25,0.38,-3,1.12,4.0,2.63,11
+Racing Ferrol,8,1,4,3,5,12,-7,7,spain2,0.12,0.62,-7,0.62,8.33,1.61,11
 Real Sociedad B,8,7,0,1,20,6,14,21,spain3,0.88,0.88,14,2.5,1.14,1.14,1
-Barakaldo,8,6,0,2,14,6,8,18,spain3,0.75,0.75,8,1.75,1.33,1.33,2
-Celta Vigo B,8,5,2,1,14,5,9,17,spain3,0.62,0.88,9,1.75,1.61,1.14,3
-Ponferradina,8,5,2,1,16,8,8,17,spain3,0.62,0.88,8,2.0,1.61,1.14,3
-Gimnastic T.,8,5,2,1,12,7,5,17,spain3,0.62,0.88,5,1.5,1.61,1.14,3
+Celta Vigo B,8,6,1,1,16,6,10,19,spain3,0.75,0.88,10,2.0,1.33,1.14,2
+Gimnastic T.,8,6,1,1,16,6,10,19,spain3,0.75,0.88,10,2.0,1.33,1.14,2
+Barakaldo,8,6,0,2,14,6,8,18,spain3,0.75,0.75,8,1.75,1.33,1.33,3
 Zamora,8,5,1,2,15,4,11,16,spain3,0.62,0.75,11,1.88,1.61,1.33,4
 FC Andorra,8,4,4,0,16,6,10,16,spain3,0.5,1.0,10,2.0,2.0,1.0,4
 Gimnastica,8,4,4,0,13,7,6,16,spain3,0.5,1.0,6,1.62,2.0,1.0,4
-Arenteiro,8,4,3,1,13,4,9,15,spain3,0.5,0.88,9,1.62,2.0,1.14,5
+Arenteiro,8,4,3,1,15,4,11,15,spain3,0.5,0.88,11,1.88,2.0,1.14,5
 Unionistas,8,4,3,1,12,7,5,15,spain3,0.5,0.88,5,1.5,2.0,1.14,5
-Leonesa,8,4,1,3,13,10,3,13,spain3,0.5,0.62,3,1.62,2.0,1.61,6
-Lugo,8,3,4,1,8,5,3,13,spain3,0.38,0.88,3,1.0,2.63,1.14,6
-Amorebieta,8,3,3,2,12,10,2,12,spain3,0.38,0.75,2,1.5,2.63,1.33,7
-Real Union,8,3,3,2,10,8,2,12,spain3,0.38,0.75,2,1.25,2.63,1.33,7
-FC Barcelona B,8,2,5,1,12,10,2,11,spain3,0.25,0.88,2,1.5,4.0,1.14,8
-Tarazona,8,2,4,2,8,6,2,10,spain3,0.25,0.75,2,1.0,4.0,1.33,9
-Ourense CF,8,2,4,2,8,9,-1,10,spain3,0.25,0.75,-1,1.0,4.0,1.33,9
-Sestao River,8,2,1,5,7,9,-2,7,spain3,0.25,0.38,-2,0.88,4.0,2.63,10
-Osasuna B,8,2,1,5,8,14,-6,7,spain3,0.25,0.38,-6,1.0,4.0,2.63,10
-Athletic B. B,8,1,3,4,7,12,-5,6,spain3,0.12,0.5,-5,0.88,8.33,2.0,11
-Antequera,8,4,4,0,13,6,7,16,spain4,0.5,1.0,7,1.62,2.0,1.0,1
-Merida,8,4,4,0,12,8,4,16,spain4,0.5,1.0,4,1.5,2.0,1.0,1
-Hercules,8,5,1,2,9,6,3,16,spain4,0.62,0.75,3,1.12,1.61,1.33,1
-Real Madrid B,8,4,3,1,18,6,12,15,spain4,0.5,0.88,12,2.25,2.0,1.14,2
+Ponferradina,8,4,2,2,16,10,6,14,spain3,0.5,0.75,6,2.0,2.0,1.33,6
+Leonesa,8,4,1,3,13,10,3,13,spain3,0.5,0.62,3,1.62,2.0,1.61,7
+Lugo,8,3,4,1,8,5,3,13,spain3,0.38,0.88,3,1.0,2.63,1.14,7
+Amorebieta,8,3,3,2,12,10,2,12,spain3,0.38,0.75,2,1.5,2.63,1.33,8
+Real Union,8,3,3,2,10,8,2,12,spain3,0.38,0.75,2,1.25,2.63,1.33,8
+Ourense CF,8,3,3,2,10,10,0,12,spain3,0.38,0.75,0,1.25,2.63,1.33,8
+FC Barcelona B,8,2,5,1,12,10,2,11,spain3,0.25,0.88,2,1.5,4.0,1.14,9
+Tarazona,8,2,4,2,8,6,2,10,spain3,0.25,0.75,2,1.0,4.0,1.33,10
+Sestao River,8,2,1,5,7,9,-2,7,spain3,0.25,0.38,-2,0.88,4.0,2.63,11
+Osasuna B,8,2,1,5,8,14,-6,7,spain3,0.25,0.38,-6,1.0,4.0,2.63,11
+Athletic B. B,8,1,3,4,7,12,-5,6,spain3,0.12,0.5,-5,0.88,8.33,2.0,12
+Real Madrid B,8,5,2,1,19,5,14,17,spain4,0.62,0.88,14,2.38,1.61,1.14,1
+Antequera,8,4,4,0,13,6,7,16,spain4,0.5,1.0,7,1.62,2.0,1.0,2
+Merida,8,4,4,0,12,8,4,16,spain4,0.5,1.0,4,1.5,2.0,1.0,2
+Hercules,8,5,1,2,9,6,3,16,spain4,0.62,0.75,3,1.12,1.61,1.33,2
 Real Betis B,8,4,2,2,12,6,6,14,spain4,0.5,0.75,6,1.5,2.0,1.33,3
 Ceuta,8,4,2,2,13,11,2,14,spain4,0.5,0.75,2,1.62,2.0,1.33,3
 Recreativo H.,8,4,2,2,11,10,1,14,spain4,0.5,0.75,1,1.38,2.0,1.33,3
 Real Murcia,8,3,4,1,10,5,5,13,spain4,0.38,0.88,5,1.25,2.63,1.14,4
 Villarreal B,8,3,3,2,11,7,4,12,spain4,0.38,0.75,4,1.38,2.63,1.33,5
 Algeciras,8,3,3,2,11,10,1,12,spain4,0.38,0.75,1,1.38,2.63,1.33,5
-Sevilla FC B,8,3,3,2,11,10,1,12,spain4,0.38,0.75,1,1.38,2.63,1.33,5
 Marbella,8,3,3,2,10,9,1,12,spain4,0.38,0.75,1,1.25,2.63,1.33,5
 Fuenlabrada,8,3,3,2,7,7,0,12,spain4,0.38,0.75,0,0.88,2.63,1.33,5
-Atletico M. B,8,2,4,2,6,6,0,10,spain4,0.25,0.75,0,0.75,4.0,1.33,6
-Alcoyano,8,2,4,2,7,9,-2,10,spain4,0.25,0.75,-2,0.88,4.0,1.33,6
-Yeclano,8,2,3,3,7,6,1,9,spain4,0.25,0.62,1,0.88,4.0,1.61,7
-UD Ibiza,8,2,3,3,8,8,0,9,spain4,0.25,0.62,0,1.0,4.0,1.61,7
-Sanluqueno,8,1,5,2,9,11,-2,8,spain4,0.12,0.75,-2,1.12,8.33,1.33,8
-Alcorcon,8,1,3,4,12,15,-3,6,spain4,0.12,0.5,-3,1.5,8.33,2.0,9
-Intercity,8,1,2,5,8,14,-6,5,spain4,0.12,0.38,-6,1.0,8.33,2.63,10
+Sevilla FC B,8,3,3,2,7,8,-1,12,spain4,0.38,0.75,-1,0.88,2.63,1.33,5
+Atletico M. B,8,2,5,1,7,6,1,11,spain4,0.25,0.88,1,0.88,4.0,1.14,6
+Alcoyano,8,2,4,2,7,9,-2,10,spain4,0.25,0.75,-2,0.88,4.0,1.33,7
+Yeclano,8,2,3,3,7,6,1,9,spain4,0.25,0.62,1,0.88,4.0,1.61,8
+UD Ibiza,8,2,3,3,8,8,0,9,spain4,0.25,0.62,0,1.0,4.0,1.61,8
+Sanluqueno,8,1,5,2,9,11,-2,8,spain4,0.12,0.75,-2,1.12,8.33,1.33,9
+Alcorcon,8,1,3,4,12,15,-3,6,spain4,0.12,0.5,-3,1.5,8.33,2.0,10
+Intercity,8,1,2,5,9,14,-5,5,spain4,0.12,0.38,-5,1.12,8.33,2.63,11
 Pontevedra,8,6,1,1,12,6,6,19,spain5,0.75,0.88,6,1.5,1.33,1.14,1
 Numancia,8,5,3,0,12,5,7,18,spain5,0.62,1.0,7,1.5,1.61,1.0,2
 D. Fabril,8,5,1,2,13,4,9,16,spain5,0.62,0.75,9,1.62,1.61,1.33,3
@@ -2797,8 +2799,8 @@ Llanera,8,2,2,4,5,9,-4,8,spain5,0.25,0.5,-4,0.62,4.0,2.0,10
 Escobedo,8,0,4,4,5,17,-12,4,spain5,0.0,0.5,-12,0.62,0.0,2.0,11
 Laredo,8,0,3,5,4,14,-10,3,spain5,0.0,0.38,-10,0.5,0.0,2.63,12
 Utebo,8,7,1,0,22,7,15,22,spain6,0.88,1.0,15,2.75,1.14,1.0,1
-Arenas Club,8,7,1,0,15,3,12,22,spain6,0.88,1.0,12,1.88,1.14,1.0,1
 UD Logrones,8,6,2,0,15,3,12,20,spain6,0.75,1.0,12,1.88,1.33,1.0,2
+Arenas Club,8,6,2,0,13,3,10,20,spain6,0.75,1.0,10,1.62,1.33,1.0,2
 Eibar B,8,6,1,1,13,4,9,19,spain6,0.75,0.88,9,1.62,1.33,1.14,3
 Ejea,8,5,2,1,13,7,6,17,spain6,0.62,0.88,6,1.62,1.61,1.14,4
 Gernika,8,3,4,1,11,7,4,13,spain6,0.38,0.88,4,1.38,2.63,1.14,5
@@ -2812,17 +2814,17 @@ Anguiano,8,3,1,4,8,12,-4,10,spain6,0.38,0.5,-4,1.0,2.63,2.0,8
 Izarra,8,2,3,3,8,7,1,9,spain6,0.25,0.62,1,1.0,4.0,1.61,9
 Alaves B,8,2,3,3,6,9,-3,9,spain6,0.25,0.62,-3,0.75,4.0,1.61,9
 SD Logrones,8,1,5,2,6,7,-1,8,spain6,0.12,0.75,-1,0.75,8.33,1.33,10
-Subiza,8,2,1,5,9,14,-5,7,spain6,0.25,0.38,-5,1.12,4.0,2.63,11
 Tudelano,8,2,1,5,7,12,-5,7,spain6,0.25,0.38,-5,0.88,4.0,2.63,11
+Subiza,8,2,1,5,10,18,-8,7,spain6,0.25,0.38,-8,1.25,4.0,2.63,11
 A. Baleares,8,5,1,2,12,5,7,16,spain7,0.62,0.75,7,1.5,1.61,1.33,1
 Europa,8,5,1,2,19,13,6,16,spain7,0.62,0.75,6,2.38,1.61,1.33,1
 Lleida,8,4,2,2,12,6,6,14,spain7,0.5,0.75,6,1.5,2.0,1.33,2
 Pena Deportiva,8,4,2,2,12,6,6,14,spain7,0.5,0.75,6,1.5,2.0,1.33,2
 Sabadell,8,3,4,1,11,7,4,13,spain7,0.38,0.88,4,1.38,2.63,1.14,3
 Sant Andreu,8,4,1,3,10,6,4,13,spain7,0.5,0.62,4,1.25,2.0,1.61,3
-Elche B,8,3,3,2,12,9,3,12,spain7,0.38,0.75,3,1.5,2.63,1.33,4
 Espanyol B,8,3,3,2,8,9,-1,12,spain7,0.38,0.75,-1,1.0,2.63,1.33,4
 Torrent,8,3,2,3,10,7,3,11,spain7,0.38,0.62,3,1.25,2.63,1.61,5
+Elche B,8,3,2,3,10,8,2,11,spain7,0.38,0.62,2,1.25,2.63,1.61,5
 Olot,8,2,5,1,10,9,1,11,spain7,0.25,0.88,1,1.25,4.0,1.14,5
 Alzira,8,3,2,3,6,7,-1,11,spain7,0.38,0.62,-1,0.75,2.63,1.61,5
 Badalona,8,2,3,3,8,10,-2,9,spain7,0.25,0.62,-2,1.0,4.0,1.61,6
@@ -2842,7 +2844,6 @@ Orihuela,8,3,3,2,11,6,5,12,spain8,0.38,0.75,5,1.38,2.63,1.33,5
 D. Minera,8,3,3,2,7,6,1,12,spain8,0.38,0.75,1,0.88,2.63,1.33,5
 Almeria B,8,4,0,4,8,9,-1,12,spain8,0.5,0.5,-1,1.0,2.0,2.0,5
 Villanovense,8,3,2,3,8,6,2,11,spain8,0.38,0.62,2,1.0,2.63,1.61,6
-Granada B,8,3,2,3,13,12,1,11,spain8,0.38,0.62,1,1.62,2.63,1.61,6
 Xerez D. FC,8,2,5,1,9,9,0,11,spain8,0.25,0.88,0,1.12,4.0,1.14,6
 Xerez CD,8,3,2,3,7,7,0,11,spain8,0.38,0.62,0,0.88,2.63,1.61,6
 Don Benito,8,3,2,3,5,5,0,11,spain8,0.38,0.62,0,0.62,2.63,1.61,6
@@ -2850,6 +2851,7 @@ San Fernando,8,3,1,4,6,7,-1,10,spain8,0.38,0.5,-1,0.75,2.63,2.0,7
 Linense,8,3,1,4,9,11,-2,10,spain8,0.38,0.5,-2,1.12,2.63,2.0,7
 Cadiz B,8,3,0,5,5,12,-7,9,spain8,0.38,0.38,-7,0.62,2.63,2.63,8
 CD Estepona,8,1,5,2,10,8,2,8,spain8,0.12,0.75,2,1.25,8.33,1.33,9
+Granada B,8,2,2,4,11,13,-2,8,spain8,0.25,0.5,-2,1.38,4.0,2.0,9
 Guadalajara,8,8,0,0,21,0,21,24,spain9,1.0,1.0,21,2.62,1.0,1.0,1
 Getafe B,8,6,2,0,17,4,13,20,spain9,0.75,1.0,13,2.12,1.33,1.0,2
 Tenerife B,8,5,3,0,18,8,10,18,spain9,0.62,1.0,10,2.25,1.61,1.0,3
@@ -2915,16 +2917,16 @@ Winterthur,8,2,1,5,8,18,-10,7,switzerland,0.25,0.38,-10,1.0,4.0,2.63,9
 Buriram Utd,8,7,1,0,24,3,21,22,thailand,0.88,1.0,21,3.0,1.14,1.0,1
 Prachuap,8,5,3,0,18,6,12,18,thailand,0.62,1.0,12,2.25,1.61,1.0,2
 Ratchaburi,8,5,3,0,18,6,12,18,thailand,0.62,1.0,12,2.25,1.61,1.0,2
+Sukhothai,8,6,0,2,19,9,10,18,thailand,0.75,0.75,10,2.38,1.33,1.33,2
 Port FC,8,5,2,1,17,7,10,17,thailand,0.62,0.88,10,2.12,1.61,1.14,3
 Muang Thong Utd,8,5,2,1,13,7,6,17,thailand,0.62,0.88,6,1.62,1.61,1.14,3
-Sukhothai,7,5,0,2,18,9,9,15,thailand,0.71,0.71,9,2.57,1.41,1.41,4
+N. Bua Pitchaya,8,5,1,2,19,12,7,16,thailand,0.62,0.75,7,2.38,1.61,1.33,4
 Bangkok Utd,6,4,2,0,11,4,7,14,thailand,0.67,1.0,7,1.83,1.49,1.0,5
 Pathum Utd,7,4,1,2,9,6,3,13,thailand,0.57,0.71,3,1.29,1.75,1.41,6
-N. Bua Pitchaya,8,4,1,3,18,16,2,13,thailand,0.5,0.62,2,2.25,2.0,1.61,6
-Lamphun Warrior,7,3,3,1,11,7,4,12,thailand,0.43,0.86,4,1.57,2.33,1.16,7
-Uthai Thani,5,3,2,0,10,4,6,11,thailand,0.6,1.0,6,2.0,1.67,1.0,8
-N. Ratchasima,7,3,2,2,10,12,-2,11,thailand,0.43,0.71,-2,1.43,2.33,1.41,8
+Lamphun Warrior,8,3,3,2,12,12,0,12,thailand,0.38,0.75,0,1.5,2.63,1.33,7
+Uthai Thani,6,3,2,1,11,6,5,11,thailand,0.5,0.83,5,1.83,2.0,1.2,8
 Chiangrai Utd,8,3,2,3,9,11,-2,11,thailand,0.38,0.62,-2,1.12,2.63,1.61,8
+N. Ratchasima,8,3,2,3,10,15,-5,11,thailand,0.38,0.62,-5,1.25,2.63,1.61,8
 Rayong,8,2,4,2,11,12,-1,10,thailand,0.25,0.75,-1,1.38,4.0,1.33,9
 Nakhon Pathom,6,1,1,4,4,11,-7,4,thailand,0.17,0.33,-7,0.67,5.88,3.03,10
 Khon Kaen Utd,8,0,2,6,3,13,-10,2,thailand,0.0,0.25,-10,0.38,0.0,4.0,11
@@ -2933,19 +2935,19 @@ Nakhon Si,8,5,1,2,20,11,9,16,thailand2,0.62,0.75,9,2.5,1.61,1.33,2
 Bangkok FC,8,5,1,2,11,6,5,16,thailand2,0.62,0.75,5,1.38,1.61,1.33,2
 Chanthaburi,8,5,1,2,12,8,4,16,thailand2,0.62,0.75,4,1.5,1.61,1.33,2
 Chonburi,8,5,1,2,10,6,4,16,thailand2,0.62,0.75,4,1.25,1.61,1.33,2
-Phrae Utd,8,5,0,3,20,12,8,15,thailand2,0.62,0.62,8,2.5,1.61,1.61,3
+Phrae Utd,8,5,0,3,23,12,11,15,thailand2,0.62,0.62,11,2.88,1.61,1.61,3
 Ayutthaya Utd,8,4,3,1,12,7,5,15,thailand2,0.5,0.88,5,1.5,2.0,1.14,3
-Chiangmai Utd,8,4,2,2,11,9,2,14,thailand2,0.5,0.75,2,1.38,2.0,1.33,4
+Chiangmai Utd,8,4,2,2,10,8,2,14,thailand2,0.5,0.75,2,1.25,2.0,1.33,4
 Lampang,8,4,1,3,17,12,5,13,thailand2,0.5,0.62,5,2.12,2.0,1.61,5
+Trat FC,8,4,1,3,15,12,3,13,thailand2,0.5,0.62,3,1.88,2.0,1.61,5
 Sisaket Utd,8,3,4,1,10,8,2,13,thailand2,0.38,0.88,2,1.25,2.63,1.14,5
-Trat FC,8,4,1,3,13,12,1,13,thailand2,0.5,0.62,1,1.62,2.0,1.61,5
 Kanchanaburi,8,3,2,3,13,9,4,11,thailand2,0.38,0.62,4,1.62,2.63,1.61,6
 Kasetsart,8,3,2,3,10,11,-1,11,thailand2,0.38,0.62,-1,1.25,2.63,1.61,6
 Chainat,8,2,4,2,9,8,1,10,thailand2,0.25,0.75,1,1.12,4.0,1.33,7
 Pattaya United,8,2,4,2,8,10,-2,10,thailand2,0.25,0.75,-2,1.0,4.0,1.33,7
 Police Tero,8,2,3,3,7,9,-2,9,thailand2,0.25,0.62,-2,0.88,4.0,1.61,8
 Samut Prakan,8,1,5,2,7,10,-3,8,thailand2,0.12,0.75,-3,0.88,8.33,1.33,9
-Suphanburi,8,1,1,6,10,18,-8,4,thailand2,0.12,0.25,-8,1.25,8.33,4.0,10
+Suphanburi,8,2,1,5,11,17,-6,7,thailand2,0.25,0.38,-6,1.38,4.0,2.63,10
 Goztepe,8,7,1,0,20,6,14,22,turkey,0.88,1.0,14,2.5,1.14,1.0,1
 Fenerbahce,8,7,0,1,19,6,13,21,turkey,0.88,0.88,13,2.38,1.14,1.14,2
 Galatasaray,8,6,2,0,20,13,7,20,turkey,0.75,1.0,7,2.5,1.33,1.0,3
@@ -2953,7 +2955,7 @@ Samsunspor,8,5,2,1,17,8,9,17,turkey,0.62,0.88,9,2.12,1.61,1.14,4
 Eyupspor,8,5,2,1,15,6,9,17,turkey,0.62,0.88,9,1.88,1.61,1.14,4
 Gaziantep,8,5,2,1,12,4,8,17,turkey,0.62,0.88,8,1.5,1.61,1.14,4
 Basaksehir,8,4,4,0,20,9,11,16,turkey,0.5,1.0,11,2.5,2.0,1.0,5
-Besiktas,8,5,1,2,15,11,4,16,turkey,0.62,0.75,4,1.88,1.61,1.33,5
+Besiktas,8,5,1,2,13,10,3,16,turkey,0.62,0.75,3,1.62,1.61,1.33,5
 Trabzonspor,8,4,3,1,17,10,7,15,turkey,0.5,0.88,7,2.12,2.0,1.14,6
 Antalyaspor,8,5,0,3,13,15,-2,15,turkey,0.62,0.62,-2,1.62,1.61,1.61,6
 Alanyaspor,8,4,2,2,11,7,4,14,turkey,0.5,0.75,4,1.38,2.0,1.33,7
@@ -2962,8 +2964,8 @@ Sivasspor,8,3,2,3,11,11,0,11,turkey,0.38,0.62,0,1.38,2.63,1.61,8
 Rizespor,8,3,2,3,10,11,-1,11,turkey,0.38,0.62,-1,1.25,2.63,1.61,8
 Konyaspor,7,2,4,1,8,7,1,10,turkey,0.29,0.86,1,1.14,3.45,1.16,9
 Kasimpasa,8,1,4,3,8,12,-4,7,turkey,0.12,0.62,-4,1.0,8.33,1.61,10
-Hatayspor,8,1,3,4,7,12,-5,6,turkey,0.12,0.5,-5,0.88,8.33,2.0,11
-Kayserispor,8,1,3,4,10,20,-10,6,turkey,0.12,0.5,-10,1.25,8.33,2.0,11
+Hatayspor,8,1,3,4,8,11,-3,6,turkey,0.12,0.5,-3,1.0,8.33,2.0,11
+Kayserispor,8,1,3,4,9,19,-10,6,turkey,0.12,0.5,-10,1.12,8.33,2.0,11
 Adana Demirspor,8,1,0,7,6,18,-12,3,turkey,0.12,0.12,-12,0.75,8.33,8.33,12
 F. Karagumruk,8,6,1,1,21,7,14,19,turkey2,0.75,0.88,14,2.62,1.33,1.14,1
 Erzurum BB,8,6,1,1,14,3,11,19,turkey2,0.75,0.88,11,1.75,1.33,1.14,1
@@ -2977,14 +2979,14 @@ Sanliurfaspor,8,4,2,2,15,12,3,14,turkey2,0.5,0.75,3,1.88,2.0,1.33,5
 Sakaryaspor,8,4,2,2,10,7,3,14,turkey2,0.5,0.75,3,1.25,2.0,1.33,5
 Amed SK,8,4,2,2,11,9,2,14,turkey2,0.5,0.75,2,1.38,2.0,1.33,5
 Genclerbirligi,8,4,2,2,7,6,1,14,turkey2,0.5,0.75,1,0.88,2.0,1.33,5
+Erokspor,8,2,5,1,13,9,4,11,turkey2,0.25,0.88,4,1.62,4.0,1.14,6
 Keciorengucu,8,3,2,3,13,9,4,11,turkey2,0.38,0.62,4,1.62,2.63,1.61,6
-Igdir,8,3,2,3,8,6,2,11,turkey2,0.38,0.62,2,1.0,2.63,1.61,6
 Umraniyespor,8,2,4,2,14,11,3,10,turkey2,0.25,0.75,3,1.75,4.0,1.33,7
-Erokspor,8,2,4,2,13,10,3,10,turkey2,0.25,0.75,3,1.62,4.0,1.33,7
+Igdir,8,3,1,4,8,7,1,10,turkey2,0.38,0.5,1,1.0,2.63,2.0,7
+Pendikspor,8,2,4,2,8,7,1,10,turkey2,0.25,0.75,1,1.0,4.0,1.33,7
 Corum,8,2,4,2,5,6,-1,10,turkey2,0.25,0.75,-1,0.62,4.0,1.33,7
-Pendikspor,8,2,3,3,8,8,0,9,turkey2,0.25,0.62,0,1.0,4.0,1.61,8
-Adanaspor,8,1,3,4,9,14,-5,6,turkey2,0.12,0.5,-5,1.12,8.33,2.0,9
-Y. Malatyaspor,8,0,0,8,6,25,-19,0,turkey2,0.0,0.0,-19,0.75,0.0,0.0,10
+Adanaspor,8,1,3,4,9,14,-5,6,turkey2,0.12,0.5,-5,1.12,8.33,2.0,8
+Y. Malatyaspor,8,0,0,8,6,25,-19,0,turkey2,0.0,0.0,-19,0.75,0.0,0.0,9
 B. Petrolspor,8,8,0,0,22,3,19,24,turkey3,1.0,1.0,19,2.75,1.0,1.0,1
 Sariyer,8,7,1,0,20,3,17,22,turkey3,0.88,1.0,17,2.5,1.14,1.0,2
 B. Anadolu,8,6,1,1,14,6,8,19,turkey3,0.75,0.88,8,1.75,1.33,1.14,3
@@ -3085,20 +3087,20 @@ Edirnespor,7,2,0,5,8,12,-4,6,turkey8,0.29,0.29,-4,1.14,3.45,3.45,11
 Tepecik,8,0,4,4,4,13,-9,4,turkey8,0.0,0.5,-9,0.5,0.0,2.0,12
 Denizlispor,7,1,1,5,4,17,-13,4,turkey8,0.14,0.29,-13,0.57,7.14,3.45,12
 Turgutluspor,7,0,2,5,5,13,-8,2,turkey8,0.0,0.29,-8,0.71,0.0,3.45,13
-Shabab Al Ahli,6,5,1,0,14,6,8,16,uae,0.83,1.0,8,2.33,1.2,1.0,1
-Al Sharjah,5,5,0,0,12,1,11,15,uae,1.0,1.0,11,2.4,1.0,1.0,2
+Al Sharjah,6,6,0,0,13,1,12,18,uae,1.0,1.0,12,2.17,1.0,1.0,1
+Al Nasr,6,5,1,0,16,7,9,16,uae,0.83,1.0,9,2.67,1.2,1.0,2
+Shabab Al Ahli,6,5,1,0,14,6,8,16,uae,0.83,1.0,8,2.33,1.2,1.0,2
 Al Wahda,6,4,2,0,15,6,9,14,uae,0.67,1.0,9,2.5,1.49,1.0,3
 Al Wasl,6,4,1,1,18,8,10,13,uae,0.67,0.83,10,3.0,1.49,1.2,4
-Al Nasr,5,4,1,0,13,5,8,13,uae,0.8,1.0,8,2.6,1.25,1.0,4
-Al Jazira,5,4,0,1,14,6,8,12,uae,0.8,0.8,8,2.8,1.25,1.25,5
+Al Jazira,6,4,1,1,14,6,8,13,uae,0.67,0.83,8,2.33,1.49,1.2,4
 Ittihad Kalba,6,3,3,0,15,8,7,12,uae,0.5,1.0,7,2.5,2.0,1.0,5
-Al Ain,6,3,2,1,15,6,9,11,uae,0.5,0.83,9,2.5,2.0,1.2,6
-Ajman,5,2,1,2,8,5,3,7,uae,0.4,0.6,3,1.6,2.5,1.67,7
-Bani Yas,5,2,1,2,8,11,-3,7,uae,0.4,0.6,-3,1.6,2.5,1.67,7
-Khorfakkan,5,1,2,2,7,7,0,5,uae,0.2,0.6,0,1.4,5.0,1.67,8
-Dibba Al Hisn,5,1,1,3,6,14,-8,4,uae,0.2,0.4,-8,1.2,5.0,2.5,9
-Al Urooba,6,1,0,5,6,17,-11,3,uae,0.17,0.17,-11,1.0,5.88,5.88,10
-Al Bataeh,5,0,1,4,7,15,-8,1,uae,0.0,0.2,-8,1.4,0.0,5.0,11
+Al Ain,7,3,2,2,15,7,8,11,uae,0.43,0.71,8,2.14,2.33,1.41,6
+Bani Yas,6,2,2,2,8,11,-3,8,uae,0.33,0.67,-3,1.33,3.03,1.49,7
+Ajman,5,2,1,2,8,5,3,7,uae,0.4,0.6,3,1.6,2.5,1.67,8
+Khorfakkan,5,1,2,2,7,7,0,5,uae,0.2,0.6,0,1.4,5.0,1.67,9
+Al Bataeh,6,1,1,4,8,15,-7,4,uae,0.17,0.33,-7,1.33,5.88,3.03,10
+Dibba Al Hisn,5,1,1,3,6,14,-8,4,uae,0.2,0.4,-8,1.2,5.0,2.5,10
+Al Urooba,6,1,0,5,6,17,-11,3,uae,0.17,0.17,-11,1.0,5.88,5.88,11
 Shakhtar,8,7,1,0,29,7,22,22,ukraine,0.88,1.0,22,3.62,1.14,1.0,1
 Dynamo Kyiv,8,6,2,0,17,6,11,20,ukraine,0.75,1.0,11,2.12,1.33,1.0,2
 Oleksandria,8,5,3,0,12,3,9,18,ukraine,0.62,1.0,9,1.5,1.61,1.0,3
@@ -3244,7 +3246,7 @@ Connahs Quay,8,4,2,2,16,8,8,14,wales,0.5,0.75,8,2.0,2.0,1.33,4
 Cardiff MU,8,4,2,2,15,11,4,14,wales,0.5,0.75,4,1.88,2.0,1.33,4
 Flint,8,4,1,3,12,8,4,13,wales,0.5,0.62,4,1.5,2.0,1.61,5
 Briton Ferry,8,3,3,2,13,8,5,12,wales,0.38,0.75,5,1.62,2.63,1.33,6
-Bala Town,8,3,2,3,10,8,2,11,wales,0.38,0.62,2,1.25,2.63,1.61,7
+Bala Town,8,3,2,3,9,8,1,11,wales,0.38,0.62,1,1.12,2.63,1.61,7
 Caernarfon,8,3,0,5,15,23,-8,9,wales,0.38,0.38,-8,1.88,2.63,2.63,8
-Aberystwyth,8,2,1,5,9,16,-7,7,wales,0.25,0.38,-7,1.12,4.0,2.63,9
+Aberystwyth,8,2,1,5,10,20,-10,7,wales,0.25,0.38,-10,1.25,4.0,2.63,9
 Newtown,8,2,1,5,8,20,-12,7,wales,0.25,0.38,-12,1.0,4.0,2.63,9
