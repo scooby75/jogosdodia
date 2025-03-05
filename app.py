@@ -44,6 +44,7 @@ required_columns_overall = ["GP", "Liga","PIO", "PIO_HA", "GD_Overall", "GF_AVG_
 missing_columns_home = [col for col in required_columns_home if col not in home_data.columns]
 missing_columns_away = [col for col in required_columns_away if col not in away_data.columns]
 missing_columns_away_fav = [col for col in required_columns_away if col not in away_fav_data.columns]
+missing_columns_overall = [col for col in required_columns_home if col not in home_data.columns]
 
 # Exibir mensagens de erro se houver colunas ausentes
 if missing_columns_home:
