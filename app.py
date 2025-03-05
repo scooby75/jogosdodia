@@ -10,7 +10,12 @@ overall_stats_url = "https://raw.githubusercontent.com/scooby75/jogosdodia/refs/
 # Função para carregar os dados
 @st.cache_data
 def load_data(url):
-    return pd.read_csv(url)
+    try:
+        data = pd.read_csv(url)
+        return data
+    except Exception as e:
+        st.error(f"Erro ao carregar dados de {url}: {e}")
+        return pd.DataFrame()  # Retorna um DataFrame vazio em caso de erro
 
 # Carregar os dados das URLs
 home_data = load_data(home_url)
@@ -36,15 +41,15 @@ away_fav_team_col = "Equipe_Fora"
 overall_stats_col = "Equipe"
 
 # Listar as colunas necessárias para cada dataset
-required_columns_home = ["GP", "Liga","PIH", "PIH_HA", "GD_Home", "GF_AVG_Home", "Odd_Justa_MO", "Odd_Justa_HA", "Rank_Home", "Pts_Home"]
-required_columns_away = ["GP", "Liga","PIA", "PIA_HA", "GD_Away", "GF_AVG_Away", "Odd_Justa_MO", "Odd_Justa_HA", "Rank_Away", "Pts_Away"]
-required_columns_overall = ["GP", "Liga","PIO", "PIO_HA", "GD_Overall", "GF_AVG_Overall", "Odd_Justa_MO", "Odd_Justa_HA", "Rank_Overall", "Pts_Overall"]
+required_columns_home = ["GP", "Liga", "PIH", "PIH_HA", "GD_Home", "GF_AVG_Home", "Odd_Justa_MO", "Odd_Justa_HA", "Rank_Home", "Pts_Home"]
+required_columns_away = ["GP", "Liga", "PIA", "PIA_HA", "GD_Away", "GF_AVG_Away", "Odd_Justa_MO", "Odd_Justa_HA", "Rank_Away", "Pts_Away"]
+required_columns_overall = ["GP", "Liga", "PIO", "PIO_HA", "GD_Overall", "GF_AVG_Overall", "Odd_Justa_MO", "Odd_Justa_HA", "Rank_Overall", "Pts_Overall"]
 
 # Verificar se as colunas necessárias estão presentes
 missing_columns_home = [col for col in required_columns_home if col not in home_data.columns]
 missing_columns_away = [col for col in required_columns_away if col not in away_data.columns]
 missing_columns_away_fav = [col for col in required_columns_away if col not in away_fav_data.columns]
-missing_columns_overall = [col for col in required_columns_home if col not in home_data.columns]
+missing_columns_overall = [col for col in required_columns_overall if col not in overall_stats_data.columns]
 
 # Exibir mensagens de erro se houver colunas ausentes
 if missing_columns_home:
@@ -53,24 +58,23 @@ if missing_columns_away:
     st.error(f"Colunas ausentes no dataset Away: {missing_columns_away}")
 if missing_columns_away_fav:
     st.error(f"Colunas ausentes no dataset Away (Favorito): {missing_columns_away_fav}")
+if missing_columns_overall:
+    st.error(f"Colunas ausentes no dataset Overall: {missing_columns_overall}")
 
 # Prosseguir apenas se não houver colunas ausentes
-if not (missing_columns_home or missing_columns_away or missing_columns_away_fav):
+if not (missing_columns_home or missing_columns_away or missing_columns_away_fav or missing_columns_overall):
     # Filtros para seleção de equipes
     equipe_home = st.sidebar.selectbox(
         "Selecione a equipe Home:",
         sorted(home_data[home_team_col].unique())
-    )
-
+    
     equipe_away = st.sidebar.selectbox(
         "Selecione a equipe Away:",
-        sorted(away_data[away_team_col].unique())
-    )
-
+        sorted(away_data[away_team_col].unique()))
+    
     equipe_away_fav = st.sidebar.selectbox(
         "Selecione a equipe Away (Favorito):",
-        sorted(away_fav_data[away_fav_team_col].unique())
-    )
+        sorted(away_fav_data[away_fav_team_col].unique()))
 
     # Filtros independentes para PIH e PIA
     pih_min, pih_max = st.sidebar.slider("1x2 (Home)", float(home_data["PIH"].min()), float(home_data["PIH"].max()), (0.0, 1.0))
@@ -93,7 +97,7 @@ if not (missing_columns_home or missing_columns_away or missing_columns_away_fav
 
     home_filtered_piha = home_data[
         (home_data["PIH_HA"] >= piha_min) & 
-        (home_data["PIH_HA"] <= piha_max) 
+        (home_data["PIH_HA"] <= piha_max)
     ][[home_team_col] + required_columns_home]
 
     away_filtered_piah = away_data[
@@ -105,7 +109,7 @@ if not (missing_columns_home or missing_columns_away or missing_columns_away_fav
     home_filtered_team = home_data[home_data[home_team_col] == equipe_home][required_columns_home]
     away_filtered_team = away_data[away_data[away_team_col] == equipe_away][required_columns_away]
     away_fav_filtered_team = away_fav_data[away_fav_data[away_fav_team_col] == equipe_away_fav][required_columns_away]
-    overall_filtered_team = overall_data[overall_data[home_team_col] == equipe_home][required_columns_home]
+    overall_filtered_team = overall_stats_data[overall_stats_data[overall_stats_col] == equipe_home][required_columns_overall]
 
     # Filtros independentes para GF_AVG_Home (Média de Gols Casa)
     gf_avg_home_min, gf_avg_home_max = st.sidebar.slider(
