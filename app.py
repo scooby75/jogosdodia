@@ -5,6 +5,7 @@ import pandas as pd
 home_url = "https://raw.githubusercontent.com/scooby75/jogosdodia/refs/heads/main/equipes_casa.csv"
 away_url = "https://raw.githubusercontent.com/scooby75/jogosdodia/refs/heads/main/equipes_fora.csv"
 away_fav_url = "https://raw.githubusercontent.com/scooby75/jogosdodia/refs/heads/main/equipes_fora_favorito.csv"
+overall_stats_url = "https://raw.githubusercontent.com/scooby75/jogosdodia/refs/heads/main/overall_stats.csv"
 
 # Função para carregar os dados
 @st.cache_data
@@ -15,6 +16,7 @@ def load_data(url):
 home_data = load_data(home_url)
 away_data = load_data(away_url)
 away_fav_data = load_data(away_fav_url)
+overall_stats_data = load_data(overall_stats_url)
 
 # Função para normalizar os nomes das colunas (remove espaços extras, etc.)
 def normalize_columns(df):
@@ -25,15 +27,18 @@ def normalize_columns(df):
 home_data = normalize_columns(home_data)
 away_data = normalize_columns(away_data)
 away_fav_data = normalize_columns(away_fav_data)
+overall_stats_data = normalize_columns(overall_stats_data)
 
 # Definir as colunas principais para filtragem
 home_team_col = "Equipe"
 away_team_col = "Equipe_Fora"
 away_fav_team_col = "Equipe_Fora"
+overall_stats_col = "Overall"
 
 # Listar as colunas necessárias para cada dataset
 required_columns_home = ["GP", "Liga","PIH", "PIH_HA", "GD_Home", "GF_AVG_Home", "Odd_Justa_MO", "Odd_Justa_HA", "Rank_Home", "Pts_Home"]
 required_columns_away = ["GP", "Liga","PIA", "PIA_HA", "GD_Away", "GF_AVG_Away", "Odd_Justa_MO", "Odd_Justa_HA", "Rank_Away", "Pts_Away"]
+required_columns_overall = ["GP", "Liga","PIO", "PIO_HA", "GD_Overall", "GF_AVG_Overall", "Odd_Justa_MO", "Odd_Justa_HA", "Rank_Overall", "Pts_Overall"]
 
 # Verificar se as colunas necessárias estão presentes
 missing_columns_home = [col for col in required_columns_home if col not in home_data.columns]
@@ -128,7 +133,10 @@ if not (missing_columns_home or missing_columns_away or missing_columns_away_fav
         (away_data["GF_AVG_Away"] <= gf_avg_away_max)
     ][[away_team_col] + required_columns_away]
 
-    # Exibir os dados filtrados
+    # Exibir os dados
+    st.subheader("Overall")
+    st.dataframe(overall_filtered_team.reset_index(drop=True))
+
     st.subheader("Home")
     st.dataframe(home_filtered_team.reset_index(drop=True))
 
