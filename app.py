@@ -33,7 +33,7 @@ overall_stats_data = normalize_columns(overall_stats_data)
 home_team_col = "Equipe"
 away_team_col = "Equipe_Fora"
 away_fav_team_col = "Equipe_Fora"
-overall_stats_col = "Overall"
+overall_stats_col = "Equipe"
 
 # Listar as colunas necessárias para cada dataset
 required_columns_home = ["GP", "Liga","PIH", "PIH_HA", "GD_Home", "GF_AVG_Home", "Odd_Justa_MO", "Odd_Justa_HA", "Rank_Home", "Pts_Home"]
