@@ -104,6 +104,7 @@ if not (missing_columns_home or missing_columns_away or missing_columns_away_fav
     home_filtered_team = home_data[home_data[home_team_col] == equipe_home][required_columns_home]
     away_filtered_team = away_data[away_data[away_team_col] == equipe_away][required_columns_away]
     away_fav_filtered_team = away_fav_data[away_fav_data[away_fav_team_col] == equipe_away_fav][required_columns_away]
+    overall_filtered_team = overall_data[overall_data[home_team_col] == equipe_home][required_columns_home]
 
     # Filtros independentes para GF_AVG_Home (Média de Gols Casa)
     gf_avg_home_min, gf_avg_home_max = st.sidebar.slider(
