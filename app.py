@@ -36,9 +36,9 @@ away_fav_team_col = "Equipe_Fora"
 overall_stats_col = "Equipe"
 
 # Listar as colunas necessárias para cada dataset
-required_columns_home = ["GP", "Liga","PIH", "PIH_HA", "GD_Home", "GF_AVG_Home", "Odd_Justa_MO", "Odd_Justa_HA", "Rank_Home", "Pts_Home","PPG_Home"]
-required_columns_away = ["GP", "Liga","PIA", "PIA_HA", "GD_Away", "GF_AVG_Away", "Odd_Justa_MO", "Odd_Justa_HA", "Rank_Away", "Pts_Away", "PPG_Away"]
-required_columns_overall = ["GP", "Liga","PIO", "PIO_HA", "GD_Overall", "GF_AVG_Overall", "Odd_Justa_MO", "Odd_Justa_HA", "Rank_Overall", "Pts_Overall", "PPG_Overall"]
+required_columns_home = ["GP", "Liga","PIH", "PIH_HA", "Rank_Home", "PPG_Home", "Odd_Justa_MO", "Odd_Justa_HA", "GF_AVG_Home", "GD_Home", "Pts_Home"]
+required_columns_away = ["GP", "Liga","PIA", "PIA_HA", "Rank_Away", "PPG_Away", "Odd_Justa_MO", "Odd_Justa_HA", "GF_AVG_Away", "GD_Away", "Pts_Away"]
+required_columns_overall = ["GP", "Liga","PIO", "PIO_HA", "Rank_Overall", "PPG_Overall", "Odd_Justa_MO", "Odd_Justa_HA", "GF_AVG_Overall", "GD_Overall", "Pts_Overall"]
 
 # Verificar se as colunas necessárias estão presentes
 missing_columns_home = [col for col in required_columns_home if col not in home_data.columns]
