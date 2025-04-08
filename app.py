@@ -6,7 +6,7 @@ home_url = "https://raw.githubusercontent.com/scooby75/jogosdodia/refs/heads/mai
 away_url = "https://raw.githubusercontent.com/scooby75/jogosdodia/refs/heads/main/equipes_fora.csv"
 away_fav_url = "https://raw.githubusercontent.com/scooby75/jogosdodia/refs/heads/main/equipes_fora_Favorito.csv"
 overall_stats_url = "https://raw.githubusercontent.com/scooby75/jogosdodia/refs/heads/main/overall_stats.csv"
-sf_home = "https://github.com/scooby75/jogosdodia/blob/main/scored_first_home.csv"
+sf_home = "https://raw.githubusercontent.com/scooby75/jogosdodia/refs/heads/main/scored_first_home.csv"
 sf_away = "https://github.com/scooby75/jogosdodia/blob/main/scored_first_away.csv"
 
 
