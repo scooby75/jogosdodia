@@ -12,7 +12,7 @@ sf_away_df = pd.read_csv("https://raw.githubusercontent.com/scooby75/jogosdodia/
 
 
 # Função para carregar os dados
-@st.cache_data
+@st.cache
 def load_data(url):
     return pd.read_csv(url)
 
