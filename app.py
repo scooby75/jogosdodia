@@ -21,6 +21,8 @@ home_data = load_data(home_url)
 away_data = load_data(away_url)
 away_fav_data = load_data(away_fav_url)
 overall_stats_data = load_data(overall_stats_url)
+sf_home = load_data(sf_home_url)
+sf_away = load_data(sf_away_url)
 
 # Função para normalizar os nomes das colunas (remove espaços extras, etc.)
 def normalize_columns(df):
@@ -32,6 +34,8 @@ home_data = normalize_columns(home_data)
 away_data = normalize_columns(away_data)
 away_fav_data = normalize_columns(away_fav_data)
 overall_stats_data = normalize_columns(overall_stats_data)
+sf_home = normalize_columns(sf_home)
+sf_away = normalize_columns(sf_away)
 
 # Definir as colunas principais para filtragem
 home_team_col = "Equipe"
@@ -40,8 +44,8 @@ away_fav_team_col = "Equipe_Fora"
 overall_stats_col = "Equipe"
 
 # Listar as colunas necessárias para cada dataset
-required_columns_home = ["GP", "Liga","PIH", "PIH_HA", "Rank_Home", "PPG_Home", "Odd_Justa_MO", "Odd_Justa_HA", "GF_AVG_Home", "GD_Home", "Pts_Home"]
-required_columns_away = ["GP", "Liga","PIA", "PIA_HA", "Rank_Away", "PPG_Away", "Odd_Justa_MO", "Odd_Justa_HA", "GF_AVG_Away", "GD_Away", "Pts_Away"]
+required_columns_home = ["GP", "Liga","PIH", "PIH_HA", "Rank_Home", "PPG_Home", "Perc.", "Odd_Justa_MO", "Odd_Justa_HA", "GF_AVG_Home", "GD_Home", "Pts_Home"]
+required_columns_away = ["GP", "Liga","PIA", "PIA_HA", "Rank_Away", "PPG_Away", "Perc.", "Odd_Justa_MO", "Odd_Justa_HA", "GF_AVG_Away", "GD_Away", "Pts_Away"]
 required_columns_overall = ["GP", "Liga","PIO", "PIO_HA", "Rank_Overall", "PPG_Overall", "Odd_Justa_MO", "Odd_Justa_HA", "GF_AVG_Overall", "GD_Overall", "Pts_Overall"]
 
 # Verificar se as colunas necessárias estão presentes
