@@ -1,13 +1,13 @@
-import streamlit as st
 import pandas as pd
 
-# URLs dos arquivos CSV
-home_url = "https://raw.githubusercontent.com/scooby75/jogosdodia/refs/heads/main/equipes_casa.csv"
-away_url = "https://raw.githubusercontent.com/scooby75/jogosdodia/refs/heads/main/equipes_fora.csv"
-away_fav_url = "https://raw.githubusercontent.com/scooby75/jogosdodia/refs/heads/main/equipes_fora_Favorito.csv"
-overall_stats_url = "https://raw.githubusercontent.com/scooby75/jogosdodia/refs/heads/main/overall_stats.csv"
-sf_home_url = "https://raw.githubusercontent.com/scooby75/jogosdodia/refs/heads/main/scored_first_home.csv"
-sf_away_url = "https://raw.githubusercontent.com/scooby75/jogosdodia/refs/heads/main/scored_first_away.csv"
+# Carregando os arquivos diretamente das URLs
+home_data = pd.read_csv("https://raw.githubusercontent.com/scooby75/jogosdodia/refs/heads/main/equipes_casa.csv")
+away_data = pd.read_csv("https://raw.githubusercontent.com/scooby75/jogosdodia/refs/heads/main/equipes_fora.csv")
+away_fav_data = pd.read_csv("https://raw.githubusercontent.com/scooby75/jogosdodia/refs/heads/main/equipes_fora_Favorito.csv")
+overall_stats = pd.read_csv("https://raw.githubusercontent.com/scooby75/jogosdodia/refs/heads/main/overall_stats.csv")
+sf_home_df = pd.read_csv("https://raw.githubusercontent.com/scooby75/jogosdodia/refs/heads/main/scored_first_home.csv")
+sf_away_df = pd.read_csv("https://raw.githubusercontent.com/scooby75/jogosdodia/refs/heads/main/scored_first_away.csv")
+
 
 
 
