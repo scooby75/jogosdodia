@@ -1,151 +1,89 @@
+import streamlit as st
 import pandas as pd
 
-# Carregando os arquivos diretamente das URLs
-home_data = pd.read_csv("https://raw.githubusercontent.com/scooby75/jogosdodia/refs/heads/main/equipes_casa.csv")
-away_data = pd.read_csv("https://raw.githubusercontent.com/scooby75/jogosdodia/refs/heads/main/equipes_fora.csv")
-away_fav_data = pd.read_csv("https://raw.githubusercontent.com/scooby75/jogosdodia/refs/heads/main/equipes_fora_Favorito.csv")
-overall_stats = pd.read_csv("https://raw.githubusercontent.com/scooby75/jogosdodia/refs/heads/main/overall_stats.csv")
-sf_home_df = pd.read_csv("https://raw.githubusercontent.com/scooby75/jogosdodia/refs/heads/main/scored_first_home.csv")
-sf_away_df = pd.read_csv("https://raw.githubusercontent.com/scooby75/jogosdodia/refs/heads/main/scored_first_away.csv")
+# URLs dos arquivos
+home_url = "https://raw.githubusercontent.com/scooby75/jogosdodia/refs/heads/main/equipes_casa.csv"
+away_url = "https://raw.githubusercontent.com/scooby75/jogosdodia/refs/heads/main/equipes_fora.csv"
+away_fav_url = "https://raw.githubusercontent.com/scooby75/jogosdodia/refs/heads/main/equipes_fora_Favorito.csv"
+overall_stats_url = "https://raw.githubusercontent.com/scooby75/jogosdodia/refs/heads/main/overall_stats.csv"
+sf_home_url = "https://raw.githubusercontent.com/scooby75/jogosdodia/refs/heads/main/scored_first_home.csv"
+sf_away_url = "https://raw.githubusercontent.com/scooby75/jogosdodia/refs/heads/main/scored_first_away.csv"
 
-
-
-
-# Função para carregar os dados
+# Função para carregar os dados com cache
 @st.cache_data
 def load_data(url):
     return pd.read_csv(url)
 
-# Carregar os dados das URLs
-home_data = load_data(home_url)
-away_data = load_data(away_url)
-away_fav_data = load_data(away_fav_url)
-overall_stats_data = load_data(overall_stats_url)
-sf_home = load_data(sf_home_url)
-sf_away = load_data(sf_away_url)
-
-# Função para normalizar os nomes das colunas (remove espaços extras, etc.)
+# Normalização dos nomes das colunas
 def normalize_columns(df):
     df.columns = df.columns.str.strip()
     return df
 
-# Normalizar os nomes das colunas
-home_data = normalize_columns(home_data)
-away_data = normalize_columns(away_data)
-away_fav_data = normalize_columns(away_fav_data)
-overall_stats_data = normalize_columns(overall_stats_data)
-sf_home = normalize_columns(sf_home)
-sf_away = normalize_columns(sf_away)
+# Carregando os dados
+home_data = normalize_columns(load_data(home_url))
+away_data = normalize_columns(load_data(away_url))
+away_fav_data = normalize_columns(load_data(away_fav_url))
+overall_stats_data = normalize_columns(load_data(overall_stats_url))
+sf_home = normalize_columns(load_data(sf_home_url))
+sf_away = normalize_columns(load_data(sf_away_url))
 
-# Definir as colunas principais para filtragem
-home_team_col = "Equipe"
-away_team_col = "Equipe_Fora"
-away_fav_team_col = "Equipe_Fora"
-overall_stats_col = "Equipe"
+# Definição de colunas essenciais
+required_columns_home = ["GP", "Liga", "PIH", "PIH_HA", "Rank_Home", "PPG_Home", "Perc.", 
+                         "Odd_Justa_MO", "Odd_Justa_HA", "GF_AVG_Home", "GD_Home", "Pts_Home"]
+required_columns_away = ["GP", "Liga", "PIA", "PIA_HA", "Rank_Away", "PPG_Away", "Perc.", 
+                         "Odd_Justa_MO", "Odd_Justa_HA", "GF_AVG_Away", "GD_Away", "Pts_Away"]
+required_columns_overall = ["GP", "Liga", "PIO", "PIO_HA", "Rank_Overall", "PPG_Overall", 
+                            "Odd_Justa_MO", "Odd_Justa_HA", "GF_AVG_Overall", "GD_Overall", "Pts_Overall"]
 
-# Listar as colunas necessárias para cada dataset
-required_columns_home = ["GP", "Liga","PIH", "PIH_HA", "Rank_Home", "PPG_Home", "Perc.", "Odd_Justa_MO", "Odd_Justa_HA", "GF_AVG_Home", "GD_Home", "Pts_Home"]
-required_columns_away = ["GP", "Liga","PIA", "PIA_HA", "Rank_Away", "PPG_Away", "Perc.", "Odd_Justa_MO", "Odd_Justa_HA", "GF_AVG_Away", "GD_Away", "Pts_Away"]
-required_columns_overall = ["GP", "Liga","PIO", "PIO_HA", "Rank_Overall", "PPG_Overall", "Odd_Justa_MO", "Odd_Justa_HA", "GF_AVG_Overall", "GD_Overall", "Pts_Overall"]
+# Verificação de colunas ausentes
+def check_missing_columns(df, required_cols, name):
+    missing = [col for col in required_cols if col not in df.columns]
+    if missing:
+        st.error(f"Colunas ausentes no dataset {name}: {missing}")
+    return missing
 
-# Verificar se as colunas necessárias estão presentes
-missing_columns_home = [col for col in required_columns_home if col not in home_data.columns]
-missing_columns_away = [col for col in required_columns_away if col not in away_data.columns]
-missing_columns_away_fav = [col for col in required_columns_away if col not in away_fav_data.columns]
-missing_columns_overall = [col for col in required_columns_overall if col not in overall_stats_data.columns]
+missing_home = check_missing_columns(home_data, required_columns_home, "Home")
+missing_away = check_missing_columns(away_data, required_columns_away, "Away")
+missing_away_fav = check_missing_columns(away_fav_data, required_columns_away, "Away (Favorito)")
+missing_overall = check_missing_columns(overall_stats_data, required_columns_overall, "Overall")
 
-# Exibir mensagens de erro se houver colunas ausentes
-if missing_columns_home:
-    st.error(f"Colunas ausentes no dataset Home: {missing_columns_home}")
-if missing_columns_away:
-    st.error(f"Colunas ausentes no dataset Away: {missing_columns_away}")
-if missing_columns_away_fav:
-    st.error(f"Colunas ausentes no dataset Away (Favorito): {missing_columns_away_fav}")
-if missing_columns_overall:
-    st.error(f"Colunas ausentes no dataset Overall: {missing_columns_overall}")
+# Se não houver colunas ausentes, mostra os filtros e análises
+if not (missing_home or missing_away or missing_away_fav or missing_overall):
 
-# Prosseguir apenas se não houver colunas ausentes
-if not (missing_columns_home or missing_columns_away or missing_columns_away_fav or missing_columns_overall):
-    # Filtros para seleção de equipes
-    equipe_home = st.sidebar.selectbox(
-        "Selecione a equipe Home:",
-        sorted(home_data[home_team_col].unique())
-    )
+    equipe_home = st.sidebar.selectbox("Selecione a equipe Home:", sorted(home_data["Equipe"].unique()))
+    equipe_away = st.sidebar.selectbox("Selecione a equipe Away:", sorted(away_data["Equipe_Fora"].unique()))
+    equipe_away_fav = st.sidebar.selectbox("Selecione a equipe Away (Favorito):", sorted(away_fav_data["Equipe_Fora"].unique()))
 
-    equipe_away = st.sidebar.selectbox(
-        "Selecione a equipe Away:",
-        sorted(away_data[away_team_col].unique())
-    )
+    # Filtros personalizados
+    pih_min, pih_max = st.sidebar.slider("1x2 (Home)", 0.0, 1.0, (0.0, 1.0))
+    pia_min, pia_max = st.sidebar.slider("1x2 (Away)", 0.0, 1.0, (0.0, 1.0))
+    piha_min, piha_max = st.sidebar.slider("HA +0.25 (Home)", 0.0, 1.0, (0.0, 1.0))
+    piah_min, piah_max = st.sidebar.slider("HA +0.25 (Away)", 0.0, 1.0, (0.0, 1.0))
 
-    equipe_away_fav = st.sidebar.selectbox(
-        "Selecione a equipe Away (Favorito):",
-        sorted(away_fav_data[away_fav_team_col].unique())
-    )
-
-    # Filtros independentes para PIH e PIA
-    pih_min, pih_max = st.sidebar.slider("1x2 (Home)", float(home_data["PIH"].min()), float(home_data["PIH"].max()), (0.0, 1.0))
-    pia_min, pia_max = st.sidebar.slider("1x2 (Away)", float(away_data["PIA"].min()), float(away_data["PIA"].max()), (0.0, 1.0))
-
-    # Aplicar filtros de PIH e PIA nos datasets completos
-    home_filtered_pih = home_data[
-        (home_data["PIH"] >= pih_min) & 
-        (home_data["PIH"] <= pih_max)
-    ][[home_team_col] + required_columns_home]
-
-    away_filtered_pia = away_data[
-        (away_data["PIA"] >= pia_min) & 
-        (away_data["PIA"] <= pia_max)
-    ][[away_team_col] + required_columns_away]
-
-    # Filtros independentes para PIH_HA e PIA_HA
-    piha_min, piha_max = st.sidebar.slider("HA +0.25 (Home)", float(home_data["PIH_HA"].min()), float(home_data["PIH_HA"].max()), (0.0, 1.0))
-    piah_min, piah_max = st.sidebar.slider("HA +0.25 (Away)", float(away_data["PIA_HA"].min()), float(away_data["PIA_HA"].max()), (0.0, 1.0))
-
-    home_filtered_piha = home_data[
-        (home_data["PIH_HA"] >= piha_min) & 
-        (home_data["PIH_HA"] <= piha_max) 
-    ][[home_team_col] + required_columns_home]
-
-    away_filtered_piah = away_data[
-        (away_data["PIA_HA"] >= piah_min) & 
-        (away_data["PIA_HA"] <= piah_max)
-    ][[away_team_col] + required_columns_away]
-
-    # Filtrar os dados para as equipes selecionadas
-    home_filtered_team = home_data[home_data[home_team_col] == equipe_home][required_columns_home]
-    away_filtered_team = away_data[away_data[away_team_col] == equipe_away][required_columns_away]
-    away_fav_filtered_team = away_fav_data[away_fav_data[away_fav_team_col] == equipe_away_fav][required_columns_away]
-    overall_filtered_team = overall_stats_data[overall_stats_data[overall_stats_col] == equipe_home][required_columns_overall]
-
-    # Filtros independentes para GF_AVG_Home (Média de Gols Casa)
-    gf_avg_home_min, gf_avg_home_max = st.sidebar.slider(
-        "Média de Gols (Home)", 
+    gf_avg_home_min, gf_avg_home_max = st.sidebar.slider("Média de Gols (Home)", 
         float(home_data["GF_AVG_Home"].min()), 
         float(home_data["GF_AVG_Home"].max()), 
-        (home_data["GF_AVG_Home"].min(), home_data["GF_AVG_Home"].max())
-    )
-    
-    # Filtrar os dados de acordo com GF_AVG_Home
-    home_filtered_gf_avg = home_data[
-        (home_data["GF_AVG_Home"] >= gf_avg_home_min) & 
-        (home_data["GF_AVG_Home"] <= gf_avg_home_max)
-    ][[home_team_col] + required_columns_home]
-    
-    # Filtros independentes para GF_AVG_Away (Média de Gols Visitante)
-    gf_avg_away_min, gf_avg_away_max = st.sidebar.slider(
-        "Média de Gols (Away)", 
+        (float(home_data["GF_AVG_Home"].min()), float(home_data["GF_AVG_Home"].max())))
+
+    gf_avg_away_min, gf_avg_away_max = st.sidebar.slider("Média de Gols (Away)", 
         float(away_data["GF_AVG_Away"].min()), 
         float(away_data["GF_AVG_Away"].max()), 
-        (away_data["GF_AVG_Away"].min(), away_data["GF_AVG_Away"].max())
-    )
-    
-    # Filtrar os dados de acordo com GF_AVG_Away
-    away_filtered_gf_avg = away_data[
-        (away_data["GF_AVG_Away"] >= gf_avg_away_min) & 
-        (away_data["GF_AVG_Away"] <= gf_avg_away_max)
-    ][[away_team_col] + required_columns_away]
+        (float(away_data["GF_AVG_Away"].min()), float(away_data["GF_AVG_Away"].max())))
 
-    # Exibir os dados
+    # Aplicar os filtros
+    home_filtered_team = home_data[home_data["Equipe"] == equipe_home][required_columns_home]
+    away_filtered_team = away_data[away_data["Equipe_Fora"] == equipe_away][required_columns_away]
+    away_fav_filtered_team = away_fav_data[away_fav_data["Equipe_Fora"] == equipe_away_fav][required_columns_away]
+    overall_filtered_team = overall_stats_data[overall_stats_data["Equipe"] == equipe_home][required_columns_overall]
+
+    home_filtered_pih = home_data[(home_data["PIH"] >= pih_min) & (home_data["PIH"] <= pih_max)]
+    away_filtered_pia = away_data[(away_data["PIA"] >= pia_min) & (away_data["PIA"] <= pia_max)]
+    home_filtered_piha = home_data[(home_data["PIH_HA"] >= piha_min) & (home_data["PIH_HA"] <= piha_max)]
+    away_filtered_piah = away_data[(away_data["PIA_HA"] >= piah_min) & (away_data["PIA_HA"] <= piah_max)]
+    home_filtered_gf_avg = home_data[(home_data["GF_AVG_Home"] >= gf_avg_home_min) & (home_data["GF_AVG_Home"] <= gf_avg_home_max)]
+    away_filtered_gf_avg = away_data[(away_data["GF_AVG_Away"] >= gf_avg_away_min) & (away_data["GF_AVG_Away"] <= gf_avg_away_max)]
+
+    # Exibição dos dados
     st.subheader("Overall")
     st.dataframe(overall_filtered_team.reset_index(drop=True))
 
@@ -163,19 +101,18 @@ if not (missing_columns_home or missing_columns_away or missing_columns_away_fav
 
     st.subheader("1x2 (Away)")
     st.dataframe(away_filtered_pia.reset_index(drop=True))
-    
+
     st.subheader("HA +0.25 (Home)")
     st.dataframe(home_filtered_piha.reset_index(drop=True))
 
     st.subheader("HA +0.25 (Away)")
     st.dataframe(away_filtered_piah.reset_index(drop=True))
 
-    # Exibir os dados filtrados
     st.subheader("Média de Gols (Casa)")
     st.dataframe(home_filtered_gf_avg.reset_index(drop=True))
-    
+
     st.subheader("Média de Gols (Away)")
     st.dataframe(away_filtered_gf_avg.reset_index(drop=True))
 
 else:
-    st.error("Corrija os problemas com as colunas ausentes antes de prosseguir.")
+    st.warning("Verifique os arquivos com colunas ausentes e corrija antes de continuar.")
