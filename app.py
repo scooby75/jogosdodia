@@ -69,23 +69,18 @@ with tab1:
     away_fav_filtered = away_fav_data[away_fav_data['Equipe_Fora'] == equipe_away_fav][away_columns]
     overall_filtered = overall_data[overall_data['Equipe'] == equipe_home][overall_columns]
 
-    col1, col2 = st.columns(2)
-    with col1:
-        st.markdown("### 🏠 Time da Casa")
-        st.dataframe(home_filtered.reset_index(drop=True), use_container_width=True)
+    # Exibindo os dados um abaixo do outro
+    st.markdown("### 🏠 Time da Casa")
+    st.dataframe(home_filtered.reset_index(drop=True), use_container_width=True)
 
-    with col2:
-        st.markdown("### 📊 Estatísticas Gerais")
-        st.dataframe(overall_filtered.reset_index(drop=True), use_container_width=True)
+    st.markdown("### 📊 Estatísticas Gerais")
+    st.dataframe(overall_filtered.reset_index(drop=True), use_container_width=True)
 
-    col3, col4 = st.columns(2)
-    with col3:
-        st.markdown("### 🚍 Visitante (Zebra)")
-        st.dataframe(away_filtered.reset_index(drop=True), use_container_width=True)
+    st.markdown("### 🚍 Visitante (Zebra)")
+    st.dataframe(away_filtered.reset_index(drop=True), use_container_width=True)
 
-    with col4:
-        st.markdown("### ⭐ Visitante (Favorito)")
-        st.dataframe(away_fav_filtered.reset_index(drop=True), use_container_width=True)
+    st.markdown("### ⭐ Visitante (Favorito)")
+    st.dataframe(away_fav_filtered.reset_index(drop=True), use_container_width=True)
 
 # ============================================================
 # ABA 2 - H2H - FIRST GOAL
@@ -111,10 +106,8 @@ with tab2:
         else:
             st.warning(f"Nenhuma estatística encontrada para {team_name} ({local})")
 
-    col5, col6 = st.columns(2)
+    st.markdown("### 🏠 Time da Casa (Primeiro Gol)")
+    show_team_stats(team1, home_fg_df, 'Team_Home', 'Casa')
 
-    with col5:
-        show_team_stats(team1, home_fg_df, 'Team_Home', 'Casa')
-
-    with col6:
-        show_team_stats(team2, away_fg_df, 'Team_Away', 'Fora')
+    st.markdown("### 📊 Time Visitante (Primeiro Gol)")
+    show_team_stats(team2, away_fg_df, 'Team_Away', 'Fora')
