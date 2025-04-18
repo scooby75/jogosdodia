@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 
-#st.set_page_config(page_title="Análise Geral e H2H - First Goal", layout="wide")
+st.set_page_config(page_title="Análise Geral e H2H - First Goal", layout="wide")
 
 # ----------------------------
 # FUNÇÕES DE CARREGAMENTO
@@ -32,7 +32,7 @@ def load_first_goal_data():
 # ----------------------------
 # INÍCIO DO APP
 # ----------------------------
-st.title("📈 Painel de Análise de Equipes e H2H - First Goal")
+#st.title("📈 Painel de Análise de Equipes e H2H - First Goal")
 
 tab1, tab2 = st.tabs(["🔍 Análise Geral", "⚽ H2H - Primeiro Gol"])
 
