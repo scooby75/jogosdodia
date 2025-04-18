@@ -58,10 +58,10 @@ with tab1:
     away_columns = ["Liga", "PIA", "PIA_HA", "GD_Away", "PPG_Away", "GF_AVG_Away", "Odd_Justa_MO", "Odd_Justa_HA", "Rank_Away"]
     overall_columns = ["Liga", "PIO", "PIO_HA", "GD_Overall", "PPG_Overall", "GF_AVG_Overall", "Odd_Justa_MO", "Odd_Justa_HA", "Rank_Overall"]
 
-    # Seleção de times
-    equipe_home = st.sidebar.selectbox("Selecione o Time da Casa:", sorted(home_data['Equipe'].dropna().unique()))
-    equipe_away = st.sidebar.selectbox("Selecione o Time Visitante:", sorted(away_data['Equipe_Fora'].dropna().unique()))
-    equipe_away_fav = st.sidebar.selectbox("Time Visitante (Favorito):", sorted(away_fav_data['Equipe_Fora'].dropna().unique()))
+    # Barra de pesquisa na aba Análise Geral
+    equipe_home = st.selectbox("🔍 Selecione o Time da Casa:", sorted(home_data['Equipe'].dropna().unique()))
+    equipe_away = st.selectbox("🔍 Selecione o Time Visitante:", sorted(away_data['Equipe_Fora'].dropna().unique()))
+    equipe_away_fav = st.selectbox("🔍 Time Visitante (Favorito):", sorted(away_fav_data['Equipe_Fora'].dropna().unique()))
 
     # Filtro
     home_filtered = home_data[home_data['Equipe'] == equipe_home][home_columns]
