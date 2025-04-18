@@ -78,68 +78,7 @@ if not (missing_columns_home or missing_columns_away or missing_columns_away_fav
         sorted(away_fav_data[away_fav_team_col].unique())
     )
 
-    # Filtros independentes para PIH e PIA
-    pih_min, pih_max = st.sidebar.slider("1x2 (Home)", float(home_data["PIH"].min()), float(home_data["PIH"].max()), (0.0, 1.0))
-    pia_min, pia_max = st.sidebar.slider("1x2 (Away)", float(away_data["PIA"].min()), float(away_data["PIA"].max()), (0.0, 1.0))
 
-    # Aplicar filtros de PIH e PIA nos datasets completos
-    home_filtered_pih = home_data[
-        (home_data["PIH"] >= pih_min) & 
-        (home_data["PIH"] <= pih_max)
-    ][[home_team_col] + required_columns_home]
-
-    away_filtered_pia = away_data[
-        (away_data["PIA"] >= pia_min) & 
-        (away_data["PIA"] <= pia_max)
-    ][[away_team_col] + required_columns_away]
-
-    # Filtros independentes para PIH_HA e PIA_HA
-    piha_min, piha_max = st.sidebar.slider("HA +0.25 (Home)", float(home_data["PIH_HA"].min()), float(home_data["PIH_HA"].max()), (0.0, 1.0))
-    piah_min, piah_max = st.sidebar.slider("HA +0.25 (Away)", float(away_data["PIA_HA"].min()), float(away_data["PIA_HA"].max()), (0.0, 1.0))
-
-    home_filtered_piha = home_data[
-        (home_data["PIH_HA"] >= piha_min) & 
-        (home_data["PIH_HA"] <= piha_max) 
-    ][[home_team_col] + required_columns_home]
-
-    away_filtered_piah = away_data[
-        (away_data["PIA_HA"] >= piah_min) & 
-        (away_data["PIA_HA"] <= piah_max)
-    ][[away_team_col] + required_columns_away]
-
-    # Filtrar os dados para as equipes selecionadas
-    home_filtered_team = home_data[home_data[home_team_col] == equipe_home][required_columns_home]
-    away_filtered_team = away_data[away_data[away_team_col] == equipe_away][required_columns_away]
-    away_fav_filtered_team = away_fav_data[away_fav_data[away_fav_team_col] == equipe_away_fav][required_columns_away]
-    overall_filtered_team = overall_stats_data[overall_stats_data[overall_stats_col] == equipe_home][required_columns_overall]
-
-    # Filtros independentes para GF_AVG_Home (Média de Gols Casa)
-    gf_avg_home_min, gf_avg_home_max = st.sidebar.slider(
-        "Média de Gols (Home)", 
-        float(home_data["GF_AVG_Home"].min()), 
-        float(home_data["GF_AVG_Home"].max()), 
-        (home_data["GF_AVG_Home"].min(), home_data["GF_AVG_Home"].max())
-    )
-    
-    # Filtrar os dados de acordo com GF_AVG_Home
-    home_filtered_gf_avg = home_data[
-        (home_data["GF_AVG_Home"] >= gf_avg_home_min) & 
-        (home_data["GF_AVG_Home"] <= gf_avg_home_max)
-    ][[home_team_col] + required_columns_home]
-    
-    # Filtros independentes para GF_AVG_Away (Média de Gols Visitante)
-    gf_avg_away_min, gf_avg_away_max = st.sidebar.slider(
-        "Média de Gols (Away)", 
-        float(away_data["GF_AVG_Away"].min()), 
-        float(away_data["GF_AVG_Away"].max()), 
-        (away_data["GF_AVG_Away"].min(), away_data["GF_AVG_Away"].max())
-    )
-    
-    # Filtrar os dados de acordo com GF_AVG_Away
-    away_filtered_gf_avg = away_data[
-        (away_data["GF_AVG_Away"] >= gf_avg_away_min) & 
-        (away_data["GF_AVG_Away"] <= gf_avg_away_max)
-    ][[away_team_col] + required_columns_away]
 
     # Exibir os dados
     st.subheader("Overall")
@@ -154,24 +93,7 @@ if not (missing_columns_home or missing_columns_away or missing_columns_away_fav
     st.subheader("Away (Favorito)")
     st.dataframe(away_fav_filtered_team.reset_index(drop=True))
 
-    st.subheader("1x2 (Home)")
-    st.dataframe(home_filtered_pih.reset_index(drop=True))
-
-    st.subheader("1x2 (Away)")
-    st.dataframe(away_filtered_pia.reset_index(drop=True))
-    
-    st.subheader("HA +0.25 (Home)")
-    st.dataframe(home_filtered_piha.reset_index(drop=True))
-
-    st.subheader("HA +0.25 (Away)")
-    st.dataframe(away_filtered_piah.reset_index(drop=True))
-
-    # Exibir os dados filtrados
-    st.subheader("Média de Gols (Casa)")
-    st.dataframe(home_filtered_gf_avg.reset_index(drop=True))
-    
-    st.subheader("Média de Gols (Away)")
-    st.dataframe(away_filtered_gf_avg.reset_index(drop=True))
+  
 
 else:
     st.error("Corrija os problemas com as colunas ausentes antes de prosseguir.")
