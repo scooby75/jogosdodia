@@ -124,8 +124,8 @@ with tab4:
         else:
             st.warning(f"Nenhuma estatística encontrada para {team_name} ({local})")
 
-    st.markdown("### Home")
+    #st.markdown("### Home")
     show_team_stats(team1, home_fg_df, 'Team_Home', 'Casa')
 
-    st.markdown("### Away")
+    #st.markdown("### Away")
     show_team_stats(team2, away_fg_df, 'Team_Away', 'Fora')
