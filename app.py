@@ -6,10 +6,6 @@ home_url = "https://raw.githubusercontent.com/scooby75/jogosdodia/refs/heads/mai
 away_url = "https://raw.githubusercontent.com/scooby75/jogosdodia/refs/heads/main/equipes_fora.csv"
 away_fav_url = "https://raw.githubusercontent.com/scooby75/jogosdodia/refs/heads/main/equipes_fora_Favorito.csv"
 overall_stats_url = "https://raw.githubusercontent.com/scooby75/jogosdodia/refs/heads/main/overall_stats.csv"
-sf_home = "https://raw.githubusercontent.com/scooby75/jogosdodia/refs/heads/main/scored_first_home.csv"
-sf_away = "https://raw.githubusercontent.com/scooby75/jogosdodia/refs/heads/main/scored_first_away.csv"
-
-
 
 # Função para carregar os dados
 @st.cache_data
@@ -22,7 +18,7 @@ away_data = load_data(away_url)
 away_fav_data = load_data(away_fav_url)
 overall_stats_data = load_data(overall_stats_url)
 
-# Função para normalizar os nomes das colunas (remove espaços extras, etc.)
+# Função para normalizar os nomes das colunas
 def normalize_columns(df):
     df.columns = df.columns.str.strip()
     return df
@@ -78,7 +74,11 @@ if not (missing_columns_home or missing_columns_away or missing_columns_away_fav
         sorted(away_fav_data[away_fav_team_col].unique())
     )
 
-
+    # Filtrar os dados
+    home_filtered_team = home_data[home_data[home_team_col] == equipe_home]
+    away_filtered_team = away_data[away_data[away_team_col] == equipe_away]
+    away_fav_filtered_team = away_fav_data[away_fav_data[away_fav_team_col] == equipe_away_fav]
+    overall_filtered_team = overall_stats_data[overall_stats_data[overall_stats_col] == equipe_home]  # Supondo que "Overall" siga o time da casa
 
     # Exibir os dados
     st.subheader("Overall")
@@ -92,8 +92,6 @@ if not (missing_columns_home or missing_columns_away or missing_columns_away_fav
 
     st.subheader("Away (Favorito)")
     st.dataframe(away_fav_filtered_team.reset_index(drop=True))
-
-  
 
 else:
     st.error("Corrija os problemas com as colunas ausentes antes de prosseguir.")
