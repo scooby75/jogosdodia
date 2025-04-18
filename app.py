@@ -40,7 +40,7 @@ tab1, tab2 = st.tabs(["🔍 Análise Geral", "⚽ H2H - Primeiro Gol"])
 # ABA 1 - ANÁLISE GERAL
 # ============================================================
 with tab1:
-    st.subheader("📊 Análise Geral por Equipe")
+    st.subheader("Análise Geral por Equipe")
 
     home_data, away_data, away_fav_data, overall_data = load_all_data()
 
@@ -70,44 +70,44 @@ with tab1:
     overall_filtered = overall_data[overall_data['Equipe'] == equipe_home][overall_columns]
 
     # Exibindo os dados um abaixo do outro
-    st.markdown("### 🏠 Time da Casa")
+    st.markdown("### Time da Casa")
     st.dataframe(home_filtered.reset_index(drop=True), use_container_width=True)
 
-    st.markdown("### 📊 Estatísticas Gerais")
+    st.markdown("### Overall")
     st.dataframe(overall_filtered.reset_index(drop=True), use_container_width=True)
 
-    st.markdown("### 🚍 Visitante (Zebra)")
+    st.markdown("### Visitante (Zebra)")
     st.dataframe(away_filtered.reset_index(drop=True), use_container_width=True)
 
-    st.markdown("### ⭐ Visitante (Favorito)")
+    st.markdown("### Visitante (Favorito)")
     st.dataframe(away_fav_filtered.reset_index(drop=True), use_container_width=True)
 
 # ============================================================
 # ABA 2 - H2H - FIRST GOAL
 # ============================================================
 with tab2:
-    st.subheader("⚽ Head-to-Head - Primeiro Gol")
+    st.subheader(" First Goal")
 
     home_fg_df, away_fg_df = load_first_goal_data()
 
     teams_home = sorted(home_fg_df['Team_Home'].dropna().unique())
     teams_away = sorted(away_fg_df['Team_Away'].dropna().unique())
 
-    team1 = st.selectbox("🔵 Time da Casa (First Goal)", teams_home)
-    team2 = st.selectbox("🔴 Time Visitante (First Goal)", teams_away)
+    team1 = st.selectbox("Home", teams_home)
+    team2 = st.selectbox("Away", teams_away)
 
     def show_team_stats(team_name, df, col_name, local):
         stats = df[df[col_name] == team_name]
         if not stats.empty:
-            st.markdown(f"### 📊 {team_name} ({local})")
+            st.markdown(f"### {team_name} ({local})")
             selected_cols = ['Matches', 'First_Gol', 'Goals', 'PPG']
             display_stats = stats[selected_cols] if all(col in stats.columns for col in selected_cols) else stats
             st.dataframe(display_stats.reset_index(drop=True), use_container_width=True)
         else:
             st.warning(f"Nenhuma estatística encontrada para {team_name} ({local})")
 
-    st.markdown("### 🏠 Time da Casa (Primeiro Gol)")
+    st.markdown("### Home")
     show_team_stats(team1, home_fg_df, 'Team_Home', 'Casa')
 
-    st.markdown("### 📊 Time Visitante (Primeiro Gol)")
+    st.markdown("### Away")
     show_team_stats(team2, away_fg_df, 'Team_Away', 'Fora')
