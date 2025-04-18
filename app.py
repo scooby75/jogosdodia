@@ -34,13 +34,13 @@ def load_first_goal_data():
 # ----------------------------
 #st.title("📈 Painel de Análise de Equipes e H2H - First Goal")
 
-tab1, tab2 = st.tabs(["🔍 Análise Geral", "⚽ H2H - Primeiro Gol"])
+tab1, tab2 = st.tabs(["🔍 H2H", "⚽ First Goal"])
 
 # ============================================================
 # ABA 1 - ANÁLISE GERAL
 # ============================================================
 with tab1:
-    st.subheader("Análise Geral por Equipe")
+    st.subheader("H2H")
 
     home_data, away_data, away_fav_data, overall_data = load_all_data()
 
@@ -86,7 +86,7 @@ with tab1:
 # ABA 2 - H2H - FIRST GOAL
 # ============================================================
 with tab2:
-    st.subheader(" First Goal")
+    st.subheader("First Goal")
 
     home_fg_df, away_fg_df = load_first_goal_data()
 
