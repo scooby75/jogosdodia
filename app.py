@@ -72,33 +72,33 @@ overall_filtered = overall_data[overall_data['Equipe'] == equipe_home][overall_c
 # ABA 1 - ANÁLISE HOME
 # ============================================================
 with tab1:
-    st.subheader("🏠 Análise Home")
-    st.markdown("### Resultado Home/Home")
+    
+    st.markdown("### Home")
     st.dataframe(home_filtered.reset_index(drop=True), use_container_width=True)
 
-    st.markdown("### Resultado Away/Away")
+    st.markdown("### Away")
     st.dataframe(away_filtered.reset_index(drop=True), use_container_width=True)
 
 # ============================================================
 # ABA 2 - ANÁLISE GERAL
 # ============================================================
 with tab2:
-    st.subheader("📊 Análise Geral")
-    st.markdown("### Resultado Home/Overall")
+    
+    st.markdown("### Home")
     st.dataframe(overall_filtered.reset_index(drop=True), use_container_width=True)
 
-    st.markdown("### Resultado Away/Away")
+    st.markdown("### Away")
     st.dataframe(away_filtered.reset_index(drop=True), use_container_width=True)
 
 # ============================================================
 # ABA 3 - ANÁLISE AWAY
 # ============================================================
 with tab3:
-    st.subheader("🛫 Análise Away")
-    st.markdown("### Resultado Away Favorito")
+    
+    st.markdown("### Away")
     st.dataframe(away_fav_filtered.reset_index(drop=True), use_container_width=True)
 
-    st.markdown("### Resultado Home/Home")
+    st.markdown("### Home")
     st.dataframe(home_filtered.reset_index(drop=True), use_container_width=True)
 
 # ============================================================
