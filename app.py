@@ -105,7 +105,7 @@ with tab3:
 # ABA 4 - FIRST GOAL
 # ============================================================
 with tab4:
-    st.subheader("⚽ First Goal")
+    #st.subheader("⚽ First Goal")
 
     home_fg_df, away_fg_df = load_first_goal_data()
     teams_home = sorted(home_fg_df['Team_Home'].dropna().unique())
