@@ -70,16 +70,16 @@ with tab1:
     overall_filtered = overall_data[overall_data['Equipe'] == equipe_home][overall_columns]
 
     # Exibindo os dados um abaixo do outro
-    st.markdown("### Time da Casa")
+    st.markdown("### Home/Home")
     st.dataframe(home_filtered.reset_index(drop=True), use_container_width=True)
 
-    st.markdown("### Overall")
+    st.markdown("### Home/Overall")
     st.dataframe(overall_filtered.reset_index(drop=True), use_container_width=True)
 
-    st.markdown("### Visitante (Zebra)")
+    st.markdown("### Away/Away")
     st.dataframe(away_filtered.reset_index(drop=True), use_container_width=True)
 
-    st.markdown("### Visitante (Favorito)")
+    st.markdown("### Away (Favorito)")
     st.dataframe(away_fav_filtered.reset_index(drop=True), use_container_width=True)
 
 # ============================================================
