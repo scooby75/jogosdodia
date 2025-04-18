@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 
-st.set_page_config(page_title="Análise Geral e H2H - First Goal", layout="wide")
+#st.set_page_config(page_title="Análise Geral e H2H - First Goal", layout="wide")
 
 # ----------------------------
 # FUNÇÕES DE CARREGAMENTO
