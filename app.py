@@ -1,110 +1,113 @@
 import streamlit as st
 import pandas as pd
 
-# URLs dos arquivos CSV
-home_url = "https://raw.githubusercontent.com/scooby75/jogosdodia/refs/heads/main/equipes_casa.csv"
-away_url = "https://raw.githubusercontent.com/scooby75/jogosdodia/refs/heads/main/equipes_fora.csv"
-away_fav_url = "https://raw.githubusercontent.com/scooby75/jogosdodia/refs/heads/main/equipes_fora_Favorito.csv"
-overall_stats_url = "https://raw.githubusercontent.com/scooby75/jogosdodia/refs/heads/main/overall_stats.csv"
-sf_home = "https://raw.githubusercontent.com/scooby75/jogosdodia/refs/heads/main/scored_first_home.csv"
-sf_away = "https://raw.githubusercontent.com/scooby75/jogosdodia/refs/heads/main/scored_first_away.csv"
+st.set_page_config(page_title="Análise Geral e H2H - First Goal", layout="wide")
 
-# Função para carregar os dados
+# ----------------------------
+# FUNÇÕES DE CARREGAMENTO
+# ----------------------------
 @st.cache_data
-def load_data(url):
+def load_csv(url):
     return pd.read_csv(url)
 
-# Carregar os dados das URLs
-home_data = load_data(home_url)
-away_data = load_data(away_url)
-away_fav_data = load_data(away_fav_url)
-overall_stats_data = load_data(overall_stats_url)
-
-# Função para normalizar os nomes das colunas (remove espaços extras, etc.)
-def normalize_columns(df):
-    df.columns = df.columns.str.strip()
-    return df
-
-# Normalizar os nomes das colunas
-home_data = normalize_columns(home_data)
-away_data = normalize_columns(away_data)
-away_fav_data = normalize_columns(away_fav_data)
-overall_stats_data = normalize_columns(overall_stats_data)
-
-# Definir as colunas principais para filtragem
-home_team_col = "Equipe"
-away_team_col = "Equipe_Fora"
-away_fav_team_col = "Equipe_Fora"
-overall_stats_col = "Equipe"
-
-# Listar as colunas necessárias para cada dataset
-required_columns_home = ["GP", "Liga","PIH", "PIH_HA", "Rank_Home", "PPG_Home", "Odd_Justa_MO", "Odd_Justa_HA", "GF_AVG_Home", "GD_Home", "Pts_Home"]
-required_columns_away = ["GP", "Liga","PIA", "PIA_HA", "Rank_Away", "PPG_Away", "Odd_Justa_MO", "Odd_Justa_HA", "GF_AVG_Away", "GD_Away", "Pts_Away"]
-required_columns_overall = ["GP", "Liga","PIO", "PIO_HA", "Rank_Overall", "PPG_Overall", "Odd_Justa_MO", "Odd_Justa_HA", "GF_AVG_Overall", "GD_Overall", "Pts_Overall"]
-
-# Verificar se as colunas necessárias estão presentes
-missing_columns_home = [col for col in required_columns_home if col not in home_data.columns]
-missing_columns_away = [col for col in required_columns_away if col not in away_data.columns]
-missing_columns_away_fav = [col for col in required_columns_away if col not in away_fav_data.columns]
-missing_columns_overall = [col for col in required_columns_overall if col not in overall_stats_data.columns]
-
-# Exibir mensagens de erro se houver colunas ausentes
-if missing_columns_home:
-    st.error(f"Colunas ausentes no dataset Home: {missing_columns_home}")
-if missing_columns_away:
-    st.error(f"Colunas ausentes no dataset Away: {missing_columns_away}")
-if missing_columns_away_fav:
-    st.error(f"Colunas ausentes no dataset Away (Favorito): {missing_columns_away_fav}")
-if missing_columns_overall:
-    st.error(f"Colunas ausentes no dataset Overall: {missing_columns_overall}")
-
-# Prosseguir apenas se não houver colunas ausentes
-if not (missing_columns_home or missing_columns_away or missing_columns_away_fav or missing_columns_overall):
-    # Filtros para seleção de equipes
-    equipe_home = st.sidebar.selectbox(
-        "Selecione a equipe Home:",
-        sorted(home_data[home_team_col].unique())
+@st.cache_data
+def load_all_data():
+    home_url = "https://raw.githubusercontent.com/scooby75/jogosdodia/refs/heads/main/equipes_casa.csv"
+    away_url = "https://raw.githubusercontent.com/scooby75/jogosdodia/refs/heads/main/equipes_fora.csv"
+    away_fav_url = "https://raw.githubusercontent.com/scooby75/jogosdodia/refs/heads/main/equipes_fora_Favorito.csv"
+    overall_url = "https://raw.githubusercontent.com/scooby75/jogosdodia/refs/heads/main/overall_stats.csv"
+    return (
+        load_csv(home_url),
+        load_csv(away_url),
+        load_csv(away_fav_url),
+        load_csv(overall_url),
     )
 
-    equipe_away = st.sidebar.selectbox(
-        "Selecione a equipe Away:",
-        sorted(away_data[away_team_col].unique())
-    )
+@st.cache_data
+def load_first_goal_data():
+    home_url = 'https://raw.githubusercontent.com/scooby75/firstgoal/main/scored_first_home.csv'
+    away_url = 'https://raw.githubusercontent.com/scooby75/firstgoal/main/scored_first_away.csv'
+    return load_csv(home_url), load_csv(away_url)
 
-    equipe_away_fav = st.sidebar.selectbox(
-        "Selecione a equipe Away (Favorito):",
-        sorted(away_fav_data[away_fav_team_col].unique())
-    )
+# ----------------------------
+# INÍCIO DO APP
+# ----------------------------
+st.title("📈 Painel de Análise de Equipes e H2H - First Goal")
 
-    # Filtrar os dados
-    home_filtered_team = home_data[home_data[home_team_col] == equipe_home]
-    away_filtered_team = away_data[away_data[away_team_col] == equipe_away]
-    away_fav_filtered_team = away_fav_data[away_fav_data[away_fav_team_col] == equipe_away_fav]
-    overall_filtered_team = overall_stats_data[overall_stats_data[overall_stats_col] == equipe_home]
+tab1, tab2 = st.tabs(["🔍 Análise Geral", "⚽ H2H - Primeiro Gol"])
 
-    # Colunas a serem exibidas por seção
+# ============================================================
+# ABA 1 - ANÁLISE GERAL
+# ============================================================
+with tab1:
+    st.subheader("📊 Análise Geral por Equipe")
+
+    home_data, away_data, away_fav_data, overall_data = load_all_data()
+
+    def normalize_columns(df):
+        df.columns = df.columns.str.strip()
+        return df
+
+    home_data = normalize_columns(home_data)
+    away_data = normalize_columns(away_data)
+    away_fav_data = normalize_columns(away_fav_data)
+    overall_data = normalize_columns(overall_data)
+
+    # Colunas obrigatórias
     home_columns = ["Liga", "PIH", "PIH_HA", "GD_Home", "PPG_Home", "GF_AVG_Home", "Odd_Justa_MO", "Odd_Justa_HA", "Rank_Home"]
     away_columns = ["Liga", "PIA", "PIA_HA", "GD_Away", "PPG_Away", "GF_AVG_Away", "Odd_Justa_MO", "Odd_Justa_HA", "Rank_Away"]
     overall_columns = ["Liga", "PIO", "PIO_HA", "GD_Overall", "PPG_Overall", "GF_AVG_Overall", "Odd_Justa_MO", "Odd_Justa_HA", "Rank_Overall"]
 
-    # Aplicar filtros de colunas
-    home_filtered_team = home_filtered_team[home_columns]
-    away_filtered_team = away_filtered_team[away_columns]
-    away_fav_filtered_team = away_fav_filtered_team[away_columns]
-    overall_filtered_team = overall_filtered_team[overall_columns]
+    # Seleção de times
+    equipe_home = st.sidebar.selectbox("Selecione o Time da Casa:", sorted(home_data['Equipe'].dropna().unique()))
+    equipe_away = st.sidebar.selectbox("Selecione o Time Visitante:", sorted(away_data['Equipe_Fora'].dropna().unique()))
+    equipe_away_fav = st.sidebar.selectbox("Time Visitante (Favorito):", sorted(away_fav_data['Equipe_Fora'].dropna().unique()))
 
-    # Exibir os dados
-    st.subheader("Overall")
-    st.dataframe(overall_filtered_team.reset_index(drop=True))
+    # Filtro
+    home_filtered = home_data[home_data['Equipe'] == equipe_home][home_columns]
+    away_filtered = away_data[away_data['Equipe_Fora'] == equipe_away][away_columns]
+    away_fav_filtered = away_fav_data[away_fav_data['Equipe_Fora'] == equipe_away_fav][away_columns]
+    overall_filtered = overall_data[overall_data['Equipe'] == equipe_home][overall_columns]
 
-    st.subheader("Home")
-    st.dataframe(home_filtered_team.reset_index(drop=True))
+    # Exibindo os dados um abaixo do outro
+    st.markdown("### 🏠 Time da Casa")
+    st.dataframe(home_filtered.reset_index(drop=True), use_container_width=True)
 
-    st.subheader("Away (Zebra)")
-    st.dataframe(away_filtered_team.reset_index(drop=True))
+    st.markdown("### 📊 Estatísticas Gerais")
+    st.dataframe(overall_filtered.reset_index(drop=True), use_container_width=True)
 
-    st.subheader("Away (Favorito)")
-    st.dataframe(away_fav_filtered_team.reset_index(drop=True))
+    st.markdown("### 🚍 Visitante (Zebra)")
+    st.dataframe(away_filtered.reset_index(drop=True), use_container_width=True)
 
-else:
-    st.error("Corrija os problemas com as colunas ausentes antes de prosseguir.")
+    st.markdown("### ⭐ Visitante (Favorito)")
+    st.dataframe(away_fav_filtered.reset_index(drop=True), use_container_width=True)
+
+# ============================================================
+# ABA 2 - H2H - FIRST GOAL
+# ============================================================
+with tab2:
+    st.subheader("⚽ Head-to-Head - Primeiro Gol")
+
+    home_fg_df, away_fg_df = load_first_goal_data()
+
+    teams_home = sorted(home_fg_df['Team_Home'].dropna().unique())
+    teams_away = sorted(away_fg_df['Team_Away'].dropna().unique())
+
+    team1 = st.selectbox("🔵 Time da Casa (First Goal)", teams_home)
+    team2 = st.selectbox("🔴 Time Visitante (First Goal)", teams_away)
+
+    def show_team_stats(team_name, df, col_name, local):
+        stats = df[df[col_name] == team_name]
+        if not stats.empty:
+            st.markdown(f"### 📊 {team_name} ({local})")
+            selected_cols = ['Matches', 'First_Gol', 'Goals', 'PPG']
+            display_stats = stats[selected_cols] if all(col in stats.columns for col in selected_cols) else stats
+            st.dataframe(display_stats.reset_index(drop=True), use_container_width=True)
+        else:
+            st.warning(f"Nenhuma estatística encontrada para {team_name} ({local})")
+
+    st.markdown("### 🏠 Time da Casa (Primeiro Gol)")
+    show_team_stats(team1, home_fg_df, 'Team_Home', 'Casa')
+
+    st.markdown("### 📊 Time Visitante (Primeiro Gol)")
+    show_team_stats(team2, away_fg_df, 'Team_Away', 'Fora')
