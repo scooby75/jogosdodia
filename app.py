@@ -172,14 +172,16 @@ with tab5:
 # ABA 6 - GOALS_HALF
 # ============================================================
 with tab6:
-    # Filtrar dados da aba Goals Half
+    # Filtrar dados da aba Goals Half para os times selecionados
     goals_half_filtered = goals_half_df[
         (goals_half_df['Team'] == equipe_home_global) | (goals_half_df['Team'] == equipe_away_global)
     ]
     
     if not goals_half_filtered.empty:
-       #st.markdown(f"### Goals Half - {equipe_home_global} x {equipe_away_global}")
-        st.dataframe(goals_half_filtered.reset_index(drop=True), use_container_width=True)
+        st.markdown(f"### Goals Half - {equipe_home_global} x {equipe_away_global}")
+        # Selecionando as colunas específicas: League_Name, Team, Scored, 1st half, 2nd half
+        goals_half_display = goals_half_filtered[['League_Name', 'Team', 'Scored', '1st half', '2nd half']]
+        st.dataframe(goals_half_display.reset_index(drop=True), use_container_width=True)
     else:
         st.warning(f"Nenhuma estatística de Goals Half encontrada para os times {equipe_home_global} e {equipe_away_global}.")
 
