@@ -54,7 +54,7 @@ tab1, tab2, tab3, tab4, tab5, tab6 = st.tabs([
     "🛫 Análise Away", 
     "⚽ First Goal",
     "⏱️ Goals_Minute",
-    "⚽ Goals Half"
+    "⚡ Goals Half"
 ])
 
 # Carregar dados
@@ -169,11 +169,19 @@ with tab5:
         st.warning("Nenhum dado encontrado para o time visitante selecionado.")
 
 # ============================================================
-# ABA 6 - GOALS HALF
+# ABA 6 - GOALS_HALF
 # ============================================================
 with tab6:
-    st.markdown("### Goals Half - Estatísticas de Gols por Tempo")
-    st.dataframe(goals_half_df.reset_index(drop=True), use_container_width=True)
+    # Filtrar dados da aba Goals Half
+    goals_half_filtered = goals_half_df[
+        (goals_half_df['Team'] == equipe_home_global) | (goals_half_df['Team'] == equipe_away_global)
+    ]
+    
+    if not goals_half_filtered.empty:
+        st.markdown(f"### Goals Half - {equipe_home_global} x {equipe_away_global}")
+        st.dataframe(goals_half_filtered.reset_index(drop=True), use_container_width=True)
+    else:
+        st.warning(f"Nenhuma estatística de Goals Half encontrada para os times {equipe_home_global} e {equipe_away_global}.")
 
 # Iniciar o servidor Streamlit com a variável de ambiente PORT
 if __name__ == "__main__":
