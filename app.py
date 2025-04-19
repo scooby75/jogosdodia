@@ -135,7 +135,7 @@ with tab4:
 # ABA 5 - GOALS_MINUTE
 # ============================================================
 with tab5:
-    st.markdown("### ⏱️ Tempo Médio do 1º Gol - Time da Casa")
+    #st.markdown("### ⏱️ Tempo Médio do 1º Gol - Time da Casa")
     
     teams_minute = sorted(goal_minute_df['Home'].dropna().unique())
     selected_team = st.selectbox("Selecione o Time:", teams_minute)
