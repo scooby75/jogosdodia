@@ -31,8 +31,11 @@ def load_first_goal_data():
 
 @st.cache_data
 def load_goal_minute_data():
-    url = "https://raw.githubusercontent.com/scooby75/jogosdodia/refs/heads/main/momento_do_gol_home.csv"
-    return pd.read_csv(url)
+    home_url = "https://raw.githubusercontent.com/scooby75/jogosdodia/refs/heads/main/momento_do_gol_home.csv"
+    away_url = "https://raw.githubusercontent.com/scooby75/jogosdodia/refs/heads/main/momento_do_gol_away.csv"
+    home_data = pd.read_csv(home_url)
+    away_data = pd.read_csv(away_url)
+    return home_data, away_data
 
 # ----------------------------
 # INÍCIO DO APP
@@ -49,7 +52,7 @@ tab1, tab2, tab3, tab4, tab5 = st.tabs([
 # Carregar dados
 home_data, away_data, away_fav_data, overall_data = load_all_data()
 home_fg_df, away_fg_df = load_first_goal_data()
-goal_minute_df = load_goal_minute_data()
+goal_minute_home_df, goal_minute_away_df = load_goal_minute_data()
 
 # Normalizar colunas
 def normalize_columns(df):
@@ -60,7 +63,8 @@ home_data = normalize_columns(home_data)
 away_data = normalize_columns(away_data)
 away_fav_data = normalize_columns(away_fav_data)
 overall_data = normalize_columns(overall_data)
-goal_minute_df = normalize_columns(goal_minute_df)
+goal_minute_home_df = normalize_columns(goal_minute_home_df)
+goal_minute_away_df = normalize_columns(goal_minute_away_df)
 
 # Colunas obrigatórias
 home_columns = ["Liga", "PIH", "PIH_HA", "GD_Home", "PPG_Home", "GF_AVG_Home", "Odd_Justa_MO", "Odd_Justa_HA", "Rank_Home"]
@@ -74,7 +78,8 @@ all_teams = sorted(set(home_data['Equipe'].dropna()) |
                    set(overall_data['Equipe'].dropna()) |
                    set(home_fg_df['Team_Home'].dropna()) |
                    set(away_fg_df['Team_Away'].dropna()) |
-                   set(goal_minute_df['Home'].dropna()))
+                   set(goal_minute_home_df['Home'].dropna()) |
+                   set(goal_minute_away_df['Away'].dropna()))
 
 # Seletores globais
 equipe_home_global = st.sidebar.selectbox("🏠 Time da Casa:", all_teams)
@@ -137,10 +142,18 @@ with tab4:
 # ABA 5 - GOALS_MINUTE
 # ============================================================
 with tab5:
-    team_data = goal_minute_df[goal_minute_df['Home'] == equipe_home_global]
-
-    if not team_data.empty:
-        avg_minute = team_data['AVG_min_scored'].values[0]
-        st.success(f"**{equipe_home_global}** marca seu primeiro gol em média aos **{avg_minute:.1f} minutos**.")
+    # Dados para o time da casa
+    home_team_data = goal_minute_home_df[goal_minute_home_df['Home'] == equipe_home_global]
+    if not home_team_data.empty:
+        avg_minute_home = home_team_data['AVG_min_scored'].values[0]
+        st.success(f"**{equipe_home_global}** marca seu primeiro gol em média aos **{avg_minute_home:.1f} minutos**.")
     else:
-        st.warning("Nenhum dado encontrado para o time selecionado.")
+        st.warning("Nenhum dado encontrado para o time da casa selecionado.")
+
+    # Dados para o time visitante
+    away_team_data = goal_minute_away_df[goal_minute_away_df['Away'] == equipe_away_global]
+    if not away_team_data.empty:
+        avg_minute_away = away_team_data['AVG_min_scored'].values[0]
+        st.success(f"**{equipe_away_global}** marca seu primeiro gol em média aos **{avg_minute_away:.1f} minutos**.")
+    else:
+        st.warning("Nenhum dado encontrado para o time visitante selecionado.")
