@@ -146,7 +146,7 @@ with tab5:
     home_team_data = goal_minute_home_df[goal_minute_home_df['Home'] == equipe_home_global]
     if not home_team_data.empty:
         avg_minute_home = home_team_data['AVG_min_scored'].values[0]
-        st.success(f"**{equipe_home_global}** marca seu primeiro gol em média aos **{avg_minute_home:.1f} minutos**.")
+        st.success(f"Jogando em casa **{equipe_home_global}** marca seu primeiro gol em média aos **{avg_minute_home:.1f} minutos**.")
     else:
         st.warning("Nenhum dado encontrado para o time da casa selecionado.")
 
@@ -154,6 +154,6 @@ with tab5:
     away_team_data = goal_minute_away_df[goal_minute_away_df['Away'] == equipe_away_global]
     if not away_team_data.empty:
         avg_minute_away = away_team_data['AVG_min_scored'].values[0]
-        st.success(f"**{equipe_away_global}** marca seu primeiro gol em média aos **{avg_minute_away:.1f} minutos**.")
+        st.success(f"Jogando Fora **{equipe_away_global}** marca seu primeiro gol em média aos **{avg_minute_away:.1f} minutos**.")
     else:
         st.warning("Nenhum dado encontrado para o time visitante selecionado.")
