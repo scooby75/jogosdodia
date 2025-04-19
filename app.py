@@ -110,21 +110,33 @@ with tab3:
 with tab4:
     home_first_goal_data, away_first_goal_data = load_first_goal_data()
     
-    st.markdown("### Home - First Goal")
-    st.dataframe(home_first_goal_data.reset_index(drop=True), use_container_width=True)
+    # Filtrando apenas os dados do time de casa e visitante selecionados
+    home_first_goal_filtered = home_first_goal_data[home_first_goal_data['Home'] == equipe_home]
+    away_first_goal_filtered = away_first_goal_data[away_first_goal_data['Away'] == equipe_away]
+    
+    st.markdown(f"### {equipe_home} - First Goal")
+    st.dataframe(home_first_goal_filtered.reset_index(drop=True), use_container_width=True)
 
-    st.markdown("### Away - First Goal")
-    st.dataframe(away_first_goal_data.reset_index(drop=True), use_container_width=True)
+    st.markdown(f"### {equipe_away} - First Goal")
+    st.dataframe(away_first_goal_filtered.reset_index(drop=True), use_container_width=True)
 
 # ============================================================
 # ABA 5 - AVG MINUTE
 # ============================================================
 with tab5:
-    # Filtrar dados para a nova aba AVG Minute
-    if 'AVG_min_scored' in avg_min_data.columns:
-        avg_min_df = avg_min_data[['league', 'Home', 'AVG_min_scored']]
-        avg_min_df = avg_min_df.rename(columns={'league': 'Liga', 'Home': 'Equipe', 'AVG_min_scored': 'AVG Goals'})
-        st.markdown("### Média de Minutos para Gol (Home)")
-        st.dataframe(avg_min_df.reset_index(drop=True), use_container_width=True)
-    else:
-        st.warning("A coluna 'AVG_min_scored' não foi encontrada nos dados.")
+    # Filtrando apenas os dados do time de casa e visitante selecionados
+    avg_min_home_filtered = avg_min_data[avg_min_data['Home'] == equipe_home]
+    avg_min_away_filtered = avg_min_data[avg_min_data['Away'] == equipe_away]
+    
+    # Exibindo a média de minutos para gol dos times selecionados
+    if 'AVG_min_scored' in avg_min_home_filtered.columns:
+        avg_min_home_df = avg_min_home_filtered[['league', 'Home', 'AVG_min_scored']]
+        avg_min_home_df = avg_min_home_df.rename(columns={'league': 'Liga', 'Home': 'Equipe', 'AVG_min_scored': 'AVG Goals'})
+        st.markdown(f"### Média de Minutos para Gol - {equipe_home} (Home)")
+        st.dataframe(avg_min_home_df.reset_index(drop=True), use_container_width=True)
+
+    if 'AVG_min_scored' in avg_min_away_filtered.columns:
+        avg_min_away_df = avg_min_away_filtered[['league', 'Away', 'AVG_min_scored']]
+        avg_min_away_df = avg_min_away_df.rename(columns={'league': 'Liga', 'Away': 'Equipe', 'AVG_min_scored': 'AVG Goals'})
+        st.markdown(f"### Média de Minutos para Gol - {equipe_away} (Away)")
+        st.dataframe(avg_min_away_df.reset_index(drop=True), use_container_width=True)
