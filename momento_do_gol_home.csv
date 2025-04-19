@@ -148,6 +148,33 @@ Canada - Premier League,Cavalry,90.0,19.0
 Canada - Premier League,Pacific,24.0,52.0
 Canada - Premier League,Vancouver FC,66.0,55.0
 Canada - Premier League,York Utd,22.0,67.0
+China - Super League,Beijing Guoan,32.0,78.0
+China - Super League,Changchun Yatai,40.0,50.0
+China - Super League,Chengdu,44.0,54.0
+China - Super League,Dalian Yingbo,62.0,19.0
+China - Super League,Henan SL,40.0,76.0
+China - Super League,Meizhou Hakka,51.0,56.0
+China - Super League,Qingdao Hainiu,39.0,41.0
+China - Super League,Qingdao West C.,44.0,57.0
+China - Super League,S. Shenhua,54.0,42.0
+China - Super League,Shandong T.,38.0,34.0
+China - Super League,Shanghai Port,44.0,84.0
+China - Super League,Sichuan Jiuniu,55.0,46.0
+China - Super League,Tianjin T.,72.0,43.0
+China - Super League,Wuhan Three T.,51.0,36.0
+China - Super League,Yunnan Yukun,77.0,59.0
+China - Super League,Zhejiang,40.0,67.0
+China - League One,Chongqing T.,52.0,48.0
+China - League One,Foshan Nanshi,13.0,60.0
+China - League One,Guangdong GZP,50.0,33.0
+China - League One,Heilongjiang IC,72.0,41.0
+China - League One,Liaoning Tieren,47.0,33.0
+China - League One,Nanjing City,64.0,59.0
+China - League One,Nantong Zhiyun,37.0,46.0
+China - League One,Qingdao RL,49.0,90.0
+China - League One,Shaanxi Union,38.0,90.0
+China - League One,Shanghai Jiadin,42.0,71.0
+China - League One,Shenzhen J.,33.0,28.0
 Costa Rica - Primera Div. - Clausura,Alajuelense,45.0,59.0
 Costa Rica - Primera Div. - Clausura,Cartagines,45.0,43.0
 Costa Rica - Primera Div. - Clausura,Guanacasteca,47.0,29.0
@@ -887,10 +914,11 @@ South Africa - Premier Division ,Sekhukhune,57.0,41.0
 South Africa - Premier Division ,Stellenbosch,45.0,39.0
 South Africa - Premier Division ,SuperSport Utd,54.0,40.0
 South Africa - Premier Division ,TS Galaxy,49.0,57.0
-South Korea - K League 1,Anyang,64.0,37.0
+South Korea - K League 1,Anyang,58.0,37.0
 South Korea - K League 1,Daegu,60.0,40.0
 South Korea - K League 1,Daejeon Citizen,75.0,47.0
 South Korea - K League 1,Gangwon,63.0,32.0
+South Korea - K League 1,Gimcheon Sangmu,51.0,44.0
 South Korea - K League 1,Gwangju,56.0,57.0
 South Korea - K League 1,Jeju Utd,40.0,72.0
 South Korea - K League 1,Jeonbuk Motors,51.0,51.0
@@ -909,7 +937,7 @@ South Korea - K League 2,Hwaseong,79.0,57.0
 South Korea - K League 2,Incheon Utd,67.0,14.0
 South Korea - K League 2,Seongnam,52.0,39.0
 South Korea - K League 2,Seoul E-Land,46.0,62.0
-South Korea - K League 2,Suwon Bluewings,45.0,33.0
+South Korea - K League 2,Suwon Bluewings,42.0,46.0
 Spain - La Liga,Alaves,46.0,48.0
 Spain - La Liga,Athletic Bilbao,49.0,63.0
 Spain - La Liga,Atletico Madrid,64.0,51.0
