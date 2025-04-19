@@ -178,7 +178,7 @@ with tab6:
     ]
     
     if not goals_half_filtered.empty:
-        st.markdown(f"### Goals Half - {equipe_home_global} x {equipe_away_global}")
+        
         # Selecionando as colunas específicas: League_Name, Team, Scored, 1st half, 2nd half
         goals_half_display = goals_half_filtered[['League_Name', 'Team', 'Scored', '1st half', '2nd half']]
         st.dataframe(goals_half_display.reset_index(drop=True), use_container_width=True)
