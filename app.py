@@ -39,22 +39,29 @@ def load_goal_minute_data():
     away_data = pd.read_csv(away_url)
     return home_data, away_data
 
+@st.cache_data
+def load_goal_half_data():
+    url = "https://raw.githubusercontent.com/scooby75/jogosdodia/refs/heads/main/Goals_Half.csv"
+    return load_csv(url)
+
 # ---------------------------- 
 # INÍCIO DO APP
 # ----------------------------
 
-tab1, tab2, tab3, tab4, tab5 = st.tabs([
+tab1, tab2, tab3, tab4, tab5, tab6 = st.tabs([
     "🏠 Análise Home", 
     "📊 Análise Geral", 
     "🛫 Análise Away", 
     "⚽ First Goal",
-    "⏱️ Goals_Minute"
+    "⏱️ Goals_Minute",
+    "⏳ Goal_Half"
 ])
 
 # Carregar dados
 home_data, away_data, away_fav_data, overall_data = load_all_data()
 home_fg_df, away_fg_df = load_first_goal_data()
 goal_minute_home_df, goal_minute_away_df = load_goal_minute_data()
+goal_half_df = load_goal_half_data()
 
 # Normalizar colunas
 def normalize_columns(df):
@@ -67,6 +74,7 @@ away_fav_data = normalize_columns(away_fav_data)
 overall_data = normalize_columns(overall_data)
 goal_minute_home_df = normalize_columns(goal_minute_home_df)
 goal_minute_away_df = normalize_columns(goal_minute_away_df)
+goal_half_df = normalize_columns(goal_half_df)
 
 # Colunas obrigatórias
 home_columns = ["Liga", "PIH", "PIH_HA", "GD_Home", "PPG_Home", "GF_AVG_Home", "Odd_Justa_MO", "Odd_Justa_HA", "Rank_Home"]
@@ -81,7 +89,9 @@ all_teams = sorted(set(home_data['Equipe'].dropna()) |
                    set(home_fg_df['Team_Home'].dropna()) |
                    set(away_fg_df['Team_Away'].dropna()) |
                    set(goal_minute_home_df['Home'].dropna()) |
-                   set(goal_minute_away_df['Away'].dropna()))
+                   set(goal_minute_away_df['Away'].dropna()) |
+                   set(goal_half_df['Home'].dropna()) |
+                   set(goal_half_df['Away'].dropna()))
 
 # Seletores globais
 equipe_home_global = st.sidebar.selectbox("🏠 Time da Casa:", all_teams)
@@ -144,7 +154,6 @@ with tab4:
 # ABA 5 - GOALS_MINUTE
 # ============================================================
 with tab5:
-    # Dados para o time da casa
     home_team_data = goal_minute_home_df[goal_minute_home_df['Home'] == equipe_home_global]
     if not home_team_data.empty:
         avg_minute_home = home_team_data['AVG_min_scored'].values[0]
@@ -152,7 +161,6 @@ with tab5:
     else:
         st.warning("Nenhum dado encontrado para o time da casa selecionado.")
 
-    # Dados para o time visitante
     away_team_data = goal_minute_away_df[goal_minute_away_df['Away'] == equipe_away_global]
     if not away_team_data.empty:
         avg_minute_away = away_team_data['AVG_min_scored'].values[0]
@@ -160,7 +168,28 @@ with tab5:
     else:
         st.warning("Nenhum dado encontrado para o time visitante selecionado.")
 
+# ============================================================
+# ABA 6 - GOAL_HALF
+# ============================================================
+with tab6:
+    st.markdown("### Gols por Tempo")
+
+    home_half = goal_half_df[goal_half_df['Home'] == equipe_home_global]
+    away_half = goal_half_df[goal_half_df['Away'] == equipe_away_global]
+
+    if not home_half.empty:
+        st.subheader(f"{equipe_home_global} (Casa)")
+        st.dataframe(home_half.reset_index(drop=True), use_container_width=True)
+    else:
+        st.warning(f"Nenhum dado encontrado para {equipe_home_global} como mandante.")
+
+    if not away_half.empty:
+        st.subheader(f"{equipe_away_global} (Visitante)")
+        st.dataframe(away_half.reset_index(drop=True), use_container_width=True)
+    else:
+        st.warning(f"Nenhum dado encontrado para {equipe_away_global} como visitante.")
+
 # Iniciar o servidor Streamlit com a variável de ambiente PORT
 if __name__ == "__main__":
-    port = int(os.environ.get("PORT", 10000))  # Usa a variável de ambiente PORT ou 10000 por padrão
+    port = int(os.environ.get("PORT", 10000))
     os.system(f"streamlit run {__file__} --server.port {port} --server.address 0.0.0.0")
