@@ -29,11 +29,6 @@ def load_first_goal_data():
     away_url = 'https://raw.githubusercontent.com/scooby75/firstgoal/main/scored_first_away.csv'
     return load_csv(home_url), load_csv(away_url)
 
-@st.cache_data
-def load_momento_do_gol_data():
-    moment_url = 'https://raw.githubusercontent.com/scooby75/jogosdodia/refs/heads/main/momento_do_gol_home.csv'
-    return load_csv(moment_url)
-
 # ----------------------------
 # INÍCIO DO APP
 # ----------------------------
@@ -47,7 +42,6 @@ tab1, tab2, tab3, tab4 = st.tabs([
 
 # Carregar dados
 home_data, away_data, away_fav_data, overall_data = load_all_data()
-moment_data = load_momento_do_gol_data()
 
 def normalize_columns(df):
     df.columns = df.columns.str.strip()
@@ -57,7 +51,6 @@ home_data = normalize_columns(home_data)
 away_data = normalize_columns(away_data)
 away_fav_data = normalize_columns(away_fav_data)
 overall_data = normalize_columns(overall_data)
-moment_data = normalize_columns(moment_data)
 
 # Colunas obrigatórias
 home_columns = ["Liga", "PIH", "PIH_HA", "GD_Home", "PPG_Home", "GF_AVG_Home", "Odd_Justa_MO", "Odd_Justa_HA", "Rank_Home"]
@@ -136,12 +129,3 @@ with tab4:
 
     #st.markdown("### Away")
     show_team_stats(team2, away_fg_df, 'Team_Away', 'Fora')
-
-# ============================================================
-# ABA 5 - MOMENTO DO GOL
-# ============================================================
-with tab5:
-    st.markdown("### Momento do Gol")
-
-    # Exibir dados de momento de gol
-    st.dataframe(moment_data.reset_index(drop=True), use_container_width=True)
