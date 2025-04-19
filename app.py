@@ -178,7 +178,7 @@ with tab6:
     ]
     
     if not goals_half_filtered.empty:
-        st.markdown(f"### Goals Half - {equipe_home_global} x {equipe_away_global}")
+       #st.markdown(f"### Goals Half - {equipe_home_global} x {equipe_away_global}")
         st.dataframe(goals_half_filtered.reset_index(drop=True), use_container_width=True)
     else:
         st.warning(f"Nenhuma estatística de Goals Half encontrada para os times {equipe_home_global} e {equipe_away_global}.")
