@@ -5,7 +5,7 @@ import os
 # Configuração da página do Streamlit
 st.set_page_config(page_title="Análise Geral e H2H - First Goal", layout="wide")
 
-# ----------------------------
+# ---------------------------- 
 # FUNÇÕES DE CARREGAMENTO
 # ----------------------------
 @st.cache_data
@@ -39,7 +39,7 @@ def load_goal_minute_data():
     away_data = pd.read_csv(away_url)
     return home_data, away_data
 
-# ----------------------------
+# ---------------------------- 
 # INÍCIO DO APP
 # ----------------------------
 
@@ -159,3 +159,8 @@ with tab5:
         st.success(f"Jogando Fora **{equipe_away_global}** marca seu primeiro gol em média aos **{avg_minute_away:.1f} minutos**.")
     else:
         st.warning("Nenhum dado encontrado para o time visitante selecionado.")
+
+# Iniciar o servidor Streamlit com a variável de ambiente PORT
+if __name__ == "__main__":
+    port = int(os.environ.get("PORT", 10000))  # Usa a variável de ambiente PORT ou 10000 por padrão
+    st.run_server(host="0.0.0.0", port=port)
