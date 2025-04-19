@@ -3,9 +3,9 @@ import pandas as pd
 
 st.set_page_config(page_title="Análise Geral e H2H - First Goal", layout="wide")
 
-# ----------------------------
-# FUNÇÕES DE CARREGAMENTO
-# ----------------------------
+# ---------------------------- 
+# FUNÇÕES DE CARREGAMENTO 
+# ---------------------------- 
 @st.cache_data
 def load_csv(url):
     return pd.read_csv(url)
@@ -29,21 +29,15 @@ def load_first_goal_data():
     away_url = 'https://raw.githubusercontent.com/scooby75/firstgoal/main/scored_first_away.csv'
     return load_csv(home_url), load_csv(away_url)
 
-@st.cache_data
-def load_avg_min_data():
-    url = "https://raw.githubusercontent.com/scooby75/jogosdodia/refs/heads/main/momento_do_gol_home.csv"
-    return load_csv(url)
-
 # ----------------------------
 # INÍCIO DO APP
 # ----------------------------
 
-tab1, tab2, tab3, tab4, tab5 = st.tabs([
+tab1, tab2, tab3, tab4 = st.tabs([
     "🏠 Análise Home", 
     "📊 Análise Geral", 
     "🛫 Análise Away", 
-    "⚽ First Goal",
-    "⏱️ AVG Min"
+    "⚽ First Goal"
 ])
 
 # Carregar dados
@@ -57,9 +51,6 @@ home_data = normalize_columns(home_data)
 away_data = normalize_columns(away_data)
 away_fav_data = normalize_columns(away_fav_data)
 overall_data = normalize_columns(overall_data)
-
-# Carregar dados de tempo médio de gol
-avg_min_data = load_avg_min_data()
 
 # Colunas obrigatórias
 home_columns = ["Liga", "PIH", "PIH_HA", "GD_Home", "PPG_Home", "GF_AVG_Home", "Odd_Justa_MO", "Odd_Justa_HA", "Rank_Home"]
@@ -81,6 +72,7 @@ overall_filtered = overall_data[overall_data['Equipe'] == equipe_home][overall_c
 # ABA 1 - ANÁLISE HOME
 # ============================================================
 with tab1:
+    
     st.markdown("### Home")
     st.dataframe(home_filtered.reset_index(drop=True), use_container_width=True)
 
@@ -91,6 +83,7 @@ with tab1:
 # ABA 2 - ANÁLISE GERAL
 # ============================================================
 with tab2:
+    
     st.markdown("### Home")
     st.dataframe(overall_filtered.reset_index(drop=True), use_container_width=True)
 
@@ -101,6 +94,7 @@ with tab2:
 # ABA 3 - ANÁLISE AWAY
 # ============================================================
 with tab3:
+    
     st.markdown("### Away")
     st.dataframe(away_fav_filtered.reset_index(drop=True), use_container_width=True)
 
@@ -108,34 +102,19 @@ with tab3:
     st.dataframe(home_filtered.reset_index(drop=True), use_container_width=True)
 
 # ============================================================
-# ABA 4 - FIRST GOAL
+# ABA 4 - AVG Min
 # ============================================================
 with tab4:
-    home_fg_df, away_fg_df = load_first_goal_data()
-    teams_home = sorted(home_fg_df['Team_Home'].dropna().unique())
-    teams_away = sorted(away_fg_df['Team_Away'].dropna().unique())
+    # Carregar o arquivo CSV contendo os dados de "AVG_min_scored"
+    avg_min_data = load_csv("https://raw.githubusercontent.com/scooby75/jogosdodia/refs/heads/main/momento_do_gol_home.csv")
+    
+    # Exibir as primeiras linhas do DataFrame para verificar os dados
+    st.write("Primeiras linhas dos dados:", avg_min_data.head())
 
-    team1 = st.selectbox("Time da Casa", teams_home)
-    team2 = st.selectbox("Time Visitante", teams_away)
-
-    def show_team_stats(team_name, df, col_name, local):
-        stats = df[df[col_name] == team_name]
-        if not stats.empty:
-            st.markdown(f"### {team_name} ({local})")
-            selected_cols = ['Matches', 'First_Gol', 'Goals', 'PPG']
-            display_stats = stats[selected_cols] if all(col in stats.columns for col in selected_cols) else stats
-            st.dataframe(display_stats.reset_index(drop=True), use_container_width=True)
-        else:
-            st.warning(f"Nenhuma estatística encontrada para {team_name} ({local})")
-
-    show_team_stats(team1, home_fg_df, 'Team_Home', 'Casa')
-    show_team_stats(team2, away_fg_df, 'Team_Away', 'Fora')
-
-# ============================================================
-# ABA 5 - AVG MIN
-# ============================================================
-with tab5:
-    avg_min_df = avg_min_data[['Liga', 'Equipe', 'AVG_min_scored']]
-    avg_min_df = avg_min_df.rename(columns={'Liga': 'Liga', 'Equipe': 'Equipe', 'AVG_min_scored': 'AVG Goals'})
-    st.markdown("### Tempo Médio de Gol")
-    st.dataframe(avg_min_df.reset_index(drop=True), use_container_width=True)
+    # Filtrar e renomear as colunas para exibir as informações necessárias
+    if 'AVG_min_scored' in avg_min_data.columns:
+        avg_min_df = avg_min_data[['league', 'Home', 'AVG_min_scored']]  # Nome das colunas de acordo com os dados fornecidos
+        avg_min_df = avg_min_df.rename(columns={'league': 'Liga', 'Home': 'Equipe', 'AVG_min_scored': 'AVG Goals'})
+        st.dataframe(avg_min_df.reset_index(drop=True), use_container_width=True)
+    else:
+        st.warning("A coluna 'AVG_min_scored' não foi encontrada nos dados.")
