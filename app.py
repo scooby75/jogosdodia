@@ -30,24 +30,24 @@ def load_first_goal_data():
     return load_csv(home_url), load_csv(away_url)
 
 @st.cache_data
-def load_avg_minute_data():
-    avg_minute_url = 'https://raw.githubusercontent.com/scooby75/jogosdodia/refs/heads/main/avg_minute.csv'
-    return load_csv(avg_minute_url)
+def load_momento_do_gol_data():
+    moment_url = 'https://raw.githubusercontent.com/scooby75/jogosdodia/refs/heads/main/momento_do_gol_home.csv'
+    return load_csv(moment_url)
 
 # ----------------------------
 # INÍCIO DO APP
 # ----------------------------
 
-tab1, tab2, tab3, tab4, tab5 = st.tabs([
+tab1, tab2, tab3, tab4 = st.tabs([
     "🏠 Análise Home", 
     "📊 Análise Geral", 
     "🛫 Análise Away", 
-    "⚽ First Goal", 
-    "⏱️ AVG Minute"
+    "⚽ First Goal"
 ])
 
 # Carregar dados
 home_data, away_data, away_fav_data, overall_data = load_all_data()
+moment_data = load_momento_do_gol_data()
 
 def normalize_columns(df):
     df.columns = df.columns.str.strip()
@@ -57,6 +57,12 @@ home_data = normalize_columns(home_data)
 away_data = normalize_columns(away_data)
 away_fav_data = normalize_columns(away_fav_data)
 overall_data = normalize_columns(overall_data)
+moment_data = normalize_columns(moment_data)
+
+# Colunas obrigatórias
+home_columns = ["Liga", "PIH", "PIH_HA", "GD_Home", "PPG_Home", "GF_AVG_Home", "Odd_Justa_MO", "Odd_Justa_HA", "Rank_Home"]
+away_columns = ["Liga", "PIA", "PIA_HA", "GD_Away", "PPG_Away", "GF_AVG_Away", "Odd_Justa_MO", "Odd_Justa_HA", "Rank_Away"]
+overall_columns = ["Liga", "PIO", "PIO_HA", "GD_Overall", "PPG_Overall", "GF_AVG_Overall", "Odd_Justa_MO", "Odd_Justa_HA", "Rank_Overall"]
 
 # Seletor de equipes
 equipe_home = st.sidebar.selectbox("🏠 Time da Casa:", sorted(home_data['Equipe'].dropna().unique()))
@@ -64,15 +70,16 @@ equipe_away = st.sidebar.selectbox("🛫 Time Visitante:", sorted(away_data['Equ
 equipe_away_fav = st.sidebar.selectbox("⭐ Visitante (Favorito):", sorted(away_fav_data['Equipe_Fora'].dropna().unique()))
 
 # Filtrar dados
-home_filtered = home_data[home_data['Equipe'] == equipe_home]
-away_filtered = away_data[away_data['Equipe_Fora'] == equipe_away]
-away_fav_filtered = away_fav_data[away_fav_data['Equipe_Fora'] == equipe_away_fav]
-overall_filtered = overall_data[overall_data['Equipe'] == equipe_home]
+home_filtered = home_data[home_data['Equipe'] == equipe_home][home_columns]
+away_filtered = away_data[away_data['Equipe_Fora'] == equipe_away][away_columns]
+away_fav_filtered = away_fav_data[away_fav_data['Equipe_Fora'] == equipe_away_fav][away_columns]
+overall_filtered = overall_data[overall_data['Equipe'] == equipe_home][overall_columns]
 
 # ============================================================
 # ABA 1 - ANÁLISE HOME
 # ============================================================
 with tab1:
+    
     st.markdown("### Home")
     st.dataframe(home_filtered.reset_index(drop=True), use_container_width=True)
 
@@ -83,6 +90,7 @@ with tab1:
 # ABA 2 - ANÁLISE GERAL
 # ============================================================
 with tab2:
+    
     st.markdown("### Home")
     st.dataframe(overall_filtered.reset_index(drop=True), use_container_width=True)
 
@@ -93,6 +101,7 @@ with tab2:
 # ABA 3 - ANÁLISE AWAY
 # ============================================================
 with tab3:
+    
     st.markdown("### Away")
     st.dataframe(away_fav_filtered.reset_index(drop=True), use_container_width=True)
 
@@ -103,6 +112,8 @@ with tab3:
 # ABA 4 - FIRST GOAL
 # ============================================================
 with tab4:
+    #st.subheader("⚽ First Goal")
+
     home_fg_df, away_fg_df = load_first_goal_data()
     teams_home = sorted(home_fg_df['Team_Home'].dropna().unique())
     teams_away = sorted(away_fg_df['Team_Away'].dropna().unique())
@@ -120,22 +131,17 @@ with tab4:
         else:
             st.warning(f"Nenhuma estatística encontrada para {team_name} ({local})")
 
+    #st.markdown("### Home")
     show_team_stats(team1, home_fg_df, 'Team_Home', 'Casa')
+
+    #st.markdown("### Away")
     show_team_stats(team2, away_fg_df, 'Team_Away', 'Fora')
 
 # ============================================================
-# ABA 5 - AVG MINUTE
+# ABA 5 - MOMENTO DO GOL
 # ============================================================
 with tab5:
-    avg_minute_df = load_avg_minute_data()
-    
-    # Filtrando apenas os dados dos times Home e Away selecionados
-    avg_minute_home_filtered = avg_minute_df[avg_minute_df['Home'] == equipe_home]
-    avg_minute_away_filtered = avg_minute_df[avg_minute_df['Away'] == equipe_away]
+    st.markdown("### Momento do Gol")
 
-    # Exibindo os dados dos times filtrados
-    st.markdown("### AVG Minute - Time da Casa")
-    st.dataframe(avg_minute_home_filtered.reset_index(drop=True), use_container_width=True)
-
-    st.markdown("### AVG Minute - Time Visitante")
-    st.dataframe(avg_minute_away_filtered.reset_index(drop=True), use_container_width=True)
+    # Exibir dados de momento de gol
+    st.dataframe(moment_data.reset_index(drop=True), use_container_width=True)
