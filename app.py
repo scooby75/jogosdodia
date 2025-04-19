@@ -39,22 +39,29 @@ def load_goal_minute_data():
     away_data = pd.read_csv(away_url)
     return home_data, away_data
 
+@st.cache_data
+def load_goals_half_data():
+    goals_half_url = "https://raw.githubusercontent.com/scooby75/jogosdodia/refs/heads/main/Goals_Half.csv"
+    return load_csv(goals_half_url)
+
 # ---------------------------- 
 # INÍCIO DO APP
 # ----------------------------
 
-tab1, tab2, tab3, tab4, tab5 = st.tabs([
+tab1, tab2, tab3, tab4, tab5, tab6 = st.tabs([
     "🏠 Análise Home", 
     "📊 Análise Geral", 
     "🛫 Análise Away", 
     "⚽ First Goal",
-    "⏱️ Goals_Minute"
+    "⏱️ Goals_Minute",
+    "⚽ Goals Half"
 ])
 
 # Carregar dados
 home_data, away_data, away_fav_data, overall_data = load_all_data()
 home_fg_df, away_fg_df = load_first_goal_data()
 goal_minute_home_df, goal_minute_away_df = load_goal_minute_data()
+goals_half_df = load_goals_half_data()
 
 # Normalizar colunas
 def normalize_columns(df):
@@ -67,6 +74,7 @@ away_fav_data = normalize_columns(away_fav_data)
 overall_data = normalize_columns(overall_data)
 goal_minute_home_df = normalize_columns(goal_minute_home_df)
 goal_minute_away_df = normalize_columns(goal_minute_away_df)
+goals_half_df = normalize_columns(goals_half_df)
 
 # Colunas obrigatórias
 home_columns = ["Liga", "PIH", "PIH_HA", "GD_Home", "PPG_Home", "GF_AVG_Home", "Odd_Justa_MO", "Odd_Justa_HA", "Rank_Home"]
@@ -159,6 +167,13 @@ with tab5:
         st.success(f"Jogando Fora **{equipe_away_global}** marca seu primeiro gol em média aos **{avg_minute_away:.1f} minutos**.")
     else:
         st.warning("Nenhum dado encontrado para o time visitante selecionado.")
+
+# ============================================================
+# ABA 6 - GOALS HALF
+# ============================================================
+with tab6:
+    st.markdown("### Goals Half - Estatísticas de Gols por Tempo")
+    st.dataframe(goals_half_df.reset_index(drop=True), use_container_width=True)
 
 # Iniciar o servidor Streamlit com a variável de ambiente PORT
 if __name__ == "__main__":
