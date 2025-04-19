@@ -163,4 +163,4 @@ with tab5:
 # Iniciar o servidor Streamlit com a variável de ambiente PORT
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 10000))  # Usa a variável de ambiente PORT ou 10000 por padrão
-    st.run_server(host="0.0.0.0", port=port)
+    os.system(f"streamlit run {__file__} --server.port {port} --server.address 0.0.0.0")
