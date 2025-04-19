@@ -67,16 +67,24 @@ home_columns = ["Liga", "PIH", "PIH_HA", "GD_Home", "PPG_Home", "GF_AVG_Home", "
 away_columns = ["Liga", "PIA", "PIA_HA", "GD_Away", "PPG_Away", "GF_AVG_Away", "Odd_Justa_MO", "Odd_Justa_HA", "Rank_Away"]
 overall_columns = ["Liga", "PIO", "PIO_HA", "GD_Overall", "PPG_Overall", "GF_AVG_Overall", "Odd_Justa_MO", "Odd_Justa_HA", "Rank_Overall"]
 
-# Seletor de equipes
-equipe_home = st.sidebar.selectbox("🏠 Time da Casa:", sorted(home_data['Equipe'].dropna().unique()))
-equipe_away = st.sidebar.selectbox("🛫 Time Visitante:", sorted(away_data['Equipe_Fora'].dropna().unique()))
-equipe_away_fav = st.sidebar.selectbox("⭐ Visitante (Favorito):", sorted(away_fav_data['Equipe_Fora'].dropna().unique()))
+# Coletar todos os nomes únicos das equipes
+all_teams = sorted(set(home_data['Equipe'].dropna()) |
+                   set(away_data['Equipe_Fora'].dropna()) |
+                   set(away_fav_data['Equipe_Fora'].dropna()) |
+                   set(overall_data['Equipe'].dropna()) |
+                   set(home_fg_df['Team_Home'].dropna()) |
+                   set(away_fg_df['Team_Away'].dropna()) |
+                   set(goal_minute_df['Home'].dropna()))
+
+# Seletores globais
+equipe_home_global = st.sidebar.selectbox("🏠 Time da Casa:", all_teams)
+equipe_away_global = st.sidebar.selectbox("🛫 Time Visitante:", all_teams)
 
 # Filtrar dados
-home_filtered = home_data[home_data['Equipe'] == equipe_home][home_columns]
-away_filtered = away_data[away_data['Equipe_Fora'] == equipe_away][away_columns]
-away_fav_filtered = away_fav_data[away_fav_data['Equipe_Fora'] == equipe_away_fav][away_columns]
-overall_filtered = overall_data[overall_data['Equipe'] == equipe_home][overall_columns]
+home_filtered = home_data[home_data['Equipe'] == equipe_home_global][home_columns]
+away_filtered = away_data[away_data['Equipe_Fora'] == equipe_away_global][away_columns]
+away_fav_filtered = away_fav_data[away_fav_data['Equipe_Fora'] == equipe_away_global][away_columns]
+overall_filtered = overall_data[overall_data['Equipe'] == equipe_home_global][overall_columns]
 
 # ============================================================
 # ABA 1 - ANÁLISE HOME
@@ -112,12 +120,6 @@ with tab3:
 # ABA 4 - FIRST GOAL
 # ============================================================
 with tab4:
-    teams_home = sorted(home_fg_df['Team_Home'].dropna().unique())
-    teams_away = sorted(away_fg_df['Team_Away'].dropna().unique())
-
-    team1 = st.selectbox("Time da Casa", teams_home)
-    team2 = st.selectbox("Time Visitante", teams_away)
-
     def show_team_stats(team_name, df, col_name, local):
         stats = df[df[col_name] == team_name]
         if not stats.empty:
@@ -128,22 +130,17 @@ with tab4:
         else:
             st.warning(f"Nenhuma estatística encontrada para {team_name} ({local})")
 
-    show_team_stats(team1, home_fg_df, 'Team_Home', 'Casa')
-    show_team_stats(team2, away_fg_df, 'Team_Away', 'Fora')
+    show_team_stats(equipe_home_global, home_fg_df, 'Team_Home', 'Casa')
+    show_team_stats(equipe_away_global, away_fg_df, 'Team_Away', 'Fora')
 
 # ============================================================
 # ABA 5 - GOALS_MINUTE
 # ============================================================
 with tab5:
-    #st.markdown("### ⏱️ Tempo Médio do 1º Gol - Time da Casa")
-    
-    teams_minute = sorted(goal_minute_df['Home'].dropna().unique())
-    selected_team = st.selectbox("Selecione o Time:", teams_minute)
-
-    team_data = goal_minute_df[goal_minute_df['Home'] == selected_team]
+    team_data = goal_minute_df[goal_minute_df['Home'] == equipe_home_global]
 
     if not team_data.empty:
         avg_minute = team_data['AVG_min_scored'].values[0]
-        st.success(f"**{selected_team}** marca seu primeiro gol em média aos **{avg_minute:.1f} minutos**.")
+        st.success(f"**{equipe_home_global}** marca seu primeiro gol em média aos **{avg_minute:.1f} minutos**.")
     else:
         st.warning("Nenhum dado encontrado para o time selecionado.")
