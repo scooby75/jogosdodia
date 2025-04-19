@@ -29,16 +29,11 @@ def load_first_goal_data():
     away_url = 'https://raw.githubusercontent.com/scooby75/firstgoal/main/scored_first_away.csv'
     return load_csv(home_url), load_csv(away_url)
 
-@st.cache_data
-def load_momento_do_gol_home_data():
-    home_url = 'https://raw.githubusercontent.com/scooby75/jogosdodia/refs/heads/main/momento_do_gol_home.csv'
-    return load_csv(home_url)
-
 # ----------------------------
 # INÍCIO DO APP
 # ----------------------------
 
-tab1, tab2, tab3, tab4 = st.tabs([ 
+tab1, tab2, tab3, tab4 = st.tabs([
     "🏠 Análise Home", 
     "📊 Análise Geral", 
     "🛫 Análise Away", 
@@ -57,9 +52,6 @@ away_data = normalize_columns(away_data)
 away_fav_data = normalize_columns(away_fav_data)
 overall_data = normalize_columns(overall_data)
 
-# Carregar dados de momento do gol home
-momento_do_gol_home_df = load_momento_do_gol_home_data()
-
 # Colunas obrigatórias
 home_columns = ["Liga", "PIH", "PIH_HA", "GD_Home", "PPG_Home", "GF_AVG_Home", "Odd_Justa_MO", "Odd_Justa_HA", "Rank_Home"]
 away_columns = ["Liga", "PIA", "PIA_HA", "GD_Away", "PPG_Away", "GF_AVG_Away", "Odd_Justa_MO", "Odd_Justa_HA", "Rank_Away"]
@@ -77,10 +69,44 @@ away_fav_filtered = away_fav_data[away_fav_data['Equipe_Fora'] == equipe_away_fa
 overall_filtered = overall_data[overall_data['Equipe'] == equipe_home][overall_columns]
 
 # ============================================================
+# ABA 1 - ANÁLISE HOME
+# ============================================================
+with tab1:
+    
+    st.markdown("### Home")
+    st.dataframe(home_filtered.reset_index(drop=True), use_container_width=True)
+
+    st.markdown("### Away")
+    st.dataframe(away_filtered.reset_index(drop=True), use_container_width=True)
+
+# ============================================================
+# ABA 2 - ANÁLISE GERAL
+# ============================================================
+with tab2:
+    
+    st.markdown("### Home")
+    st.dataframe(overall_filtered.reset_index(drop=True), use_container_width=True)
+
+    st.markdown("### Away")
+    st.dataframe(away_filtered.reset_index(drop=True), use_container_width=True)
+
+# ============================================================
+# ABA 3 - ANÁLISE AWAY
+# ============================================================
+with tab3:
+    
+    st.markdown("### Away")
+    st.dataframe(away_fav_filtered.reset_index(drop=True), use_container_width=True)
+
+    st.markdown("### Home")
+    st.dataframe(home_filtered.reset_index(drop=True), use_container_width=True)
+
+# ============================================================
 # ABA 4 - FIRST GOAL
 # ============================================================
 with tab4:
-    # Carregar dados de first goal
+    #st.subheader("⚽ First Goal")
+
     home_fg_df, away_fg_df = load_first_goal_data()
     teams_home = sorted(home_fg_df['Team_Home'].dropna().unique())
     teams_away = sorted(away_fg_df['Team_Away'].dropna().unique())
@@ -95,18 +121,11 @@ with tab4:
             selected_cols = ['Matches', 'First_Gol', 'Goals', 'PPG']
             display_stats = stats[selected_cols] if all(col in stats.columns for col in selected_cols) else stats
             st.dataframe(display_stats.reset_index(drop=True), use_container_width=True)
-
-            # Exibir AVG_Scored diretamente do arquivo momento_do_gol_home.csv
-            avg_scored = momento_do_gol_home_df[momento_do_gol_home_df['Team_Home'] == team_name]['AVG_Scored'].values
-            if len(avg_scored) > 0:
-                st.markdown(f"**Média de Gols (AVG_Scored):** {avg_scored[0]:.2f}")
-            else:
-                st.warning(f"**Média de Gols (AVG_Scored):** Não disponível para {team_name}.")
         else:
             st.warning(f"Nenhuma estatística encontrada para {team_name} ({local})")
 
-    # Exibir estatísticas para o time da casa
+    #st.markdown("### Home")
     show_team_stats(team1, home_fg_df, 'Team_Home', 'Casa')
 
-    # Exibir estatísticas para o time visitante
+    #st.markdown("### Away")
     show_team_stats(team2, away_fg_df, 'Team_Away', 'Fora')
