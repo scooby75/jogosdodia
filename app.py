@@ -8,7 +8,6 @@ st.set_page_config(page_title="Análise Geral e H2H - First Goal", layout="wide"
 # ---------------------------- 
 # FUNÇÕES DE CARREGAMENTO
 # ----------------------------
-
 @st.cache_data
 def load_csv(url):
     return pd.read_csv(url)
@@ -33,14 +32,29 @@ def load_first_goal_data():
     return load_csv(home_url), load_csv(away_url)
 
 @st.cache_data
-def load_goal_half_data():
-    url = "https://raw.githubusercontent.com/scooby75/jogosdodia/refs/heads/main/Goals_Half.csv"
-    return pd.read_csv(url)
+def load_goal_minute_data():
+    home_url = "https://raw.githubusercontent.com/scooby75/jogosdodia/refs/heads/main/momento_do_gol_home.csv"
+    away_url = "https://raw.githubusercontent.com/scooby75/jogosdodia/refs/heads/main/momento_do_gol_away.csv"
+    home_data = pd.read_csv(home_url)
+    away_data = pd.read_csv(away_url)
+    return home_data, away_data
+
+# ---------------------------- 
+# INÍCIO DO APP
+# ----------------------------
+
+tab1, tab2, tab3, tab4, tab5 = st.tabs([
+    "🏠 Análise Home", 
+    "📊 Análise Geral", 
+    "🛫 Análise Away", 
+    "⚽ First Goal",
+    "⏱️ Goals_Minute"
+])
 
 # Carregar dados
 home_data, away_data, away_fav_data, overall_data = load_all_data()
 home_fg_df, away_fg_df = load_first_goal_data()
-goal_half_df = load_goal_half_data()
+goal_minute_home_df, goal_minute_away_df = load_goal_minute_data()
 
 # Normalizar colunas
 def normalize_columns(df):
@@ -51,7 +65,13 @@ home_data = normalize_columns(home_data)
 away_data = normalize_columns(away_data)
 away_fav_data = normalize_columns(away_fav_data)
 overall_data = normalize_columns(overall_data)
-goal_half_df = normalize_columns(goal_half_df)
+goal_minute_home_df = normalize_columns(goal_minute_home_df)
+goal_minute_away_df = normalize_columns(goal_minute_away_df)
+
+# Colunas obrigatórias
+home_columns = ["Liga", "PIH", "PIH_HA", "GD_Home", "PPG_Home", "GF_AVG_Home", "Odd_Justa_MO", "Odd_Justa_HA", "Rank_Home"]
+away_columns = ["Liga", "PIA", "PIA_HA", "GD_Away", "PPG_Away", "GF_AVG_Away", "Odd_Justa_MO", "Odd_Justa_HA", "Rank_Away"]
+overall_columns = ["Liga", "PIO", "PIO_HA", "GD_Overall", "PPG_Overall", "GF_AVG_Overall", "Odd_Justa_MO", "Odd_Justa_HA", "Rank_Overall"]
 
 # Coletar todos os nomes únicos das equipes
 all_teams = sorted(set(home_data['Equipe'].dropna()) |
@@ -59,47 +79,28 @@ all_teams = sorted(set(home_data['Equipe'].dropna()) |
                    set(away_fav_data['Equipe_Fora'].dropna()) |
                    set(overall_data['Equipe'].dropna()) |
                    set(home_fg_df['Team_Home'].dropna()) |
-                   set(away_fg_df['Team_Away'].dropna()))
+                   set(away_fg_df['Team_Away'].dropna()) |
+                   set(goal_minute_home_df['Home'].dropna()) |
+                   set(goal_minute_away_df['Away'].dropna()))
 
 # Seletores globais
 equipe_home_global = st.sidebar.selectbox("🏠 Time da Casa:", all_teams)
 equipe_away_global = st.sidebar.selectbox("🛫 Time Visitante:", all_teams)
 
-# Função para exibir as estatísticas de Goal Half
-def show_goal_half_stats(team_name, df):
-    team_data = df[df['Team'] == team_name]
-    if not team_data.empty:
-        # Exibir apenas as colunas relevantes para a estatística
-        selected_cols = ['League_Name', 'Team', 'Scored', '1st half', '2nd half', 'Avg. minute']
-        st.dataframe(team_data[selected_cols].reset_index(drop=True), use_container_width=True)
-    else:
-        st.warning(f"Nenhuma estatística encontrada para {team_name}.")
-
-# ---------------------------- 
-# INÍCIO DO APP
-# ----------------------------
-
-tab1, tab2, tab3, tab4, tab5, tab6 = st.tabs([ 
-    "🏠 Análise Home", 
-    "📊 Análise Geral", 
-    "🛫 Análise Away", 
-    "⚽ First Goal",
-    "⏱️ Goals_Minute", 
-    "⚽ Goal Half"
-])
+# Filtrar dados
+home_filtered = home_data[home_data['Equipe'] == equipe_home_global][home_columns]
+away_filtered = away_data[away_data['Equipe_Fora'] == equipe_away_global][away_columns]
+away_fav_filtered = away_fav_data[away_fav_data['Equipe_Fora'] == equipe_away_global][away_columns]
+overall_filtered = overall_data[overall_data['Equipe'] == equipe_home_global][overall_columns]
 
 # ============================================================
 # ABA 1 - ANÁLISE HOME
 # ============================================================
 with tab1:
     st.markdown("### Home")
-    home_columns = ["Liga", "PIH", "PIH_HA", "GD_Home", "PPG_Home", "GF_AVG_Home", "Odd_Justa_MO", "Odd_Justa_HA", "Rank_Home"]
-    home_filtered = home_data[home_data['Equipe'] == equipe_home_global][home_columns]
     st.dataframe(home_filtered.reset_index(drop=True), use_container_width=True)
 
     st.markdown("### Away")
-    away_columns = ["Liga", "PIA", "PIA_HA", "GD_Away", "PPG_Away", "GF_AVG_Away", "Odd_Justa_MO", "Odd_Justa_HA", "Rank_Away"]
-    away_filtered = away_data[away_data['Equipe_Fora'] == equipe_away_global][away_columns]
     st.dataframe(away_filtered.reset_index(drop=True), use_container_width=True)
 
 # ============================================================
@@ -107,8 +108,6 @@ with tab1:
 # ============================================================
 with tab2:
     st.markdown("### Home")
-    overall_columns = ["Liga", "PIO", "PIO_HA", "GD_Overall", "PPG_Overall", "GF_AVG_Overall", "Odd_Justa_MO", "Odd_Justa_HA", "Rank_Overall"]
-    overall_filtered = overall_data[overall_data['Equipe'] == equipe_home_global][overall_columns]
     st.dataframe(overall_filtered.reset_index(drop=True), use_container_width=True)
 
     st.markdown("### Away")
@@ -119,8 +118,6 @@ with tab2:
 # ============================================================
 with tab3:
     st.markdown("### Away")
-    away_fav_columns = ["Liga", "PIA", "PIA_HA", "GD_Away", "PPG_Away", "GF_AVG_Away", "Odd_Justa_MO", "Odd_Justa_HA", "Rank_Away"]
-    away_fav_filtered = away_fav_data[away_fav_data['Equipe_Fora'] == equipe_away_global][away_fav_columns]
     st.dataframe(away_fav_filtered.reset_index(drop=True), use_container_width=True)
 
     st.markdown("### Home")
@@ -162,25 +159,6 @@ with tab5:
         st.success(f"Jogando Fora **{equipe_away_global}** marca seu primeiro gol em média aos **{avg_minute_away:.1f} minutos**.")
     else:
         st.warning("Nenhum dado encontrado para o time visitante selecionado.")
-
-# ============================================================
-# ABA 6 - GOAL HALF
-# ============================================================
-with tab6:
-    def show_goal_half_stats(team_name, df):
-        team_data = df[df['Team'] == team_name]
-        if not team_data.empty:
-            # Exibir apenas as colunas relevantes para a estatística
-            selected_cols = ['League_Name', 'Team', 'Scored', '1st half', '2nd half', 'Avg. minute']
-            st.dataframe(team_data[selected_cols].reset_index(drop=True), use_container_width=True)
-        else:
-            st.warning(f"Nenhuma estatística encontrada para {team_name}.")
-
-    st.markdown(f"### Estatísticas de Goal Half para {equipe_home_global} (Casa)")
-    show_goal_half_stats(equipe_home_global, goal_half_df)
-
-    st.markdown(f"### Estatísticas de Goal Half para {equipe_away_global} (Visitante)")
-    show_goal_half_stats(equipe_away_global, goal_half_df)
 
 # Iniciar o servidor Streamlit com a variável de ambiente PORT
 if __name__ == "__main__":
