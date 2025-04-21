@@ -256,8 +256,6 @@ with tabs[7]:
         st.warning("Sem dados de distribuição de gols por tempo.")
 
 
-
-
 # Executar com variável de ambiente PORT
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 10000))
