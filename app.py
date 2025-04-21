@@ -99,7 +99,7 @@ overall_filtered = overall_df[overall_df['Equipe'] == equipe_home][overall_colum
 # INTERFACE STREAMLIT
 # ----------------------------
 tabs = st.tabs([
-    "🏠 Home", "📊 OVerall", "🛫 Away",
+    "🏠 Home", "📊 Overall", "🛫 Away",
     "⚽ First Goal", "⏱️ Goals_Minute", "⚡ Goals HT/FT", "📌 CV HT", "🧾 Resumo"
 ])
 
