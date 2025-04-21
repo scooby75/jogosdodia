@@ -217,7 +217,7 @@ with tabs[7]:
         st.subheader("⚡ Gols no 1º Tempo (Casa)")
         ht_home = cv_home_df[cv_home_df['Team'] == equipe_home]
         if not ht_home.empty:
-            st.dataframe(ht_home[["Team", "Avg.", "CV_Goals_HT (%)", "Classificação CV"]], use_container_width=True)
+            st.dataframe(ht_home[["Team", "Avg", "CV_Goals_HT (%)", "Classificação CV"]], use_container_width=True)
         else:
             st.warning("Sem dados de gols HT (casa).")
     
