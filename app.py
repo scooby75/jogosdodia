@@ -99,11 +99,11 @@ overall_filtered = overall_df[overall_df['Equipe'] == equipe_home][overall_colum
 # INTERFACE STREAMLIT
 # ----------------------------
 tabs = st.tabs([
-    "🧾 Resumo", "🏠 Análise Home", "📊 Análise Geral", "🛫 Análise Away",
-    "⚽ First Goal", "⏱️ Goals_Minute", "⚡ Goals HT/FT", "📌 Goals HT"
+    "🏠 Análise Home", "📊 Análise Geral", "🛫 Análise Away",
+    "⚽ First Goal", "⏱️ Goals_Minute", "⚡ Goals HT/FT", "📌 Goals HT", "🧾 Resumo"
 ])
 
-# ABA 1 - Resumo
+# ABA 1 - Home Favorito
 with tabs[0]:
     st.markdown("### Home")
     st.dataframe(home_filtered, use_container_width=True)
