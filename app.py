@@ -230,6 +230,15 @@ with tab8:
     if not goals_half_filtered.empty:
         st.dataframe(goals_half_filtered[['League_Name', 'Team', 'Scored', '1st half', '2nd half']].reset_index(drop=True), use_container_width=True)
 
+    st.subheader("📌 Goals HT")
+    if not home_ht_filtered.empty:
+        st.markdown(f"🏠 **{equipe_home_global}**")
+        st.dataframe(home_ht_filtered.reset_index(drop=True), use_container_width=True)
+    if not away_ht_filtered.empty:
+        st.markdown(f"🛫 **{equipe_away_global}**")
+        st.dataframe(away_ht_filtered.reset_index(drop=True), use_container_width=True)
+
+
 # Executar com variável de ambiente PORT
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 10000))
