@@ -5,7 +5,7 @@ import os
 # Configuração da página do Streamlit
 st.set_page_config(page_title="Análise Geral e H2H - First Goal", layout="wide")
 
-# ----------------------------
+# ---------------------------- 
 # FUNÇÕES DE CARREGAMENTO
 # ----------------------------
 @st.cache_data
@@ -42,15 +42,10 @@ def load_goals_half_data():
     url = "https://raw.githubusercontent.com/scooby75/jogosdodia/refs/heads/main/Goals_Half.csv"
     return load_csv(url)
 
-@st.cache_data
-def load_h2h_goal_data():
-    home_url = "https://raw.githubusercontent.com/scooby75/jogosdodia/refs/heads/main/CV_Goals_HT_Home.csv"
-    away_url = "https://raw.githubusercontent.com/scooby75/jogosdodia/refs/heads/main/CV_Goals_HT_Away.csv"
-    return load_csv(home_url), load_csv(away_url)
-
-# ----------------------------
+# ---------------------------- 
 # INÍCIO DO APP
 # ----------------------------
+
 tab1, tab2, tab3, tab4, tab5, tab6, tab7, tab8 = st.tabs([
     "🏠 Análise Home", 
     "📊 Análise Geral", 
@@ -58,7 +53,7 @@ tab1, tab2, tab3, tab4, tab5, tab6, tab7, tab8 = st.tabs([
     "⚽ First Goal",
     "⏱️ Goals_Minute",
     "⚡ Goals HT/FT",
-    "📌 H2H",
+    "📌 H2H (em breve)",
     "🧾 Resumo Geral"
 ])
 
@@ -67,7 +62,6 @@ home_data, away_data, away_fav_data, overall_data = load_all_data()
 home_fg_df, away_fg_df = load_first_goal_data()
 goal_minute_home_df, goal_minute_away_df = load_goal_minute_data()
 goals_half_df = load_goals_half_data()
-h2h_home_df, h2h_away_df = load_h2h_goal_data()
 
 # Normalizar colunas
 def normalize_columns(df):
@@ -81,8 +75,6 @@ overall_data = normalize_columns(overall_data)
 goal_minute_home_df = normalize_columns(goal_minute_home_df)
 goal_minute_away_df = normalize_columns(goal_minute_away_df)
 goals_half_df = normalize_columns(goals_half_df)
-h2h_home_df = normalize_columns(h2h_home_df)
-h2h_away_df = normalize_columns(h2h_away_df)
 
 # Colunas obrigatórias
 home_columns = ["Liga", "PIH", "PIH_HA", "GD_Home", "PPG_Home", "GF_AVG_Home", "Odd_Justa_MO", "Odd_Justa_HA", "Rank_Home"]
@@ -98,9 +90,7 @@ all_teams = sorted(set(home_data['Equipe'].dropna()) |
                    set(away_fg_df['Team_Away'].dropna()) |
                    set(goal_minute_home_df['Home'].dropna()) |
                    set(goal_minute_away_df['Away'].dropna()) |
-                   set(goals_half_df['Team'].dropna()) |
-                   set(h2h_home_df['Home'].dropna()) |
-                   set(h2h_away_df['Away'].dropna()))
+                   set(goals_half_df['Team'].dropna()))
 
 # Seletores globais
 equipe_home_global = st.sidebar.selectbox("🏠 Time da Casa:", all_teams)
@@ -111,17 +101,6 @@ home_filtered = home_data[home_data['Equipe'] == equipe_home_global][home_column
 away_filtered = away_data[away_data['Equipe_Fora'] == equipe_away_global][away_columns]
 away_fav_filtered = away_fav_data[away_fav_data['Equipe_Fora'] == equipe_away_global][away_columns]
 overall_filtered = overall_data[overall_data['Equipe'] == equipe_home_global][overall_columns]
-
-# Função de exibição
-def show_team_stats(team_name, df, col_name, local):
-    stats = df[df[col_name] == team_name]
-    if not stats.empty:
-        st.markdown(f"### {team_name} ({local})")
-        selected_cols = ['Matches', 'First_Gol', 'Goals']
-        display_stats = stats[selected_cols] if all(col in stats.columns for col in selected_cols) else stats
-        st.dataframe(display_stats.reset_index(drop=True), use_container_width=True)
-    else:
-        st.warning(f"Nenhuma estatística encontrada para {team_name} ({local})")
 
 # ABA 1
 with tab1:
@@ -146,6 +125,16 @@ with tab3:
 
 # ABA 4
 with tab4:
+    def show_team_stats(team_name, df, col_name, local):
+        stats = df[df[col_name] == team_name]
+        if not stats.empty:
+            st.markdown(f"### {team_name} ({local})")
+            selected_cols = ['Matches', 'First_Gol', 'Goals']
+            display_stats = stats[selected_cols] if all(col in stats.columns for col in selected_cols) else stats
+            st.dataframe(display_stats.reset_index(drop=True), use_container_width=True)
+        else:
+            st.warning(f"Nenhuma estatística encontrada para {team_name} ({local})")
+
     show_team_stats(equipe_home_global, home_fg_df, 'Team_Home', 'Casa')
     show_team_stats(equipe_away_global, away_fg_df, 'Team_Away', 'Fora')
 
@@ -175,26 +164,37 @@ with tab6:
     else:
         st.warning("Nenhuma estatística de Goals Half encontrada.")
 
-# ABA 7 - H2H
+# ABA 7 - H2H (placeholder)
 with tab7:
-    st.markdown("### 📌 Head-to-Head (H2H) - Gols no 1º Tempo")
-    
-    h2h_matches = h2h_home_df[
-        (h2h_home_df['Home'] == equipe_home_global) & (h2h_home_df['Away'] == equipe_away_global)
-    ]
+    st.markdown("### Head-to-Head (H2H)")
+    st.info("Análise de confrontos diretos será implementada em breve.")
 
-    if not h2h_matches.empty:
-        st.subheader(f"📊 {equipe_home_global} x {equipe_away_global} (Mandante)")
-        st.dataframe(h2h_matches[['League', 'Date', 'Home', 'Away', 'Score', 'HT_Score', 'Goal_HT_Home']].reset_index(drop=True), use_container_width=True)
-    else:
-        st.warning(f"Nenhum confronto direto entre {equipe_home_global} (casa) e {equipe_away_global} (fora).")
-
-# ABA 8 - Resumo Geral (exemplo)
+# ABA 8 - RESUMO
 with tab8:
-    st.markdown("### 🧾 Resumo Geral")
-    st.markdown(f"- Time da Casa: **{equipe_home_global}**")
-    st.markdown(f"- Time Visitante: **{equipe_away_global}**")
-    st.markdown("Este é um resumo geral com base nas análises exibidas nas abas anteriores.")
+    st.markdown("## Resumo Geral")
+    
+    st.subheader("🏠 Dados Home")
+    st.dataframe(home_filtered.reset_index(drop=True), use_container_width=True)
+
+    st.subheader("🛫 Dados Away")
+    st.dataframe(away_filtered.reset_index(drop=True), use_container_width=True)
+
+    st.subheader("📊 Dados Gerais (Overall)")
+    st.dataframe(overall_filtered.reset_index(drop=True), use_container_width=True)
+
+    st.subheader("⚽ First Goal")
+    show_team_stats(equipe_home_global, home_fg_df, 'Team_Home', 'Casa')
+    show_team_stats(equipe_away_global, away_fg_df, 'Team_Away', 'Fora')
+
+    st.subheader("⏱️ Minuto do 1º Gol")
+    if not home_team_data.empty:
+        st.write(f"🏠 **{equipe_home_global}**: {avg_minute_home:.1f} min")
+    if not away_team_data.empty:
+        st.write(f"🛫 **{equipe_away_global}**: {avg_minute_away:.1f} min")
+
+    st.subheader("⚡ Gols HT/FT")
+    if not goals_half_filtered.empty:
+        st.dataframe(goals_half_filtered[['League_Name', 'Team', 'Scored', '1st half', '2nd half']].reset_index(drop=True), use_container_width=True)
 
 # Executar com variável de ambiente PORT
 if __name__ == "__main__":
