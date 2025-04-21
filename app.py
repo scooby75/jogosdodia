@@ -100,7 +100,7 @@ overall_filtered = overall_df[overall_df['Equipe'] == equipe_home][overall_colum
 # ----------------------------
 tabs = st.tabs([
     "🏠 Análise Home", "📊 Análise Geral", "🛫 Análise Away",
-    "⚽ First Goal", "⏱️ Goals_Minute", "⚡ Goals HT/FT", "📌 Goals HT", "🧾 Resumo"
+    "⚽ First Goal", "⏱️ Goals_Minute", "⚡ Goals HT/FT", "📌 CV HT", "🧾 Resumo"
 ])
 
 # ABA 1 - Home Favorito
