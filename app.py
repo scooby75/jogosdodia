@@ -192,48 +192,6 @@ with tabs[6]:
 
 # ABA 8 - Resumo Final Consolidado
 
-# ABA 8 - Resumo Final Consolidado
-with tabs[7]:
-    st.markdown("### Resumo Consolidade")
-
-    # Resumo das informações da aba Home
-    st.markdown("#### 🏠 Time da Casa:")
-    st.write(f"**Liga:** {home_filtered['Liga'].values[0] if not home_filtered.empty else 'N/A'}")
-    st.write(f"**GD:** {home_filtered['GD_Home'].values[0] if not home_filtered.empty else 'N/A'}")
-    st.write(f"**PPG:** {home_filtered['PPG_Home'].values[0] if not home_filtered.empty else 'N/A'}")
-    st.write(f"**GF AVG:** {home_filtered['GF_AVG_Home'].values[0] if not home_filtered.empty else 'N/A'}")
-    
-    # Resumo das informações da aba Away
-    st.markdown("#### 🛫 Time Visitante:")
-    st.write(f"**Liga:** {away_filtered['Liga'].values[0] if not away_filtered.empty else 'N/A'}")
-    st.write(f"**GD:** {away_filtered['GD_Away'].values[0] if not away_filtered.empty else 'N/A'}")
-    st.write(f"**PPG:** {away_filtered['PPG_Away'].values[0] if not away_filtered.empty else 'N/A'}")
-    st.write(f"**GF AVG:** {away_filtered['GF_AVG_Away'].values[0] if not away_filtered.empty else 'N/A'}")
-
-    # Resumo das informações da aba First Goal
-    st.markdown("#### ⚽ Primeiro Gol:")
-    st.write(f"**{equipe_home} (Casa):** {home_fg_df[home_fg_df['Team_Home'] == equipe_home]['First_Gol'].sum()} primeiros gols")
-    st.write(f"**{equipe_away} (Fora):** {away_fg_df[away_fg_df['Team_Away'] == equipe_away]['First_Gol'].sum()} primeiros gols")
-    
-    # Resumo das informações da aba Goals Minute
-    st.markdown("#### ⏱️ Momento do Gol:")
-    st.write(f"**{equipe_home} (Casa):** Gols marcados em média aos **{home_team_data['AVG_min_scored'].values[0]:.1f} min**.")
-    st.write(f"**{equipe_away} (Fora):** Gols marcados em média aos **{away_team_data['AVG_min_scored'].values[0]:.1f} min**.")
-    
-    # Resumo das informações da aba Goals Half
-    st.markdown("#### ⚡ Gols no 1º e 2º Tempo:")
-    st.write(f"**{equipe_home} (Casa):** {home_ht[['1st half', '2nd half']].sum().values[0]} gols no 1º tempo e {home_ht[['1st half', '2nd half']].sum().values[1]} gols no 2º tempo.")
-    st.write(f"**{equipe_away} (Fora):** {away_ht[['1st half', '2nd half']].sum().values[0]} gols no 1º tempo e {away_ht[['1st half', '2nd half']].sum().values[1]} gols no 2º tempo.")
-    
-    # Resumo das informações da aba CV HT
-    st.markdown("#### 📌 Coeficiente de Variabilidade de Gols no 1º Tempo (CV HT):")
-    st.write(f"**{equipe_home} (Casa):** {home_ht['CV_Goals_HT (%)'].values[0] if not home_ht.empty else 'N/A'}% de variabilidade.")
-    st.write(f"**{equipe_away} (Fora):** {away_ht['CV_Goals_HT (%)'].values[0] if not away_ht.empty else 'N/A'}% de variabilidade.")
-    
-    
-
-
-
 # Executar com variável de ambiente PORT
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 10000))
