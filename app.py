@@ -188,13 +188,73 @@ with tabs[6]:
     else:
         st.warning("Dados não encontrados para o time visitante.")
 
-# ABA 8 - Resumo Final
-with tabs[7]:
-    st.subheader("🏠 Dados Home")
-    st.dataframe(home_filtered, use_container_width=True)
 
-    st.subheader("🛫 Dados Away")
-    st.dataframe(away_filtered, use_container_width=True)
+# ABA 8 - Resumo Final Consolidado
+with tabs[7]:
+    st.header("📌 Resumo Consolidado da Partida")
+
+    col1, col2 = st.columns(2)
+    
+    with col1:
+        st.subheader(f"🏠 {equipe_home} - Dados Gerais")
+        st.dataframe(home_filtered, use_container_width=True)
+
+        st.subheader("⚽ Primeiro Gol (Casa)")
+        home_fg_stats = home_fg_df[home_fg_df['Team_Home'] == equipe_home]
+        if not home_fg_stats.empty:
+            st.dataframe(home_fg_stats[['Matches', 'First_Gol', 'Goals']], use_container_width=True)
+        else:
+            st.info("Sem dados de primeiro gol (casa).")
+        
+        st.subheader("⏱️ Momento do 1º Gol (Casa)")
+        home_gol_min = goal_minute_home_df[goal_minute_home_df['Home'] == equipe_home]
+        if not home_gol_min.empty:
+            st.success(f"{equipe_home} marca seu 1º gol em média aos {home_gol_min['AVG_min_scored'].values[0]:.1f} min")
+        else:
+            st.warning("Sem informação de minuto do primeiro gol (casa).")
+        
+        st.subheader("⚡ Gols no 1º Tempo (Casa)")
+        ht_home = cv_home_df[cv_home_df['Team'] == equipe_home]
+        if not ht_home.empty:
+            st.dataframe(ht_home[["Team", "Avg.", "CV_Goals_HT (%)", "Classificação CV"]], use_container_width=True)
+        else:
+            st.warning("Sem dados de gols HT (casa).")
+    
+    with col2:
+        st.subheader(f"🛫 {equipe_away} - Dados Gerais")
+        st.dataframe(away_filtered, use_container_width=True)
+
+        st.subheader("⚽ Primeiro Gol (Fora)")
+        away_fg_stats = away_fg_df[away_fg_df['Team_Away'] == equipe_away]
+        if not away_fg_stats.empty:
+            st.dataframe(away_fg_stats[['Matches', 'First_Gol', 'Goals']], use_container_width=True)
+        else:
+            st.info("Sem dados de primeiro gol (fora).")
+        
+        st.subheader("⏱️ Momento do 1º Gol (Fora)")
+        away_gol_min = goal_minute_away_df[goal_minute_away_df['Away'] == equipe_away]
+        if not away_gol_min.empty:
+            st.success(f"{equipe_away} marca seu 1º gol em média aos {away_gol_min['AVG_min_scored'].values[0]:.1f} min")
+        else:
+            st.warning("Sem informação de minuto do primeiro gol (fora).")
+        
+        st.subheader("⚡ Gols no 1º Tempo (Fora)")
+        ht_away = cv_away_df[cv_away_df['Team'] == equipe_away]
+        if not ht_away.empty:
+            st.dataframe(ht_away[["Team", "Avg..1", "CV_Goals_HT (%)", "Classificação CV"]], use_container_width=True)
+        else:
+            st.warning("Sem dados de gols HT (fora).")
+
+    # Comparativo Gols por Tempo
+    st.markdown("---")
+    st.subheader("📊 Distribuição de Gols por Tempo (1º x 2º Tempo)")
+    goal_half_filtered = goals_half_df[goals_half_df['Team'].isin([equipe_home, equipe_away])]
+    if not goal_half_filtered.empty:
+        st.dataframe(goal_half_filtered[['League_Name', 'Team', 'Scored', '1st half', '2nd half']], use_container_width=True)
+    else:
+        st.warning("Sem dados de distribuição de gols por tempo.")
+
+
 
 
 # Executar com variável de ambiente PORT
