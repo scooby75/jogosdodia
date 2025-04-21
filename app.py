@@ -42,19 +42,26 @@ def load_goals_half_data():
     url = "https://raw.githubusercontent.com/scooby75/jogosdodia/refs/heads/main/Goals_Half.csv"
     return load_csv(url)
 
+@st.cache_data
+def goals_ht_data():
+    home_url = "https://raw.githubusercontent.com/scooby75/jogosdodia/refs/heads/main/CV_Goals_HT_Home.csv"
+    away_url = "https://raw.githubusercontent.com/scooby75/jogosdodia/refs/heads/main/CV_Goals_HT_Away.csv"
+    return load_csv(home_url), load_csv(away_url)
+
 # ---------------------------- 
 # INÍCIO DO APP
 # ----------------------------
 
 tab1, tab2, tab3, tab4, tab5, tab6, tab7, tab8 = st.tabs([
+    "🧾 Resumo"
     "🏠 Análise Home", 
     "📊 Análise Geral", 
     "🛫 Análise Away", 
     "⚽ First Goal",
     "⏱️ Goals_Minute",
     "⚡ Goals HT/FT",
-    "📌 H2H (em breve)",
-    "🧾 Resumo Geral"
+    "📌 Goals HT",
+    
 ])
 
 # Carregar dados
@@ -164,10 +171,37 @@ with tab6:
     else:
         st.warning("Nenhuma estatística de Goals Half encontrada.")
 
-# ABA 7 - H2H (placeholder)
+
+# ABA 7 - Goals HT
 with tab7:
-    st.markdown("### Head-to-Head (H2H)")
-    st.info("Análise de confrontos diretos será implementada em breve.")
+    %st.markdown("## ⚡ Análise de Gols no 1º Tempo")
+
+    # Carregar os dados específicos
+    cv_home_df, cv_away_df = goals_ht_data()
+
+    # Normalizar colunas se necessário
+    cv_home_df = normalize_columns(cv_home_df)
+    cv_away_df = normalize_columns(cv_away_df)
+
+    # Filtrar dados pelo time selecionado
+    home_ht_filtered = cv_home_df[cv_home_df['Team'] == equipe_home_global]
+    away_ht_filtered = cv_away_df[cv_away_df['Team'] == equipe_away_global]
+
+    # Exibir dados do time da casa
+    st.subheader(f"🏠 {equipe_home_global} - CV Gols no 1º Tempo (Home)")
+    home_cols = ["4+", "3", "2", "1", "0", "Avg.", "Home", "CV_Goals_HT (%)", "Classificação CV"]
+    if not home_ht_filtered.empty:
+        st.dataframe(home_ht_filtered[home_cols].reset_index(drop=True), use_container_width=True)
+    else:
+        st.warning("Dados não encontrados para o time da casa.")
+
+    # Exibir dados do time visitante
+    st.subheader(f"🛫 {equipe_away_global} - CV Gols no 1º Tempo (Away)")
+    away_cols = ["Away", "Avg..1", "0.1", "1.1", "2.1", "3.1", "4+.1", "CV_Goals_HT (%)", "Classificação CV"]
+    if not away_ht_filtered.empty:
+        st.dataframe(away_ht_filtered[away_cols].reset_index(drop=True), use_container_width=True)
+    else:
+        st.warning("Dados não encontrados para o time visitante.")
 
 # ABA 8 - RESUMO
 with tab8:
