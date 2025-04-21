@@ -1,5 +1,6 @@
 import streamlit as st
 import pandas as pd
+import os 
 
 # Configuração da página
 st.set_page_config(page_title="Análise Geral e H2H - First Goal", layout="wide")
