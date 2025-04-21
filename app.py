@@ -165,14 +165,26 @@ with tabs[6]:
     st.subheader(f"🏠 {equipe_home} - CV Gols no 1º Tempo (Home)")
     home_ht = cv_home_df[cv_home_df['Team'] == equipe_home]
     if not home_ht.empty:
-        st.dataframe(home_ht[["4+", "3", "2", "1", "0", "Avg.", "Home", "CV_Goals_HT (%)", "Classificação CV"]], use_container_width=True)
+        st.dataframe(
+            home_ht.rename(columns={
+                "Avg.": "Avg",
+                "4+": "4+"
+            })[["Team", "Avg", "0", "1", "2", "3", "4+", "CV_Goals_HT (%)", "Classificação CV"]],
+            use_container_width=True
+        )
     else:
         st.warning("Dados não encontrados para o time da casa.")
 
     st.subheader(f"🛫 {equipe_away} - CV Gols no 1º Tempo (Away)")
     away_ht = cv_away_df[cv_away_df['Team'] == equipe_away]
     if not away_ht.empty:
-        st.dataframe(away_ht[["Away", "Avg..1", "0.1", "1.1", "2.1", "3.1", "4+.1", "CV_Goals_HT (%)", "Classificação CV"]], use_container_width=True)
+        st.dataframe(
+            away_ht.rename(columns={
+                "Avg..1": "Avg",
+                "0.1": "0", "1.1": "1", "2.1": "2", "3.1": "3", "4+.1": "4+"
+            })[["Team", "Avg", "0", "1", "2", "3", "4+", "CV_Goals_HT (%)", "Classificação CV"]],
+            use_container_width=True
+        )
     else:
         st.warning("Dados não encontrados para o time visitante.")
 
@@ -183,6 +195,7 @@ with tabs[7]:
 
     st.subheader("🛫 Dados Away")
     st.dataframe(away_filtered, use_container_width=True)
+
 
 # Executar com variável de ambiente PORT
 if __name__ == "__main__":
