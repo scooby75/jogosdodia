@@ -52,7 +52,7 @@ tab1, tab2, tab3, tab4, tab5, tab6, tab7, tab8 = st.tabs([
     "🛫 Análise Away", 
     "⚽ First Goal",
     "⏱️ Goals_Minute",
-    "⚡ Goals Half",
+    "⚡ Goals HT/FT",
     "📌 H2H (em breve)",
     "🧾 Resumo Geral"
 ])
@@ -192,7 +192,7 @@ with tab8:
     if not away_team_data.empty:
         st.write(f"🛫 **{equipe_away_global}**: {avg_minute_away:.1f} min")
 
-    st.subheader("⚡ Frequência de Gols")
+    st.subheader("⚡ Gols HT/FT")
     if not goals_half_filtered.empty:
         st.dataframe(goals_half_filtered[['League_Name', 'Team', 'Scored', '1st half', '2nd half']].reset_index(drop=True), use_container_width=True)
 
