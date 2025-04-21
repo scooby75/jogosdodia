@@ -3,7 +3,7 @@ import pandas as pd
 import os 
 
 # Configuração da página
-st.set_page_config(page_title="Análise Geral e H2H - First Goal", layout="wide")
+st.set_page_config(page_title="Football Stats", layout="wide")
 
 # ----------------------------
 # FUNÇÕES DE CARREGAMENTO
