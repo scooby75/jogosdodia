@@ -174,7 +174,7 @@ with tab6:
 
 # ABA 7 - Goals HT
 with tab7:
-    %st.markdown("## ⚡ Análise de Gols no 1º Tempo")
+    #st.markdown("## ⚡ Análise de Gols no 1º Tempo")
 
     # Carregar os dados específicos
     cv_home_df, cv_away_df = goals_ht_data()
