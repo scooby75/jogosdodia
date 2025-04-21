@@ -163,7 +163,7 @@ with tabs[5]:
 
 # ABA 7 - Goals HT
 with tabs[6]:
-    st.subheader(f"🏠 {equipe_home} - CV Gols no 1º Tempo (Home)")
+    #st.subheader(f"home")
     home_ht = cv_home_df[cv_home_df['Team'] == equipe_home]
     if not home_ht.empty:
         st.dataframe(
@@ -176,7 +176,7 @@ with tabs[6]:
     else:
         st.warning("Dados não encontrados para o time da casa.")
 
-    st.subheader(f"🛫 {equipe_away} - CV Gols no 1º Tempo (Away)")
+    #st.subheader(f"🛫 {equipe_away} - CV Gols no 1º Tempo (Away)")
     away_ht = cv_away_df[cv_away_df['Team'] == equipe_away]
     if not away_ht.empty:
         st.dataframe(
