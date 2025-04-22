@@ -183,10 +183,19 @@ with tabs[6]:
             value_name="Frequência (%)"
         )
 
+        # Adicionar coluna de cor personalizada
+        df_home_hist["Cor"] = df_home_hist["Gols no 1º Tempo"].map({
+            "0": "red",
+            "1": "yellow",
+            "2": "green",
+            "3": "green",
+            "4+": "green"
+        })
+
         chart_home = alt.Chart(df_home_hist).mark_bar().encode(
             x=alt.X("Gols no 1º Tempo:N", title="Gols no 1º Tempo"),
             y=alt.Y("Frequência (%):Q", title="Frequência (%)"),
-            color=alt.Color("Gols no 1º Tempo:N", legend=None)
+            color=alt.Color("Cor:N", scale=None, legend=None)
         ).properties(
             title=f"Distribuição de Gols no 1º Tempo - {equipe_home}"
         )
@@ -212,10 +221,19 @@ with tabs[6]:
             value_name="Frequência (%)"
         )
 
+        # Adicionar coluna de cor personalizada
+        df_away_hist["Cor"] = df_away_hist["Gols no 1º Tempo"].map({
+            "0": "red",
+            "1": "yellow",
+            "2": "green",
+            "3": "green",
+            "4+": "green"
+        })
+
         chart_away = alt.Chart(df_away_hist).mark_bar().encode(
             x=alt.X("Gols no 1º Tempo:N", title="Gols no 1º Tempo"),
             y=alt.Y("Frequência (%):Q", title="Frequência (%)"),
-            color=alt.Color("Gols no 1º Tempo:N", legend=None)
+            color=alt.Color("Cor:N", scale=None, legend=None)
         ).properties(
             title=f"Distribuição de Gols no 1º Tempo - {equipe_away}"
         )
@@ -223,7 +241,6 @@ with tabs[6]:
         st.altair_chart(chart_away, use_container_width=True)
     else:
         st.warning("Dados não encontrados para o time visitante.")
-
 
 
 # ABA 8 - Resumo Final Consolidado
