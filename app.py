@@ -162,6 +162,8 @@ with tabs[5]:
         st.warning("Nenhuma estatística de Goals Half encontrada.")
 
 # ABA 7 - Goals HT
+import plotly.graph_objects as go
+
 with tabs[6]:
     # Time da casa
     home_ht = cv_home_df[cv_home_df['Team'] == equipe_home]
@@ -175,14 +177,36 @@ with tabs[6]:
             "0": "0"
         })[["Team", "Avg", "0", "1", "2", "3", "4", "Total_Jogos", "% Com Gols", "% Sem Gols", "Classificação Ofensiva"]]
 
-        # Exibindo os dados do time da casa
         st.dataframe(df_home, use_container_width=True)
-        
-        # Barras de Frequência para Time da Casa
         st.subheader(f"Frequência de Gols - {equipe_home}")
-        for column in ["0", "1", "2", "3", "4"]:
-            freq = df_home[column].iloc[0]  # Pega o valor da coluna para o time
-            st.progress(freq / 100)  # Normaliza para mostrar como barra (valores entre 0 e 1)
+
+        # Cria barra empilhada única
+        fig_home = go.Figure()
+        cores = {
+            "0": "#d62728",   # vermelho
+            "1": "#ff7f0e",   # laranja
+            "2": "#2ca02c",   # verde
+            "3": "#1f77b4",   # azul
+            "4": "#9467bd"    # roxo
+        }
+
+        for coluna in ["0", "1", "2", "3", "4"]:
+            fig_home.add_trace(go.Bar(
+                name=f"Gols {coluna}",
+                y=[equipe_home],
+                x=[df_home[coluna].iloc[0]],
+                orientation='h',
+                marker=dict(color=cores[coluna])
+            ))
+
+        fig_home.update_layout(
+            barmode='stack',
+            height=150,
+            xaxis_title='Frequência (%)',
+            yaxis=dict(showticklabels=False),
+            showlegend=True
+        )
+        st.plotly_chart(fig_home, use_container_width=True)
 
     else:
         st.warning("Dados não encontrados para o time da casa.")
@@ -195,17 +219,34 @@ with tabs[6]:
             "0.1": "0", "1.1": "1", "2.1": "2", "3.1": "3", "4+.1": "4"
         })[["Team", "Avg", "0", "1", "2", "3", "4", "Total_Jogos", "% Com Gols", "% Sem Gols", "Classificação Ofensiva"]]
 
-        # Exibindo os dados do time visitante
         st.dataframe(df_away, use_container_width=True)
-        
-        # Barras de Frequência para Time Visitante
         st.subheader(f"Frequência de Gols - {equipe_away}")
-        for column in ["0", "1", "2", "3", "4"]:
-            freq = df_away[column].iloc[0]  # Pega o valor da coluna para o time
-            st.progress(freq / 100)  # Normaliza para mostrar como barra (valores entre 0 e 1)
+
+        # Cria barra empilhada única
+        fig_away = go.Figure()
+        for coluna in ["0", "1", "2", "3", "4"]:
+            fig_away.add_trace(go.Bar(
+                name=f"Gols {coluna}",
+                y=[equipe_away],
+                x=[df_away[coluna].iloc[0]],
+                orientation='h',
+                marker=dict(color=cores[coluna])
+            ))
+
+        fig_away.update_layout(
+            barmode='stack',
+            height=150,
+            xaxis_title='Frequência (%)',
+            yaxis=dict(showticklabels=False),
+            showlegend=True
+        )
+        st.plotly_chart(fig_away, use_container_width=True)
 
     else:
         st.warning("Dados não encontrados para o time visitante.")
+
+
+            
 # ABA 8 - Resumo Final Consolidado
 with tabs[7]:
     st.markdown("### Resumo Consolidado")
