@@ -197,7 +197,7 @@ with tabs[6]:
         st.dataframe(df_home, use_container_width=True)
 
         # Barra visual tipo uptime
-        st.subheader(f"Distribuição de Gols - {equipe_home}")
+        #st.subheader(f"Distribuição de Gols - {equipe_home}")
         freq_dict_home = {g: df_home[g].iloc[0] for g in ["0", "1", "2", "3", "4"]}
         st.markdown(gerar_barra_frequencia(freq_dict_home), unsafe_allow_html=True)
 
@@ -214,7 +214,7 @@ with tabs[6]:
 
         st.dataframe(df_away, use_container_width=True)
 
-        st.subheader(f"Distribuição de Gols - {equipe_away}")
+        #st.subheader(f"Distribuição de Gols - {equipe_away}")
         freq_dict_away = {g: df_away[g].iloc[0] for g in ["0", "1", "2", "3", "4"]}
         st.markdown(gerar_barra_frequencia(freq_dict_away), unsafe_allow_html=True)
 
