@@ -165,6 +165,23 @@ with tabs[5]:
 import plotly.graph_objects as go
 
 with tabs[6]:
+    def gerar_barra_frequencia(frequencia_dict):
+        cores = {
+            "0": "#d9534f",  # vermelho
+            "1": "#f0ad4e",  # laranja
+            "2": "#5bc0de",  # azul
+            "3": "#5cb85c",  # verde
+            "4": "#6f42c1"   # roxo
+        }
+
+        html = '<div style="display:flex; flex-wrap: wrap;">'
+        for gols, freq in frequencia_dict.items():
+            blocos = int(freq)  # 1 bloco por %
+            for _ in range(blocos):
+                html += f'<div style="width: 6px; height: 20px; background-color: {cores[gols]}; margin: 1px;"></div>'
+        html += '</div>'
+        return html
+
     # Time da casa
     home_ht = cv_home_df[cv_home_df['Team'] == equipe_home]
     if not home_ht.empty:
@@ -178,35 +195,11 @@ with tabs[6]:
         })[["Team", "Avg", "0", "1", "2", "3", "4", "Total_Jogos", "% Com Gols", "% Sem Gols", "Classificação Ofensiva"]]
 
         st.dataframe(df_home, use_container_width=True)
-        st.subheader(f"Frequência de Gols - {equipe_home}")
 
-        # Cria barra empilhada única
-        fig_home = go.Figure()
-        cores = {
-            "0": "#d62728",   # vermelho
-            "1": "#ff7f0e",   # laranja
-            "2": "#2ca02c",   # verde
-            "3": "#1f77b4",   # azul
-            "4": "#9467bd"    # roxo
-        }
-
-        for coluna in ["0", "1", "2", "3", "4"]:
-            fig_home.add_trace(go.Bar(
-                name=f"Gols {coluna}",
-                y=[equipe_home],
-                x=[df_home[coluna].iloc[0]],
-                orientation='h',
-                marker=dict(color=cores[coluna])
-            ))
-
-        fig_home.update_layout(
-            barmode='stack',
-            height=150,
-            xaxis_title='Frequência (%)',
-            yaxis=dict(showticklabels=False),
-            showlegend=True
-        )
-        st.plotly_chart(fig_home, use_container_width=True)
+        # Barra visual tipo uptime
+        st.subheader(f"Distribuição de Gols - {equipe_home}")
+        freq_dict_home = {g: df_home[g].iloc[0] for g in ["0", "1", "2", "3", "4"]}
+        st.markdown(gerar_barra_frequencia(freq_dict_home), unsafe_allow_html=True)
 
     else:
         st.warning("Dados não encontrados para o time da casa.")
@@ -220,31 +213,13 @@ with tabs[6]:
         })[["Team", "Avg", "0", "1", "2", "3", "4", "Total_Jogos", "% Com Gols", "% Sem Gols", "Classificação Ofensiva"]]
 
         st.dataframe(df_away, use_container_width=True)
-        st.subheader(f"Frequência de Gols - {equipe_away}")
 
-        # Cria barra empilhada única
-        fig_away = go.Figure()
-        for coluna in ["0", "1", "2", "3", "4"]:
-            fig_away.add_trace(go.Bar(
-                name=f"Gols {coluna}",
-                y=[equipe_away],
-                x=[df_away[coluna].iloc[0]],
-                orientation='h',
-                marker=dict(color=cores[coluna])
-            ))
-
-        fig_away.update_layout(
-            barmode='stack',
-            height=150,
-            xaxis_title='Frequência (%)',
-            yaxis=dict(showticklabels=False),
-            showlegend=True
-        )
-        st.plotly_chart(fig_away, use_container_width=True)
+        st.subheader(f"Distribuição de Gols - {equipe_away}")
+        freq_dict_away = {g: df_away[g].iloc[0] for g in ["0", "1", "2", "3", "4"]}
+        st.markdown(gerar_barra_frequencia(freq_dict_away), unsafe_allow_html=True)
 
     else:
         st.warning("Dados não encontrados para o time visitante.")
-
 
             
 # ABA 8 - Resumo Final Consolidado
