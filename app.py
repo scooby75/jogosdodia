@@ -281,7 +281,7 @@ with tabs[7]:
 
     # Time da casa
     with col1:
-        st.subheader(f"**{equipe_home} (Casa)**")
+        #st.subheader(f"**{equipe_home} (Casa)**")
         home_ht = cv_home_df[cv_home_df['Team'] == equipe_home]
         if not home_ht.empty:
             df_home = home_ht.rename(columns={
@@ -327,7 +327,7 @@ with tabs[7]:
 
     # Time visitante
     with col2:
-        st.subheader(f"{equipe_away} (Fora)")
+        #st.subheader(f"{equipe_away} (Fora)")
         away_ht = cv_away_df[cv_away_df['Team'] == equipe_away]
         if not away_ht.empty:
             df_away = away_ht.rename(columns={
