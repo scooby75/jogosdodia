@@ -175,7 +175,15 @@ with tabs[6]:
             "0": "0"
         })[["Team", "Avg", "0", "1", "2", "3", "4", "Total_Jogos", "% Com Gols", "% Sem Gols", "Classificação Ofensiva"]]
 
+        # Exibindo os dados do time da casa
         st.dataframe(df_home, use_container_width=True)
+        
+        # Barras de Frequência para Time da Casa
+        st.subheader(f"Frequência de Gols - {equipe_home}")
+        for column in ["0", "1", "2", "3", "4"]:
+            freq = df_home[column].iloc[0]  # Pega o valor da coluna para o time
+            st.progress(freq / 100)  # Normaliza para mostrar como barra (valores entre 0 e 1)
+
     else:
         st.warning("Dados não encontrados para o time da casa.")
 
@@ -187,10 +195,17 @@ with tabs[6]:
             "0.1": "0", "1.1": "1", "2.1": "2", "3.1": "3", "4+.1": "4"
         })[["Team", "Avg", "0", "1", "2", "3", "4", "Total_Jogos", "% Com Gols", "% Sem Gols", "Classificação Ofensiva"]]
 
+        # Exibindo os dados do time visitante
         st.dataframe(df_away, use_container_width=True)
+        
+        # Barras de Frequência para Time Visitante
+        st.subheader(f"Frequência de Gols - {equipe_away}")
+        for column in ["0", "1", "2", "3", "4"]:
+            freq = df_away[column].iloc[0]  # Pega o valor da coluna para o time
+            st.progress(freq / 100)  # Normaliza para mostrar como barra (valores entre 0 e 1)
+
     else:
         st.warning("Dados não encontrados para o time visitante.")
-
 # ABA 8 - Resumo Final Consolidado
 with tabs[7]:
     st.markdown("### Resumo Consolidado")
