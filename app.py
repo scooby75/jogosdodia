@@ -222,6 +222,8 @@ with tabs[6]:
         st.warning("Dados não encontrados para o time visitante.")
 
             
+import plotly.graph_objects as go
+
 # ABA 8 - Resumo
 with tabs[7]:
     st.markdown("### ⚽ Primeiro Gol")
@@ -251,47 +253,67 @@ with tabs[7]:
         st.info("Sem dados.")
 
     st.markdown("### 📌 CV HT (Distribuição de Gols no 1º Tempo)")
+
+    def gerar_barra_frequencia(frequencia_dict):
+        cores = {
+            "0": "#d9534f",  # vermelho
+            "1": "#20de6e",  # verde
+            "2": "#16ed48",  # azul
+            "3": "#24da1e",  # laranja
+            "4": "#56b72d"   # roxo
+        }
+
+        html = '<div style="display:flex; flex-wrap: wrap;">'
+        for gols, freq in frequencia_dict.items():
+            try:
+                blocos = int(float(str(freq).replace(',', '.')))  # Garantir número inteiro
+            except:
+                blocos = 0
+            for _ in range(blocos):
+                html += f'<div style="width: 6px; height: 20px; background-color: {cores[gols]}; margin: 1px;"></div>'
+        html += '</div>'
+        return html
+
     col1, col2 = st.columns(2)
 
-    def format_cv_ht(df, team, is_home=True):
-        if not df.empty:
-            st.markdown(f"**{team} ({'Casa' if is_home else 'Fora'})**")
-            row = df.iloc[0]
-
-            # Tratamento seguro para números
-            try:
-                media = float(str(row['Avg.']).replace(',', '.'))
-            except (ValueError, TypeError):
-                media = 0.0
-
-            com_gols = row.get('% Com Gols', '0%')
-            sem_gols = row.get('% Sem Gols', '0%')
-
-            col_a, col_b, col_c = st.columns(3)
-            col_a.metric("Média 1T", f"{media:.2f}")
-            col_b.metric("Com Gols", com_gols)
-            col_c.metric("Sem Gols", sem_gols)
-
-            st.markdown("**Distribuição de Gols (1º Tempo):**")
-            goal_keys = ['0', '1', '2', '3', '4+']
-            for key in goal_keys:
-                raw_value = str(row.get(key, '0')).replace('%', '').replace(',', '.')
-                try:
-                    value_int = int(float(raw_value))
-                except:
-                    value_int = 0
-                st.write(f"{key} Gol{'s' if key != '1' else ''}")
-                st.progress(min(value_int, 100))
-        else:
-            st.info("Sem dados disponíveis para esta equipe.")
-
-    home_cv = cv_home_df[cv_home_df['Team'] == equipe_home]
-    away_cv = cv_away_df[cv_away_df['Team'] == equipe_away]
-
+    # Time da casa
     with col1:
-        format_cv_ht(home_cv, equipe_home, is_home=True)
+        st.subheader(f"{equipe_home} (Casa)")
+        home_ht = cv_home_df[cv_home_df['Team'] == equipe_home]
+        if not home_ht.empty:
+            df_home = home_ht.rename(columns={
+                "Avg.": "Avg",
+                "4+": "4",
+                "3": "3",
+                "2": "2",
+                "1": "1",
+                "0": "0"
+            })[["Team", "Avg", "0", "1", "2", "3", "4", "Total_Jogos", "% Com Gols", "% Sem Gols", "Classificação Ofensiva"]]
+
+            st.dataframe(df_home, use_container_width=True)
+
+            freq_dict_home = {g: df_home[g].iloc[0] for g in ["0", "1", "2", "3", "4"]}
+            st.markdown(gerar_barra_frequencia(freq_dict_home), unsafe_allow_html=True)
+        else:
+            st.warning("Dados não encontrados para o time da casa.")
+
+    # Time visitante
     with col2:
-        format_cv_ht(away_cv, equipe_away, is_home=False)
+        st.subheader(f"{equipe_away} (Fora)")
+        away_ht = cv_away_df[cv_away_df['Team'] == equipe_away]
+        if not away_ht.empty:
+            df_away = away_ht.rename(columns={
+                "Avg..1": "Avg",
+                "0.1": "0", "1.1": "1", "2.1": "2", "3.1": "3", "4+.1": "4"
+            })[["Team", "Avg", "0", "1", "2", "3", "4", "Total_Jogos", "% Com Gols", "% Sem Gols", "Classificação Ofensiva"]]
+
+            st.dataframe(df_away, use_container_width=True)
+
+            freq_dict_away = {g: df_away[g].iloc[0] for g in ["0", "1", "2", "3", "4"]}
+            st.markdown(gerar_barra_frequencia(freq_dict_away), unsafe_allow_html=True)
+        else:
+            st.warning("Dados não encontrados para o time visitante.")
+
       
 # Executar com variável de ambiente PORT
 if __name__ == "__main__":
