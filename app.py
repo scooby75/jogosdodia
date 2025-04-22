@@ -227,7 +227,7 @@ import plotly.graph_objects as go
 import plotly.graph_objects as go
 
 with tabs[7]:
-    st.markdown("### ⚽ Primeiro Gol")
+    st.markdown("### ⚽ Marca Primeiro")
     col1, col2 = st.columns(2)
 
     with col1:
@@ -246,14 +246,14 @@ with tabs[7]:
         else:
             st.info("Sem dados.")
 
-    st.markdown("### ⏱️ Gols 1º e 2º Tempo")
+    st.markdown("### ⏱️ Frequência Gols 1º e 2º Tempo")
     goals_half_filtered = goals_half_df[goals_half_df['Team'].isin([equipe_home, equipe_away])]
     if not goals_half_filtered.empty:
         st.dataframe(goals_half_filtered[['League_Name', 'Team', 'Scored', '1st half', '2nd half']], use_container_width=True)
     else:
         st.info("Sem dados.")
 
-    st.markdown("### 📌 CV HT (Distribuição de Gols no 1º Tempo)")
+    st.markdown("### 📌 Frequencia Gols HT")
 
     def gerar_barra_frequencia(frequencia_dict):
         cores = {
