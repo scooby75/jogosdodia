@@ -255,33 +255,32 @@ with tabs[7]:
     # CV HT
     st.markdown("### 📌 CV HT (Distribuição de Gols no 1º Tempo)")
     col1, col2 = st.columns(2)
-
+    
     def format_cv_ht(df, team, is_home=True):
         if not df.empty:
-            rename_map = {
-                "Avg.": "Avg", "Avg..1": "Avg",
-                "4+": "4", "4+.1": "4",
-                "3": "3", "3.1": "3",
-                "2": "2", "2.1": "2",
-                "1": "1", "1.1": "1",
-                "0": "0", "0.1": "0"
-            }
-            df = df.rename(columns=rename_map)
-            df = df[["Team", "Avg", "0", "1", "2", "3", "4", "Total_Jogos", "% Com Gols", "% Sem Gols", "Classificação Ofensiva"]]
             st.markdown(f"**{team} ({'Casa' if is_home else 'Fora'})**")
-            st.dataframe(df, use_container_width=True)
+            row = df.iloc[0]
+            st.markdown(f"**Média de Gols (1T):** {row['Avg.']:.2f}")
+            st.markdown(f"**% Com Gols:** {row['% Com Gols']} | **% Sem Gols:** {row['% Sem Gols']}")
+            st.markdown("**Distribuição de Gols no 1º Tempo:**")
+            
+            goal_keys = ['0', '1', '2', '3', '4+']
+            for key in goal_keys:
+                value = row.get(key, 0)
+                st.write(f"{key} Gols")
+                st.progress(min(int(value), 100))
         else:
             st.info("Sem dados.")
-
+    
     home_cv = cv_home_df[cv_home_df['Team'] == equipe_home]
     away_cv = cv_away_df[cv_away_df['Team'] == equipe_away]
-
+    
     with col1:
         format_cv_ht(home_cv, equipe_home, is_home=True)
     with col2:
         format_cv_ht(away_cv, equipe_away, is_home=False)
-
     
+        
 # Executar com variável de ambiente PORT
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 10000))
