@@ -162,8 +162,8 @@ with tabs[5]:
         st.warning("Nenhuma estatística de Goals Half encontrada.")
 
 # ABA 7 - Goals HT
-import altair as alt
 import pandas as pd
+
 # Time da casa
 home_ht = cv_home_df[cv_home_df['Team'] == equipe_home]
 if not home_ht.empty:
@@ -177,26 +177,6 @@ if not home_ht.empty:
     })[["Team", "Avg", "0", "1", "2", "3", "4", "Total_Jogos", "% Com Gols", "% Sem Gols", "Classificação Ofensiva"]]
 
     st.dataframe(df_home, use_container_width=True)
-
-    # Histograma - Casa
-    df_home_hist = df_home.melt(
-        id_vars=["Team"],
-        value_vars=["0", "1", "2", "3", "4"],
-        var_name="Gols no 1º Tempo",
-        value_name="Frequência (%)"
-    )
-    df_home_hist["Cor"] = df_home_hist["Gols no 1º Tempo"].map({
-        "0": "red", "1": "yellow", "2": "green", "3": "green", "4": "green"
-    })
-
-    chart_home = alt.Chart(df_home_hist).mark_bar().encode(
-        x=alt.X("Gols no 1º Tempo:N"),
-        y=alt.Y("Frequência (%):Q"),
-        color=alt.Color("Cor:N", scale=None, legend=None)
-    ).properties(
-        title=f"Distribuição de Gols no 1º Tempo - {equipe_home}"
-    )
-    st.altair_chart(chart_home, use_container_width=True)
 else:
     st.warning("Dados não encontrados para o time da casa.")
 
@@ -209,28 +189,9 @@ if not away_ht.empty:
     })[["Team", "Avg", "0", "1", "2", "3", "4", "Total_Jogos", "% Com Gols", "% Sem Gols", "Classificação Ofensiva"]]
 
     st.dataframe(df_away, use_container_width=True)
-
-    # Histograma - Visitante
-    df_away_hist = df_away.melt(
-        id_vars=["Team"],
-        value_vars=["0", "1", "2", "3", "4"],
-        var_name="Gols no 1º Tempo",
-        value_name="Frequência (%)"
-    )
-    df_away_hist["Cor"] = df_away_hist["Gols no 1º Tempo"].map({
-        "0": "red", "1": "yellow", "2": "green", "3": "green", "4": "green"
-    })
-
-    chart_away = alt.Chart(df_away_hist).mark_bar().encode(
-        x=alt.X("Gols no 1º Tempo:N"),
-        y=alt.Y("Frequência (%):Q"),
-        color=alt.Color("Cor:N", scale=None, legend=None)
-    ).properties(
-        title=f"Distribuição de Gols no 1º Tempo - {equipe_away}"
-    )
-    st.altair_chart(chart_away, use_container_width=True)
 else:
     st.warning("Dados não encontrados para o time visitante.")
+
 
 
 # ABA 8 - Resumo Final Consolidado
