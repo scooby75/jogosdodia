@@ -224,7 +224,8 @@ with tabs[6]:
             
 import plotly.graph_objects as go
 
-# ABA 8 - Resumo
+import plotly.graph_objects as go
+
 with tabs[7]:
     st.markdown("### ⚽ Primeiro Gol")
     col1, col2 = st.columns(2)
@@ -266,7 +267,7 @@ with tabs[7]:
         html = '<div style="display:flex; flex-wrap: wrap;">'
         for gols, freq in frequencia_dict.items():
             try:
-                blocos = int(float(str(freq).replace(',', '.')))  # Garantir número inteiro
+                blocos = int(float(str(freq).replace(',', '.')))
             except:
                 blocos = 0
             for _ in range(blocos):
@@ -292,7 +293,21 @@ with tabs[7]:
 
             st.dataframe(df_home, use_container_width=True)
 
-            freq_dict_home = {g: df_home[g].iloc[0] for g in ["0", "1", "2", "3", "4"]}
+            # Métricas
+            row = df_home.iloc[0]
+            try:
+                media = float(str(row['Avg']).replace(',', '.'))
+            except (ValueError, TypeError):
+                media = 0.0
+            com_gols = row.get('% Com Gols', '0%')
+            sem_gols = row.get('% Sem Gols', '0%')
+
+            col_a, col_b, col_c = st.columns(3)
+            col_a.metric("Média 1T", f"{media:.2f}")
+            col_b.metric("Com Gols", com_gols)
+            col_c.metric("Sem Gols", sem_gols)
+
+            freq_dict_home = {g: row[g] for g in ["0", "1", "2", "3", "4"]}
             st.markdown(gerar_barra_frequencia(freq_dict_home), unsafe_allow_html=True)
         else:
             st.warning("Dados não encontrados para o time da casa.")
@@ -309,12 +324,25 @@ with tabs[7]:
 
             st.dataframe(df_away, use_container_width=True)
 
-            freq_dict_away = {g: df_away[g].iloc[0] for g in ["0", "1", "2", "3", "4"]}
+            # Métricas
+            row = df_away.iloc[0]
+            try:
+                media = float(str(row['Avg']).replace(',', '.'))
+            except (ValueError, TypeError):
+                media = 0.0
+            com_gols = row.get('% Com Gols', '0%')
+            sem_gols = row.get('% Sem Gols', '0%')
+
+            col_a, col_b, col_c = st.columns(3)
+            col_a.metric("Média 1T", f"{media:.2f}")
+            col_b.metric("Com Gols", com_gols)
+            col_c.metric("Sem Gols", sem_gols)
+
+            freq_dict_away = {g: row[g] for g in ["0", "1", "2", "3", "4"]}
             st.markdown(gerar_barra_frequencia(freq_dict_away), unsafe_allow_html=True)
         else:
             st.warning("Dados não encontrados para o time visitante.")
 
-      
 # Executar com variável de ambiente PORT
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 10000))
