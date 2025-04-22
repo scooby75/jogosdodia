@@ -168,9 +168,9 @@ with tabs[6]:
     def gerar_barra_frequencia(frequencia_dict):
         cores = {
             "0": "#d9534f",  # vermelho
-            "1": "#f0ad4e",  # laranja
+            "1": "#5cb85c",  # verde
             "2": "#5bc0de",  # azul
-            "3": "#5cb85c",  # verde
+            "3": "#f0ad4e",  # laranja
             "4": "#6f42c1"   # roxo
         }
 
