@@ -168,10 +168,10 @@ with tabs[6]:
     def gerar_barra_frequencia(frequencia_dict):
         cores = {
             "0": "#d9534f",  # vermelho
-            "1": "#5cb85c",  # verde
-            "2": "#5bc0de",  # azul
-            "3": "#f0ad4e",  # laranja
-            "4": "#6f42c1"   # roxo
+            "1": "#20de6e",  # verde
+            "2": "#16ed48",  # azul
+            "3": "#24da1e",  # laranja
+            "4": "#56b72d"   # roxo
         }
 
         html = '<div style="display:flex; flex-wrap: wrap;">'
