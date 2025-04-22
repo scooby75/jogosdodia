@@ -162,32 +162,68 @@ with tabs[5]:
         st.warning("Nenhuma estatística de Goals Half encontrada.")
 
 # ABA 7 - Goals HT
+import altair as alt
+import pandas as pd
+
 with tabs[6]:
-    #st.subheader(f"home")
     home_ht = cv_home_df[cv_home_df['Team'] == equipe_home]
     if not home_ht.empty:
-        st.dataframe(
-            home_ht.rename(columns={
-                "Avg.": "Avg",
-                "4+": "4+"
-            })[["Team", "Avg", "0", "1", "2", "3", "4+", "CV_Goals_HT (%)", "Classificação CV"]],
-            use_container_width=True
+        df_home = home_ht.rename(columns={
+            "Avg.": "Avg",
+            "4+": "4+"
+        })[["Team", "Avg", "0", "1", "2", "3", "4+", "CV_Goals_HT (%)", "Classificação CV"]]
+
+        st.dataframe(df_home, use_container_width=True)
+
+        # Preparar dados para o histograma
+        df_home_hist = df_home.melt(
+            id_vars=["Team"],
+            value_vars=["0", "1", "2", "3", "4+"],
+            var_name="Gols no 1º Tempo",
+            value_name="Frequência (%)"
         )
+
+        chart_home = alt.Chart(df_home_hist).mark_bar().encode(
+            x=alt.X("Gols no 1º Tempo:N", title="Gols no 1º Tempo"),
+            y=alt.Y("Frequência (%):Q", title="Frequência (%)"),
+            color=alt.Color("Gols no 1º Tempo:N", legend=None)
+        ).properties(
+            title=f"Distribuição de Gols no 1º Tempo - {equipe_home}"
+        )
+
+        st.altair_chart(chart_home, use_container_width=True)
     else:
         st.warning("Dados não encontrados para o time da casa.")
 
-    #st.subheader(f"🛫 {equipe_away} - CV Gols no 1º Tempo (Away)")
     away_ht = cv_away_df[cv_away_df['Team'] == equipe_away]
     if not away_ht.empty:
-        st.dataframe(
-            away_ht.rename(columns={
-                "Avg..1": "Avg",
-                "0.1": "0", "1.1": "1", "2.1": "2", "3.1": "3", "4+.1": "4+"
-            })[["Team", "Avg", "0", "1", "2", "3", "4+", "CV_Goals_HT (%)", "Classificação CV"]],
-            use_container_width=True
+        df_away = away_ht.rename(columns={
+            "Avg..1": "Avg",
+            "0.1": "0", "1.1": "1", "2.1": "2", "3.1": "3", "4+.1": "4+"
+        })[["Team", "Avg", "0", "1", "2", "3", "4+", "CV_Goals_HT (%)", "Classificação CV"]]
+
+        st.dataframe(df_away, use_container_width=True)
+
+        # Preparar dados para o histograma
+        df_away_hist = df_away.melt(
+            id_vars=["Team"],
+            value_vars=["0", "1", "2", "3", "4+"],
+            var_name="Gols no 1º Tempo",
+            value_name="Frequência (%)"
         )
+
+        chart_away = alt.Chart(df_away_hist).mark_bar().encode(
+            x=alt.X("Gols no 1º Tempo:N", title="Gols no 1º Tempo"),
+            y=alt.Y("Frequência (%):Q", title="Frequência (%)"),
+            color=alt.Color("Gols no 1º Tempo:N", legend=None)
+        ).properties(
+            title=f"Distribuição de Gols no 1º Tempo - {equipe_away}"
+        )
+
+        st.altair_chart(chart_away, use_container_width=True)
     else:
         st.warning("Dados não encontrados para o time visitante.")
+
 
 
 # ABA 8 - Resumo Final Consolidado
