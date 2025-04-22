@@ -1,6 +1,6 @@
 import streamlit as st
 import pandas as pd
-import os 
+import os
 
 # Configuração da página
 st.set_page_config(page_title="Football Stats", layout="wide")
@@ -162,40 +162,41 @@ with tabs[5]:
         st.warning("Nenhuma estatística de Goals Half encontrada.")
 
 # ABA 7 - Goals HT
-import pandas as pd
+with tabs[6]:
+    # Time da casa
+    home_ht = cv_home_df[cv_home_df['Team'] == equipe_home]
+    if not home_ht.empty:
+        df_home = home_ht.rename(columns={
+            "Avg.": "Avg",
+            "4+": "4",
+            "3": "3",
+            "2": "2",
+            "1": "1",
+            "0": "0"
+        })[["Team", "Avg", "0", "1", "2", "3", "4", "Total_Jogos", "% Com Gols", "% Sem Gols", "Classificação Ofensiva"]]
 
-# Time da casa
-home_ht = cv_home_df[cv_home_df['Team'] == equipe_home]
-if not home_ht.empty:
-    df_home = home_ht.rename(columns={
-        "Avg.": "Avg",
-        "4+": "4",
-        "3": "3",
-        "2": "2",
-        "1": "1",
-        "0": "0"
-    })[["Team", "Avg", "0", "1", "2", "3", "4", "Total_Jogos", "% Com Gols", "% Sem Gols", "Classificação Ofensiva"]]
+        st.dataframe(df_home, use_container_width=True)
+    else:
+        st.warning("Dados não encontrados para o time da casa.")
 
-    st.dataframe(df_home, use_container_width=True)
-else:
-    st.warning("Dados não encontrados para o time da casa.")
+    # Time visitante
+    away_ht = cv_away_df[cv_away_df['Team'] == equipe_away]
+    if not away_ht.empty:
+        df_away = away_ht.rename(columns={
+            "Avg..1": "Avg",
+            "0.1": "0", "1.1": "1", "2.1": "2", "3.1": "3", "4+.1": "4"
+        })[["Team", "Avg", "0", "1", "2", "3", "4", "Total_Jogos", "% Com Gols", "% Sem Gols", "Classificação Ofensiva"]]
 
-# Time visitante
-away_ht = cv_away_df[cv_away_df['Team'] == equipe_away]
-if not away_ht.empty:
-    df_away = away_ht.rename(columns={
-        "Avg..1": "Avg",
-        "0.1": "0", "1.1": "1", "2.1": "2", "3.1": "3", "4+.1": "4"
-    })[["Team", "Avg", "0", "1", "2", "3", "4", "Total_Jogos", "% Com Gols", "% Sem Gols", "Classificação Ofensiva"]]
-
-    st.dataframe(df_away, use_container_width=True)
-else:
-    st.warning("Dados não encontrados para o time visitante.")
-
-
+        st.dataframe(df_away, use_container_width=True)
+    else:
+        st.warning("Dados não encontrados para o time visitante.")
 
 # ABA 8 - Resumo Final Consolidado
-
+with tabs[7]:
+    st.markdown("### Resumo Consolidado")
+    st.markdown(f"**{equipe_home} (Casa)** vs **{equipe_away} (Visitante)**")
+    st.markdown("Aqui estão as análises detalhadas para os times selecionados.")
+    
 # Executar com variável de ambiente PORT
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 10000))
