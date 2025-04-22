@@ -223,10 +223,52 @@ with tabs[6]:
 
             
 # ABA 8 - Resumo Final Consolidado
+# ABA 8 - Resumo
 with tabs[7]:
-    st.markdown("### Resumo Consolidado")
-    st.markdown(f"**{equipe_home} (Casa)** vs **{equipe_away} (Visitante)**")
-    st.markdown("Aqui estão as análises detalhadas para os times selecionados.")
+    st.markdown("## 🔎 Resumo Geral")
+
+    col1, col2 = st.columns(2)
+    with col1:
+        st.markdown("### ⚽ First Goal")
+        show_team_stats(equipe_home, home_fg_df, 'Team_Home', 'Casa')
+        show_team_stats(equipe_away, away_fg_df, 'Team_Away', 'Fora')
+
+        st.markdown("### ⚡ Goals HT/FT")
+        filtered = goals_half_df[goals_half_df['Team'].isin([equipe_home, equipe_away])]
+        if not filtered.empty:
+            st.dataframe(filtered[['League_Name', 'Team', 'Scored', '1st half', '2nd half']], use_container_width=True)
+        else:
+            st.warning("Nenhuma estatística de Goals Half encontrada.")
+
+    with col2:
+        st.markdown("### ⏱️ Goals Minute")
+        home_team_data = goal_minute_home_df[goal_minute_home_df['Home'] == equipe_home]
+        away_team_data = goal_minute_away_df[goal_minute_away_df['Away'] == equipe_away]
+
+        if not home_team_data.empty:
+            st.success(f"🏠 **{equipe_home}** marca seu primeiro gol em média aos **{home_team_data['AVG_min_scored'].values[0]:.1f} min**.")
+        else:
+            st.warning("Nenhum dado encontrado para o time da casa.")
+
+        if not away_team_data.empty:
+            st.success(f"🛫 **{equipe_away}** marca seu primeiro gol em média aos **{away_team_data['AVG_min_scored'].values[0]:.1f} min**.")
+        else:
+            st.warning("Nenhum dado encontrado para o time visitante.")
+
+        st.markdown("### 📌 CV HT - Time da Casa")
+        if not home_ht.empty:
+            st.dataframe(df_home, use_container_width=True)
+            st.markdown(gerar_barra_frequencia(freq_dict_home), unsafe_allow_html=True)
+        else:
+            st.warning("Dados não encontrados para o time da casa.")
+
+        st.markdown("### 📌 CV HT - Time Visitante")
+        if not away_ht.empty:
+            st.dataframe(df_away, use_container_width=True)
+            st.markdown(gerar_barra_frequencia({g: df_away[g].iloc[0] for g in ["0", "1", "2", "3", "4"]}), unsafe_allow_html=True)
+        else:
+            st.warning("Dados não encontrados para o time visitante.")
+
     
 # Executar com variável de ambiente PORT
 if __name__ == "__main__":
