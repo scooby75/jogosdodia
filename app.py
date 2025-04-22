@@ -168,8 +168,7 @@ import pandas as pd
 home_ht = cv_home_df[cv_home_df['Team'] == equipe_home]
 
 if not home_ht.empty:
-    # Exibe as colunas disponíveis para conferência
-    st.write("Colunas disponíveis no DataFrame da casa:", home_ht.columns.tolist())
+    
 
     # Dicionário de renomeação
     colunas_renomear = {
