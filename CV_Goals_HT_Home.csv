@@ -1,1465 +1,1673 @@
 ﻿4+,3,2,1,0,Avg.,Team,CV_Goals_HT (%),Classificação CV
-1.0,,,3.0,2.0,1.17,A. Tucuman,40.82%,moderado
-,,1.0,1.0,5.0,0.43,Aldosivi,80.81%,alto
-1.0,,,2.0,4.0,0.86,Argentinos Jrs,53.45%,moderado
-,,1.0,3.0,3.0,0.71,Banfield,40.41%,moderado
-,,,5.0,2.0,0.71,Barracas C.,42.86%,moderado
-,,,4.0,3.0,0.57,Belgrano,14.29%,baixo
-,,1.0,3.0,4.0,0.63,Boca Juniors,46.77%,moderado
-,,1.0,3.0,4.0,0.63,Central Cordoba,46.77%,moderado
-,,,,7.0,0.00,D. Riestra,0.00%,baixo
-,,,1.0,5.0,0.17,Defensa y J.,66.67%,alto
-,1.0,,2.0,3.0,0.83,Estudiantes,40.82%,moderado
-,,,3.0,4.0,0.43,Gimnasia,14.29%,baixo
-,,,1.0,6.0,0.14,Godoy Cruz,71.43%,alto
-,,,3.0,4.0,0.43,Huracan,14.29%,baixo
-,,,1.0,5.0,0.17,I. Rivadavia,66.67%,alto
-1.0,,1.0,2.0,3.0,1.14,Independiente,47.38%,moderado
-,,,3.0,3.0,0.50,Instituto,0.00%,baixo
-,,1.0,2.0,4.0,0.57,Lanus,53.45%,moderado
-,,1.0,1.0,5.0,0.43,Newells,80.81%,alto
-,,,2.0,5.0,0.29,Platense,42.86%,moderado
-,,,4.0,2.0,0.67,Racing Club,33.33%,bom
-,,,1.0,6.0,0.14,River Plate,71.43%,alto
-,,1.0,4.0,1.0,1.00,Rosario Central,70.71%,alto
-,,,3.0,4.0,0.43,San Lorenzo,14.29%,baixo
-,,,1.0,6.0,0.14,Sarmiento,71.43%,alto
-,,,1.0,7.0,0.13,SM San Juan,75.00%,alto
-,,,3.0,4.0,0.43,T. de Cordoba,14.29%,baixo
-,,1.0,2.0,3.0,0.67,Tigre,40.82%,moderado
-,,,3.0,5.0,0.38,Union Santa Fe,25.00%,bom
-,,,,7.0,0.00,Velez Sarsfield,0.00%,baixo
-,,1.0,1.0,4.0,0.50,A. Quilmes,70.71%,alto
-,,1.0,2.0,2.0,0.80,Acassuso,28.28%,bom
-,,,2.0,4.0,0.33,Argentino Merlo,33.33%,bom
-,,,1.0,3.0,0.25,Brown de A.,50.00%,moderado
-,,1.0,2.0,3.0,0.67,Comunicaciones,40.82%,moderado
-,,1.0,2.0,3.0,0.67,D. Armenio,40.82%,moderado
-,1.0,1.0,1.0,3.0,1.00,D. Laferrere,57.74%,alto
-,,1.0,,5.0,0.33,Deportivo Merlo,66.67%,alto
-,,2.0,2.0,2.0,1.00,Dock Sud,0.00%,baixo
-,,,3.0,2.0,0.60,Excursionistas,20.00%,baixo
-,,,1.0,5.0,0.17,Fenix,66.67%,alto
-,,,,6.0,0.00,Flandria,0.00%,baixo
-,,1.0,1.0,4.0,0.50,Liniers,70.71%,alto
-,,1.0,1.0,3.0,0.60,Midland,56.57%,alto
-,,1.0,2.0,3.0,0.67,Real Pilar,40.82%,moderado
-,,,,5.0,0.00,S. Italiano,0.00%,baixo
-,,,1.0,4.0,0.20,Sacachispas,60.00%,alto
-,,,4.0,2.0,0.67,SM Burzaco,33.33%,bom
-,,,2.0,3.0,0.40,UAI Urquiza,20.00%,baixo
-,,2.0,3.0,1.0,1.17,V. San Carlos,40.82%,moderado
-,1.0,,1.0,4.0,0.67,Villa Dalmine,70.71%,alto
-,,,3.0,9.0,0.25,Alashkert,50.00%,moderado
-,,2.0,4.0,7.0,0.62,Ararat Yerevan,47.42%,moderado
-,,3.0,7.0,2.0,1.08,Ararat-Armenia,54.01%,moderado
-,,1.0,5.0,6.0,0.58,BKMA,54.01%,moderado
-,,,2.0,8.0,0.20,Gandzasar,60.00%,alto
-,2.0,6.0,2.0,2.0,1.67,Noah,57.74%,alto
-,1.0,1.0,4.0,7.0,0.69,Pyunik,76.54%,alto
-,,,2.0,10.0,0.17,Shirak,66.67%,alto
-,1.0,,6.0,5.0,0.75,Urartu,54.01%,moderado
-2.0,,3.0,3.0,5.0,1.31,Van,33.53%,bom
-,,,5.0,7.0,0.42,West Armenia,16.67%,baixo
-,1.0,4.0,4.0,4.0,1.15,Adelaide Utd,39.97%,bom
-,2.0,1.0,5.0,4.0,1.08,Auckland,52.70%,moderado
-,,2.0,2.0,7.0,0.55,Brisbane Roar,64.28%,alto
-,,2.0,2.0,8.0,0.50,Central Coast,70.71%,alto
-1.0,,,5.0,5.0,0.91,Macarthur FC,51.43%,moderado
-,,,6.0,5.0,0.55,Melbourne City,9.09%,baixo
-,,3.0,5.0,4.0,0.92,Melbourne V.,20.41%,bom
-,,2.0,4.0,6.0,0.67,Newcastle Jets,40.82%,moderado
-,,1.0,4.0,8.0,0.46,Perth Glory,66.17%,alto
-,,4.0,7.0,2.0,1.15,Sydney FC,47.42%,moderado
-,,,5.0,7.0,0.42,Wellington,16.67%,baixo
-,,2.0,5.0,4.0,0.82,Western United,34.02%,bom
-,,5.0,4.0,4.0,1.08,WS Wanderers,10.88%,baixo
-,,1.0,5.0,5.0,0.64,A. Klagenfurt,51.43%,moderado
-,,,3.0,8.0,0.27,Altach,45.45%,moderado
-,,1.0,4.0,6.0,0.55,Austria Wien,56.04%,alto
-,,1.0,6.0,4.0,0.73,BW Linz,56.04%,alto
-,1.0,1.0,2.0,7.0,0.64,Grazer AK,90.45%,alto
-,,,2.0,9.0,0.18,Hartberg,63.64%,alto
-,,1.0,4.0,6.0,0.55,LASK Linz,56.04%,alto
-,1.0,2.0,7.0,1.0,1.27,Rapid Wien,90.45%,alto
-,,3.0,3.0,5.0,0.82,Salzburg,25.71%,bom
-1.0,,3.0,4.0,3.0,1.27,Sturm Graz,39.63%,bom
-,,,3.0,8.0,0.27,Tirol,45.45%,moderado
-,1.0,1.0,1.0,8.0,0.55,Wolfsberger AC,110.22%,alto
-,,,3.0,9.0,0.25,A. Lustenau,50.00%,moderado
-,1.0,2.0,5.0,4.0,1.00,Admira Wacker,52.70%,moderado
-,,3.0,5.0,5.0,0.85,Amstetten,21.76%,bom
-,,3.0,5.0,5.0,0.85,Bregenz,21.76%,bom
-,2.0,2.0,2.0,7.0,0.92,First Vienna,66.62%,alto
-,,,5.0,7.0,0.42,Floridsdorfer,16.67%,baixo
-1.0,,2.0,5.0,4.0,1.17,Kapfenberger,52.70%,moderado
-,,1.0,7.0,4.0,0.75,Lafnitz,61.24%,alto
-,,2.0,5.0,6.0,0.69,Liefering,39.22%,bom
-1.0,2.0,,4.0,6.0,1.08,Rapid Wien B,59.09%,alto
-,,4.0,4.0,4.0,1.00,Ried,0.00%,baixo
-,,,3.0,9.0,0.25,St. Polten,50.00%,moderado
-,,,3.0,9.0,0.25,Stripfing,50.00%,moderado
-,,2.0,4.0,6.0,0.67,Sturm Graz B,40.82%,moderado
-,1.0,3.0,3.0,6.0,0.92,SV Horn,54.93%,moderado
-,,,5.0,8.0,0.38,Voitsberg,23.08%,bom
-,1.0,3.0,5.0,6.0,0.93,Anderlecht,51.21%,moderado
-,,4.0,4.0,7.0,0.80,Antwerp,28.28%,bom
-,,,5.0,10.0,0.33,Beerschot,33.33%,bom
-,1.0,1.0,3.0,10.0,0.53,Cercle Brugge,98.66%,alto
-,1.0,,5.0,9.0,0.53,Charleroi,65.32%,alto
-,1.0,4.0,4.0,6.0,1.00,Club Brugge,47.61%,moderado
-,,1.0,5.0,9.0,0.47,Dender,65.32%,alto
-,1.0,3.0,5.0,6.0,0.93,Gent,51.21%,moderado
-,,2.0,3.0,10.0,0.47,Kortrijk,71.18%,alto
-,1.0,1.0,5.0,8.0,0.67,KRC Genk,78.60%,alto
-,1.0,1.0,7.0,6.0,0.80,KV Mechelen,73.94%,alto
-,,1.0,6.0,8.0,0.53,OH Leuven,58.88%,alto
-,,4.0,6.0,5.0,0.93,Royale Union SG,16.33%,baixo
-,,3.0,6.0,6.0,0.80,Sint-Truiden,28.28%,bom
-,,2.0,2.0,11.0,0.40,Standard Liege,84.85%,alto
-,1.0,2.0,8.0,4.0,1.00,Westerlo,71.49%,alto
-,,2.0,2.0,3.0,0.86,Anderlecht B,20.20%,bom
-,1.0,,4.0,3.0,0.88,Beveren,46.77%,moderado
-,1.0,1.0,2.0,3.0,1.00,Club Brugge B,47.38%,moderado
-,,,4.0,3.0,0.57,Deinze,14.29%,baixo
-,,,3.0,3.0,0.50,Eupen,0.00%,baixo
-,,1.0,2.0,4.0,0.57,Francs Borains,53.45%,moderado
-,,,3.0,5.0,0.38,KRC Genk B,25.00%,bom
-,,1.0,3.0,3.0,0.71,La Louviere,40.41%,moderado
-,,2.0,4.0,2.0,1.00,Lierse K.,35.36%,bom
-,1.0,,2.0,4.0,0.71,Lokeren-Temse,53.45%,moderado
-,,,3.0,4.0,0.43,Lommel SK,14.29%,baixo
-,,3.0,4.0,1.0,1.25,Patro Eisden,46.77%,moderado
-,1.0,1.0,3.0,3.0,1.00,RFC Liege,50.00%,moderado
-,,1.0,5.0,2.0,0.88,RWDM,63.74%,alto
-,,,4.0,4.0,0.50,Seraing,0.00%,baixo
-,,2.0,3.0,3.0,0.88,Zulte-Waregem,17.68%,baixo
-,,,,3.0,0.00,Atletico MG,0.00%,baixo
-,,,2.0,,1.00,Bahia,0.00%,baixo
-,,,2.0,,1.00,Botafogo,0.00%,baixo
-,,,3.0,,1.00,Bragantino,0.00%,baixo
-,,,2.0,,1.00,Ceara,0.00%,baixo
-,,1.0,,2.0,0.67,Corinthians,33.33%,bom
-,,1.0,1.0,,1.50,Cruzeiro,0.00%,baixo
-,1.0,,,1.0,1.50,Flamengo,0.00%,baixo
-,,,2.0,1.0,0.67,Fluminense,33.33%,bom
-,,1.0,,2.0,0.67,Fortaleza,33.33%,bom
-,,1.0,1.0,1.0,1.00,Gremio,0.00%,baixo
-,,1.0,,1.0,1.00,Internacional,0.00%,baixo
-,,1.0,2.0,,1.33,Juventude,33.33%,bom
-,,1.0,,1.0,1.00,Mirassol,0.00%,baixo
-,,1.0,,1.0,1.00,Palmeiras,0.00%,baixo
-,,1.0,,1.0,1.00,Santos,0.00%,baixo
-,,1.0,,2.0,0.67,Sao Paulo,33.33%,bom
-,,,1.0,1.0,0.50,Sport Recife,0.00%,baixo
-,,1.0,,2.0,0.67,Vasco da Gama,33.33%,bom
-,,,1.0,1.0,0.50,Vitoria,0.00%,baixo
-,,,,1.0,0.00,Amazonas,0.00%,baixo
-,,,2.0,1.0,0.67,America MG,33.33%,bom
-,,,1.0,,1.00,Athletic Club,0.00%,baixo
-,,,2.0,,1.00,Athletico PR,0.00%,baixo
-,,,1.0,,1.00,Atletico GO,0.00%,baixo
-,,,2.0,,1.00,Avai,0.00%,baixo
-,,,2.0,,1.00,Botafogo SP,0.00%,baixo
-,,,,2.0,0.00,Chapecoense,0.00%,baixo
-,,,,2.0,0.00,Coritiba,0.00%,baixo
-,,,2.0,,1.00,CRB,0.00%,baixo
-,1.0,,1.0,,2.00,Criciuma,0.00%,baixo
-,,,1.0,1.0,0.50,Cuiaba,0.00%,baixo
-,,,1.0,1.0,0.50,Ferroviaria,0.00%,baixo
-,,,2.0,,1.00,Goias,0.00%,baixo
-,,,,1.0,0.00,Novorizontino,0.00%,baixo
-,,,,2.0,0.00,Operario PR,0.00%,baixo
-,,,1.0,1.0,0.50,Paysandu,0.00%,baixo
-,,,1.0,,1.00,Remo,0.00%,baixo
-,,1.0,1.0,,1.50,Vila Nova,0.00%,baixo
-,,,,1.0,0.00,Volta Redonda,0.00%,baixo
-,,,,1.0,0.00,Anapolis,0.00%,baixo
-,,,1.0,,1.00,Botafogo PB,0.00%,baixo
-,,,1.0,,1.00,Brusque,0.00%,baixo
-,,,,1.0,0.00,Caxias,0.00%,baixo
-,,,1.0,,1.00,Confianca,0.00%,baixo
-,,,1.0,,1.00,CSA,0.00%,baixo
-,,,,1.0,0.00,Figueirense,0.00%,baixo
-,,,,1.0,0.00,Floresta,0.00%,baixo
-,,,1.0,,1.00,Guarani,0.00%,baixo
-,,,,1.0,0.00,Itabaiana,0.00%,baixo
-,,,,1.0,0.00,Ituano,0.00%,baixo
-,,1.0,,,2.00,Londrina,0.00%,baixo
-,,,,1.0,0.00,Maringa,0.00%,baixo
-,,,,1.0,0.00,Nautico,0.00%,baixo
-,,,1.0,,1.00,Ponte Preta,0.00%,baixo
-,,,,1.0,0.00,Retro,0.00%,baixo
-,,,,1.0,0.00,Sao Bernardo,0.00%,baixo
-,,1.0,,,2.00,Ypiranga,0.00%,baixo
-,3.0,1.0,7.0,4.0,1.20,Arda,57.74%,alto
-,,2.0,4.0,9.0,0.53,Beroe,58.88%,alto
-,,1.0,6.0,8.0,0.53,Botev Plovdiv,58.88%,alto
-,,2.0,3.0,10.0,0.47,Botev Vratsa,71.18%,alto
-,,2.0,5.0,8.0,0.60,Cherno More,48.99%,moderado
-,1.0,1.0,6.0,7.0,0.73,CSKA 1948 Sofia,73.94%,alto
-,,1.0,8.0,6.0,0.67,CSKA Sofia,58.88%,alto
-,,,4.0,11.0,0.27,Hebar,46.67%,moderado
-,,,5.0,10.0,0.33,L. Krumovgrad,33.33%,bom
-,,2.0,10.0,3.0,0.93,Levski Sofia,71.18%,alto
-,,1.0,4.0,10.0,0.40,Lok. Plovdiv,74.83%,alto
-,,1.0,4.0,10.0,0.40,Lokomotiv Sofia,74.83%,alto
-,1.0,2.0,6.0,6.0,0.87,Ludogorets,60.74%,alto
-,1.0,,6.0,8.0,0.60,Septemvri Sofia,58.88%,alto
-,1.0,3.0,5.0,6.0,0.93,Slavia Sofia,51.21%,moderado
-,,3.0,5.0,7.0,0.73,Spartak Varna,32.66%,bom
-,,,,2.0,0.00,A. Ottawa,0.00%,baixo
-,,,,1.0,0.00,Cavalry,0.00%,baixo
-,,,,2.0,0.00,Forge,0.00%,baixo
-,,,1.0,,1.00,HFX Wanderers,0.00%,baixo
-,,1.0,,1.0,1.00,Pacific,0.00%,baixo
-,,,,2.0,0.00,Vancouver FC,0.00%,baixo
-,,,1.0,,1.00,York Utd,0.00%,baixo
-,,1.0,2.0,,1.33,Beijing Guoan,33.33%,bom
-,,,1.0,2.0,0.33,Changchun Yatai,33.33%,bom
-,,,3.0,1.0,0.75,Chengdu,50.00%,moderado
-,,,1.0,2.0,0.33,Dalian Yingbo,33.33%,bom
-,,,2.0,1.0,0.67,Henan SL,33.33%,bom
-,1.0,,1.0,3.0,0.80,Meizhou Hakka,56.57%,alto
-,,1.0,,3.0,0.50,Qingdao Hainiu,50.00%,moderado
-,1.0,,2.0,2.0,1.00,Qingdao West C.,28.28%,bom
-,,2.0,3.0,1.0,1.17,S. Shenhua,40.82%,moderado
-1.0,,,1.0,2.0,1.25,Shandong T.,35.36%,bom
-,,1.0,3.0,1.0,1.00,Shanghai Port,56.57%,alto
-,,,2.0,1.0,0.67,Sichuan Jiuniu,33.33%,bom
-,,,1.0,4.0,0.20,Tianjin T.,60.00%,alto
-,1.0,,1.0,1.0,1.33,Wuhan Three T.,0.00%,baixo
-,,,,3.0,0.00,Yunnan Yukun,0.00%,baixo
-,,1.0,2.0,,1.33,Zhejiang,33.33%,bom
-,,,2.0,1.0,0.67,Chongqing T.,33.33%,bom
-,,,,2.0,0.00,Dalian Kuncheng,0.00%,baixo
-,,1.0,,1.0,1.00,Foshan Nanshi,0.00%,baixo
-,,1.0,,1.0,1.00,Guangdong GZP,0.00%,baixo
-,,,,2.0,0.00,Guangxi Baoyun,0.00%,baixo
-,,,,3.0,0.00,Heilongjiang IC,0.00%,baixo
-,,,1.0,,1.00,Liaoning Tieren,0.00%,baixo
-,,,1.0,2.0,0.33,Nanjing City,33.33%,bom
-,,1.0,,2.0,0.67,Nantong Zhiyun,33.33%,bom
-,,,,2.0,0.00,Qingdao RL,0.00%,baixo
-,,1.0,,,2.00,S. Gongfu,0.00%,baixo
-,,1.0,,,2.00,Shaanxi Union,0.00%,baixo
-,,,1.0,1.0,0.50,Shanghai Jiadin,0.00%,baixo
-,,1.0,1.0,1.0,1.00,Shenzhen J.,0.00%,baixo
-,,,,2.0,0.00,Suzhou Dongwu,0.00%,baixo
-,,,4.0,3.0,0.57,A. Bucaramanga,14.29%,baixo
-1.0,,,4.0,2.0,1.14,A. Nacional,53.45%,moderado
-,,1.0,2.0,4.0,0.57,A. Petrolera,53.45%,moderado
-,,1.0,4.0,3.0,0.75,America de Cali,46.77%,moderado
-,,,3.0,4.0,0.43,Boyaca Chico,14.29%,baixo
-,,2.0,3.0,2.0,1.00,D. Pereira,20.20%,bom
-,,1.0,2.0,4.0,0.57,Deportes Tolima,53.45%,moderado
-,,1.0,2.0,5.0,0.50,Deportivo Cali,63.74%,alto
-,2.0,1.0,3.0,1.0,1.57,Deportivo Pasto,47.38%,moderado
-,,,2.0,4.0,0.33,Envigado,33.33%,bom
-,,,3.0,4.0,0.43,Fortaleza CEIF,14.29%,baixo
-,,1.0,2.0,4.0,0.57,I. Medelin,53.45%,moderado
-,,,6.0,2.0,0.75,Junior,50.00%,moderado
-,,,3.0,5.0,0.38,La Equidad,25.00%,bom
-,,1.0,3.0,3.0,0.71,Llaneros,40.41%,moderado
-,,,3.0,4.0,0.43,Millonarios,14.29%,baixo
-,,,6.0,2.0,0.75,Once Caldas,50.00%,moderado
-,,,1.0,6.0,0.14,R. Aguilas,71.43%,alto
-,,3.0,2.0,3.0,1.00,Santa Fe,17.68%,baixo
-,,,1.0,7.0,0.13,Union Magdalena,75.00%,alto
-,,1.0,1.0,4.0,0.50,Atletico Cali,70.71%,alto
-,,,3.0,3.0,0.50,Atletico Huila,0.00%,baixo
-,,,2.0,3.0,0.40,Barranquilla,20.00%,baixo
-,,1.0,,4.0,0.40,Boca Juniors,60.00%,alto
-,,,3.0,3.0,0.50,Bogota,0.00%,baixo
-,1.0,1.0,3.0,1.0,1.33,Cucuta,57.74%,alto
-,,,2.0,4.0,0.33,D. Quindio,33.33%,bom
-,,1.0,2.0,2.0,0.80,Inter Palmira,28.28%,bom
-,1.0,,1.0,3.0,0.80,Jaguares de C.,56.57%,alto
-,1.0,,2.0,2.0,1.00,Leones,28.28%,bom
-,,1.0,3.0,2.0,0.83,Orsomarso,40.82%,moderado
-,,2.0,2.0,2.0,1.00,Patriotas,0.00%,baixo
-1.0,,2.0,,3.0,1.33,R. Cundinamarca,40.82%,moderado
-,,1.0,4.0,,1.20,Real Cartagena,60.00%,alto
-,,,3.0,4.0,0.43,Real Santander,14.29%,baixo
-,,,3.0,3.0,0.50,Tigres,0.00%,baixo
-,2.0,,4.0,5.0,0.91,Alajuelense,34.02%,bom
-,,1.0,6.0,4.0,0.73,Cartagines,56.04%,alto
-,,1.0,5.0,5.0,0.64,Guanacasteca,51.43%,moderado
-,,1.0,5.0,5.0,0.64,Herediano,51.43%,moderado
-,,1.0,5.0,5.0,0.64,M. Liberia,51.43%,moderado
-,,1.0,1.0,9.0,0.27,Puntarenas,102.85%,alto
-,1.0,2.0,2.0,6.0,0.82,San Carlos,69.83%,alto
-,,1.0,5.0,5.0,0.64,Santa Ana,51.43%,moderado
-,,2.0,4.0,5.0,0.73,Santos Guapiles,34.02%,bom
-,,4.0,4.0,3.0,1.09,Saprissa,12.86%,baixo
-1.0,,1.0,2.0,7.0,0.73,Sporting SJ,90.45%,alto
-,,2.0,2.0,7.0,0.55,Zeledon,64.28%,alto
-1.0,,,2.0,6.0,0.67,Alajuelense,72.01%,alto
-,1.0,2.0,2.0,4.0,1.00,Cartagines,48.43%,moderado
-,,1.0,1.0,7.0,0.33,Guanacasteca,94.28%,alto
-,,4.0,2.0,4.0,1.00,Herediano,28.28%,bom
-,,2.0,3.0,5.0,0.70,M. Liberia,37.42%,bom
-,,1.0,5.0,3.0,0.78,Puntarenas,54.43%,moderado
-,,,,9.0,0.00,San Carlos,0.00%,baixo
-,,,5.0,4.0,0.56,Santa Ana,11.11%,baixo
-,,,8.0,2.0,0.80,Santos Guapiles,60.00%,alto
-,1.0,1.0,4.0,3.0,1.00,Saprissa,57.74%,alto
-,,1.0,3.0,6.0,0.50,Sporting SJ,61.64%,alto
-,,1.0,1.0,7.0,0.33,Zeledon,94.28%,alto
-,,,4.0,9.0,0.31,Bijelo Brdo,38.46%,bom
-,,,4.0,9.0,0.31,C. Zmijavci,38.46%,bom
-,,,4.0,10.0,0.29,Cibalia,42.86%,moderado
-,1.0,3.0,1.0,9.0,0.71,Dubrava Zagreb,93.68%,alto
-,,1.0,3.0,9.0,0.38,Dugopolje,78.45%,alto
-,,,5.0,8.0,0.38,Jarun,23.08%,bom
-1.0,,,4.0,8.0,0.62,Opatija,66.17%,alto
-,,2.0,7.0,5.0,0.79,Orijent,44.03%,moderado
-,,1.0,4.0,8.0,0.46,Rudes,66.17%,alto
-,,3.0,5.0,6.0,0.79,Sesvete,26.73%,bom
-,1.0,2.0,3.0,8.0,0.71,Vukovar,76.93%,alto
-,,,3.0,10.0,0.23,Zrinski J.,53.85%,moderado
-,1.0,3.0,4.0,7.0,0.87,Banik Ostrava,57.74%,alto
-,,1.0,4.0,10.0,0.40,Bohemians,74.83%,alto
-,,1.0,1.0,13.0,0.20,C. Budejovice,113.14%,alto
-,,,4.0,11.0,0.27,Dukla Praha,46.67%,moderado
-,,2.0,5.0,8.0,0.60,Hradec Kralove,48.99%,moderado
-1.0,,3.0,3.0,8.0,0.87,Jablonec,68.96%,alto
-,,2.0,7.0,6.0,0.73,Karvina,43.20%,moderado
-,,1.0,6.0,8.0,0.53,Mlada Boleslav,58.88%,alto
-,,,2.0,13.0,0.13,Pardubice,73.33%,alto
-,,2.0,8.0,5.0,0.80,Sigma Olomouc,48.99%,moderado
-,2.0,2.0,8.0,3.0,1.20,Slavia Prague,66.33%,alto
-,,,6.0,9.0,0.40,Slovacko,20.00%,baixo
-,1.0,3.0,5.0,6.0,0.93,Slovan Liberec,51.21%,moderado
-,1.0,,9.0,5.0,0.80,Sparta Prague,65.32%,alto
-,,1.0,5.0,9.0,0.47,Teplice,65.32%,alto
-1.0,,5.0,4.0,5.0,1.20,Viktoria Plzen,43.72%,moderado
-,,1.0,3.0,7.0,0.45,Banik Ostrava B,68.03%,alto
-1.0,,3.0,6.0,2.0,1.33,Chrudim,62.36%,alto
-,,3.0,5.0,4.0,0.92,Jihlava,20.41%,bom
-,,2.0,3.0,8.0,0.54,Lisen,60.57%,alto
-,,2.0,5.0,5.0,0.75,Opava,35.36%,bom
-,1.0,,4.0,7.0,0.58,Prostejov,61.24%,alto
-,,1.0,5.0,6.0,0.58,Sigma Olomouc B,54.01%,moderado
-,,2.0,6.0,4.0,0.83,Slavia Prague B,40.82%,moderado
-,1.0,3.0,3.0,5.0,1.00,Sparta Prague B,47.14%,moderado
-,,,4.0,9.0,0.31,Taborsko,38.46%,bom
-,,2.0,4.0,6.0,0.67,Varnsdorf,40.82%,moderado
-,1.0,2.0,5.0,4.0,1.00,Vikto Zizkov,52.70%,moderado
-,,,6.0,6.0,0.50,Vlasim,0.00%,baixo
-,,1.0,3.0,8.0,0.42,Vyskov,73.60%,alto
-,,,3.0,8.0,0.27,Zbrojovka Brno,45.45%,moderado
-,,1.0,9.0,2.0,0.92,Zlin,88.98%,alto
-,,1.0,3.0,10.0,0.36,Aalborg BK,82.68%,alto
-,1.0,1.0,8.0,3.0,1.00,AGF Aarhus,88.04%,alto
-,,1.0,7.0,6.0,0.64,Brondby IF,56.24%,alto
-,,1.0,8.0,5.0,0.71,FC Kobenhavn,61.45%,alto
-,1.0,1.0,8.0,3.0,1.00,FC Midtjylland,88.04%,alto
-,,,3.0,10.0,0.23,Lyngby,53.85%,moderado
-1.0,2.0,4.0,2.0,4.0,1.54,Nordsjaelland,46.15%,moderado
-,,3.0,6.0,4.0,0.92,Randers FC,28.78%,bom
-1.0,1.0,3.0,2.0,6.0,1.15,Silkeborg,71.34%,alto
-,,2.0,8.0,3.0,0.92,SonderjyskE,60.57%,alto
-,,1.0,5.0,8.0,0.50,Vejle BK,61.45%,alto
-,2.0,3.0,5.0,4.0,1.21,Viborg,31.94%,bom
-,,1.0,5.0,7.0,0.54,AC Horsens,57.56%,alto
-,,2.0,2.0,9.0,0.46,B 93,76.15%,alto
-,,1.0,5.0,7.0,0.54,Esbjerg,57.56%,alto
-1.0,2.0,2.0,2.0,6.0,1.23,Fredericia,67.06%,alto
-,1.0,1.0,1.0,11.0,0.43,HB Koge,123.72%,alto
-,,2.0,7.0,4.0,0.85,Hillerod,47.42%,moderado
-,1.0,1.0,5.0,7.0,0.71,Hobro,74.23%,alto
-,1.0,,5.0,8.0,0.57,Hvidovre,61.45%,alto
-,,,6.0,8.0,0.43,Kolding IF,14.29%,baixo
-,,6.0,3.0,4.0,1.15,Odense BK,28.78%,bom
-,,1.0,4.0,8.0,0.46,Roskilde,66.17%,alto
-,,,5.0,9.0,0.36,Vendsyssel,28.57%,bom
-,1.0,1.0,4.0,5.0,0.82,Aarhus Fremad,64.92%,alto
-,1.0,2.0,3.0,5.0,0.91,AB Copenhagen,53.78%,moderado
-,,,6.0,5.0,0.55,BK Frem,9.09%,baixo
-,,,3.0,8.0,0.27,Fremad Amager,45.45%,moderado
-,,,3.0,8.0,0.27,Hellerup IK,45.45%,moderado
-,,,5.0,6.0,0.45,Helsingor,9.09%,baixo
-,,1.0,2.0,8.0,0.36,Ishoj,84.31%,alto
-,,3.0,5.0,3.0,1.00,Middelfart,25.71%,bom
-,,2.0,3.0,6.0,0.64,Naestved,46.35%,moderado
-,,1.0,3.0,7.0,0.45,Nykobing,68.03%,alto
-,,1.0,4.0,6.0,0.55,Skive,56.04%,alto
-,,1.0,4.0,6.0,0.55,Thisted,56.04%,alto
-,1.0,1.0,1.0,1.0,1.50,Aucas,0.00%,baixo
-,,,1.0,3.0,0.25,Barcelona SC,50.00%,moderado
-,,2.0,2.0,,1.50,Cuniburo,0.00%,baixo
-,,,2.0,2.0,0.50,D. Cuenca,0.00%,baixo
-,,,1.0,3.0,0.25,Delfin,50.00%,moderado
-,,,1.0,4.0,0.20,El Nacional,60.00%,alto
-,,,2.0,3.0,0.40,Emelec,20.00%,baixo
-,,2.0,2.0,1.0,1.20,I. del Valle,28.28%,bom
-,,1.0,1.0,2.0,0.75,LDU Quito,35.36%,bom
-,,,3.0,2.0,0.60,Libertad,20.00%,baixo
-,,,1.0,3.0,0.25,Macara,50.00%,moderado
-,,1.0,4.0,,1.20,Manta,60.00%,alto
-,,1.0,1.0,3.0,0.60,Mushuc Runa,56.57%,alto
-,,2.0,1.0,1.0,1.25,Orense,35.36%,bom
-,,,3.0,1.0,0.75,Tecnico U.,50.00%,moderado
-,,,4.0,1.0,0.80,U. Catolica,60.00%,alto
-,,,,2.0,0.00,22 de Julio,0.00%,baixo
-,,,,2.0,0.00,Chacaritas,0.00%,baixo
-,1.0,,1.0,1.0,1.33,Cumbaya,0.00%,baixo
-,,,2.0,1.0,0.67,Gualaceo,33.33%,bom
-,,,1.0,2.0,0.33,Guayaquil City,33.33%,bom
-,,1.0,,2.0,0.67,I. Juniors,33.33%,bom
-,,,1.0,1.0,0.50,Imbabura,0.00%,baixo
-,,,,2.0,0.00,Leones Norte,0.00%,baixo
-,,,1.0,1.0,0.50,Nueve Octubre,0.00%,baixo
-,,,1.0,2.0,0.33,San Antonio,33.33%,bom
-,,,2.0,1.0,0.67,Vargas Torres,33.33%,bom
-,,,2.0,,1.00,Vinotinto,0.00%,baixo
-,,3.0,8.0,5.0,0.88,Arsenal,38.53%,bom
-,1.0,2.0,7.0,7.0,0.82,Aston Villa,65.24%,alto
-,1.0,,6.0,9.0,0.56,Bournemouth,61.87%,alto
-1.0,1.0,2.0,7.0,6.0,1.06,Brentford,75.79%,alto
-,,2.0,6.0,8.0,0.63,Brighton,46.77%,moderado
-1.0,1.0,1.0,6.0,7.0,0.94,Chelsea,84.78%,alto
-,,,6.0,11.0,0.35,Crystal Palace,29.41%,bom
-,2.0,2.0,1.0,12.0,0.65,Everton,105.72%,alto
-,1.0,1.0,9.0,6.0,0.82,Fulham,80.44%,alto
-,,,8.0,9.0,0.47,Ipswich Town,5.88%,baixo
-,,,3.0,14.0,0.18,Leicester City,64.71%,alto
-,2.0,1.0,7.0,6.0,0.94,Liverpool,63.74%,alto
-,2.0,6.0,6.0,2.0,1.50,Manchester City,50.00%,moderado
-,,3.0,3.0,11.0,0.53,Manchester Utd,66.55%,alto
-2.0,,,11.0,3.0,1.19,Newcastle Utd,75.52%,alto
-,2.0,,7.0,7.0,0.81,Nottm Forest,44.19%,moderado
-,,1.0,5.0,10.0,0.44,Southampton,69.03%,alto
-,,5.0,5.0,6.0,0.94,Tottenham,8.84%,baixo
-,,4.0,2.0,11.0,0.59,West Ham Utd,68.09%,alto
-,,2.0,8.0,6.0,0.75,Wolverhampton,46.77%,moderado
-,,2.0,8.0,12.0,0.55,Blackburn,56.04%,alto
-,1.0,3.0,4.0,14.0,0.59,Bristol City,91.36%,alto
-,,5.0,8.0,9.0,0.82,Burnley,23.18%,bom
-,,2.0,4.0,16.0,0.36,Cardiff City,84.31%,alto
-1.0,,4.0,8.0,9.0,0.91,Coventry City,58.21%,alto
-,1.0,1.0,7.0,13.0,0.55,Derby County,90.45%,alto
-,,1.0,7.0,14.0,0.41,Hull City,72.44%,alto
-1.0,1.0,5.0,10.0,5.0,1.27,Leeds Utd,75.51%,alto
-,,1.0,7.0,14.0,0.41,Luton Town,72.44%,alto
-,1.0,2.0,10.0,9.0,0.77,Middlesbrough,73.29%,alto
-,,4.0,3.0,15.0,0.50,Millwall,74.13%,alto
-,,6.0,8.0,8.0,0.91,Norwich City,12.86%,baixo
-,,,9.0,13.0,0.41,Oxford Utd,18.18%,baixo
-,,3.0,5.0,14.0,0.50,Plymouth,65.24%,alto
-,,5.0,4.0,13.0,0.64,Portsmouth,54.92%,moderado
-,,1.0,8.0,13.0,0.45,Preston,67.11%,alto
-,,4.0,8.0,10.0,0.73,QP Rangers,34.02%,bom
-,,3.0,11.0,8.0,0.77,Sheffield Utd,45.00%,moderado
-,,2.0,6.0,14.0,0.45,Sheffield Wed,68.03%,alto
-,1.0,2.0,8.0,11.0,0.68,Stoke City,75.51%,alto
-,1.0,2.0,11.0,8.0,0.82,Sunderland,75.51%,alto
-,2.0,3.0,9.0,8.0,0.95,Swansea City,55.30%,alto
-,,1.0,8.0,13.0,0.45,Watford,67.11%,alto
-1.0,1.0,2.0,6.0,12.0,0.77,West Brom,95.99%,alto
-,,3.0,10.0,9.0,0.73,Barnsley,42.15%,moderado
-,1.0,2.0,11.0,8.0,0.82,Birmingham City,75.51%,alto
-,,2.0,7.0,12.0,0.52,Blackpool,58.32%,alto
-1.0,,1.0,4.0,16.0,0.45,Bolton,112.45%,alto
-,,,13.0,9.0,0.59,Bristol Rovers,18.18%,baixo
-,1.0,4.0,6.0,10.0,0.81,Burton Albion,62.27%,alto
-,,4.0,4.0,14.0,0.55,Cambridge Utd,64.28%,alto
-,,4.0,6.0,12.0,0.64,Charlton,46.35%,moderado
-,1.0,2.0,6.0,13.0,0.59,Crawley Town,85.76%,alto
-,,1.0,7.0,14.0,0.41,Exeter City,72.44%,alto
-1.0,,1.0,5.0,15.0,0.50,Huddersfield,104.05%,alto
-,2.0,1.0,8.0,11.0,0.73,Leyton Orient,75.51%,alto
-,1.0,3.0,9.0,9.0,0.82,Lincoln City,64.92%,alto
-,,3.0,8.0,10.0,0.67,Mansfield,42.06%,moderado
-,,3.0,4.0,15.0,0.45,Northampton,74.13%,alto
-1.0,1.0,4.0,7.0,9.0,1.00,Peterborough,72.73%,alto
-,,3.0,6.0,13.0,0.55,Reading,57.14%,alto
-,1.0,3.0,5.0,13.0,0.64,Rotherham,82.82%,alto
-,,1.0,7.0,14.0,0.41,Shrewsbury,72.44%,alto
-,,1.0,7.0,13.0,0.43,Stevenage,69.99%,alto
-,1.0,2.0,10.0,9.0,0.77,Stockport,73.29%,alto
-,,2.0,7.0,13.0,0.50,Wigan Athletic,61.32%,alto
-,,5.0,7.0,10.0,0.77,Wrexham,28.02%,bom
-,,1.0,6.0,15.0,0.36,Wycombe,78.99%,alto
-,1.0,2.0,8.0,11.0,0.68,AFC Fylde,75.51%,alto
-,1.0,4.0,6.0,11.0,0.77,Aldershot Town,66.18%,alto
-1.0,1.0,3.0,9.0,8.0,1.00,Altrincham,78.20%,alto
-1.0,2.0,4.0,9.0,6.0,1.23,Barnet,65.24%,alto
-,,2.0,10.0,10.0,0.64,Boston Utd,51.43%,moderado
-,,2.0,6.0,14.0,0.45,Braintree Town,68.03%,alto
-,,3.0,8.0,11.0,0.64,Dagenham & R.,45.00%,moderado
-,,4.0,14.0,4.0,1.00,Eastleigh,64.28%,alto
-,,,4.0,18.0,0.18,Ebbsfleet Utd,63.64%,alto
-,1.0,3.0,7.0,11.0,0.73,Forest Green,69.83%,alto
-,2.0,6.0,5.0,9.0,1.05,Gateshead FC,45.45%,moderado
-,,1.0,6.0,15.0,0.36,Halifax Town,78.99%,alto
-,,2.0,4.0,16.0,0.36,Hartlepool,84.31%,alto
-,,3.0,7.0,12.0,0.59,Maidenhead Utd,50.21%,moderado
-,1.0,2.0,8.0,11.0,0.68,Oldham,75.51%,alto
-,,3.0,5.0,14.0,0.50,Rochdale,65.24%,alto
-,,3.0,9.0,9.0,0.71,Solihull Moors,40.41%,moderado
-,,4.0,8.0,10.0,0.73,Southend Utd,34.02%,bom
-1.0,,,7.0,14.0,0.50,Sutton Utd,72.44%,alto
-,1.0,2.0,7.0,12.0,0.64,Tamworth,79.77%,alto
-,,3.0,7.0,12.0,0.59,Wealdstone,50.21%,moderado
-,1.0,,5.0,16.0,0.36,Woking,86.48%,alto
-,,2.0,6.0,14.0,0.45,Yeovil Town,68.03%,alto
-2.0,,3.0,9.0,8.0,1.05,York City,55.30%,alto
-,,,2.0,,1.00,07 Vestur,0.00%,baixo
-,,,2.0,1.0,0.67,B36 Torshavn,33.33%,bom
-,,,1.0,1.0,0.50,B68 Toftir,0.00%,baixo
-,1.0,,2.0,,1.67,HB Torshavn,33.33%,bom
-,,1.0,3.0,,1.25,Klaksvik,50.00%,moderado
-1.0,,1.0,,2.0,1.50,NSI Runavik,35.36%,bom
-,,,1.0,2.0,0.33,Streymur,33.33%,bom
-,,,,2.0,0.00,Suduroy,0.00%,baixo
-,,,1.0,3.0,0.25,TB Tvoroyri,50.00%,moderado
-,,,,3.0,0.00,Vikingur,0.00%,baixo
-,,,1.0,2.0,0.33,Haka,33.33%,bom
-,,1.0,1.0,,1.50,Ilves,0.00%,baixo
-,,,1.0,1.0,0.50,Inter Turku,0.00%,baixo
-,,,1.0,2.0,0.33,KTP,33.33%,bom
-,,,1.0,1.0,0.50,KuPS,0.00%,baixo
-,,,1.0,1.0,0.50,Mariehamn,0.00%,baixo
-,,,,1.0,0.00,SJK,0.00%,baixo
-,,,,2.0,0.00,VPS,0.00%,baixo
-,,,,1.0,0.00,Atlantis,0.00%,baixo
-,,,,1.0,0.00,EPS,0.00%,baixo
-,,1.0,1.0,,1.50,Inter Turku B,0.00%,baixo
-,,,2.0,,1.00,KPV Kokkola,0.00%,baixo
-,,,,2.0,0.00,KuPS Ak.,0.00%,baixo
-,,,,1.0,0.00,Mikkelin,0.00%,baixo
-,,,1.0,,1.00,OLS Oulu,0.00%,baixo
-,,,,1.0,0.00,Rovaniemi,0.00%,baixo
-,,,,1.0,0.00,Tampere Utd,0.00%,baixo
-,,2.0,3.0,10.0,0.47,Angers,71.18%,alto
-,,2.0,5.0,8.0,0.60,Auxerre,48.99%,moderado
-,,4.0,6.0,5.0,0.93,Brest,16.33%,baixo
-,,1.0,5.0,9.0,0.47,Le Havre,65.32%,alto
-,,2.0,3.0,10.0,0.47,Lens,71.18%,alto
-,,4.0,6.0,5.0,0.93,Lille,16.33%,baixo
-,1.0,,8.0,5.0,0.79,Lyon,61.45%,alto
-,1.0,,6.0,8.0,0.60,Marseille,58.88%,alto
-,,3.0,6.0,7.0,0.75,Monaco,31.87%,bom
-,,1.0,4.0,10.0,0.40,Montpellier,74.83%,alto
-,,,6.0,7.0,0.46,Nantes,7.69%,baixo
-1.0,1.0,,8.0,5.0,1.13,Nice,78.60%,alto
-1.0,,4.0,8.0,2.0,1.33,Paris SG,71.49%,alto
-,,1.0,8.0,7.0,0.63,Reims,57.96%,alto
-,,3.0,6.0,7.0,0.75,Rennes,31.87%,bom
-,,1.0,6.0,8.0,0.53,Saint-Etienne,58.88%,alto
-,,,8.0,6.0,0.57,Strasbourg,14.29%,baixo
-,,1.0,3.0,11.0,0.33,Toulouse,86.41%,alto
-,,1.0,3.0,12.0,0.31,AC Ajaccio,89.70%,alto
-,,2.0,6.0,8.0,0.63,Amiens,46.77%,moderado
-,,,9.0,5.0,0.64,Annecy,28.57%,bom
-,,,5.0,11.0,0.31,Caen,37.50%,bom
-,,1.0,5.0,10.0,0.44,Clermont,69.03%,alto
-,,1.0,7.0,8.0,0.56,Grenoble,57.96%,alto
-,,4.0,4.0,7.0,0.80,Guingamp,28.28%,bom
-,1.0,1.0,8.0,5.0,0.87,Laval,78.60%,alto
-,,3.0,7.0,5.0,0.87,Lorient,32.66%,bom
-,1.0,1.0,4.0,10.0,0.56,Martigues,91.86%,alto
-,2.0,2.0,6.0,6.0,1.00,Metz,50.00%,moderado
-,2.0,1.0,8.0,5.0,1.00,Paris FC,68.47%,alto
-,,,7.0,8.0,0.47,Pau FC,6.67%,baixo
-,1.0,,6.0,8.0,0.60,Red Star,58.88%,alto
-,,1.0,3.0,11.0,0.33,Rodez Aveyron,86.41%,alto
-,1.0,2.0,5.0,7.0,0.80,SC Bastia,63.60%,alto
-,,1.0,3.0,11.0,0.33,Troyes,86.41%,alto
-,,3.0,3.0,10.0,0.56,USL Dunkerque,61.87%,alto
-,,2.0,7.0,4.0,0.85,Aubagne,47.42%,moderado
-,,4.0,5.0,5.0,0.93,Boulogne,10.10%,baixo
-,,,5.0,9.0,0.36,Bourg-en-Bresse,28.57%,bom
-,,1.0,7.0,6.0,0.64,Chateauroux,56.24%,alto
-1.0,,,6.0,7.0,0.71,Concarneau,56.24%,alto
-,,2.0,6.0,7.0,0.67,Dijon,43.20%,moderado
-,,1.0,8.0,5.0,0.71,Le Mans,61.45%,alto
-,,1.0,6.0,7.0,0.57,Nancy,56.24%,alto
-,,,5.0,9.0,0.36,Nimes,28.57%,bom
-,,3.0,4.0,7.0,0.71,Orleans,36.42%,bom
-,,1.0,4.0,9.0,0.43,Paris 13 A.,70.71%,alto
-,,2.0,5.0,7.0,0.64,Quevilly Rouen,44.03%,moderado
-1.0,1.0,2.0,3.0,8.0,0.93,Rouen,86.92%,alto
-,,,3.0,11.0,0.21,Sochaux,57.14%,alto
-,1.0,1.0,5.0,7.0,0.71,Valenciennes,74.23%,alto
-,,2.0,4.0,9.0,0.53,Versailles,58.88%,alto
-,,1.0,4.0,9.0,0.43,Villefranche,70.71%,alto
-,1.0,,2.0,2.0,1.00,Dila Gori,28.28%,bom
-,,1.0,3.0,1.0,1.00,Dinamo Batumi,56.57%,alto
-,,,2.0,2.0,0.50,Dinamo Tbilisi,0.00%,baixo
-,,,,5.0,0.00,Gagra,0.00%,baixo
-,,,1.0,2.0,0.33,Gareji Sagarejo,33.33%,bom
-,,,3.0,2.0,0.60,Iberia,20.00%,baixo
-,,,1.0,4.0,0.20,Kolkheti Poti,60.00%,alto
-1.0,1.0,,,3.0,1.60,Samgurali,56.57%,alto
-,,,1.0,3.0,0.25,Telavi,50.00%,moderado
-,,1.0,1.0,2.0,0.75,Torpedo Kutaisi,35.36%,bom
-,2.0,4.0,5.0,4.0,1.27,Bayern Munich,29.06%,bom
-,,3.0,,12.0,0.40,Bochum,60.00%,alto
-,2.0,3.0,6.0,4.0,1.20,Dortmund,39.44%,bom
-1.0,,4.0,6.0,4.0,1.20,E. Frankfurt,47.61%,moderado
-,,1.0,6.0,8.0,0.53,FC Augsburg,58.88%,alto
-,1.0,3.0,5.0,6.0,0.93,Freiburg,51.21%,moderado
-,,3.0,5.0,7.0,0.73,FSV Mainz,32.66%,bom
-,,1.0,3.0,11.0,0.33,Heidenheim,86.41%,alto
-,1.0,2.0,4.0,8.0,0.73,Hoffenheim,71.49%,alto
-1.0,1.0,,5.0,8.0,0.80,Holstein Kiel,78.60%,alto
-,,6.0,4.0,5.0,1.07,Leverkusen,16.33%,baixo
-,2.0,1.0,5.0,7.0,0.87,Monchengladbach,63.60%,alto
-,,4.0,5.0,6.0,0.87,RB Leipzig,16.33%,baixo
-,,,3.0,12.0,0.20,Sankt Pauli,60.00%,alto
-,1.0,2.0,4.0,8.0,0.73,Stuttgart,71.49%,alto
-1.0,,3.0,2.0,9.0,0.80,Union Berlin,83.00%,alto
-,1.0,1.0,6.0,7.0,0.73,Werder Bremen,73.94%,alto
-,,,4.0,11.0,0.27,Wolfsburg,46.67%,moderado
-,,,7.0,8.0,0.47,Braunschweig,6.67%,baixo
-,,3.0,7.0,5.0,0.87,Darmstadt,32.66%,bom
-,1.0,2.0,6.0,6.0,0.87,Dusseldorf,60.74%,alto
-1.0,1.0,4.0,5.0,5.0,1.25,Elversberg,57.28%,alto
-1.0,1.0,2.0,3.0,8.0,0.93,FC Koln,86.92%,alto
-,2.0,,5.0,8.0,0.73,FC Nurnberg,48.99%,moderado
-,,2.0,8.0,5.0,0.80,Greuther Furth,48.99%,moderado
-,3.0,4.0,4.0,4.0,1.40,Hamburger SV,11.55%,baixo
-,,1.0,6.0,8.0,0.53,Hannover 96,58.88%,alto
-,,,3.0,11.0,0.21,Hertha Berlin,57.14%,alto
-,1.0,2.0,7.0,5.0,0.93,Kaiserslautern,63.60%,alto
-,,2.0,8.0,5.0,0.80,Karlsruher SC,48.99%,moderado
-,,3.0,4.0,8.0,0.67,Magdeburg,43.20%,moderado
-,1.0,,7.0,7.0,0.67,Paderborn,56.57%,alto
-,,,8.0,7.0,0.53,Preuss. Munster,6.67%,baixo
-,,,5.0,10.0,0.33,Regensburg,33.33%,bom
-,2.0,3.0,4.0,6.0,1.07,Schalke 04,39.44%,bom
-,1.0,1.0,5.0,8.0,0.67,Ulm,78.60%,alto
-,1.0,1.0,8.0,7.0,0.76,1860 Munchen,76.92%,alto
-,,1.0,6.0,10.0,0.47,Alemannia A.,64.97%,alto
-,2.0,2.0,5.0,8.0,0.88,Bielefeld,58.53%,alto
-,2.0,2.0,4.0,9.0,0.82,Dortmund B,67.33%,alto
-,1.0,2.0,8.0,6.0,0.88,Dynamo Dresden,67.33%,alto
-1.0,,4.0,7.0,5.0,1.12,Energie Cottbus,50.94%,moderado
-,,5.0,9.0,3.0,1.12,Erzgebirge Aue,44.02%,moderado
-,,3.0,7.0,7.0,0.76,FC Ingolstadt,33.28%,bom
-,,,7.0,10.0,0.41,Hannover 96 B,17.65%,baixo
-,1.0,3.0,9.0,4.0,1.06,Hansa Rostock,69.35%,alto
-,2.0,1.0,6.0,8.0,0.82,Mannheim,67.33%,alto
-,,1.0,9.0,7.0,0.65,Osnabruck,59.99%,alto
-1.0,1.0,2.0,5.0,8.0,0.94,RW Essen,80.22%,alto
-,,4.0,8.0,5.0,0.94,Saarbrucken,29.99%,bom
-,,1.0,9.0,7.0,0.65,Sandhausen,59.99%,alto
-,,1.0,7.0,8.0,0.56,Unterhaching,57.96%,alto
-,,2.0,7.0,8.0,0.65,Verl,46.32%,moderado
-,1.0,4.0,6.0,6.0,1.00,VfB Stuttgart B,48.15%,moderado
-,1.0,1.0,8.0,7.0,0.76,Viktoria Koln,76.92%,alto
-,,2.0,9.0,6.0,0.76,Wehen Wiesbaden,50.60%,moderado
-,,,6.0,8.0,0.43,A. Kallithea,14.29%,baixo
-,,4.0,6.0,4.0,1.00,AEK Athens,20.20%,bom
-,,5.0,1.0,7.0,0.85,Aris,57.56%,alto
-,,,5.0,8.0,0.38,Asteras T.,23.08%,bom
-,,,3.0,10.0,0.23,Atromitos,53.85%,moderado
-,,,4.0,10.0,0.29,Lamia,42.86%,moderado
-,,1.0,6.0,7.0,0.57,Levadiakos,56.24%,alto
-,,3.0,5.0,5.0,0.85,OFI Crete,21.76%,bom
-,,4.0,7.0,4.0,1.00,Olympiakos,28.28%,bom
-,,,6.0,9.0,0.40,Panaitolikos,20.00%,baixo
-,,1.0,8.0,6.0,0.67,Panathinaikos,58.88%,alto
-,,2.0,7.0,6.0,0.73,Panserraikos,43.20%,moderado
-,,3.0,4.0,7.0,0.71,PAOK,36.42%,bom
-,,,3.0,12.0,0.20,Volos,60.00%,alto
-,1.0,1.0,6.0,2.0,1.10,Eastern,82.46%,alto
-,,,5.0,3.0,0.63,HK Rangers,25.00%,bom
-,,3.0,3.0,5.0,0.82,Hong Kong FC,25.71%,bom
-1.0,2.0,1.0,4.0,2.0,1.60,Kitchee,54.77%,moderado
-,,3.0,4.0,1.0,1.25,Kowloon City,46.77%,moderado
-,,1.0,3.0,7.0,0.45,LM Warriors,68.03%,alto
-1.0,2.0,1.0,2.0,3.0,1.56,North District,41.57%,moderado
-,,,6.0,5.0,0.55,Southern D.,9.09%,baixo
-,,3.0,4.0,3.0,1.00,Tai Po,14.14%,baixo
-,1.0,,7.0,6.0,0.71,Debrecen,56.24%,alto
-,,1.0,6.0,8.0,0.53,DVTK,58.88%,alto
-,,,6.0,8.0,0.43,Fehervar,14.29%,baixo
-,1.0,2.0,5.0,6.0,0.86,Ferencvaros,58.90%,alto
-,,3.0,5.0,6.0,0.79,Gyor,26.73%,bom
-,1.0,2.0,4.0,8.0,0.73,Kecskemeti TE,71.49%,alto
-,,2.0,6.0,5.0,0.77,MTK Budapest,39.22%,bom
-,1.0,3.0,1.0,9.0,0.71,Nyiregyhaza,93.68%,alto
-,,4.0,7.0,3.0,1.07,Paks,36.42%,bom
-,1.0,1.0,6.0,5.0,0.85,Puskas A.,70.08%,alto
-,1.0,2.0,1.0,10.0,0.57,Ujpest,107.85%,alto
-,1.0,1.0,5.0,7.0,0.71,Zalaegerszegi,74.23%,alto
-,,,,1.0,0.00,Afturelding,0.00%,baixo
-,,1.0,,,2.00,Breidablik,0.00%,baixo
-,,,,2.0,0.00,Fram,0.00%,baixo
-,,1.0,,,2.00,KA Akureyri,0.00%,baixo
-,,,1.0,,1.00,KR Reykjavik,0.00%,baixo
-,,,1.0,1.0,0.50,Stjarnan,0.00%,baixo
-,,,,1.0,0.00,Valur,0.00%,baixo
-,,,1.0,,1.00,Vestri,0.00%,baixo
-,1.0,,,1.0,1.50,Vikingur R.,0.00%,baixo
-1.0,,2.0,3.0,5.0,1.00,Afturelding,53.78%,moderado
-,,2.0,2.0,7.0,0.55,Dalvik / Reynir,64.28%,alto
-,1.0,1.0,4.0,5.0,0.82,Fjolnir,64.92%,alto
-,,,6.0,5.0,0.55,Grindavik,9.09%,baixo
-,,,7.0,4.0,0.64,Grotta,27.27%,bom
-1.0,1.0,2.0,4.0,3.0,1.36,IBV,53.01%,moderado
-,,1.0,4.0,6.0,0.55,IR Reykjavik,56.04%,alto
-1.0,,1.0,7.0,2.0,1.27,Keflavik,90.45%,alto
-,,2.0,4.0,5.0,0.73,Leiknir R.,34.02%,bom
-,,3.0,3.0,5.0,0.82,Njardvik,25.71%,bom
-,,,3.0,8.0,0.27,Thor Akureyri,45.45%,moderado
-,,1.0,4.0,6.0,0.55,Throttur R.,56.04%,alto
-,,1.0,1.0,3.0,0.60,Bohemians,56.57%,alto
-,,,3.0,3.0,0.50,Cork City,0.00%,baixo
-,,,1.0,4.0,0.20,Derry City,60.00%,alto
-,,1.0,4.0,1.0,1.00,Drogheda Utd,70.71%,alto
-,,1.0,1.0,3.0,0.60,Galway Utd,56.57%,alto
-,,2.0,1.0,2.0,1.00,Shamrock Rovers,28.28%,bom
-,1.0,,2.0,3.0,0.83,Shelbourne,40.82%,moderado
-,,,2.0,3.0,0.40,Sligo Rovers,20.00%,baixo
-,,1.0,3.0,2.0,0.83,St. Patricks,40.82%,moderado
-,,,1.0,4.0,0.20,Waterford,60.00%,alto
-,,,1.0,5.0,0.17,Athlone Town,66.67%,alto
-,,1.0,2.0,2.0,0.80,Bray Wanderers,28.28%,bom
-,1.0,,1.0,3.0,0.80,Cobh Ramblers,56.57%,alto
-,,,3.0,3.0,0.50,Dundalk,0.00%,baixo
-,1.0,,2.0,2.0,1.00,Finn Harps,28.28%,bom
-,,1.0,1.0,4.0,0.50,Kerry,70.71%,alto
-,,,2.0,3.0,0.40,Longford Town,20.00%,baixo
-,,,3.0,2.0,0.60,Treaty Utd,20.00%,baixo
-,,,1.0,5.0,0.17,UC Dublin,66.67%,alto
-,,1.0,3.0,2.0,0.83,Wexford,40.82%,moderado
-,,4.0,3.0,8.0,0.73,Ashdod,43.20%,moderado
-1.0,,,6.0,7.0,0.79,B. Jerusalem,56.24%,alto
-1.0,1.0,1.0,3.0,10.0,0.75,H. Beer Sheva,108.97%,alto
-,1.0,1.0,7.0,6.0,0.80,H. Jerusalem,73.94%,alto
-,,1.0,3.0,10.0,0.36,Hapoel Hadera,82.68%,alto
-,3.0,1.0,6.0,5.0,1.13,Hapoel Haifa,51.21%,moderado
-,,2.0,3.0,10.0,0.47,Ironi Tiberias,71.18%,alto
-,1.0,1.0,3.0,11.0,0.50,Kiryat Shmona,103.08%,alto
-1.0,,,4.0,11.0,0.50,M. Bnei Raina,78.56%,alto
-,,,3.0,12.0,0.20,M. Petah Tikva,60.00%,alto
-,2.0,3.0,5.0,6.0,1.06,M. Tel Aviv,39.53%,bom
-,1.0,2.0,5.0,8.0,0.75,Maccabi Haifa,68.47%,alto
-,,2.0,6.0,7.0,0.67,Maccabi Netanya,43.20%,moderado
-,,1.0,5.0,8.0,0.50,Sakhnin,61.45%,alto
-1.0,1.0,1.0,5.0,9.0,0.82,AC Milan,94.12%,alto
-,,3.0,5.0,9.0,0.65,AS Roma,44.02%,moderado
-1.0,1.0,2.0,5.0,7.0,1.06,Atalanta,75.00%,alto
-,,1.0,6.0,10.0,0.47,Bologna,64.97%,alto
-,,,4.0,12.0,0.25,Cagliari,50.00%,moderado
-,,1.0,8.0,7.0,0.63,Como,57.96%,alto
-,,,2.0,14.0,0.13,Empoli,75.00%,alto
-,1.0,2.0,8.0,6.0,0.88,Fiorentina,67.33%,alto
-,,1.0,2.0,13.0,0.25,Genoa,101.93%,alto
-,,1.0,3.0,12.0,0.31,Hellas Verona,89.70%,alto
-,1.0,5.0,6.0,4.0,1.19,Inter Milan,46.77%,moderado
-,,2.0,6.0,9.0,0.59,Juventus,50.60%,moderado
-,,2.0,8.0,6.0,0.75,Lazio,46.77%,moderado
-,,1.0,3.0,13.0,0.29,Lecce,92.64%,alto
-,,1.0,5.0,11.0,0.41,Monza,72.52%,alto
-,,2.0,6.0,8.0,0.63,Napoli,46.77%,moderado
-,,1.0,6.0,9.0,0.50,Parma,61.87%,alto
-,,,5.0,10.0,0.33,Torino,33.33%,bom
-,,,9.0,7.0,0.56,Udinese,12.50%,baixo
-,,,6.0,10.0,0.38,Venezia,25.00%,bom
-,1.0,1.0,7.0,8.0,0.71,Bari,76.92%,alto
-,2.0,,6.0,8.0,0.75,Brescia,46.77%,moderado
-,1.0,2.0,3.0,11.0,0.59,Carrarese,93.19%,alto
-,2.0,1.0,6.0,8.0,0.82,Catanzaro,67.33%,alto
-,1.0,3.0,4.0,9.0,0.76,Cesena,69.35%,alto
-,,1.0,2.0,13.0,0.25,Cittadella,101.93%,alto
-,,1.0,5.0,11.0,0.41,Cosenza,72.52%,alto
-,,1.0,7.0,9.0,0.53,Cremonese,59.99%,alto
-,,2.0,6.0,9.0,0.59,Frosinone,50.60%,moderado
-,,1.0,10.0,5.0,0.75,Juve Stabia,69.03%,alto
-,1.0,2.0,1.0,12.0,0.50,Mantova,115.92%,alto
-,,3.0,5.0,8.0,0.69,Modena,38.53%,bom
-,1.0,1.0,6.0,8.0,0.69,Palermo,77.06%,alto
-,,3.0,7.0,6.0,0.81,Pisa,31.87%,bom
-,,2.0,7.0,8.0,0.65,Reggiana,46.32%,moderado
-,,1.0,4.0,12.0,0.35,Salernitana,81.93%,alto
-,,,7.0,10.0,0.41,Sampdoria,17.65%,baixo
-1.0,,1.0,9.0,5.0,0.94,Sassuolo,82.92%,alto
-,1.0,1.0,6.0,8.0,0.69,Spezia,77.06%,alto
-,,1.0,9.0,6.0,0.69,Sudtirol,61.87%,alto
-,,1.0,6.0,12.0,0.42,AlbinoLeffe,71.00%,alto
-,,1.0,4.0,13.0,0.33,Alcione,84.98%,alto
-,,2.0,3.0,13.0,0.39,Arzignano,82.78%,alto
-,1.0,3.0,4.0,11.0,0.68,Atalanta B,79.30%,alto
-,,1.0,7.0,11.0,0.47,Caldiero Terme,64.89%,alto
-,,3.0,3.0,12.0,0.50,Clodiense,70.71%,alto
-,,3.0,3.0,13.0,0.47,FeralpiSalo,74.43%,alto
-,,2.0,6.0,11.0,0.53,Giana Erminio,58.13%,alto
-,,,9.0,9.0,0.50,Lecco,0.00%,baixo
-,,1.0,5.0,12.0,0.39,Lumezzane,75.77%,alto
-,,1.0,7.0,11.0,0.47,Novara,64.89%,alto
-,1.0,2.0,9.0,7.0,0.84,Padova,70.42%,alto
-,1.0,1.0,5.0,11.0,0.56,Pergolettese,90.95%,alto
-,,,7.0,12.0,0.37,Pro Patria,26.32%,bom
-,,2.0,4.0,12.0,0.44,Pro Vercelli,72.01%,alto
-,,1.0,7.0,11.0,0.47,Renate,64.89%,alto
-,,,8.0,10.0,0.44,Trento,11.11%,baixo
-,,,4.0,14.0,0.22,Triestina,55.56%,alto
-,,5.0,7.0,7.0,0.89,Vicenza,14.89%,baixo
-,2.0,,7.0,9.0,0.72,Virtus Verona,49.07%,moderado
-,,3.0,4.0,11.0,0.56,AC Milan B,59.32%,alto
-,,1.0,6.0,11.0,0.44,Arezzo,68.04%,alto
-,,,5.0,13.0,0.28,Ascoli,44.44%,moderado
-,,,8.0,10.0,0.44,Athletic Carpi,11.11%,baixo
-,1.0,1.0,4.0,12.0,0.50,Campobasso,100.00%,alto
-,1.0,2.0,9.0,6.0,0.89,Entella,71.15%,alto
-,,1.0,4.0,13.0,0.33,Gubbio,84.98%,alto
-,,1.0,4.0,13.0,0.33,Legnago Salus,84.98%,alto
-,2.0,,5.0,11.0,0.61,Lucchese,62.36%,alto
-,,1.0,6.0,11.0,0.44,Perugia,68.04%,alto
-,1.0,1.0,5.0,11.0,0.56,Pescara,90.95%,alto
-,1.0,4.0,5.0,8.0,0.89,Pianese,55.56%,alto
-,1.0,1.0,8.0,8.0,0.72,Pineto,77.78%,alto
-,1.0,3.0,6.0,8.0,0.83,Pontedera,59.84%,alto
-,1.0,1.0,2.0,14.0,0.39,Rimini,122.22%,alto
-,,1.0,6.0,11.0,0.44,Sestri Levante,68.04%,alto
-,,1.0,3.0,14.0,0.28,SPAL,95.26%,alto
-,1.0,5.0,2.0,10.0,0.83,Ternana,77.78%,alto
-,,,6.0,12.0,0.33,Torres,33.33%,bom
-,,2.0,6.0,10.0,0.56,Vis Pesaro,54.43%,moderado
-,,,4.0,2.0,0.67,Albirex Niigata,33.33%,bom
-,,,3.0,3.0,0.50,Avispa Fukuoka,0.00%,baixo
-,,1.0,3.0,2.0,0.83,Cerezo Osaka,40.82%,moderado
-,,1.0,2.0,4.0,0.57,Fagiano Okayama,53.45%,moderado
-,,,2.0,3.0,0.40,FC Tokyo,20.00%,baixo
-,,,3.0,2.0,0.60,Gamba Osaka,20.00%,baixo
-,,,1.0,4.0,0.20,K. Frontale,60.00%,alto
-,1.0,1.0,2.0,2.0,1.17,Kashima Antlers,33.33%,bom
-,,,,5.0,0.00,Kashiwa Reysol,0.00%,baixo
-,,,1.0,4.0,0.20,Kyoto Sanga,60.00%,alto
-,,,3.0,2.0,0.60,Machida Zelvia,20.00%,baixo
-,,,3.0,2.0,0.60,Nagoya G.,20.00%,baixo
-,,,2.0,4.0,0.33,S. Hiroshima,33.33%,bom
-,1.0,1.0,2.0,2.0,1.17,Shimizu S-Pulse,33.33%,bom
-,,1.0,1.0,3.0,0.60,Shonan Bellmare,56.57%,alto
-,,,1.0,4.0,0.20,Tokyo Verdy,60.00%,alto
-,,,3.0,2.0,0.60,Urawa RD,20.00%,baixo
-,,1.0,,5.0,0.33,Vissel Kobe,66.67%,alto
-,,,2.0,5.0,0.29,Yokohama FC,42.86%,moderado
-,,,3.0,3.0,0.50,Yokohama M.,0.00%,baixo
-,,,,4.0,0.00,Blaublitz Akita,0.00%,baixo
-,,,2.0,2.0,0.50,C. Sapporo,0.00%,baixo
-,,,2.0,4.0,0.33,Ehime FC,33.33%,bom
-,,,1.0,5.0,0.17,FC Imabari,66.67%,alto
-,,3.0,1.0,1.0,1.40,Fujieda MYFC,56.57%,alto
-,,,1.0,4.0,0.20,Iwaki,60.00%,alto
-,,1.0,3.0,1.0,1.00,JEF Utd Chiba,56.57%,alto
-,,,2.0,3.0,0.40,Jubilo Iwata,20.00%,baixo
-,,,4.0,1.0,0.80,Kataller Toyama,60.00%,alto
-,,1.0,1.0,2.0,0.75,M. Yamagata,35.36%,bom
-,,2.0,1.0,2.0,1.00,Mito Hollyhock,28.28%,bom
-,,,,5.0,0.00,Oita Trinita,0.00%,baixo
-,,,2.0,3.0,0.40,Omiya Ardija,20.00%,baixo
-,,1.0,1.0,4.0,0.50,R. Kumamoto,70.71%,alto
-,,,4.0,1.0,0.80,R. Yamaguchi,60.00%,alto
-,,,3.0,3.0,0.50,Sagan Tosu,0.00%,baixo
-,,,,4.0,0.00,Tokushima V.,0.00%,baixo
-,,1.0,2.0,2.0,0.80,Vegalta Sendai,28.28%,bom
-,,1.0,2.0,2.0,0.80,Ventforet Kofu,28.28%,bom
-,,,1.0,4.0,0.20,V-V. Nagasaki,60.00%,alto
-,,,2.0,3.0,0.40,AC Numazu,20.00%,baixo
-,,,3.0,2.0,0.60,FC Ryukyu,20.00%,baixo
-,,1.0,1.0,2.0,0.75,Fukushima Utd,35.36%,bom
-,,1.0,,4.0,0.40,G. Kitakyushu,60.00%,alto
-,,,2.0,2.0,0.50,Gainare Tottori,0.00%,baixo
-,,,2.0,4.0,0.33,Gifu,33.33%,bom
-,,1.0,2.0,2.0,0.80,Kagoshima Utd,28.28%,bom
-,,,2.0,3.0,0.40,Kamatamare S.,20.00%,baixo
-,,,1.0,4.0,0.20,Kochi United,60.00%,alto
-,,2.0,,3.0,0.80,Kusatsu,20.00%,baixo
-,,,1.0,2.0,0.33,Matsumoto Y.,33.33%,bom
-,,,2.0,3.0,0.40,Nagano Parceiro,20.00%,baixo
-,,1.0,3.0,2.0,0.83,Nara Club,40.82%,moderado
-,,,2.0,4.0,0.33,Osaka,33.33%,bom
-,,,4.0,1.0,0.80,SC Sagamihara,60.00%,alto
-,,,2.0,3.0,0.40,T. Miyazaki,20.00%,baixo
-,1.0,,2.0,1.0,1.25,Tochigi City,35.36%,bom
-,,,3.0,3.0,0.50,Tochigi SC,0.00%,baixo
-,,,2.0,2.0,0.50,V. Hachinohe,0.00%,baixo
-,,1.0,1.0,1.0,1.00,Z. Kanazawa,0.00%,baixo
-,,1.0,1.0,,1.50,Aktobe,0.00%,baixo
-,,,1.0,3.0,0.25,Atyrau,50.00%,moderado
-,,1.0,2.0,,1.33,FC Astana,33.33%,bom
-,1.0,1.0,,,2.50,Kairat Almaty,0.00%,baixo
-,,1.0,,2.0,0.67,Kaisar K.,33.33%,bom
-,,1.0,1.0,1.0,1.00,Kyzylzhar,0.00%,baixo
-,,,1.0,1.0,0.50,Okzhetpes,0.00%,baixo
-,,,1.0,2.0,0.33,Ordabasy,33.33%,bom
-,,,3.0,,1.00,Tobol,0.00%,baixo
-,,,1.0,2.0,0.33,Turan,33.33%,bom
-,,,,2.0,0.00,Ulytau,0.00%,baixo
-,,,1.0,1.0,0.50,Yelimay Semey,0.00%,baixo
-,,,,2.0,0.00,Zhenys,0.00%,baixo
-,,,,2.0,0.00,Zhetysu,0.00%,baixo
-,,,3.0,2.0,0.60,Banga,20.00%,baixo
-,,,1.0,3.0,0.25,Dainava,50.00%,moderado
-,,,,1.0,0.00,Dziugas Telsiai,0.00%,baixo
-,,2.0,1.0,2.0,1.00,Hegelmann L.,28.28%,bom
-,,,2.0,1.0,0.67,Kauno Zalgiris,33.33%,bom
-,,,1.0,4.0,0.20,Panevezys,60.00%,alto
-,,1.0,1.0,3.0,0.60,Riteriai,56.57%,alto
-,,1.0,3.0,,1.25,Siauliai,50.00%,moderado
-,,,3.0,1.0,0.75,Suduva,50.00%,moderado
-,,,2.0,2.0,0.50,Zalgiris,0.00%,baixo
-,,2.0,5.0,1.0,1.13,A. San Luis,63.74%,alto
-,,1.0,3.0,4.0,0.63,Atlas,46.77%,moderado
-,,1.0,3.0,4.0,0.63,CF America,46.77%,moderado
-,,,4.0,5.0,0.44,Club Leon,11.11%,baixo
-,,4.0,1.0,4.0,1.00,Cruz Azul,47.14%,moderado
-1.0,,,2.0,6.0,0.67,Guadalajara,72.01%,alto
-,,,3.0,5.0,0.38,Juarez,25.00%,bom
-,1.0,1.0,1.0,5.0,0.75,Mazatlan,86.60%,alto
-,2.0,,3.0,4.0,1.00,Monterrey,27.22%,bom
-,,1.0,3.0,5.0,0.56,Necaxa,54.43%,moderado
-,,2.0,1.0,5.0,0.63,Pachuca,63.74%,alto
-,,,4.0,5.0,0.44,Puebla,11.11%,baixo
-,,1.0,4.0,3.0,0.75,Pumas UNAM,46.77%,moderado
-,,,2.0,6.0,0.25,Queretaro,50.00%,moderado
-,,,2.0,7.0,0.22,Santos Laguna,55.56%,alto
-,,,5.0,3.0,0.63,Tigres,25.00%,bom
-,,1.0,5.0,3.0,0.78,Tijuana,54.43%,moderado
-,,4.0,4.0,1.0,1.33,Toluca,47.14%,moderado
-,,1.0,3.0,5.0,0.56,A. San Luis,54.43%,moderado
-,,2.0,2.0,5.0,0.67,Atlas,47.14%,moderado
-,,4.0,2.0,3.0,1.11,CF America,27.22%,bom
-,,1.0,4.0,3.0,0.75,Club Leon,46.77%,moderado
-,,2.0,4.0,2.0,1.00,Cruz Azul,35.36%,bom
-,,2.0,3.0,3.0,0.88,Guadalajara,17.68%,baixo
-,,1.0,5.0,3.0,0.78,Juarez,54.43%,moderado
-,,1.0,3.0,5.0,0.56,Mazatlan,54.43%,moderado
-,,2.0,5.0,1.0,1.13,Monterrey,63.74%,alto
-,,2.0,4.0,2.0,1.00,Necaxa,35.36%,bom
-,,3.0,2.0,4.0,0.89,Pachuca,27.22%,bom
-,,,3.0,5.0,0.38,Puebla,25.00%,bom
-,,1.0,1.0,7.0,0.33,Pumas UNAM,94.28%,alto
-,,,5.0,4.0,0.56,Queretaro,11.11%,baixo
-,,1.0,2.0,5.0,0.50,Santos Laguna,63.74%,alto
-,,,4.0,5.0,0.44,Tigres,11.11%,baixo
-,1.0,,5.0,2.0,1.00,Tijuana,63.74%,alto
-1.0,1.0,2.0,3.0,1.0,1.75,Toluca,50.00%,moderado
-,,6.0,6.0,2.0,1.29,Ajax Amsterdam,40.41%,moderado
-,,,4.0,10.0,0.29,Almere City,42.86%,moderado
-,,1.0,5.0,8.0,0.50,AZ Alkmaar,61.45%,alto
-,1.0,1.0,4.0,8.0,0.64,FC Groningen,82.07%,alto
-,,3.0,8.0,3.0,1.00,FC Twente,50.51%,moderado
-,1.0,1.0,8.0,6.0,0.81,FC Utrecht,77.06%,alto
-,1.0,3.0,5.0,5.0,1.00,Feyenoord,47.38%,moderado
-,1.0,,3.0,10.0,0.43,Fortuna Sittard,82.68%,alto
-1.0,,2.0,5.0,7.0,0.87,Go Ahead Eagles,63.60%,alto
-,,2.0,9.0,4.0,0.87,Heerenveen,58.88%,alto
-,,2.0,9.0,4.0,0.87,Heracles Almelo,58.88%,alto
-,,2.0,5.0,8.0,0.60,NAC Breda,48.99%,moderado
-,1.0,,8.0,6.0,0.73,NEC Nijmegen,58.88%,alto
-,,2.0,2.0,11.0,0.40,PEC Zwolle,84.85%,alto
-1.0,2.0,7.0,2.0,3.0,1.73,PSV Eindhoven,69.92%,alto
-,1.0,,5.0,8.0,0.57,RKC Waalwijk,61.45%,alto
-,,,7.0,8.0,0.47,Sparta,6.67%,baixo
-,,3.0,2.0,10.0,0.53,Willem II,71.18%,alto
-,,2.0,11.0,5.0,0.83,ADO Den Haag,62.36%,alto
-,,1.0,8.0,8.0,0.59,Cambuur,58.23%,alto
-1.0,1.0,5.0,7.0,4.0,1.33,De Graafschap,64.79%,alto
-,1.0,3.0,6.0,7.0,0.88,Excelsior,56.11%,alto
-,1.0,2.0,7.0,8.0,0.78,FC Den Bosch,67.59%,alto
-,1.0,2.0,10.0,4.0,1.00,FC Dordrecht,82.14%,alto
-,,2.0,7.0,9.0,0.61,FC Eindhoven,49.07%,moderado
-,,1.0,7.0,10.0,0.50,FC Emmen,62.36%,alto
-,3.0,3.0,5.0,7.0,1.11,FC Volendam,36.85%,bom
-,1.0,3.0,7.0,7.0,0.89,Helmond Sport,57.74%,alto
-,,2.0,5.0,10.0,0.53,Jong Ajax,58.23%,alto
-1.0,,,7.0,9.0,0.65,Jong AZ,59.99%,alto
-,1.0,,8.0,8.0,0.65,Jong PSV,58.23%,alto
-,,1.0,5.0,11.0,0.41,Jong Utrecht,72.52%,alto
-1.0,1.0,2.0,5.0,9.0,0.89,MVV Maastricht,85.35%,alto
-,,2.0,7.0,8.0,0.65,Roda JC,46.32%,moderado
-1.0,,5.0,5.0,6.0,1.12,Telstar,45.18%,moderado
-,,1.0,4.0,13.0,0.33,TOP Oss,84.98%,alto
-,,1.0,7.0,10.0,0.50,Vitesse Arnhem,62.36%,alto
-,,2.0,3.0,12.0,0.41,VVV,79.36%,alto
-,1.0,1.0,4.0,10.0,0.56,Ballymena Utd,91.86%,alto
-,,3.0,4.0,10.0,0.59,Carrick Rangers,54.55%,moderado
-,,,9.0,7.0,0.56,Cliftonville,12.50%,baixo
-,,,6.0,10.0,0.38,Coleraine,25.00%,bom
-,,2.0,5.0,10.0,0.53,Crusaders,58.23%,alto
-,1.0,1.0,9.0,6.0,0.82,Dungannon,80.44%,alto
-,,1.0,2.0,14.0,0.24,Glenavon,104.24%,alto
-,,,5.0,11.0,0.31,Glentoran,37.50%,bom
-,,1.0,3.0,12.0,0.31,Larne,89.70%,alto
-1.0,1.0,1.0,5.0,9.0,0.82,Linfield,94.12%,alto
-,,3.0,6.0,8.0,0.71,Loughgall,36.26%,bom
-,,2.0,3.0,11.0,0.44,Portadown,75.52%,alto
-,,,1.0,,1.00,Bodo.Glimt,0.00%,baixo
-,,,1.0,1.0,0.50,Brann,0.00%,baixo
-,,1.0,,1.0,1.00,Bryne,0.00%,baixo
-,1.0,1.0,1.0,,2.00,Fredrikstad,0.00%,baixo
-,,,1.0,1.0,0.50,HamKam,0.00%,baixo
-,,,,1.0,0.00,Haugesund,0.00%,baixo
-,,,1.0,1.0,0.50,KFUM Oslo,0.00%,baixo
-,,,1.0,,1.00,Kristiansund,0.00%,baixo
-,,,,2.0,0.00,Molde,0.00%,baixo
-,,,1.0,,1.00,Rosenborg,0.00%,baixo
-,,1.0,,,2.00,Sandefjord,0.00%,baixo
-,,,,1.0,0.00,Sarpsborg 08,0.00%,baixo
-,,,1.0,1.0,0.50,Stromsgodset,0.00%,baixo
-,,,2.0,,1.00,Tromso,0.00%,baixo
-,,,1.0,1.0,0.50,Valerenga,0.00%,baixo
-,,,1.0,1.0,0.50,Viking,0.00%,baixo
-,,1.0,,1.0,1.00,Aalesund,0.00%,baixo
-,,,,1.0,0.00,Asane,0.00%,baixo
-,,,2.0,,1.00,Egersund,0.00%,baixo
-,,,,1.0,0.00,Hodd,0.00%,baixo
-,,1.0,1.0,,1.50,Kongsvinger,0.00%,baixo
-,,,,1.0,0.00,Lillestrom,0.00%,baixo
-,,,,1.0,0.00,Lyn,0.00%,baixo
-,,,,1.0,0.00,Mjondalen,0.00%,baixo
-,,,1.0,,1.00,Moss,0.00%,baixo
-,,1.0,,1.0,1.00,Odd,0.00%,baixo
-,,,,2.0,0.00,Ranheim,0.00%,baixo
-,1.0,1.0,,,2.50,Raufoss,0.00%,baixo
-,,,1.0,,1.00,Skeid,0.00%,baixo
-,,1.0,,,2.00,Sogndal,0.00%,baixo
-,,,,2.0,0.00,Stabaek,0.00%,baixo
-,,,1.0,1.0,0.50,Start,0.00%,baixo
-,,,3.0,4.0,0.43,2 de Mayo,14.29%,baixo
-,,,2.0,5.0,0.29,A. Tembetary,42.86%,moderado
-,,,3.0,5.0,0.38,Cerro Porteno,25.00%,bom
-,,,2.0,5.0,0.29,D. Recoleta,42.86%,moderado
-,,2.0,2.0,4.0,0.75,G. Caballero,35.36%,bom
-,,1.0,3.0,3.0,0.71,Guarani,40.41%,moderado
-,,,4.0,4.0,0.50,Libertad,0.00%,baixo
-,,,5.0,2.0,0.71,Nacional,42.86%,moderado
-,2.0,2.0,1.0,3.0,1.38,Olimpia,35.36%,bom
-,,2.0,1.0,4.0,0.71,S. Ameliano,53.45%,moderado
-,,,1.0,6.0,0.14,S. Luqueno,71.43%,alto
-,,,3.0,4.0,0.43,S. Trinidense,14.29%,baixo
-,,,4.0,7.0,0.36,2 de Mayo,27.27%,bom
-,1.0,2.0,4.0,4.0,1.00,Cerro Porteno,47.24%,moderado
-,,,2.0,9.0,0.18,G. Caballero,63.64%,alto
-,,1.0,3.0,7.0,0.45,Guarani,68.03%,alto
-,,,3.0,8.0,0.27,Libertad,45.45%,moderado
-,,2.0,2.0,7.0,0.55,Nacional,64.28%,alto
-,2.0,2.0,3.0,4.0,1.18,Olimpia,30.15%,bom
-,,,,11.0,0.00,S. Ameliano,0.00%,baixo
-,,1.0,2.0,8.0,0.36,S. Luqueno,84.31%,alto
-,,2.0,4.0,5.0,0.73,S. Trinidense,34.02%,bom
-,,,3.0,8.0,0.27,Sol de America,45.45%,moderado
-,,,3.0,8.0,0.27,Tacuary,45.45%,moderado
-,,2.0,,3.0,0.80,A. Huanuco,20.00%,baixo
-,,1.0,2.0,1.0,1.00,ADT,35.36%,bom
-,,2.0,,2.0,1.00,Alianza A.,0.00%,baixo
-,,2.0,2.0,1.0,1.20,Alianza Lima,28.28%,bom
-,,,2.0,1.0,0.67,Atletico Grau,33.33%,bom
-,,2.0,1.0,1.0,1.25,Ayacucho,35.36%,bom
-,,,2.0,2.0,0.50,Binacional,0.00%,baixo
-,1.0,,,3.0,0.75,Cajamarca,50.00%,moderado
-,,,2.0,2.0,0.50,Cienciano,0.00%,baixo
-,,,,4.0,0.00,Comerciantes U.,0.00%,baixo
-,,1.0,2.0,1.0,1.00,Cusco,35.36%,bom
-,,,2.0,2.0,0.50,D. Garcilaso,0.00%,baixo
-,,1.0,3.0,1.0,1.00,FBC Melgar,56.57%,alto
-,,1.0,1.0,1.0,1.00,Juan Pablo II C,0.00%,baixo
-,,,2.0,2.0,0.50,Los Chankas,0.00%,baixo
-,,,3.0,1.0,0.75,S. Cristal,50.00%,moderado
-,,1.0,2.0,2.0,0.80,Sport Boys,28.28%,bom
-,,1.0,2.0,2.0,0.80,Sport Huancayo,28.28%,bom
-,,,3.0,1.0,0.75,Universitario,50.00%,moderado
-,,2.0,7.0,6.0,0.73,Cracovia Krakow,43.20%,moderado
-,,2.0,5.0,7.0,0.64,Gornik Zabrze,44.03%,moderado
-1.0,,1.0,11.0,2.0,1.20,Jagiellonia,112.15%,alto
-,,2.0,4.0,8.0,0.57,Katowice,53.45%,moderado
-,,1.0,4.0,9.0,0.43,Korona Kielce,70.71%,alto
-,1.0,5.0,5.0,3.0,1.29,Lech Poznan,47.38%,moderado
-,,,4.0,10.0,0.29,Lechia Gdansk,42.86%,moderado
-,1.0,4.0,6.0,4.0,1.13,Legia Warsaw,47.61%,moderado
-,1.0,2.0,3.0,8.0,0.71,Motor Lublin,76.93%,alto
-,,1.0,6.0,8.0,0.53,Piast Gliwice,58.88%,alto
-,1.0,1.0,7.0,6.0,0.80,Pogon Szczecin,73.94%,alto
-,,4.0,4.0,6.0,0.86,Puszcza Niepolo,20.20%,bom
-,,2.0,3.0,9.0,0.50,Radomiak Radom,66.24%,alto
-,,3.0,4.0,7.0,0.71,Rakow C.,36.42%,bom
-,,2.0,5.0,8.0,0.60,Slask Wroclaw,48.99%,moderado
-,,1.0,5.0,8.0,0.50,Stal Mielec,61.45%,alto
-,,3.0,5.0,7.0,0.73,Widzew Lodz,32.66%,bom
-,,1.0,2.0,11.0,0.29,Zaglebie Lubin,96.36%,alto
-,2.0,3.0,5.0,5.0,1.13,Arka Gdynia,34.64%,bom
-,,1.0,4.0,9.0,0.43,Chrobry Glogow,70.71%,alto
-,,1.0,4.0,10.0,0.40,Gornik Leczna,74.83%,alto
-,,,4.0,10.0,0.29,K. Kolobrzeg,42.86%,moderado
-,,3.0,3.0,9.0,0.60,LKS Lodz,56.57%,alto
-,3.0,,6.0,5.0,1.07,Miedz Legnica,26.73%,bom
-,,2.0,3.0,8.0,0.54,Odra Opole,60.57%,alto
-,,,5.0,9.0,0.36,Pogon Siedlce,28.57%,bom
-,,6.0,3.0,6.0,1.00,Polonia Warszaw,28.28%,bom
-1.0,1.0,,5.0,7.0,0.86,Ruch Chorzow,74.23%,alto
-,1.0,2.0,3.0,9.0,0.67,Stal Rzeszow,83.00%,alto
-,,1.0,5.0,8.0,0.50,Stalowa Wola,61.45%,alto
-,,1.0,8.0,5.0,0.71,T. Nieciecza,61.45%,alto
-,,3.0,2.0,9.0,0.57,Tychy,66.24%,alto
-,,,4.0,10.0,0.29,Warta Poznan,42.86%,moderado
-,,,5.0,10.0,0.33,Wisla Krakow,33.33%,bom
-,1.0,2.0,5.0,6.0,0.86,Wisla Plock,58.90%,alto
-,,3.0,5.0,7.0,0.73,Znicz Pruszkow,32.66%,bom
-,,,3.0,12.0,0.20,Arouca,60.00%,alto
-,,1.0,1.0,13.0,0.20,AVS,113.14%,alto
-,2.0,5.0,5.0,3.0,1.40,Benfica,34.64%,bom
-,,,2.0,13.0,0.13,Boavista,73.33%,alto
-,,1.0,9.0,5.0,0.73,Casa Pia,65.32%,alto
-,,3.0,4.0,8.0,0.67,Estoril,43.20%,moderado
-,,1.0,4.0,10.0,0.40,Estrela Amadora,74.83%,alto
-,,,5.0,10.0,0.33,Famalicao,33.33%,bom
-,,,3.0,12.0,0.20,Farense,60.00%,alto
-,,2.0,6.0,7.0,0.67,FC Porto,43.20%,moderado
-,,2.0,5.0,8.0,0.60,Gil Vicente,48.99%,moderado
-,,1.0,8.0,6.0,0.67,Guimaraes,58.88%,alto
-,1.0,2.0,4.0,8.0,0.73,Moreirense,71.49%,alto
-,1.0,2.0,6.0,6.0,0.87,Nacional,60.74%,alto
-,,2.0,8.0,5.0,0.80,Rio Ave,48.99%,moderado
-,,1.0,5.0,9.0,0.47,Santa Clara,65.32%,alto
-,1.0,4.0,7.0,3.0,1.20,Sporting Braga,57.74%,alto
-,1.0,5.0,7.0,2.0,1.33,Sporting CP,63.60%,alto
-,,3.0,8.0,4.0,0.93,Academico Viseu,43.20%,moderado
-1.0,1.0,1.0,6.0,6.0,1.00,Alverca,81.65%,alto
-,,3.0,5.0,7.0,0.73,Benfica B,32.66%,bom
-,,1.0,5.0,9.0,0.47,Chaves,65.32%,alto
-,,1.0,5.0,9.0,0.47,FC Porto B,65.32%,alto
-,,3.0,4.0,8.0,0.67,Feirense,43.20%,moderado
-,,1.0,5.0,9.0,0.47,Felgueiras,65.32%,alto
-,1.0,2.0,3.0,9.0,0.67,Leixoes,83.00%,alto
-,,2.0,2.0,11.0,0.40,Mafra,84.85%,alto
-,,1.0,4.0,10.0,0.40,Maritimo,74.83%,alto
-,,1.0,2.0,12.0,0.27,Oliveirense,99.33%,alto
-,,1.0,5.0,9.0,0.47,Pacos Ferreira,65.32%,alto
-,1.0,4.0,6.0,4.0,1.13,Penafiel,47.61%,moderado
-,1.0,1.0,6.0,7.0,0.73,Portimonense,73.94%,alto
-,1.0,2.0,4.0,8.0,0.73,Tondela,71.49%,alto
-,,2.0,6.0,7.0,0.67,Torreense,43.20%,moderado
-,,,6.0,9.0,0.40,Uniao de Leiria,20.00%,baixo
-,1.0,,6.0,8.0,0.60,Vizela,58.88%,alto
-,,2.0,7.0,8.0,0.65,Aberdeen,46.32%,moderado
-2.0,2.0,6.0,4.0,3.0,1.82,Celtic,44.02%,moderado
-,2.0,1.0,10.0,4.0,1.06,Dundee FC,82.14%,alto
-,,1.0,7.0,8.0,0.56,Dundee Utd,57.96%,alto
-,,1.0,7.0,8.0,0.56,Hearts,57.96%,alto
-,,3.0,10.0,4.0,0.94,Hibernian,54.55%,moderado
-,,1.0,5.0,10.0,0.44,Kilmarnock,69.03%,alto
-,1.0,4.0,5.0,6.0,1.00,Motherwell,46.77%,moderado
-,2.0,2.0,7.0,5.0,1.06,Rangers,53.03%,moderado
-,,1.0,4.0,12.0,0.35,Ross County,81.93%,alto
-,,1.0,3.0,12.0,0.31,St. Johnstone,89.70%,alto
-,,3.0,6.0,8.0,0.71,St. Mirren,36.26%,bom
-,,2.0,2.0,13.0,0.35,Airdrieonians,91.51%,alto
-,3.0,3.0,5.0,6.0,1.18,Ayr Utd,30.57%,bom
-,,,4.0,13.0,0.24,Dunfermline,52.94%,moderado
-,2.0,1.0,8.0,6.0,0.94,Falkirk,67.33%,alto
-,,1.0,8.0,8.0,0.59,Greenock Morton,58.23%,alto
-,,3.0,2.0,12.0,0.47,Hamilton,79.36%,alto
-,3.0,1.0,4.0,9.0,0.88,Livingston,69.35%,alto
-,,2.0,7.0,8.0,0.65,Partick Thistle,46.32%,moderado
-,,1.0,6.0,10.0,0.47,Queens Park,64.97%,alto
-,,4.0,8.0,5.0,0.94,Raith Rovers,29.99%,bom
-,,1.0,4.0,10.0,0.40,Backa Topola,74.83%,alto
-,1.0,3.0,3.0,8.0,0.80,Cukaricki,68.96%,alto
-,,1.0,6.0,8.0,0.53,IMT N. Beograd,58.88%,alto
-,,2.0,3.0,10.0,0.47,Jedinstvo U.,71.18%,alto
-,,1.0,5.0,9.0,0.47,Mladost Lucani,65.32%,alto
-,,1.0,6.0,8.0,0.53,Napredak,58.88%,alto
-,1.0,4.0,6.0,4.0,1.13,Novi Pazar,47.61%,moderado
-,,3.0,6.0,6.0,0.80,OFK Beograd,28.28%,bom
-,1.0,4.0,3.0,7.0,0.93,Partizan,57.74%,alto
-,1.0,1.0,6.0,7.0,0.73,Radnicki 1923,73.94%,alto
-,,3.0,5.0,7.0,0.73,Radnicki Nis,32.66%,bom
-,4.0,3.0,5.0,3.0,1.53,Red Star,22.11%,bom
-,,,4.0,11.0,0.27,S. Subotica,46.67%,moderado
-,,,5.0,10.0,0.33,Tekstilac Odzac,33.33%,bom
-,,3.0,1.0,11.0,0.47,Vojvodina,86.41%,alto
-,,1.0,7.0,7.0,0.60,Z. Pancevo,56.57%,alto
-,,2.0,6.0,7.0,0.67,Bravo,43.20%,moderado
-,,,3.0,12.0,0.20,Domzale,60.00%,alto
-,,2.0,5.0,8.0,0.60,Koper,48.99%,moderado
-,1.0,4.0,8.0,1.0,1.36,Maribor,82.07%,alto
-,,2.0,6.0,8.0,0.63,Mura,46.77%,moderado
-,,3.0,1.0,11.0,0.47,Nafta,86.41%,alto
-1.0,,1.0,6.0,7.0,0.80,NK Celje,73.94%,alto
-,,2.0,9.0,5.0,0.81,NK Olimpija,53.76%,moderado
-,,,7.0,9.0,0.44,Primorje,12.50%,baixo
-,,1.0,5.0,10.0,0.44,Radomlje,69.03%,alto
-,1.0,2.0,4.0,7.0,0.79,Banska Bystrica,65.47%,alto
-,2.0,2.0,5.0,5.0,1.07,DAC Streda,42.86%,moderado
-,1.0,2.0,7.0,4.0,1.00,FC Kosice,65.47%,alto
-,,,7.0,7.0,0.50,Komarno,0.00%,baixo
-,1.0,1.0,4.0,8.0,0.64,Podbrezova,82.07%,alto
-,,1.0,8.0,5.0,0.71,Ruzomberok,61.45%,alto
-1.0,1.0,,1.0,11.0,0.57,S. Bratislava,123.72%,alto
-,,,4.0,10.0,0.29,Skalica,42.86%,moderado
-,,3.0,3.0,8.0,0.64,Spartak Trnava,50.51%,moderado
-,,2.0,5.0,7.0,0.64,Trencin,44.03%,moderado
-,1.0,2.0,3.0,8.0,0.71,Z. Michalovce,76.93%,alto
-,1.0,,6.0,6.0,0.69,Zilina,54.39%,moderado
-,,1.0,6.0,6.0,0.62,AmaZulu,54.39%,moderado
-,,,3.0,9.0,0.25,Cape Town City,50.00%,moderado
-,,3.0,3.0,7.0,0.69,Chippa Utd,43.51%,moderado
-,,2.0,3.0,5.0,0.70,Golden Arrows,37.42%,bom
-,,1.0,7.0,4.0,0.75,Kaizer Chiefs,61.24%,alto
-,,,7.0,6.0,0.54,Magesi,7.69%,baixo
-,1.0,3.0,5.0,2.0,1.27,Mamelodi S.,53.78%,moderado
-,,,6.0,7.0,0.46,Marumo G.,7.69%,baixo
-,,2.0,4.0,4.0,0.80,Orlando Pirates,28.28%,bom
-,,,7.0,5.0,0.58,Polokwane,16.67%,baixo
-,,,1.0,12.0,0.08,Richards Bay,84.62%,alto
-,,,2.0,4.0,0.33,Royal AM,33.33%,bom
-,,,6.0,7.0,0.46,Sekhukhune,7.69%,baixo
-,,1.0,4.0,7.0,0.50,Stellenbosch,61.24%,alto
-,,,2.0,9.0,0.18,SuperSport Utd,63.64%,alto
-,,2.0,4.0,6.0,0.67,TS Galaxy,40.82%,moderado
-,,,2.0,2.0,0.50,Anyang,0.00%,baixo
-,,,1.0,4.0,0.20,Daegu,60.00%,alto
-,,,,4.0,0.00,Daejeon Citizen,0.00%,baixo
-,,,1.0,3.0,0.25,Gangwon,50.00%,moderado
-,,1.0,,3.0,0.50,Gimcheon Sangmu,50.00%,moderado
-,,1.0,1.0,3.0,0.60,Gwangju,56.57%,alto
-,,,4.0,1.0,0.80,Jeju Utd,60.00%,alto
-,1.0,1.0,2.0,2.0,1.17,Jeonbuk Motors,33.33%,bom
-,,,,4.0,0.00,Pohang Steelers,0.00%,baixo
-,,,1.0,4.0,0.20,Seoul,60.00%,alto
-,,,3.0,1.0,0.75,Suwon City,50.00%,moderado
-,,1.0,2.0,3.0,0.67,Ulsan,40.82%,moderado
-,,,1.0,4.0,0.20,Ansan Greeners,60.00%,alto
-,,1.0,,2.0,0.67,Asan,33.33%,bom
-,,1.0,1.0,2.0,0.75,Bucheon FC,35.36%,bom
-,,,1.0,4.0,0.20,Busan IPark,60.00%,alto
-,,,,5.0,0.00,Cheonan City,0.00%,baixo
-,,,2.0,2.0,0.50,Gimpo,0.00%,baixo
-,,,1.0,3.0,0.25,Gyeongnam,50.00%,moderado
-,,,,5.0,0.00,Hwaseong,0.00%,baixo
-,,1.0,,5.0,0.33,Incheon Utd,66.67%,alto
-,,,3.0,2.0,0.60,Seongnam,20.00%,baixo
-,1.0,1.0,2.0,2.0,1.17,Seoul E-Land,33.33%,bom
-1.0,1.0,,,2.0,1.75,Suwon Bluewings,35.36%,bom
-,,,5.0,10.0,0.33,Alaves,33.33%,bom
-1.0,1.0,2.0,5.0,7.0,1.00,Athletic Bilbao,75.00%,alto
-,,1.0,6.0,9.0,0.50,Atletico Madrid,61.87%,alto
-,,4.0,3.0,9.0,0.69,Celta Vigo,49.21%,moderado
-,,,9.0,7.0,0.56,Espanyol,12.50%,baixo
-1.0,3.0,2.0,7.0,3.0,1.56,FC Barcelona,63.74%,alto
-,,,6.0,10.0,0.38,Getafe,25.00%,bom
-1.0,,2.0,5.0,7.0,0.87,Girona,63.60%,alto
-,,,5.0,11.0,0.31,Las Palmas,37.50%,bom
-,,3.0,,13.0,0.38,Leganes,62.50%,alto
-,1.0,,6.0,10.0,0.53,Mallorca,64.97%,alto
-,1.0,3.0,6.0,6.0,0.94,Osasuna,53.03%,moderado
-,,1.0,6.0,9.0,0.50,Rayo Vallecano,61.87%,alto
-,,2.0,8.0,6.0,0.75,Real Betis,46.77%,moderado
-,2.0,4.0,3.0,7.0,1.06,Real Madrid,46.77%,moderado
-,,1.0,6.0,9.0,0.50,Real Sociedad,61.87%,alto
-,,,8.0,8.0,0.50,Sevilla FC,0.00%,baixo
-,,1.0,9.0,6.0,0.69,Valencia,61.87%,alto
-,,,2.0,14.0,0.13,Valladolid,75.00%,alto
-1.0,,1.0,11.0,2.0,1.13,Villarreal,112.15%,alto
-,,2.0,8.0,8.0,0.67,Albacete,47.14%,moderado
-,1.0,1.0,5.0,10.0,0.59,Almeria,87.05%,alto
-,,1.0,6.0,11.0,0.44,Burgos,68.04%,alto
-,1.0,3.0,3.0,11.0,0.67,Cadiz,85.35%,alto
-,,1.0,4.0,13.0,0.33,Cartagena,84.98%,alto
-,,2.0,8.0,8.0,0.67,Castellon,47.14%,moderado
-,,1.0,10.0,7.0,0.67,Cordoba,62.36%,alto
-,2.0,,2.0,14.0,0.44,Deportivo,94.28%,alto
-,,,10.0,7.0,0.59,Eibar,17.65%,baixo
-,,3.0,8.0,8.0,0.74,Elche,37.22%,bom
-,,1.0,7.0,10.0,0.50,Eldense,62.36%,alto
-,1.0,3.0,7.0,7.0,0.89,Granada,57.74%,alto
-,1.0,2.0,10.0,5.0,0.94,Huesca,77.78%,alto
-,,5.0,5.0,8.0,0.83,Levante,23.57%,bom
-,,2.0,5.0,10.0,0.53,Malaga,58.23%,alto
-,,2.0,8.0,8.0,0.67,Mirandes,47.14%,moderado
-,1.0,4.0,3.0,10.0,0.78,Racing,74.54%,alto
-,,,2.0,16.0,0.11,Racing Ferrol,77.78%,alto
-,,3.0,5.0,10.0,0.61,Real Oviedo,49.07%,moderado
-,,2.0,5.0,11.0,0.50,Real Zaragoza,62.36%,alto
-,,1.0,8.0,10.0,0.53,Sporting Gijon,60.93%,alto
-,,1.0,8.0,9.0,0.56,Tenerife,59.32%,alto
-,,,,2.0,0.00,AIK,0.00%,baixo
-,,,1.0,1.0,0.50,Brommapojkarna,0.00%,baixo
-,,,1.0,1.0,0.50,Degerfors,0.00%,baixo
-,,,,2.0,0.00,Djurgarden,0.00%,baixo
-,,,1.0,1.0,0.50,Elfsborg,0.00%,baixo
-,,1.0,,1.0,1.00,GAIS,0.00%,baixo
-,,,,2.0,0.00,Hacken,0.00%,baixo
-,,,,2.0,0.00,Halmstad,0.00%,baixo
-,,1.0,1.0,,1.50,Hammarby,0.00%,baixo
-,,1.0,,1.0,1.00,IFK Goteborg,0.00%,baixo
-,,,,2.0,0.00,Malmo FF,0.00%,baixo
-,1.0,,,1.0,1.50,Mjallby,0.00%,baixo
-,,1.0,,1.0,1.00,Norrkoping,0.00%,baixo
-,,,1.0,1.0,0.50,Oster,0.00%,baixo
-,,,,2.0,0.00,Sirius,0.00%,baixo
-,,,,2.0,0.00,Varnamo,0.00%,baixo
-,,,,2.0,0.00,Brage,0.00%,baixo
-,,,2.0,,1.00,Falkenberg,0.00%,baixo
-,,,,2.0,0.00,GIF Sundsvall,0.00%,baixo
-,,,1.0,,1.00,Helsingborg,0.00%,baixo
-,,,1.0,1.0,0.50,Kalmar,0.00%,baixo
-,,,1.0,1.0,0.50,Landskrona,0.00%,baixo
-,,,1.0,1.0,0.50,Oddevold,0.00%,baixo
-,,,,2.0,0.00,Orebro,0.00%,baixo
-,,1.0,,2.0,0.67,Orgryte,33.33%,bom
-,,1.0,,,2.00,Ostersunds,0.00%,baixo
-,,,1.0,1.0,0.50,Sandviken,0.00%,baixo
-,,,,2.0,0.00,Trelleborg,0.00%,baixo
-,,,1.0,1.0,0.50,Umea,0.00%,baixo
-,,,1.0,1.0,0.50,Utsikten,0.00%,baixo
-,,1.0,1.0,,1.50,Varberg BoIS,0.00%,baixo
-,,,2.0,,1.00,Vasteras,0.00%,baixo
-,1.0,2.0,6.0,7.0,0.81,BSC Young Boys,63.74%,alto
-,1.0,2.0,7.0,6.0,0.88,FC Basel,63.74%,alto
-,,2.0,6.0,9.0,0.59,FC Zurich,50.60%,moderado
-,,,6.0,11.0,0.35,Grasshopper,29.41%,bom
-,2.0,2.0,5.0,7.0,0.94,Lausanne Sport,53.03%,moderado
-,1.0,2.0,4.0,10.0,0.65,Lugano,82.14%,alto
-,,2.0,7.0,7.0,0.69,Luzern,44.19%,moderado
-,,2.0,6.0,7.0,0.67,Servette,43.20%,moderado
-,1.0,4.0,4.0,7.0,0.94,Sion,53.03%,moderado
-,,2.0,6.0,7.0,0.67,St. Gallen,43.20%,moderado
-,2.0,1.0,,13.0,0.50,Winterthur,101.93%,alto
-,,,5.0,11.0,0.31,Yverdon,37.50%,bom
-,,1.0,8.0,7.0,0.63,Aarau,57.96%,alto
-,,1.0,8.0,7.0,0.63,Bellinzona,57.96%,alto
-,1.0,4.0,6.0,5.0,1.06,Etoile Carouge,46.77%,moderado
-,,3.0,7.0,5.0,0.87,Lausanne Ouchy,32.66%,bom
-,,5.0,4.0,6.0,0.93,Neuchatel Xamax,16.33%,baixo
-,,2.0,4.0,9.0,0.53,Schaffhausen,58.88%,alto
-,,2.0,2.0,12.0,0.38,Stade Nyonnais,88.39%,alto
-,,,10.0,5.0,0.67,Thun,33.33%,bom
-,,4.0,4.0,7.0,0.80,Vaduz,28.28%,bom
-,,3.0,5.0,7.0,0.73,Wil,32.66%,bom
-,1.0,2.0,9.0,3.0,1.07,Bangkok Utd,83.00%,alto
-2.0,,2.0,7.0,3.0,1.50,Buriram Utd,58.90%,alto
-,,,8.0,7.0,0.53,Chiangrai Utd,6.67%,baixo
-,,1.0,4.0,9.0,0.43,Khon Kaen Utd,70.71%,alto
-,,2.0,8.0,5.0,0.80,Lamphun Warrior,48.99%,moderado
-,,,5.0,9.0,0.36,Muang Thong Utd,28.57%,bom
-1.0,1.0,,7.0,6.0,0.93,N. Bua Pitchaya,73.94%,alto
-,,2.0,5.0,8.0,0.60,N. Ratchasima,48.99%,moderado
-,,1.0,7.0,6.0,0.64,Nakhon Pathom,56.24%,alto
-,,1.0,6.0,7.0,0.57,Pathum Utd,56.24%,alto
-,,2.0,4.0,8.0,0.57,Port FC,53.45%,moderado
-,1.0,1.0,8.0,4.0,0.93,Prachuap,82.07%,alto
-,1.0,3.0,10.0,1.0,1.27,Ratchaburi,98.66%,alto
-,1.0,2.0,5.0,7.0,0.80,Rayong,63.60%,alto
-,,4.0,5.0,6.0,0.87,Sukhothai,16.33%,baixo
-,,1.0,6.0,7.0,0.57,Uthai Thani,56.24%,alto
-,,2.0,3.0,10.0,0.47,Adana Demirspor,71.18%,alto
-,,1.0,5.0,8.0,0.50,Alanyaspor,61.45%,alto
-,1.0,1.0,4.0,9.0,0.60,Antalyaspor,87.18%,alto
-1.0,,2.0,5.0,8.0,0.81,Basaksehir,68.47%,alto
-,,4.0,7.0,4.0,1.00,Besiktas,28.28%,bom
-,,1.0,3.0,11.0,0.33,Bodrumspor,86.41%,alto
-,1.0,,9.0,5.0,0.80,Eyupspor,65.32%,alto
-,1.0,1.0,9.0,4.0,0.93,Fenerbahce,87.18%,alto
-,2.0,3.0,8.0,2.0,1.33,Galatasaray,66.33%,alto
-,,1.0,6.0,8.0,0.53,Gaziantep,58.88%,alto
-,,4.0,4.0,7.0,0.80,Goztepe,28.28%,bom
-,,2.0,8.0,6.0,0.75,Hatayspor,46.77%,moderado
-,,5.0,3.0,7.0,0.87,Kasimpasa,32.66%,bom
-,,2.0,6.0,7.0,0.67,Kayserispor,43.20%,moderado
-,,2.0,7.0,6.0,0.73,Konyaspor,43.20%,moderado
-,,1.0,6.0,8.0,0.53,Rizespor,58.88%,alto
-,,3.0,6.0,6.0,0.80,Samsunspor,28.28%,bom
-,1.0,1.0,5.0,9.0,0.63,Sivasspor,82.92%,alto
-,1.0,3.0,5.0,6.0,0.93,Trabzonspor,51.21%,moderado
-,1.0,1.0,3.0,5.0,0.80,Ajman,66.33%,alto
-,2.0,3.0,2.0,4.0,1.27,Al Ain,30.15%,bom
-,,2.0,3.0,5.0,0.70,Al Bataeh,37.42%,bom
-,3.0,,1.0,5.0,1.11,Al Jazira,54.43%,moderado
-,1.0,1.0,4.0,5.0,0.82,Al Nasr,64.92%,alto
-,1.0,1.0,2.0,5.0,0.78,Al Sharjah,72.86%,alto
-,,,4.0,6.0,0.40,Al Urooba,20.00%,baixo
-,,3.0,4.0,3.0,1.00,Al Wahda,14.14%,baixo
-1.0,1.0,1.0,4.0,4.0,1.18,Al Wasl,66.80%,alto
-,,,4.0,6.0,0.40,Bani Yas,20.00%,baixo
-,,1.0,4.0,5.0,0.60,Dibba Al Hisn,50.99%,moderado
-,,2.0,3.0,6.0,0.64,Ittihad Kalba,46.35%,moderado
-,,1.0,5.0,5.0,0.64,Khorfakkan,51.43%,moderado
-,2.0,2.0,1.0,6.0,1.00,Shabab Al Ahli,69.83%,alto
-,,,5.0,6.0,0.45,Chornomorets,9.09%,baixo
-1.0,,4.0,6.0,3.0,1.29,Dynamo Kyiv,51.51%,moderado
-,,1.0,1.0,7.0,0.33,Inhulets,94.28%,alto
-,,4.0,5.0,4.0,1.00,Karpaty Lviv,10.88%,baixo
-,,,3.0,9.0,0.25,Kolos Kovalivka,50.00%,moderado
-,,,7.0,5.0,0.58,Kryvbas KR,16.67%,baixo
-,,,4.0,9.0,0.31,Livyi Bereh,38.46%,bom
-,,,4.0,8.0,0.33,LNZ Cherkasy,33.33%,bom
-,,,1.0,11.0,0.08,Obolon,83.33%,alto
-,1.0,2.0,5.0,6.0,0.86,Oleksandria,58.90%,alto
-,1.0,1.0,2.0,8.0,0.58,Polessya,97.18%,alto
-,,,3.0,9.0,0.25,Rukh Lviv,50.00%,moderado
-1.0,1.0,2.0,4.0,6.0,1.07,Shakhtar,69.25%,alto
-,,2.0,5.0,6.0,0.69,Veres,39.22%,bom
-,,,2.0,11.0,0.15,Vorskla Poltava,69.23%,alto
-,,,6.0,6.0,0.50,Zorya Luhansk,0.00%,baixo
-,,,4.0,2.0,0.67,Atlanta Utd,33.33%,bom
-,,1.0,,4.0,0.40,Austin,60.00%,alto
-,,,,2.0,0.00,CF Montreal,0.00%,baixo
-,1.0,1.0,,3.0,1.00,Charlotte,56.57%,alto
-,,,3.0,1.0,0.75,Chicago Fire,50.00%,moderado
-,,,,4.0,0.00,Cincinnati,0.00%,baixo
-,,1.0,1.0,2.0,0.75,Colorado Rapids,35.36%,bom
-,1.0,1.0,,3.0,1.00,Columbus Crew,56.57%,alto
-,,1.0,,3.0,0.50,Dallas,50.00%,moderado
-,,1.0,1.0,3.0,0.60,DC United,56.57%,alto
-,,,3.0,2.0,0.60,Houston Dynamo,20.00%,baixo
-,,,3.0,1.0,0.75,Inter Miami,50.00%,moderado
-,,,1.0,3.0,0.25,LA Galaxy,50.00%,moderado
-,,,,4.0,0.00,Los Angeles FC,0.00%,baixo
-,,,2.0,2.0,0.50,Minnesota Utd,0.00%,baixo
-,,,3.0,2.0,0.60,Nashville SC,20.00%,baixo
-,,,2.0,2.0,0.50,New England,0.00%,baixo
-,,,1.0,3.0,0.25,New York City,50.00%,moderado
-,,2.0,2.0,1.0,1.20,New York RB,28.28%,bom
-,,2.0,1.0,1.0,1.25,Orlando City,35.36%,bom
-,,1.0,3.0,1.0,1.00,Philadelphia,56.57%,alto
-,,2.0,,3.0,0.80,Portland,20.00%,baixo
-,,1.0,2.0,2.0,0.80,Real Salt Lake,28.28%,bom
-,2.0,,,2.0,1.50,San Diego,0.00%,baixo
-,1.0,,2.0,1.0,1.25,Seattle,35.36%,bom
-,1.0,1.0,3.0,1.0,1.33,SJ Earthquakes,57.74%,alto
-,,1.0,1.0,3.0,0.60,Sporting KC,56.57%,alto
-,,,2.0,3.0,0.40,St. Louis City,20.00%,baixo
-,,,1.0,2.0,0.33,Toronto,33.33%,bom
-,,2.0,3.0,,1.40,Vancouver,20.00%,baixo
-,,,3.0,,1.00,Birmingham L.,0.00%,baixo
-,,1.0,1.0,2.0,0.75,Charleston,35.36%,bom
-,,,1.0,1.0,0.50,Colorado S.,0.00%,baixo
-,,2.0,,1.0,1.33,Detroit City,33.33%,bom
-,,2.0,1.0,,1.67,El Paso,33.33%,bom
-,,,1.0,3.0,0.25,FC Tulsa,50.00%,moderado
-,,,1.0,1.0,0.50,Hartford A.,0.00%,baixo
-,,,2.0,1.0,0.67,Indy Eleven,33.33%,bom
-,,,,4.0,0.00,Las Vegas L.,0.00%,baixo
-,,1.0,1.0,3.0,0.60,Lexington,56.57%,alto
-,,1.0,1.0,1.0,1.00,Loudoun Utd,0.00%,baixo
-,,,2.0,,1.00,Louisville City,0.00%,baixo
-,,1.0,1.0,3.0,0.60,Miami FC,56.57%,alto
-,,,2.0,1.0,0.67,Monterey Bay,33.33%,bom
-,,,,2.0,0.00,New Mexico,0.00%,baixo
-,,1.0,2.0,,1.33,North Carolina,33.33%,bom
-,,1.0,1.0,2.0,0.75,Oakland Roots,35.36%,bom
-,,,3.0,1.0,0.75,Orange County,50.00%,moderado
-,,,3.0,1.0,0.75,Phoenix Rising,50.00%,moderado
-,,,1.0,1.0,0.50,Pittsburgh,0.00%,baixo
-,,,2.0,1.0,0.67,Sacramento R.,33.33%,bom
-,,,1.0,3.0,0.25,San Antonio,50.00%,moderado
-,,,,2.0,0.00,Tampa Bay,0.00%,baixo
-,,2.0,,1.0,1.33,Alta,33.33%,bom
-,,,1.0,3.0,0.25,Charlotte I.,50.00%,moderado
-,,,,2.0,0.00,Chattanooga RW,0.00%,baixo
-,,,,1.0,0.00,Forward Madison,0.00%,baixo
-,,1.0,1.0,3.0,0.60,Greenville,56.57%,alto
-,,2.0,,3.0,0.80,Naples,20.00%,baixo
-,,1.0,1.0,2.0,0.75,Richmond K.,35.36%,bom
-,,,2.0,2.0,0.50,Spokane V.,0.00%,baixo
-,,,1.0,2.0,0.33,Texoma,33.33%,bom
-,,2.0,2.0,,1.50,Tormenta,0.00%,baixo
+1.0,0.0,0.0,3.0,2.0,1.17,A. Tucuman,121.66%,alto
+0.0,0.0,1.0,1.0,5.0,0.43,Aldosivi,169.97%,alto
+1.0,0.0,0.0,2.0,4.0,0.86,Argentinos Jrs,163.90%,alto
+0.0,0.0,1.0,3.0,3.0,0.71,Banfield,97.98%,alto
+0.0,0.0,0.0,5.0,2.0,0.71,Barracas C.,63.25%,alto
+0.0,0.0,0.0,4.0,3.0,0.57,Belgrano,86.60%,alto
+0.0,0.0,1.0,3.0,4.0,0.63,Boca Juniors,111.36%,alto
+0.0,0.0,1.0,3.0,4.0,0.63,Central Cordoba,111.36%,alto
+0.0,0.0,0.0,0.0,7.0,0.00,D. Riestra,indefinido,indefinido
+0.0,0.0,0.0,1.0,5.0,0.17,Defensa y J.,223.61%,alto
+0.0,1.0,0.0,2.0,3.0,0.83,Estudiantes,128.06%,alto
+0.0,0.0,0.0,3.0,4.0,0.43,Gimnasia,115.47%,alto
+0.0,0.0,0.0,1.0,6.0,0.14,Godoy Cruz,244.95%,alto
+0.0,0.0,0.0,3.0,4.0,0.43,Huracan,115.47%,alto
+0.0,0.0,0.0,1.0,5.0,0.17,I. Rivadavia,223.61%,alto
+1.0,0.0,1.0,2.0,3.0,1.14,Independiente,124.23%,alto
+0.0,0.0,0.0,3.0,3.0,0.50,Instituto,100.00%,alto
+0.0,0.0,1.0,2.0,4.0,0.57,Lanus,127.48%,alto
+0.0,0.0,1.0,1.0,5.0,0.43,Newells,169.97%,alto
+0.0,0.0,0.0,2.0,5.0,0.29,Platense,158.11%,alto
+0.0,0.0,0.0,4.0,2.0,0.67,Racing Club,70.71%,alto
+0.0,0.0,0.0,1.0,6.0,0.14,River Plate,244.95%,alto
+0.0,0.0,1.0,4.0,1.0,1.00,Rosario Central,57.74%,alto
+0.0,0.0,0.0,3.0,4.0,0.43,San Lorenzo,115.47%,alto
+0.0,0.0,0.0,1.0,6.0,0.14,Sarmiento,244.95%,alto
+0.0,0.0,0.0,1.0,7.0,0.13,SM San Juan,264.58%,alto
+0.0,0.0,0.0,3.0,4.0,0.43,T. de Cordoba,115.47%,alto
+0.0,0.0,1.0,2.0,3.0,0.67,Tigre,111.80%,alto
+0.0,0.0,0.0,3.0,5.0,0.38,Union Santa Fe,129.10%,alto
+0.0,0.0,0.0,0.0,7.0,0.00,Velez Sarsfield,indefinido,indefinido
+0.0,0.0,0.0,0.0,0.0,,,indefinido,indefinido
+0.0,0.0,0.0,0.0,0.0,0.49,League avg.,indefinido,indefinido
+0.0,0.0,1.0,1.0,4.0,0.50,A. Quilmes,152.75%,alto
+0.0,0.0,1.0,2.0,2.0,0.80,Acassuso,93.54%,alto
+0.0,0.0,0.0,2.0,4.0,0.33,Argentino Merlo,141.42%,alto
+0.0,0.0,0.0,1.0,3.0,0.25,Brown de A.,173.21%,alto
+0.0,0.0,1.0,2.0,3.0,0.67,Comunicaciones,111.80%,alto
+0.0,0.0,1.0,2.0,3.0,0.67,D. Armenio,111.80%,alto
+0.0,1.0,1.0,1.0,3.0,1.00,D. Laferrere,115.47%,alto
+0.0,0.0,1.0,0.0,5.0,0.33,Deportivo Merlo,223.61%,alto
+0.0,0.0,2.0,2.0,2.0,1.00,Dock Sud,81.65%,alto
+0.0,0.0,0.0,3.0,2.0,0.60,Excursionistas,81.65%,alto
+0.0,0.0,0.0,1.0,5.0,0.17,Fenix,223.61%,alto
+0.0,0.0,0.0,0.0,6.0,0.00,Flandria,indefinido,indefinido
+0.0,0.0,1.0,1.0,4.0,0.50,Liniers,152.75%,alto
+0.0,0.0,1.0,1.0,3.0,0.60,Midland,133.33%,alto
+0.0,0.0,1.0,2.0,3.0,0.67,Real Pilar,111.80%,alto
+0.0,0.0,0.0,0.0,5.0,0.00,S. Italiano,indefinido,indefinido
+0.0,0.0,0.0,1.0,4.0,0.20,Sacachispas,200.00%,alto
+0.0,0.0,0.0,4.0,2.0,0.67,SM Burzaco,70.71%,alto
+0.0,0.0,0.0,2.0,3.0,0.40,UAI Urquiza,122.47%,alto
+0.0,0.0,2.0,3.0,1.0,1.17,V. San Carlos,58.90%,alto
+0.0,1.0,0.0,1.0,4.0,0.67,Villa Dalmine,165.83%,alto
+0.0,0.0,0.0,0.0,0.0,,,indefinido,indefinido
+0.0,0.0,0.0,0.0,0.0,0.54,League avg.,indefinido,indefinido
+0.0,0.0,0.0,3.0,9.0,0.25,Alashkert,173.21%,alto
+0.0,0.0,2.0,4.0,7.0,0.62,Ararat Yerevan,119.90%,alto
+0.0,0.0,3.0,7.0,2.0,1.08,Ararat-Armenia,59.09%,alto
+0.0,0.0,1.0,5.0,6.0,0.58,BKMA,109.73%,alto
+0.0,0.0,0.0,2.0,8.0,0.20,Gandzasar,200.00%,alto
+0.0,2.0,6.0,2.0,2.0,1.67,Noah,56.57%,alto
+0.0,1.0,1.0,4.0,7.0,0.69,Pyunik,131.47%,alto
+0.0,0.0,0.0,2.0,10.0,0.17,Shirak,223.61%,alto
+0.0,1.0,0.0,6.0,5.0,0.75,Urartu,110.55%,alto
+2.0,0.0,3.0,3.0,5.0,1.31,Van,110.76%,alto
+0.0,0.0,0.0,5.0,7.0,0.42,West Armenia,118.32%,alto
+0.0,0.0,0.0,0.0,0.0,,,indefinido,indefinido
+0.0,0.0,0.0,0.0,0.0,0.71,League avg.,indefinido,indefinido
+0.0,1.0,4.0,4.0,4.0,1.15,Adelaide Utd,82.19%,alto
+0.0,2.0,1.0,5.0,4.0,1.08,Auckland,95.77%,alto
+0.0,0.0,2.0,2.0,7.0,0.55,Brisbane Roar,143.37%,alto
+0.0,0.0,2.0,2.0,8.0,0.50,Central Coast,152.75%,alto
+1.0,0.0,0.0,5.0,5.0,0.91,Macarthur FC,144.14%,alto
+0.0,0.0,0.0,6.0,5.0,0.55,Melbourne City,91.29%,alto
+0.0,0.0,3.0,5.0,4.0,0.92,Melbourne V.,82.82%,alto
+0.0,0.0,2.0,4.0,6.0,0.67,Newcastle Jets,111.80%,alto
+0.0,0.0,1.0,4.0,8.0,0.46,Perth Glory,137.44%,alto
+0.0,0.0,4.0,7.0,2.0,1.15,Sydney FC,57.35%,alto
+0.0,0.0,0.0,5.0,7.0,0.42,Wellington,118.32%,alto
+0.0,0.0,2.0,5.0,4.0,0.82,Western United,87.49%,alto
+0.0,0.0,5.0,4.0,4.0,1.08,WS Wanderers,76.93%,alto
+0.0,0.0,0.0,0.0,0.0,,,indefinido,indefinido
+0.0,0.0,0.0,0.0,0.0,0.79,League avg.,indefinido,indefinido
+0.0,0.0,1.0,5.0,5.0,0.64,A. Klagenfurt,101.02%,alto
+0.0,0.0,0.0,3.0,8.0,0.27,Altach,163.30%,alto
+0.0,0.0,1.0,4.0,6.0,0.55,Austria Wien,120.19%,alto
+0.0,0.0,1.0,6.0,4.0,0.73,BW Linz,84.78%,alto
+0.0,1.0,1.0,2.0,7.0,0.64,Grazer AK,153.86%,alto
+0.0,0.0,0.0,2.0,9.0,0.18,Hartberg,212.13%,alto
+0.0,0.0,1.0,4.0,6.0,0.55,LASK Linz,120.19%,alto
+0.0,1.0,2.0,7.0,1.0,1.27,Rapid Wien,58.90%,alto
+0.0,0.0,3.0,3.0,5.0,0.82,Salzburg,101.84%,alto
+1.0,0.0,3.0,4.0,3.0,1.27,Sturm Graz,94.69%,alto
+0.0,0.0,0.0,3.0,8.0,0.27,Tirol,163.30%,alto
+0.0,1.0,1.0,1.0,8.0,0.55,Wolfsberger AC,181.05%,alto
+0.0,0.0,0.0,0.0,0.0,,,indefinido,indefinido
+0.0,0.0,0.0,0.0,0.0,0.64,League avg.,indefinido,indefinido
+0.0,0.0,0.0,3.0,9.0,0.25,A. Lustenau,173.21%,alto
+0.0,1.0,2.0,5.0,4.0,1.00,Admira Wacker,91.29%,alto
+0.0,0.0,3.0,5.0,5.0,0.85,Amstetten,90.91%,alto
+0.0,0.0,3.0,5.0,5.0,0.85,Bregenz,90.91%,alto
+0.0,2.0,2.0,2.0,7.0,0.92,First Vienna,123.60%,alto
+0.0,0.0,0.0,5.0,7.0,0.42,Floridsdorfer,118.32%,alto
+1.0,0.0,2.0,5.0,4.0,1.17,Kapfenberger,109.06%,alto
+0.0,0.0,1.0,7.0,4.0,0.75,Lafnitz,79.35%,alto
+0.0,0.0,2.0,5.0,6.0,0.69,Liefering,104.23%,alto
+1.0,2.0,0.0,4.0,6.0,1.08,Rapid Wien B,126.98%,alto
+0.0,0.0,4.0,4.0,4.0,1.00,Ried,81.65%,alto
+0.0,0.0,0.0,3.0,9.0,0.25,St. Polten,173.21%,alto
+0.0,0.0,0.0,3.0,9.0,0.25,Stripfing,173.21%,alto
+0.0,0.0,2.0,4.0,6.0,0.67,Sturm Graz B,111.80%,alto
+0.0,1.0,3.0,3.0,6.0,0.92,SV Horn,108.01%,alto
+0.0,0.0,0.0,5.0,8.0,0.38,Voitsberg,126.49%,alto
+0.0,0.0,0.0,0.0,0.0,,,indefinido,indefinido
+0.0,0.0,0.0,0.0,0.0,0.72,League avg.,indefinido,indefinido
+0.0,1.0,3.0,5.0,6.0,0.93,Anderlecht,99.49%,alto
+0.0,0.0,4.0,4.0,7.0,0.80,Antwerp,104.08%,alto
+0.0,0.0,0.0,5.0,10.0,0.33,Beerschot,141.42%,alto
+0.0,1.0,1.0,3.0,10.0,0.53,Cercle Brugge,165.83%,alto
+0.0,1.0,0.0,5.0,9.0,0.53,Charleroi,151.04%,alto
+0.0,1.0,4.0,4.0,6.0,1.00,Club Brugge,96.61%,alto
+0.0,0.0,1.0,5.0,9.0,0.47,Dender,132.48%,alto
+0.0,1.0,3.0,5.0,6.0,0.93,Gent,99.49%,alto
+0.0,0.0,2.0,3.0,10.0,0.47,Kortrijk,153.86%,alto
+0.0,1.0,1.0,5.0,8.0,0.67,KRC Genk,130.38%,alto
+0.0,1.0,1.0,7.0,6.0,0.80,KV Mechelen,104.08%,alto
+0.0,0.0,1.0,6.0,8.0,0.53,OH Leuven,115.92%,alto
+0.0,0.0,4.0,6.0,5.0,0.93,Royale Union SG,82.68%,alto
+0.0,0.0,3.0,6.0,6.0,0.80,Sint-Truiden,93.54%,alto
+0.0,0.0,2.0,2.0,11.0,0.40,Standard Liege,177.95%,alto
+0.0,1.0,2.0,8.0,4.0,1.00,Westerlo,81.65%,alto
+0.0,0.0,0.0,0.0,0.0,,,indefinido,indefinido
+0.0,0.0,0.0,0.0,0.0,0.70,League avg.,indefinido,indefinido
+0.0,0.0,2.0,2.0,3.0,0.86,Anderlecht B,97.18%,alto
+0.0,1.0,0.0,4.0,3.0,0.88,Beveren,105.95%,alto
+0.0,1.0,1.0,2.0,3.0,1.00,Club Brugge B,106.90%,alto
+0.0,0.0,0.0,4.0,3.0,0.57,Deinze,86.60%,alto
+0.0,0.0,0.0,3.0,3.0,0.50,Eupen,100.00%,alto
+0.0,0.0,1.0,2.0,4.0,0.57,Francs Borains,127.48%,alto
+0.0,0.0,0.0,3.0,5.0,0.38,KRC Genk B,129.10%,alto
+0.0,0.0,1.0,3.0,3.0,0.71,La Louviere,97.98%,alto
+0.0,0.0,2.0,4.0,2.0,1.00,Lierse K.,70.71%,alto
+0.0,1.0,0.0,2.0,4.0,0.71,Lokeren-Temse,144.22%,alto
+0.0,0.0,0.0,3.0,4.0,0.43,Lommel SK,115.47%,alto
+0.0,0.0,3.0,4.0,1.0,1.25,Patro Eisden,52.92%,alto
+0.0,1.0,1.0,3.0,3.0,1.00,RFC Liege,100.00%,alto
+0.0,0.0,1.0,5.0,2.0,0.88,RWDM,68.51%,alto
+0.0,0.0,0.0,4.0,4.0,0.50,Seraing,100.00%,alto
+0.0,0.0,2.0,3.0,3.0,0.88,Zulte-Waregem,89.21%,alto
+0.0,0.0,0.0,0.0,0.0,,,indefinido,indefinido
+0.0,0.0,0.0,0.0,0.0,0.76,League avg.,indefinido,indefinido
+0.0,0.0,0.0,0.0,3.0,0.00,Atletico MG,indefinido,indefinido
+0.0,0.0,0.0,2.0,1.0,0.67,Bahia,70.71%,alto
+0.0,0.0,0.0,2.0,0.0,1.00,Botafogo,0.00%,baixo
+0.0,0.0,0.0,3.0,0.0,1.00,Bragantino,0.00%,baixo
+0.0,0.0,0.0,2.0,0.0,1.00,Ceara,0.00%,baixo
+0.0,0.0,1.0,0.0,2.0,0.67,Corinthians,141.42%,alto
+0.0,0.0,1.0,1.0,0.0,1.50,Cruzeiro,33.33%,moderado
+0.0,1.0,0.0,0.0,1.0,1.50,Flamengo,100.00%,alto
+0.0,0.0,0.0,2.0,1.0,0.67,Fluminense,70.71%,alto
+0.0,0.0,1.0,0.0,2.0,0.67,Fortaleza,141.42%,alto
+0.0,0.0,1.0,1.0,1.0,1.00,Gremio,81.65%,alto
+0.0,0.0,1.0,0.0,1.0,1.00,Internacional,100.00%,alto
+0.0,0.0,1.0,2.0,0.0,1.33,Juventude,35.36%,moderado
+0.0,0.0,1.0,0.0,1.0,1.00,Mirassol,100.00%,alto
+0.0,0.0,1.0,0.0,1.0,1.00,Palmeiras,100.00%,alto
+0.0,0.0,1.0,0.0,1.0,1.00,Santos,100.00%,alto
+0.0,0.0,1.0,0.0,2.0,0.67,Sao Paulo,141.42%,alto
+0.0,0.0,0.0,1.0,1.0,0.50,Sport Recife,100.00%,alto
+0.0,0.0,1.0,0.0,2.0,0.67,Vasco da Gama,141.42%,alto
+0.0,0.0,0.0,1.0,1.0,0.50,Vitoria,100.00%,alto
+0.0,0.0,0.0,0.0,0.0,,,indefinido,indefinido
+0.0,0.0,0.0,0.0,0.0,0.84,League avg.,indefinido,indefinido
+0.0,0.0,0.0,0.0,2.0,0.00,Amazonas,indefinido,indefinido
+0.0,0.0,0.0,2.0,1.0,0.67,America MG,70.71%,alto
+0.0,0.0,0.0,1.0,0.0,1.00,Athletic Club,0.00%,baixo
+0.0,0.0,0.0,2.0,0.0,1.00,Athletico PR,0.00%,baixo
+0.0,0.0,0.0,1.0,0.0,1.00,Atletico GO,0.00%,baixo
+0.0,0.0,0.0,2.0,0.0,1.00,Avai,0.00%,baixo
+0.0,0.0,0.0,2.0,0.0,1.00,Botafogo SP,0.00%,baixo
+0.0,0.0,0.0,0.0,2.0,0.00,Chapecoense,indefinido,indefinido
+0.0,0.0,0.0,0.0,2.0,0.00,Coritiba,indefinido,indefinido
+0.0,0.0,0.0,2.0,0.0,1.00,CRB,0.00%,baixo
+0.0,1.0,0.0,1.0,0.0,2.00,Criciuma,50.00%,moderado
+0.0,0.0,0.0,1.0,1.0,0.50,Cuiaba,100.00%,alto
+0.0,0.0,0.0,1.0,1.0,0.50,Ferroviaria,100.00%,alto
+0.0,0.0,0.0,2.0,0.0,1.00,Goias,0.00%,baixo
+0.0,0.0,0.0,0.0,2.0,0.00,Novorizontino,indefinido,indefinido
+0.0,0.0,0.0,0.0,2.0,0.00,Operario PR,indefinido,indefinido
+0.0,0.0,0.0,1.0,1.0,0.50,Paysandu,100.00%,alto
+0.0,0.0,0.0,2.0,0.0,1.00,Remo,0.00%,baixo
+0.0,0.0,1.0,1.0,0.0,1.50,Vila Nova,33.33%,moderado
+0.0,0.0,0.0,0.0,1.0,0.00,Volta Redonda,indefinido,indefinido
+0.0,0.0,0.0,0.0,0.0,,,indefinido,indefinido
+0.0,0.0,0.0,0.0,0.0,0.68,League avg.,indefinido,indefinido
+0.0,0.0,0.0,0.0,1.0,0.00,ABC,indefinido,indefinido
+0.0,0.0,0.0,0.0,1.0,0.00,Anapolis,indefinido,indefinido
+0.0,0.0,0.0,1.0,0.0,1.00,Botafogo PB,0.00%,baixo
+0.0,0.0,0.0,1.0,0.0,1.00,Brusque,0.00%,baixo
+0.0,0.0,0.0,0.0,1.0,0.00,Caxias,indefinido,indefinido
+0.0,0.0,0.0,1.0,0.0,1.00,Confianca,0.00%,baixo
+0.0,0.0,0.0,1.0,0.0,1.00,CSA,0.00%,baixo
+0.0,0.0,0.0,0.0,1.0,0.00,Figueirense,indefinido,indefinido
+0.0,0.0,0.0,0.0,1.0,0.00,Floresta,indefinido,indefinido
+0.0,0.0,0.0,1.0,0.0,1.00,Guarani,0.00%,baixo
+0.0,0.0,0.0,0.0,1.0,0.00,Itabaiana,indefinido,indefinido
+0.0,0.0,0.0,0.0,1.0,0.00,Ituano,indefinido,indefinido
+0.0,0.0,1.0,0.0,0.0,2.00,Londrina,0.00%,baixo
+0.0,0.0,0.0,0.0,1.0,0.00,Maringa,indefinido,indefinido
+0.0,0.0,0.0,0.0,1.0,0.00,Nautico,indefinido,indefinido
+0.0,0.0,0.0,1.0,0.0,1.00,Ponte Preta,0.00%,baixo
+0.0,0.0,0.0,0.0,1.0,0.00,Retro,indefinido,indefinido
+0.0,0.0,0.0,0.0,1.0,0.00,Sao Bernardo,indefinido,indefinido
+0.0,1.0,0.0,0.0,0.0,3.00,Tombense,0.00%,baixo
+0.0,0.0,1.0,0.0,0.0,2.00,Ypiranga,0.00%,baixo
+0.0,0.0,0.0,0.0,0.0,,,indefinido,indefinido
+0.0,0.0,0.0,0.0,0.0,0.65,League avg.,indefinido,indefinido
+0.0,3.0,1.0,7.0,4.0,1.20,Arda,87.14%,alto
+0.0,0.0,2.0,4.0,9.0,0.53,Beroe,134.63%,alto
+0.0,0.0,1.0,6.0,8.0,0.53,Botev Plovdiv,115.92%,alto
+0.0,0.0,2.0,3.0,10.0,0.47,Botev Vratsa,153.86%,alto
+0.0,0.0,2.0,5.0,8.0,0.60,Cherno More,118.63%,alto
+0.0,1.0,1.0,6.0,7.0,0.73,CSKA 1948 Sofia,116.42%,alto
+0.0,0.0,1.0,8.0,6.0,0.67,CSKA Sofia,89.44%,alto
+0.0,0.0,0.0,4.0,11.0,0.27,Hebar,165.83%,alto
+0.0,0.0,0.0,5.0,10.0,0.33,L. Krumovgrad,141.42%,alto
+0.0,0.0,2.0,10.0,3.0,0.93,Levski Sofia,61.45%,alto
+0.0,0.0,1.0,4.0,10.0,0.40,Lok. Plovdiv,152.75%,alto
+0.0,0.0,1.0,4.0,10.0,0.40,Lokomotiv Sofia,152.75%,alto
+0.0,1.0,2.0,6.0,6.0,0.87,Ludogorets,102.05%,alto
+0.0,1.0,0.0,6.0,8.0,0.60,Septemvri Sofia,133.33%,alto
+0.0,1.0,3.0,5.0,6.0,0.93,Slavia Sofia,99.49%,alto
+0.0,0.0,3.0,5.0,7.0,0.73,Spartak Varna,105.23%,alto
+0.0,0.0,0.0,0.0,0.0,,,indefinido,indefinido
+0.0,0.0,0.0,0.0,0.0,0.64,League avg.,indefinido,indefinido
+0.0,0.0,0.0,0.0,2.0,0.00,A. Ottawa,indefinido,indefinido
+0.0,0.0,0.0,0.0,1.0,0.00,Cavalry,indefinido,indefinido
+0.0,0.0,0.0,0.0,2.0,0.00,Forge,indefinido,indefinido
+0.0,0.0,0.0,1.0,0.0,1.00,HFX Wanderers,0.00%,baixo
+0.0,0.0,1.0,0.0,1.0,1.00,Pacific,100.00%,alto
+0.0,0.0,0.0,0.0,0.0,-,Valour,indefinido,indefinido
+0.0,0.0,0.0,0.0,2.0,0.00,Vancouver FC,indefinido,indefinido
+0.0,0.0,0.0,1.0,0.0,1.00,York Utd,0.00%,baixo
+0.0,0.0,0.0,0.0,0.0,,,indefinido,indefinido
+0.0,0.0,0.0,0.0,0.0,0.36,League avg.,indefinido,indefinido
+0.0,0.0,1.0,2.0,0.0,1.33,Beijing Guoan,35.36%,moderado
+0.0,0.0,0.0,1.0,2.0,0.33,Changchun Yatai,141.42%,alto
+0.0,0.0,0.0,3.0,1.0,0.75,Chengdu,57.74%,alto
+0.0,0.0,0.0,1.0,2.0,0.33,Dalian Yingbo,141.42%,alto
+0.0,0.0,0.0,2.0,1.0,0.67,Henan SL,70.71%,alto
+0.0,1.0,0.0,1.0,3.0,0.80,Meizhou Hakka,145.77%,alto
+0.0,0.0,1.0,0.0,3.0,0.50,Qingdao Hainiu,173.21%,alto
+0.0,1.0,0.0,2.0,2.0,1.00,Qingdao West C.,109.54%,alto
+0.0,0.0,2.0,3.0,1.0,1.17,S. Shenhua,58.90%,alto
+1.0,0.0,0.0,1.0,2.0,1.25,Shandong T.,134.53%,alto
+0.0,0.0,1.0,3.0,1.0,1.00,Shanghai Port,63.25%,alto
+0.0,0.0,0.0,2.0,1.0,0.67,Sichuan Jiuniu,70.71%,alto
+0.0,0.0,0.0,1.0,4.0,0.20,Tianjin T.,200.00%,alto
+0.0,1.0,0.0,1.0,1.0,1.33,Wuhan Three T.,93.54%,alto
+0.0,0.0,0.0,0.0,3.0,0.00,Yunnan Yukun,indefinido,indefinido
+0.0,0.0,1.0,2.0,0.0,1.33,Zhejiang,35.36%,moderado
+0.0,0.0,0.0,0.0,0.0,,,indefinido,indefinido
+0.0,0.0,0.0,0.0,0.0,0.81,League avg.,indefinido,indefinido
+0.0,0.0,0.0,2.0,1.0,0.67,Chongqing T.,70.71%,alto
+0.0,0.0,0.0,0.0,2.0,0.00,Dalian Kuncheng,indefinido,indefinido
+0.0,0.0,1.0,0.0,1.0,1.00,Foshan Nanshi,100.00%,alto
+0.0,0.0,1.0,0.0,1.0,1.00,Guangdong GZP,100.00%,alto
+0.0,0.0,0.0,0.0,2.0,0.00,Guangxi Baoyun,indefinido,indefinido
+0.0,0.0,0.0,0.0,3.0,0.00,Heilongjiang IC,indefinido,indefinido
+0.0,0.0,0.0,1.0,0.0,1.00,Liaoning Tieren,0.00%,baixo
+0.0,0.0,0.0,1.0,2.0,0.33,Nanjing City,141.42%,alto
+0.0,0.0,1.0,0.0,2.0,0.67,Nantong Zhiyun,141.42%,alto
+0.0,0.0,0.0,0.0,2.0,0.00,Qingdao RL,indefinido,indefinido
+0.0,0.0,1.0,0.0,0.0,2.00,S. Gongfu,0.00%,baixo
+0.0,0.0,1.0,1.0,0.0,1.50,Shaanxi Union,33.33%,moderado
+0.0,0.0,0.0,1.0,1.0,0.50,Shanghai Jiadin,100.00%,alto
+0.0,0.0,1.0,1.0,1.0,1.00,Shenzhen J.,81.65%,alto
+0.0,0.0,0.0,0.0,2.0,0.00,Suzhou Dongwu,indefinido,indefinido
+0.0,0.0,0.0,1.0,0.0,1.00,Yanbian Longdin,0.00%,baixo
+0.0,0.0,0.0,0.0,0.0,,,indefinido,indefinido
+0.0,0.0,0.0,0.0,0.0,0.59,League avg.,indefinido,indefinido
+0.0,0.0,0.0,4.0,3.0,0.57,A. Bucaramanga,86.60%,alto
+1.0,0.0,0.0,4.0,2.0,1.14,A. Nacional,116.17%,alto
+0.0,0.0,1.0,2.0,4.0,0.57,A. Petrolera,127.48%,alto
+0.0,0.0,1.0,4.0,3.0,0.75,America de Cali,88.19%,alto
+0.0,0.0,0.0,3.0,5.0,0.38,Boyaca Chico,129.10%,alto
+0.0,0.0,2.0,3.0,2.0,1.00,D. Pereira,75.59%,alto
+0.0,0.0,1.0,2.0,4.0,0.57,Deportes Tolima,127.48%,alto
+0.0,0.0,1.0,2.0,5.0,0.50,Deportivo Cali,141.42%,alto
+0.0,2.0,1.0,4.0,1.0,1.50,Deportivo Pasto,66.67%,alto
+0.0,0.0,0.0,2.0,4.0,0.33,Envigado,141.42%,alto
+0.0,0.0,0.0,3.0,4.0,0.43,Fortaleza CEIF,115.47%,alto
+0.0,0.0,1.0,2.0,4.0,0.57,I. Medelin,127.48%,alto
+0.0,0.0,0.0,6.0,2.0,0.75,Junior,57.74%,alto
+0.0,0.0,0.0,3.0,5.0,0.38,La Equidad,129.10%,alto
+0.0,0.0,1.0,3.0,3.0,0.71,Llaneros,97.98%,alto
+0.0,0.0,0.0,3.0,4.0,0.43,Millonarios,115.47%,alto
+0.0,0.0,0.0,6.0,2.0,0.75,Once Caldas,57.74%,alto
+0.0,0.0,0.0,1.0,6.0,0.14,R. Aguilas,244.95%,alto
+0.0,0.0,3.0,2.0,3.0,1.00,Santa Fe,86.60%,alto
+0.0,0.0,0.0,1.0,7.0,0.13,Union Magdalena,264.58%,alto
+0.0,0.0,0.0,0.0,0.0,,,indefinido,indefinido
+0.0,0.0,0.0,0.0,0.0,0.64,League avg.,indefinido,indefinido
+0.0,0.0,1.0,1.0,4.0,0.50,Atletico Cali,152.75%,alto
+0.0,0.0,0.0,3.0,3.0,0.50,Atletico Huila,100.00%,alto
+0.0,0.0,0.0,2.0,3.0,0.40,Barranquilla,122.47%,alto
+0.0,0.0,1.0,0.0,4.0,0.40,Boca Juniors,200.00%,alto
+0.0,0.0,0.0,3.0,3.0,0.50,Bogota,100.00%,alto
+0.0,1.0,1.0,3.0,1.0,1.33,Cucuta,70.71%,alto
+0.0,0.0,0.0,2.0,4.0,0.33,D. Quindio,141.42%,alto
+0.0,0.0,1.0,3.0,2.0,0.83,Inter Palmira,82.46%,alto
+0.0,1.0,0.0,1.0,3.0,0.80,Jaguares de C.,145.77%,alto
+0.0,1.0,0.0,2.0,2.0,1.00,Leones,109.54%,alto
+0.0,0.0,1.0,3.0,2.0,0.83,Orsomarso,82.46%,alto
+0.0,0.0,2.0,2.0,2.0,1.00,Patriotas,81.65%,alto
+1.0,0.0,2.0,0.0,3.0,1.33,R. Cundinamarca,116.02%,alto
+0.0,0.0,1.0,4.0,0.0,1.20,Real Cartagena,33.33%,moderado
+0.0,0.0,0.0,3.0,4.0,0.43,Real Santander,115.47%,alto
+0.0,0.0,0.0,3.0,3.0,0.50,Tigres,100.00%,alto
+0.0,0.0,0.0,0.0,0.0,,,indefinido,indefinido
+0.0,0.0,0.0,0.0,0.0,0.74,League avg.,indefinido,indefinido
+0.0,2.0,0.0,4.0,5.0,0.91,Alajuelense,119.16%,alto
+0.0,0.0,1.0,6.0,4.0,0.73,Cartagines,84.78%,alto
+0.0,0.0,1.0,5.0,5.0,0.64,Guanacasteca,101.02%,alto
+0.0,0.0,1.0,5.0,5.0,0.64,Herediano,101.02%,alto
+0.0,0.0,1.0,5.0,5.0,0.64,M. Liberia,101.02%,alto
+0.0,0.0,1.0,1.0,9.0,0.27,Puntarenas,226.08%,alto
+0.0,1.0,2.0,2.0,6.0,0.82,San Carlos,125.71%,alto
+0.0,0.0,1.0,5.0,5.0,0.64,Santa Ana,101.02%,alto
+0.0,0.0,2.0,4.0,5.0,0.73,Santos Guapiles,103.08%,alto
+0.0,0.0,4.0,4.0,3.0,1.09,Saprissa,72.65%,alto
+1.0,0.0,1.0,2.0,7.0,0.73,Sporting SJ,173.11%,alto
+0.0,0.0,2.0,2.0,7.0,0.55,Zeledon,143.37%,alto
+0.0,0.0,0.0,0.0,0.0,,,indefinido,indefinido
+0.0,0.0,0.0,0.0,0.0,0.70,League avg.,indefinido,indefinido
+1.0,0.0,0.0,3.0,6.0,0.70,Alajuelense,177.01%,alto
+0.0,1.0,2.0,2.0,4.0,1.00,Cartagines,105.41%,alto
+0.0,0.0,1.0,1.0,7.0,0.33,Guanacasteca,200.00%,alto
+0.0,0.0,4.0,2.0,4.0,1.00,Herediano,89.44%,alto
+0.0,0.0,2.0,3.0,5.0,0.70,M. Liberia,111.57%,alto
+0.0,0.0,1.0,5.0,3.0,0.78,Puntarenas,80.81%,alto
+0.0,0.0,0.0,0.0,9.0,0.00,San Carlos,indefinido,indefinido
+0.0,0.0,0.0,5.0,4.0,0.56,Santa Ana,89.44%,alto
+0.0,0.0,0.0,8.0,2.0,0.80,Santos Guapiles,50.00%,moderado
+0.0,1.0,1.0,4.0,3.0,1.00,Saprissa,94.28%,alto
+0.0,0.0,1.0,3.0,6.0,0.50,Sporting SJ,134.16%,alto
+0.0,0.0,1.0,1.0,7.0,0.33,Zeledon,200.00%,alto
+0.0,0.0,0.0,0.0,0.0,,,indefinido,indefinido
+0.0,0.0,0.0,0.0,0.0,0.65,League avg.,indefinido,indefinido
+0.0,0.0,0.0,4.0,9.0,0.31,Bijelo Brdo,150.00%,alto
+0.0,0.0,0.0,4.0,9.0,0.31,C. Zmijavci,150.00%,alto
+0.0,0.0,0.0,4.0,10.0,0.29,Cibalia,158.11%,alto
+0.0,1.0,3.0,1.0,9.0,0.71,Dubrava Zagreb,144.22%,alto
+0.0,0.0,1.0,3.0,9.0,0.38,Dugopolje,162.48%,alto
+0.0,0.0,0.0,5.0,8.0,0.38,Jarun,126.49%,alto
+1.0,0.0,0.0,4.0,8.0,0.62,Opatija,183.39%,alto
+0.0,0.0,2.0,7.0,5.0,0.79,Orijent,85.76%,alto
+0.0,0.0,1.0,4.0,8.0,0.46,Rudes,137.44%,alto
+0.0,0.0,3.0,5.0,6.0,0.79,Sesvete,98.33%,alto
+0.0,1.0,2.0,3.0,8.0,0.71,Vukovar,134.16%,alto
+0.0,0.0,0.0,3.0,10.0,0.23,Zrinski J.,182.57%,alto
+0.0,0.0,0.0,0.0,0.0,,,indefinido,indefinido
+0.0,0.0,0.0,0.0,0.0,0.50,League avg.,indefinido,indefinido
+0.0,1.0,3.0,4.0,7.0,0.87,Banik Ostrava,110.41%,alto
+0.0,0.0,1.0,4.0,10.0,0.40,Bohemians,152.75%,alto
+0.0,0.0,1.0,1.0,13.0,0.20,C. Budejovice,270.80%,alto
+0.0,0.0,0.0,4.0,11.0,0.27,Dukla Praha,165.83%,alto
+0.0,0.0,2.0,5.0,8.0,0.60,Hradec Kralove,118.63%,alto
+1.0,0.0,3.0,3.0,8.0,0.87,Jablonec,137.89%,alto
+0.0,0.0,2.0,7.0,6.0,0.73,Karvina,92.71%,alto
+0.0,0.0,1.0,6.0,8.0,0.53,Mlada Boleslav,115.92%,alto
+0.0,0.0,0.0,2.0,13.0,0.13,Pardubice,254.95%,alto
+0.0,0.0,2.0,8.0,5.0,0.80,Sigma Olomouc,81.65%,alto
+0.0,2.0,2.0,8.0,3.0,1.20,Slavia Prague,75.77%,alto
+0.0,0.0,0.0,6.0,9.0,0.40,Slovacko,122.47%,alto
+0.0,1.0,3.0,5.0,6.0,0.93,Slovan Liberec,99.49%,alto
+0.0,1.0,0.0,9.0,5.0,0.80,Sparta Prague,93.54%,alto
+0.0,0.0,1.0,5.0,9.0,0.47,Teplice,132.48%,alto
+1.0,0.0,5.0,4.0,5.0,1.20,Viktoria Plzen,96.92%,alto
+0.0,0.0,0.0,0.0,0.0,,,indefinido,indefinido
+0.0,0.0,0.0,0.0,0.0,0.65,League avg.,indefinido,indefinido
+0.0,0.0,1.0,3.0,7.0,0.45,Banik Ostrava B,144.22%,alto
+1.0,0.0,3.0,6.0,2.0,1.33,Chrudim,82.82%,alto
+0.0,0.0,3.0,5.0,4.0,0.92,Jihlava,82.82%,alto
+0.0,0.0,2.0,3.0,8.0,0.54,Lisen,138.51%,alto
+0.0,0.0,2.0,5.0,5.0,0.75,Opava,96.23%,alto
+0.0,1.0,0.0,4.0,7.0,0.58,Prostejov,147.77%,alto
+0.0,0.0,1.0,5.0,6.0,0.58,Sigma Olomouc B,109.73%,alto
+0.0,0.0,2.0,6.0,4.0,0.83,Slavia Prague B,82.46%,alto
+0.0,1.0,3.0,3.0,5.0,1.00,Sparta Prague B,100.00%,alto
+0.0,0.0,0.0,4.0,9.0,0.31,Taborsko,150.00%,alto
+0.0,0.0,2.0,4.0,6.0,0.67,Varnsdorf,111.80%,alto
+0.0,1.0,2.0,5.0,4.0,1.00,Vikto Zizkov,91.29%,alto
+0.0,0.0,0.0,6.0,6.0,0.50,Vlasim,100.00%,alto
+0.0,0.0,1.0,3.0,8.0,0.42,Vyskov,153.62%,alto
+0.0,0.0,0.0,3.0,8.0,0.27,Zbrojovka Brno,163.30%,alto
+0.0,0.0,1.0,9.0,2.0,0.92,Zlin,53.78%,alto
+0.0,0.0,0.0,0.0,0.0,,,indefinido,indefinido
+0.0,0.0,0.0,0.0,0.0,0.69,League avg.,indefinido,indefinido
+0.0,0.0,1.0,3.0,10.0,0.36,Aalborg BK,170.88%,alto
+0.0,1.0,1.0,8.0,3.0,1.00,AGF Aarhus,78.45%,alto
+0.0,0.0,1.0,7.0,6.0,0.64,Brondby IF,94.93%,alto
+0.0,0.0,1.0,8.0,5.0,0.71,FC Kobenhavn,82.46%,alto
+0.0,1.0,1.0,8.0,3.0,1.00,FC Midtjylland,78.45%,alto
+0.0,0.0,0.0,3.0,10.0,0.23,Lyngby,182.57%,alto
+1.0,2.0,4.0,2.0,4.0,1.54,Nordsjaelland,86.03%,alto
+0.0,0.0,3.0,6.0,4.0,0.92,Randers FC,79.06%,alto
+1.0,1.0,3.0,2.0,6.0,1.15,Silkeborg,115.77%,alto
+0.0,0.0,2.0,8.0,3.0,0.92,SonderjyskE,66.67%,alto
+0.0,0.0,1.0,5.0,8.0,0.50,Vejle BK,125.36%,alto
+0.0,2.0,3.0,5.0,4.0,1.21,Viborg,83.40%,alto
+0.0,0.0,0.0,0.0,0.0,,,indefinido,indefinido
+0.0,0.0,0.0,0.0,0.0,0.84,League avg.,indefinido,indefinido
+0.0,0.0,1.0,5.0,7.0,0.54,AC Horsens,117.80%,alto
+0.0,0.0,2.0,2.0,9.0,0.46,B 93,161.59%,alto
+0.0,0.0,1.0,5.0,7.0,0.54,Esbjerg,117.80%,alto
+1.0,2.0,2.0,2.0,6.0,1.23,Fredericia,114.19%,alto
+0.0,1.0,1.0,1.0,11.0,0.43,HB Koge,210.82%,alto
+0.0,0.0,2.0,7.0,4.0,0.85,Hillerod,78.20%,alto
+0.0,1.0,1.0,5.0,7.0,0.71,Hobro,123.29%,alto
+0.0,1.0,0.0,5.0,8.0,0.57,Hvidovre,143.61%,alto
+0.0,0.0,0.0,6.0,8.0,0.43,Kolding IF,115.47%,alto
+0.0,0.0,6.0,3.0,4.0,1.15,Odense BK,74.83%,alto
+0.0,0.0,1.0,4.0,8.0,0.46,Roskilde,137.44%,alto
+0.0,0.0,0.0,5.0,9.0,0.36,Vendsyssel,134.16%,alto
+0.0,0.0,0.0,0.0,0.0,,,indefinido,indefinido
+0.0,0.0,0.0,0.0,0.0,0.64,League avg.,indefinido,indefinido
+0.0,1.0,1.0,4.0,5.0,0.82,Aarhus Fremad,114.40%,alto
+0.0,1.0,2.0,3.0,5.0,0.91,AB Copenhagen,109.54%,alto
+0.0,0.0,0.0,6.0,5.0,0.55,BK Frem,91.29%,alto
+0.0,0.0,0.0,3.0,8.0,0.27,Fremad Amager,163.30%,alto
+0.0,0.0,0.0,3.0,8.0,0.27,Hellerup IK,163.30%,alto
+0.0,0.0,0.0,5.0,6.0,0.45,Helsingor,109.54%,alto
+0.0,0.0,1.0,2.0,8.0,0.36,Ishoj,176.78%,alto
+0.0,0.0,3.0,5.0,3.0,1.00,Middelfart,73.85%,alto
+0.0,0.0,2.0,3.0,6.0,0.64,Naestved,121.22%,alto
+0.0,0.0,1.0,3.0,7.0,0.45,Nykobing,144.22%,alto
+0.0,0.0,1.0,4.0,6.0,0.55,Skive,120.19%,alto
+0.0,0.0,1.0,4.0,6.0,0.55,Thisted,120.19%,alto
+0.0,0.0,0.0,0.0,0.0,,,indefinido,indefinido
+0.0,0.0,0.0,0.0,0.0,0.57,League avg.,indefinido,indefinido
+0.0,1.0,1.0,1.0,1.0,1.50,Aucas,74.54%,alto
+0.0,0.0,0.0,1.0,3.0,0.25,Barcelona SC,173.21%,alto
+0.0,0.0,2.0,2.0,0.0,1.50,Cuniburo,33.33%,moderado
+0.0,0.0,0.0,2.0,2.0,0.50,D. Cuenca,100.00%,alto
+0.0,0.0,0.0,1.0,3.0,0.25,Delfin,173.21%,alto
+0.0,0.0,0.0,1.0,4.0,0.20,El Nacional,200.00%,alto
+0.0,0.0,0.0,2.0,3.0,0.40,Emelec,122.47%,alto
+0.0,0.0,2.0,2.0,1.0,1.20,I. del Valle,62.36%,alto
+0.0,0.0,1.0,1.0,2.0,0.75,LDU Quito,110.55%,alto
+0.0,0.0,0.0,3.0,2.0,0.60,Libertad,81.65%,alto
+0.0,0.0,0.0,1.0,3.0,0.25,Macara,173.21%,alto
+0.0,0.0,1.0,4.0,0.0,1.20,Manta,33.33%,moderado
+0.0,0.0,1.0,1.0,3.0,0.60,Mushuc Runa,133.33%,alto
+0.0,0.0,2.0,1.0,1.0,1.25,Orense,66.33%,alto
+0.0,0.0,0.0,3.0,1.0,0.75,Tecnico U.,57.74%,alto
+0.0,0.0,0.0,4.0,1.0,0.80,U. Catolica,50.00%,moderado
+0.0,0.0,0.0,0.0,0.0,,,indefinido,indefinido
+0.0,0.0,0.0,0.0,0.0,0.75,League avg.,indefinido,indefinido
+0.0,0.0,0.0,0.0,2.0,0.00,22 de Julio,indefinido,indefinido
+0.0,0.0,0.0,0.0,2.0,0.00,Chacaritas,indefinido,indefinido
+0.0,1.0,0.0,1.0,1.0,1.33,Cumbaya,93.54%,alto
+0.0,0.0,0.0,2.0,1.0,0.67,Gualaceo,70.71%,alto
+0.0,0.0,0.0,1.0,2.0,0.33,Guayaquil City,141.42%,alto
+0.0,0.0,1.0,0.0,2.0,0.67,I. Juniors,141.42%,alto
+0.0,0.0,0.0,1.0,1.0,0.50,Imbabura,100.00%,alto
+0.0,0.0,0.0,0.0,2.0,0.00,Leones Norte,indefinido,indefinido
+0.0,0.0,0.0,1.0,1.0,0.50,Nueve Octubre,100.00%,alto
+0.0,0.0,0.0,1.0,2.0,0.33,San Antonio,141.42%,alto
+0.0,0.0,0.0,2.0,1.0,0.67,Vargas Torres,70.71%,alto
+0.0,0.0,0.0,2.0,0.0,1.00,Vinotinto,0.00%,baixo
+0.0,0.0,0.0,0.0,0.0,,,indefinido,indefinido
+0.0,0.0,0.0,0.0,0.0,0.53,League avg.,indefinido,indefinido
+0.0,0.0,3.0,8.0,5.0,0.88,Arsenal,79.54%,alto
+0.0,1.0,2.0,7.0,7.0,0.82,Aston Villa,104.00%,alto
+0.0,1.0,0.0,6.0,9.0,0.56,Bournemouth,140.11%,alto
+1.0,1.0,2.0,7.0,6.0,1.06,Brentford,109.45%,alto
+0.0,0.0,2.0,6.0,8.0,0.63,Brighton,111.36%,alto
+1.0,1.0,1.0,6.0,7.0,0.94,Chelsea,127.04%,alto
+0.0,0.0,0.0,6.0,11.0,0.35,Crystal Palace,135.40%,alto
+0.0,2.0,2.0,1.0,12.0,0.65,Everton,167.13%,alto
+0.0,1.0,1.0,9.0,6.0,0.82,Fulham,95.30%,alto
+0.0,0.0,0.0,8.0,9.0,0.47,Ipswich Town,106.07%,alto
+0.0,0.0,0.0,3.0,14.0,0.18,Leicester City,216.02%,alto
+0.0,2.0,1.0,7.0,6.0,0.94,Liverpool,103.06%,alto
+0.0,2.0,6.0,6.0,2.0,1.50,Manchester City,57.74%,alto
+0.0,0.0,3.0,3.0,11.0,0.53,Manchester Utd,146.57%,alto
+2.0,0.0,0.0,11.0,3.0,1.19,Newcastle Utd,102.96%,alto
+0.0,2.0,0.0,7.0,7.0,0.81,Nottm Forest,116.91%,alto
+0.0,0.0,1.0,5.0,10.0,0.44,Southampton,139.24%,alto
+0.0,0.0,5.0,5.0,7.0,0.88,Tottenham,94.28%,alto
+0.0,0.0,4.0,2.0,11.0,0.59,West Ham Utd,143.53%,alto
+0.0,0.0,2.0,8.0,6.0,0.75,Wolverhampton,88.19%,alto
+0.0,0.0,0.0,0.0,0.0,,,indefinido,indefinido
+0.0,0.0,0.0,0.0,0.0,0.75,League avg.,indefinido,indefinido
+0.0,0.0,2.0,8.0,12.0,0.55,Blackburn,120.19%,alto
+0.0,1.0,3.0,4.0,14.0,0.59,Bristol City,150.15%,alto
+0.0,0.0,5.0,8.0,9.0,0.82,Burnley,94.93%,alto
+0.0,0.0,2.0,4.0,16.0,0.36,Cardiff City,176.78%,alto
+1.0,0.0,4.0,8.0,9.0,0.91,Coventry City,114.74%,alto
+0.0,1.0,1.0,7.0,13.0,0.55,Derby County,143.37%,alto
+0.0,0.0,1.0,7.0,14.0,0.41,Hull City,140.98%,alto
+1.0,1.0,5.0,10.0,5.0,1.27,Leeds Utd,85.07%,alto
+0.0,0.0,1.0,7.0,14.0,0.41,Luton Town,140.98%,alto
+0.0,1.0,2.0,10.0,9.0,0.77,Middlesbrough,102.73%,alto
+0.0,0.0,4.0,3.0,15.0,0.50,Millwall,156.67%,alto
+0.0,0.0,6.0,8.0,8.0,0.91,Norwich City,87.18%,alto
+0.0,0.0,0.0,9.0,13.0,0.41,Oxford Utd,120.19%,alto
+0.0,0.0,3.0,5.0,14.0,0.50,Plymouth,144.60%,alto
+0.0,0.0,5.0,4.0,13.0,0.64,Portsmouth,130.15%,alto
+0.0,0.0,1.0,8.0,13.0,0.45,Preston,128.06%,alto
+0.0,0.0,4.0,8.0,10.0,0.73,QP Rangers,103.08%,alto
+0.0,0.0,3.0,11.0,8.0,0.77,Sheffield Utd,86.65%,alto
+0.0,0.0,2.0,6.0,14.0,0.45,Sheffield Wed,144.22%,alto
+0.0,1.0,2.0,8.0,11.0,0.68,Stoke City,120.19%,alto
+0.0,1.0,2.0,11.0,8.0,0.82,Sunderland,94.93%,alto
+0.0,2.0,3.0,9.0,8.0,0.95,Swansea City,97.24%,alto
+0.0,0.0,1.0,8.0,13.0,0.45,Watford,128.06%,alto
+1.0,1.0,2.0,6.0,12.0,0.77,West Brom,145.15%,alto
+0.0,0.0,0.0,0.0,0.0,,,indefinido,indefinido
+0.0,0.0,0.0,0.0,0.0,0.65,League avg.,indefinido,indefinido
+0.0,0.0,3.0,10.0,9.0,0.73,Barnsley,94.37%,alto
+0.0,1.0,2.0,11.0,8.0,0.82,Birmingham City,94.93%,alto
+0.0,0.0,2.0,7.0,12.0,0.52,Blackpool,126.62%,alto
+1.0,0.0,1.0,4.0,16.0,0.45,Bolton,215.34%,alto
+0.0,0.0,0.0,13.0,9.0,0.59,Bristol Rovers,83.21%,alto
+0.0,1.0,4.0,6.0,10.0,0.81,Burton Albion,111.92%,alto
+0.0,0.0,4.0,4.0,14.0,0.55,Cambridge Utd,143.37%,alto
+0.0,0.0,4.0,6.0,12.0,0.64,Charlton,121.22%,alto
+0.0,1.0,2.0,6.0,13.0,0.59,Crawley Town,141.21%,alto
+0.0,0.0,1.0,7.0,14.0,0.41,Exeter City,140.98%,alto
+1.0,0.0,1.0,5.0,15.0,0.50,Huddersfield,196.62%,alto
+0.0,2.0,1.0,8.0,11.0,0.73,Leyton Orient,125.62%,alto
+0.0,1.0,3.0,9.0,9.0,0.82,Lincoln City,101.84%,alto
+0.0,0.0,3.0,8.0,10.0,0.67,Mansfield,106.90%,alto
+0.0,0.0,3.0,4.0,15.0,0.45,Northampton,158.75%,alto
+1.0,1.0,4.0,7.0,9.0,1.00,Peterborough,112.72%,alto
+0.0,0.0,3.0,6.0,13.0,0.55,Reading,132.29%,alto
+0.0,1.0,3.0,5.0,13.0,0.64,Rotherham,138.51%,alto
+0.0,0.0,1.0,7.0,14.0,0.41,Shrewsbury,140.98%,alto
+0.0,0.0,1.0,7.0,13.0,0.43,Stevenage,136.08%,alto
+0.0,1.0,2.0,10.0,9.0,0.77,Stockport,102.73%,alto
+0.0,0.0,2.0,7.0,13.0,0.50,Wigan Athletic,131.43%,alto
+0.0,0.0,5.0,7.0,10.0,0.77,Wrexham,102.73%,alto
+0.0,0.0,1.0,6.0,15.0,0.36,Wycombe,156.12%,alto
+0.0,0.0,0.0,0.0,0.0,,,indefinido,indefinido
+0.0,0.0,0.0,0.0,0.0,0.61,League avg.,indefinido,indefinido
+0.0,1.0,2.0,8.0,11.0,0.68,AFC Fylde,120.19%,alto
+0.0,1.0,4.0,6.0,11.0,0.77,Aldershot Town,116.61%,alto
+1.0,1.0,3.0,9.0,8.0,1.00,Altrincham,108.80%,alto
+1.0,2.0,4.0,9.0,6.0,1.23,Barnet,91.65%,alto
+0.0,0.0,2.0,10.0,10.0,0.64,Boston Utd,101.02%,alto
+0.0,0.0,2.0,6.0,14.0,0.45,Braintree Town,144.22%,alto
+0.0,0.0,3.0,8.0,11.0,0.64,Dagenham & R.,111.57%,alto
+0.0,0.0,4.0,14.0,4.0,1.00,Eastleigh,60.30%,alto
+0.0,0.0,0.0,4.0,18.0,0.18,Ebbsfleet Utd,212.13%,alto
+0.0,1.0,3.0,7.0,11.0,0.73,Forest Green,118.59%,alto
+0.0,2.0,6.0,5.0,9.0,1.05,Gateshead FC,97.71%,alto
+0.0,0.0,1.0,6.0,15.0,0.36,Halifax Town,156.12%,alto
+0.0,0.0,2.0,4.0,16.0,0.36,Hartlepool,176.78%,alto
+0.0,0.0,3.0,7.0,12.0,0.59,Maidenhead Utd,121.38%,alto
+0.0,1.0,2.0,8.0,11.0,0.68,Oldham,120.19%,alto
+0.0,0.0,3.0,5.0,14.0,0.50,Rochdale,144.60%,alto
+0.0,0.0,3.0,9.0,9.0,0.71,Solihull Moors,97.98%,alto
+0.0,0.0,4.0,8.0,10.0,0.73,Southend Utd,103.08%,alto
+1.0,0.0,0.0,7.0,14.0,0.50,Sutton Utd,187.96%,alto
+0.0,1.0,2.0,7.0,12.0,0.64,Tamworth,130.15%,alto
+0.0,0.0,3.0,7.0,12.0,0.59,Wealdstone,121.38%,alto
+0.0,1.0,0.0,5.0,16.0,0.36,Woking,195.26%,alto
+0.0,0.0,2.0,6.0,14.0,0.45,Yeovil Town,144.22%,alto
+2.0,0.0,3.0,9.0,8.0,1.05,York City,116.14%,alto
+0.0,0.0,0.0,0.0,0.0,,,indefinido,indefinido
+0.0,0.0,0.0,0.0,0.0,0.66,League avg.,indefinido,indefinido
+0.0,0.0,0.0,2.0,0.0,1.00,07 Vestur,0.00%,baixo
+0.0,0.0,0.0,2.0,1.0,0.67,B36 Torshavn,70.71%,alto
+0.0,0.0,0.0,1.0,1.0,0.50,B68 Toftir,100.00%,alto
+0.0,1.0,0.0,2.0,0.0,1.67,HB Torshavn,56.57%,alto
+0.0,0.0,1.0,3.0,0.0,1.25,Klaksvik,34.64%,moderado
+1.0,0.0,1.0,0.0,2.0,1.50,NSI Runavik,113.84%,alto
+0.0,0.0,0.0,1.0,2.0,0.33,Streymur,141.42%,alto
+0.0,0.0,0.0,0.0,2.0,0.00,Suduroy,indefinido,indefinido
+0.0,0.0,0.0,1.0,3.0,0.25,TB Tvoroyri,173.21%,alto
+0.0,0.0,0.0,0.0,3.0,0.00,Vikingur,indefinido,indefinido
+0.0,0.0,0.0,0.0,0.0,,,indefinido,indefinido
+0.0,0.0,0.0,0.0,0.0,0.77,League avg.,indefinido,indefinido
+0.0,0.0,0.0,0.0,0.0,-,Gnistan,indefinido,indefinido
+0.0,0.0,0.0,1.0,2.0,0.33,Haka,141.42%,alto
+0.0,0.0,0.0,0.0,0.0,-,HJK Helsinki,indefinido,indefinido
+0.0,0.0,1.0,1.0,0.0,1.50,Ilves,33.33%,moderado
+0.0,0.0,0.0,1.0,1.0,0.50,Inter Turku,100.00%,alto
+0.0,0.0,0.0,0.0,0.0,-,Jaro,indefinido,indefinido
+0.0,0.0,0.0,1.0,2.0,0.33,KTP,141.42%,alto
+0.0,0.0,0.0,1.0,1.0,0.50,KuPS,100.00%,alto
+0.0,0.0,0.0,1.0,1.0,0.50,Mariehamn,100.00%,alto
+0.0,0.0,0.0,0.0,0.0,-,Oulu,indefinido,indefinido
+0.0,0.0,0.0,0.0,1.0,0.00,SJK,indefinido,indefinido
+0.0,0.0,0.0,0.0,2.0,0.00,VPS,indefinido,indefinido
+0.0,0.0,0.0,0.0,0.0,,,indefinido,indefinido
+0.0,0.0,0.0,0.0,0.0,0.47,League avg.,indefinido,indefinido
+0.0,0.0,0.0,0.0,1.0,0.00,Atlantis,indefinido,indefinido
+0.0,0.0,0.0,0.0,1.0,0.00,EPS,indefinido,indefinido
+0.0,0.0,1.0,1.0,0.0,1.50,Inter Turku B,33.33%,moderado
+0.0,0.0,0.0,0.0,0.0,-,Jazz Pori,indefinido,indefinido
+0.0,0.0,0.0,0.0,0.0,-,JJK,indefinido,indefinido
+0.0,0.0,0.0,2.0,0.0,1.00,KPV Kokkola,0.00%,baixo
+0.0,0.0,0.0,0.0,2.0,0.00,KuPS Ak.,indefinido,indefinido
+0.0,0.0,0.0,0.0,1.0,0.00,Mikkelin,indefinido,indefinido
+0.0,0.0,0.0,1.0,0.0,1.00,OLS Oulu,0.00%,baixo
+0.0,0.0,0.0,0.0,0.0,-,PKKU,indefinido,indefinido
+0.0,0.0,0.0,0.0,1.0,0.00,Rovaniemi,indefinido,indefinido
+0.0,0.0,0.0,0.0,1.0,0.00,Tampere Utd,indefinido,indefinido
+0.0,0.0,0.0,0.0,0.0,,,indefinido,indefinido
+0.0,0.0,0.0,0.0,0.0,0.50,League avg.,indefinido,indefinido
+0.0,0.0,2.0,3.0,10.0,0.47,Angers,153.86%,alto
+0.0,0.0,2.0,5.0,8.0,0.60,Auxerre,118.63%,alto
+0.0,0.0,4.0,6.0,5.0,0.93,Brest,82.68%,alto
+0.0,0.0,1.0,5.0,9.0,0.47,Le Havre,132.48%,alto
+0.0,0.0,2.0,3.0,10.0,0.47,Lens,153.86%,alto
+0.0,0.0,4.0,6.0,5.0,0.93,Lille,82.68%,alto
+0.0,1.0,0.0,8.0,5.0,0.79,Lyon,98.33%,alto
+0.0,1.0,0.0,6.0,8.0,0.60,Marseille,133.33%,alto
+0.0,0.0,3.0,6.0,7.0,0.75,Monaco,100.00%,alto
+0.0,0.0,1.0,4.0,10.0,0.40,Montpellier,152.75%,alto
+0.0,0.0,0.0,6.0,7.0,0.46,Nantes,108.01%,alto
+1.0,1.0,0.0,8.0,5.0,1.13,Nice,115.14%,alto
+1.0,0.0,4.0,8.0,2.0,1.33,Paris SG,76.12%,alto
+0.0,0.0,1.0,8.0,7.0,0.63,Reims,95.92%,alto
+0.0,0.0,3.0,6.0,7.0,0.75,Rennes,100.00%,alto
+0.0,0.0,1.0,6.0,8.0,0.53,Saint-Etienne,115.92%,alto
+0.0,0.0,0.0,8.0,6.0,0.57,Strasbourg,86.60%,alto
+0.0,0.0,1.0,3.0,11.0,0.33,Toulouse,178.89%,alto
+0.0,0.0,0.0,0.0,0.0,,,indefinido,indefinido
+0.0,0.0,0.0,0.0,0.0,0.68,League avg.,indefinido,indefinido
+0.0,0.0,1.0,3.0,12.0,0.31,AC Ajaccio,186.55%,alto
+0.0,0.0,2.0,6.0,8.0,0.63,Amiens,111.36%,alto
+0.0,0.0,0.0,9.0,6.0,0.60,Annecy,81.65%,alto
+0.0,0.0,0.0,5.0,11.0,0.31,Caen,148.32%,alto
+0.0,0.0,1.0,5.0,10.0,0.44,Clermont,139.24%,alto
+0.0,0.0,1.0,7.0,8.0,0.56,Grenoble,108.30%,alto
+0.0,0.0,4.0,4.0,7.0,0.80,Guingamp,104.08%,alto
+0.0,1.0,1.0,8.0,5.0,0.87,Laval,92.95%,alto
+0.0,0.0,3.0,7.0,5.0,0.87,Lorient,82.85%,alto
+0.0,1.0,1.0,4.0,10.0,0.56,Martigues,153.56%,alto
+0.0,2.0,2.0,6.0,6.0,1.00,Metz,100.00%,alto
+0.0,2.0,1.0,8.0,5.0,1.00,Paris FC,93.54%,alto
+0.0,0.0,0.0,7.0,8.0,0.47,Pau FC,106.90%,alto
+0.0,1.0,0.0,6.0,8.0,0.60,Red Star,133.33%,alto
+0.0,0.0,1.0,3.0,11.0,0.33,Rodez Aveyron,178.89%,alto
+0.0,1.0,2.0,5.0,7.0,0.80,SC Bastia,113.65%,alto
+0.0,0.0,1.0,3.0,11.0,0.33,Troyes,178.89%,alto
+0.0,0.0,3.0,3.0,10.0,0.56,USL Dunkerque,140.11%,alto
+0.0,0.0,0.0,0.0,0.0,,,indefinido,indefinido
+0.0,0.0,0.0,0.0,0.0,0.61,League avg.,indefinido,indefinido
+0.0,0.0,2.0,7.0,4.0,0.85,Aubagne,78.20%,alto
+0.0,0.0,4.0,5.0,5.0,0.93,Boulogne,86.00%,alto
+0.0,0.0,0.0,5.0,9.0,0.36,Bourg-en-Bresse,134.16%,alto
+0.0,0.0,1.0,7.0,6.0,0.64,Chateauroux,94.93%,alto
+1.0,0.0,0.0,6.0,7.0,0.71,Concarneau,152.75%,alto
+0.0,0.0,2.0,6.0,7.0,0.67,Dijon,104.88%,alto
+0.0,0.0,1.0,8.0,5.0,0.71,Le Mans,82.46%,alto
+0.0,0.0,1.0,6.0,7.0,0.57,Nancy,108.97%,alto
+0.0,0.0,0.0,5.0,9.0,0.36,Nimes,134.16%,alto
+0.0,0.0,3.0,4.0,7.0,0.71,Orleans,111.36%,alto
+0.0,0.0,1.0,4.0,9.0,0.43,Paris 13 A.,145.30%,alto
+0.0,0.0,2.0,5.0,7.0,0.64,Quevilly Rouen,111.67%,alto
+1.0,1.0,2.0,3.0,8.0,0.93,Rouen,136.81%,alto
+0.0,0.0,0.0,3.0,11.0,0.21,Sochaux,191.49%,alto
+0.0,1.0,1.0,5.0,7.0,0.71,Valenciennes,123.29%,alto
+0.0,0.0,2.0,4.0,9.0,0.53,Versailles,134.63%,alto
+0.0,0.0,1.0,4.0,9.0,0.43,Villefranche,145.30%,alto
+0.0,0.0,0.0,0.0,0.0,,,indefinido,indefinido
+0.0,0.0,0.0,0.0,0.0,0.61,League avg.,indefinido,indefinido
+0.0,1.0,0.0,2.0,2.0,1.00,Dila Gori,109.54%,alto
+0.0,0.0,1.0,3.0,1.0,1.00,Dinamo Batumi,63.25%,alto
+0.0,0.0,0.0,2.0,2.0,0.50,Dinamo Tbilisi,100.00%,alto
+0.0,0.0,0.0,0.0,5.0,0.00,Gagra,indefinido,indefinido
+0.0,0.0,0.0,1.0,2.0,0.33,Gareji Sagarejo,141.42%,alto
+0.0,0.0,0.0,3.0,2.0,0.60,Iberia,81.65%,alto
+0.0,0.0,0.0,1.0,4.0,0.20,Kolkheti Poti,200.00%,alto
+1.0,1.0,0.0,0.0,3.0,1.60,Samgurali,126.49%,alto
+0.0,0.0,0.0,1.0,3.0,0.25,Telavi,173.21%,alto
+0.0,0.0,1.0,1.0,2.0,0.75,Torpedo Kutaisi,110.55%,alto
+0.0,0.0,0.0,0.0,0.0,,,indefinido,indefinido
+0.0,0.0,0.0,0.0,0.0,0.64,League avg.,indefinido,indefinido
+0.0,2.0,4.0,5.0,4.0,1.27,Bayern Munich,78.77%,alto
+0.0,0.0,3.0,0.0,12.0,0.40,Bochum,200.00%,alto
+0.0,2.0,3.0,6.0,4.0,1.20,Dortmund,81.65%,alto
+1.0,0.0,4.0,6.0,4.0,1.20,E. Frankfurt,92.29%,alto
+0.0,0.0,1.0,6.0,8.0,0.53,FC Augsburg,115.92%,alto
+0.0,1.0,3.0,5.0,6.0,0.93,Freiburg,99.49%,alto
+0.0,0.0,3.0,5.0,7.0,0.73,FSV Mainz,105.23%,alto
+0.0,0.0,1.0,3.0,11.0,0.33,Heidenheim,178.89%,alto
+0.0,1.0,2.0,4.0,8.0,0.73,Hoffenheim,126.62%,alto
+1.0,1.0,0.0,5.0,8.0,0.80,Holstein Kiel,151.26%,alto
+0.0,0.0,6.0,4.0,5.0,1.07,Leverkusen,80.04%,alto
+0.0,2.0,1.0,5.0,7.0,0.87,Monchengladbach,118.17%,alto
+0.0,0.0,4.0,5.0,6.0,0.87,RB Leipzig,92.95%,alto
+0.0,0.0,0.0,3.0,12.0,0.20,Sankt Pauli,200.00%,alto
+0.0,1.0,2.0,4.0,8.0,0.73,Stuttgart,126.62%,alto
+1.0,0.0,3.0,2.0,9.0,0.80,Union Berlin,151.26%,alto
+0.0,1.0,1.0,6.0,7.0,0.73,Werder Bremen,116.42%,alto
+0.0,0.0,0.0,4.0,11.0,0.27,Wolfsburg,165.83%,alto
+0.0,0.0,0.0,0.0,0.0,,,indefinido,indefinido
+0.0,0.0,0.0,0.0,0.0,0.76,League avg.,indefinido,indefinido
+0.0,0.0,0.0,7.0,8.0,0.47,Braunschweig,106.90%,alto
+0.0,0.0,3.0,7.0,5.0,0.87,Darmstadt,82.85%,alto
+0.0,1.0,2.0,6.0,6.0,0.87,Dusseldorf,102.05%,alto
+1.0,1.0,4.0,5.0,5.0,1.25,Elversberg,95.56%,alto
+1.0,1.0,2.0,3.0,8.0,0.93,FC Koln,136.81%,alto
+0.0,2.0,0.0,5.0,8.0,0.73,FC Nurnberg,136.06%,alto
+0.0,0.0,2.0,8.0,5.0,0.80,Greuther Furth,81.65%,alto
+0.0,3.0,4.0,4.0,4.0,1.40,Hamburger SV,77.37%,alto
+0.0,0.0,1.0,6.0,8.0,0.53,Hannover 96,115.92%,alto
+0.0,0.0,0.0,3.0,11.0,0.21,Hertha Berlin,191.49%,alto
+0.0,1.0,2.0,7.0,5.0,0.93,Kaiserslautern,91.47%,alto
+0.0,0.0,2.0,8.0,5.0,0.80,Karlsruher SC,81.65%,alto
+0.0,0.0,3.0,4.0,8.0,0.67,Magdeburg,118.32%,alto
+0.0,1.0,0.0,7.0,7.0,0.67,Paderborn,118.32%,alto
+0.0,0.0,0.0,8.0,7.0,0.53,Preuss. Munster,93.54%,alto
+0.0,0.0,0.0,5.0,10.0,0.33,Regensburg,141.42%,alto
+0.0,2.0,3.0,4.0,6.0,1.07,Schalke 04,99.61%,alto
+0.0,1.0,1.0,5.0,8.0,0.67,Ulm,130.38%,alto
+0.0,0.0,0.0,0.0,0.0,,,indefinido,indefinido
+0.0,0.0,0.0,0.0,0.0,0.77,League avg.,indefinido,indefinido
+0.0,1.0,1.0,8.0,7.0,0.76,1860 Munchen,105.47%,alto
+0.0,0.0,1.0,6.0,10.0,0.47,Alemannia A.,128.70%,alto
+0.0,2.0,2.0,5.0,8.0,0.88,Bielefeld,115.85%,alto
+0.0,2.0,2.0,4.0,9.0,0.82,Dortmund B,126.57%,alto
+0.0,1.0,2.0,8.0,6.0,0.88,Dynamo Dresden,94.28%,alto
+1.0,0.0,4.0,7.0,5.0,1.12,Energie Cottbus,96.62%,alto
+0.0,0.0,5.0,9.0,3.0,1.12,Erzgebirge Aue,60.47%,alto
+0.0,0.0,3.0,7.0,7.0,0.76,FC Ingolstadt,95.46%,alto
+0.0,0.0,0.0,7.0,10.0,0.41,Hannover 96 B,119.52%,alto
+0.0,1.0,3.0,9.0,4.0,1.06,Hansa Rostock,75.77%,alto
+0.0,2.0,1.0,6.0,8.0,0.82,Mannheim,119.52%,alto
+0.0,0.0,1.0,9.0,7.0,0.65,Osnabruck,90.91%,alto
+1.0,1.0,2.0,5.0,8.0,0.94,RW Essen,127.99%,alto
+0.0,0.0,4.0,8.0,5.0,0.94,Saarbrucken,77.06%,alto
+0.0,0.0,1.0,9.0,7.0,0.65,Sandhausen,90.91%,alto
+0.0,0.0,1.0,7.0,8.0,0.56,Unterhaching,108.30%,alto
+0.0,0.0,2.0,7.0,8.0,0.65,Verl,105.23%,alto
+0.0,1.0,4.0,6.0,6.0,1.00,VfB Stuttgart B,90.75%,alto
+0.0,1.0,1.0,8.0,7.0,0.76,Viktoria Koln,105.47%,alto
+0.0,0.0,2.0,9.0,6.0,0.76,Wehen Wiesbaden,84.27%,alto
+0.0,0.0,0.0,0.0,0.0,,,indefinido,indefinido
+0.0,0.0,0.0,0.0,0.0,0.80,League avg.,indefinido,indefinido
+0.0,0.0,0.0,6.0,8.0,0.43,A. Kallithea,115.47%,alto
+0.0,0.0,4.0,6.0,4.0,1.00,AEK Athens,75.59%,alto
+0.0,0.0,5.0,1.0,7.0,0.85,Aris,112.08%,alto
+0.0,0.0,0.0,5.0,8.0,0.38,Asteras T.,126.49%,alto
+0.0,0.0,0.0,3.0,10.0,0.23,Atromitos,182.57%,alto
+0.0,0.0,0.0,4.0,10.0,0.29,Lamia,158.11%,alto
+0.0,0.0,1.0,6.0,7.0,0.57,Levadiakos,108.97%,alto
+0.0,0.0,3.0,5.0,5.0,0.85,OFI Crete,90.91%,alto
+0.0,0.0,4.0,7.0,4.0,1.00,Olympiakos,73.03%,alto
+0.0,0.0,0.0,6.0,9.0,0.40,Panaitolikos,122.47%,alto
+0.0,0.0,1.0,8.0,6.0,0.67,Panathinaikos,89.44%,alto
+0.0,0.0,2.0,7.0,6.0,0.73,Panserraikos,92.71%,alto
+0.0,0.0,3.0,4.0,7.0,0.71,PAOK,111.36%,alto
+0.0,0.0,0.0,3.0,12.0,0.20,Volos,200.00%,alto
+0.0,0.0,0.0,0.0,0.0,,,indefinido,indefinido
+0.0,0.0,0.0,0.0,0.0,0.59,League avg.,indefinido,indefinido
+0.0,1.0,1.0,6.0,2.0,1.10,Eastern,75.51%,alto
+0.0,0.0,0.0,5.0,3.0,0.63,HK Rangers,77.46%,alto
+0.0,0.0,3.0,3.0,5.0,0.82,Hong Kong FC,101.84%,alto
+1.0,2.0,1.0,4.0,2.0,1.60,Kitchee,83.59%,alto
+0.0,0.0,3.0,4.0,1.0,1.25,Kowloon City,52.92%,alto
+0.0,0.0,1.0,3.0,7.0,0.45,LM Warriors,144.22%,alto
+1.0,2.0,1.0,2.0,3.0,1.56,North District,94.56%,alto
+0.0,0.0,0.0,6.0,5.0,0.55,Southern D.,91.29%,alto
+0.0,0.0,3.0,4.0,3.0,1.00,Tai Po,77.46%,alto
+0.0,0.0,0.0,0.0,0.0,,,indefinido,indefinido
+0.0,0.0,0.0,0.0,0.0,0.98,League avg.,indefinido,indefinido
+0.0,1.0,0.0,7.0,6.0,0.71,Debrecen,111.36%,alto
+0.0,0.0,1.0,6.0,8.0,0.53,DVTK,115.92%,alto
+0.0,0.0,0.0,6.0,8.0,0.43,Fehervar,115.47%,alto
+0.0,1.0,2.0,5.0,6.0,0.86,Ferencvaros,106.72%,alto
+0.0,0.0,3.0,5.0,6.0,0.79,Gyor,98.33%,alto
+0.0,1.0,2.0,4.0,8.0,0.73,Kecskemeti TE,126.62%,alto
+0.0,0.0,2.0,6.0,5.0,0.77,MTK Budapest,90.55%,alto
+0.0,1.0,3.0,1.0,9.0,0.71,Nyiregyhaza,144.22%,alto
+0.0,0.0,4.0,7.0,3.0,1.07,Paks,65.66%,alto
+0.0,1.0,1.0,6.0,5.0,0.85,Puskas A.,102.05%,alto
+0.0,1.0,2.0,1.0,10.0,0.57,Ujpest,171.39%,alto
+0.0,1.0,1.0,5.0,7.0,0.71,Zalaegerszegi,123.29%,alto
+0.0,0.0,0.0,0.0,0.0,,,indefinido,indefinido
+0.0,0.0,0.0,0.0,0.0,0.73,League avg.,indefinido,indefinido
+0.0,0.0,0.0,0.0,1.0,0.00,Afturelding,indefinido,indefinido
+0.0,0.0,1.0,0.0,0.0,2.00,Breidablik,0.00%,baixo
+0.0,0.0,0.0,0.0,2.0,0.00,Fram,indefinido,indefinido
+0.0,0.0,0.0,0.0,0.0,-,Hafnarfjordur,indefinido,indefinido
+0.0,0.0,0.0,0.0,0.0,-,IA Akranes,indefinido,indefinido
+0.0,0.0,0.0,0.0,0.0,-,IBV,indefinido,indefinido
+0.0,0.0,1.0,0.0,0.0,2.00,KA Akureyri,0.00%,baixo
+0.0,0.0,0.0,1.0,0.0,1.00,KR Reykjavik,0.00%,baixo
+0.0,0.0,0.0,1.0,1.0,0.50,Stjarnan,100.00%,alto
+0.0,0.0,0.0,0.0,1.0,0.00,Valur,indefinido,indefinido
+0.0,0.0,0.0,1.0,0.0,1.00,Vestri,0.00%,baixo
+0.0,1.0,0.0,0.0,1.0,1.50,Vikingur R.,100.00%,alto
+0.0,0.0,0.0,0.0,0.0,,,indefinido,indefinido
+0.0,0.0,0.0,0.0,0.0,0.83,League avg.,indefinido,indefinido
+1.0,0.0,2.0,3.0,5.0,1.00,Afturelding,126.46%,alto
+0.0,0.0,2.0,2.0,7.0,0.55,Dalvik / Reynir,143.37%,alto
+0.0,1.0,1.0,4.0,5.0,0.82,Fjolnir,114.40%,alto
+0.0,0.0,0.0,6.0,5.0,0.55,Grindavik,91.29%,alto
+0.0,0.0,0.0,7.0,4.0,0.64,Grotta,75.59%,alto
+1.0,1.0,2.0,4.0,3.0,1.36,IBV,94.27%,alto
+0.0,0.0,1.0,4.0,6.0,0.55,IR Reykjavik,120.19%,alto
+1.0,0.0,1.0,7.0,2.0,1.27,Keflavik,94.14%,alto
+0.0,0.0,2.0,4.0,5.0,0.73,Leiknir R.,103.08%,alto
+0.0,0.0,3.0,3.0,5.0,0.82,Njardvik,101.84%,alto
+0.0,0.0,0.0,3.0,8.0,0.27,Thor Akureyri,163.30%,alto
+0.0,0.0,1.0,4.0,6.0,0.55,Throttur R.,120.19%,alto
+0.0,0.0,0.0,0.0,0.0,,,indefinido,indefinido
+0.0,0.0,0.0,0.0,0.0,0.76,League avg.,indefinido,indefinido
+0.0,0.0,1.0,1.0,3.0,0.60,Bohemians,133.33%,alto
+0.0,0.0,0.0,3.0,3.0,0.50,Cork City,100.00%,alto
+0.0,0.0,0.0,1.0,4.0,0.20,Derry City,200.00%,alto
+0.0,0.0,1.0,4.0,1.0,1.00,Drogheda Utd,57.74%,alto
+0.0,0.0,1.0,1.0,3.0,0.60,Galway Utd,133.33%,alto
+0.0,0.0,2.0,1.0,2.0,1.00,Shamrock Rovers,89.44%,alto
+0.0,1.0,0.0,2.0,3.0,0.83,Shelbourne,128.06%,alto
+0.0,0.0,0.0,2.0,3.0,0.40,Sligo Rovers,122.47%,alto
+0.0,0.0,1.0,3.0,2.0,0.83,St. Patricks,82.46%,alto
+0.0,0.0,0.0,1.0,4.0,0.20,Waterford,200.00%,alto
+0.0,0.0,0.0,0.0,0.0,,,indefinido,indefinido
+0.0,0.0,0.0,0.0,0.0,0.63,League avg.,indefinido,indefinido
+0.0,0.0,0.0,1.0,5.0,0.17,Athlone Town,223.61%,alto
+0.0,0.0,1.0,2.0,2.0,0.80,Bray Wanderers,93.54%,alto
+0.0,1.0,0.0,1.0,3.0,0.80,Cobh Ramblers,145.77%,alto
+0.0,0.0,0.0,3.0,3.0,0.50,Dundalk,100.00%,alto
+0.0,1.0,0.0,2.0,2.0,1.00,Finn Harps,109.54%,alto
+0.0,0.0,1.0,1.0,4.0,0.50,Kerry,152.75%,alto
+0.0,0.0,0.0,2.0,3.0,0.40,Longford Town,122.47%,alto
+0.0,0.0,0.0,3.0,2.0,0.60,Treaty Utd,81.65%,alto
+0.0,0.0,0.0,1.0,5.0,0.17,UC Dublin,223.61%,alto
+0.0,0.0,1.0,3.0,2.0,0.83,Wexford,82.46%,alto
+0.0,0.0,0.0,0.0,0.0,,,indefinido,indefinido
+0.0,0.0,0.0,0.0,0.0,0.56,League avg.,indefinido,indefinido
+0.0,0.0,4.0,3.0,8.0,0.73,Ashdod,116.42%,alto
+1.0,0.0,0.0,6.0,8.0,0.73,B. Jerusalem,160.36%,alto
+1.0,1.0,1.0,3.0,10.0,0.75,H. Beer Sheva,164.68%,alto
+0.0,1.0,1.0,7.0,6.0,0.80,H. Jerusalem,104.08%,alto
+0.0,0.0,1.0,3.0,10.0,0.36,Hapoel Hadera,170.88%,alto
+0.0,3.0,1.0,6.0,5.0,1.13,Hapoel Haifa,95.94%,alto
+0.0,0.0,2.0,3.0,10.0,0.47,Ironi Tiberias,153.86%,alto
+0.0,1.0,1.0,3.0,11.0,0.50,Kiryat Shmona,173.21%,alto
+1.0,0.0,0.0,4.0,11.0,0.50,M. Bnei Raina,209.05%,alto
+0.0,0.0,0.0,3.0,12.0,0.20,M. Petah Tikva,200.00%,alto
+0.0,2.0,3.0,5.0,6.0,1.06,M. Tel Aviv,96.84%,alto
+0.0,1.0,2.0,5.0,8.0,0.75,Maccabi Haifa,120.19%,alto
+0.0,0.0,2.0,6.0,7.0,0.67,Maccabi Netanya,104.88%,alto
+0.0,0.0,1.0,5.0,8.0,0.50,Sakhnin,125.36%,alto
+0.0,0.0,0.0,0.0,0.0,,,indefinido,indefinido
+0.0,0.0,0.0,0.0,0.0,0.66,League avg.,indefinido,indefinido
+1.0,1.0,1.0,5.0,9.0,0.82,AC Milan,144.66%,alto
+0.0,0.0,3.0,5.0,9.0,0.65,AS Roma,117.83%,alto
+1.0,1.0,2.0,5.0,7.0,1.06,Atalanta,121.78%,alto
+0.0,0.0,1.0,6.0,10.0,0.47,Bologna,128.70%,alto
+0.0,0.0,0.0,4.0,12.0,0.25,Cagliari,173.21%,alto
+0.0,0.0,1.0,8.0,7.0,0.63,Como,95.92%,alto
+0.0,0.0,0.0,2.0,14.0,0.13,Empoli,264.58%,alto
+0.0,1.0,2.0,8.0,6.0,0.88,Fiorentina,94.28%,alto
+0.0,0.0,1.0,2.0,13.0,0.25,Genoa,223.61%,alto
+0.0,0.0,1.0,3.0,12.0,0.31,Hellas Verona,186.55%,alto
+0.0,1.0,5.0,6.0,4.0,1.19,Inter Milan,74.25%,alto
+0.0,0.0,2.0,6.0,9.0,0.59,Juventus,117.47%,alto
+0.0,0.0,2.0,8.0,6.0,0.75,Lazio,88.19%,alto
+0.0,0.0,1.0,3.0,13.0,0.29,Lecce,193.91%,alto
+0.0,0.0,1.0,5.0,11.0,0.41,Monza,145.69%,alto
+0.0,0.0,2.0,6.0,8.0,0.63,Napoli,111.36%,alto
+0.0,0.0,1.0,6.0,9.0,0.50,Parma,122.47%,alto
+0.0,0.0,0.0,5.0,10.0,0.33,Torino,141.42%,alto
+0.0,0.0,0.0,9.0,7.0,0.56,Udinese,88.19%,alto
+0.0,0.0,0.0,6.0,10.0,0.38,Venezia,129.10%,alto
+0.0,0.0,0.0,0.0,0.0,,,indefinido,indefinido
+0.0,0.0,0.0,0.0,0.0,0.56,League avg.,indefinido,indefinido
+0.0,1.0,1.0,7.0,8.0,0.71,Bari,116.67%,alto
+0.0,2.0,0.0,6.0,8.0,0.75,Brescia,129.10%,alto
+0.0,1.0,2.0,3.0,11.0,0.59,Carrarese,154.92%,alto
+0.0,2.0,1.0,6.0,8.0,0.82,Catanzaro,119.52%,alto
+0.0,1.0,3.0,4.0,9.0,0.76,Cesena,123.08%,alto
+0.0,0.0,1.0,2.0,13.0,0.25,Cittadella,223.61%,alto
+0.0,0.0,1.0,5.0,11.0,0.41,Cosenza,145.69%,alto
+0.0,0.0,1.0,7.0,9.0,0.53,Cremonese,114.40%,alto
+0.0,0.0,2.0,6.0,9.0,0.59,Frosinone,117.47%,alto
+0.0,0.0,1.0,10.0,5.0,0.75,Juve Stabia,74.54%,alto
+0.0,1.0,2.0,1.0,12.0,0.50,Mantova,187.08%,alto
+0.0,0.0,3.0,5.0,8.0,0.69,Modena,111.71%,alto
+0.0,1.0,1.0,6.0,8.0,0.69,Palermo,122.98%,alto
+0.0,0.0,3.0,7.0,6.0,0.81,Pisa,89.38%,alto
+0.0,0.0,2.0,7.0,8.0,0.65,Reggiana,105.23%,alto
+0.0,0.0,1.0,4.0,12.0,0.35,Salernitana,166.67%,alto
+0.0,0.0,0.0,7.0,10.0,0.41,Sampdoria,119.52%,alto
+1.0,0.0,1.0,9.0,5.0,0.94,Sassuolo,110.20%,alto
+0.0,1.0,1.0,6.0,8.0,0.69,Spezia,122.98%,alto
+0.0,0.0,1.0,9.0,6.0,0.69,Sudtirol,84.79%,alto
+0.0,0.0,0.0,0.0,0.0,,,indefinido,indefinido
+0.0,0.0,0.0,0.0,0.0,0.63,League avg.,indefinido,indefinido
+0.0,0.0,1.0,6.0,12.0,0.42,AlbinoLeffe,140.31%,alto
+0.0,0.0,1.0,4.0,13.0,0.33,Alcione,173.21%,alto
+0.0,0.0,2.0,3.0,13.0,0.39,Arzignano,174.38%,alto
+0.0,1.0,3.0,4.0,11.0,0.68,Atalanta B,134.56%,alto
+0.0,0.0,1.0,7.0,11.0,0.47,Caldiero Terme,125.71%,alto
+0.0,0.0,3.0,3.0,12.0,0.50,Clodiense,152.75%,alto
+0.0,0.0,3.0,3.0,13.0,0.47,FeralpiSalo,158.70%,alto
+0.0,0.0,2.0,6.0,11.0,0.53,Giana Erminio,128.84%,alto
+0.0,0.0,0.0,9.0,9.0,0.50,Lecco,100.00%,alto
+0.0,0.0,1.0,5.0,12.0,0.39,Lumezzane,151.86%,alto
+0.0,0.0,1.0,7.0,11.0,0.47,Novara,125.71%,alto
+0.0,1.0,2.0,9.0,7.0,0.84,Padova,96.42%,alto
+0.0,1.0,1.0,5.0,11.0,0.56,Pergolettese,149.67%,alto
+0.0,0.0,0.0,7.0,12.0,0.37,Pro Patria,130.93%,alto
+0.0,0.0,2.0,4.0,12.0,0.44,Pro Vercelli,154.11%,alto
+0.0,0.0,1.0,7.0,11.0,0.47,Renate,125.71%,alto
+0.0,0.0,0.0,8.0,10.0,0.44,Trento,111.80%,alto
+0.0,0.0,0.0,4.0,14.0,0.22,Triestina,187.08%,alto
+0.0,0.0,5.0,7.0,7.0,0.89,Vicenza,88.04%,alto
+0.0,2.0,0.0,7.0,9.0,0.72,Virtus Verona,128.95%,alto
+0.0,0.0,0.0,0.0,0.0,,,indefinido,indefinido
+0.0,0.0,0.0,0.0,0.0,0.51,League avg.,indefinido,indefinido
+0.0,0.0,3.0,4.0,11.0,0.56,AC Milan B,137.11%,alto
+0.0,0.0,1.0,6.0,11.0,0.44,Arezzo,134.63%,alto
+0.0,0.0,0.0,5.0,13.0,0.28,Ascoli,161.25%,alto
+0.0,0.0,0.0,8.0,10.0,0.44,Athletic Carpi,111.80%,alto
+0.0,1.0,1.0,4.0,12.0,0.50,Campobasso,166.67%,alto
+0.0,1.0,2.0,9.0,6.0,0.89,Entella,91.00%,alto
+0.0,0.0,1.0,4.0,13.0,0.33,Gubbio,173.21%,alto
+0.0,0.0,1.0,4.0,13.0,0.33,Legnago Salus,173.21%,alto
+0.0,2.0,0.0,5.0,11.0,0.61,Lucchese,155.61%,alto
+0.0,0.0,1.0,6.0,11.0,0.44,Perugia,134.63%,alto
+0.0,1.0,1.0,5.0,11.0,0.56,Pescara,149.67%,alto
+0.0,1.0,4.0,5.0,8.0,0.89,Pianese,105.33%,alto
+0.0,1.0,1.0,8.0,8.0,0.72,Pineto,111.21%,alto
+0.0,1.0,3.0,6.0,8.0,0.83,Pontedera,107.70%,alto
+0.0,1.0,1.0,2.0,14.0,0.39,Rimini,212.37%,alto
+0.0,0.0,1.0,6.0,11.0,0.44,Sestri Levante,134.63%,alto
+0.0,0.0,1.0,3.0,14.0,0.28,SPAL,201.00%,alto
+0.0,1.0,5.0,2.0,10.0,0.83,Ternana,121.66%,alto
+0.0,0.0,0.0,6.0,12.0,0.33,Torres,141.42%,alto
+0.0,0.0,2.0,6.0,10.0,0.56,Vis Pesaro,123.29%,alto
+0.0,0.0,0.0,0.0,0.0,,,indefinido,indefinido
+0.0,0.0,0.0,0.0,0.0,0.53,League avg.,indefinido,indefinido
+0.0,0.0,0.0,4.0,2.0,0.67,Albirex Niigata,70.71%,alto
+0.0,0.0,0.0,3.0,3.0,0.50,Avispa Fukuoka,100.00%,alto
+0.0,0.0,1.0,3.0,2.0,0.83,Cerezo Osaka,82.46%,alto
+0.0,0.0,1.0,2.0,4.0,0.57,Fagiano Okayama,127.48%,alto
+0.0,0.0,0.0,2.0,3.0,0.40,FC Tokyo,122.47%,alto
+0.0,0.0,0.0,3.0,2.0,0.60,Gamba Osaka,81.65%,alto
+0.0,0.0,0.0,1.0,4.0,0.20,K. Frontale,200.00%,alto
+0.0,1.0,1.0,2.0,2.0,1.17,Kashima Antlers,91.47%,alto
+0.0,0.0,0.0,0.0,5.0,0.00,Kashiwa Reysol,indefinido,indefinido
+0.0,0.0,0.0,1.0,4.0,0.20,Kyoto Sanga,200.00%,alto
+0.0,0.0,0.0,3.0,2.0,0.60,Machida Zelvia,81.65%,alto
+0.0,0.0,0.0,3.0,2.0,0.60,Nagoya G.,81.65%,alto
+0.0,0.0,0.0,2.0,4.0,0.33,S. Hiroshima,141.42%,alto
+0.0,1.0,1.0,2.0,2.0,1.17,Shimizu S-Pulse,91.47%,alto
+0.0,0.0,1.0,1.0,3.0,0.60,Shonan Bellmare,133.33%,alto
+0.0,0.0,0.0,1.0,4.0,0.20,Tokyo Verdy,200.00%,alto
+0.0,0.0,0.0,3.0,2.0,0.60,Urawa RD,81.65%,alto
+0.0,0.0,1.0,0.0,5.0,0.33,Vissel Kobe,223.61%,alto
+0.0,0.0,0.0,2.0,5.0,0.29,Yokohama FC,158.11%,alto
+0.0,0.0,0.0,3.0,3.0,0.50,Yokohama M.,100.00%,alto
+0.0,0.0,0.0,0.0,0.0,,,indefinido,indefinido
+0.0,0.0,0.0,0.0,0.0,0.53,League avg.,indefinido,indefinido
+0.0,0.0,0.0,0.0,4.0,0.00,Blaublitz Akita,indefinido,indefinido
+0.0,0.0,0.0,2.0,2.0,0.50,C. Sapporo,100.00%,alto
+0.0,0.0,0.0,2.0,4.0,0.33,Ehime FC,141.42%,alto
+0.0,0.0,0.0,1.0,5.0,0.17,FC Imabari,223.61%,alto
+0.0,0.0,3.0,1.0,1.0,1.40,Fujieda MYFC,57.14%,alto
+0.0,0.0,0.0,1.0,4.0,0.20,Iwaki,200.00%,alto
+0.0,0.0,1.0,3.0,1.0,1.00,JEF Utd Chiba,63.25%,alto
+0.0,0.0,0.0,2.0,3.0,0.40,Jubilo Iwata,122.47%,alto
+0.0,0.0,0.0,4.0,1.0,0.80,Kataller Toyama,50.00%,moderado
+0.0,0.0,1.0,1.0,2.0,0.75,M. Yamagata,110.55%,alto
+0.0,0.0,2.0,1.0,2.0,1.00,Mito Hollyhock,89.44%,alto
+0.0,0.0,0.0,0.0,5.0,0.00,Oita Trinita,indefinido,indefinido
+0.0,0.0,0.0,2.0,3.0,0.40,Omiya Ardija,122.47%,alto
+0.0,0.0,1.0,1.0,4.0,0.50,R. Kumamoto,152.75%,alto
+0.0,0.0,0.0,4.0,1.0,0.80,R. Yamaguchi,50.00%,moderado
+0.0,0.0,0.0,3.0,3.0,0.50,Sagan Tosu,100.00%,alto
+0.0,0.0,0.0,0.0,4.0,0.00,Tokushima V.,indefinido,indefinido
+0.0,0.0,1.0,2.0,2.0,0.80,Vegalta Sendai,93.54%,alto
+0.0,0.0,1.0,2.0,2.0,0.80,Ventforet Kofu,93.54%,alto
+0.0,0.0,0.0,1.0,4.0,0.20,V-V. Nagasaki,200.00%,alto
+0.0,0.0,0.0,0.0,0.0,,,indefinido,indefinido
+0.0,0.0,0.0,0.0,0.0,0.53,League avg.,indefinido,indefinido
+0.0,0.0,0.0,2.0,3.0,0.40,AC Numazu,122.47%,alto
+0.0,0.0,0.0,3.0,2.0,0.60,FC Ryukyu,81.65%,alto
+0.0,0.0,1.0,1.0,2.0,0.75,Fukushima Utd,110.55%,alto
+0.0,0.0,1.0,0.0,4.0,0.40,G. Kitakyushu,200.00%,alto
+0.0,0.0,0.0,2.0,2.0,0.50,Gainare Tottori,100.00%,alto
+0.0,0.0,0.0,2.0,4.0,0.33,Gifu,141.42%,alto
+0.0,0.0,1.0,2.0,2.0,0.80,Kagoshima Utd,93.54%,alto
+0.0,0.0,0.0,2.0,3.0,0.40,Kamatamare S.,122.47%,alto
+0.0,0.0,0.0,1.0,4.0,0.20,Kochi United,200.00%,alto
+0.0,0.0,2.0,0.0,3.0,0.80,Kusatsu,122.47%,alto
+0.0,0.0,0.0,1.0,2.0,0.33,Matsumoto Y.,141.42%,alto
+0.0,0.0,0.0,2.0,3.0,0.40,Nagano Parceiro,122.47%,alto
+0.0,0.0,1.0,3.0,2.0,0.83,Nara Club,82.46%,alto
+0.0,0.0,0.0,2.0,4.0,0.33,Osaka,141.42%,alto
+0.0,0.0,0.0,4.0,1.0,0.80,SC Sagamihara,50.00%,moderado
+0.0,0.0,0.0,2.0,3.0,0.40,T. Miyazaki,122.47%,alto
+0.0,1.0,0.0,2.0,1.0,1.25,Tochigi City,87.18%,alto
+0.0,0.0,0.0,3.0,3.0,0.50,Tochigi SC,100.00%,alto
+0.0,0.0,0.0,2.0,2.0,0.50,V. Hachinohe,100.00%,alto
+0.0,0.0,1.0,1.0,1.0,1.00,Z. Kanazawa,81.65%,alto
+0.0,0.0,0.0,0.0,0.0,,,indefinido,indefinido
+0.0,0.0,0.0,0.0,0.0,0.56,League avg.,indefinido,indefinido
+0.0,0.0,1.0,1.0,0.0,1.50,Aktobe,33.33%,moderado
+0.0,0.0,0.0,1.0,3.0,0.25,Atyrau,173.21%,alto
+0.0,0.0,1.0,2.0,0.0,1.33,FC Astana,35.36%,moderado
+0.0,1.0,1.0,0.0,0.0,2.50,Kairat Almaty,20.00%,baixo
+0.0,0.0,1.0,0.0,2.0,0.67,Kaisar K.,141.42%,alto
+0.0,0.0,1.0,1.0,1.0,1.00,Kyzylzhar,81.65%,alto
+0.0,0.0,0.0,1.0,1.0,0.50,Okzhetpes,100.00%,alto
+0.0,0.0,0.0,1.0,2.0,0.33,Ordabasy,141.42%,alto
+0.0,0.0,0.0,3.0,0.0,1.00,Tobol,0.00%,baixo
+0.0,0.0,0.0,1.0,2.0,0.33,Turan,141.42%,alto
+0.0,0.0,0.0,0.0,2.0,0.00,Ulytau,indefinido,indefinido
+0.0,0.0,0.0,1.0,1.0,0.50,Yelimay Semey,100.00%,alto
+0.0,0.0,0.0,0.0,2.0,0.00,Zhenys,indefinido,indefinido
+0.0,0.0,0.0,0.0,2.0,0.00,Zhetysu,indefinido,indefinido
+0.0,0.0,0.0,0.0,0.0,,,indefinido,indefinido
+0.0,0.0,0.0,0.0,0.0,0.69,League avg.,indefinido,indefinido
+0.0,0.0,0.0,3.0,2.0,0.60,Banga,81.65%,alto
+0.0,0.0,0.0,1.0,3.0,0.25,Dainava,173.21%,alto
+0.0,0.0,0.0,0.0,1.0,0.00,Dziugas Telsiai,indefinido,indefinido
+0.0,0.0,2.0,1.0,2.0,1.00,Hegelmann L.,89.44%,alto
+0.0,0.0,0.0,2.0,1.0,0.67,Kauno Zalgiris,70.71%,alto
+0.0,0.0,0.0,1.0,4.0,0.20,Panevezys,200.00%,alto
+0.0,0.0,1.0,1.0,3.0,0.60,Riteriai,133.33%,alto
+0.0,0.0,1.0,3.0,0.0,1.25,Siauliai,34.64%,moderado
+0.0,0.0,0.0,3.0,1.0,0.75,Suduva,57.74%,alto
+0.0,0.0,0.0,2.0,2.0,0.50,Zalgiris,100.00%,alto
+0.0,0.0,0.0,0.0,0.0,,,indefinido,indefinido
+0.0,0.0,0.0,0.0,0.0,0.63,League avg.,indefinido,indefinido
+0.0,0.0,2.0,5.0,1.0,1.13,A. San Luis,53.29%,alto
+0.0,0.0,1.0,3.0,4.0,0.63,Atlas,111.36%,alto
+0.0,0.0,1.0,3.0,4.0,0.63,CF America,111.36%,alto
+0.0,0.0,0.0,4.0,5.0,0.44,Club Leon,111.80%,alto
+0.0,0.0,4.0,1.0,4.0,1.00,Cruz Azul,94.28%,alto
+1.0,0.0,0.0,2.0,6.0,0.67,Guadalajara,193.38%,alto
+0.0,0.0,0.0,3.0,5.0,0.38,Juarez,129.10%,alto
+0.0,1.0,1.0,1.0,5.0,0.75,Mazatlan,145.30%,alto
+0.0,2.0,0.0,3.0,4.0,1.00,Monterrey,115.47%,alto
+0.0,0.0,1.0,3.0,5.0,0.56,Necaxa,123.29%,alto
+0.0,0.0,2.0,1.0,5.0,0.63,Pachuca,137.11%,alto
+0.0,0.0,0.0,4.0,5.0,0.44,Puebla,111.80%,alto
+0.0,0.0,1.0,4.0,3.0,0.75,Pumas UNAM,88.19%,alto
+0.0,0.0,0.0,2.0,6.0,0.25,Queretaro,173.21%,alto
+0.0,0.0,0.0,2.0,7.0,0.22,Santos Laguna,187.08%,alto
+0.0,0.0,0.0,5.0,3.0,0.63,Tigres,77.46%,alto
+0.0,0.0,1.0,5.0,3.0,0.78,Tijuana,80.81%,alto
+0.0,0.0,4.0,4.0,1.0,1.33,Toluca,50.00%,moderado
+0.0,0.0,0.0,0.0,0.0,,,indefinido,indefinido
+0.0,0.0,0.0,0.0,0.0,0.68,League avg.,indefinido,indefinido
+0.0,0.0,1.0,3.0,5.0,0.56,A. San Luis,123.29%,alto
+0.0,0.0,2.0,2.0,5.0,0.67,Atlas,122.47%,alto
+0.0,0.0,4.0,2.0,3.0,1.11,CF America,78.74%,alto
+0.0,0.0,1.0,4.0,3.0,0.75,Club Leon,88.19%,alto
+0.0,0.0,2.0,4.0,2.0,1.00,Cruz Azul,70.71%,alto
+0.0,0.0,2.0,3.0,3.0,0.88,Guadalajara,89.21%,alto
+0.0,0.0,1.0,5.0,3.0,0.78,Juarez,80.81%,alto
+0.0,0.0,1.0,3.0,5.0,0.56,Mazatlan,123.29%,alto
+0.0,0.0,2.0,5.0,1.0,1.13,Monterrey,53.29%,alto
+0.0,0.0,2.0,4.0,2.0,1.00,Necaxa,70.71%,alto
+0.0,0.0,3.0,2.0,4.0,0.89,Pachuca,98.43%,alto
+0.0,0.0,0.0,3.0,5.0,0.38,Puebla,129.10%,alto
+0.0,0.0,1.0,1.0,7.0,0.33,Pumas UNAM,200.00%,alto
+0.0,0.0,0.0,5.0,4.0,0.56,Queretaro,89.44%,alto
+0.0,0.0,1.0,2.0,5.0,0.50,Santos Laguna,141.42%,alto
+0.0,0.0,0.0,4.0,5.0,0.44,Tigres,111.80%,alto
+0.0,1.0,0.0,5.0,2.0,1.00,Tijuana,86.60%,alto
+1.0,1.0,2.0,3.0,1.0,1.75,Toluca,72.90%,alto
+0.0,0.0,0.0,0.0,0.0,,,indefinido,indefinido
+0.0,0.0,0.0,0.0,0.0,0.78,League avg.,indefinido,indefinido
+0.0,0.0,6.0,6.0,2.0,1.29,Ajax Amsterdam,54.43%,alto
+0.0,0.0,0.0,4.0,10.0,0.29,Almere City,158.11%,alto
+0.0,0.0,1.0,5.0,8.0,0.50,AZ Alkmaar,125.36%,alto
+0.0,1.0,1.0,4.0,8.0,0.64,FC Groningen,139.22%,alto
+0.0,0.0,3.0,8.0,3.0,1.00,FC Twente,65.47%,alto
+0.0,1.0,1.0,8.0,6.0,0.81,FC Utrecht,99.41%,alto
+0.0,1.0,3.0,5.0,5.0,1.00,Feyenoord,92.58%,alto
+0.0,1.0,0.0,3.0,10.0,0.43,Fortuna Sittard,191.49%,alto
+1.0,0.0,2.0,5.0,7.0,0.87,Go Ahead Eagles,131.78%,alto
+0.0,0.0,2.0,9.0,4.0,0.87,Heerenveen,71.34%,alto
+0.0,0.0,2.0,9.0,4.0,0.87,Heracles Almelo,71.34%,alto
+0.0,0.0,2.0,5.0,8.0,0.60,NAC Breda,118.63%,alto
+0.0,1.0,0.0,8.0,6.0,0.73,NEC Nijmegen,105.23%,alto
+0.0,0.0,2.0,2.0,11.0,0.40,PEC Zwolle,177.95%,alto
+1.0,2.0,7.0,2.0,3.0,1.73,PSV Eindhoven,67.66%,alto
+0.0,1.0,0.0,5.0,8.0,0.57,RKC Waalwijk,143.61%,alto
+0.0,0.0,0.0,7.0,8.0,0.47,Sparta,106.90%,alto
+0.0,0.0,3.0,2.0,10.0,0.53,Willem II,151.04%,alto
+0.0,0.0,0.0,0.0,0.0,,,indefinido,indefinido
+0.0,0.0,0.0,0.0,0.0,0.76,League avg.,indefinido,indefinido
+0.0,0.0,2.0,11.0,5.0,0.83,ADO Den Haag,72.11%,alto
+0.0,0.0,1.0,8.0,8.0,0.59,Cambuur,101.98%,alto
+1.0,1.0,5.0,7.0,4.0,1.33,De Graafschap,82.87%,alto
+0.0,1.0,3.0,6.0,7.0,0.88,Excelsior,101.98%,alto
+0.0,1.0,2.0,7.0,8.0,0.78,FC Den Bosch,109.73%,alto
+0.0,1.0,2.0,10.0,4.0,1.00,FC Dordrecht,76.70%,alto
+0.0,0.0,2.0,7.0,9.0,0.61,FC Eindhoven,110.97%,alto
+0.0,0.0,1.0,7.0,10.0,0.50,FC Emmen,120.19%,alto
+0.0,3.0,3.0,5.0,7.0,1.11,FC Volendam,98.99%,alto
+0.0,1.0,3.0,7.0,7.0,0.89,Helmond Sport,98.43%,alto
+0.0,0.0,2.0,5.0,10.0,0.53,Jong Ajax,131.47%,alto
+1.0,0.0,0.0,7.0,9.0,0.65,Jong AZ,158.20%,alto
+0.0,1.0,0.0,8.0,8.0,0.65,Jong PSV,117.83%,alto
+0.0,0.0,1.0,5.0,11.0,0.41,Jong Utrecht,145.69%,alto
+1.0,1.0,2.0,5.0,9.0,0.89,MVV Maastricht,133.92%,alto
+0.0,0.0,2.0,7.0,8.0,0.65,Roda JC,105.23%,alto
+1.0,0.0,5.0,5.0,6.0,1.12,Telstar,101.14%,alto
+0.0,0.0,1.0,4.0,13.0,0.33,TOP Oss,173.21%,alto
+0.0,0.0,1.0,7.0,10.0,0.50,Vitesse Arnhem,120.19%,alto
+0.0,0.0,2.0,3.0,12.0,0.41,VVV,167.82%,alto
+0.0,0.0,0.0,0.0,0.0,,,indefinido,indefinido
+0.0,0.0,0.0,0.0,0.0,0.73,League avg.,indefinido,indefinido
+0.0,2.0,1.0,4.0,11.0,0.67,Ballymena Utd,150.00%,alto
+0.0,1.0,3.0,5.0,10.0,0.74,Carrick Rangers,123.30%,alto
+0.0,0.0,0.0,10.0,8.0,0.56,Cliftonville,89.44%,alto
+0.0,0.0,1.0,7.0,10.0,0.50,Coleraine,120.19%,alto
+0.0,0.0,2.0,6.0,12.0,0.50,Crusaders,134.16%,alto
+0.0,1.0,2.0,10.0,6.0,0.89,Dungannon,88.04%,alto
+0.0,0.0,1.0,2.0,16.0,0.21,Glenavon,247.49%,alto
+0.0,0.0,0.0,6.0,11.0,0.35,Glentoran,135.40%,alto
+0.0,0.0,1.0,3.0,13.0,0.29,Larne,193.91%,alto
+1.0,1.0,2.0,7.0,9.0,0.90,Linfield,125.93%,alto
+0.0,0.0,3.0,7.0,8.0,0.72,Loughgall,101.18%,alto
+0.0,0.0,2.0,6.0,11.0,0.53,Portadown,128.84%,alto
+0.0,0.0,0.0,0.0,0.0,,,indefinido,indefinido
+0.0,0.0,0.0,0.0,0.0,0.58,League avg.,indefinido,indefinido
+0.0,0.0,0.0,1.0,0.0,1.00,Bodo.Glimt,0.00%,baixo
+0.0,0.0,0.0,1.0,1.0,0.50,Brann,100.00%,alto
+0.0,0.0,1.0,0.0,1.0,1.00,Bryne,100.00%,alto
+0.0,1.0,1.0,1.0,0.0,2.00,Fredrikstad,40.82%,moderado
+0.0,0.0,0.0,1.0,1.0,0.50,HamKam,100.00%,alto
+0.0,0.0,0.0,0.0,1.0,0.00,Haugesund,indefinido,indefinido
+0.0,0.0,0.0,1.0,1.0,0.50,KFUM Oslo,100.00%,alto
+0.0,0.0,0.0,1.0,0.0,1.00,Kristiansund,0.00%,baixo
+0.0,0.0,0.0,0.0,2.0,0.00,Molde,indefinido,indefinido
+0.0,0.0,0.0,1.0,0.0,1.00,Rosenborg,0.00%,baixo
+0.0,0.0,1.0,0.0,0.0,2.00,Sandefjord,0.00%,baixo
+0.0,0.0,0.0,0.0,1.0,0.00,Sarpsborg 08,indefinido,indefinido
+0.0,0.0,0.0,1.0,1.0,0.50,Stromsgodset,100.00%,alto
+0.0,0.0,0.0,2.0,0.0,1.00,Tromso,0.00%,baixo
+0.0,0.0,0.0,1.0,1.0,0.50,Valerenga,100.00%,alto
+0.0,0.0,0.0,1.0,1.0,0.50,Viking,100.00%,alto
+0.0,0.0,0.0,0.0,0.0,,,indefinido,indefinido
+0.0,0.0,0.0,0.0,0.0,0.78,League avg.,indefinido,indefinido
+0.0,0.0,1.0,0.0,1.0,1.00,Aalesund,100.00%,alto
+0.0,0.0,0.0,0.0,1.0,0.00,Asane,indefinido,indefinido
+0.0,0.0,0.0,2.0,0.0,1.00,Egersund,0.00%,baixo
+0.0,0.0,0.0,0.0,1.0,0.00,Hodd,indefinido,indefinido
+0.0,0.0,1.0,1.0,0.0,1.50,Kongsvinger,33.33%,moderado
+0.0,0.0,0.0,0.0,1.0,0.00,Lillestrom,indefinido,indefinido
+0.0,0.0,0.0,0.0,1.0,0.00,Lyn,indefinido,indefinido
+0.0,0.0,0.0,0.0,1.0,0.00,Mjondalen,indefinido,indefinido
+0.0,0.0,0.0,1.0,0.0,1.00,Moss,0.00%,baixo
+0.0,0.0,1.0,0.0,1.0,1.00,Odd,100.00%,alto
+0.0,0.0,0.0,0.0,2.0,0.00,Ranheim,indefinido,indefinido
+0.0,1.0,1.0,0.0,0.0,2.50,Raufoss,20.00%,baixo
+0.0,0.0,0.0,1.0,0.0,1.00,Skeid,0.00%,baixo
+0.0,0.0,1.0,0.0,0.0,2.00,Sogndal,0.00%,baixo
+0.0,0.0,0.0,0.0,2.0,0.00,Stabaek,indefinido,indefinido
+0.0,0.0,0.0,1.0,1.0,0.50,Start,100.00%,alto
+0.0,0.0,0.0,0.0,0.0,,,indefinido,indefinido
+0.0,0.0,0.0,0.0,0.0,0.79,League avg.,indefinido,indefinido
+0.0,0.0,0.0,4.0,4.0,0.50,2 de Mayo,100.00%,alto
+0.0,0.0,0.0,2.0,5.0,0.29,A. Tembetary,158.11%,alto
+0.0,0.0,0.0,3.0,5.0,0.38,Cerro Porteno,129.10%,alto
+0.0,0.0,0.0,2.0,5.0,0.29,D. Recoleta,158.11%,alto
+0.0,0.0,2.0,2.0,4.0,0.75,G. Caballero,110.55%,alto
+0.0,0.0,1.0,3.0,3.0,0.71,Guarani,97.98%,alto
+0.0,0.0,0.0,4.0,4.0,0.50,Libertad,100.00%,alto
+0.0,0.0,0.0,5.0,3.0,0.63,Nacional,77.46%,alto
+0.0,2.0,2.0,1.0,3.0,1.38,Olimpia,88.61%,alto
+0.0,0.0,2.0,1.0,4.0,0.71,S. Ameliano,123.29%,alto
+0.0,0.0,0.0,1.0,6.0,0.14,S. Luqueno,244.95%,alto
+0.0,0.0,0.0,3.0,4.0,0.43,S. Trinidense,115.47%,alto
+0.0,0.0,0.0,0.0,0.0,,,indefinido,indefinido
+0.0,0.0,0.0,0.0,0.0,0.57,League avg.,indefinido,indefinido
+0.0,0.0,0.0,4.0,7.0,0.36,2 de Mayo,132.29%,alto
+0.0,1.0,2.0,4.0,4.0,1.00,Cerro Porteno,95.35%,alto
+0.0,0.0,0.0,2.0,9.0,0.18,G. Caballero,212.13%,alto
+0.0,0.0,1.0,3.0,7.0,0.45,Guarani,144.22%,alto
+0.0,0.0,0.0,3.0,8.0,0.27,Libertad,163.30%,alto
+0.0,0.0,2.0,2.0,7.0,0.55,Nacional,143.37%,alto
+0.0,2.0,2.0,3.0,4.0,1.18,Olimpia,94.21%,alto
+0.0,0.0,0.0,0.0,11.0,0.00,S. Ameliano,indefinido,indefinido
+0.0,0.0,1.0,2.0,8.0,0.36,S. Luqueno,176.78%,alto
+0.0,0.0,2.0,4.0,5.0,0.73,S. Trinidense,103.08%,alto
+0.0,0.0,0.0,3.0,8.0,0.27,Sol de America,163.30%,alto
+0.0,0.0,0.0,3.0,8.0,0.27,Tacuary,163.30%,alto
+0.0,0.0,0.0,0.0,0.0,,,indefinido,indefinido
+0.0,0.0,0.0,0.0,0.0,0.47,League avg.,indefinido,indefinido
+0.0,0.0,2.0,0.0,3.0,0.80,A. Huanuco,122.47%,alto
+0.0,0.0,1.0,2.0,1.0,1.00,ADT,70.71%,alto
+0.0,0.0,2.0,0.0,2.0,1.00,Alianza A.,100.00%,alto
+0.0,0.0,2.0,2.0,1.0,1.20,Alianza Lima,62.36%,alto
+0.0,0.0,0.0,2.0,1.0,0.67,Atletico Grau,70.71%,alto
+0.0,0.0,2.0,1.0,1.0,1.25,Ayacucho,66.33%,alto
+0.0,0.0,0.0,2.0,2.0,0.50,Binacional,100.00%,alto
+0.0,1.0,0.0,0.0,3.0,0.75,Cajamarca,173.21%,alto
+0.0,0.0,0.0,2.0,2.0,0.50,Cienciano,100.00%,alto
+0.0,0.0,0.0,0.0,4.0,0.00,Comerciantes U.,indefinido,indefinido
+0.0,0.0,1.0,2.0,1.0,1.00,Cusco,70.71%,alto
+0.0,0.0,0.0,2.0,2.0,0.50,D. Garcilaso,100.00%,alto
+0.0,0.0,1.0,3.0,1.0,1.00,FBC Melgar,63.25%,alto
+0.0,0.0,1.0,1.0,1.0,1.00,Juan Pablo II C,81.65%,alto
+0.0,0.0,0.0,2.0,2.0,0.50,Los Chankas,100.00%,alto
+0.0,0.0,0.0,3.0,1.0,0.75,S. Cristal,57.74%,alto
+0.0,0.0,1.0,2.0,2.0,0.80,Sport Boys,93.54%,alto
+0.0,0.0,1.0,2.0,2.0,0.80,Sport Huancayo,93.54%,alto
+0.0,0.0,0.0,3.0,1.0,0.75,Universitario,57.74%,alto
+0.0,0.0,0.0,0.0,0.0,,,indefinido,indefinido
+0.0,0.0,0.0,0.0,0.0,0.78,League avg.,indefinido,indefinido
+0.0,0.0,2.0,7.0,6.0,0.73,Cracovia Krakow,92.71%,alto
+0.0,0.0,2.0,5.0,7.0,0.64,Gornik Zabrze,111.67%,alto
+1.0,0.0,1.0,11.0,2.0,1.20,Jagiellonia,85.24%,alto
+0.0,0.0,2.0,4.0,8.0,0.57,Katowice,127.48%,alto
+0.0,0.0,1.0,4.0,9.0,0.43,Korona Kielce,145.30%,alto
+0.0,1.0,5.0,6.0,3.0,1.27,Lech Poznan,67.40%,alto
+0.0,0.0,0.0,4.0,10.0,0.29,Lechia Gdansk,158.11%,alto
+0.0,1.0,4.0,6.0,4.0,1.13,Legia Warsaw,78.04%,alto
+0.0,1.0,2.0,3.0,8.0,0.71,Motor Lublin,134.16%,alto
+0.0,0.0,1.0,6.0,8.0,0.53,Piast Gliwice,115.92%,alto
+0.0,1.0,1.0,7.0,6.0,0.80,Pogon Szczecin,104.08%,alto
+0.0,0.0,4.0,4.0,6.0,0.86,Puszcza Niepolo,97.18%,alto
+0.0,0.0,2.0,3.0,9.0,0.50,Radomiak Radom,146.39%,alto
+0.0,0.0,3.0,4.0,7.0,0.71,Rakow C.,111.36%,alto
+0.0,0.0,2.0,5.0,8.0,0.60,Slask Wroclaw,118.63%,alto
+0.0,0.0,1.0,5.0,8.0,0.50,Stal Mielec,125.36%,alto
+0.0,0.0,3.0,5.0,7.0,0.73,Widzew Lodz,105.23%,alto
+0.0,0.0,1.0,2.0,11.0,0.29,Zaglebie Lubin,206.16%,alto
+0.0,0.0,0.0,0.0,0.0,,,indefinido,indefinido
+0.0,0.0,0.0,0.0,0.0,0.70,League avg.,indefinido,indefinido
+0.0,2.0,3.0,5.0,5.0,1.13,Arka Gdynia,90.37%,alto
+0.0,0.0,1.0,4.0,9.0,0.43,Chrobry Glogow,145.30%,alto
+0.0,0.0,1.0,4.0,10.0,0.40,Gornik Leczna,152.75%,alto
+0.0,0.0,0.0,4.0,10.0,0.29,K. Kolobrzeg,158.11%,alto
+0.0,0.0,3.0,3.0,9.0,0.60,LKS Lodz,133.33%,alto
+0.0,3.0,1.0,6.0,5.0,1.13,Miedz Legnica,95.94%,alto
+0.0,0.0,2.0,3.0,8.0,0.54,Odra Opole,138.51%,alto
+0.0,0.0,0.0,5.0,9.0,0.36,Pogon Siedlce,134.16%,alto
+0.0,0.0,6.0,3.0,6.0,1.00,Polonia Warszaw,89.44%,alto
+1.0,1.0,0.0,5.0,7.0,0.86,Ruch Chorzow,143.83%,alto
+0.0,1.0,2.0,3.0,9.0,0.67,Stal Rzeszow,141.42%,alto
+0.0,0.0,1.0,5.0,8.0,0.50,Stalowa Wola,125.36%,alto
+0.0,0.0,1.0,8.0,5.0,0.71,T. Nieciecza,82.46%,alto
+0.0,0.0,3.0,2.0,9.0,0.57,Tychy,143.61%,alto
+0.0,0.0,0.0,4.0,10.0,0.29,Warta Poznan,158.11%,alto
+0.0,0.0,0.0,5.0,10.0,0.33,Wisla Krakow,141.42%,alto
+0.0,1.0,2.0,5.0,6.0,0.86,Wisla Plock,106.72%,alto
+0.0,0.0,3.0,5.0,7.0,0.73,Znicz Pruszkow,105.23%,alto
+0.0,0.0,0.0,0.0,0.0,,,indefinido,indefinido
+0.0,0.0,0.0,0.0,0.0,0.64,League avg.,indefinido,indefinido
+0.0,0.0,0.0,3.0,12.0,0.20,Arouca,200.00%,alto
+0.0,0.0,1.0,1.0,13.0,0.20,AVS,270.80%,alto
+0.0,2.0,5.0,5.0,3.0,1.40,Benfica,68.01%,alto
+0.0,0.0,0.0,2.0,13.0,0.13,Boavista,254.95%,alto
+0.0,0.0,1.0,9.0,5.0,0.73,Casa Pia,78.20%,alto
+0.0,0.0,3.0,4.0,8.0,0.67,Estoril,118.32%,alto
+0.0,0.0,1.0,4.0,10.0,0.40,Estrela Amadora,152.75%,alto
+0.0,0.0,0.0,5.0,10.0,0.33,Famalicao,141.42%,alto
+0.0,0.0,0.0,3.0,12.0,0.20,Farense,200.00%,alto
+0.0,0.0,2.0,6.0,7.0,0.67,FC Porto,104.88%,alto
+0.0,0.0,2.0,5.0,8.0,0.60,Gil Vicente,118.63%,alto
+0.0,0.0,1.0,8.0,6.0,0.67,Guimaraes,89.44%,alto
+0.0,1.0,2.0,4.0,8.0,0.73,Moreirense,126.62%,alto
+0.0,1.0,2.0,6.0,6.0,0.87,Nacional,102.05%,alto
+0.0,0.0,2.0,8.0,5.0,0.80,Rio Ave,81.65%,alto
+0.0,0.0,1.0,5.0,9.0,0.47,Santa Clara,132.48%,alto
+0.0,1.0,4.0,7.0,3.0,1.20,Sporting Braga,69.39%,alto
+0.0,1.0,5.0,7.0,2.0,1.33,Sporting CP,59.16%,alto
+0.0,0.0,0.0,0.0,0.0,,,indefinido,indefinido
+0.0,0.0,0.0,0.0,0.0,0.64,League avg.,indefinido,indefinido
+0.0,0.0,3.0,8.0,4.0,0.93,Academico Viseu,72.84%,alto
+1.0,1.0,1.0,6.0,6.0,1.00,Alverca,120.44%,alto
+0.0,0.0,3.0,5.0,7.0,0.73,Benfica B,105.23%,alto
+0.0,0.0,1.0,5.0,9.0,0.47,Chaves,132.48%,alto
+0.0,0.0,1.0,5.0,9.0,0.47,FC Porto B,132.48%,alto
+0.0,0.0,3.0,4.0,8.0,0.67,Feirense,118.32%,alto
+0.0,0.0,1.0,5.0,9.0,0.47,Felgueiras,132.48%,alto
+0.0,1.0,2.0,3.0,9.0,0.67,Leixoes,141.42%,alto
+0.0,0.0,2.0,2.0,11.0,0.40,Mafra,177.95%,alto
+0.0,0.0,1.0,4.0,10.0,0.40,Maritimo,152.75%,alto
+0.0,0.0,1.0,2.0,12.0,0.27,Oliveirense,215.06%,alto
+0.0,0.0,1.0,5.0,9.0,0.47,Pacos Ferreira,132.48%,alto
+0.0,1.0,4.0,6.0,4.0,1.13,Penafiel,78.04%,alto
+0.0,1.0,1.0,6.0,7.0,0.73,Portimonense,116.42%,alto
+0.0,1.0,2.0,4.0,8.0,0.73,Tondela,126.62%,alto
+0.0,0.0,2.0,6.0,7.0,0.67,Torreense,104.88%,alto
+0.0,0.0,0.0,6.0,9.0,0.40,Uniao de Leiria,122.47%,alto
+0.0,1.0,0.0,6.0,8.0,0.60,Vizela,133.33%,alto
+0.0,0.0,0.0,0.0,0.0,,,indefinido,indefinido
+0.0,0.0,0.0,0.0,0.0,0.62,League avg.,indefinido,indefinido
+0.0,0.0,2.0,7.0,8.0,0.65,Aberdeen,105.23%,alto
+2.0,2.0,6.0,4.0,3.0,1.82,Celtic,72.81%,alto
+0.0,2.0,1.0,10.0,4.0,1.06,Dundee FC,82.40%,alto
+0.0,0.0,1.0,7.0,8.0,0.56,Dundee Utd,108.30%,alto
+0.0,0.0,1.0,7.0,8.0,0.56,Hearts,108.30%,alto
+0.0,0.0,3.0,10.0,4.0,0.94,Hibernian,67.89%,alto
+0.0,0.0,1.0,5.0,10.0,0.44,Kilmarnock,139.24%,alto
+0.0,1.0,4.0,5.0,6.0,1.00,Motherwell,93.54%,alto
+0.0,2.0,2.0,7.0,5.0,1.06,Rangers,90.94%,alto
+0.0,0.0,1.0,4.0,12.0,0.35,Ross County,166.67%,alto
+0.0,0.0,1.0,3.0,12.0,0.31,St. Johnstone,186.55%,alto
+0.0,0.0,3.0,6.0,8.0,0.71,St. Mirren,106.07%,alto
+0.0,0.0,0.0,0.0,0.0,,,indefinido,indefinido
+0.0,0.0,0.0,0.0,0.0,0.79,League avg.,indefinido,indefinido
+0.0,0.0,2.0,2.0,13.0,0.35,Airdrieonians,192.93%,alto
+0.0,3.0,3.0,5.0,6.0,1.18,Ayr Utd,93.27%,alto
+0.0,0.0,0.0,4.0,13.0,0.24,Dunfermline,180.28%,alto
+0.0,2.0,1.0,8.0,6.0,0.94,Falkirk,99.61%,alto
+0.0,0.0,1.0,8.0,8.0,0.59,Greenock Morton,101.98%,alto
+0.0,0.0,3.0,2.0,12.0,0.47,Hamilton,164.89%,alto
+0.0,3.0,1.0,4.0,9.0,0.88,Livingston,128.24%,alto
+0.0,0.0,2.0,7.0,8.0,0.65,Partick Thistle,105.23%,alto
+0.0,0.0,1.0,6.0,10.0,0.47,Queens Park,128.70%,alto
+0.0,0.0,4.0,8.0,5.0,0.94,Raith Rovers,77.06%,alto
+0.0,0.0,0.0,0.0,0.0,,,indefinido,indefinido
+0.0,0.0,0.0,0.0,0.0,0.67,League avg.,indefinido,indefinido
+0.0,0.0,1.0,4.0,10.0,0.40,Backa Topola,152.75%,alto
+0.0,1.0,3.0,3.0,8.0,0.80,Cukaricki,122.47%,alto
+0.0,0.0,1.0,6.0,8.0,0.53,IMT N. Beograd,115.92%,alto
+0.0,0.0,2.0,3.0,10.0,0.47,Jedinstvo U.,153.86%,alto
+0.0,0.0,1.0,5.0,9.0,0.47,Mladost Lucani,132.48%,alto
+0.0,0.0,1.0,6.0,8.0,0.53,Napredak,115.92%,alto
+0.0,1.0,4.0,6.0,4.0,1.13,Novi Pazar,78.04%,alto
+0.0,0.0,3.0,6.0,6.0,0.80,OFK Beograd,93.54%,alto
+0.0,1.0,4.0,3.0,7.0,0.93,Partizan,106.90%,alto
+0.0,1.0,1.0,6.0,7.0,0.73,Radnicki 1923,116.42%,alto
+0.0,0.0,3.0,5.0,7.0,0.73,Radnicki Nis,105.23%,alto
+0.0,4.0,3.0,5.0,3.0,1.53,Red Star,70.91%,alto
+0.0,0.0,0.0,4.0,11.0,0.27,S. Subotica,165.83%,alto
+0.0,0.0,0.0,5.0,10.0,0.33,Tekstilac Odzac,141.42%,alto
+0.0,0.0,3.0,1.0,11.0,0.47,Vojvodina,172.61%,alto
+0.0,0.0,1.0,7.0,7.0,0.60,Z. Pancevo,101.84%,alto
+0.0,0.0,0.0,0.0,0.0,,,indefinido,indefinido
+0.0,0.0,0.0,0.0,0.0,0.67,League avg.,indefinido,indefinido
+0.0,0.0,2.0,6.0,7.0,0.67,Bravo,104.88%,alto
+0.0,0.0,0.0,3.0,12.0,0.20,Domzale,200.00%,alto
+0.0,0.0,2.0,5.0,8.0,0.60,Koper,118.63%,alto
+0.0,1.0,4.0,8.0,1.0,1.36,Maribor,52.89%,alto
+0.0,0.0,2.0,6.0,8.0,0.63,Mura,111.36%,alto
+0.0,0.0,3.0,1.0,11.0,0.47,Nafta,172.61%,alto
+1.0,0.0,1.0,6.0,7.0,0.80,NK Celje,137.99%,alto
+0.0,0.0,2.0,9.0,5.0,0.81,NK Olimpija,78.07%,alto
+0.0,0.0,0.0,7.0,9.0,0.44,Primorje,113.39%,alto
+0.0,0.0,1.0,5.0,10.0,0.44,Radomlje,139.24%,alto
+0.0,0.0,0.0,0.0,0.0,,,indefinido,indefinido
+0.0,0.0,0.0,0.0,0.0,0.63,League avg.,indefinido,indefinido
+0.0,1.0,2.0,4.0,7.0,0.79,Banska Bystrica,119.57%,alto
+0.0,2.0,2.0,5.0,5.0,1.07,DAC Streda,96.38%,alto
+0.0,1.0,2.0,7.0,4.0,1.00,FC Kosice,84.52%,alto
+0.0,0.0,0.0,7.0,7.0,0.50,Komarno,100.00%,alto
+0.0,1.0,1.0,4.0,8.0,0.64,Podbrezova,139.22%,alto
+0.0,0.0,1.0,8.0,5.0,0.71,Ruzomberok,82.46%,alto
+1.0,1.0,0.0,1.0,11.0,0.57,S. Bratislava,220.49%,alto
+0.0,0.0,0.0,4.0,10.0,0.29,Skalica,158.11%,alto
+0.0,0.0,3.0,3.0,8.0,0.64,Spartak Trnava,126.20%,alto
+0.0,0.0,2.0,5.0,7.0,0.64,Trencin,111.67%,alto
+0.0,1.0,2.0,3.0,8.0,0.71,Z. Michalovce,134.16%,alto
+0.0,1.0,0.0,6.0,6.0,0.69,Zilina,118.63%,alto
+0.0,0.0,0.0,0.0,0.0,,,indefinido,indefinido
+0.0,0.0,0.0,0.0,0.0,0.69,League avg.,indefinido,indefinido
+0.0,0.0,1.0,6.0,6.0,0.62,AmaZulu,101.55%,alto
+0.0,0.0,0.0,3.0,9.0,0.25,Cape Town City,173.21%,alto
+0.0,0.0,3.0,3.0,7.0,0.69,Chippa Utd,118.63%,alto
+0.0,0.0,2.0,3.0,5.0,0.70,Golden Arrows,111.57%,alto
+0.0,0.0,1.0,7.0,4.0,0.75,Kaizer Chiefs,79.35%,alto
+0.0,0.0,0.0,7.0,6.0,0.54,Magesi,92.58%,alto
+0.0,1.0,3.0,5.0,2.0,1.27,Mamelodi S.,67.76%,alto
+0.0,0.0,0.0,6.0,7.0,0.46,Marumo G.,108.01%,alto
+0.0,0.0,2.0,4.0,4.0,0.80,Orlando Pirates,93.54%,alto
+0.0,0.0,0.0,7.0,5.0,0.58,Polokwane,84.52%,alto
+0.0,0.0,0.0,1.0,12.0,0.08,Richards Bay,346.41%,alto
+0.0,0.0,0.0,2.0,4.0,0.33,Royal AM,141.42%,alto
+0.0,0.0,0.0,6.0,7.0,0.46,Sekhukhune,108.01%,alto
+0.0,0.0,1.0,4.0,7.0,0.50,Stellenbosch,129.10%,alto
+0.0,0.0,0.0,2.0,9.0,0.18,SuperSport Utd,212.13%,alto
+0.0,0.0,2.0,4.0,6.0,0.67,TS Galaxy,111.80%,alto
+0.0,0.0,0.0,0.0,0.0,,,indefinido,indefinido
+0.0,0.0,0.0,0.0,0.0,0.55,League avg.,indefinido,indefinido
+0.0,0.0,0.0,2.0,2.0,0.50,Anyang,100.00%,alto
+0.0,0.0,0.0,1.0,4.0,0.20,Daegu,200.00%,alto
+0.0,0.0,0.0,0.0,4.0,0.00,Daejeon Citizen,indefinido,indefinido
+0.0,0.0,0.0,1.0,3.0,0.25,Gangwon,173.21%,alto
+0.0,0.0,1.0,0.0,3.0,0.50,Gimcheon Sangmu,173.21%,alto
+0.0,0.0,1.0,1.0,3.0,0.60,Gwangju,133.33%,alto
+0.0,0.0,0.0,4.0,1.0,0.80,Jeju Utd,50.00%,moderado
+0.0,1.0,1.0,2.0,2.0,1.17,Jeonbuk Motors,91.47%,alto
+0.0,0.0,0.0,0.0,4.0,0.00,Pohang Steelers,indefinido,indefinido
+0.0,0.0,0.0,1.0,4.0,0.20,Seoul,200.00%,alto
+0.0,0.0,0.0,3.0,1.0,0.75,Suwon City,57.74%,alto
+0.0,0.0,1.0,2.0,3.0,0.67,Ulsan,111.80%,alto
+0.0,0.0,0.0,0.0,0.0,,,indefinido,indefinido
+0.0,0.0,0.0,0.0,0.0,0.50,League avg.,indefinido,indefinido
+0.0,0.0,0.0,1.0,4.0,0.20,Ansan Greeners,200.00%,alto
+0.0,0.0,1.0,0.0,2.0,0.67,Asan,141.42%,alto
+0.0,0.0,1.0,1.0,2.0,0.75,Bucheon FC,110.55%,alto
+0.0,0.0,0.0,1.0,4.0,0.20,Busan IPark,200.00%,alto
+0.0,0.0,0.0,0.0,5.0,0.00,Cheonan City,indefinido,indefinido
+0.0,0.0,0.0,0.0,0.0,-,Cheongju,indefinido,indefinido
+0.0,0.0,0.0,2.0,2.0,0.50,Gimpo,100.00%,alto
+0.0,0.0,0.0,1.0,3.0,0.25,Gyeongnam,173.21%,alto
+0.0,0.0,0.0,0.0,5.0,0.00,Hwaseong,indefinido,indefinido
+0.0,0.0,1.0,0.0,5.0,0.33,Incheon Utd,223.61%,alto
+0.0,0.0,0.0,0.0,0.0,-,Jeonnam,indefinido,indefinido
+0.0,0.0,0.0,3.0,2.0,0.60,Seongnam,81.65%,alto
+0.0,1.0,1.0,2.0,2.0,1.17,Seoul E-Land,91.47%,alto
+1.0,1.0,0.0,0.0,2.0,1.75,Suwon Bluewings,103.92%,alto
+0.0,0.0,0.0,0.0,0.0,,,indefinido,indefinido
+0.0,0.0,0.0,0.0,0.0,0.52,League avg.,indefinido,indefinido
+0.0,0.0,0.0,5.0,10.0,0.33,Alaves,141.42%,alto
+1.0,1.0,2.0,5.0,7.0,1.00,Athletic Bilbao,121.78%,alto
+0.0,0.0,1.0,6.0,9.0,0.50,Atletico Madrid,122.47%,alto
+0.0,0.0,4.0,3.0,9.0,0.69,Celta Vigo,122.98%,alto
+0.0,0.0,0.0,9.0,7.0,0.56,Espanyol,88.19%,alto
+1.0,3.0,2.0,7.0,3.0,1.56,FC Barcelona,81.20%,alto
+0.0,0.0,0.0,6.0,10.0,0.38,Getafe,129.10%,alto
+1.0,0.0,2.0,5.0,8.0,0.81,Girona,138.53%,alto
+0.0,0.0,0.0,5.0,11.0,0.31,Las Palmas,148.32%,alto
+0.0,0.0,3.0,0.0,13.0,0.38,Leganes,208.17%,alto
+0.0,1.0,0.0,6.0,10.0,0.53,Mallorca,146.57%,alto
+0.0,1.0,3.0,6.0,6.0,0.94,Osasuna,95.92%,alto
+0.0,0.0,1.0,6.0,9.0,0.50,Rayo Vallecano,122.47%,alto
+0.0,0.0,2.0,8.0,6.0,0.75,Real Betis,88.19%,alto
+0.0,2.0,4.0,3.0,7.0,1.06,Real Madrid,102.39%,alto
+0.0,0.0,1.0,6.0,9.0,0.50,Real Sociedad,122.47%,alto
+0.0,0.0,0.0,8.0,8.0,0.50,Sevilla FC,100.00%,alto
+0.0,0.0,1.0,9.0,6.0,0.69,Valencia,84.79%,alto
+0.0,0.0,0.0,2.0,14.0,0.13,Valladolid,264.58%,alto
+1.0,0.0,1.0,11.0,2.0,1.13,Villarreal,85.24%,alto
+0.0,0.0,0.0,0.0,0.0,,,indefinido,indefinido
+0.0,0.0,0.0,0.0,0.0,0.66,League avg.,indefinido,indefinido
+0.0,0.0,2.0,8.0,8.0,0.67,Albacete,100.00%,alto
+0.0,1.0,1.0,5.0,10.0,0.59,Almeria,143.53%,alto
+0.0,0.0,1.0,6.0,11.0,0.44,Burgos,134.63%,alto
+0.0,1.0,3.0,3.0,11.0,0.67,Cadiz,141.42%,alto
+0.0,0.0,1.0,4.0,13.0,0.33,Cartagena,173.21%,alto
+0.0,0.0,2.0,8.0,8.0,0.67,Castellon,100.00%,alto
+0.0,0.0,1.0,10.0,7.0,0.67,Cordoba,86.60%,alto
+0.0,2.0,0.0,2.0,14.0,0.44,Deportivo,215.06%,alto
+0.0,0.0,0.0,11.0,7.0,0.61,Eibar,79.77%,alto
+0.0,0.0,3.0,8.0,8.0,0.74,Elche,96.89%,alto
+0.0,0.0,1.0,7.0,10.0,0.50,Eldense,120.19%,alto
+0.0,1.0,3.0,7.0,7.0,0.89,Granada,98.43%,alto
+0.0,1.0,2.0,10.0,5.0,0.94,Huesca,82.56%,alto
+0.0,0.0,5.0,5.0,8.0,0.83,Levante,100.00%,alto
+0.0,0.0,2.0,5.0,10.0,0.53,Malaga,131.47%,alto
+0.0,0.0,2.0,8.0,8.0,0.67,Mirandes,100.00%,alto
+0.0,1.0,4.0,3.0,10.0,0.78,Racing,125.36%,alto
+0.0,0.0,0.0,2.0,16.0,0.11,Racing Ferrol,282.84%,alto
+0.0,0.0,3.0,5.0,10.0,0.61,Real Oviedo,123.65%,alto
+0.0,0.0,2.0,5.0,11.0,0.50,Real Zaragoza,137.44%,alto
+0.0,0.0,1.0,8.0,10.0,0.53,Sporting Gijon,113.14%,alto
+0.0,0.0,1.0,8.0,9.0,0.56,Tenerife,107.70%,alto
+0.0,0.0,0.0,0.0,0.0,,,indefinido,indefinido
+0.0,0.0,0.0,0.0,0.0,0.60,League avg.,indefinido,indefinido
+0.0,0.0,0.0,0.0,2.0,0.00,AIK,indefinido,indefinido
+0.0,0.0,0.0,1.0,1.0,0.50,Brommapojkarna,100.00%,alto
+0.0,0.0,0.0,1.0,1.0,0.50,Degerfors,100.00%,alto
+0.0,0.0,0.0,0.0,2.0,0.00,Djurgarden,indefinido,indefinido
+0.0,0.0,0.0,1.0,1.0,0.50,Elfsborg,100.00%,alto
+0.0,0.0,1.0,0.0,1.0,1.00,GAIS,100.00%,alto
+0.0,0.0,0.0,0.0,2.0,0.00,Hacken,indefinido,indefinido
+0.0,0.0,0.0,0.0,2.0,0.00,Halmstad,indefinido,indefinido
+0.0,0.0,1.0,1.0,0.0,1.50,Hammarby,33.33%,moderado
+0.0,0.0,1.0,0.0,1.0,1.00,IFK Goteborg,100.00%,alto
+0.0,0.0,0.0,0.0,2.0,0.00,Malmo FF,indefinido,indefinido
+0.0,1.0,0.0,0.0,1.0,1.50,Mjallby,100.00%,alto
+0.0,0.0,1.0,0.0,1.0,1.00,Norrkoping,100.00%,alto
+0.0,0.0,0.0,1.0,1.0,0.50,Oster,100.00%,alto
+0.0,0.0,0.0,0.0,2.0,0.00,Sirius,indefinido,indefinido
+0.0,0.0,0.0,0.0,2.0,0.00,Varnamo,indefinido,indefinido
+0.0,0.0,0.0,0.0,0.0,,,indefinido,indefinido
+0.0,0.0,0.0,0.0,0.0,0.50,League avg.,indefinido,indefinido
+0.0,0.0,0.0,0.0,2.0,0.00,Brage,indefinido,indefinido
+0.0,0.0,0.0,2.0,0.0,1.00,Falkenberg,0.00%,baixo
+0.0,0.0,0.0,0.0,2.0,0.00,GIF Sundsvall,indefinido,indefinido
+0.0,0.0,0.0,1.0,0.0,1.00,Helsingborg,0.00%,baixo
+0.0,0.0,0.0,1.0,1.0,0.50,Kalmar,100.00%,alto
+0.0,0.0,0.0,1.0,1.0,0.50,Landskrona,100.00%,alto
+0.0,0.0,0.0,1.0,1.0,0.50,Oddevold,100.00%,alto
+0.0,0.0,0.0,0.0,2.0,0.00,Orebro,indefinido,indefinido
+0.0,0.0,1.0,0.0,2.0,0.67,Orgryte,141.42%,alto
+0.0,0.0,1.0,0.0,0.0,2.00,Ostersunds,0.00%,baixo
+0.0,0.0,0.0,1.0,1.0,0.50,Sandviken,100.00%,alto
+0.0,0.0,0.0,0.0,2.0,0.00,Trelleborg,indefinido,indefinido
+0.0,0.0,0.0,1.0,1.0,0.50,Umea,100.00%,alto
+0.0,0.0,0.0,1.0,1.0,0.50,Utsikten,100.00%,alto
+0.0,0.0,1.0,1.0,0.0,1.50,Varberg BoIS,33.33%,moderado
+0.0,0.0,0.0,2.0,0.0,1.00,Vasteras,0.00%,baixo
+0.0,0.0,0.0,0.0,0.0,,,indefinido,indefinido
+0.0,0.0,0.0,0.0,0.0,0.58,League avg.,indefinido,indefinido
+0.0,1.0,3.0,6.0,7.0,0.88,BSC Young Boys,101.98%,alto
+1.0,1.0,2.0,7.0,6.0,1.06,FC Basel,109.45%,alto
+0.0,0.0,2.0,6.0,9.0,0.59,FC Zurich,117.47%,alto
+0.0,0.0,0.0,6.0,11.0,0.35,Grasshopper,135.40%,alto
+0.0,2.0,3.0,5.0,7.0,1.00,Lausanne Sport,102.90%,alto
+0.0,1.0,2.0,4.0,10.0,0.65,Lugano,139.66%,alto
+0.0,0.0,2.0,7.0,7.0,0.69,Luzern,99.17%,alto
+0.0,0.0,2.0,7.0,7.0,0.69,Servette,99.17%,alto
+0.0,1.0,4.0,4.0,7.0,0.94,Sion,103.06%,alto
+0.0,0.0,2.0,6.0,8.0,0.63,St. Gallen,111.36%,alto
+0.0,2.0,1.0,0.0,13.0,0.50,Winterthur,212.13%,alto
+0.0,0.0,0.0,5.0,11.0,0.31,Yverdon,148.32%,alto
+0.0,0.0,0.0,0.0,0.0,,,indefinido,indefinido
+0.0,0.0,0.0,0.0,0.0,0.69,League avg.,indefinido,indefinido
+0.0,0.0,1.0,8.0,7.0,0.63,Aarau,95.92%,alto
+0.0,0.0,1.0,8.0,7.0,0.63,Bellinzona,95.92%,alto
+0.0,1.0,4.0,6.0,5.0,1.06,Etoile Carouge,84.63%,alto
+0.0,0.0,3.0,7.0,5.0,0.87,Lausanne Ouchy,82.85%,alto
+0.0,0.0,5.0,4.0,6.0,0.93,Neuchatel Xamax,91.47%,alto
+0.0,0.0,2.0,4.0,9.0,0.53,Schaffhausen,134.63%,alto
+0.0,0.0,2.0,2.0,12.0,0.38,Stade Nyonnais,185.59%,alto
+0.0,0.0,1.0,10.0,5.0,0.75,Thun,74.54%,alto
+0.0,0.0,4.0,4.0,7.0,0.80,Vaduz,104.08%,alto
+0.0,0.0,3.0,5.0,7.0,0.73,Wil,105.23%,alto
+0.0,0.0,0.0,0.0,0.0,,,indefinido,indefinido
+0.0,0.0,0.0,0.0,0.0,0.73,League avg.,indefinido,indefinido
+0.0,1.0,2.0,9.0,3.0,1.07,Bangkok Utd,72.35%,alto
+2.0,0.0,2.0,7.0,3.0,1.50,Buriram Utd,97.08%,alto
+0.0,0.0,0.0,8.0,7.0,0.53,Chiangrai Utd,93.54%,alto
+0.0,0.0,1.0,4.0,9.0,0.43,Khon Kaen Utd,145.30%,alto
+0.0,0.0,2.0,8.0,5.0,0.80,Lamphun Warrior,81.65%,alto
+0.0,0.0,0.0,5.0,9.0,0.36,Muang Thong Utd,134.16%,alto
+1.0,1.0,0.0,7.0,6.0,0.93,N. Bua Pitchaya,125.94%,alto
+0.0,0.0,2.0,5.0,8.0,0.60,N. Ratchasima,118.63%,alto
+0.0,0.0,1.0,7.0,6.0,0.64,Nakhon Pathom,94.93%,alto
+0.0,0.0,1.0,6.0,7.0,0.57,Pathum Utd,108.97%,alto
+0.0,0.0,2.0,4.0,8.0,0.57,Port FC,127.48%,alto
+0.0,1.0,1.0,8.0,4.0,0.93,Prachuap,86.00%,alto
+0.0,1.0,3.0,10.0,1.0,1.27,Ratchaburi,53.67%,alto
+0.0,1.0,2.0,5.0,7.0,0.80,Rayong,113.65%,alto
+0.0,0.0,4.0,5.0,6.0,0.87,Sukhothai,92.95%,alto
+0.0,0.0,1.0,6.0,7.0,0.57,Uthai Thani,108.97%,alto
+0.0,0.0,0.0,0.0,0.0,,,indefinido,indefinido
+0.0,0.0,0.0,0.0,0.0,0.78,League avg.,indefinido,indefinido
+0.0,0.0,2.0,3.0,10.0,0.47,Adana Demirspor,153.86%,alto
+0.0,0.0,1.0,6.0,8.0,0.53,Alanyaspor,115.92%,alto
+0.0,1.0,1.0,4.0,9.0,0.60,Antalyaspor,146.57%,alto
+1.0,0.0,2.0,5.0,8.0,0.81,Basaksehir,138.53%,alto
+0.0,0.0,4.0,7.0,4.0,1.00,Besiktas,73.03%,alto
+0.0,0.0,1.0,3.0,11.0,0.33,Bodrumspor,178.89%,alto
+0.0,1.0,0.0,9.0,5.0,0.80,Eyupspor,93.54%,alto
+0.0,1.0,1.0,9.0,4.0,0.93,Fenerbahce,82.68%,alto
+0.0,2.0,3.0,8.0,2.0,1.33,Galatasaray,65.19%,alto
+0.0,0.0,1.0,6.0,8.0,0.53,Gaziantep,115.92%,alto
+0.0,0.0,4.0,4.0,7.0,0.80,Goztepe,104.08%,alto
+0.0,0.0,2.0,8.0,6.0,0.75,Hatayspor,88.19%,alto
+0.0,0.0,5.0,3.0,7.0,0.87,Kasimpasa,102.05%,alto
+0.0,0.0,2.0,6.0,7.0,0.67,Kayserispor,104.88%,alto
+0.0,0.0,2.0,7.0,6.0,0.73,Konyaspor,92.71%,alto
+0.0,0.0,1.0,6.0,8.0,0.53,Rizespor,115.92%,alto
+0.0,0.0,3.0,6.0,6.0,0.80,Samsunspor,93.54%,alto
+0.0,1.0,1.0,5.0,9.0,0.63,Sivasspor,137.11%,alto
+0.0,1.0,3.0,5.0,6.0,0.93,Trabzonspor,99.49%,alto
+0.0,0.0,0.0,0.0,0.0,,,indefinido,indefinido
+0.0,0.0,0.0,0.0,0.0,0.74,League avg.,indefinido,indefinido
+0.0,1.0,1.0,3.0,5.0,0.80,Ajman,122.47%,alto
+0.0,2.0,3.0,2.0,4.0,1.27,Al Ain,89.21%,alto
+0.0,0.0,2.0,3.0,5.0,0.70,Al Bataeh,111.57%,alto
+0.0,3.0,0.0,1.0,5.0,1.11,Al Jazira,123.29%,alto
+0.0,1.0,1.0,4.0,5.0,0.82,Al Nasr,114.40%,alto
+0.0,1.0,1.0,2.0,5.0,0.78,Al Sharjah,132.48%,alto
+0.0,0.0,0.0,4.0,6.0,0.40,Al Urooba,122.47%,alto
+0.0,0.0,3.0,4.0,3.0,1.00,Al Wahda,77.46%,alto
+1.0,1.0,1.0,4.0,4.0,1.18,Al Wasl,111.73%,alto
+0.0,0.0,0.0,4.0,6.0,0.40,Bani Yas,122.47%,alto
+0.0,0.0,1.0,4.0,5.0,0.60,Dibba Al Hisn,110.55%,alto
+0.0,0.0,2.0,3.0,6.0,0.64,Ittihad Kalba,121.22%,alto
+0.0,0.0,1.0,5.0,5.0,0.64,Khorfakkan,101.02%,alto
+0.0,2.0,2.0,1.0,6.0,1.00,Shabab Al Ahli,120.60%,alto
+0.0,0.0,0.0,0.0,0.0,,,indefinido,indefinido
+0.0,0.0,0.0,0.0,0.0,0.81,League avg.,indefinido,indefinido
+0.0,0.0,0.0,5.0,6.0,0.45,Chornomorets,109.54%,alto
+0.0,0.0,0.0,0.0,0.0,-,Dnipro-1,indefinido,indefinido
+1.0,0.0,4.0,6.0,3.0,1.29,Dynamo Kyiv,85.34%,alto
+0.0,0.0,1.0,1.0,7.0,0.33,Inhulets,200.00%,alto
+0.0,0.0,4.0,5.0,4.0,1.00,Karpaty Lviv,78.45%,alto
+0.0,0.0,0.0,3.0,9.0,0.25,Kolos Kovalivka,173.21%,alto
+0.0,0.0,0.0,7.0,5.0,0.58,Kryvbas KR,84.52%,alto
+0.0,0.0,0.0,4.0,9.0,0.31,Livyi Bereh,150.00%,alto
+0.0,0.0,0.0,4.0,8.0,0.33,LNZ Cherkasy,141.42%,alto
+0.0,0.0,0.0,1.0,11.0,0.08,Obolon,331.66%,alto
+0.0,1.0,2.0,5.0,6.0,0.86,Oleksandria,106.72%,alto
+0.0,1.0,1.0,2.0,8.0,0.58,Polessya,163.51%,alto
+0.0,0.0,0.0,3.0,9.0,0.25,Rukh Lviv,173.21%,alto
+1.0,1.0,2.0,4.0,6.0,1.07,Shakhtar,118.48%,alto
+0.0,0.0,2.0,5.0,6.0,0.69,Veres,104.23%,alto
+0.0,0.0,0.0,2.0,11.0,0.15,Vorskla Poltava,234.52%,alto
+0.0,0.0,0.0,6.0,6.0,0.50,Zorya Luhansk,100.00%,alto
+0.0,0.0,0.0,0.0,0.0,,,indefinido,indefinido
+0.0,0.0,0.0,0.0,0.0,0.57,League avg.,indefinido,indefinido
+0.0,0.0,0.0,4.0,2.0,0.67,Atlanta Utd,70.71%,alto
+0.0,0.0,1.0,0.0,4.0,0.40,Austin,200.00%,alto
+0.0,0.0,0.0,0.0,2.0,0.00,CF Montreal,indefinido,indefinido
+0.0,1.0,1.0,0.0,3.0,1.00,Charlotte,126.49%,alto
+0.0,0.0,0.0,3.0,1.0,0.75,Chicago Fire,57.74%,alto
+0.0,0.0,0.0,0.0,4.0,0.00,Cincinnati,indefinido,indefinido
+0.0,0.0,1.0,1.0,2.0,0.75,Colorado Rapids,110.55%,alto
+0.0,1.0,1.0,0.0,3.0,1.00,Columbus Crew,126.49%,alto
+0.0,0.0,1.0,0.0,3.0,0.50,Dallas,173.21%,alto
+0.0,0.0,1.0,1.0,3.0,0.60,DC United,133.33%,alto
+0.0,0.0,0.0,3.0,2.0,0.60,Houston Dynamo,81.65%,alto
+0.0,0.0,0.0,3.0,1.0,0.75,Inter Miami,57.74%,alto
+0.0,0.0,0.0,1.0,3.0,0.25,LA Galaxy,173.21%,alto
+0.0,0.0,0.0,0.0,4.0,0.00,Los Angeles FC,indefinido,indefinido
+0.0,0.0,0.0,2.0,2.0,0.50,Minnesota Utd,100.00%,alto
+0.0,0.0,0.0,3.0,2.0,0.60,Nashville SC,81.65%,alto
+0.0,0.0,0.0,2.0,2.0,0.50,New England,100.00%,alto
+0.0,0.0,0.0,1.0,3.0,0.25,New York City,173.21%,alto
+0.0,0.0,2.0,2.0,1.0,1.20,New York RB,62.36%,alto
+0.0,0.0,2.0,1.0,1.0,1.25,Orlando City,66.33%,alto
+0.0,0.0,1.0,3.0,1.0,1.00,Philadelphia,63.25%,alto
+0.0,0.0,2.0,0.0,3.0,0.80,Portland,122.47%,alto
+0.0,0.0,1.0,2.0,2.0,0.80,Real Salt Lake,93.54%,alto
+0.0,2.0,0.0,0.0,2.0,1.50,San Diego,100.00%,alto
+0.0,1.0,0.0,2.0,1.0,1.25,Seattle,87.18%,alto
+0.0,1.0,1.0,3.0,1.0,1.33,SJ Earthquakes,70.71%,alto
+0.0,0.0,1.0,1.0,3.0,0.60,Sporting KC,133.33%,alto
+0.0,0.0,0.0,2.0,3.0,0.40,St. Louis City,122.47%,alto
+0.0,0.0,0.0,1.0,2.0,0.33,Toronto,141.42%,alto
+0.0,0.0,2.0,3.0,0.0,1.40,Vancouver,34.99%,moderado
+0.0,0.0,0.0,0.0,0.0,,,indefinido,indefinido
+0.0,0.0,0.0,0.0,0.0,0.73,League avg.,indefinido,indefinido
+0.0,0.0,0.0,3.0,0.0,1.00,Birmingham L.,0.00%,baixo
+0.0,0.0,1.0,1.0,2.0,0.75,Charleston,110.55%,alto
+0.0,0.0,0.0,1.0,1.0,0.50,Colorado S.,100.00%,alto
+0.0,0.0,2.0,0.0,1.0,1.33,Detroit City,70.71%,alto
+0.0,0.0,2.0,1.0,0.0,1.67,El Paso,28.28%,moderado
+0.0,0.0,0.0,1.0,3.0,0.25,FC Tulsa,173.21%,alto
+0.0,0.0,0.0,1.0,1.0,0.50,Hartford A.,100.00%,alto
+0.0,0.0,0.0,2.0,1.0,0.67,Indy Eleven,70.71%,alto
+0.0,0.0,0.0,0.0,4.0,0.00,Las Vegas L.,indefinido,indefinido
+0.0,0.0,1.0,1.0,3.0,0.60,Lexington,133.33%,alto
+0.0,0.0,1.0,1.0,1.0,1.00,Loudoun Utd,81.65%,alto
+0.0,0.0,0.0,2.0,0.0,1.00,Louisville City,0.00%,baixo
+0.0,0.0,1.0,1.0,3.0,0.60,Miami FC,133.33%,alto
+0.0,0.0,0.0,2.0,1.0,0.67,Monterey Bay,70.71%,alto
+0.0,0.0,0.0,0.0,2.0,0.00,New Mexico,indefinido,indefinido
+0.0,0.0,1.0,2.0,0.0,1.33,North Carolina,35.36%,moderado
+0.0,0.0,1.0,1.0,2.0,0.75,Oakland Roots,110.55%,alto
+0.0,0.0,0.0,3.0,1.0,0.75,Orange County,57.74%,alto
+0.0,0.0,0.0,3.0,1.0,0.75,Phoenix Rising,57.74%,alto
+0.0,0.0,0.0,1.0,1.0,0.50,Pittsburgh,100.00%,alto
+0.0,0.0,0.0,0.0,0.0,-,Rhode Island,indefinido,indefinido
+0.0,0.0,0.0,2.0,1.0,0.67,Sacramento R.,70.71%,alto
+0.0,0.0,0.0,1.0,3.0,0.25,San Antonio,173.21%,alto
+0.0,0.0,0.0,0.0,2.0,0.00,Tampa Bay,indefinido,indefinido
+0.0,0.0,0.0,0.0,0.0,,,indefinido,indefinido
+0.0,0.0,0.0,0.0,0.0,0.68,League avg.,indefinido,indefinido
+0.0,0.0,2.0,0.0,1.0,1.33,Alta,70.71%,alto
+0.0,0.0,0.0,1.0,3.0,0.25,Charlotte I.,173.21%,alto
+0.0,0.0,0.0,0.0,2.0,0.00,Chattanooga RW,indefinido,indefinido
+0.0,0.0,0.0,0.0,1.0,0.00,Forward Madison,indefinido,indefinido
+0.0,0.0,1.0,1.0,3.0,0.60,Greenville,133.33%,alto
+0.0,0.0,2.0,0.0,3.0,0.80,Naples,122.47%,alto
+0.0,0.0,0.0,0.0,0.0,-,One Knoxville,indefinido,indefinido
+0.0,0.0,0.0,0.0,0.0,-,Portland Hearts,indefinido,indefinido
+0.0,0.0,1.0,1.0,2.0,0.75,Richmond K.,110.55%,alto
+0.0,0.0,0.0,2.0,2.0,0.50,Spokane V.,100.00%,alto
+0.0,0.0,0.0,1.0,2.0,0.33,Texoma,141.42%,alto
+0.0,0.0,2.0,2.0,0.0,1.50,Tormenta,33.33%,moderado
+0.0,0.0,0.0,0.0,0.0,-,Union Omaha,indefinido,indefinido
+0.0,0.0,0.0,0.0,0.0,-,Westchester SC,indefinido,indefinido
+0.0,0.0,0.0,0.0,0.0,,,indefinido,indefinido
+0.0,0.0,0.0,0.0,0.0,0.69,League avg.,indefinido,indefinido
