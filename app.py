@@ -226,6 +226,8 @@ import plotly.graph_objects as go
 
 import plotly.graph_objects as go
 
+import streamlit as st
+
 with tabs[7]:
     st.markdown("### ⚽ Marca Primeiro")
     col1, col2 = st.columns(2)
@@ -253,7 +255,7 @@ with tabs[7]:
     else:
         st.info("Sem dados.")
 
-    st.markdown("### 📌 Frequencia Gols HT")
+    st.markdown("### 📌 Frequência Gols HT")
 
     def gerar_barra_frequencia(frequencia_dict):
         cores = {
@@ -299,8 +301,19 @@ with tabs[7]:
                 media = float(str(row['Avg']).replace(',', '.'))
             except (ValueError, TypeError):
                 media = 0.0
-            com_gols = row.get('% Com Gols', '0%')
-            sem_gols = row.get('% Sem Gols', '0%')
+
+            # Formatar % para sem casas decimais
+            try:
+                com_gols_val = int(round(float(str(row.get('% Com Gols', '0%')).replace('%', '').replace(',', '.'))))
+                com_gols = f"{com_gols_val}%"
+            except:
+                com_gols = "0%"
+
+            try:
+                sem_gols_val = int(round(float(str(row.get('% Sem Gols', '0%')).replace('%', '').replace(',', '.'))))
+                sem_gols = f"{sem_gols_val}%"
+            except:
+                sem_gols = "0%"
 
             col_a, col_b, col_c = st.columns(3)
             col_a.metric("Média 1T", f"{media:.2f}")
@@ -330,8 +343,19 @@ with tabs[7]:
                 media = float(str(row['Avg']).replace(',', '.'))
             except (ValueError, TypeError):
                 media = 0.0
-            com_gols = row.get('% Com Gols', '0%')
-            sem_gols = row.get('% Sem Gols', '0%')
+
+            # Formatar % para sem casas decimais
+            try:
+                com_gols_val = int(round(float(str(row.get('% Com Gols', '0%')).replace('%', '').replace(',', '.'))))
+                com_gols = f"{com_gols_val}%"
+            except:
+                com_gols = "0%"
+
+            try:
+                sem_gols_val = int(round(float(str(row.get('% Sem Gols', '0%')).replace('%', '').replace(',', '.'))))
+                sem_gols = f"{sem_gols_val}%"
+            except:
+                sem_gols = "0%"
 
             col_a, col_b, col_c = st.columns(3)
             col_a.metric("Média 1T", f"{media:.2f}")
