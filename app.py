@@ -224,9 +224,9 @@ with tabs[6]:
             
 # ABA 8 - Resumo
 with tabs[7]:
-    # Primeiro Gol
     st.markdown("### ⚽ Primeiro Gol")
     col1, col2 = st.columns(2)
+
     with col1:
         st.markdown(f"**{equipe_home} (Casa)**")
         stats_home_fg = home_fg_df[home_fg_df['Team_Home'] == equipe_home]
@@ -234,6 +234,7 @@ with tabs[7]:
             st.dataframe(stats_home_fg[['Matches', 'First_Gol', 'Goals']], use_container_width=True)
         else:
             st.info("Sem dados.")
+
     with col2:
         st.markdown(f"**{equipe_away} (Fora)**")
         stats_away_fg = away_fg_df[away_fg_df['Team_Away'] == equipe_away]
@@ -242,7 +243,6 @@ with tabs[7]:
         else:
             st.info("Sem dados.")
 
-    # Gols 1º e 2º Tempo
     st.markdown("### ⏱️ Gols 1º e 2º Tempo")
     goals_half_filtered = goals_half_df[goals_half_df['Team'].isin([equipe_home, equipe_away])]
     if not goals_half_filtered.empty:
@@ -250,7 +250,6 @@ with tabs[7]:
     else:
         st.info("Sem dados.")
 
-    # CV HT - Distribuição de Gols no 1º Tempo
     st.markdown("### 📌 CV HT (Distribuição de Gols no 1º Tempo)")
     col1, col2 = st.columns(2)
 
@@ -259,37 +258,41 @@ with tabs[7]:
             st.markdown(f"**{team} ({'Casa' if is_home else 'Fora'})**")
             row = df.iloc[0]
 
-            # Exibição compacta de métricas principais
-            col_a, col_b, col_c = st.columns(3)
-            col_a.metric("Média 1T", f"{row['Avg.']:.2f}")
-            col_b.metric("Com Gols", row['% Com Gols'])
-            col_c.metric("Sem Gols", row['% Sem Gols'])
+            # Tratamento seguro para números
+            try:
+                media = float(str(row['Avg.']).replace(',', '.'))
+            except (ValueError, TypeError):
+                media = 0.0
 
-            # Barras de distribuição
+            com_gols = row.get('% Com Gols', '0%')
+            sem_gols = row.get('% Sem Gols', '0%')
+
+            col_a, col_b, col_c = st.columns(3)
+            col_a.metric("Média 1T", f"{media:.2f}")
+            col_b.metric("Com Gols", com_gols)
+            col_c.metric("Sem Gols", sem_gols)
+
             st.markdown("**Distribuição de Gols (1º Tempo):**")
             goal_keys = ['0', '1', '2', '3', '4+']
             for key in goal_keys:
-                value = row.get(key, 0)
-                st.write(f"{key} Gol{'s' if key != '1' else ''}")
+                raw_value = str(row.get(key, '0')).replace('%', '').replace(',', '.')
                 try:
-                    value_int = int(str(value).replace('%', '').replace(',', '.'))
+                    value_int = int(float(raw_value))
                 except:
                     value_int = 0
+                st.write(f"{key} Gol{'s' if key != '1' else ''}")
                 st.progress(min(value_int, 100))
         else:
             st.info("Sem dados disponíveis para esta equipe.")
 
-    # Filtrar dados para os times selecionados
     home_cv = cv_home_df[cv_home_df['Team'] == equipe_home]
     away_cv = cv_away_df[cv_away_df['Team'] == equipe_away]
 
-    # Exibir lado a lado
     with col1:
         format_cv_ht(home_cv, equipe_home, is_home=True)
     with col2:
         format_cv_ht(away_cv, equipe_away, is_home=False)
-
-        
+      
 # Executar com variável de ambiente PORT
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 10000))
