@@ -222,52 +222,64 @@ with tabs[6]:
         st.warning("Dados não encontrados para o time visitante.")
 
             
-# ABA 8 - Resumo Final Consolidado
 # ABA 8 - Resumo
 with tabs[7]:
-    st.markdown("## 🔎 Resumo Geral")
+    #st.markdown("## 🧾 Resumo Compacto")
 
+    # FIRST GOAL
+    st.markdown("### ⚽ Primeiro Gol")
     col1, col2 = st.columns(2)
     with col1:
-        st.markdown("### ⚽ First Goal")
-        show_team_stats(equipe_home, home_fg_df, 'Team_Home', 'Casa')
-        show_team_stats(equipe_away, away_fg_df, 'Team_Away', 'Fora')
-
-        st.markdown("### ⚡ Goals HT/FT")
-        filtered = goals_half_df[goals_half_df['Team'].isin([equipe_home, equipe_away])]
-        if not filtered.empty:
-            st.dataframe(filtered[['League_Name', 'Team', 'Scored', '1st half', '2nd half']], use_container_width=True)
+        st.markdown(f"**{equipe_home} (Casa)**")
+        stats_home_fg = home_fg_df[home_fg_df['Team_Home'] == equipe_home]
+        if not stats_home_fg.empty:
+            st.dataframe(stats_home_fg[['Matches', 'First_Gol', 'Goals']], use_container_width=True)
         else:
-            st.warning("Nenhuma estatística de Goals Half encontrada.")
-
+            st.info("Sem dados.")
     with col2:
-        st.markdown("### ⏱️ Goals Minute")
-        home_team_data = goal_minute_home_df[goal_minute_home_df['Home'] == equipe_home]
-        away_team_data = goal_minute_away_df[goal_minute_away_df['Away'] == equipe_away]
-
-        if not home_team_data.empty:
-            st.success(f"🏠 **{equipe_home}** marca seu primeiro gol em média aos **{home_team_data['AVG_min_scored'].values[0]:.1f} min**.")
+        st.markdown(f"**{equipe_away} (Fora)**")
+        stats_away_fg = away_fg_df[away_fg_df['Team_Away'] == equipe_away]
+        if not stats_away_fg.empty:
+            st.dataframe(stats_away_fg[['Matches', 'First_Gol', 'Goals']], use_container_width=True)
         else:
-            st.warning("Nenhum dado encontrado para o time da casa.")
+            st.info("Sem dados.")
 
-        if not away_team_data.empty:
-            st.success(f"🛫 **{equipe_away}** marca seu primeiro gol em média aos **{away_team_data['AVG_min_scored'].values[0]:.1f} min**.")
-        else:
-            st.warning("Nenhum dado encontrado para o time visitante.")
+    # GOALS HT/FT
+    st.markdown("### ⏱️ Gols 1º e 2º Tempo")
+    goals_half_filtered = goals_half_df[goals_half_df['Team'].isin([equipe_home, equipe_away])]
+    if not goals_half_filtered.empty:
+        st.dataframe(goals_half_filtered[['League_Name', 'Team', 'Scored', '1st half', '2nd half']], use_container_width=True)
+    else:
+        st.info("Sem dados.")
 
-        st.markdown("### 📌 CV HT - Time da Casa")
-        if not home_ht.empty:
-            st.dataframe(df_home, use_container_width=True)
-            st.markdown(gerar_barra_frequencia(freq_dict_home), unsafe_allow_html=True)
-        else:
-            st.warning("Dados não encontrados para o time da casa.")
+    # CV HT
+    st.markdown("### 📌 CV HT (Distribuição de Gols no 1º Tempo)")
+    col1, col2 = st.columns(2)
 
-        st.markdown("### 📌 CV HT - Time Visitante")
-        if not away_ht.empty:
-            st.dataframe(df_away, use_container_width=True)
-            st.markdown(gerar_barra_frequencia({g: df_away[g].iloc[0] for g in ["0", "1", "2", "3", "4"]}), unsafe_allow_html=True)
+    def format_cv_ht(df, team, is_home=True):
+        if not df.empty:
+            rename_map = {
+                "Avg.": "Avg", "Avg..1": "Avg",
+                "4+": "4", "4+.1": "4",
+                "3": "3", "3.1": "3",
+                "2": "2", "2.1": "2",
+                "1": "1", "1.1": "1",
+                "0": "0", "0.1": "0"
+            }
+            df = df.rename(columns=rename_map)
+            df = df[["Team", "Avg", "0", "1", "2", "3", "4", "Total_Jogos", "% Com Gols", "% Sem Gols", "Classificação Ofensiva"]]
+            st.markdown(f"**{team} ({'Casa' if is_home else 'Fora'})**")
+            st.dataframe(df, use_container_width=True)
         else:
-            st.warning("Dados não encontrados para o time visitante.")
+            st.info("Sem dados.")
+
+    home_cv = cv_home_df[cv_home_df['Team'] == equipe_home]
+    away_cv = cv_away_df[cv_away_df['Team'] == equipe_away]
+
+    with col1:
+        format_cv_ht(home_cv, equipe_home, is_home=True)
+    with col2:
+        format_cv_ht(away_cv, equipe_away, is_home=False)
 
     
 # Executar com variável de ambiente PORT
