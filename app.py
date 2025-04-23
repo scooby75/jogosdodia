@@ -1,6 +1,8 @@
 import streamlit as st
 import pandas as pd
 import os
+import plotly.graph_objects as go
+
 
 # Configuração da página
 st.set_page_config(page_title="Football Stats", layout="wide")
@@ -162,7 +164,6 @@ with tabs[5]:
         st.warning("Nenhuma estatística de Goals Half encontrada.")
 
 # ABA 7 - Goals HT
-import plotly.graph_objects as go
 
 with tabs[6]:
     def gerar_barra_frequencia(frequencia_dict):
@@ -196,11 +197,17 @@ with tabs[6]:
 
         st.dataframe(df_home, use_container_width=True)
 
-        # Barra visual tipo uptime
-        #st.subheader(f"Distribuição de Gols - {equipe_home}")
         freq_dict_home = {g: df_home[g].iloc[0] for g in ["0", "1", "2", "3", "4"]}
         st.markdown(gerar_barra_frequencia(freq_dict_home), unsafe_allow_html=True)
 
+        col_a, col_b, col_c = st.columns(3)
+        media = df_home["Avg"].iloc[0]
+        com_gols = df_home["% Com Gols"].iloc[0]
+        sem_gols = df_home["% Sem Gols"].iloc[0]
+
+        col_a.metric("Média 1T", f"{media:.2f}")
+        col_b.metric("Com Gols", com_gols)
+        col_c.metric("Sem Gols", sem_gols)
     else:
         st.warning("Dados não encontrados para o time da casa.")
 
@@ -214,19 +221,12 @@ with tabs[6]:
 
         st.dataframe(df_away, use_container_width=True)
 
-        #st.subheader(f"Distribuição de Gols - {equipe_away}")
         freq_dict_away = {g: df_away[g].iloc[0] for g in ["0", "1", "2", "3", "4"]}
         st.markdown(gerar_barra_frequencia(freq_dict_away), unsafe_allow_html=True)
-
     else:
         st.warning("Dados não encontrados para o time visitante.")
 
-            
-import plotly.graph_objects as go
-
-import plotly.graph_objects as go
-
-import streamlit as st
+# ABA 8 - Resumo     
 
 with tabs[7]:
     st.markdown("### ⚽ Marca Primeiro")
