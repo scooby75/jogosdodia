@@ -286,15 +286,36 @@ with tabs[7]:
         else:
             st.info("Sem dados.")
 
-    # Exibindo dados de Frequência de Gols no 1º e 2º Tempo
-    st.markdown("### ⏱️ Frequência Gols 1º e 2º Tempo")
-    goals_half_filtered = goals_half_df[goals_half_df['Team'].isin([equipe_home, equipe_away])]
-    if not goals_half_filtered.empty:
-        for _, row in goals_half_filtered.iterrows():
-            st.metric(f"{row['Team']} - 1º Tempo", f"{row['1st half']}")
-            st.metric(f"{row['Team']} - 2º Tempo", f"{row['2nd half']}")
-    else:
-        st.info("Sem dados.")
+# Exibindo dados de Frequência de Gols no 1º e 2º Tempo
+st.markdown("### ⏱️ Frequência Gols 1º e 2º Tempo")
+goals_half_filtered = goals_half_df[goals_half_df['Team'].isin([equipe_home, equipe_away])]
+if not goals_half_filtered.empty:
+    # Criando 4 colunas
+    col1, col2, col3, col4 = st.columns(4)
+
+    # Home 1º Tempo
+    with col1:
+        home_1st_half = goals_half_filtered[goals_half_filtered['Team'] == equipe_home]['1st half'].values[0] if equipe_home in goals_half_filtered['Team'].values else "Sem dados"
+        st.metric(f"{equipe_home} - 1º Tempo", home_1st_half)
+
+    # Home 2º Tempo
+    with col2:
+        home_2nd_half = goals_half_filtered[goals_half_filtered['Team'] == equipe_home]['2nd half'].values[0] if equipe_home in goals_half_filtered['Team'].values else "Sem dados"
+        st.metric(f"{equipe_home} - 2º Tempo", home_2nd_half)
+
+    # Away 1º Tempo
+    with col3:
+        away_1st_half = goals_half_filtered[goals_half_filtered['Team'] == equipe_away]['1st half'].values[0] if equipe_away in goals_half_filtered['Team'].values else "Sem dados"
+        st.metric(f"{equipe_away} - 1º Tempo", away_1st_half)
+
+    # Away 2º Tempo
+    with col4:
+        away_2nd_half = goals_half_filtered[goals_half_filtered['Team'] == equipe_away]['2nd half'].values[0] if equipe_away in goals_half_filtered['Team'].values else "Sem dados"
+        st.metric(f"{equipe_away} - 2º Tempo", away_2nd_half)
+
+else:
+    st.info("Sem dados.")
+
 
     # Exibindo Frequência de Gols no 1º Tempo (barra gráfica)
     st.markdown("### 📌 Frequência Gols HT")
