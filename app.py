@@ -247,7 +247,6 @@ with tabs[6]:
 
 
 # ABA 8 - Resumo     
-
 with tabs[7]:
     st.markdown("### ⚽ Marca Primeiro")
     
