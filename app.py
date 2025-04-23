@@ -254,11 +254,11 @@ with tabs[7]:
     if not home_filtered.empty:
         row = home_filtered.iloc[0]
         col_a, col_b, col_c, col_d, col_e = st.columns(5)
-        #col_a.metric("Liga", row["Liga"])
+        col_b.metric("Média Gols", row.get["GF_AVG_Home, "N/A""])
         col_a.metric("PIH", row.get("PIH", "N/A"))  # Usa .get para evitar KeyError se faltar a coluna
-        col_b.metric("PPG Casa", row.get("PPG_Home", "N/A"))
-        col_c.metric("Odd Justa", row.get("Odd_Justa_MO", "N/A"))
-        col_d.metric("Rank Casa", row.get("Rank_Home", "N/A"))
+        col_c.metric("PPG Casa", row.get("PPG_Home", "N/A"))
+        col_d.metric("Odd Justa", row.get("Odd_Justa_MO", "N/A"))
+        col_e.metric("Rank Casa", row.get("Rank_Home", "N/A"))
     else:
         st.info("Informações do time da casa como favorito não disponíveis.")
     
