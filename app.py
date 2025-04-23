@@ -277,15 +277,15 @@ if not goals_half_filtered.empty:
 else:
     st.info("Sem dados.")
 
-# Função para verificar a coluna 'Scored'
+# Função para verificar e calcular as métricas
 def calcular_metricas(df, equipe, col_scored='Scored'):
     if col_scored not in df.columns:
         st.error(f"Coluna '{col_scored}' não encontrada para {equipe}.")
         return None
     try:
-        media = float(df[col_scored].iloc[0])
-        com_gols = int(df["% 1st"].iloc[0])  # Exibindo sem casas decimais
-        sem_gols = int(df["% 2nd"].iloc[0])  # Exibindo sem casas decimais
+        media = float(df[col_scored].iloc[0])  # Acesso direto à primeira linha da coluna 'Scored'
+        com_gols = float(df["1st half"].iloc[0].strip('%'))  # Converte a porcentagem para float
+        sem_gols = float(df["2nd half"].iloc[0].strip('%'))  # Converte a porcentagem para float
         return media, com_gols, sem_gols
     except Exception as e:
         st.error(f"Erro ao calcular métricas para {equipe}: {e}")
@@ -298,8 +298,8 @@ if not df_home.empty:
     if resultado_home:
         media_home, com_gols_home, sem_gols_home = resultado_home
         col_a.metric(f"{equipe_home} - Scored", f"{media_home:.2f}")
-        col_b.metric(f"{equipe_home} - 1st", f"{com_gols_home}%")
-        col_c.metric(f"{equipe_home} - 2nds", f"{sem_gols_home}%")
+        col_b.metric(f"{equipe_home} - 1st", f"{com_gols_home:.2f}%")
+        col_c.metric(f"{equipe_home} - 2nds", f"{sem_gols_home:.2f}%")
 else:
     st.info(f"Sem dados para o time da casa ({equipe_home}).")
 
@@ -310,10 +310,11 @@ if not df_away.empty:
     if resultado_away:
         media_away, com_gols_away, sem_gols_away = resultado_away
         col_d.metric(f"{equipe_away} - Scored", f"{media_away:.2f}")
-        col_e.metric(f"{equipe_away} - 1st", f"{com_gols_away}%")
-        col_f.metric(f"{equipe_away} - 2nds", f"{sem_gols_away}%")
+        col_e.metric(f"{equipe_away} - 1st", f"{com_gols_away:.2f}%")
+        col_f.metric(f"{equipe_away} - 2nds", f"{sem_gols_away:.2f}%")
 else:
     st.info(f"Sem dados para o time visitante ({equipe_away}).")
+
 
     st.markdown("### 📌 Frequência Gols HT")
 
