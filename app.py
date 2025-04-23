@@ -249,32 +249,33 @@ with tabs[6]:
 # ABA 8 - Resumo     
 with tabs[7]:
     st.markdown("### 🏠 Home")
-
-    home_fav_row = aba1_df[aba1_df['Time'] == equipe_home]
-    if not home_fav_row.empty:
-        row = home_fav_row.iloc[0]
+    
+    # Verifica se há dados filtrados do time da casa
+    if not home_filtered.empty:
+        row = home_filtered.iloc[0]
         col_a, col_b, col_c, col_d, col_e = st.columns(5)
         col_a.metric("Liga", row["Liga"])
-        col_b.metric("PIH", row["PIH"])
-        col_c.metric("PPG Casa", row["PPG_Home"])
-        col_d.metric("Odd Justa", row["Odd_Justa_MO"])
-        col_e.metric("Rank Casa", row["Rank_Home"])
+        col_b.metric("PIH", row.get("PIH", "N/A"))  # Usa .get para evitar KeyError se faltar a coluna
+        col_c.metric("PPG Casa", row.get("PPG_Home", "N/A"))
+        col_d.metric("Odd Justa", row.get("Odd_Justa_MO", "N/A"))
+        col_e.metric("Rank Casa", row.get("Rank_Home", "N/A"))
     else:
         st.info("Informações do time da casa como favorito não disponíveis.")
-
+    
     st.markdown("### 🚌 Away")
-
-    away_fav_row = aba1_df[aba1_df['Time'] == equipe_away]
-    if not away_fav_row.empty:
-        row = away_fav_row.iloc[0]
+    
+    # Verifica se há dados filtrados do time visitante
+    if not away_filtered.empty:
+        row = away_filtered.iloc[0]
         col_a, col_b, col_c, col_d, col_e = st.columns(5)
         col_a.metric("Liga", row["Liga"])
-        col_b.metric("PIA", row["PIA"])
-        col_c.metric("PPG Fora", row["PPG_Away"])
-        col_d.metric("Odd Justa", row["Odd_Justa_MO"])
-        col_e.metric("Rank Fora", row["Rank_Away"])
+        col_b.metric("PIA", row.get("PIA", "N/A"))
+        col_c.metric("PPG Fora", row.get("PPG_Away", "N/A"))
+        col_d.metric("Odd Justa", row.get("Odd_Justa_MO", "N/A"))
+        col_e.metric("Rank Fora", row.get("Rank_Away", "N/A"))
     else:
         st.info("Informações do time visitante não disponíveis.")
+
 
     st.markdown("### ⚽ Marca Primeiro")
 
