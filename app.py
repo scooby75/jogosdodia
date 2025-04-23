@@ -164,24 +164,29 @@ with tabs[5]:
 # ABA 7 - Goals HT
 import plotly.graph_objects as go
 
+import streamlit as st
+import plotly.graph_objects as go
+
+# Função para gerar barra de distribuição
+def gerar_barra_frequencia(frequencia_dict):
+    cores = {
+        "0": "#d9534f",  # vermelho
+        "1": "#20de6e",  # verde
+        "2": "#16ed48",  # azul
+        "3": "#24da1e",  # laranja
+        "4": "#56b72d"   # roxo
+    }
+
+    html = '<div style="display:flex; flex-wrap: wrap;">'
+    for gols, freq in frequencia_dict.items():
+        blocos = int(freq)
+        for _ in range(blocos):
+            html += f'<div style="width: 6px; height: 20px; background-color: {cores[gols]}; margin: 1px;"></div>'
+    html += '</div>'
+    return html
+
+# Dentro da aba 6
 with tabs[6]:
-    def gerar_barra_frequencia(frequencia_dict):
-        cores = {
-            "0": "#d9534f",  # vermelho
-            "1": "#20de6e",  # verde
-            "2": "#16ed48",  # azul
-            "3": "#24da1e",  # laranja
-            "4": "#56b72d"   # roxo
-        }
-
-        html = '<div style="display:flex; flex-wrap: wrap;">'
-        for gols, freq in frequencia_dict.items():
-            blocos = int(freq)  # 1 bloco por %
-            for _ in range(blocos):
-                html += f'<div style="width: 6px; height: 20px; background-color: {cores[gols]}; margin: 1px;"></div>'
-        html += '</div>'
-        return html
-
     # Time da casa
     home_ht = cv_home_df[cv_home_df['Team'] == equipe_home]
     if not home_ht.empty:
@@ -196,8 +201,13 @@ with tabs[6]:
 
         st.dataframe(df_home, use_container_width=True)
 
-        # Barra visual tipo uptime
-        #st.subheader(f"Distribuição de Gols - {equipe_home}")
+        # Métricas principais em caixas
+        col1, col2, col3 = st.columns(3)
+        col1.metric("Média 1T", f"{df_home['Avg'].iloc[0]:.2f}")
+        col2.metric("Com Gols", f"{df_home['% Com Gols'].iloc[0]}%")
+        col3.metric("Sem Gols", f"{df_home['% Sem Gols'].iloc[0]}%")
+
+        # Barra visual de distribuição de gols
         freq_dict_home = {g: df_home[g].iloc[0] for g in ["0", "1", "2", "3", "4"]}
         st.markdown(gerar_barra_frequencia(freq_dict_home), unsafe_allow_html=True)
 
@@ -214,7 +224,13 @@ with tabs[6]:
 
         st.dataframe(df_away, use_container_width=True)
 
-        #st.subheader(f"Distribuição de Gols - {equipe_away}")
+        # Métricas principais em caixas
+        col1, col2, col3 = st.columns(3)
+        col1.metric("Média 1T", f"{df_away['Avg'].iloc[0]:.2f}")
+        col2.metric("Com Gols", f"{df_away['% Com Gols'].iloc[0]}%")
+        col3.metric("Sem Gols", f"{df_away['% Sem Gols'].iloc[0]}%")
+
+        # Barra visual de distribuição de gols
         freq_dict_away = {g: df_away[g].iloc[0] for g in ["0", "1", "2", "3", "4"]}
         st.markdown(gerar_barra_frequencia(freq_dict_away), unsafe_allow_html=True)
 
@@ -222,12 +238,6 @@ with tabs[6]:
         st.warning("Dados não encontrados para o time visitante.")
 
             
-import plotly.graph_objects as go
-
-import plotly.graph_objects as go
-
-import streamlit as st
-
 with tabs[7]:
     st.markdown("### ⚽ Marca Primeiro")
     col1, col2 = st.columns(2)
