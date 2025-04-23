@@ -204,12 +204,12 @@ with tabs[6]:
 
         try:
             media = float(df_home["Avg"].iloc[0])
-            com_gols = df_home["% Com Gols"].iloc[0]
-            sem_gols = df_home["% Sem Gols"].iloc[0]
+            com_gols = int(df_home["% Com Gols"].iloc[0])  # Exibindo sem casas decimais
+            sem_gols = int(df_home["% Sem Gols"].iloc[0])  # Exibindo sem casas decimais
 
             col_a.metric("Média 1T", f"{media:.2f}")
-            col_b.metric("Com Gols", com_gols)
-            col_c.metric("Sem Gols", sem_gols)
+            col_b.metric("Com Gols", f"{com_gols}%")
+            col_c.metric("Sem Gols", f"{sem_gols}%")
         except Exception as e:
             st.error(f"Erro ao calcular métricas: {e}")
 
@@ -229,21 +229,22 @@ with tabs[6]:
         freq_dict_away = {g: df_away[g].iloc[0] for g in ["0", "1", "2", "3", "4"]}
         st.markdown(gerar_barra_frequencia(freq_dict_away), unsafe_allow_html=True)
 
-            col_a, col_b, col_c = st.columns(3)
+        col_a, col_b, col_c = st.columns(3)
 
         try:
-            media = float(df_home["Avg"].iloc[0])
-            com_gols = df_home["% Com Gols"].iloc[0]
-            sem_gols = df_home["% Sem Gols"].iloc[0]
+            media = float(df_away["Avg"].iloc[0])
+            com_gols = int(df_away["% Com Gols"].iloc[0])  # Exibindo sem casas decimais
+            sem_gols = int(df_away["% Sem Gols"].iloc[0])  # Exibindo sem casas decimais
 
             col_a.metric("Média 1T", f"{media:.2f}")
-            col_b.metric("Com Gols", com_gols)
-            col_c.metric("Sem Gols", sem_gols)
+            col_b.metric("Com Gols", f"{com_gols}%")
+            col_c.metric("Sem Gols", f"{sem_gols}%")
         except Exception as e:
             st.error(f"Erro ao calcular métricas: {e}")
 
     else:
         st.warning("Dados não encontrados para o time visitante.")
+
 
 # ABA 8 - Resumo     
 
