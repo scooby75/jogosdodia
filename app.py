@@ -201,13 +201,18 @@ with tabs[6]:
         st.markdown(gerar_barra_frequencia(freq_dict_home), unsafe_allow_html=True)
 
         col_a, col_b, col_c = st.columns(3)
-        media = df_home["Avg"].iloc[0]
-        com_gols = df_home["% Com Gols"].iloc[0]
-        sem_gols = df_home["% Sem Gols"].iloc[0]
 
-        col_a.metric("Média 1T", f"{media:.2f}")
-        col_b.metric("Com Gols", com_gols)
-        col_c.metric("Sem Gols", sem_gols)
+        try:
+            media = float(df_home["Avg"].iloc[0])
+            com_gols = df_home["% Com Gols"].iloc[0]
+            sem_gols = df_home["% Sem Gols"].iloc[0]
+
+            col_a.metric("Média 1T", f"{media:.2f}")
+            col_b.metric("Com Gols", com_gols)
+            col_c.metric("Sem Gols", sem_gols)
+        except Exception as e:
+            st.error(f"Erro ao calcular métricas: {e}")
+
     else:
         st.warning("Dados não encontrados para o time da casa.")
 
