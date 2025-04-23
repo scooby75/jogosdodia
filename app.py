@@ -268,56 +268,12 @@ with tabs[7]:
         else:
             st.info("Sem dados.")
 
-st.markdown("### ⏱️ Frequência Gols 1º e 2º Tempo")
-goals_half_filtered = goals_half_df[goals_half_df['Team'].isin([equipe_home, equipe_away])]
-
-# Exibindo a tabela de dados filtrados, se houver dados
-if not goals_half_filtered.empty:
-    st.dataframe(goals_half_filtered[['League_Name', 'Team', 'Scored', '1st half', '2nd half']], use_container_width=True)
-else:
-    st.info("Sem dados.")
-
-# Função para verificar e calcular as métricas
-def calcular_metricas(df, equipe, col_scored='Scored'):
-    # Verificar as colunas do DataFrame
-    st.write(f"Colunas de {equipe}: {df.columns.tolist()}")
-    
-    if col_scored not in df.columns:
-        st.error(f"Coluna '{col_scored}' não encontrada para {equipe}.")
-        return None
-    try:
-        media = float(df[col_scored].iloc[0])  # Acesso direto à primeira linha da coluna 'Scored'
-        com_gols = float(df["1st half"].iloc[0].strip('%'))  # Converte a porcentagem para float
-        sem_gols = float(df["2nd half"].iloc[0].strip('%'))  # Converte a porcentagem para float
-        return media, com_gols, sem_gols
-    except Exception as e:
-        st.error(f"Erro ao calcular métricas para {equipe}: {e}")
-        return None
-
-# Exibindo métricas para o time da casa (Home)
-if not df_home.empty:
-    col_a, col_b, col_c = st.columns(3)
-    resultado_home = calcular_metricas(df_home, equipe_home)
-    if resultado_home:
-        media_home, com_gols_home, sem_gols_home = resultado_home
-        col_a.metric(f"{equipe_home} - Scored", f"{media_home:.2f}")
-        col_b.metric(f"{equipe_home} - 1st", f"{com_gols_home:.2f}%")
-        col_c.metric(f"{equipe_home} - 2nds", f"{sem_gols_home:.2f}%")
-else:
-    st.info(f"Sem dados para o time da casa ({equipe_home}).")
-
-# Exibindo métricas para o time visitante (Away)
-if not df_away.empty:
-    col_d, col_e, col_f = st.columns(3)
-    resultado_away = calcular_metricas(df_away, equipe_away)
-    if resultado_away:
-        media_away, com_gols_away, sem_gols_away = resultado_away
-        col_d.metric(f"{equipe_away} - Scored", f"{media_away:.2f}")
-        col_e.metric(f"{equipe_away} - 1st", f"{com_gols_away:.2f}%")
-        col_f.metric(f"{equipe_away} - 2nds", f"{sem_gols_away:.2f}%")
-else:
-    st.info(f"Sem dados para o time visitante ({equipe_away}).")
-
+    st.markdown("### ⏱️ Frequência Gols 1º e 2º Tempo")
+    goals_half_filtered = goals_half_df[goals_half_df['Team'].isin([equipe_home, equipe_away])]
+    if not goals_half_filtered.empty:
+        st.dataframe(goals_half_filtered[['League_Name', 'Team', 'Scored', '1st half', '2nd half']], use_container_width=True)
+    else:
+        st.info("Sem dados.")
 
     st.markdown("### 📌 Frequência Gols HT")
 
