@@ -318,7 +318,6 @@ with tabs[7]:
     else:
         st.info("Sem dados.")
 
-
     # Exibindo Frequência de Gols no 1º Tempo (barra gráfica)
     st.markdown("### 📌 Frequência Gols HT")
 
