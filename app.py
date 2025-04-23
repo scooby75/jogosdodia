@@ -254,7 +254,7 @@ with tabs[7]:
     if not home_filtered.empty:
         row = home_filtered.iloc[0]
         col_a, col_b, col_c, col_d, col_e = st.columns(5)
-        col_a.metric("Liga", row["Liga"])
+        #col_a.metric("Liga", row["Liga"])
         col_b.metric("PIH", row.get("PIH", "N/A"))  # Usa .get para evitar KeyError se faltar a coluna
         col_c.metric("PPG Casa", row.get("PPG_Home", "N/A"))
         col_d.metric("Odd Justa", row.get("Odd_Justa_MO", "N/A"))
@@ -268,7 +268,7 @@ with tabs[7]:
     if not away_filtered.empty:
         row = away_filtered.iloc[0]
         col_a, col_b, col_c, col_d, col_e = st.columns(5)
-        col_a.metric("Liga", row["Liga"])
+        #col_a.metric("Liga", row["Liga"])
         col_b.metric("PIA", row.get("PIA", "N/A"))
         col_c.metric("PPG Fora", row.get("PPG_Away", "N/A"))
         col_d.metric("Odd Justa", row.get("Odd_Justa_MO", "N/A"))
