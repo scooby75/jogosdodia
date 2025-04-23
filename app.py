@@ -313,7 +313,7 @@ with tabs[7]:
                 "0": "0"
             })[["Team", "Avg", "0", "1", "2", "3", "4", "Total_Jogos", "% Com Gols", "% Sem Gols", "Classificação Ofensiva"]]
 
-            st.dataframe(df_home, use_container_width=True)
+            #st.dataframe(df_home, use_container_width=True)
 
             # Métricas
             row = df_home.iloc[0]
@@ -355,7 +355,7 @@ with tabs[7]:
                 "0.1": "0", "1.1": "1", "2.1": "2", "3.1": "3", "4+.1": "4"
             })[["Team", "Avg", "0", "1", "2", "3", "4", "Total_Jogos", "% Com Gols", "% Sem Gols", "Classificação Ofensiva"]]
 
-            st.dataframe(df_away, use_container_width=True)
+            #st.dataframe(df_away, use_container_width=True)
 
             # Métricas
             row = df_away.iloc[0]
