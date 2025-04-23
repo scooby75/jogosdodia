@@ -251,7 +251,6 @@ with tabs[6]:
 with tabs[7]:
     st.markdown("### ⚽ Marca Primeiro")
     
-    # Dividindo em duas colunas
     col1, col2 = st.columns(2)
 
     # Time da Casa
@@ -259,37 +258,15 @@ with tabs[7]:
         st.markdown(f"**{equipe_home} (Casa)**")
         stats_home_fg = home_fg_df[home_fg_df['Team_Home'] == equipe_home]
         if not stats_home_fg.empty:
-            row_home = stats_home_fg.iloc[0]
-            
-            try:
-                media_home = float(str(row_home['Avg']).replace(',', '.'))
-            except (ValueError, TypeError):
-                media_home = 0.0
+            row = stats_home_fg.iloc[0]
+            partidas = row['Matches']
+            primeiro_gol = row['First_Gol']
+            total_gols = row['Goals']
 
-            try:
-                com_gols_val_home = int(round(float(str(row_home.get('% Com Gols', '0%')).replace('%', '').replace(',', '.'))))
-                com_gols_home = f"{com_gols_val_home}%"
-            except:
-                com_gols_home = "0%"
-
-            try:
-                sem_gols_val_home = int(round(float(str(row_home.get('% Sem Gols', '0%')).replace('%', '').replace(',', '.'))))
-                sem_gols_home = f"{sem_gols_val_home}%"
-            except:
-                sem_gols_home = "0%"
-
-            try:
-                primeiro_gol_home = int(round(float(str(row_home.get('% 1º Gol', '0%')).replace('%', '').replace(',', '.'))))
-                primeiro_gol_home_str = f"{primeiro_gol_home}%"
-            except:
-                primeiro_gol_home_str = "0%"
-
-            col_a, col_b, col_c, col_d = st.columns(4)
-            col_a.metric("Média 1T (Casa)", f"{media_home:.2f}")
-            col_b.metric("Com Gols (Casa)", com_gols_home)
-            col_c.metric("Sem Gols (Casa)", sem_gols_home)
-            col_d.metric("1º Gol (Casa)", primeiro_gol_home_str)
-
+            col_a, col_b, col_c = st.columns(3)
+            col_a.metric("Partidas", partidas)
+            col_b.metric("1º Gol", primeiro_gol)
+            col_c.metric("Total de Gols", total_gols)
         else:
             st.info("Sem dados.")
 
@@ -298,37 +275,15 @@ with tabs[7]:
         st.markdown(f"**{equipe_away} (Fora)**")
         stats_away_fg = away_fg_df[away_fg_df['Team_Away'] == equipe_away]
         if not stats_away_fg.empty:
-            row_away = stats_away_fg.iloc[0]
-            
-            try:
-                media_away = float(str(row_away['Avg']).replace(',', '.'))
-            except (ValueError, TypeError):
-                media_away = 0.0
+            row = stats_away_fg.iloc[0]
+            partidas = row['Matches']
+            primeiro_gol = row['First_Gol']
+            total_gols = row['Goals']
 
-            try:
-                com_gols_val_away = int(round(float(str(row_away.get('% Com Gols', '0%')).replace('%', '').replace(',', '.'))))
-                com_gols_away = f"{com_gols_val_away}%"
-            except:
-                com_gols_away = "0%"
-
-            try:
-                sem_gols_val_away = int(round(float(str(row_away.get('% Sem Gols', '0%')).replace('%', '').replace(',', '.'))))
-                sem_gols_away = f"{sem_gols_val_away}%"
-            except:
-                sem_gols_away = "0%"
-
-            try:
-                primeiro_gol_away = int(round(float(str(row_away.get('% 1º Gol', '0%')).replace('%', '').replace(',', '.'))))
-                primeiro_gol_away_str = f"{primeiro_gol_away}%"
-            except:
-                primeiro_gol_away_str = "0%"
-
-            col_a, col_b, col_c, col_d = st.columns(4)
-            col_a.metric("Média 1T (Fora)", f"{media_away:.2f}")
-            col_b.metric("Com Gols (Fora)", com_gols_away)
-            col_c.metric("Sem Gols (Fora)", sem_gols_away)
-            col_d.metric("1º Gol (Fora)", primeiro_gol_away_str)
-
+            col_a, col_b, col_c = st.columns(3)
+            col_a.metric("Partidas", partidas)
+            col_b.metric("1º Gol", primeiro_gol)
+            col_c.metric("Total de Gols", total_gols)
         else:
             st.info("Sem dados.")
 
