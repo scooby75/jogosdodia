@@ -279,6 +279,9 @@ else:
 
 # Função para verificar e calcular as métricas
 def calcular_metricas(df, equipe, col_scored='Scored'):
+    # Verificar as colunas do DataFrame
+    st.write(f"Colunas de {equipe}: {df.columns.tolist()}")
+    
     if col_scored not in df.columns:
         st.error(f"Coluna '{col_scored}' não encontrada para {equipe}.")
         return None
