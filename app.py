@@ -292,29 +292,32 @@ with tabs[7]:
     if not goals_half_filtered.empty:
         # Criando 4 colunas
         col1, col2, col3, col4 = st.columns(4)
-
+    
+        def format_percent(value):
+            return f"{int(round(value))}%" if isinstance(value, (int, float)) else "Sem dados"
+    
         # Home 1º Tempo
         with col1:
-            home_1st_half = goals_half_filtered[goals_half_filtered['Team'] == equipe_home]['1st half'].values[0] if equipe_home in goals_half_filtered['Team'].values else "Sem dados"
-            st.metric(f"{equipe_home} - 1º Tempo", home_1st_half)
-
+            value = goals_half_filtered[goals_half_filtered['Team'] == equipe_home]['1st half'].values[0] if equipe_home in goals_half_filtered['Team'].values else "Sem dados"
+            st.metric(f"{equipe_home} - 1º Tempo", format_percent(value))
+    
         # Home 2º Tempo
         with col2:
-            home_2nd_half = goals_half_filtered[goals_half_filtered['Team'] == equipe_home]['2nd half'].values[0] if equipe_home in goals_half_filtered['Team'].values else "Sem dados"
-            st.metric(f"{equipe_home} - 2º Tempo", home_2nd_half)
-
+            value = goals_half_filtered[goals_half_filtered['Team'] == equipe_home]['2nd half'].values[0] if equipe_home in goals_half_filtered['Team'].values else "Sem dados"
+            st.metric(f"{equipe_home} - 2º Tempo", format_percent(value))
+    
         # Away 1º Tempo
         with col3:
-            away_1st_half = goals_half_filtered[goals_half_filtered['Team'] == equipe_away]['1st half'].values[0] if equipe_away in goals_half_filtered['Team'].values else "Sem dados"
-            st.metric(f"{equipe_away} - 1º Tempo", away_1st_half)
-
+            value = goals_half_filtered[goals_half_filtered['Team'] == equipe_away]['1st half'].values[0] if equipe_away in goals_half_filtered['Team'].values else "Sem dados"
+            st.metric(f"{equipe_away} - 1º Tempo", format_percent(value))
+    
         # Away 2º Tempo
         with col4:
-            away_2nd_half = goals_half_filtered[goals_half_filtered['Team'] == equipe_away]['2nd half'].values[0] if equipe_away in goals_half_filtered['Team'].values else "Sem dados"
-            st.metric(f"{equipe_away} - 2º Tempo", away_2nd_half)
-
+            value = goals_half_filtered[goals_half_filtered['Team'] == equipe_away]['2nd half'].values[0] if equipe_away in goals_half_filtered['Team'].values else "Sem dados"
+            st.metric(f"{equipe_away} - 2º Tempo", format_percent(value))
     else:
         st.info("Sem dados.")
+
 
     # Exibindo Frequência de Gols no 1º Tempo (barra gráfica)
     st.markdown("### 📌 Frequência Gols HT")
