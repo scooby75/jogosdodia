@@ -215,7 +215,7 @@ with tabs[6]:
             "2": "2",
             "1": "1",
             "0": "0"
-        })[["Team", "Avg", "0", "1", "2", "3", "4", "Total_Jogos", "% Com Gols", "% Sem Gols", "Classificação Ofensiva"]]
+        })[["Team_Home", "Avg", "0", "1", "2", "3", "4", "Total_Jogos", "% Com Gols", "% Sem Gols", "Classificação Ofensiva"]]
 
         st.dataframe(df_home, use_container_width=True)
 
@@ -244,7 +244,7 @@ with tabs[6]:
         df_away = away_ht.rename(columns={
             "Avg..1": "Avg",
             "0.1": "0", "1.1": "1", "2.1": "2", "3.1": "3", "4+.1": "4"
-        })[["Team", "Avg", "0", "1", "2", "3", "4", "Total_Jogos", "% Com Gols", "% Sem Gols", "Classificação Ofensiva"]]
+        })[["Team_Away", "Avg", "0", "1", "2", "3", "4", "Total_Jogos", "% Com Gols", "% Sem Gols", "Classificação Ofensiva"]]
 
         st.dataframe(df_away, use_container_width=True)
 
