@@ -97,7 +97,7 @@ all_teams = sorted(set(
     home_df['Team_Home'].dropna().astype(str)) |
     set(away_df['Team_Away'].dropna().astype(str)) |
     set(away_fav_df['Team_Away_Fav'].dropna().astype(str)) |
-    set(overall_df['Team_Home'].dropna().astype(str)) |
+    set(overall_df['Team_Home_Overall'].dropna().astype(str)) |
     set(home_fg_df['Team_Home'].dropna().astype(str)) |
     set(away_fg_df['Team_Away'].dropna().astype(str)) |
     set(goal_minute_home_df['Team_Home'].dropna().astype(str)) |
@@ -117,7 +117,7 @@ equipe_away = st.sidebar.selectbox("🛫 Time Visitante:", all_teams)
 home_filtered = home_df[home_df['Team_Home'] == equipe_home][home_columns]
 away_filtered = away_df[away_df['Team_Away'] == equipe_away][away_columns]
 away_fav_filtered = away_fav_df[away_fav_df['Team_Away_Fav'] == equipe_away][away_columns]
-overall_filtered = overall_df[overall_df['Team_Home'] == equipe_home][overall_columns]
+overall_filtered = overall_df[overall_df['Team_Home_Overall'] == equipe_home][overall_columns]
 
 # ----------------------------
 # INTERFACE STREAMLIT
