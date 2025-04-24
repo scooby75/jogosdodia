@@ -459,7 +459,7 @@ with tabs[0]:
         goals_per_time_home_df['Location'] = 'Team_Home'
         goals_per_time_away_df['Location'] = 'Team_Away'
     
-        # Garantir que as colunas esperadas existem antes de filtrar
+        # Garantir que as colunas de times existem nos DataFrames
         if 'Team_Home' in goals_per_time_home_df.columns and 'Team_Away' in goals_per_time_away_df.columns:
     
             # Filtrar os dados apenas para os times selecionados
@@ -483,7 +483,7 @@ with tabs[0]:
             else:
                 st.warning("Nenhuma estatística de Gols por Tempo encontrada para os times selecionados.")
         else:
-            st.error("As colunas 'Team_Home' ou 'Team_Away' não foram encontradas nos arquivos carregados.")
+            st.error("As colunas 'Team_Home' e/ou 'Team_Away' não foram encontradas nos arquivos carregados.")
 
         
 # Executar com variável de ambiente PORT
