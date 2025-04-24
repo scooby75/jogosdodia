@@ -48,6 +48,13 @@ def goals_ht_data():
         load_csv("https://raw.githubusercontent.com/scooby75/jogosdodia/refs/heads/main/CV_Goals_HT_Away.csv")
     )
 
+@st.cache_data
+def goals_per_time_data():
+    return (
+        load_csv("https://raw.githubusercontent.com/scooby75/jogosdodia/refs/heads/main/Goals_Per_Time_Home.csv"),
+        load_csv("https://raw.githubusercontent.com/scooby75/jogosdodia/refs/heads/main/Goals_Per_Time_Away.csv")
+    )
+
 # ----------------------------
 # NORMALIZAÇÃO DE COLUNAS
 # ----------------------------
@@ -106,7 +113,7 @@ tabs = st.tabs([
 ])
 
 # ABA 1 - Home Favorito
-with tabs[0]:
+with tabs[7]:
     st.markdown("### Home")
     st.dataframe(home_filtered, use_container_width=True)
     st.markdown("### Away")
@@ -247,7 +254,7 @@ with tabs[6]:
 
 
 # ABA 8 - Resumo     
-with tabs[7]:
+with tabs[0]:
     st.markdown("### 🏠 Home")
     
     # Verifica se há dados filtrados do time da casa
@@ -430,6 +437,14 @@ with tabs[7]:
             st.markdown(gerar_barra_frequencia(freq_dict_away), unsafe_allow_html=True)
         else:
             st.warning("Dados não encontrados para o time visitante.")
+
+# ABA 9 - Goals Per Time
+with tabs[7]:
+    filtered = goals_per_time_df[goals_per_time_df['Team'].isin([equipe_home, equipe_away])]
+    if not filtered.empty:
+        st.dataframe(filtered[['League_Name', 'Team', 'GP', '0-15','16-30','31-45','46-60','61-75','76-90']], use_container_width=True)
+    else:
+        st.warning("Nenhuma estatística de Goals Half encontrada.")
 
 # Executar com variável de ambiente PORT
 if __name__ == "__main__":
