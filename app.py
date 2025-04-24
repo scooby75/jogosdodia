@@ -94,14 +94,14 @@ overall_columns = ["Liga", "PIO", "PIO_HA", "GD_Overall", "PPG_Overall", "GF_AVG
 
 # Combina todas as equipes de várias fontes
 all_teams = sorted(set(
-    home_df['Equipe'].dropna()) |
-    set(away_df['Equipe_Fora'].dropna()) |
-    set(away_fav_df['Equipe_Fora'].dropna()) |
-    set(overall_df['Equipe'].dropna()) |
+    home_df['Team_Home'].dropna()) |
+    set(away_df['Team_Away'].dropna()) |
+    set(away_fav_df['Team_Away_Fav'].dropna()) |
+    set(overall_df['Team_Home'].dropna()) |
     set(home_fg_df['Team_Home'].dropna()) |
     set(away_fg_df['Team_Away'].dropna()) |
-    set(goal_minute_home_df['Home'].dropna()) |
-    set(goal_minute_away_df['Away'].dropna()) |
+    set(goal_minute_home_df['Team_Home'].dropna()) |
+    set(goal_minute_away_df['Team_Away'].dropna()) |
     set(goals_half_df['Team'].dropna()) |
     set(goals_per_time_home_df['Team_Home'].dropna()) |
     set(goals_per_time_away_df['Team_Away'].dropna())
