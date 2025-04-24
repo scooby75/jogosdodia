@@ -1,8 +1,12 @@
+arregados e exibidos, e pequenos ajustes para manter a consistência e evitar erros:
+
+python
+Copiar
+Editar
 import streamlit as st
 import pandas as pd
 import os
 import plotly.graph_objects as go
-
 
 # Configuração da página
 st.set_page_config(page_title="Football Stats", layout="wide")
@@ -70,10 +74,12 @@ home_fg_df, away_fg_df = load_first_goal_data()
 goal_minute_home_df, goal_minute_away_df = load_goal_minute_data()
 goals_half_df = load_goals_half_data()
 cv_home_df, cv_away_df = goals_ht_data()
+goals_per_time_home_df, goals_per_time_away_df = goals_per_time_data()
 
 # Normalizar
 for df in [home_df, away_df, away_fav_df, overall_df, home_fg_df, away_fg_df,
-           goal_minute_home_df, goal_minute_away_df, goals_half_df, cv_home_df, cv_away_df]:
+           goal_minute_home_df, goal_minute_away_df, goals_half_df, cv_home_df, cv_away_df,
+           goals_per_time_home_df, goals_per_time_away_df]:
     normalize_columns(df)
 
 # ----------------------------
@@ -91,7 +97,9 @@ all_teams = sorted(set(home_df['Equipe'].dropna()) |
                    set(away_fg_df['Team_Away'].dropna()) |
                    set(goal_minute_home_df['Home'].dropna()) |
                    set(goal_minute_away_df['Away'].dropna()) |
-                   set(goals_half_df['Team'].dropna()))
+                   set(goals_half_df['Team'].dropna()) |
+                   set(goals_per_time_home_df['Team'].dropna()) |
+                   set(goals_per_time_away_df['Team'].dropna()))
 
 equipe_home = st.sidebar.selectbox("🏠 Time da Casa:", all_teams)
 equipe_away = st.sidebar.selectbox("🛫 Time Visitante:", all_teams)
@@ -104,12 +112,13 @@ away_filtered = away_df[away_df['Equipe_Fora'] == equipe_away][away_columns]
 away_fav_filtered = away_fav_df[away_fav_df['Equipe_Fora'] == equipe_away][away_columns]
 overall_filtered = overall_df[overall_df['Equipe'] == equipe_home][overall_columns]
 
+
 # ----------------------------
 # INTERFACE STREAMLIT
 # ----------------------------
 tabs = st.tabs([
     "🏠 Home", "📊 Overall", "🛫 Away",
-    "⚽ First Goal", "⏱️ Goals_Minute", "⚡ Goals HT/FT", "📌 CV HT", "🧾 Resumo"
+    "⚽ First Goal", "⏱️ Goals_Minute", "⚡ Goals HT/FT", "📌 CV HT", "🧾 Resumo", "📊 Goals Per Time"
 ])
 
 # ABA 1 - Home Favorito
@@ -439,13 +448,15 @@ with tabs[0]:
             st.warning("Dados não encontrados para o time visitante.")
 
 # ABA 9 - Goals Per Time
-with tabs[7]:
-    filtered = goals_per_time_df[goals_per_time_df['Team'].isin([equipe_home, equipe_away])]
-    if not filtered.empty:
-        st.dataframe(filtered[['League_Name', 'Team', 'GP', '0-15','16-30','31-45','46-60','61-75','76-90']], use_container_width=True)
-    else:
-        st.warning("Nenhuma estatística de Goals Half encontrada.")
-
+    with tabs[8]:
+        combined_goals_df = pd.concat([goals_per_time_home_df, goals_per_time_away_df], ignore_index=True)
+        filtered = combined_goals_df[combined_goals_df['Team'].isin([equipe_home, equipe_away])]
+        st.markdown("### Distribuição de Gols por Intervalo de Tempo")
+        if not filtered.empty:
+            st.dataframe(filtered[['League_Name', 'Team', 'GP', '0-15', '16-30', '31-45', '46-60', '61-75', '76-90']], use_container_width=True)
+        else:
+            st.warning("Nenhuma estatística de Goals Per Time encontrada para os times selecionados.")
+        
 # Executar com variável de ambiente PORT
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 10000))
