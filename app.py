@@ -456,8 +456,8 @@ with tabs[0]:
 # ABA 9 - Goals Per Time
     with tabs[8]:
         # Adicionar coluna indicando se é time da casa ou visitante
-        goals_per_time_home_df['Location'] = 'Home'
-        goals_per_time_away_df['Location'] = 'Away'
+        goals_per_time_home_df['Location'] = 'Team_Home'
+        goals_per_time_away_df['Location'] = 'Team_Away'
     
         # Garantir que as colunas esperadas existem antes de filtrar
         if 'Team_Home' in goals_per_time_home_df.columns and 'Team_Away' in goals_per_time_away_df.columns:
