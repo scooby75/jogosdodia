@@ -93,8 +93,8 @@ all_teams = sorted(set(home_df['Equipe'].dropna()) |
                    set(goal_minute_home_df['Home'].dropna()) |
                    set(goal_minute_away_df['Away'].dropna()) |
                    set(goals_half_df['Team'].dropna()) |
-                   set(goals_per_time_home_df['Team'].dropna()) |
-                   set(goals_per_time_away_df['Team'].dropna()))
+                   set(goals_per_time_home_df['Team_Home'].dropna()) |
+                   set(goals_per_time_away_df['Team_Away'].dropna()))
 
 equipe_home = st.sidebar.selectbox("🏠 Time da Casa:", all_teams)
 equipe_away = st.sidebar.selectbox("🛫 Time Visitante:", all_teams)
