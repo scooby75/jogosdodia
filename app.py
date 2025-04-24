@@ -441,7 +441,7 @@ with tabs[0]:
         st.markdown(f"**{equipe_home} (Casa)**")
         filtered_home = goals_per_time_home_df[goals_per_time_home_df['Team_Home'] == equipe_home]
         if not filtered_home.empty:
-            st.dataframe(filtered_home[['League', 'GP', 'AVG_Scored, '0-15', '16-30', '31-45', '46-60', '61-75', '76-90']], use_container_width=True)
+            st.dataframe(filtered_home[['League', 'GP', 'AVG_Scored', '0-15', '16-30', '31-45', '46-60', '61-75', '76-90']], use_container_width=True)
         else:
             st.info("Sem dados de gols por faixa de tempo para o time da casa.")
 
