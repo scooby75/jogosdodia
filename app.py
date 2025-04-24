@@ -165,8 +165,8 @@ with tabs[3]:
 
 # ABA 5 - Goals Minute
 with tabs[4]:
-    home_team_data = goal_minute_home_df[goal_minute_home_df['Home'] == equipe_home]
-    away_team_data = goal_minute_away_df[goal_minute_away_df['Away'] == equipe_away]
+    home_team_data = goal_minute_home_df[goal_minute_home_df['Team_Home'] == equipe_home]
+    away_team_data = goal_minute_away_df[goal_minute_away_df['Team_Away'] == equipe_away]
 
     if not home_team_data.empty:
         st.success(f"🏠 **{equipe_home}** marca seu primeiro gol em média aos **{home_team_data['AVG_min_scored'].values[0]:.1f} min**.")
