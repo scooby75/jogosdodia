@@ -280,22 +280,20 @@ with tabs[7]:
 # ABA 8 - Resumo     
 with tabs[0]:
     st.markdown("### 🏠 Home")
-    
-    # Verifica se há dados filtrados do time da casa
+
     if not home_filtered.empty:
         row = home_filtered.iloc[0]
         col_a, col_b, col_c, col_d, col_e = st.columns(5)
         col_b.metric("Média Gols", row.get("GF_AVG_Home", "N/A"))
-        col_a.metric("PIH", row.get("PIH", "N/A"))  # Usa .get para evitar KeyError se faltar a coluna
+        col_a.metric("PIH", row.get("PIH", "N/A"))
         col_c.metric("PPG Casa", row.get("PPG_Home", "N/A"))
         col_d.metric("Odd Justa", row.get("Odd_Justa_MO", "N/A"))
         col_e.metric("Rank Casa", row.get("Rank_Home", "N/A"))
     else:
         st.info("Informações do time da casa como favorito não disponíveis.")
-    
+
     st.markdown("### 🚌 Away")
-    
-    # Verifica se há dados filtrados do time visitante
+
     if not away_filtered.empty:
         row = away_filtered.iloc[0]
         col_a, col_b, col_c, col_d, col_e = st.columns(5)
@@ -306,7 +304,6 @@ with tabs[0]:
         col_e.metric("Rank Fora", row.get("Rank_Away", "N/A"))
     else:
         st.info("Informações do time visitante não disponíveis.")
-
 
     st.markdown("### ⚽ Marca Primeiro")
 
@@ -400,22 +397,9 @@ with tabs[0]:
             })[["Team_Home", "Avg", "0", "1", "2", "3", "4", "Total_Jogos", "% Com Gols", "% Sem Gols", "Classificação Ofensiva"]]
 
             row = df_home.iloc[0]
-            try:
-                media = float(str(row['Avg']).replace(',', '.'))
-            except (ValueError, TypeError):
-                media = 0.0
-
-            try:
-                com_gols_val = int(round(float(str(row.get('% Com Gols', '0%')).replace('%', '').replace(',', '.'))))
-                com_gols = f"{com_gols_val}%"
-            except:
-                com_gols = "0%"
-
-            try:
-                sem_gols_val = int(round(float(str(row.get('% Sem Gols', '0%')).replace('%', '').replace(',', '.'))))
-                sem_gols = f"{sem_gols_val}%"
-            except:
-                sem_gols = "0%"
+            media = float(str(row['Avg']).replace(',', '.')) if row['Avg'] else 0.0
+            com_gols = f"{int(round(float(str(row.get('% Com Gols', '0')).replace('%', '').replace(',', '.'))))}%"
+            sem_gols = f"{int(round(float(str(row.get('% Sem Gols', '0')).replace('%', '').replace(',', '.'))))}%"
 
             col_a, col_b, col_c = st.columns(3)
             col_a.metric("Média Gols", media)
@@ -435,22 +419,9 @@ with tabs[0]:
             })[["Team_Away", "Avg", "0", "1", "2", "3", "4", "Total_Jogos", "% Com Gols", "% Sem Gols", "Classificação Ofensiva"]]
 
             row = df_away.iloc[0]
-            try:
-                media = float(str(row['Avg']).replace(',', '.'))
-            except (ValueError, TypeError):
-                media = 0.0
-
-            try:
-                com_gols_val = int(round(float(str(row.get('% Com Gols', '0%')).replace('%', '').replace(',', '.'))))
-                com_gols = f"{com_gols_val}%"
-            except:
-                com_gols = "0%"
-
-            try:
-                sem_gols_val = int(round(float(str(row.get('% Sem Gols', '0%')).replace('%', '').replace(',', '.'))))
-                sem_gols = f"{sem_gols_val}%"
-            except:
-                sem_gols = "0%"
+            media = float(str(row['Avg']).replace(',', '.')) if row['Avg'] else 0.0
+            com_gols = f"{int(round(float(str(row.get('% Com Gols', '0')).replace('%', '').replace(',', '.'))))}%"
+            sem_gols = f"{int(round(float(str(row.get('% Sem Gols', '0')).replace('%', '').replace(',', '.'))))}%"
 
             col_a, col_b, col_c = st.columns(3)
             col_a.metric("Média Gols", media)
@@ -462,26 +433,26 @@ with tabs[0]:
         else:
             st.warning("Dados não encontrados para o time visitante.")
 
-     st.markdown("### ⏱️ Gols 15min")
-    
-        col1, col2 = st.columns(2)
-    
-        with col1:
-            st.markdown(f"**{equipe_home} (Casa)**")
-            filtered_home = goals_per_time_home_df[goals_per_time_home_df['Team_Home'] == equipe_home]
-            if not filtered_home.empty:
-                st.dataframe(filtered_home[['League', 'Team_Home', 'GP', '0-15', '16-30', '31-45', '46-60', '61-75', '76-90']], use_container_width=True)
-            else:
-                st.info("Sem dados de gols por faixa de tempo para o time da casa.")
-    
-        with col2:
-            st.markdown(f"**{equipe_away} (Fora)**")
-            filtered_away = goals_per_time_away_df[goals_per_time_away_df['Team_Away'] == equipe_away]
-            if not filtered_away.empty:
-                st.dataframe(filtered_away[['League', 'Team_Away', 'GP', '0-15', '16-30', '31-45', '46-60', '61-75', '76-90']], use_container_width=True)
-            else:
-                st.info("Sem dados de gols por faixa de tempo para o time visitante.")
-    
+    st.markdown("### ⏱️ Gols 15min")
+
+    col1, col2 = st.columns(2)
+
+    with col1:
+        st.markdown(f"**{equipe_home} (Casa)**")
+        filtered_home = goals_per_time_home_df[goals_per_time_home_df['Team_Home'] == equipe_home]
+        if not filtered_home.empty:
+            st.dataframe(filtered_home[['League', 'Team_Home', 'GP', '0-15', '16-30', '31-45', '46-60', '61-75', '76-90']], use_container_width=True)
+        else:
+            st.info("Sem dados de gols por faixa de tempo para o time da casa.")
+
+    with col2:
+        st.markdown(f"**{equipe_away} (Fora)**")
+        filtered_away = goals_per_time_away_df[goals_per_time_away_df['Team_Away'] == equipe_away]
+        if not filtered_away.empty:
+            st.dataframe(filtered_away[['League', 'Team_Away', 'GP', '0-15', '16-30', '31-45', '46-60', '61-75', '76-90']], use_container_width=True)
+        else:
+            st.info("Sem dados de gols por faixa de tempo para o time visitante.")
+
 # ABA 9 - Goals Per Time
     
     with tabs[8]:
