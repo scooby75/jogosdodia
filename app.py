@@ -444,13 +444,23 @@ with tabs[0]:
 
 # ABA 9 - Goals Per Time
     with tabs[8]:
+        # Adicionar coluna indicando se é time da casa ou time visitante
+        goals_per_time_home_df['Location'] = 'Home'
+        goals_per_time_away_df['Location'] = 'Away'
+        
+        # Concatenar os DataFrames, mantendo as informações do time de casa e de fora
         combined_goals_df = pd.concat([goals_per_time_home_df, goals_per_time_away_df], ignore_index=True)
+        
+        # Filtrar pelo time da casa e visitante
         filtered = combined_goals_df[combined_goals_df['Team'].isin([equipe_home, equipe_away])]
+        
         st.markdown("### Distribuição de Gols por Intervalo de Tempo")
         if not filtered.empty:
+            # Exibir o DataFrame com as colunas desejadas
             st.dataframe(filtered[['League', 'Team', 'GP', '0-15', '16-30', '31-45', '46-60', '61-75', '76-90']], use_container_width=True)
         else:
             st.warning("Nenhuma estatística de Goals Per Time encontrada para os times selecionados.")
+
         
 # Executar com variável de ambiente PORT
 if __name__ == "__main__":
