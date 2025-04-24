@@ -1,8 +1,3 @@
-arregados e exibidos, e pequenos ajustes para manter a consistência e evitar erros:
-
-python
-Copiar
-Editar
 import streamlit as st
 import pandas as pd
 import os
