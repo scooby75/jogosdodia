@@ -458,14 +458,14 @@ with tabs[0]:
         # Adicionar coluna indicando se é time da casa ou visitante
         goals_per_time_home_df['Location'] = 'Team_Home'
         goals_per_time_away_df['Location'] = 'Team_Away'
-    
+        
         # Garantir que as colunas de times existem nos DataFrames
         if 'Team_Home' in goals_per_time_home_df.columns and 'Team_Away' in goals_per_time_away_df.columns:
-    
+        
             # Filtrar os dados apenas para os times selecionados
             home_df = goals_per_time_home_df[goals_per_time_home_df['Team_Home'] == equipe_home]
             away_df = goals_per_time_away_df[goals_per_time_away_df['Team_Away'] == equipe_away]
-    
+        
             # Verificar se algum dos DataFrames não está vazio
             if not home_df.empty or not away_df.empty:
                 if not home_df.empty:
@@ -474,7 +474,7 @@ with tabs[0]:
                         home_df[['League', 'Team_Home', 'GP', '0-15', '16-30', '31-45', '46-60', '61-75', '76-90']],
                         use_container_width=True
                     )
-    
+        
                 if not away_df.empty:
                     st.subheader(f'{equipe_away} (Visitante)')
                     st.dataframe(
@@ -485,7 +485,6 @@ with tabs[0]:
                 st.warning("Nenhuma estatística de Gols por Tempo encontrada para os times selecionados.")
         else:
             st.error("As colunas 'Team_Home' e/ou 'Team_Away' não foram encontradas nos arquivos carregados.")
-
         
 # Executar com variável de ambiente PORT
 if __name__ == "__main__":
