@@ -449,7 +449,7 @@ with tabs[0]:
         st.markdown(f"**{equipe_away} (Fora)**")
         filtered_away = goals_per_time_away_df[goals_per_time_away_df['Team_Away'] == equipe_away]
         if not filtered_away.empty:
-            st.dataframe(filtered_away[['League', 'GP', '0-15', '16-30', '31-45', '46-60', '61-75', '76-90']], use_container_width=True)
+            st.dataframe(filtered_away[['League', 'GP', 'AVG_Scored', '0-15', '16-30', '31-45', '46-60', '61-75', '76-90']], use_container_width=True)
         else:
             st.info("Sem dados de gols por faixa de tempo para o time visitante.")
 
