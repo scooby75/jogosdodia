@@ -3,16 +3,23 @@ import pandas as pd
 import os
 import plotly.graph_objects as go
 
+
 # Configuração da página
 st.set_page_config(page_title="Football Stats", layout="wide")
 
 # ----------------------------
-# FUNÇÕES DE CARREGAMENTO
+# FUNÇÃO UTILITÁRIA PARA CARREGAR CSV
 # ----------------------------
 @st.cache_data
 def load_csv(url):
-    return pd.read_csv(url)
+    df = pd.read_csv(url, encoding="utf-8-sig")
+    df = df.dropna(axis=1, how='all')  # Remove colunas totalmente vazias
+    df.columns = df.columns.str.strip()  # Limpa os nomes das colunas
+    return df
 
+# ----------------------------
+# FUNÇÕES DE CARREGAMENTO DE DADOS
+# ----------------------------
 @st.cache_data
 def load_all_data():
     urls = [
@@ -52,20 +59,13 @@ def goals_ht_data():
     return [load_csv(url) for url in urls]
 
 @st.cache_data
-def load_csv(url):
-    import pandas as pd
-    df = pd.read_csv(url, encoding="utf-8-sig")
-    df = df.dropna(axis=1, how='all')  # remove colunas totalmente vazias
-    df.columns = df.columns.str.strip()  # limpa os nomes das colunas
-    return df
-
-@st.cache_data
 def goals_per_time_data():
     urls = [
         "https://raw.githubusercontent.com/scooby75/jogosdodia/refs/heads/main/Goals_Per_Time_Home.csv",
         "https://raw.githubusercontent.com/scooby75/jogosdodia/refs/heads/main/Goals_Per_Time_Away.csv"
     ]
     return [load_csv(url) for url in urls]
+
 
 
 # ----------------------------
