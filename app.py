@@ -451,7 +451,7 @@ with tabs[0]:
         home_time_df = goals_per_time_home_df[goals_per_time_home_df['Team_Home'] == equipe_home]
         if not home_time_df.empty:
             st.dataframe(
-                home_time_df[['League', 'GP', '0-15', '16-30', '31-45', '46-60', '61-75', '76-90']],
+                home_time_df[['League', 'GP',''AVG_Scored_Home',' '0-15', '16-30', '31-45', '46-60', '61-75', '76-90']],
                 use_container_width=True
             )
         else:
@@ -462,7 +462,7 @@ with tabs[0]:
         away_time_df = goals_per_time_away_df[goals_per_time_away_df['Team_Away'] == equipe_away]
         if not away_time_df.empty:
             st.dataframe(
-                away_time_df[['League', 'GP', '0-15', '16-30', '31-45', '46-60', '61-75', '76-90']],
+                away_time_df[['League', 'GP','AVG_Scored_Away', '0-15', '16-30', '31-45', '46-60', '61-75', '76-90']],
                 use_container_width=True
             )
         else:
@@ -486,14 +486,14 @@ with tabs[0]:
                 if not home_df.empty:
                     st.subheader(f'{equipe_home} (Casa)')
                     st.dataframe(
-                        home_df[['League', 'Team_Home', 'GP','AVG_Scored', '0-15', '16-30', '31-45', '46-60', '61-75', '76-90']],
+                        home_df[['League', 'Team_Home', 'GP','AVG_Scored_Home', '0-15', '16-30', '31-45', '46-60', '61-75', '76-90']],
                         use_container_width=True
                     )
     
                 if not away_df.empty:
                     st.subheader(f'{equipe_away} (Visitante)')
                     st.dataframe(
-                        away_df[['League', 'Team_Away', 'GP','AVG_Scored', '0-15', '16-30', '31-45', '46-60', '61-75', '76-90']],
+                        away_df[['League', 'Team_Away', 'GP','AVG_Scored_Away', '0-15', '16-30', '31-45', '46-60', '61-75', '76-90']],
                         use_container_width=True
                     )
             else:
