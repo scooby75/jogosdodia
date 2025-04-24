@@ -466,6 +466,7 @@ with tabs[0]:
             home_df = goals_per_time_home_df[goals_per_time_home_df['Team_Home'] == equipe_home]
             away_df = goals_per_time_away_df[goals_per_time_away_df['Team_Away'] == equipe_away]
     
+            # Verificar se algum dos DataFrames não está vazio
             if not home_df.empty or not away_df.empty:
                 if not home_df.empty:
                     st.subheader(f'{equipe_home} (Casa)')
