@@ -105,7 +105,7 @@ all_teams = sorted(set(
     set(goals_half_df['Team'].dropna().astype(str)) |
     set(goals_per_time_home_df['Team_Home'].dropna().astype(str)) |
     set(goals_per_time_away_df['Team_Away'].dropna().astype(str))
-))
+)
 
 
 equipe_home = st.sidebar.selectbox("🏠 Time da Casa:", all_teams)
