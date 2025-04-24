@@ -206,7 +206,7 @@ with tabs[6]:
         return html
 
     # Time da casa
-    home_ht = cv_home_df[cv_home_df['Team'] == equipe_home]
+    home_ht = cv_home_df[cv_home_df['Team_Home'] == equipe_home]
     if not home_ht.empty:
         df_home = home_ht.rename(columns={
             "Avg.": "Avg",
@@ -239,7 +239,7 @@ with tabs[6]:
         st.warning("Dados não encontrados para o time da casa.")
 
     # Time visitante
-    away_ht = cv_away_df[cv_away_df['Team'] == equipe_away]
+    away_ht = cv_away_df[cv_away_df['Team_Away'] == equipe_away]
     if not away_ht.empty:
         df_away = away_ht.rename(columns={
             "Avg..1": "Avg",
@@ -384,7 +384,7 @@ with tabs[0]:
     col1, col2 = st.columns(2)
 
     with col1:
-        home_ht = cv_home_df[cv_home_df['Team'] == equipe_home]
+        home_ht = cv_home_df[cv_home_df['Team_Home'] == equipe_home]
         if not home_ht.empty:
             df_home = home_ht.rename(columns={
                 "Avg.": "Avg", "4+": "4", "3": "3", "2": "2", "1": "1", "0": "0"
@@ -419,7 +419,7 @@ with tabs[0]:
             st.warning("Dados não encontrados para o time da casa.")
 
     with col2:
-        away_ht = cv_away_df[cv_away_df['Team'] == equipe_away]
+        away_ht = cv_away_df[cv_away_df['Team_Away'] == equipe_away]
         if not away_ht.empty:
             df_away = away_ht.rename(columns={
                 "Avg..1": "Avg", "0.1": "0", "1.1": "1", "2.1": "2", "3.1": "3", "4+.1": "4"
