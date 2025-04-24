@@ -94,18 +94,19 @@ overall_columns = ["Liga", "PIO", "PIO_HA", "GD_Overall", "PPG_Overall", "GF_AVG
 
 # Combina todas as equipes de várias fontes
 all_teams = sorted(set(
-    home_df['Team_Home'].dropna()) |
-    set(away_df['Team_Away'].dropna()) |
-    set(away_fav_df['Team_Away_Fav'].dropna()) |
-    set(overall_df['Team_Home'].dropna()) |
-    set(home_fg_df['Team_Home'].dropna()) |
-    set(away_fg_df['Team_Away'].dropna()) |
-    set(goal_minute_home_df['Team_Home'].dropna()) |
-    set(goal_minute_away_df['Team_Away'].dropna()) |
-    set(goals_half_df['Team'].dropna()) |
-    set(goals_per_time_home_df['Team_Home'].dropna()) |
-    set(goals_per_time_away_df['Team_Away'].dropna())
-)
+    home_df['Team_Home'].dropna().astype(str)) |
+    set(away_df['Team_Away'].dropna().astype(str)) |
+    set(away_fav_df['Team_Away_Fav'].dropna().astype(str)) |
+    set(overall_df['Team_Home'].dropna().astype(str)) |
+    set(home_fg_df['Team_Home'].dropna().astype(str)) |
+    set(away_fg_df['Team_Away'].dropna().astype(str)) |
+    set(goal_minute_home_df['Team_Home'].dropna().astype(str)) |
+    set(goal_minute_away_df['Team_Away'].dropna().astype(str)) |
+    set(goals_half_df['Team'].dropna().astype(str)) |
+    set(goals_per_time_home_df['Team_Home'].dropna().astype(str)) |
+    set(goals_per_time_away_df['Team_Away'].dropna().astype(str))
+))
+
 
 equipe_home = st.sidebar.selectbox("🏠 Time da Casa:", all_teams)
 equipe_away = st.sidebar.selectbox("🛫 Time Visitante:", all_teams)
