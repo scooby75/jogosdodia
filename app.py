@@ -388,7 +388,7 @@ with tabs[0]:
         if not home_ht.empty:
             df_home = home_ht.rename(columns={
                 "Avg.": "Avg", "4+": "4", "3": "3", "2": "2", "1": "1", "0": "0"
-            })[["Team", "Avg", "0", "1", "2", "3", "4", "Total_Jogos", "% Com Gols", "% Sem Gols", "Classificação Ofensiva"]]
+            })[["Team_Home", "Avg", "0", "1", "2", "3", "4", "Total_Jogos", "% Com Gols", "% Sem Gols", "Classificação Ofensiva"]]
 
             row = df_home.iloc[0]
             try:
@@ -423,7 +423,7 @@ with tabs[0]:
         if not away_ht.empty:
             df_away = away_ht.rename(columns={
                 "Avg..1": "Avg", "0.1": "0", "1.1": "1", "2.1": "2", "3.1": "3", "4+.1": "4"
-            })[["Team", "Avg", "0", "1", "2", "3", "4", "Total_Jogos", "% Com Gols", "% Sem Gols", "Classificação Ofensiva"]]
+            })[["Team_Away", "Avg", "0", "1", "2", "3", "4", "Total_Jogos", "% Com Gols", "% Sem Gols", "Classificação Ofensiva"]]
 
             row = df_away.iloc[0]
             try:
