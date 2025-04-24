@@ -457,7 +457,7 @@ with tabs[0]:
     
             if not home_df.empty or not away_df.empty:
                 if not home_df.empty:
-                    st.subheader(f'- {equipe_home} (Casa)')
+                    st.subheader(f'{equipe_home} (Casa)')
                     st.dataframe(
                         home_df[['League', 'Team_Home', 'GP', '0-15', '16-30', '31-45', '46-60', '61-75', '76-90']],
                         use_container_width=True
