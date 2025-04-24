@@ -442,31 +442,31 @@ with tabs[0]:
         else:
             st.warning("Dados não encontrados para o time visitante.")
 
-        st.markdown("### 🕒 Gols por Intervalos de Tempo")
+    st.markdown("### 🕒 Gols por Intervalos de Tempo")
     
-        col1, col2 = st.columns(2)
+    col1, col2 = st.columns(2)
     
-        with col1:
-            st.markdown(f"**{equipe_home} (Casa)**")
-            home_time_df = goals_per_time_home_df[goals_per_time_home_df['Team_Home'] == equipe_home]
-            if not home_time_df.empty:
-                st.dataframe(
-                    home_time_df[['League', 'Team_Home', 'GP', '0-15', '16-30', '31-45', '46-60', '61-75', '76-90']],
-                    use_container_width=True
-                )
-            else:
-                st.info("Sem dados de gols por tempo para o time da casa.")
+    with col1:
+        st.markdown(f"**{equipe_home} (Casa)**")
+        home_time_df = goals_per_time_home_df[goals_per_time_home_df['Team_Home'] == equipe_home]
+        if not home_time_df.empty:
+            st.dataframe(
+                home_time_df[['League', 'Team_Home', 'GP', '0-15', '16-30', '31-45', '46-60', '61-75', '76-90']],
+                use_container_width=True
+            )
+        else:
+            st.info("Sem dados de gols por tempo para o time da casa.")
     
-        with col2:
-            st.markdown(f"**{equipe_away} (Fora)**")
-            away_time_df = goals_per_time_away_df[goals_per_time_away_df['Team_Away'] == equipe_away]
-            if not away_time_df.empty:
-                st.dataframe(
-                    away_time_df[['League', 'Team_Away', 'GP', '0-15', '16-30', '31-45', '46-60', '61-75', '76-90']],
-                    use_container_width=True
-                )
-            else:
-                st.info("Sem dados de gols por tempo para o time visitante.")
+    with col2:
+        st.markdown(f"**{equipe_away} (Fora)**")
+        away_time_df = goals_per_time_away_df[goals_per_time_away_df['Team_Away'] == equipe_away]
+        if not away_time_df.empty:
+            st.dataframe(
+                away_time_df[['League', 'Team_Away', 'GP', '0-15', '16-30', '31-45', '46-60', '61-75', '76-90']],
+                use_container_width=True
+            )
+        else:
+            st.info("Sem dados de gols por tempo para o time visitante.")
 
 
 # ABA 9 - Goals Per Time
