@@ -456,8 +456,8 @@ with tabs[0]:
 # ABA 9 - Goals Per Time
     with tabs[8]:
         # Filtrando os dados para os times em casa e fora
-        filtered_home = goals_per_time_home_df[goals_per_time_home_df['Team'].isin([equipe_home])]
-        filtered_away = goals_per_time_away_df[goals_per_time_away_df['Team'].isin([equipe_away])]
+        filtered_home = goals_per_time_home_df[goals_per_time_home_df['Team_Home'].isin([equipe_home])]
+        filtered_away = goals_per_time_away_df[goals_per_time_away_df['Team_Away'].isin([equipe_away])]
         
         # Verificando se ambos os dataframes não estão vazios
         if not filtered_home.empty and not filtered_away.empty:
