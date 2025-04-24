@@ -114,10 +114,10 @@ equipe_away = st.sidebar.selectbox("🛫 Time Visitante:", all_teams)
 # ----------------------------
 # APLICAR FILTROS
 # ----------------------------
-home_filtered = home_df[home_df['Equipe'] == equipe_home][home_columns]
-away_filtered = away_df[away_df['Equipe_Fora'] == equipe_away][away_columns]
-away_fav_filtered = away_fav_df[away_fav_df['Equipe_Fora'] == equipe_away][away_columns]
-overall_filtered = overall_df[overall_df['Equipe'] == equipe_home][overall_columns]
+home_filtered = home_df[home_df['Team_Home'] == equipe_home][home_columns]
+away_filtered = away_df[away_df['Team_Away'] == equipe_away][away_columns]
+away_fav_filtered = away_fav_df[away_fav_df['Team_Away_Fav'] == equipe_away][away_columns]
+overall_filtered = overall_df[overall_df['Team_Home'] == equipe_home][overall_columns]
 
 # ----------------------------
 # INTERFACE STREAMLIT
