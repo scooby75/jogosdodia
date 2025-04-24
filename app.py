@@ -52,12 +52,21 @@ def goals_ht_data():
     return [load_csv(url) for url in urls]
 
 @st.cache_data
+def load_csv(url):
+    import pandas as pd
+    df = pd.read_csv(url, encoding="utf-8-sig")
+    df = df.dropna(axis=1, how='all')  # remove colunas totalmente vazias
+    df.columns = df.columns.str.strip()  # limpa os nomes das colunas
+    return df
+
+@st.cache_data
 def goals_per_time_data():
     urls = [
         "https://raw.githubusercontent.com/scooby75/jogosdodia/refs/heads/main/Goals_Per_Time_Home.csv",
         "https://raw.githubusercontent.com/scooby75/jogosdodia/refs/heads/main/Goals_Per_Time_Away.csv"
     ]
     return [load_csv(url) for url in urls]
+
 
 # ----------------------------
 # NORMALIZAÇÃO DE COLUNAS
@@ -454,33 +463,21 @@ with tabs[0]:
             st.warning("Dados não encontrados para o time visitante.")
 
 # ABA 9 - Goals Per Time
-
+    
     with tabs[8]:
-        # Carregando e limpando os DataFrames (modifique o caminho conforme seu projeto)
-        import pandas as pd
+        goals_per_time_home_df, goals_per_time_away_df = goals_per_time_data()
     
-        # Exemplo de carregamento dos arquivos (ajuste os caminhos conforme necessário)
-        goals_per_time_home_df = pd.read_csv("tema_per_time_home.csv", encoding="utf-8-sig")
-        goals_per_time_away_df = pd.read_csv("tema_per_time_away.csv", encoding="utf-8-sig")
-    
-        # Limpeza: remove colunas completamente vazias e espaços dos nomes de colunas
-        goals_per_time_home_df = goals_per_time_home_df.dropna(axis=1, how='all')
-        goals_per_time_away_df = goals_per_time_away_df.dropna(axis=1, how='all')
-    
-        goals_per_time_home_df.columns = goals_per_time_home_df.columns.str.strip()
-        goals_per_time_away_df.columns = goals_per_time_away_df.columns.str.strip()
-    
-        # Garante que os nomes dos times estejam limpos
+        # Limpeza dos nomes de times
         goals_per_time_home_df['Team_Home'] = goals_per_time_home_df['Team_Home'].astype(str).str.strip()
         goals_per_time_away_df['Team_Away'] = goals_per_time_away_df['Team_Away'].astype(str).str.strip()
     
-        # Filtrando os dados para os times em casa e fora
-        filtered_home = goals_per_time_home_df[goals_per_time_home_df['Team_Home'].isin([equipe_home])]
-        filtered_away = goals_per_time_away_df[goals_per_time_away_df['Team_Away'].isin([equipe_away])]
+        # Filtrando os dados para os times selecionados
+        filtered_home = goals_per_time_home_df[goals_per_time_home_df['Team_Home'] == equipe_home]
+        filtered_away = goals_per_time_away_df[goals_per_time_away_df['Team_Away'] == equipe_away]
     
-        # Verificando se ambos os dataframes não estão vazios
+        # Verificando se ambos os dataframes têm dados
         if not filtered_home.empty and not filtered_away.empty:
-            st.subheader("Gols por faixa de tempo")
+            st.subheader("Gols por faixa de tempo (Home / Away)")
             st.dataframe(filtered_home[['League', 'Team_Home', 'GP', '0-15', '16-30', '31-45', '46-60', '61-75', '76-90']])
             st.dataframe(filtered_away[['League', 'Team_Away', 'GP', '0-15', '16-30', '31-45', '46-60', '61-75', '76-90']],
                          use_container_width=True)
