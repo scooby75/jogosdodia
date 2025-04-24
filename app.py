@@ -442,7 +442,7 @@ with tabs[0]:
         else:
             st.warning("Dados não encontrados para o time visitante.")
 
-    st.markdown("### 🕒 Gols por Intervalos de Tempo")
+    st.markdown("### 🕒 Gols a cada 15min")
     
     col1, col2 = st.columns(2)
     
