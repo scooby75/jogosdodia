@@ -448,21 +448,31 @@ with tabs[0]:
         goals_per_time_home_df['Location'] = 'Home'
         goals_per_time_away_df['Location'] = 'Away'
     
-        # Filtrar os dados apenas para os times selecionados
-        home_df = goals_per_time_home_df[goals_per_time_home_df['Team_Home'] == equipe_home]
-        away_df = goals_per_time_away_df[goals_per_time_away_df['Team_Away'] == equipe_away]
+        # Garantir que as colunas esperadas existem antes de filtrar
+        if 'Team_Home' in goals_per_time_home_df.columns and 'Team_Away' in goals_per_time_away_df.columns:
     
-        if not home_df.empty or not away_df.empty:
-            if not home_df.empty:
-                st.subheader(f'Estatísticas de Gols por Tempo - {equipe_home} (Casa)')
-                st.dataframe(home_df[['League', 'Team_Home', 'GP', '0-15', '16-30', '31-45', '46-60', '61-75', '76-90']], use_container_width=True)
+            # Filtrar os dados apenas para os times selecionados
+            home_df = goals_per_time_home_df[goals_per_time_home_df['Team_Home'] == equipe_home]
+            away_df = goals_per_time_away_df[goals_per_time_away_df['Team_Away'] == equipe_away]
     
-            if not away_df.empty:
-                st.subheader(f'Estatísticas de Gols por Tempo - {equipe_away} (Visitante)')
-                st.dataframe(away_df[['League', 'Team_Away', 'GP', '0-15', '16-30', '31-45', '46-60', '61-75', '76-90']], use_container_width=True)
+            if not home_df.empty or not away_df.empty:
+                if not home_df.empty:
+                    st.subheader(f'Estatísticas de Gols por Tempo - {equipe_home} (Casa)')
+                    st.dataframe(
+                        home_df[['League', 'Team_Home', 'GP', '0-15', '16-30', '31-45', '46-60', '61-75', '76-90']],
+                        use_container_width=True
+                    )
+    
+                if not away_df.empty:
+                    st.subheader(f'Estatísticas de Gols por Tempo - {equipe_away} (Visitante)')
+                    st.dataframe(
+                        away_df[['League', 'Team_Away', 'GP', '0-15', '16-30', '31-45', '46-60', '61-75', '76-90']],
+                        use_container_width=True
+                    )
+            else:
+                st.warning("Nenhuma estatística de Gols por Tempo encontrada para os times selecionados.")
         else:
-            st.warning("Nenhuma estatística de Gols por Tempo encontrada para os times selecionados.")
-
+            st.error("As colunas 'Team_Home' ou 'Team_Away' não foram encontradas nos arquivos carregados.")
 
         
 # Executar com variável de ambiente PORT
