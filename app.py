@@ -448,7 +448,7 @@ with tabs[0]:
         filtered = combined_goals_df[combined_goals_df['Team'].isin([equipe_home, equipe_away])]
         st.markdown("### Distribuição de Gols por Intervalo de Tempo")
         if not filtered.empty:
-            st.dataframe(filtered[['League_Name', 'Team', 'GP', '0-15', '16-30', '31-45', '46-60', '61-75', '76-90']], use_container_width=True)
+            st.dataframe(filtered[['League', 'Team', 'GP', '0-15', '16-30', '31-45', '46-60', '61-75', '76-90']], use_container_width=True)
         else:
             st.warning("Nenhuma estatística de Goals Per Time encontrada para os times selecionados.")
         
