@@ -123,33 +123,33 @@ overall_filtered = overall_df[overall_df['Team_Home_Overall'] == equipe_home][ov
 # INTERFACE STREAMLIT
 # ----------------------------
 tabs = st.tabs([
-    "🏠 Home", "📊 Overall", "🛫 Away",
-    "⚽ First Goal", "⏱️ Goals_Minute", "⚡ Goals HT/FT", "📌 CV HT", "🧾 Resumo", "📊 Goals Per Time"
+    "🧾 Resumo", "🏠 Home", "📊 Overall", "🛫 Away",
+    "⚽ First Goal", "⏱️ Goals_Minute", "⚡ Goals HT/FT", "📌 CV HT", "📊 Goals Per Time"
 ])
 
 # ABA 1 - Home Favorito
-with tabs[7]:
+with tabs[1]:
     st.markdown("### Home")
     st.dataframe(home_filtered, use_container_width=True)
     st.markdown("### Away")
     st.dataframe(away_filtered, use_container_width=True)
 
 # ABA 2 - Home Geral
-with tabs[1]:
+with tabs[2]:
     st.markdown("### Home - Geral")
     st.dataframe(overall_filtered, use_container_width=True)
     st.markdown("### Away")
     st.dataframe(away_filtered, use_container_width=True)
 
 # ABA 3 - Away Favorito
-with tabs[2]:
+with tabs[3]:
     st.markdown("### Away - Favorito")
     st.dataframe(away_fav_filtered, use_container_width=True)
     st.markdown("### Home")
     st.dataframe(home_filtered, use_container_width=True)
 
 # ABA 4 - First Goal
-with tabs[3]:
+with tabs[4]:
     def show_team_stats(team_name, df, col_name, local):
         stats = df[df[col_name] == team_name]
         if not stats.empty:
@@ -163,7 +163,7 @@ with tabs[3]:
     show_team_stats(equipe_away, away_fg_df, 'Team_Away', 'Fora')
 
 # ABA 5 - Goals Minute
-with tabs[4]:
+with tabs[5]:
     home_team_data = goal_minute_home_df[goal_minute_home_df['Team_Home'] == equipe_home]
     away_team_data = goal_minute_away_df[goal_minute_away_df['Team_Away'] == equipe_away]
 
@@ -178,7 +178,7 @@ with tabs[4]:
         st.warning("Nenhum dado encontrado para o time visitante.")
 
 # ABA 6 - Goals Half
-with tabs[5]:
+with tabs[6]:
     filtered = goals_half_df[goals_half_df['Team'].isin([equipe_home, equipe_away])]
     if not filtered.empty:
         st.dataframe(filtered[['League_Name', 'Team', 'Scored', '1st half', '2nd half']], use_container_width=True)
@@ -187,7 +187,7 @@ with tabs[5]:
 
 # ABA 7 - Goals HT
 
-with tabs[6]:
+with tabs[7]:
     def gerar_barra_frequencia(frequencia_dict):
         cores = {
             "0": "#d9534f",  # vermelho
@@ -466,7 +466,7 @@ with tabs[0]:
             st.dataframe(filtered_away[['League', 'Team_Away', 'GP', '0-15', '16-30', '31-45', '46-60', '61-75', '76-90']],
                          use_container_width=True)
         else:
-            st.warning("Nenhuma estatística de Goals Half encontrada.")
+            st.warning("Nenhuma estatística encontrada.")
 
         
 # Executar com variável de ambiente PORT
