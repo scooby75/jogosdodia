@@ -472,6 +472,57 @@ with tabs[0]:
             st.dataframe(filtered_home[['League', 'Team_Home', 'GP', '0-15', '16-30', '31-45', '46-60', '61-75', '76-90']])
             st.dataframe(filtered_away[['League', 'Team_Away', 'GP', '0-15', '16-30', '31-45', '46-60', '61-75', '76-90']],
                          use_container_width=True)
+    
+            # Exibição das barras de frequência por tempo
+            #st.markdown("### Distribuição por Faixa de Tempo (Barras de Frequência)")
+    
+            # Função para gerar barras verticais por faixa de tempo
+            def gerar_barra_faixa_tempo(faixas_dict):
+                cores = {
+                    "0-15": "#1f77b4",
+                    "16-30": "#ff7f0e",
+                    "31-45": "#2ca02c"
+                }
+    
+                html = '<div style="display:flex; gap: 10px;">'
+                for faixa, valor in faixas_dict.items():
+                    try:
+                        blocos = int(round(float(str(valor).replace(',', '.'))))
+                    except:
+                        blocos = 0
+                    html += f'''
+                        <div style="text-align:center;">
+                            <div style="display:flex; flex-direction:column-reverse; align-items:center; height: 60px;">
+                                {''.join([f'<div style="width: 10px; height: 10px; background-color: {cores[faixa]}; margin: 1px 0;"></div>' for _ in range(blocos)])}
+                            </div>
+                            <div style="margin-top:5px; font-size:12px;">{faixa}</div>
+                        </div>
+                    '''
+                html += '</div>'
+                return html
+    
+            # Frequência Home
+            faixa_tempo_home = {
+                "0-15": filtered_home.iloc[0]["0-15"],
+                "16-30": filtered_home.iloc[0]["16-30"],
+                "31-45": filtered_home.iloc[0]["31-45"]
+            }
+    
+            # Frequência Away
+            faixa_tempo_away = {
+                "0-15": filtered_away.iloc[0]["0-15"],
+                "16-30": filtered_away.iloc[0]["16-30"],
+                "31-45": filtered_away.iloc[0]["31-45"]
+            }
+    
+            col1, col2 = st.columns(2)
+            with col1:
+                st.markdown(f"**{equipe_home} (Home)**")
+                st.markdown(gerar_barra_faixa_tempo(faixa_tempo_home), unsafe_allow_html=True)
+            with col2:
+                st.markdown(f"**{equipe_away} (Away)**")
+                st.markdown(gerar_barra_faixa_tempo(faixa_tempo_away), unsafe_allow_html=True)
+    
         else:
             st.warning("Nenhuma estatística encontrada para os times selecionados.")
 
