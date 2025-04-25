@@ -473,7 +473,19 @@ with tabs[0]:
             st.dataframe(filtered_away[['League', 'Team_Away', 'GP', '0-15', '16-30', '31-45', '46-60', '61-75', '76-90']],
                          use_container_width=True)
     
-            # Função modificada para tratar valores no formato "X - Y"
+            # Função para tratar valores no formato "X - Y" ou "X"
+            def parse_goal_value(value):
+                try:
+                    # Remove espaços e trata vírgula como ponto decimal
+                    clean_value = str(value).strip().replace(',', '.')
+                    # Se tiver hífen, pega o primeiro valor
+                    if '-' in clean_value:
+                        clean_value = clean_value.split('-')[0]
+                    return float(clean_value)
+                except:
+                    return 0.0
+    
+            # Função para gerar as barras
             def gerar_barra_faixa_tempo(faixas_dict):
                 cores = {
                     "0-15": "#1f77b4",
@@ -483,19 +495,8 @@ with tabs[0]:
     
                 html = '<div style="display:flex; gap: 10px;">'
                 for faixa, valor in faixas_dict.items():
-                    try:
-                        # Tratamento do valor (remove espaços e padroniza)
-                        valor_limpo = str(valor).strip().replace(' - ', '-').replace(' ', '')
-                        
-                        # Se houver hífen, pega o primeiro valor antes do hífen
-                        if '-' in valor_limpo and not valor_limpo.startswith('-'):
-                            valor_float = float(valor_limpo.split('-')[0])
-                        else:
-                            valor_float = float(valor_limpo)
-                        
-                        blocos = int(round(valor_float))
-                    except (ValueError, TypeError):
-                        blocos = 0  # Valor padrão se houver erro
+                    valor_float = parse_goal_value(valor)
+                    blocos = int(round(valor_float))
                     
                     html += f'''
                         <div style="text-align:center;">
@@ -508,46 +509,41 @@ with tabs[0]:
                 html += '</div>'
                 return html
     
-            # Frequência Home (com verificação de dados)
-            try:
-                faixa_tempo_home = {
-                    "0-15": filtered_home.iloc[0]["0-15"],
-                    "16-30": filtered_home.iloc[0]["16-30"],
-                    "31-45": filtered_home.iloc[0]["31-45"]
-                }
-            except (KeyError, IndexError):
-                faixa_tempo_home = {"0-15": 0, "16-30": 0, "31-45": 0}
+            # Preparando os dados
+            faixa_tempo_home = {
+                "0-15": filtered_home.iloc[0]["0-15"],
+                "16-30": filtered_home.iloc[0]["16-30"],
+                "31-45": filtered_home.iloc[0]["31-45"]
+            }
     
-            # Frequência Away (com verificação de dados)
-            try:
-                faixa_tempo_away = {
-                    "0-15": filtered_away.iloc[0]["0-15"],
-                    "16-30": filtered_away.iloc[0]["16-30"],
-                    "31-45": filtered_away.iloc[0]["31-45"]
-                }
-            except (KeyError, IndexError):
-                faixa_tempo_away = {"0-15": 0, "16-30": 0, "31-45": 0}
+            faixa_tempo_away = {
+                "0-15": filtered_away.iloc[0]["0-15"],
+                "16-30": filtered_away.iloc[0]["16-30"],
+                "31-45": filtered_away.iloc[0]["31-45"]
+            }
     
-            # Exibição das barras de frequência
+            # Exibição das barras
             st.markdown("### Distribuição por Faixa de Tempo (Barras de Frequência)")
     
             col1, col2 = st.columns(2)
             with col1:
                 st.markdown(f"**{equipe_home} (Home)**")
-                if sum([int(round(float(str(v).replace(',', '.')))) for v in faixa_tempo_home.values()]) > 0:
+                if sum(parse_goal_value(v) for v in faixa_tempo_home.values()) > 0:
                     st.markdown(gerar_barra_faixa_tempo(faixa_tempo_home), unsafe_allow_html=True)
                 else:
                     st.warning("Dados insuficientes para exibir o gráfico")
             
             with col2:
                 st.markdown(f"**{equipe_away} (Away)**")
-                if sum([int(round(float(str(v).replace(',', '.')))) for v in faixa_tempo_away.values()]) > 0:
+                if sum(parse_goal_value(v) for v in faixa_tempo_away.values()) > 0:
                     st.markdown(gerar_barra_faixa_tempo(faixa_tempo_away), unsafe_allow_html=True)
                 else:
                     st.warning("Dados insuficientes para exibir o gráfico")
     
         else:
-            st.warning("Nenhuma estatística encontrada para os times selecionados.")       
+            st.warning("Nenhuma estatística encontrada para os times selecionados.")
+
+
 # Executar com variável de ambiente PORT
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 10000))
