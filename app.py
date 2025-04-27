@@ -284,9 +284,13 @@ with tabs[0]:
     if not home_filtered.empty:
         row = home_filtered.iloc[0]
         col_a, col_b, col_c, col_d, col_e = st.columns(5)
+
+        # Adicionando emoji para "PPG Casa"
+        ppg_home = row.get("PPG_Home", "N/A")
+        ppg_emoji = "🟩" if ppg_home > 1.8 else "🟥"
         col_b.metric("Média Gols", row.get("GF_AVG_Home", "N/A"))
-        col_a.metric("PIH", row.get("PIH", "N/A"))
-        col_c.metric("PPG Casa", row.get("PPG_Home", "N/A"))
+        col_a.metric(f"PIH {ppg_emoji}", row.get("PIH", "N/A"))
+        col_c.metric(f"PPG Casa {ppg_emoji}", ppg_home)
         col_d.metric("Odd Justa", row.get("Odd_Justa_MO", "N/A"))
         col_e.metric("Rank Casa", row.get("Rank_Home", "N/A"))
     else:
@@ -297,9 +301,13 @@ with tabs[0]:
     if not away_filtered.empty:
         row = away_filtered.iloc[0]
         col_a, col_b, col_c, col_d, col_e = st.columns(5)
+
+        # Adicionando emoji para "PPG Fora"
+        ppg_away = row.get("PPG_Away", "N/A")
+        ppg_away_emoji = "🟩" if ppg_away > 1.8 else "🟥"
         col_b.metric("Média Gols", row.get("GF_AVG_Away", "N/A"))
-        col_a.metric("PIA", row.get("PIA", "N/A"))
-        col_c.metric("PPG Fora", row.get("PPG_Away", "N/A"))
+        col_a.metric(f"PIA {ppg_away_emoji}", row.get("PIA", "N/A"))
+        col_c.metric(f"PPG Fora {ppg_away_emoji}", ppg_away)
         col_d.metric("Odd Justa", row.get("Odd_Justa_MO", "N/A"))
         col_e.metric("Rank Fora", row.get("Rank_Away", "N/A"))
     else:
@@ -322,6 +330,11 @@ with tabs[0]:
             col_a.metric("Partidas", partidas)
             col_b.metric("1º Gol", primeiro_gol)
             col_c.metric("Total de Gols", total_gols)
+
+            # Adicionando emoji para 1º Gol
+            gol_emoji = "🟩" if primeiro_gol > 60 else "🟥"
+            col_b.markdown(f"1º Gol {gol_emoji}")
+
         else:
             st.info("Sem dados.")
 
@@ -338,6 +351,11 @@ with tabs[0]:
             col_a.metric("Partidas", partidas)
             col_b.metric("1º Gol", primeiro_gol)
             col_c.metric("Total de Gols", total_gols)
+
+            # Adicionando emoji para 1º Gol
+            gol_emoji = "🟩" if primeiro_gol > 60 else "🟥"
+            col_b.markdown(f"1º Gol {gol_emoji}")
+
         else:
             st.info("Sem dados.")
 
@@ -401,10 +419,13 @@ with tabs[0]:
             com_gols = f"{int(round(float(str(row.get('% Com Gols', '0')).replace('%', '').replace(',', '.'))))}%"
             sem_gols = f"{int(round(float(str(row.get('% Sem Gols', '0')).replace('%', '').replace(',', '.'))))}%"
 
+            # Adicionando emoji para Média de Gols
+            media_emoji = "🟩" if media > 0.6 else "🟥"
+
             col_a, col_b, col_c = st.columns(3)
             col_a.metric("Média Gols", media)
-            col_b.metric("Com Gols", com_gols)
-            col_c.metric("Sem Gols", sem_gols)
+            col_b.metric(f"Com Gols {media_emoji}", com_gols)
+            col_c.metric(f"Sem Gols {media_emoji}", sem_gols)
 
             freq_dict_home = {g: row[g] for g in ["0", "1", "2", "3", "4"]}
             st.markdown(gerar_barra_frequencia(freq_dict_home), unsafe_allow_html=True)
@@ -423,15 +444,39 @@ with tabs[0]:
             com_gols = f"{int(round(float(str(row.get('% Com Gols', '0')).replace('%', '').replace(',', '.'))))}%"
             sem_gols = f"{int(round(float(str(row.get('% Sem Gols', '0')).replace('%', '').replace(',', '.'))))}%"
 
+            # Adicionando emoji para Média de Gols
+            media_emoji = "🟩" if media > 0.6 else "🟥"
+
             col_a, col_b, col_c = st.columns(3)
             col_a.metric("Média Gols", media)
-            col_b.metric("Com Gols", com_gols)
-            col_c.metric("Sem Gols", sem_gols)
+            col_b.metric(f"Com Gols {media_emoji}", com_gols)
+            col_c.metric(f"Sem Gols {media_emoji}", sem_gols)
 
             freq_dict_away = {g: row[g] for g in ["0", "1", "2", "3", "4"]}
             st.markdown(gerar_barra_frequencia(freq_dict_away), unsafe_allow_html=True)
         else:
             st.warning("Dados não encontrados para o time visitante.")
+
+    st.markdown("### ⏱️ Gols 15min")
+
+    col1, col2 = st.columns(2)
+
+    with col1:
+        st.markdown(f"**{equipe_home} (Casa)**")
+        filtered_home = goals_per_time_home_df[goals_per_time_home_df['Team_Home'] == equipe_home]
+        if not filtered_home.empty:
+            st.dataframe(filtered_home[['League', 'GP', 'AVG_Scored', '0-15', '16-30', '31-45']], use_container_width=True)
+        else:
+            st.info("Sem dados de gols por faixa de tempo para o time da casa.")
+
+    with col2:
+        st.markdown(f"**{equipe_away} (Fora)**")
+        filtered_away = goals_per_time_away_df[goals_per_time_away_df['Team_Away'] == equipe_away]
+        if not filtered_away.empty:
+            st.dataframe(filtered_away[['League', 'GP', 'AVG_Scored', '0-15', '16-30', '31-45']], use_container_width=True)
+        else:
+            st.info("Sem dados de gols por faixa de tempo para o time visitante.")
+
 
     st.markdown("### ⏱️ Gols 15min")
 
