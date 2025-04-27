@@ -298,7 +298,7 @@ with tabs[0]:
         col_e.metric("Rank Casa", row.get("Rank_Home", "N/A"))
 
         # Colocando o emoji antes do nome de PPG Casa
-        st.markdown(f"{ppg_home_emoji} **PPG Casa**: {ppg_home}")
+        #st.markdown(f"{ppg_home_emoji} **PPG Casa**: {ppg_home}")
     else:
         st.info("Informações do time da casa como favorito não disponíveis.")
 
@@ -310,7 +310,7 @@ with tabs[0]:
         ppg_away = row.get("PPG_Away", 0)
         ppg_away_emoji = "🟩" if ppg_away < 1.00 else "🟥"
 
-        st.markdown(f"{ppg_away_emoji} **{equipe_away} (Visitante)**")
+        #st.markdown(f"{ppg_away_emoji} **{equipe_away} (Visitante)**")
 
         col_a, col_b, col_c, col_d, col_e = st.columns(5)
         col_b.metric("Média Gols", row.get("GF_AVG_Away", "N/A"))
