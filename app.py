@@ -378,7 +378,7 @@ with tabs[0]:
             try:
                 primeiro_gol_num = float(primeiro_gol.replace('%', ''))  # Removendo "%" antes de converter
                 # Se o time visitante marcar o 1º gol em <= 45% das vezes
-                if primeiro_gol_num <= 40:
+                if primeiro_gol_num <= 45:
                     gol_emoji = "🟩"  # Verde
                 else:
                     gol_emoji = "🟥"  # Vermelho
