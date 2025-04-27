@@ -280,10 +280,16 @@ with tabs[7]:
 # ABA 8 - Resumo     
 # ABA 8 - Resumo     
 with tabs[0]:
-    st.markdown(f"{ppg_home_emoji} **{equipe_home} (Casa)**")
-
+    # Definindo o emoji antes de usá-lo
     if not home_filtered.empty:
         row = home_filtered.iloc[0]
+        
+        # Atribuindo o emoji baseado no valor de PPG_Home
+        ppg_home = row.get("PPG_Home", 0)
+        ppg_home_emoji = "🟩" if ppg_home > 1.8 else "🟥"
+
+        st.markdown(f"{ppg_home_emoji} **{equipe_home} (Casa)**")
+
         col_a, col_b, col_c, col_d, col_e = st.columns(5)
         col_b.metric("Média Gols", row.get("GF_AVG_Home", "N/A"))
         col_a.metric("PIH", row.get("PIH", "N/A"))
@@ -291,18 +297,21 @@ with tabs[0]:
         col_d.metric("Odd Justa", row.get("Odd_Justa_MO", "N/A"))
         col_e.metric("Rank Casa", row.get("Rank_Home", "N/A"))
 
-        # Adicionando o emoji para PPG Casa
-        ppg_home = row.get("PPG_Home", 0)
-        ppg_home_emoji = "🟩" if ppg_home > 1.8 else "🟥"
         # Colocando o emoji antes do nome de PPG Casa
         st.markdown(f"{ppg_home_emoji} **PPG Casa**: {ppg_home}")
     else:
         st.info("Informações do time da casa como favorito não disponíveis.")
 
-    st.markdown(f"{ppg_away_emoji} **{equipe_away} (Visitante)**")
-
+    # Definindo o emoji para o time visitante
     if not away_filtered.empty:
         row = away_filtered.iloc[0]
+        
+        # Atribuindo o emoji baseado no valor de PPG_Away
+        ppg_away = row.get("PPG_Away", 0)
+        ppg_away_emoji = "🟩" if ppg_away < 1.00 else "🟥"
+
+        st.markdown(f"{ppg_away_emoji} **{equipe_away} (Visitante)**")
+
         col_a, col_b, col_c, col_d, col_e = st.columns(5)
         col_b.metric("Média Gols", row.get("GF_AVG_Away", "N/A"))
         col_a.metric("PIA", row.get("PIA", "N/A"))
@@ -310,13 +319,11 @@ with tabs[0]:
         col_d.metric("Odd Justa", row.get("Odd_Justa_MO", "N/A"))
         col_e.metric("Rank Fora", row.get("Rank_Away", "N/A"))
 
-        # Adicionando o emoji para PPG Fora
-        ppg_away = row.get("PPG_Away", 0)
-        ppg_away_emoji = "🟩" if ppg_away < 1.00 else "🟥"
         # Colocando o emoji antes do nome de PPG Fora
         st.markdown(f"{ppg_away_emoji} **PPG Fora**: {ppg_away}")
     else:
         st.info("Informações do time visitante não disponíveis.")
+
 
 
     st.markdown("### ⚽ Marca Primeiro")
