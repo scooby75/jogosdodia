@@ -331,7 +331,7 @@ with tabs[0]:
     
             col_a, col_b, col_c = st.columns(3)
             col_a.metric("Partidas", partidas)
-            col_b.metric("1º Gol", f"{primeiro_gol}%")  # Exibindo como porcentagem
+            col_b.metric("1º Gol", f"{primeiro_gol}")  # Exibindo como porcentagem
             col_c.metric("Total de Gols", total_gols)
     
             # Remover o símbolo "%" e converter para número
@@ -360,7 +360,7 @@ with tabs[0]:
     
             col_a, col_b, col_c = st.columns(3)
             col_a.metric("Partidas", partidas)
-            col_b.metric("1º Gol", f"{primeiro_gol}%")  # Exibindo como porcentagem
+            col_b.metric("1º Gol", f"{primeiro_gol}")  # Exibindo como porcentagem
             col_c.metric("Total de Gols", total_gols)
     
             # Remover o símbolo "%" e converter para número
