@@ -286,7 +286,7 @@ with tabs[0]:
         
         # Atribuindo o emoji baseado no valor de PPG_Home
         ppg_home = row.get("PPG_Home", 0)
-        ppg_home_emoji = "🟩" if ppg_home > 1.8 else "🟥"
+        ppg_home_emoji = "🟩" if ppg_home >= 1.8 else "🟥"
 
         st.markdown(f"{ppg_home_emoji} **{equipe_home} (Casa)**")
 
@@ -308,7 +308,7 @@ with tabs[0]:
         
         # Atribuindo o emoji baseado no valor de PPG_Away
         ppg_away = row.get("PPG_Away", 0)
-        ppg_away_emoji = "🟩" if ppg_away < 1.00 else "🟥"
+        ppg_away_emoji = "🟩" if ppg_away =< 1.00 else "🟥"
 
         st.markdown(f"{ppg_away_emoji} **{equipe_away} (Visitante)**")
 
