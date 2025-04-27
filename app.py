@@ -337,7 +337,7 @@ with tabs[0]:
             # Adicionando o emoji para 1º Gol
             try:
                 primeiro_gol_num = float(primeiro_gol)
-                gol_emoji = "🟩" if primeiro_gol_num > 60% else "🟥"
+                gol_emoji = "🟩" if primeiro_gol_num > 60 else "🟥"  # Ajuste para 60%
             except ValueError:
                 gol_emoji = "🟨"  # Caso o valor não seja numérico, emoji de alerta
             st.markdown(f"1º Gol {gol_emoji}")
@@ -361,7 +361,7 @@ with tabs[0]:
             # Adicionando o emoji para 1º Gol
             try:
                 primeiro_gol_num = float(primeiro_gol)
-                gol_emoji = "🟩" if primeiro_gol_num < 40% else "🟥"
+                gol_emoji = "🟩" if primeiro_gol_num < 40 else "🟥"  # Ajuste para 40%
             except ValueError:
                 gol_emoji = "🟨"  # Caso o valor não seja numérico, emoji de alerta
             st.markdown(f"1º Gol {gol_emoji}")
@@ -460,27 +460,7 @@ with tabs[0]:
         else:
             st.warning("Dados não encontrados para o time visitante.")
 
-    st.markdown("### ⏱️ Gols 15min")
-
-    col1, col2 = st.columns(2)
-
-    with col1:
-        st.markdown(f"**{equipe_home} (Casa)**")
-        filtered_home = goals_per_time_home_df[goals_per_time_home_df['Team_Home'] == equipe_home]
-        if not filtered_home.empty:
-            st.dataframe(filtered_home[['League', 'GP', 'AVG_Scored', 'Goals_0_15', 'Goals_16_30', 'Goals_31_45', 'Goals_46_60', 'Goals_61_75', 'Goals_76_90']])
-        else:
-            st.warning(f"Não foram encontrados dados para {equipe_home}.")
-
-    with col2:
-        st.markdown(f"**{equipe_away} (Fora)**")
-        filtered_away = goals_per_time_away_df[goals_per_time_away_df['Team_Away'] == equipe_away]
-        if not filtered_away.empty:
-            st.dataframe(filtered_away[['League', 'GP', 'AVG_Scored', 'Goals_0_15', 'Goals_16_30', 'Goals_31_45', 'Goals_46_60', 'Goals_61_75', 'Goals_76_90']])
-        else:
-            st.warning(f"Não foram encontrados dados para {equipe_away}.")
-
-
+    # Gols 15min
     st.markdown("### ⏱️ Gols 15min")
 
     col1, col2 = st.columns(2)
@@ -500,6 +480,7 @@ with tabs[0]:
             st.dataframe(filtered_away[['League', 'GP', 'AVG_Scored', '0-15', '16-30', '31-45']], use_container_width=True)
         else:
             st.info("Sem dados de gols por faixa de tempo para o time visitante.")
+
 
 # ABA 9 - Goals Per Time
     
