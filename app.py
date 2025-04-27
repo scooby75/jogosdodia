@@ -326,7 +326,7 @@ with tabs[0]:
         if not stats_home_fg.empty:
             row = stats_home_fg.iloc[0]
             partidas = row['Matches']
-            primeiro_gol = row['First_Gol']  # Este valor já é em % (por exemplo: 60 para 60%)
+            primeiro_gol = row['First_Gol']  # Este valor tem o símbolo "%" (ex: "62%")
             total_gols = row['Goals']
     
             col_a, col_b, col_c = st.columns(3)
@@ -334,9 +334,9 @@ with tabs[0]:
             col_b.metric("1º Gol", f"{primeiro_gol}%")  # Exibindo como porcentagem
             col_c.metric("Total de Gols", total_gols)
     
-            # Verificando o valor da porcentagem diretamente
+            # Remover o símbolo "%" e converter para número
             try:
-                primeiro_gol_num = float(primeiro_gol)  # Mantemos o valor em porcentagem
+                primeiro_gol_num = float(primeiro_gol.replace('%', ''))  # Removendo "%" antes de converter
                 # Se o time da casa marcar o 1º gol em >= 60% das vezes
                 if primeiro_gol_num >= 60:
                     gol_emoji = "🟩"  # Verde
@@ -355,7 +355,7 @@ with tabs[0]:
         if not stats_away_fg.empty:
             row = stats_away_fg.iloc[0]
             partidas = row['Matches']
-            primeiro_gol = row['First_Gol']  # Este valor já é em % (por exemplo: 60 para 60%)
+            primeiro_gol = row['First_Gol']  # Este valor tem o símbolo "%" (ex: "50%")
             total_gols = row['Goals']
     
             col_a, col_b, col_c = st.columns(3)
@@ -363,9 +363,9 @@ with tabs[0]:
             col_b.metric("1º Gol", f"{primeiro_gol}%")  # Exibindo como porcentagem
             col_c.metric("Total de Gols", total_gols)
     
-            # Verificando o valor da porcentagem diretamente
+            # Remover o símbolo "%" e converter para número
             try:
-                primeiro_gol_num = float(primeiro_gol)  # Mantemos o valor em porcentagem
+                primeiro_gol_num = float(primeiro_gol.replace('%', ''))  # Removendo "%" antes de converter
                 # Se o time visitante marcar o 1º gol em <= 40% das vezes
                 if primeiro_gol_num <= 40:
                     gol_emoji = "🟩"  # Verde
@@ -377,6 +377,7 @@ with tabs[0]:
             st.markdown(f"1º Gol {gol_emoji}")
         else:
             st.info("Sem dados.")
+
 
     st.markdown("### ⏱️ Frequência Gols 1º e 2º Tempo")
 
