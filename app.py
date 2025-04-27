@@ -525,22 +525,42 @@ with tabs[0]:
 
     # Gols 15min
     st.markdown("### ⏱️ Gols 15min")
-
+    
     col1, col2 = st.columns(2)
-
+    
     with col1:
-        st.markdown(f"**{equipe_home} (Casa)**")
+        # Filtrando os dados do time da casa
         filtered_home = goals_per_time_home_df[goals_per_time_home_df['Team_Home'] == equipe_home]
         if not filtered_home.empty:
-            st.dataframe(filtered_home[['League', 'GP', 'AVG_Scored', '0-15', '16-30', '31-45']], use_container_width=True)
+            # Remover a parte de texto (" min.") da coluna AVG_Scored e converter para numérico
+            avg_scored_home = filtered_home['AVG_Scored'].str.extract('(\d+)').astype(float).values[0]
+            
+            # Verificando se o valor é válido
+            if pd.isna(avg_scored_home):
+                st.warning("O valor de AVG_Scored para o time da casa é inválido.")
+            else:
+                # Definindo o ícone com base no valor de AVG_Scored
+                home_icon = "🟩" if avg_scored_home <= 45 else "🟥"
+                st.markdown(f"{home_icon} **{equipe_home} (Casa)**")
+                st.dataframe(filtered_home[['League', 'GP', 'AVG_Scored', '0-15', '16-30', '31-45']], use_container_width=True)
         else:
             st.info("Sem dados de gols por faixa de tempo para o time da casa.")
-
+    
     with col2:
-        st.markdown(f"**{equipe_away} (Fora)**")
+        # Filtrando os dados do time visitante
         filtered_away = goals_per_time_away_df[goals_per_time_away_df['Team_Away'] == equipe_away]
         if not filtered_away.empty:
-            st.dataframe(filtered_away[['League', 'GP', 'AVG_Scored', '0-15', '16-30', '31-45']], use_container_width=True)
+            # Remover a parte de texto (" min.") da coluna AVG_Scored e converter para numérico
+            avg_scored_away = filtered_away['AVG_Scored'].str.extract('(\d+)').astype(float).values[0]
+            
+            # Verificando se o valor é válido
+            if pd.isna(avg_scored_away):
+                st.warning("O valor de AVG_Scored para o time visitante é inválido.")
+            else:
+                # Definindo o ícone com base no valor de AVG_Scored
+                away_icon = "🟥" if avg_scored_away <= 45 else "🟩"
+                st.markdown(f"{away_icon} **{equipe_away} (Fora)**")
+                st.dataframe(filtered_away[['League', 'GP', 'AVG_Scored', '0-15', '16-30', '31-45']], use_container_width=True)
         else:
             st.info("Sem dados de gols por faixa de tempo para o time visitante.")
 
@@ -549,35 +569,23 @@ with tabs[0]:
     
     with tabs[8]:
         goals_per_time_home_df, goals_per_time_away_df = goals_per_time_data()
-        
+    
         # Limpeza dos nomes de times
         goals_per_time_home_df['Team_Home'] = goals_per_time_home_df['Team_Home'].astype(str).str.strip()
         goals_per_time_away_df['Team_Away'] = goals_per_time_away_df['Team_Away'].astype(str).str.strip()
-        
+    
         # Filtrando os dados para os times selecionados
         filtered_home = goals_per_time_home_df[goals_per_time_home_df['Team_Home'] == equipe_home]
         filtered_away = goals_per_time_away_df[goals_per_time_away_df['Team_Away'] == equipe_away]
-        
+    
         # Verificando se ambos os dataframes têm dados
         if not filtered_home.empty and not filtered_away.empty:
-            # Calculando o emoji para o time da casa com base na coluna AVG_Scored
-            avg_scored_home = filtered_home['AVG_Scored'].values[0]
-            home_icon = "🟩" if avg_scored_home <= 45 else "🟥"
-    
-            # Calculando o emoji para o time visitante com base na coluna AVG_Scored
-            avg_scored_away = filtered_away['AVG_Scored'].values[0]
-            away_icon = "🟥" if avg_scored_away <= 45 else "🟩"
-    
-            # Exibindo o nome das equipes com os ícones
-            st.subheader(f"{home_icon} **{equipe_home} (Casa)**")
+            st.subheader("Gols por faixa de tempo (Home / Away)")
             st.dataframe(filtered_home[['League', 'Team_Home', 'GP', '0-15', '16-30', '31-45', '46-60', '61-75', '76-90']])
-    
-            st.subheader(f"{away_icon} **{equipe_away} (Visitante)**")
             st.dataframe(filtered_away[['League', 'Team_Away', 'GP', '0-15', '16-30', '31-45', '46-60', '61-75', '76-90']],
                          use_container_width=True)
         else:
             st.warning("Nenhuma estatística encontrada para os times selecionados.")
-
 
         
 # Executar com variável de ambiente PORT
