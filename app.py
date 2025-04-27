@@ -337,7 +337,7 @@ with tabs[0]:
             # Adicionando o emoji para 1º Gol
             try:
                 primeiro_gol_num = float(primeiro_gol)
-                gol_emoji = "🟩" if primeiro_gol_num > 60% else "🟥"  # Ajuste para 60%
+                gol_emoji = "🟩" if primeiro_gol_num > 0.60 else "🟥"  # Ajuste para 60%
             except ValueError:
                 gol_emoji = "🟨"  # Caso o valor não seja numérico, emoji de alerta
             st.markdown(f"1º Gol {gol_emoji}")
@@ -361,7 +361,7 @@ with tabs[0]:
             # Adicionando o emoji para 1º Gol
             try:
                 primeiro_gol_num = float(primeiro_gol)
-                gol_emoji = "🟩" if primeiro_gol_num < 40% else "🟥"  # Ajuste para 40%
+                gol_emoji = "🟩" if primeiro_gol_num < 0.40 else "🟥"  # Ajuste para 40%
             except ValueError:
                 gol_emoji = "🟨"  # Caso o valor não seja numérico, emoji de alerta
             st.markdown(f"1º Gol {gol_emoji}")
