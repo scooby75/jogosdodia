@@ -469,8 +469,8 @@ with tabs[0]:
         # Verificando se ambos os dataframes têm dados
         if not filtered_home.empty and not filtered_away.empty:
             st.subheader("Gols por faixa de tempo (Home / Away)")
-            st.dataframe(filtered_home[['League', 'Team_Home', 'GP', '0-15', '16-30', '31-45', '46-60', '61-75', '76-90']])
-            st.dataframe(filtered_away[['League', 'Team_Away', 'GP', '0-15', '16-30', '31-45', '46-60', '61-75', '76-90']],
+            st.dataframe(filtered_home[['League', 'Team_Home', 'GP', '0-15', '16-30', '31-45']])
+            st.dataframe(filtered_away[['League', 'Team_Away', 'GP', '0-15', '16-30', '31-45']],
                          use_container_width=True)
         else:
             st.warning("Nenhuma estatística encontrada para os times selecionados.")
