@@ -334,16 +334,14 @@ with tabs[0]:
             col_b.metric("1º Gol", primeiro_gol)
             col_c.metric("Total de Gols", total_gols)
     
-            # Adicionando o emoji para 1º Gol
+            # Adicionando o emoji para 1º Gol (Time da Casa)
             try:
                 primeiro_gol_num = float(primeiro_gol)
-                # Ajuste para 60% (🟩) e 40% (🟥)
-                if primeiro_gol_num > 0.60:
-                    gol_emoji = "🟩"  # 60% ou mais
-                elif primeiro_gol_num <= 0.40:
-                    gol_emoji = "🟥"  # 40% ou menos
+                # Se o time da casa marcar o 1º gol em >= 60% das vezes
+                if primeiro_gol_num >= 0.60:
+                    gol_emoji = "🟩"  # Verde
                 else:
-                    gol_emoji = "🟨"  # Entre 40% e 60%, emoji de alerta
+                    gol_emoji = "🟥"  # Vermelho
             except ValueError:
                 gol_emoji = "🟨"  # Caso o valor não seja numérico, emoji de alerta
     
@@ -365,22 +363,21 @@ with tabs[0]:
             col_b.metric("1º Gol", primeiro_gol)
             col_c.metric("Total de Gols", total_gols)
     
-            # Adicionando o emoji para 1º Gol
+            # Adicionando o emoji para 1º Gol (Time Visitante)
             try:
                 primeiro_gol_num = float(primeiro_gol)
-                # Ajuste para 60% (🟩) e 40% (🟥)
-                if primeiro_gol_num > 0.60:
-                    gol_emoji = "🟩"  # 60% ou mais
-                elif primeiro_gol_num <= 0.40:
-                    gol_emoji = "🟥"  # 40% ou menos
+                # Se o time visitante marcar o 1º gol em <= 40% das vezes
+                if primeiro_gol_num <= 0.40:
+                    gol_emoji = "🟩"  # Verde
                 else:
-                    gol_emoji = "🟨"  # Entre 40% e 60%, emoji de alerta
+                    gol_emoji = "🟥"  # Vermelho
             except ValueError:
                 gol_emoji = "🟨"  # Caso o valor não seja numérico, emoji de alerta
     
             st.markdown(f"1º Gol {gol_emoji}")
         else:
             st.info("Sem dados.")
+
     
 
     st.markdown("### ⏱️ Frequência Gols 1º e 2º Tempo")
