@@ -331,14 +331,14 @@ with tabs[0]:
     
             col_a, col_b, col_c = st.columns(3)
             col_a.metric("Partidas", partidas)
-            col_b.metric("1º Gol", primeiro_gol)
+            col_b.metric("1º Gol", f"{primeiro_gol}%")  # Exibindo como porcentagem
             col_c.metric("Total de Gols", total_gols)
     
-            # Convertendo a porcentagem para formato decimal
+            # Verificando o valor da porcentagem diretamente
             try:
-                primeiro_gol_num = float(primeiro_gol) / 100  # Convertendo para decimal (60% = 0.60)
+                primeiro_gol_num = float(primeiro_gol)  # Mantemos o valor em porcentagem
                 # Se o time da casa marcar o 1º gol em >= 60% das vezes
-                if primeiro_gol_num >= 0.60:
+                if primeiro_gol_num >= 60:
                     gol_emoji = "🟩"  # Verde
                 else:
                     gol_emoji = "🟥"  # Vermelho
@@ -360,14 +360,14 @@ with tabs[0]:
     
             col_a, col_b, col_c = st.columns(3)
             col_a.metric("Partidas", partidas)
-            col_b.metric("1º Gol", primeiro_gol)
+            col_b.metric("1º Gol", f"{primeiro_gol}%")  # Exibindo como porcentagem
             col_c.metric("Total de Gols", total_gols)
     
-            # Convertendo a porcentagem para formato decimal
+            # Verificando o valor da porcentagem diretamente
             try:
-                primeiro_gol_num = float(primeiro_gol) / 100  # Convertendo para decimal (60% = 0.60)
+                primeiro_gol_num = float(primeiro_gol)  # Mantemos o valor em porcentagem
                 # Se o time visitante marcar o 1º gol em <= 40% das vezes
-                if primeiro_gol_num <= 0.40:
+                if primeiro_gol_num <= 40:
                     gol_emoji = "🟩"  # Verde
                 else:
                     gol_emoji = "🟥"  # Vermelho
@@ -377,7 +377,6 @@ with tabs[0]:
             st.markdown(f"1º Gol {gol_emoji}")
         else:
             st.info("Sem dados.")
-
 
     st.markdown("### ⏱️ Frequência Gols 1º e 2º Tempo")
 
