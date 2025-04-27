@@ -310,7 +310,7 @@ with tabs[0]:
         ppg_away = row.get("PPG_Away", 0)
         ppg_away_emoji = "🟩" if ppg_away < 1.00 else "🟥"
 
-        #st.markdown(f"{ppg_away_emoji} **{equipe_away} (Visitante)**")
+        st.markdown(f"{ppg_away_emoji} **{equipe_away} (Visitante)**")
 
         col_a, col_b, col_c, col_d, col_e = st.columns(5)
         col_b.metric("Média Gols", row.get("GF_AVG_Away", "N/A"))
@@ -320,7 +320,7 @@ with tabs[0]:
         col_e.metric("Rank Fora", row.get("Rank_Away", "N/A"))
 
         # Colocando o emoji antes do nome de PPG Fora
-        st.markdown(f"{ppg_away_emoji} **PPG Fora**: {ppg_away}")
+        #st.markdown(f"{ppg_away_emoji} **PPG Fora**: {ppg_away}")
     else:
         st.info("Informações do time visitante não disponíveis.")
 
