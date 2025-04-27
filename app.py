@@ -319,7 +319,7 @@ with tabs[0]:
     st.markdown("### ⚽ Marca Primeiro")
 
     col1, col2 = st.columns(2)
-
+    
     with col1:
         st.markdown(f"**{equipe_home} (Casa)**")
         stats_home_fg = home_fg_df[home_fg_df['Team_Home'] == equipe_home]
@@ -328,22 +328,29 @@ with tabs[0]:
             partidas = row['Matches']
             primeiro_gol = row['First_Gol']
             total_gols = row['Goals']
-
+    
             col_a, col_b, col_c = st.columns(3)
             col_a.metric("Partidas", partidas)
             col_b.metric("1º Gol", primeiro_gol)
             col_c.metric("Total de Gols", total_gols)
-
+    
             # Adicionando o emoji para 1º Gol
             try:
                 primeiro_gol_num = float(primeiro_gol)
-                gol_emoji = "🟩" if primeiro_gol_num > 0.60 else "🟥"  # Ajuste para 60%
+                # Ajuste para 60% (🟩) e 40% (🟥)
+                if primeiro_gol_num > 0.60:
+                    gol_emoji = "🟩"  # 60% ou mais
+                elif primeiro_gol_num <= 0.40:
+                    gol_emoji = "🟥"  # 40% ou menos
+                else:
+                    gol_emoji = "🟨"  # Entre 40% e 60%, emoji de alerta
             except ValueError:
                 gol_emoji = "🟨"  # Caso o valor não seja numérico, emoji de alerta
+    
             st.markdown(f"1º Gol {gol_emoji}")
         else:
             st.info("Sem dados.")
-
+    
     with col2:
         st.markdown(f"**{equipe_away} (Fora)**")
         stats_away_fg = away_fg_df[away_fg_df['Team_Away'] == equipe_away]
@@ -352,21 +359,29 @@ with tabs[0]:
             partidas = row['Matches']
             primeiro_gol = row['First_Gol']
             total_gols = row['Goals']
-
+    
             col_a, col_b, col_c = st.columns(3)
             col_a.metric("Partidas", partidas)
             col_b.metric("1º Gol", primeiro_gol)
             col_c.metric("Total de Gols", total_gols)
-
+    
             # Adicionando o emoji para 1º Gol
             try:
                 primeiro_gol_num = float(primeiro_gol)
-                gol_emoji = "🟩" if primeiro_gol_num < 0.40 else "🟥"  # Ajuste para 40%
+                # Ajuste para 60% (🟩) e 40% (🟥)
+                if primeiro_gol_num > 0.60:
+                    gol_emoji = "🟩"  # 60% ou mais
+                elif primeiro_gol_num <= 0.40:
+                    gol_emoji = "🟥"  # 40% ou menos
+                else:
+                    gol_emoji = "🟨"  # Entre 40% e 60%, emoji de alerta
             except ValueError:
                 gol_emoji = "🟨"  # Caso o valor não seja numérico, emoji de alerta
+    
             st.markdown(f"1º Gol {gol_emoji}")
         else:
             st.info("Sem dados.")
+    
 
     st.markdown("### ⏱️ Frequência Gols 1º e 2º Tempo")
 
