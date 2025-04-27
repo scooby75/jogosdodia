@@ -326,7 +326,7 @@ with tabs[0]:
         if not stats_home_fg.empty:
             row = stats_home_fg.iloc[0]
             partidas = row['Matches']
-            primeiro_gol = row['First_Gol']
+            primeiro_gol = row['First_Gol']  # Este valor já é em % (por exemplo: 60 para 60%)
             total_gols = row['Goals']
     
             col_a, col_b, col_c = st.columns(3)
@@ -334,9 +334,9 @@ with tabs[0]:
             col_b.metric("1º Gol", primeiro_gol)
             col_c.metric("Total de Gols", total_gols)
     
-            # Adicionando o emoji para 1º Gol (Time da Casa)
+            # Convertendo a porcentagem para formato decimal
             try:
-                primeiro_gol_num = float(primeiro_gol)
+                primeiro_gol_num = float(primeiro_gol) / 100  # Convertendo para decimal (60% = 0.60)
                 # Se o time da casa marcar o 1º gol em >= 60% das vezes
                 if primeiro_gol_num >= 0.60:
                     gol_emoji = "🟩"  # Verde
@@ -355,7 +355,7 @@ with tabs[0]:
         if not stats_away_fg.empty:
             row = stats_away_fg.iloc[0]
             partidas = row['Matches']
-            primeiro_gol = row['First_Gol']
+            primeiro_gol = row['First_Gol']  # Este valor já é em % (por exemplo: 60 para 60%)
             total_gols = row['Goals']
     
             col_a, col_b, col_c = st.columns(3)
@@ -363,9 +363,9 @@ with tabs[0]:
             col_b.metric("1º Gol", primeiro_gol)
             col_c.metric("Total de Gols", total_gols)
     
-            # Adicionando o emoji para 1º Gol (Time Visitante)
+            # Convertendo a porcentagem para formato decimal
             try:
-                primeiro_gol_num = float(primeiro_gol)
+                primeiro_gol_num = float(primeiro_gol) / 100  # Convertendo para decimal (60% = 0.60)
                 # Se o time visitante marcar o 1º gol em <= 40% das vezes
                 if primeiro_gol_num <= 0.40:
                     gol_emoji = "🟩"  # Verde
@@ -378,7 +378,6 @@ with tabs[0]:
         else:
             st.info("Sem dados.")
 
-    
 
     st.markdown("### ⏱️ Frequência Gols 1º e 2º Tempo")
 
