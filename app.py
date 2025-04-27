@@ -280,7 +280,7 @@ with tabs[7]:
 # ABA 8 - Resumo     
 # ABA 8 - Resumo     
 with tabs[0]:
-    st.markdown("### 🏠 Home")
+    st.markdown(f"{ppg_home_emoji} **{equipe_home} (Casa)**")
 
     if not home_filtered.empty:
         row = home_filtered.iloc[0]
@@ -295,11 +295,11 @@ with tabs[0]:
         ppg_home = row.get("PPG_Home", 0)
         ppg_home_emoji = "🟩" if ppg_home > 1.8 else "🟥"
         # Colocando o emoji antes do nome de PPG Casa
-        st.markdown(f"{ppg_home_emoji} PPG Casa")
+        st.markdown(f"{ppg_home_emoji} **PPG Casa**: {ppg_home}")
     else:
         st.info("Informações do time da casa como favorito não disponíveis.")
 
-    st.markdown("### 🚌 Away")
+    st.markdown(f"{ppg_away_emoji} **{equipe_away} (Visitante)**")
 
     if not away_filtered.empty:
         row = away_filtered.iloc[0]
@@ -314,7 +314,7 @@ with tabs[0]:
         ppg_away = row.get("PPG_Away", 0)
         ppg_away_emoji = "🟩" if ppg_away < 1.00 else "🟥"
         # Colocando o emoji antes do nome de PPG Fora
-        st.markdown(f"{ppg_away_emoji} PPG Fora")
+        st.markdown(f"{ppg_away_emoji} **PPG Fora**: {ppg_away}")
     else:
         st.info("Informações do time visitante não disponíveis.")
 
