@@ -384,24 +384,38 @@ with tabs[0]:
     goals_half_filtered = goals_half_df[goals_half_df['Team'].isin([equipe_home, equipe_away])]
     if not goals_half_filtered.empty:
         col1, col2, col3, col4 = st.columns(4)
-
+    
         with col1:
             home_1st_half = goals_half_filtered[goals_half_filtered['Team'] == equipe_home]['1st half'].values[0] if equipe_home in goals_half_filtered['Team'].values else "Sem dados"
-            st.metric(f"{equipe_home} - 1º Tempo", home_1st_half)
-
+            if home_1st_half != "Sem dados":
+                # Remove o '%' e converte para float
+                home_1st_half_num = float(home_1st_half.strip('%'))  # Já está em % na base de dados
+                gol_emoji_home = "🟩" if home_1st_half_num >= 45 else "🟥"  # Se >= 45% é verde, senão vermelho
+                st.metric(f"{equipe_home} - 1º Tempo", f"{home_1st_half} {gol_emoji_home}")
+            else:
+                st.metric(f"{equipe_home} - 1º Tempo", home_1st_half)
+    
         with col2:
             home_2nd_half = goals_half_filtered[goals_half_filtered['Team'] == equipe_home]['2nd half'].values[0] if equipe_home in goals_half_filtered['Team'].values else "Sem dados"
             st.metric(f"{equipe_home} - 2º Tempo", home_2nd_half)
-
+    
         with col3:
             away_1st_half = goals_half_filtered[goals_half_filtered['Team'] == equipe_away]['1st half'].values[0] if equipe_away in goals_half_filtered['Team'].values else "Sem dados"
-            st.metric(f"{equipe_away} - 1º Tempo", away_1st_half)
-
+            if away_1st_half != "Sem dados":
+                # Remove o '%' e converte para float
+                away_1st_half_num = float(away_1st_half.strip('%'))  # Já está em % na base de dados
+                gol_emoji_away = "🟥" if away_1st_half_num >= 45 else "🟩"  # Se >= 45% é vermelho, senão verde
+                st.metric(f"{equipe_away} - 1º Tempo", f"{away_1st_half} {gol_emoji_away}")
+            else:
+                st.metric(f"{equipe_away} - 1º Tempo", away_1st_half)
+    
         with col4:
             away_2nd_half = goals_half_filtered[goals_half_filtered['Team'] == equipe_away]['2nd half'].values[0] if equipe_away in goals_half_filtered['Team'].values else "Sem dados"
             st.metric(f"{equipe_away} - 2º Tempo", away_2nd_half)
+    
     else:
         st.info("Sem dados.")
+
 
     st.markdown("### 📌 Frequência Gols HT")
 
