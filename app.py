@@ -431,7 +431,7 @@ with tabs[0]:
             "3": "#24da1e",
             "4": "#56b72d"
         }
-
+    
         html = '<div style="display:flex; flex-wrap: wrap;">'
         for gols, freq in frequencia_dict.items():
             try:
@@ -442,52 +442,79 @@ with tabs[0]:
                 html += f'<div style="width: 6px; height: 20px; background-color: {cores[gols]}; margin: 1px;"></div>'
         html += '</div>'
         return html
-
+    
     col1, col2 = st.columns(2)
-
+    
     with col1:
         home_ht = cv_home_df[cv_home_df['Team_Home'] == equipe_home]
         if not home_ht.empty:
             df_home = home_ht.rename(columns={
                 "Avg.": "Avg", "4+": "4", "3": "3", "2": "2", "1": "1", "0": "0"
             })[["Team_Home", "Avg", "0", "1", "2", "3", "4", "Total_Jogos", "% Com Gols", "% Sem Gols", "Classificação Ofensiva"]]
-
+    
             row = df_home.iloc[0]
             media = float(str(row['Avg']).replace(',', '.')) if row['Avg'] else 0.0
             com_gols = f"{int(round(float(str(row.get('% Com Gols', '0')).replace('%', '').replace(',', '.'))))}%"
             sem_gols = f"{int(round(float(str(row.get('% Sem Gols', '0')).replace('%', '').replace(',', '.'))))}%"
-
+    
+            # Determinando o emoji para Média de Gols
+            if media >= 0.70:
+                media_emoji = "🟩"
+            else:
+                media_emoji = "🟥"
+    
+            # Determinando o emoji para Com Gols
+            com_gols_percent = float(com_gols.replace('%', ''))
+            if com_gols_percent >= 65:
+                com_gols_emoji = "🟩"
+            else:
+                com_gols_emoji = "🟥"
+    
             col_a, col_b, col_c = st.columns(3)
-            col_a.metric("Média Gols", media)
-            col_b.metric("Com Gols", com_gols)
+            col_a.metric(f"{media_emoji} Média Gols", media)
+            col_b.metric(f"{com_gols_emoji} Com Gols", com_gols)
             col_c.metric("Sem Gols", sem_gols)
-
+    
             freq_dict_home = {g: row[g] for g in ["0", "1", "2", "3", "4"]}
             st.markdown(gerar_barra_frequencia(freq_dict_home), unsafe_allow_html=True)
         else:
             st.warning("Dados não encontrados para o time da casa.")
-
+    
     with col2:
         away_ht = cv_away_df[cv_away_df['Team_Away'] == equipe_away]
         if not away_ht.empty:
             df_away = away_ht.rename(columns={
                 "Avg..1": "Avg", "0.1": "0", "1.1": "1", "2.1": "2", "3.1": "3", "4+.1": "4"
             })[["Team_Away", "Avg", "0", "1", "2", "3", "4", "Total_Jogos", "% Com Gols", "% Sem Gols", "Classificação Ofensiva"]]
-
+    
             row = df_away.iloc[0]
             media = float(str(row['Avg']).replace(',', '.')) if row['Avg'] else 0.0
             com_gols = f"{int(round(float(str(row.get('% Com Gols', '0')).replace('%', '').replace(',', '.'))))}%"
             sem_gols = f"{int(round(float(str(row.get('% Sem Gols', '0')).replace('%', '').replace(',', '.'))))}%"
-
+    
+            # Determinando o emoji para Média de Gols
+            if media >= 0.70:
+                media_emoji_away = "🟥"
+            else:
+                media_emoji_away = "🟩"
+    
+            # Determinando o emoji para Com Gols
+            com_gols_percent_away = float(com_gols.replace('%', ''))
+            if com_gols_percent_away >= 65:
+                com_gols_emoji_away = "🟥"
+            else:
+                com_gols_emoji_away = "🟩"
+    
             col_a, col_b, col_c = st.columns(3)
-            col_a.metric("Média Gols", media)
-            col_b.metric("Com Gols", com_gols)
+            col_a.metric(f"{media_emoji_away} Média Gols", media)
+            col_b.metric(f"{com_gols_emoji_away} Com Gols", com_gols)
             col_c.metric("Sem Gols", sem_gols)
-
+    
             freq_dict_away = {g: row[g] for g in ["0", "1", "2", "3", "4"]}
             st.markdown(gerar_barra_frequencia(freq_dict_away), unsafe_allow_html=True)
         else:
             st.warning("Dados não encontrados para o time visitante.")
+
 
     # Gols 15min
     st.markdown("### ⏱️ Gols 15min")
