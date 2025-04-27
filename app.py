@@ -294,7 +294,8 @@ with tabs[0]:
         # Adicionando o emoji para PPG Casa
         ppg_home = row.get("PPG_Home", 0)
         ppg_home_emoji = "🟩" if ppg_home > 1.8 else "🟥"
-        st.markdown(f"PPG Casa {ppg_home_emoji}")
+        # Colocando o emoji antes do nome de PPG Casa
+        st.markdown(f"{ppg_home_emoji} PPG Casa")
     else:
         st.info("Informações do time da casa como favorito não disponíveis.")
 
@@ -312,9 +313,11 @@ with tabs[0]:
         # Adicionando o emoji para PPG Fora
         ppg_away = row.get("PPG_Away", 0)
         ppg_away_emoji = "🟩" if ppg_away < 1.00 else "🟥"
-        st.markdown(f"PPG Fora {ppg_away_emoji}")
+        # Colocando o emoji antes do nome de PPG Fora
+        st.markdown(f"{ppg_away_emoji} PPG Fora")
     else:
         st.info("Informações do time visitante não disponíveis.")
+
 
     st.markdown("### ⚽ Marca Primeiro")
 
