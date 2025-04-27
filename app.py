@@ -500,7 +500,7 @@ with tabs[0]:
             sem_gols = f"{int(round(float(str(row.get('% Sem Gols', '0')).replace('%', '').replace(',', '.'))))}%"
     
             # Determinando o emoji para Média de Gols
-            if media >= 0.70:
+            if media >= 0.60:
                 media_emoji_away = "🟥"
             else:
                 media_emoji_away = "🟩"
