@@ -311,7 +311,7 @@ with tabs[0]:
 
         # Adicionando o emoji para PPG Fora
         ppg_away = row.get("PPG_Away", 0)
-        ppg_away_emoji = "🟩" if ppg_away > 1.8 else "🟥"
+        ppg_away_emoji = "🟩" if ppg_away < 1.00 else "🟥"
         st.markdown(f"PPG Fora {ppg_away_emoji}")
     else:
         st.info("Informações do time visitante não disponíveis.")
@@ -337,7 +337,7 @@ with tabs[0]:
             # Adicionando o emoji para 1º Gol
             try:
                 primeiro_gol_num = float(primeiro_gol)
-                gol_emoji = "🟩" if primeiro_gol_num > 60 else "🟥"
+                gol_emoji = "🟩" if primeiro_gol_num > 60% else "🟥"
             except ValueError:
                 gol_emoji = "🟨"  # Caso o valor não seja numérico, emoji de alerta
             st.markdown(f"1º Gol {gol_emoji}")
@@ -361,7 +361,7 @@ with tabs[0]:
             # Adicionando o emoji para 1º Gol
             try:
                 primeiro_gol_num = float(primeiro_gol)
-                gol_emoji = "🟩" if primeiro_gol_num > 60 else "🟥"
+                gol_emoji = "🟩" if primeiro_gol_num < 40% else "🟥"
             except ValueError:
                 gol_emoji = "🟨"  # Caso o valor não seja numérico, emoji de alerta
             st.markdown(f"1º Gol {gol_emoji}")
