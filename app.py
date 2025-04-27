@@ -465,14 +465,14 @@ with tabs[0]:
             sem_gols = f"{int(round(float(str(row.get('% Sem Gols', '0')).replace('%', '').replace(',', '.'))))}%"
     
             # Determinando o emoji para Média de Gols
-            if media >= 0.70:
+            if media >= 0.60:
                 media_emoji = "🟩"
             else:
                 media_emoji = "🟥"
     
             # Determinando o emoji para Com Gols
             com_gols_percent = float(com_gols.replace('%', ''))
-            if com_gols_percent >= 65:
+            if com_gols_percent >= 60:
                 com_gols_emoji = "🟩"
             else:
                 com_gols_emoji = "🟥"
@@ -500,7 +500,7 @@ with tabs[0]:
             sem_gols = f"{int(round(float(str(row.get('% Sem Gols', '0')).replace('%', '').replace(',', '.'))))}%"
     
             # Determinando o emoji para Média de Gols
-            if media >= 0.60:
+            if media >= 0.70:
                 media_emoji_away = "🟥"
             else:
                 media_emoji_away = "🟩"
