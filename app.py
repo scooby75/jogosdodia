@@ -507,7 +507,7 @@ with tabs[0]:
     
             # Determinando o emoji para Com Gols
             com_gols_percent_away = float(com_gols.replace('%', ''))
-            if com_gols_percent_away >= 65:
+            if com_gols_percent_away >= 50:
                 com_gols_emoji_away = "🟥"
             else:
                 com_gols_emoji_away = "🟩"
