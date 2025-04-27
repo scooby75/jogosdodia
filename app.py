@@ -321,7 +321,7 @@ with tabs[0]:
     col1, col2 = st.columns(2)
     
     with col1:
-        st.markdown(f"**{equipe_home} (Casa)**")
+        # Colocando o emoji antes do nome da equipe da casa
         stats_home_fg = home_fg_df[home_fg_df['Team_Home'] == equipe_home]
         if not stats_home_fg.empty:
             row = stats_home_fg.iloc[0]
@@ -345,12 +345,13 @@ with tabs[0]:
             except ValueError:
                 gol_emoji = "🟨"  # Caso o valor não seja numérico, emoji de alerta
     
-            st.markdown(f"1º Gol {gol_emoji}")
+            # Exibindo o nome da equipe com o emoji antes
+            st.markdown(f"{gol_emoji} **{equipe_home} (Casa)**")
         else:
             st.info("Sem dados.")
     
     with col2:
-        st.markdown(f"**{equipe_away} (Fora)**")
+        # Colocando o emoji antes do nome da equipe visitante
         stats_away_fg = away_fg_df[away_fg_df['Team_Away'] == equipe_away]
         if not stats_away_fg.empty:
             row = stats_away_fg.iloc[0]
@@ -374,10 +375,11 @@ with tabs[0]:
             except ValueError:
                 gol_emoji = "🟨"  # Caso o valor não seja numérico, emoji de alerta
     
-            st.markdown(f"1º Gol {gol_emoji}")
+            # Exibindo o nome da equipe com o emoji antes
+            st.markdown(f"{gol_emoji} **{equipe_away} (Fora)**")
         else:
             st.info("Sem dados.")
-
+    
 
     st.markdown("### ⏱️ Frequência Gols 1º e 2º Tempo")
 
