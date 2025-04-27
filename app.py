@@ -391,7 +391,7 @@ with tabs[0]:
                 # Remove o '%' e converte para float
                 home_1st_half_num = float(home_1st_half.strip('%'))  # Já está em % na base de dados
                 gol_emoji_home = "🟩" if home_1st_half_num >= 45 else "🟥"  # Se >= 45% é verde, senão vermelho
-                st.metric(f"{equipe_home} - 1º Tempo", f"{home_1st_half} {gol_emoji_home}")
+                st.metric(f"{gol_emoji_home} {equipe_home} - 1º Tempo", home_1st_half)
             else:
                 st.metric(f"{equipe_home} - 1º Tempo", home_1st_half)
     
@@ -405,7 +405,7 @@ with tabs[0]:
                 # Remove o '%' e converte para float
                 away_1st_half_num = float(away_1st_half.strip('%'))  # Já está em % na base de dados
                 gol_emoji_away = "🟥" if away_1st_half_num >= 45 else "🟩"  # Se >= 45% é vermelho, senão verde
-                st.metric(f"{equipe_away} - 1º Tempo", f"{away_1st_half} {gol_emoji_away}")
+                st.metric(f"{gol_emoji_away} {equipe_away} - 1º Tempo", away_1st_half)
             else:
                 st.metric(f"{equipe_away} - 1º Tempo", away_1st_half)
     
@@ -415,7 +415,6 @@ with tabs[0]:
     
     else:
         st.info("Sem dados.")
-
 
     st.markdown("### 📌 Frequência Gols HT")
 
