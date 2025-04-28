@@ -533,7 +533,7 @@ with tabs[0]:
         filtered_home = goals_per_time_home_df[goals_per_time_home_df['Team_Home'] == equipe_home]
         if not filtered_home.empty:
             # Remover a parte de texto (" min.") da coluna AVG_Scored e converter para numérico
-            avg_scored_home = filtered_home['AVG_Scored'].str.extract('(\d+)').astype(float).values[0]
+            avg_scored_home = filtered_home['AVG_Scored_Home'].str.extract('(\d+)').astype(float).values[0]
             
             # Verificando se o valor é válido
             if pd.isna(avg_scored_home):
@@ -542,7 +542,7 @@ with tabs[0]:
                 # Definindo o ícone com base no valor de AVG_Scored
                 home_icon = "🟩" if avg_scored_home <= 45 else "🟥"
                 st.markdown(f"{home_icon} **{equipe_home} (Casa)**")
-                st.dataframe(filtered_home[['League', 'GP', 'AVG_Scored', '0-15', '16-30', '31-45']], use_container_width=True)
+                st.dataframe(filtered_home[['League', 'GP', 'AVG_Scored_Home', '0-15', '16-30', '31-45']], use_container_width=True)
         else:
             st.info("Sem dados de gols por faixa de tempo para o time da casa.")
     
@@ -551,7 +551,7 @@ with tabs[0]:
         filtered_away = goals_per_time_away_df[goals_per_time_away_df['Team_Away'] == equipe_away]
         if not filtered_away.empty:
             # Remover a parte de texto (" min.") da coluna AVG_Scored e converter para numérico
-            avg_scored_away = filtered_away['AVG_Scored'].str.extract('(\d+)').astype(float).values[0]
+            avg_scored_away = filtered_away['AVG_Scored_Away'].str.extract('(\d+)').astype(float).values[0]
             
             # Verificando se o valor é válido
             if pd.isna(avg_scored_away):
@@ -560,7 +560,7 @@ with tabs[0]:
                 # Definindo o ícone com base no valor de AVG_Scored
                 away_icon = "🟥" if avg_scored_away <= 45 else "🟩"
                 st.markdown(f"{away_icon} **{equipe_away} (Fora)**")
-                st.dataframe(filtered_away[['League', 'GP', 'AVG_Scored', '0-15', '16-30', '31-45']], use_container_width=True)
+                st.dataframe(filtered_away[['League', 'GP', 'AVG_Scored_Away', '0-15', '16-30', '31-45']], use_container_width=True)
         else:
             st.info("Sem dados de gols por faixa de tempo para o time visitante.")
 
