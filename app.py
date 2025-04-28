@@ -101,20 +101,20 @@ home_columns = ["Liga", "PIH", "PIH_HA", "GD_Home", "PPG_Home", "GF_AVG_Home", "
 away_columns = ["Liga", "PIA", "PIA_HA", "GD_Away", "PPG_Away", "GF_AVG_Away", "Odd_Justa_MO", "Odd_Justa_HA", "Rank_Away"]
 overall_columns = ["Liga", "PIO", "PIO_HA", "GD_Overall", "PPG_Overall", "GF_AVG_Overall", "Odd_Justa_MO", "Odd_Justa_HA", "Rank_Overall"]
 
-# Combina todas as equipes de várias fontes
+# Filtrando apenas valores que são nomes de times (assumindo que os nomes de times não contêm números ou palavras como 'and', 'also', etc.)
 all_teams = sorted(set(
-    home_df['Team_Home'].dropna().astype(str)) |
-    set(away_df['Team_Away'].dropna().astype(str)) |
-    set(away_fav_df['Team_Away_Fav'].dropna().astype(str)) |
-    set(overall_df['Team_Home_Overall'].dropna().astype(str)) |
-    set(home_fg_df['Team_Home'].dropna().astype(str)) |
-    set(away_fg_df['Team_Away'].dropna().astype(str)) |
-    set(goal_minute_home_df['Team_Home'].dropna().astype(str)) |
-    set(goal_minute_away_df['Team_Away'].dropna().astype(str)) |
-    set(goals_half_df['Team'].dropna().astype(str)) |
-    set(goals_per_time_home_df['Team_Home'].dropna().astype(str)) |
-    set(goals_per_time_away_df['Team_Away'].dropna().astype(str))
-)
+    home_df['Team_Home'].dropna().astype(str).str.contains(r'^[A-Za-z\s]+$') |
+    away_df['Team_Away'].dropna().astype(str).str.contains(r'^[A-Za-z\s]+$') |
+    away_fav_df['Team_Away_Fav'].dropna().astype(str).str.contains(r'^[A-Za-z\s]+$') |
+    overall_df['Team_Home_Overall'].dropna().astype(str).str.contains(r'^[A-Za-z\s]+$') |
+    home_fg_df['Team_Home'].dropna().astype(str).str.contains(r'^[A-Za-z\s]+$') |
+    away_fg_df['Team_Away'].dropna().astype(str).str.contains(r'^[A-Za-z\s]+$') |
+    goal_minute_home_df['Team_Home'].dropna().astype(str).str.contains(r'^[A-Za-z\s]+$') |
+    goal_minute_away_df['Team_Away'].dropna().astype(str).str.contains(r'^[A-Za-z\s]+$') |
+    goals_half_df['Team'].dropna().astype(str).str.contains(r'^[A-Za-z\s]+$') |
+    goals_per_time_home_df['Team_Home'].dropna().astype(str).str.contains(r'^[A-Za-z\s]+$') |
+    goals_per_time_away_df['Team_Away'].dropna().astype(str).str.contains(r'^[A-Za-z\s]+$')
+))
 
 
 equipe_home = st.sidebar.selectbox("🏠 Time da Casa:", all_teams, index=all_teams.index('Bayern Munich'))
