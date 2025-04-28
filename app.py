@@ -117,8 +117,8 @@ all_teams = sorted(set(
 )
 
 
-equipe_home = st.sidebar.selectbox("🏠 Time da Casa:", all_teams)
-equipe_away = st.sidebar.selectbox("🛫 Time Visitante:", all_teams)
+equipe_home = st.sidebar.selectbox("🏠 Time da Casa:", all_teams, index=all_teams.index('Bayern Munich'))
+equipe_away = st.sidebar.selectbox("🛫 Time Visitante:", all_teams, index=all_teams.index('Dortmund'))
 
 # ----------------------------
 # APLICAR FILTROS
