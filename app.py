@@ -694,9 +694,9 @@ with tabs[0]:
                     
                     st.success("**✅ Aposta sugerida:** Vitória do mandante (1)")
                     st.markdown(f"📊 **Justificativa:**")
-                    st.markdown(f"- PPG Casa ≥1.8 ({ppg_home:.2f})")
-                    st.markdown(f"- Diferença ≥1 sobre visitante ({ppg_home - ppg_away:.2f})")
-                    st.markdown(f"- Ranking Casa ({rank_home}) ≥6 posições acima do Visitante ({rank_away})")
+                    #st.markdown(f"- PPG Casa ≥1.8 ({ppg_home:.2f})")
+                    #st.markdown(f"- Diferença ≥1 sobre visitante ({ppg_home - ppg_away:.2f})")
+                    #st.markdown(f"- Ranking Casa ({rank_home}) ≥6 posições acima do Visitante ({rank_away})")
                     
                 elif (ppg_away >= 1.8 and 
                       (ppg_away - ppg_home) >= 1 and 
@@ -705,9 +705,9 @@ with tabs[0]:
                     
                     st.success("**✅ Aposta sugerida:** Vitória do visitante (2)")
                     st.markdown(f"📊 **Justificativa:**")
-                    st.markdown(f"- PPG Visitante ≥1.8 ({ppg_away:.2f})")
-                    st.markdown(f"- Diferença ≥1 sobre mandante ({ppg_away - ppg_home:.2f})")
-                    st.markdown(f"- Ranking Visitante ({rank_away}) ≥6 posições acima do Casa ({rank_home})")
+                    #st.markdown(f"- PPG Visitante ≥1.8 ({ppg_away:.2f})")
+                    #st.markdown(f"- Diferença ≥1 sobre mandante ({ppg_away - ppg_home:.2f})")
+                    #st.markdown(f"- Ranking Visitante ({rank_away}) ≥6 posições acima do Casa ({rank_home})")
                     
                 elif abs(ppg_home - ppg_away) < 0.5:
                     st.warning("**⚖️ Aposta sugerida:** Empate (X)")
@@ -799,7 +799,7 @@ with tabs[0]:
                     elif home_btts > 55 and away_btts > 45:
                         st.warning("**⚠️ BTTS Sim - Possível valor**")
                     else:
-                        st.info("**🔍 BTTS Não pode ter valor**")
+                        st.info("**🔍 BTTS Não tem valor**")
                     
                     st.markdown(f"📊 Probabilidades: Casa {home_fg_data['First_Gol']} | Visitante {away_fg_data['First_Gol']}")
                 except:
