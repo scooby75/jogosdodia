@@ -591,9 +591,9 @@ with tabs[0]:
 
 # ABA 10 - Sintese
 
-
-    resumo = ""
-    
+# Suponha que todos os valores abaixo já foram extraídos corretamente
+        resumo = ""
+        
         if not home_filtered.empty and not away_filtered.empty:
             home_row = home_filtered.iloc[0]
             away_row = away_filtered.iloc[0]
@@ -616,7 +616,9 @@ with tabs[0]:
         """
             st.markdown("### 📊 **Resumo Analítico**")
             st.markdown(resumo)
+
     
+
 
         
 # Executar com variável de ambiente PORT
