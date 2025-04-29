@@ -2,6 +2,9 @@ import streamlit as st
 import pandas as pd
 import os
 import plotly.graph_objects as go
+import numpy as np
+from collections import Counter
+import itertools
 
 
 # Configuração da página
@@ -823,6 +826,32 @@ with tabs[0]:
                 • Médias de gols equilibradas, mas não elevadas.  
                 • Jogo pode ter gols de apenas um dos lados.  
                 """)
+
+            st.markdown("### 📊 Placar Mais Provável (com base em PPG e Média de Gols)")
+            
+            # Calcular expectativa de gols com base no PPG e média de gols
+            exp_gols_home = (ppg_home / (ppg_home + ppg_away)) * total_avg_goals if (ppg_home + ppg_away) > 0 else 0
+            exp_gols_away = total_avg_goals - exp_gols_home
+            
+            # Geração de probabilidades de placares usando distribuição de Poisson
+            max_gols = 5  # Até 5 gols para cada lado
+            placares = []
+            
+            for gols_home in range(max_gols + 1):
+                for gols_away in range(max_gols + 1):
+                    prob_home = (np.exp(-exp_gols_home) * exp_gols_home**gols_home) / np.math.factorial(gols_home)
+                    prob_away = (np.exp(-exp_gols_away) * exp_gols_away**gols_away) / np.math.factorial(gols_away)
+                    prob_placar = prob_home * prob_away
+                    placares.append(((gols_home, gols_away), prob_placar))
+            
+            # Ordenar pelos placares com maior probabilidade
+            placares.sort(key=lambda x: x[1], reverse=True)
+            
+            # Mostrar os 5 placares mais prováveis
+            st.markdown("**Top 5 placares estimados:**")
+            for i, ((gh, ga), prob) in enumerate(placares[:5], start=1):
+                st.write(f"{i}. {equipe_home} {gh} x {ga} {equipe_away} - Probabilidade: {prob:.2%}")
+
 
 # Executar com variável de ambiente PORT
 if __name__ == "__main__":
