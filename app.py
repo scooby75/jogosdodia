@@ -695,10 +695,10 @@ with tabs[0]:
                     st.success("**✅ Aposta sugerida:** Vitória do mandante (1)")
                     st.markdown(f"""
                     📊 **Justificativa:**  
-                    • Excelente desempenho como mandante (PPG ≥1.8).  
-                    • Superioridade clara sobre o visitante (diferença PPG ≥1).  
+                    • Excelente desempenho como mandante.
+                    • Superioridade clara sobre o visitante.
                     • Time melhor posicionado no ranking (posição {rank_home} vs {rank_away}).  
-                    • Diferença de ranking ≥6 posições.  
+                    
                     """)
                 elif (ppg_away >= 1.8 and (ppg_away - ppg_home) >= 1 and rankings_validos and rank_diff <= -6):
                     st.success("**✅ Aposta sugerida:** Vitória do visitante (2)")
