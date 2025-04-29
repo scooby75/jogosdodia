@@ -704,16 +704,16 @@ with tabs[0]:
                     st.success("**✅ Aposta sugerida:** Vitória do visitante (2)")
                     st.markdown(f"""
                     📊 **Justificativa:**  
-                    • Excelente desempenho como visitante (PPG ≥1.8).  
-                    • Superioridade clara sobre o mandante (diferença PPG ≥1).  
+                    • Excelente desempenho como visitante.  
+                    • Superioridade clara sobre o mandante.  
                     • Time melhor posicionado no ranking (posição {rank_away} vs {rank_home}).  
-                    • Diferença de ranking ≥6 posições.  
+                    
                     """)
                 elif abs(ppg_home - ppg_away) < 0.5:
                     st.warning("**⚖️ Aposta sugerida:** Empate (X)")
                     st.markdown("""
                     📊 **Justificativa:**  
-                    • Equilíbrio entre as equipes (diferença de PPG < 0.5).  
+                    • Equilíbrio entre as equipes 
                     • Nenhum time com vantagem significativa.  
                     """)
                 else:
@@ -725,7 +725,7 @@ with tabs[0]:
                     • Diferença de PPG: {abs(ppg_home - ppg_away):.2f}.  
                     """)
     
-                st.markdown(f"📌 **Odd Justa:** Casa {odd_justa_home} | Empate X | Fora {odd_justa_away}")
+                st.markdown(f"📌 **Odd Justa:** Casa {odd_justa_home} | Fora {odd_justa_away}")
     
             with col2:
                 st.markdown("### Handicap Asiático (HA)")
@@ -735,35 +735,35 @@ with tabs[0]:
                     st.success("**✅ HA -1.0 para o mandante**")
                     st.markdown(f"""
                     📊 **Justificativa:**  
-                    • Mandante com desempenho forte (PPG ≥1.8).  
-                    • Vantagem significativa no PPG (diferença ≥1).  
+                    • Mandante com desempenho forte.  
+                    • Vantagem significativa jogando em casa.  
                     • Superioridade no ranking (posição {rank_home} vs {rank_away}).  
-                    • Diferença de ranking ≥6 posições.  
+                    
                     """)
                 elif (ppg_home >= 1.8 and diff_ppg >= 0.5 and rankings_validos and rank_diff >= 4):
                     st.success("**✅ HA -0.75 para o mandante**")
                     st.markdown(f"""
                     📊 **Justificativa:**  
-                    • Mandante com bom desempenho (PPG ≥1.8).  
-                    • Vantagem moderada no PPG (diferença ≥0.5).  
+                    • Mandante com bom desempenho.
+                    • Vantagem moderada jogando em casa.  
                     • Vantagem no ranking (posição {rank_home} vs {rank_away}).  
-                    • Diferença de ranking ≥4 posições.  
+                    
                     """)
                 elif (ppg_away >= 1.8 and -diff_ppg >= 1 and rankings_validos and rank_diff <= -6):
                     st.success("**✅ HA +1.0 para o visitante**")
                     st.markdown(f"""
                     📊 **Justificativa:**  
-                    • Visitante com desempenho forte (PPG ≥1.8).  
-                    • Vantagem significativa no PPG (diferença ≥1).  
+                    • Visitante com desempenho forte.
+                    • Vantagem significativa jogando fora de casa.  
                     • Superioridade no ranking (posição {rank_away} vs {rank_home}).  
-                    • Diferença de ranking ≥6 posições.  
+                    
                     """)
                 elif abs(diff_ppg) < 0.5:
                     st.info("**🔍 HA 0.0 (Empate sem handicap)**")
                     st.markdown("""
                     📊 **Justificativa:**  
                     • Equilíbrio entre as equipes.  
-                    • Diferença de PPG insignificante.  
+                    • Diferença entre as equipes insignificante.  
                     """)
                 else:
                     st.warning("**⚠️ HA não recomendado**")
@@ -776,7 +776,7 @@ with tabs[0]:
     
                 st.markdown(f"📊 **Diferença PPG:** {diff_ppg:.2f}")
                 if rankings_validos:
-                    st.markdown(f"📊 **Diferença Ranking:** {rank_diff} (Casa {rank_home} vs Fora {rank_away})")
+                    st.markdown(f"📊 **Ranking:** (Casa {rank_home} vs Fora {rank_away})")
     
             # Over/Under Gols
             st.markdown("### Over/Under Gols")
@@ -786,7 +786,7 @@ with tabs[0]:
                 st.success(f"**✅ Over 2.5 Gols (Média: {total_avg_goals:.2f})**")
                 st.markdown("""
                 📊 **Justificativa:**  
-                • Time(s) com alto desempenho ofensivo (PPG ≥1.8).  
+                • Time(s) com alto desempenho ofensivo.
                 • Diferença de ranking significativa.  
                 • Média de gols esperada elevada (≥2.8).  
                 """)
