@@ -610,8 +610,8 @@ with tabs[0]:
             odd_justa_home = home_row.get('Odd_Justa_MO', 'N/A')
             odd_justa_away = away_row.get('Odd_Justa_MO', 'N/A')
     
-            equipe_home = home_row['Home']
-            equipe_away = away_row['Away']
+            equipe_home = home_row['Team_Home']
+            equipe_away = away_row['Team_Away']
     
             # Análise qualitativa
             desempenho_home = "bom" if ppg_home >= 1.7 else "irregular" if ppg_home >= 1.2 else "fraco"
