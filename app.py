@@ -830,7 +830,7 @@ with tabs[0]:
                 • Jogo pode ter gols de apenas um dos lados.  
                 """)
 
-            st.markdown("### 📊 Placar Mais Provável (com base em PPG e Média de Gols)")
+            st.markdown("### 📊 5 Placares Mais Prováveis")
             
             # Cálculo da expectativa de gols com base no PPG e na média total de gols
             if (ppg_home + ppg_away) > 0:
@@ -855,7 +855,7 @@ with tabs[0]:
             placares.sort(key=lambda x: x[1], reverse=True)
             
             # Exibir os 5 placares mais prováveis
-            st.markdown("**Top 5 placares estimados:**")
+            #st.markdown("**Top 5 placares estimados:**")
             for i, ((gh, ga), prob) in enumerate(placares[:5], start=1):
                 st.write(f"{i}. {equipe_home} {gh} x {ga} {equipe_away} — Probabilidade: {prob:.2%}")
 
