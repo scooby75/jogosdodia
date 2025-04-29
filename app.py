@@ -589,35 +589,72 @@ with tabs[0]:
         else:
             st.warning("Nenhuma estatística encontrada para os times selecionados.")
 
-# ABA 10 - Sintese
-
+# ABA 10 - Síntese Detalhada
     with tabs[9]:
         resumo = ""
-        
+    
         if not home_filtered.empty and not away_filtered.empty:
             home_row = home_filtered.iloc[0]
             away_row = away_filtered.iloc[0]
-            
+    
+            # Variáveis principais
             ppg_home = home_row.get("PPG_Home", 0)
             ppg_away = away_row.get("PPG_Away", 0)
-            gf_avg_home = home_row.get("GF_AVG_Home", "N/A")
-            gf_avg_away = away_row.get("GF_AVG_Away", "N/A")
+            gf_avg_home = home_row.get("GF_AVG_Home", 0)
+            gf_avg_away = away_row.get("GF_AVG_Away", 0)
             fg_home_pct = stats_home_fg.iloc[0]['First_Gol'] if not stats_home_fg.empty else "N/A"
             fg_away_pct = stats_away_fg.iloc[0]['First_Gol'] if not stats_away_fg.empty else "N/A"
             gols_1ht_home = home_1st_half if 'home_1st_half' in locals() else "N/A"
             gols_1ht_away = away_1st_half if 'away_1st_half' in locals() else "N/A"
-        
-            resumo = f"""
-        - 🏠 **{equipe_home} (Casa)** tem uma média de pontos por jogo de **{ppg_home}**, marcando em média **{gf_avg_home} gols** por jogo. 
-          Marca o primeiro gol em **{fg_home_pct}** das partidas e costuma marcar no **1º tempo em {gols_1ht_home}** dos jogos.
-        - 🚗 **{equipe_away} (Visitante)** tem um aproveitamento fora de casa de **{ppg_away} PPG**, com média de **{gf_avg_away} gols** por jogo. 
-          Abre o placar em **{fg_away_pct}** das partidas e marca no **1º tempo em {gols_1ht_away}** das vezes.
-        - ⚖️ Odd justa do mandante: **{home_row.get('Odd_Justa_MO', 'N/A')}**, visitante: **{away_row.get('Odd_Justa_MO', 'N/A')}**.
-        """
-            st.markdown("### 📊 **Resumo Analítico**")
-            st.markdown(resumo)
-
     
+            odd_justa_home = home_row.get('Odd_Justa_MO', 'N/A')
+            odd_justa_away = away_row.get('Odd_Justa_MO', 'N/A')
+    
+            equipe_home = home_row['Home']
+            equipe_away = away_row['Away']
+    
+            # Análise qualitativa
+            desempenho_home = "bom" if ppg_home >= 1.7 else "irregular" if ppg_home >= 1.2 else "fraco"
+            desempenho_away = "positivo" if ppg_away >= 1.5 else "mediano" if ppg_away >= 1.0 else "negativo"
+    
+            # Sugestões de aposta
+            sugestoes = []
+    
+            if ppg_home > ppg_away:
+                sugestoes.append("➡️ **Mercado 1X2**: Vitória do mandante (1) tem valor.")
+            else:
+                sugestoes.append("➡️ **Mercado 1X2**: Apostar com cautela — cenário equilibrado.")
+    
+            if ppg_home - ppg_away > 0.5:
+                sugestoes.append("➡️ **Handicap Asiático**: -0.25 ou -0.5 no mandante.")
+            elif ppg_away - ppg_home > 0.5:
+                sugestoes.append("➡️ **Handicap Asiático**: +0.5 no visitante.")
+    
+            if gf_avg_home + gf_avg_away >= 2.8:
+                sugestoes.append("➡️ **Over/Under**: Over 2.5 tem valor.")
+            elif gf_avg_home + gf_avg_away <= 2.2:
+                sugestoes.append("➡️ **Over/Under**: Under 2.5 mais seguro.")
+    
+            if fg_home_pct != "N/A" and fg_away_pct != "N/A":
+                if float(fg_home_pct.strip('%')) > 55 and float(fg_away_pct.strip('%')) > 50:
+                    sugestoes.append("➡️ **BTTS (Ambos Marcam)**: Sim — boas chances.")
+    
+            resumo = f"""
+            - 🏠 **{equipe_home} (Casa)** apresenta um **{desempenho_home} desempenho** como mandante, com média de **{gf_avg_home:.2f} gols** por jogo e **{ppg_home:.2f} PPG**.
+              Marca o primeiro gol em **{fg_home_pct}** das partidas e faz gols no **1º tempo em {gols_1ht_home}** dos jogos.
+            
+            - 🚗 **{equipe_away} (Visitante)** tem um desempenho **{desempenho_away}** fora de casa, com média de **{gf_avg_away:.2f} gols** e **{ppg_away:.2f} PPG**.
+              Marca primeiro em **{fg_away_pct}** das partidas e marca no **1º tempo em {gols_1ht_away}** dos jogos.
+    
+            - 🎯 **Odds Justas**: Mandante - **{odd_justa_home}**, Visitante - **{odd_justa_away}**.
+    
+            ### 💡 Sugestões de Mercado:
+            {'  \n'.join(sugestoes)}
+            """
+    
+            st.markdown("### 📊 **Análise Detalhada e Sugestões**")
+            st.markdown(resumo)
+      
 
 
         
