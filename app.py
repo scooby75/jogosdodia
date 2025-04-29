@@ -590,12 +590,13 @@ with tabs[0]:
             st.warning("Nenhuma estatística encontrada para os times selecionados.")
 
 # ABA 10 - Síntese Detalhada
+
     with tabs[9]:
         resumo = ""
     
         if not home_filtered.empty and not away_filtered.empty:
-            home_row = Team_Home_filtered.iloc[0]
-            away_row = Team_Away_filtered.iloc[0]
+            home_row = home_filtered.iloc[0]
+            away_row = away_filtered.iloc[0]
     
             # Variáveis principais
             ppg_home = home_row.get("PPG_Home", 0)
@@ -610,8 +611,8 @@ with tabs[0]:
             odd_justa_home = home_row.get('Odd_Justa_MO', 'N/A')
             odd_justa_away = away_row.get('Odd_Justa_MO', 'N/A')
     
-            equipe_home = home_row['Team_Home']
-            equipe_away = away_row['Team_Away']
+            equipe_home = home_row['Home']
+            equipe_away = away_row['Away']
     
             # Análise qualitativa
             desempenho_home = "bom" if ppg_home >= 1.7 else "irregular" if ppg_home >= 1.2 else "fraco"
@@ -654,8 +655,8 @@ with tabs[0]:
     
             st.markdown("### 📊 **Análise Detalhada e Sugestões**")
             st.markdown(resumo)
-      
-
+    
+    
 
         
 # Executar com variável de ambiente PORT
