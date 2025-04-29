@@ -594,8 +594,8 @@ with tabs[0]:
         resumo = ""
     
         if not home_filtered.empty and not away_filtered.empty:
-            home_row = home_filtered.iloc[0]
-            away_row = away_filtered.iloc[0]
+            home_row = Team_Home_filtered.iloc[0]
+            away_row = Team_Away_filtered.iloc[0]
     
             # Variáveis principais
             ppg_home = home_row.get("PPG_Home", 0)
