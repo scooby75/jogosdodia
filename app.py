@@ -6,7 +6,7 @@ import numpy as np
 from collections import Counter
 import itertools
 import math
-from scipy.stats import poisson
+
 
 
 # Configuração da página
