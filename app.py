@@ -593,7 +593,7 @@ with tabs[0]:
 
 # ABA 10 - Síntese Detalhada
     with tabs[9]:
-        st.markdown("## 📊 Análise Detalhada e Sugestões de Apostas")
+        
         
         # Verificar se temos dados suficientes
         if not home_filtered.empty and not away_filtered.empty:
@@ -673,8 +673,7 @@ with tabs[0]:
             
             analise_away += f"Seu ranking como visitante é **{rank_away}**, com {desempenho_fora}."
             
-            # Sugestões de apostas
-            st.markdown("## 💰 Sugestões de Mercados")
+            # Sugestões de apostas           
             
             col1, col2 = st.columns(2)
             
