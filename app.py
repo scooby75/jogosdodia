@@ -657,7 +657,7 @@ with tabs[0]:
             # Texto de análise
             analise_home = f"""
             ### 🏠 {equipe_home} (Casa)
-            O time da casa **{equipe_home}** apresenta um **{desempenho_home} desempenho** como mandante, com uma média de **{gf_avg_home:.2f} gols** por partida e uma média de pontos por jogo (PPG) de **{ppg_home:.2f}**. 
+            O time da casa **{equipe_home}** apresenta um **{desempenho_home} desempenho** como mandante, com uma frequência de **{gf_avg_home:.2f} gols** por partida e uma média de pontos por jogo (PPG) de **{ppg_home:.2f}**. 
             """
     
             if home_fg_data is not None:
@@ -788,20 +788,20 @@ with tabs[0]:
                 📊 **Justificativa:**  
                 • Time(s) com alto desempenho ofensivo.
                 • Diferença de ranking significativa.  
-                • Média de gols esperada elevada (≥2.8).  
+                • Frequência de gols esperada elevada (≥2.8).  
                 """)
             elif total_avg_goals <= 2.0:
                 st.warning(f"**⚠️ Under 2.5 Gols (Média: {total_avg_goals:.2f})**")
                 st.markdown("""
                 📊 **Justificativa:**  
-                • Ambas as equipes com média de gols baixa.  
+                • Ambas as equipes com frequência de gols baixa.  
                 • Potencial para jogo com poucos gols.  
                 """)
             else:
                 st.info(f"**🔍 Over/Under incerto (Média: {total_avg_goals:.2f})**")
                 st.markdown("""
                 📊 **Justificativa:**  
-                • Média de gols intermediária.  
+                • Frequência de gols intermediária.  
                 • Sem tendências claras para gols.  
                 """)
             # BTTS (Both Teams to Score)
@@ -812,21 +812,21 @@ with tabs[0]:
                 st.markdown(f"""
                 📊 **Justificativa:**  
                 • Ambos os times têm média de gols ≥ 1.2.  
-                • Média total de gols elevada ({total_avg_goals:.2f}).  
+                • Frequência total de gols elevada ({total_avg_goals:.2f}).  
                 • Indicativo de jogo aberto e ofensivo.  
                 """)
             elif gf_avg_home < 1.0 or gf_avg_away < 1.0:
                 st.warning("**⚠️ Sugerido: Não (Apenas um ou nenhum marca)**")
                 st.markdown(f"""
                 📊 **Justificativa:**  
-                • Um dos times apresenta baixa média de gols.  
+                • Um dos times apresenta baixa frequência de gols.  
                 • Tendência de apenas um time marcar.  
                 """)
             else:
                 st.info("**🔍 Nenhuma tendência clara para BTTS**")
                 st.markdown(f"""
                 📊 **Justificativa:**  
-                • Médias de gols equilibradas, mas não elevadas.  
+                • Frequência de gols equilibradas, mas não elevadas.  
                 • Jogo pode ter gols de apenas um dos lados.  
                 """)
 
