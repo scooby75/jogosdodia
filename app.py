@@ -593,29 +593,29 @@ with tabs[0]:
 # ABA 10 - Síntese Detalhada
 # ABA 10 - Síntese Detalhada
     with tabs[9]:
-        
+    
         # Verificar se temos dados suficientes
         if not home_filtered.empty and not away_filtered.empty:
             home_row = home_filtered.iloc[0]
             away_row = away_filtered.iloc[0]
-            
+    
             # Coletar dados adicionais
             home_fg_data = home_fg_df[home_fg_df['Team_Home'] == equipe_home].iloc[0] if not home_fg_df.empty and equipe_home in home_fg_df['Team_Home'].values else None
             away_fg_data = away_fg_df[away_fg_df['Team_Away'] == equipe_away].iloc[0] if not away_fg_df.empty and equipe_away in away_fg_df['Team_Away'].values else None
-            
+    
             home_goals_ht = goals_half_df[goals_half_df['Team'] == equipe_home].iloc[0] if not goals_half_df.empty and equipe_home in goals_half_df['Team'].values else None
             away_goals_ht = goals_half_df[goals_half_df['Team'] == equipe_away].iloc[0] if not goals_half_df.empty and equipe_away in goals_half_df['Team'].values else None
-            
-            # Dados de ranking - convertendo para inteiros
+    
+            # Dados de ranking
             try:
                 rank_home = int(home_row.get('Rank_Home', 999))
                 rank_away = int(away_row.get('Rank_Away', 999))
-                rank_diff = rank_away - rank_home  # Positivo significa home melhor rankeado
+                rank_diff = rank_away - rank_home
             except:
                 rank_home = 999
                 rank_away = 999
                 rank_diff = 0
-            
+    
             # Variáveis principais
             ppg_home = home_row.get("PPG_Home", 0)
             ppg_away = away_row.get("PPG_Away", 0)
@@ -623,7 +623,7 @@ with tabs[0]:
             gf_avg_away = away_row.get("GF_AVG_Away", 0)
             odd_justa_home = home_row.get('Odd_Justa_MO', 'N/A')
             odd_justa_away = away_row.get('Odd_Justa_MO', 'N/A')
-            
+    
             # Análise qualitativa
             if ppg_home >= 1.8:
                 desempenho_home = "excelente"
@@ -647,44 +647,47 @@ with tabs[0]:
             else:
                 desempenho_away = "fraco"
                 desempenho_fora = "dificuldade em jogos fora"
-            
+    
             # Texto de análise
             analise_home = f"""
             ### 🏠 {equipe_home} (Casa)
             O time da casa **{equipe_home}** apresenta um **{desempenho_home} desempenho** como mandante, com uma média de **{gf_avg_home:.2f} gols** por partida e uma média de pontos por jogo (PPG) de **{ppg_home:.2f}**. 
             """
-            
+    
             if home_fg_data is not None:
                 analise_home += f"O time marca o primeiro gol em **{home_fg_data['First_Gol']}** das partidas e "
-            
+    
             if home_goals_ht is not None:
                 analise_home += f"tem uma frequência de gols no primeiro tempo de **{home_goals_ht['1st half']}**. "
-            
+    
             analise_home += f"Seu ranking como mandante é **{rank_home}**, indicando {vantagem_home} contra adversários de nível similar."
-            
+    
             analise_away = f"""
             ### ✈️ {equipe_away} (Visitante)
             O time visitante **{equipe_away}** tem mostrado um desempenho **{desempenho_away}** como visitante, com média de **{gf_avg_away:.2f} gols** por partida e PPG de **{ppg_away:.2f}**. 
             """
-            
+    
             if away_fg_data is not None:
                 analise_away += f"O time marca o primeiro gol em **{away_fg_data['First_Gol']}** das partidas e "
-            
+    
             if away_goals_ht is not None:
                 analise_away += f"apresenta uma frequência de gols no primeiro tempo de **{away_goals_ht['1st half']}**. "
-            
+    
             analise_away += f"Seu ranking como visitante é **{rank_away}**, com {desempenho_fora}."
-            
+    
+            st.markdown(analise_home)
+            st.markdown(analise_away)
+    
             # Sugestões de apostas           
             col1, col2 = st.columns(2)
-            
+    
             with col1:
                 st.markdown("### 1X2 (Resultado Final)")
                 rankings_validos = rank_home != 999 and rank_away != 999
-                
+    
                 if (ppg_home >= 1.8 and (ppg_home - ppg_away) >= 1 and rankings_validos and rank_diff >= 6):
                     st.success("**✅ Aposta sugerida:** Vitória do mandante (1)")
-                    st.markdown("""
+                    st.markdown(f"""
                     📊 **Justificativa:**  
                     • Excelente desempenho como mandante (PPG ≥1.8).  
                     • Superioridade clara sobre o visitante (diferença PPG ≥1).  
@@ -693,7 +696,7 @@ with tabs[0]:
                     """)
                 elif (ppg_away >= 1.8 and (ppg_away - ppg_home) >= 1 and rankings_validos and rank_diff <= -6):
                     st.success("**✅ Aposta sugerida:** Vitória do visitante (2)")
-                    st.markdown("""
+                    st.markdown(f"""
                     📊 **Justificativa:**  
                     • Excelente desempenho como visitante (PPG ≥1.8).  
                     • Superioridade clara sobre o mandante (diferença PPG ≥1).  
@@ -709,22 +712,22 @@ with tabs[0]:
                     """)
                 else:
                     st.info("**🔍 Aposta não recomendada**")
-                    st.markdown("""
+                    st.markdown(f"""
                     📊 **Justificativa:**  
                     • Nenhum critério forte atendido.  
                     • Diferença de ranking: {abs(rank_diff)} posições.  
                     • Diferença de PPG: {abs(ppg_home - ppg_away):.2f}.  
                     """)
-                
+    
                 st.markdown(f"📌 **Odd Justa:** Casa {odd_justa_home} | Empate X | Fora {odd_justa_away}")
-            
+    
             with col2:
                 st.markdown("### Handicap Asiático (HA)")
                 diff_ppg = ppg_home - ppg_away
-                
+    
                 if (ppg_home >= 1.8 and diff_ppg >= 1 and rankings_validos and rank_diff >= 6):
                     st.success("**✅ HA -1.0 para o mandante**")
-                    st.markdown("""
+                    st.markdown(f"""
                     📊 **Justificativa:**  
                     • Mandante com desempenho forte (PPG ≥1.8).  
                     • Vantagem significativa no PPG (diferença ≥1).  
@@ -733,7 +736,7 @@ with tabs[0]:
                     """)
                 elif (ppg_home >= 1.8 and diff_ppg >= 0.5 and rankings_validos and rank_diff >= 4):
                     st.success("**✅ HA -0.75 para o mandante**")
-                    st.markdown("""
+                    st.markdown(f"""
                     📊 **Justificativa:**  
                     • Mandante com bom desempenho (PPG ≥1.8).  
                     • Vantagem moderada no PPG (diferença ≥0.5).  
@@ -742,7 +745,7 @@ with tabs[0]:
                     """)
                 elif (ppg_away >= 1.8 and -diff_ppg >= 1 and rankings_validos and rank_diff <= -6):
                     st.success("**✅ HA +1.0 para o visitante**")
-                    st.markdown("""
+                    st.markdown(f"""
                     📊 **Justificativa:**  
                     • Visitante com desempenho forte (PPG ≥1.8).  
                     • Vantagem significativa no PPG (diferença ≥1).  
@@ -758,109 +761,44 @@ with tabs[0]:
                     """)
                 else:
                     st.warning("**⚠️ HA não recomendado**")
-                    st.markdown("""
+                    st.markdown(f"""
                     📊 **Justificativa:**  
                     • Nenhum critério forte atendido.  
                     • Diferença de PPG: {diff_ppg:.2f}.  
                     • Diferença de ranking: {rank_diff} posições.  
                     """)
-                
+    
                 st.markdown(f"📊 **Diferença PPG:** {diff_ppg:.2f}")
                 if rankings_validos:
                     st.markdown(f"📊 **Diferença Ranking:** {rank_diff} (Casa {rank_home} vs Fora {rank_away})")
-            
+    
+            # Over/Under Gols
             st.markdown("### Over/Under Gols")
             total_avg_goals = gf_avg_home + gf_avg_away
-            
-            if ((ppg_home >= 1.8 or ppg_away >= 1.8) and rankings_validos and (rank_diff >= 6 or rank_diff <= -6) and total_avg_goals >= 2.8):
+    
+            if ((ppg_home >= 1.8 or ppg_away >= 1.8) and rankings_validos and abs(rank_diff) >= 6 and total_avg_goals >= 2.8):
                 st.success(f"**✅ Over 2.5 Gols (Média: {total_avg_goals:.2f})**")
                 st.markdown("""
                 📊 **Justificativa:**  
                 • Time(s) com alto desempenho ofensivo (PPG ≥1.8).  
-                • Média combinada de gols alta ({total_avg_goals:.2f} por jogo).  
-                • Grande diferença de ranking ({abs(rank_diff)} posições).  
-                • Histórico ofensivo consistente.  
+                • Diferença de ranking significativa.  
+                • Média de gols esperada elevada (≥2.8).  
                 """)
-            elif total_avg_goals >= 3.0:
-                st.success(f"**✅ Over 2.5 Gols (Média: {total_avg_goals:.2f})**")
+            elif total_avg_goals <= 2.0:
+                st.warning(f"**⚠️ Under 2.5 Gols (Média: {total_avg_goals:.2f})**")
                 st.markdown("""
                 📊 **Justificativa:**  
-                • Média combinada de gols muito alta.  
-                • Alta probabilidade de gols marcados.  
-                """)
-            elif total_avg_goals >= 2.5:
-                st.warning(f"**⚠️ Over 2.25 ou 2.5 Gols (Média: {total_avg_goals:.2f})**")
-                st.markdown("""
-                📊 **Justificativa:**  
-                • Média combinada de gols moderada.  
-                • Possibilidade de jogo aberto.  
+                • Ambas as equipes com média de gols baixa.  
+                • Potencial para jogo com poucos gols.  
                 """)
             else:
-                st.info(f"**🔍 Under 2.5 Gols pode ter valor (Média: {total_avg_goals:.2f})**")
+                st.info(f"**🔍 Over/Under incerto (Média: {total_avg_goals:.2f})**")
                 st.markdown("""
                 📊 **Justificativa:**  
-                • Média combinada de gols baixa.  
-                • Tendência a jogos mais fechados.  
+                • Média de gols intermediária.  
+                • Sem tendências claras para gols.  
                 """)
-            
-            st.markdown("### BTTS (Ambos Marcam)")
-            if home_fg_data is not None and away_fg_data is not None:
-                try:
-                    home_btts = float(home_fg_data['First_Gol'].strip('%'))
-                    away_btts = float(away_fg_data['First_Gol'].strip('%'))
-                    
-                    if ((ppg_home >= 1.8 or ppg_away >= 1.8) and rankings_validos and (rank_diff >= 6 or rank_diff <= -6) and (home_btts > 50 and away_btts > 40)):
-                        st.success("**✅ BTTS Sim - Boas chances**")
-                        st.markdown("""
-                        📊 **Justificativa:**  
-                        • Probabilidade alta de ambos marcarem (Casa: {home_btts}% | Fora: {away_btts}%).  
-                        • Time(s) com forte poder ofensivo (PPG ≥1.8).  
-                        • Disparidade significativa no ranking ({abs(rank_diff)} posições).  
-                        • Histórico ofensivo consistente.  
-                        """)
-                    elif home_btts > 55 and away_btts > 45:
-                        st.warning("**⚠️ BTTS Sim - Possível valor**")
-                        st.markdown("""
-                        📊 **Justificativa:**  
-                        • Probabilidade moderada de ambos marcarem.  
-                        • Times com capacidade ofensiva similar.  
-                        """)
-                    else:
-                        st.info("**🔍 BTTS Não pode ter valor**")
-                        st.markdown("""
-                        📊 **Justificativa:**  
-                        • Baixa probabilidade de ambos marcarem.  
-                        • Desequilíbrio ofensivo entre os times.  
-                        """)
-                    
-                    st.markdown(f"📊 Probabilidades: Casa {home_fg_data['First_Gol']} | Visitante {away_fg_data['First_Gol']}")
-                except:
-                    st.info("**🔍 Dados insuficientes para BTTS**")
-                    st.markdown("""
-                    📊 **Justificativa:**  
-                    • Dados incompletos para análise.  
-                    • Impossível calcular probabilidades.  
-                    """)
-            else:
-                st.info("**🔍 Dados insuficientes para BTTS**")
-                st.markdown("""
-                📊 **Justificativa:**  
-                • Estatísticas de primeiro gol indisponíveis.  
-                • Análise não pode ser concluída.  
-                """)
-            
-            # Exibir análise completa
-            st.markdown(analise_home)
-            st.markdown(analise_away)
-            
-        else:
-            st.warning("Dados insuficientes para gerar uma análise detalhada.")
-            st.markdown("""
-            📊 **Justificativa:**  
-            • Dados incompletos para um ou ambos os times.  
-            • Análise estatística não pode ser realizada.  
-            """)
-                
+
 # Executar com variável de ambiente PORT
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 10000))
