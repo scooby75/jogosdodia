@@ -591,7 +591,7 @@ with tabs[0]:
 
 # ABA 10 - Sintese
 
-# Suponha que todos os valores abaixo já foram extraídos corretamente
+    with tabs[9]:
         resumo = ""
         
         if not home_filtered.empty and not away_filtered.empty:
