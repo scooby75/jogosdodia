@@ -135,7 +135,7 @@ overall_filtered = overall_df[overall_df['Team_Home_Overall'] == equipe_home][ov
 # ----------------------------
 tabs = st.tabs([
     "🧾 Resumo", "🏠 Home", "📊 Overall", "🛫 Away",
-    "⚽ First Goal", "⏱️ Goals_Minute", "⚡ Goals HT/FT", "📌 CV HT", "📊 Goals Per Time"
+    "⚽ First Goal", "⏱️ Goals_Minute", "⚡ Goals HT/FT", "📌 CV HT", "📊 Goals Per Time", "Sintese"
 ])
 
 # ABA 1 - Home Favorito
@@ -588,6 +588,35 @@ with tabs[0]:
                          use_container_width=True)
         else:
             st.warning("Nenhuma estatística encontrada para os times selecionados.")
+
+# ABA 10 - Sintese
+
+
+    resumo = ""
+    
+        if not home_filtered.empty and not away_filtered.empty:
+            home_row = home_filtered.iloc[0]
+            away_row = away_filtered.iloc[0]
+            
+            ppg_home = home_row.get("PPG_Home", 0)
+            ppg_away = away_row.get("PPG_Away", 0)
+            gf_avg_home = home_row.get("GF_AVG_Home", "N/A")
+            gf_avg_away = away_row.get("GF_AVG_Away", "N/A")
+            fg_home_pct = stats_home_fg.iloc[0]['First_Gol'] if not stats_home_fg.empty else "N/A"
+            fg_away_pct = stats_away_fg.iloc[0]['First_Gol'] if not stats_away_fg.empty else "N/A"
+            gols_1ht_home = home_1st_half if 'home_1st_half' in locals() else "N/A"
+            gols_1ht_away = away_1st_half if 'away_1st_half' in locals() else "N/A"
+        
+            resumo = f"""
+        - 🏠 **{equipe_home} (Casa)** tem uma média de pontos por jogo de **{ppg_home}**, marcando em média **{gf_avg_home} gols** por jogo. 
+          Marca o primeiro gol em **{fg_home_pct}** das partidas e costuma marcar no **1º tempo em {gols_1ht_home}** dos jogos.
+        - 🚗 **{equipe_away} (Visitante)** tem um aproveitamento fora de casa de **{ppg_away} PPG**, com média de **{gf_avg_away} gols** por jogo. 
+          Abre o placar em **{fg_away_pct}** das partidas e marca no **1º tempo em {gols_1ht_away}** das vezes.
+        - ⚖️ Odd justa do mandante: **{home_row.get('Odd_Justa_MO', 'N/A')}**, visitante: **{away_row.get('Odd_Justa_MO', 'N/A')}**.
+        """
+            st.markdown("### 📊 **Resumo Analítico**")
+            st.markdown(resumo)
+    
 
         
 # Executar com variável de ambiente PORT
