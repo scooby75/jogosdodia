@@ -798,6 +798,31 @@ with tabs[0]:
                 • Média de gols intermediária.  
                 • Sem tendências claras para gols.  
                 """)
+            # BTTS (Both Teams to Score)
+            st.markdown("### BTTS (Ambos Marcam)")
+
+            if gf_avg_home >= 1.2 and gf_avg_away >= 1.2 and total_avg_goals >= 2.5:
+                st.success("**✅ Sugerido: Sim (Ambos Marcam)**")
+                st.markdown(f"""
+                📊 **Justificativa:**  
+                • Ambos os times têm média de gols ≥ 1.2.  
+                • Média total de gols elevada ({total_avg_goals:.2f}).  
+                • Indicativo de jogo aberto e ofensivo.  
+                """)
+            elif gf_avg_home < 1.0 or gf_avg_away < 1.0:
+                st.warning("**⚠️ Sugerido: Não (Apenas um ou nenhum marca)**")
+                st.markdown(f"""
+                📊 **Justificativa:**  
+                • Um dos times apresenta baixa média de gols.  
+                • Tendência de apenas um time marcar.  
+                """)
+            else:
+                st.info("**🔍 Nenhuma tendência clara para BTTS**")
+                st.markdown(f"""
+                📊 **Justificativa:**  
+                • Médias de gols equilibradas, mas não elevadas.  
+                • Jogo pode ter gols de apenas um dos lados.  
+                """)
 
 # Executar com variável de ambiente PORT
 if __name__ == "__main__":
