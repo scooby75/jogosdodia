@@ -594,7 +594,6 @@ with tabs[0]:
 # ABA 10 - Síntese Detalhada
     with tabs[9]:
         
-        
         # Verificar se temos dados suficientes
         if not home_filtered.empty and not away_filtered.empty:
             home_row = home_filtered.iloc[0]
@@ -673,43 +672,58 @@ with tabs[0]:
             
             analise_away += f"Seu ranking como visitante é **{rank_away}**, com {desempenho_fora}."
             
-            # Sugestões de apostas           
-            
+            # Sugestões de apostas com critérios específicos           
             col1, col2 = st.columns(2)
             
             with col1:
                 st.markdown("### 1X2 (Resultado Final)")
-                if ppg_home - ppg_away > 0.5:
+                # Critério modificado para vitória do mandante
+                if ppg_home >= 1.8 and (ppg_home - ppg_away) >= 1:
                     st.success("**✅ Aposta sugerida:** Vitória do mandante (1)")
-                    st.markdown(f"📊 **Justificativa:** Diferença significativa no PPG (Casa: {ppg_home:.2f} vs Fora: {ppg_away:.2f})")
-                elif ppg_away - ppg_home > 0.5:
+                    st.markdown(f"📊 **Justificativa:** PPG Casa ≥1.8 ({ppg_home:.2f}) e diferença ≥1 sobre visitante (diferença: {ppg_home - ppg_away:.2f})")
+                elif ppg_away >= 1.8 and (ppg_away - ppg_home) >= 1:
                     st.success("**✅ Aposta sugerida:** Vitória do visitante (2)")
-                    st.markdown(f"📊 **Justificativa:** Visitante com melhor desempenho (PPG Fora: {ppg_away:.2f} vs Casa: {ppg_home:.2f})")
+                    st.markdown(f"📊 **Justificativa:** PPG Visitante ≥1.8 ({ppg_away:.2f}) e diferença ≥1 sobre mandante (diferença: {ppg_away - ppg_home:.2f})")
+                elif abs(ppg_home - ppg_away) < 0.5:
+                    st.warning("**⚖️ Aposta sugerida:** Empate (X)")
+                    st.markdown("📊 **Justificativa:** Equilíbrio entre as equipes (diferença de PPG < 0.5)")
                 else:
-                    st.warning("**⚖️ Aposta sugerida:** Empate (X) ou Aposta Dupla Chance")
-                    st.markdown("📊 **Justificativa:** Equilíbrio entre as equipes")
+                    st.info("**🔍 Aposta não recomendada**")
+                    st.markdown("📊 **Justificativa:** Nenhum critério forte atendido")
                 
                 st.markdown(f"📌 **Odd Justa:** Casa {odd_justa_home} | Empate X | Fora {odd_justa_away}")
             
             with col2:
                 st.markdown("### Handicap Asiático (HA)")
                 diff_ppg = ppg_home - ppg_away
-                if diff_ppg > 0.8:
-                    st.success("**✅ HA -0.75 ou -1.0 para o mandante**")
-                elif diff_ppg > 0.5:
-                    st.success("**✅ HA -0.5 para o mandante**")
-                elif diff_ppg < -0.8:
-                    st.success("**✅ HA +0.75 ou +1.0 para o visitante**")
-                elif diff_ppg < -0.5:
-                    st.success("**✅ HA +0.5 para o visitante**")
+                
+                # Handicap ajustado aos critérios
+                if ppg_home >= 1.8 and diff_ppg >= 1:
+                    st.success("**✅ HA -1.0 para o mandante**")
+                    st.markdown("📊 **Justificativa:** Mandante forte com grande vantagem no PPG")
+                elif ppg_home >= 1.8 and diff_ppg >= 0.5:
+                    st.success("**✅ HA -0.75 para o mandante**")
+                    st.markdown("📊 **Justificativa:** Mandante forte com vantagem significativa")
+                elif ppg_away >= 1.8 and -diff_ppg >= 1:
+                    st.success("**✅ HA +1.0 para o visitante**")
+                    st.markdown("📊 **Justificativa:** Visitante forte com grande vantagem no PPG")
+                elif abs(diff_ppg) < 0.5:
+                    st.info("**🔍 HA 0.0 (Empate sem handicap)**")
+                    st.markdown("📊 **Justificativa:** Equilíbrio entre as equipes")
                 else:
-                    st.info("**🔍 HA 0.0 ou ±0.25 pode ter valor**")
+                    st.warning("**⚠️ HA não recomendado**")
+                    st.markdown("📊 **Justificativa:** Nenhum critério forte atendido")
                 
                 st.markdown(f"📊 **Diferença PPG:** {diff_ppg:.2f}")
             
             st.markdown("### Over/Under Gols")
             total_avg_goals = gf_avg_home + gf_avg_away
-            if total_avg_goals >= 3.0:
+            
+            # Over/Under ajustado considerando os critérios fortes
+            if (ppg_home >= 1.8 or ppg_away >= 1.8) and total_avg_goals >= 2.8:
+                st.success(f"**✅ Over 2.5 Gols (Média combinada: {total_avg_goals:.2f})**")
+                st.markdown("📊 **Justificativa:** Time(s) forte(s) com alta média de gols")
+            elif total_avg_goals >= 3.0:
                 st.success(f"**✅ Over 2.5 Gols (Média combinada: {total_avg_goals:.2f})**")
             elif total_avg_goals >= 2.5:
                 st.warning(f"**⚠️ Over 2.25 ou 2.5 Gols (Média: {total_avg_goals:.2f})**")
@@ -721,9 +735,12 @@ with tabs[0]:
                 try:
                     home_btts = float(home_fg_data['First_Gol'].strip('%'))
                     away_btts = float(away_fg_data['First_Gol'].strip('%'))
-                    if home_btts > 55 and away_btts > 45:
+                    
+                    # BTTS ajustado considerando times fortes
+                    if (ppg_home >= 1.8 or ppg_away >= 1.8) and (home_btts > 50 and away_btts > 40):
                         st.success("**✅ BTTS Sim - Boas chances**")
-                    elif home_btts > 60 or away_btts > 50:
+                        st.markdown("📊 **Justificativa:** Time(s) forte(s) com boa probabilidade de marcar")
+                    elif home_btts > 55 and away_btts > 45:
                         st.warning("**⚠️ BTTS Sim - Possível valor**")
                     else:
                         st.info("**🔍 BTTS Não pode ter valor**")
