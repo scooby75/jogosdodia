@@ -846,7 +846,7 @@ with tabs[0]:
                 prob_0_home = poisson.pmf(0, exp_gols_home)
                 prob_1_away = poisson.pmf(1, exp_gols_away)
                 prob_placar_0x1 = prob_0_home * prob_1_away
-                st.write(f"🧮 Probabilidade do placar 0x1 (casa favorita): {prob_placar_0x1:.2%}")
+                st.write(f"🎯 Probabilidade do placar 0x1 (casa favorita): {prob_placar_0x1:.2%}")
             else:
                 st.write("⚠️ O time da casa não é favorito neste confronto.")
             
