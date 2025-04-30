@@ -657,7 +657,7 @@ with tabs[0]:
             # Texto de análise
             analise_home = f"""
             ### 🏠 {equipe_home} (Casa)
-            O time da casa **{equipe_home}** apresenta um **{desempenho_home} desempenho** como mandante, com uma frequência de **{gf_avg_home:.2f} gols** por partida e uma média de pontos por jogo (PPG) de **{ppg_home:.2f}**. 
+            O time da casa **{equipe_home}** apresenta um **{desempenho_home} desempenho** como mandante, com uma frequência de **{gf_avg_home:.2f} gols** por partida, média de pontos por jogo (PPG) de **{ppg_home:.2f}** e um total de **{gp_home} partidas** jogadas em casa.
             """
     
             if home_fg_data is not None:
