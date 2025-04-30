@@ -839,13 +839,23 @@ with tabs[0]:
                 exp_gols_home = 0
             exp_gols_away = total_avg_goals - exp_gols_home
             
+            from scipy.stats import poisson
+            
+            # Probabilidade do placar 0x1 quando a casa é favorita
+            if ppg_home > ppg_away:
+                prob_0_home = poisson.pmf(0, exp_gols_home)
+                prob_1_away = poisson.pmf(1, exp_gols_away)
+                prob_placar_0x1 = prob_0_home * prob_1_away
+                st.write(f"🧮 Probabilidade do placar 0x1 (casa favorita): {prob_placar_0x1:.2%}")
+            else:
+                st.write("⚠️ O time da casa não é favorito neste confronto.")
+            
             # Gerar probabilidades de placares usando distribuição de Poisson
             max_gols = 5
             placares = []
             
             for gols_home in range(max_gols + 1):
                 for gols_away in range(max_gols + 1):
-                    # Usando scipy para clareza (pode usar sua fórmula se preferir)
                     prob_home = poisson.pmf(gols_home, exp_gols_home)
                     prob_away = poisson.pmf(gols_away, exp_gols_away)
                     prob_placar = prob_home * prob_away
@@ -855,9 +865,9 @@ with tabs[0]:
             placares.sort(key=lambda x: x[1], reverse=True)
             
             # Exibir os 5 placares mais prováveis
-            #st.markdown("**Top 5 placares estimados:**")
             for i, ((gh, ga), prob) in enumerate(placares[:5], start=1):
                 st.write(f"{i}. {equipe_home} {gh} x {ga} {equipe_away} — Probabilidade: {prob:.2%}")
+
 
 
 # Executar com variável de ambiente PORT
