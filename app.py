@@ -921,7 +921,7 @@ with tabs[0]:
                 # Lay Goleada Visitante
                 if gf_avg_home <= 1.2 and gf_avg_away <= 1.2:
                     #st.markdown("#### 💡 Sugestão de Aposta")
-                    st.write("💰 Lay Goleada Visitante — Odd Máxima 50\n\n➡️ Justificativa: Ambas as equipes têm média de gols por jogo inferior ou igual a 1, indicando baixa probabilidade de goleada do visitante.")
+                    st.write("💰 Lay Goleada Visitante — Odd Máxima 50")
 
                 
                 # Gerar probabilidades de placares usando distribuição de Poisson
