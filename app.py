@@ -731,7 +731,7 @@ with tabs[0]:
         
                     if home_first_goal_percentage is not None and away_first_goal_percentage is not None:
                         if home_first_goal_percentage >= 60 and away_first_goal_percentage <= 30:
-                            st.info("**🔍 Aposta sugerida:** Lay ao Visitante (HT)")
+                            st.info("**✅ Aposta sugerida:** Lay ao Visitante (HT)")
                             st.markdown("""
                             📊 **Justificativa:**  
                             • O time da casa marca o primeiro gol em **mais de 60%** das vezes, o que sugere que é provável que abram o placar.  
