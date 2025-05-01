@@ -601,71 +601,144 @@ with tabs[0]:
     with tabs[9]:
     
         # Verificar se temos dados suficientes
-        # Verifica se há dados filtrados para casa e fora
+        # Função para converter "60%", "42,7%" etc. em float
+        def converter_percentual(valor):
+            try:
+                return float(str(valor).replace('%', '').replace(',', '.'))
+            except:
+                return None
+        
+        # Verificar se temos dados suficientes
         if not home_filtered.empty and not away_filtered.empty:
             home_row = home_filtered.iloc[0]
             away_row = away_filtered.iloc[0]
         
-            # Busca segura pelos dados de 'First_Gol'
-            home_fg_data = None
-            away_fg_data = None
-            if not home_fg_df.empty and equipe_home in home_fg_df['Team_Home'].values:
-                home_fg_data = home_fg_df[home_fg_df['Team_Home'] == equipe_home].iloc[0]
-            if not away_fg_df.empty and equipe_away in away_fg_df['Team_Away'].values:
-                away_fg_data = away_fg_df[away_fg_df['Team_Away'] == equipe_away].iloc[0]
+            # Coletar dados adicionais
+            home_fg_data = home_fg_df[home_fg_df['Team_Home'] == equipe_home].iloc[0] if not home_fg_df.empty and equipe_home in home_fg_df['Team_Home'].values else None
+            away_fg_data = away_fg_df[away_fg_df['Team_Away'] == equipe_away].iloc[0] if not away_fg_df.empty and equipe_away in away_fg_df['Team_Away'].values else None
         
-            # Conversão segura de ranking
-            rank_home = pd.to_numeric(home_row.get('Rank_Home'), errors='coerce')
-            rank_away = pd.to_numeric(away_row.get('Rank_Away'), errors='coerce')
+            # Dados de ranking
+            try:
+                rank_home = int(home_row.get('Rank_Home', 999))
+                rank_away = int(away_row.get('Rank_Away', 999))
+                rank_diff = rank_away - rank_home
+            except:
+                rank_home = 999
+                rank_away = 999
+                rank_diff = 0
         
-            if pd.isna(rank_home): rank_home = 999
-            if pd.isna(rank_away): rank_away = 999
+            # Variáveis principais
+            ppg_home = home_row.get("PPG_Home", 0)
+            ppg_away = away_row.get("PPG_Away", 0)
+            gf_avg_home = home_row.get("GF_AVG_Home", 0)
+            gf_avg_away = away_row.get("GF_AVG_Away", 0)
+            odd_justa_home = home_row.get('Odd_Justa_MO', 'N/A')
+            odd_justa_away = away_row.get('Odd_Justa_MO', 'N/A')
         
-            rank_diff = rank_away - rank_home
+            # Análise qualitativa
+            if ppg_home >= 1.8:
+                desempenho_home = "excelente"
+                vantagem_home = "alta probabilidade de vitória"
+            elif ppg_home >= 1.5:
+                desempenho_home = "bom"
+                vantagem_home = "boas chances de vitória"
+            elif ppg_home >= 1.2:
+                desempenho_home = "regular"
+                vantagem_home = "desempenho equilibrado"
+            else:
+                desempenho_home = "fraco"
+                vantagem_home = "dificuldade em vencer"
         
-            # Sugerir aposta com base no padrão de marcar o primeiro gol
+            if ppg_away >= 1.5:
+                desempenho_away = "forte"
+                desempenho_fora = "bom desempenho fora de casa"
+            elif ppg_away >= 1.0:
+                desempenho_away = "regular"
+                desempenho_fora = "resultados mistos como visitante"
+            else:
+                desempenho_away = "fraco"
+                desempenho_fora = "dificuldade em jogos fora"
+        
+            # Análise de marcar primeiro gol
             if home_fg_data is not None and away_fg_data is not None:
-                home_first_goal_percentage = home_fg_data.get('First_Gol', 0)
-                away_first_goal_percentage = away_fg_data.get('First_Gol', 0)
+                home_first_goal_percentage = converter_percentual(home_fg_data.get('First_Gol', 0))
+                away_first_goal_percentage = converter_percentual(away_fg_data.get('First_Gol', 0))
         
-                if home_first_goal_percentage >= 60 and away_first_goal_percentage <= 30:
-                    st.info("**🔍 Aposta sugerida:** Lay ao Visitante (HT) após o gol")
-                    st.markdown("""
-                    📊 **Justificativa:**
-                    • O time da casa marca o primeiro gol em **mais de 60% das vezes**.  
-                    • O time visitante marca o primeiro gol em **menos de 30% das vezes**.  
-                    • A aposta deve ser feita no Lay ao Visitante no intervalo, fechando a aposta após o gol.
-                    """)
+                if home_first_goal_percentage is not None and away_first_goal_percentage is not None:
+                    if home_first_goal_percentage >= 60 and away_first_goal_percentage <= 30:
+                        st.info("**🔍 Aposta sugerida:** Lay ao Visitante (HT) após o gol")
+                        st.markdown("""
+                        📊 **Justificativa:**
+                        • O time da casa marca o primeiro gol em **mais de 60% das vezes**, o que sugere que é provável que abram o placar.  
+                        • O time visitante marca o primeiro gol em **menos de 30% das vezes**, indicando uma dificuldade em iniciar as partidas com vantagem.  
+                        • A aposta deve ser feita no Lay ao Visitante no intervalo, fechando a aposta após o gol.
+                        """)
         
-            # Construção da análise para o time da casa
+            # Texto de análise
             analise_home = f"""
             ### 🏠 {equipe_home} (Casa)
-            O time da casa **{equipe_home}** apresenta um **{desempenho_home} desempenho** como mandante, com uma frequência de **{gf_avg_home:.2f} gols** por partida e uma média de pontos por jogo (PPG) de **{ppg_home:.2f}**.
+            O time da casa **{equipe_home}** apresenta um **{desempenho_home} desempenho** como mandante, com uma frequência de **{gf_avg_home:.2f} gols** por partida e uma média de pontos por jogo (PPG) de **{ppg_home:.2f}**. 
             """
         
-            if home_fg_data is not None and 'First_Gol' in home_fg_data:
-                analise_home += f"O time marca o primeiro gol em **{home_fg_data['First_Gol']}%** das partidas e "
+            if home_fg_data is not None:
+                analise_home += f"O time marca o primeiro gol em **{home_fg_data['First_Gol']}** das partidas e "
         
-            analise_home += f"Seu ranking como mandante é **{int(rank_home)}**, indicando {vantagem_home} contra adversários de nível similar."
+            analise_home += f"seu ranking como mandante é **{rank_home}**, indicando {vantagem_home} contra adversários de nível similar."
+        
+            analise_away = f"""
+            ### ✈️ {equipe_away} (Visitante)
+            O time visitante **{equipe_away}** tem mostrado um desempenho **{desempenho_away}** como visitante, com média de **{gf_avg_away:.2f} gols** por partida e PPG de **{ppg_away:.2f}**. 
+            """
+        
+            if away_fg_data is not None:
+                analise_away += f"O time marca o primeiro gol em **{away_fg_data['First_Gol']}** das partidas e "
+        
+            analise_away += f"seu ranking como visitante é **{rank_away}**, com {desempenho_fora}."
         
             st.markdown(analise_home)
-        
-            # Construção da análise para o time visitante
-            analise_away = f"""
-            ### 🚗 {equipe_away} (Fora)
-            O time visitante **{equipe_away}** apresenta um **{desempenho_away} desempenho** fora de casa, com uma média de **{gf_avg_away:.2f} gols** por partida e PPG de **{ppg_away:.2f}**.
-            """
-        
-            if away_fg_data is not None and 'First_Gol' in away_fg_data:
-                analise_away += f"O time marca o primeiro gol em **{away_fg_data['First_Gol']}%** das partidas e "
-        
-            analise_away += f"Seu ranking como visitante é **{int(rank_away)}**, o que sugere {vantagem_away} em jogos fora de casa."
-        
             st.markdown(analise_away)
 
-        
-            st.markdown(analise_home)
-            st.markdown(analise_away)
+    # Sugestões de apostas
+    col1, col2 = st.columns(2)
+
+    with col1:
+        st.markdown("### 1X2 (Resultado Final)")
+        rankings_validos = rank_home != 999 and rank_away != 999
+
+        if (ppg_home >= 1.8 and (ppg_home - ppg_away) >= 1 and rankings_validos and rank_diff >= 6):
+            st.success("**✅ Aposta sugerida:** Vitória do mandante (1)")
+            st.markdown(f"""
+            📊 **Justificativa:**  
+            • Excelente desempenho como mandante.  
+            • Superioridade clara sobre o visitante.  
+            • Time melhor posicionado no ranking (posição {rank_home} vs {rank_away}).  
+            """)
+        elif (ppg_away >= 1.8 and (ppg_away - ppg_home) >= 1 and rankings_validos and rank_diff <= -6):
+            st.success("**✅ Aposta sugerida:** Vitória do visitante (2)")
+            st.markdown(f"""
+            📊 **Justificativa:**  
+            • Excelente desempenho como visitante.  
+            • Superioridade clara sobre o mandante.  
+            • Time melhor posicionado no ranking (posição {rank_away} vs {rank_home}).  
+            """)
+        elif abs(ppg_home - ppg_away) < 0.5:
+            st.warning("**⚖️ Aposta sugerida:** Empate (X)")
+            st.markdown("""
+            📊 **Justificativa:**  
+            • Equilíbrio entre as equipes  
+            • Nenhum time com vantagem significativa.  
+            """)
+        else:
+            st.info("**🔍 Aposta não recomendada**")
+            st.markdown(f"""
+            📊 **Justificativa:**  
+            • Nenhum critério forte atendido.  
+            • Diferença de ranking: {abs(rank_diff)} posições.  
+            • Diferença de PPG: {abs(ppg_home - ppg_away):.2f}.  
+            """)
+
+        st.markdown(f"📌 **Odd Justa:** Casa {odd_justa_home} | Fora {odd_justa_away}")
+
         
             # Sugestões de apostas           
             col1, col2 = st.columns(2)
