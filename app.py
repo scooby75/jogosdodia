@@ -778,35 +778,46 @@ with tabs[0]:
                 if rankings_validos:
                     st.markdown(f"📊 **Ranking:** (Casa {rank_home} vs Fora {rank_away})")
     
-                # Tendencia 05HT
+                # Tendencia 05HT               
+                
+                # Filtrar os dados das equipes
                 filtered = goals_half_df[goals_half_df['Team'].isin([equipe_home, equipe_away])]
                 
                 if not filtered.empty:
-                    # Extrair as frequências de gols no 1º tempo
-                    freq_ht_home = filtered[filtered['Team'] == equipe_home]['1st half'].values[0]
-                    freq_ht_away = filtered[filtered['Team'] == equipe_away]['1st half'].values[0]
+                    def converter_percentual(valor):
+                        try:
+                            return float(str(valor).replace('%', '').strip()) / 100
+                        except:
+                            return np.nan
                 
-                    # Calcular a média
-                    media_freq_ht = (freq_ht_home + freq_ht_away) / 2
+                    freq_ht_home = filtered.loc[filtered['Team'] == equipe_home, '1st half'].map(converter_percentual).mean()
+                    freq_ht_away = filtered.loc[filtered['Team'] == equipe_away, '1st half'].map(converter_percentual).mean()
                 
-                    # Verificar tendência para Over 0.5 HT
-                    st.markdown("### Over/Under 0.5 Gols no 1º Tempo")
-                    if media_freq_ht >= 0.65:
-                        st.success(f"**✅ Tendência Over 0.5 HT (Média: {media_freq_ht*100:.0f}%)**")
-                        st.markdown("""
-                        📊 **Justificativa:**  
-                        • Alta frequência de gols no 1º tempo para ambas as equipes.  
-                        • Probabilidade elevada de pelo menos 1 gol antes do intervalo.  
-                        """)
+                    if not np.isnan(freq_ht_home) and not np.isnan(freq_ht_away):
+                        media_freq_ht = (freq_ht_home + freq_ht_away) / 2
+                
+                        st.markdown("### Over/Under 0.5 Gols no 1º Tempo")
+                        if media_freq_ht >= 0.65:
+                            st.success(f"**✅ Tendência Over 0.5 HT (Média: {media_freq_ht*100:.1f}%)**")
+                            st.markdown(f"""
+                            📊 **Justificativa:**  
+                            • {equipe_home}: {freq_ht_home*100:.1f}%  
+                            • {equipe_away}: {freq_ht_away*100:.1f}%  
+                            • Alta frequência de gols no 1º tempo para ambas as equipes.  
+                            """)
+                        else:
+                            st.info(f"**🔍 Sem tendência clara para Over 0.5 HT (Média: {media_freq_ht*100:.1f}%)**")
+                            st.markdown(f"""
+                            📊 **Justificativa:**  
+                            • {equipe_home}: {freq_ht_home*100:.1f}%  
+                            • {equipe_away}: {freq_ht_away*100:.1f}%  
+                            • Frequência abaixo do ideal para apostar em Over 0.5 HT.  
+                            """)
                     else:
-                        st.info(f"**🔍 Sem tendência clara para Over 0.5 HT (Média: {media_freq_ht*100:.0f}%)**")
-                        st.markdown("""
-                        📊 **Justificativa:**  
-                        • Frequência de gols no 1º tempo abaixo do ideal.  
-                        • Melhor evitar entrada nesse mercado.  
-                        """)
+                        st.warning("Dados inválidos ou ausentes para calcular a média de gols no 1º tempo.")
                 else:
-                    st.warning("Nenhuma estatística de Goals Half encontrada para as equipes selecionadas.")
+                    st.warning("Nenhuma estatística de '1st half' encontrada para as equipes selecionadas.")
+
 
             
             
