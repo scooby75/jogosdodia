@@ -804,7 +804,7 @@ with tabs[0]:
                     if freq_ht_home.size > 0 and freq_ht_away.size > 0 and not np.isnan(freq_ht_home[0]) and not np.isnan(freq_ht_away[0]):
                         media_freq_ht = (freq_ht_home[0] + freq_ht_away[0]) / 2
             
-                        st.markdown("### Over/Under 0.5 Gols no 1º Tempo")
+                        st.markdown("### Over/Under 05HT)
                         if media_freq_ht >= 0.65:
                             st.success(f"**✅ Tendência Over 0.5 HT (Média: {media_freq_ht*100:.1f}%)**")
                             st.markdown(f"""
@@ -828,7 +828,7 @@ with tabs[0]:
             
             with col2:
                 # Over/Under Gols
-                st.markdown("### Over/Under Gols")
+                st.markdown("### Over/Under 25FT")
                 total_avg_goals = gf_avg_home + gf_avg_away
             
                 if ((ppg_home >= 1.8 or ppg_away >= 1.8) and rankings_validos and abs(rank_diff) >= 6 and total_avg_goals >= 2.8):
