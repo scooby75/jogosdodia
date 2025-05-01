@@ -660,7 +660,7 @@ with tabs[0]:
                 # Verificar a condição para o Lay ao Visitante no intervalo
                 if home_first_goal_percentage >= 60 and away_first_goal_percentage <= 30:
                     st.info("**🔍 Aposta sugerida:** Lay ao Visitante (HT) após o gol")
-                    st.markdown("""
+                    st.markdown(""" 
                     📊 **Justificativa:**
                     • O time da casa marca o primeiro gol em **mais de 60% das vezes**, o que sugere que é provável que abram o placar.
                     • O time visitante marca o primeiro gol em **menos de 30% das vezes**, indicando uma dificuldade em iniciar as partidas com vantagem.
@@ -716,7 +716,7 @@ with tabs[0]:
                     """)
                 elif abs(ppg_home - ppg_away) < 0.5:
                     st.warning("**⚖️ Aposta sugerida:** Empate (X)")
-                    st.markdown("""
+                    st.markdown(""" 
                     📊 **Justificativa:**  
                     • Equilíbrio entre as equipes 
                     • Nenhum time com vantagem significativa.  
@@ -731,6 +731,7 @@ with tabs[0]:
                     """)
         
                 st.markdown(f"📌 **Odd Justa:** Casa {odd_justa_home} | Fora {odd_justa_away}")
+
 
     
             with col2:
