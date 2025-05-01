@@ -778,6 +778,38 @@ with tabs[0]:
                 if rankings_validos:
                     st.markdown(f"📊 **Ranking:** (Casa {rank_home} vs Fora {rank_away})")
     
+                # Tendencia 05HT
+                filtered = goals_half_df[goals_half_df['Team'].isin([equipe_home, equipe_away])]
+                
+                if not filtered.empty:
+                    # Extrair as frequências de gols no 1º tempo
+                    freq_ht_home = filtered[filtered['Team'] == equipe_home]['1st half'].values[0]
+                    freq_ht_away = filtered[filtered['Team'] == equipe_away]['1st half'].values[0]
+                
+                    # Calcular a média
+                    media_freq_ht = (freq_ht_home + freq_ht_away) / 2
+                
+                    # Verificar tendência para Over 0.5 HT
+                    st.markdown("### Over/Under 0.5 Gols no 1º Tempo")
+                    if media_freq_ht >= 0.65:
+                        st.success(f"**✅ Tendência Over 0.5 HT (Média: {media_freq_ht*100:.0f}%)**")
+                        st.markdown("""
+                        📊 **Justificativa:**  
+                        • Alta frequência de gols no 1º tempo para ambas as equipes.  
+                        • Probabilidade elevada de pelo menos 1 gol antes do intervalo.  
+                        """)
+                    else:
+                        st.info(f"**🔍 Sem tendência clara para Over 0.5 HT (Média: {media_freq_ht*100:.0f}%)**")
+                        st.markdown("""
+                        📊 **Justificativa:**  
+                        • Frequência de gols no 1º tempo abaixo do ideal.  
+                        • Melhor evitar entrada nesse mercado.  
+                        """)
+                else:
+                    st.warning("Nenhuma estatística de Goals Half encontrada para as equipes selecionadas.")
+
+            
+            
             # Over/Under Gols
             st.markdown("### Over/Under Gols")
             total_avg_goals = gf_avg_home + gf_avg_away
