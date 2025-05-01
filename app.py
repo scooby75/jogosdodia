@@ -804,7 +804,7 @@ with tabs[0]:
                     if freq_ht_home.size > 0 and freq_ht_away.size > 0 and not np.isnan(freq_ht_home[0]) and not np.isnan(freq_ht_away[0]):
                         media_freq_ht = (freq_ht_home[0] + freq_ht_away[0]) / 2
             
-                        st.markdown("### Over/Under 05HT)
+                        st.markdown("### Over/Under 05HT")
                         if media_freq_ht >= 0.65:
                             st.success(f"**✅ Tendência Over 0.5 HT (Média: {media_freq_ht*100:.1f}%)**")
                             st.markdown(f"""
