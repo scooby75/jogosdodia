@@ -915,6 +915,14 @@ with tabs[0]:
                     st.write(f"🎯 Probabilidade do placar 0x1 (casa favorita): {prob_placar_0x1:.2%}")
                 else:
                     st.write("⚠️ O time da casa não é favorito neste confronto.")
+
+                # Probabilidade Lay Goleada
+
+                # Lay Goleada Visitante
+                if avg_gols_home <= 1 and avg_gols_away <= 1:
+                    #st.markdown("#### 💡 Sugestão de Aposta")
+                    st.warning("💰 Lay Goleada Visitante — Odd Máxima 50\n\n➡️ Justificativa: Ambas as equipes têm média de gols por jogo inferior ou igual a 1, indicando baixa probabilidade de goleada do visitante.")
+
                 
                 # Gerar probabilidades de placares usando distribuição de Poisson
                 max_gols = 5
