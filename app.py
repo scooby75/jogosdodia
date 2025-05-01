@@ -919,7 +919,7 @@ with tabs[0]:
                 # Probabilidade Lay Goleada
 
                 # Lay Goleada Visitante
-                if avg_gols_home <= 1 and avg_gols_away <= 1:
+                if avg_gols_home <= 1.2 and avg_gols_away <= 1.2:
                     #st.markdown("#### 💡 Sugestão de Aposta")
                     st.warning("💰 Lay Goleada Visitante — Odd Máxima 50\n\n➡️ Justificativa: Ambas as equipes têm média de gols por jogo inferior ou igual a 1, indicando baixa probabilidade de goleada do visitante.")
 
