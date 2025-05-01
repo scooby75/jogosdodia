@@ -601,92 +601,68 @@ with tabs[0]:
     with tabs[9]:
     
         # Verificar se temos dados suficientes
-        # Verificar se temos dados suficientes
+        # Verifica se há dados filtrados para casa e fora
         if not home_filtered.empty and not away_filtered.empty:
             home_row = home_filtered.iloc[0]
             away_row = away_filtered.iloc[0]
         
-            # Coletar dados adicionais
-            home_fg_data = home_fg_df[home_fg_df['Team_Home'] == equipe_home].iloc[0] if not home_fg_df.empty and equipe_home in home_fg_df['Team_Home'].values else None
-            away_fg_data = away_fg_df[away_fg_df['Team_Away'] == equipe_away].iloc[0] if not away_fg_df.empty and equipe_away in away_fg_df['Team_Away'].values else None
+            # Busca segura pelos dados de 'First_Gol'
+            home_fg_data = None
+            away_fg_data = None
+            if not home_fg_df.empty and equipe_home in home_fg_df['Team_Home'].values:
+                home_fg_data = home_fg_df[home_fg_df['Team_Home'] == equipe_home].iloc[0]
+            if not away_fg_df.empty and equipe_away in away_fg_df['Team_Away'].values:
+                away_fg_data = away_fg_df[away_fg_df['Team_Away'] == equipe_away].iloc[0]
         
-            # Dados de ranking
-            try:
-                rank_home = int(home_row.get('Rank_Home', 999))
-                rank_away = int(away_row.get('Rank_Away', 999))
-                rank_diff = rank_away - rank_home
-            except:
-                rank_home = 999
-                rank_away = 999
-                rank_diff = 0
+            # Conversão segura de ranking
+            rank_home = pd.to_numeric(home_row.get('Rank_Home'), errors='coerce')
+            rank_away = pd.to_numeric(away_row.get('Rank_Away'), errors='coerce')
         
-            # Variáveis principais
-            ppg_home = home_row.get("PPG_Home", 0)
-            ppg_away = away_row.get("PPG_Away", 0)
-            gf_avg_home = home_row.get("GF_AVG_Home", 0)
-            gf_avg_away = away_row.get("GF_AVG_Away", 0)
-            odd_justa_home = home_row.get('Odd_Justa_MO', 'N/A')
-            odd_justa_away = away_row.get('Odd_Justa_MO', 'N/A')
+            if pd.isna(rank_home): rank_home = 999
+            if pd.isna(rank_away): rank_away = 999
         
-            # Análise qualitativa
-            if ppg_home >= 1.8:
-                desempenho_home = "excelente"
-                vantagem_home = "alta probabilidade de vitória"
-            elif ppg_home >= 1.5:
-                desempenho_home = "bom"
-                vantagem_home = "boas chances de vitória"
-            elif ppg_home >= 1.2:
-                desempenho_home = "regular"
-                vantagem_home = "desempenho equilibrado"
-            else:
-                desempenho_home = "fraco"
-                vantagem_home = "dificuldade em vencer"
+            rank_diff = rank_away - rank_home
         
-            if ppg_away >= 1.5:
-                desempenho_away = "forte"
-                desempenho_fora = "bom desempenho fora de casa"
-            elif ppg_away >= 1.0:
-                desempenho_away = "regular"
-                desempenho_fora = "resultados mistos como visitante"
-            else:
-                desempenho_away = "fraco"
-                desempenho_fora = "dificuldade em jogos fora"
-        
-            # Análise de marcar primeiro gol
+            # Sugerir aposta com base no padrão de marcar o primeiro gol
             if home_fg_data is not None and away_fg_data is not None:
-                home_first_goal_percentage = home_fg_df['First_Gol']
-                away_first_goal_percentage = away_fg_data['First_Gol']
-                
-                # Verificar a condição para o Lay ao Visitante no intervalo
+                home_first_goal_percentage = home_fg_data.get('First_Gol', 0)
+                away_first_goal_percentage = away_fg_data.get('First_Gol', 0)
+        
                 if home_first_goal_percentage >= 60 and away_first_goal_percentage <= 30:
                     st.info("**🔍 Aposta sugerida:** Lay ao Visitante (HT) após o gol")
-                    st.markdown(""" 
+                    st.markdown("""
                     📊 **Justificativa:**
-                    • O time da casa marca o primeiro gol em **mais de 60% das vezes**, o que sugere que é provável que abram o placar.
-                    • O time visitante marca o primeiro gol em **menos de 30% das vezes**, indicando uma dificuldade em iniciar as partidas com vantagem.
+                    • O time da casa marca o primeiro gol em **mais de 60% das vezes**.  
+                    • O time visitante marca o primeiro gol em **menos de 30% das vezes**.  
                     • A aposta deve ser feita no Lay ao Visitante no intervalo, fechando a aposta após o gol.
                     """)
         
-            # Texto de análise
+            # Construção da análise para o time da casa
             analise_home = f"""
             ### 🏠 {equipe_home} (Casa)
-            O time da casa **{equipe_home}** apresenta um **{desempenho_home} desempenho** como mandante, com uma frequência de **{gf_avg_home:.2f} gols** por partida e uma média de pontos por jogo (PPG) de **{ppg_home:.2f}**. 
+            O time da casa **{equipe_home}** apresenta um **{desempenho_home} desempenho** como mandante, com uma frequência de **{gf_avg_home:.2f} gols** por partida e uma média de pontos por jogo (PPG) de **{ppg_home:.2f}**.
             """
         
-            if home_fg_data is not None:
-                analise_home += f"O time marca o primeiro gol em **{home_fg_data['First_Gol']}** das partidas e "
+            if home_fg_data is not None and 'First_Gol' in home_fg_data:
+                analise_home += f"O time marca o primeiro gol em **{home_fg_data['First_Gol']}%** das partidas e "
         
-            analise_home += f"Seu ranking como mandante é **{rank_home}**, indicando {vantagem_home} contra adversários de nível similar."
+            analise_home += f"Seu ranking como mandante é **{int(rank_home)}**, indicando {vantagem_home} contra adversários de nível similar."
         
+            st.markdown(analise_home)
+        
+            # Construção da análise para o time visitante
             analise_away = f"""
-            ### ✈️ {equipe_away} (Visitante)
-            O time visitante **{equipe_away}** tem mostrado um desempenho **{desempenho_away}** como visitante, com média de **{gf_avg_away:.2f} gols** por partida e PPG de **{ppg_away:.2f}**. 
+            ### 🚗 {equipe_away} (Fora)
+            O time visitante **{equipe_away}** apresenta um **{desempenho_away} desempenho** fora de casa, com uma média de **{gf_avg_away:.2f} gols** por partida e PPG de **{ppg_away:.2f}**.
             """
         
-            if away_fg_data is not None:
-                analise_away += f"O time marca o primeiro gol em **{away_fg_data['First_Gol']}** das partidas e "
+            if away_fg_data is not None and 'First_Gol' in away_fg_data:
+                analise_away += f"O time marca o primeiro gol em **{away_fg_data['First_Gol']}%** das partidas e "
         
-            analise_away += f"Seu ranking como visitante é **{rank_away}**, com {desempenho_fora}."
+            analise_away += f"Seu ranking como visitante é **{int(rank_away)}**, o que sugere {vantagem_away} em jogos fora de casa."
+        
+            st.markdown(analise_away)
+
         
             st.markdown(analise_home)
             st.markdown(analise_away)
