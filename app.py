@@ -781,6 +781,7 @@ with tabs[0]:
                 # Tendencia 05HT               
 
             col1, col2 = st.columns(2)    
+            
             with col1:
                 # Função para converter string percentual em número decimal
                 def converter_percentual(valor):
@@ -824,35 +825,35 @@ with tabs[0]:
                         st.warning("Não foi possível calcular a média — valores ausentes ou inválidos.")
                 else:
                     st.warning("Nenhuma estatística de '1st half' encontrada para as equipes selecionadas.")
+            
+            with col2:
+                # Over/Under Gols
+                st.markdown("### Over/Under Gols")
+                total_avg_goals = gf_avg_home + gf_avg_away
+            
+                if ((ppg_home >= 1.8 or ppg_away >= 1.8) and rankings_validos and abs(rank_diff) >= 6 and total_avg_goals >= 2.8):
+                    st.success(f"**✅ Over 2.5 Gols (Média: {total_avg_goals:.2f})**")
+                    st.markdown("""
+                    📊 **Justificativa:**  
+                    • Time(s) com alto desempenho ofensivo.  
+                    • Diferença de ranking significativa.  
+                    • Frequência de gols esperada elevada (≥2.8).  
+                    """)
+                elif total_avg_goals <= 2.0:
+                    st.warning(f"**⚠️ Under 2.5 Gols (Média: {total_avg_goals:.2f})**")
+                    st.markdown("""
+                    📊 **Justificativa:**  
+                    • Ambas as equipes com frequência de gols baixa.  
+                    • Potencial para jogo com poucos gols.  
+                    """)
+                else:
+                    st.info(f"**🔍 Over/Under incerto (Média: {total_avg_goals:.2f})**")
+                    st.markdown("""
+                    📊 **Justificativa:**  
+                    • Frequência de gols intermediária.  
+                    • Sem tendências claras para gols.  
+                    """)
 
-            
-            
-            # Over/Under Gols
-            st.markdown("### Over/Under Gols")
-            total_avg_goals = gf_avg_home + gf_avg_away
-    
-            if ((ppg_home >= 1.8 or ppg_away >= 1.8) and rankings_validos and abs(rank_diff) >= 6 and total_avg_goals >= 2.8):
-                st.success(f"**✅ Over 2.5 Gols (Média: {total_avg_goals:.2f})**")
-                st.markdown("""
-                📊 **Justificativa:**  
-                • Time(s) com alto desempenho ofensivo.
-                • Diferença de ranking significativa.  
-                • Frequência de gols esperada elevada (≥2.8).  
-                """)
-            elif total_avg_goals <= 2.0:
-                st.warning(f"**⚠️ Under 2.5 Gols (Média: {total_avg_goals:.2f})**")
-                st.markdown("""
-                📊 **Justificativa:**  
-                • Ambas as equipes com frequência de gols baixa.  
-                • Potencial para jogo com poucos gols.  
-                """)
-            else:
-                st.info(f"**🔍 Over/Under incerto (Média: {total_avg_goals:.2f})**")
-                st.markdown("""
-                📊 **Justificativa:**  
-                • Frequência de gols intermediária.  
-                • Sem tendências claras para gols.  
-                """)
             # BTTS (Both Teams to Score)
             st.markdown("### BTTS (Ambos Marcam)")
 
