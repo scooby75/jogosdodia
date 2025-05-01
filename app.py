@@ -779,9 +779,9 @@ with tabs[0]:
                     st.markdown(f"📊 **Ranking:** (Casa {rank_home} vs Fora {rank_away})")
     
                 # Tendencia 05HT               
-                
-                
-                
+
+            col1, col2 = st.columns(2)    
+            with col1:
                 # Função para converter string percentual em número decimal
                 def converter_percentual(valor):
                     try:
@@ -790,19 +790,19 @@ with tabs[0]:
                         return float(valor) / 100 if float(valor) > 1 else float(valor)
                     except Exception:
                         return np.nan
-                
+            
                 # Filtrar os dados das equipes
                 filtered = goals_half_df[goals_half_df['Team'].isin([equipe_home, equipe_away])]
-                
+            
                 if not filtered.empty:
                     # Aplicar a conversão e obter os valores de frequência
                     freq_ht_home = filtered.loc[filtered['Team'] == equipe_home, '1st half'].map(converter_percentual).values
                     freq_ht_away = filtered.loc[filtered['Team'] == equipe_away, '1st half'].map(converter_percentual).values
-                
+            
                     # Verificar se os valores foram corretamente extraídos
                     if freq_ht_home.size > 0 and freq_ht_away.size > 0 and not np.isnan(freq_ht_home[0]) and not np.isnan(freq_ht_away[0]):
                         media_freq_ht = (freq_ht_home[0] + freq_ht_away[0]) / 2
-                
+            
                         st.markdown("### Over/Under 0.5 Gols no 1º Tempo")
                         if media_freq_ht >= 0.65:
                             st.success(f"**✅ Tendência Over 0.5 HT (Média: {media_freq_ht*100:.1f}%)**")
@@ -824,8 +824,6 @@ with tabs[0]:
                         st.warning("Não foi possível calcular a média — valores ausentes ou inválidos.")
                 else:
                     st.warning("Nenhuma estatística de '1st half' encontrada para as equipes selecionadas.")
-
-
 
             
             
