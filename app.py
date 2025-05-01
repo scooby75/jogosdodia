@@ -653,8 +653,8 @@ with tabs[0]:
                 desempenho_fora = "dificuldade em jogos fora"
         
             # Análise de marcar primeiro gol
-            if home_fg_data and away_fg_data:
-                home_first_goal_percentage = home_fg_data['First_Gol']
+            if home_fg_data is not None and away_fg_data is not None:
+                home_first_goal_percentage = home_fg_df['First_Gol']
                 away_first_goal_percentage = away_fg_data['First_Gol']
                 
                 # Verificar a condição para o Lay ao Visitante no intervalo
