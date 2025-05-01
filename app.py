@@ -780,43 +780,51 @@ with tabs[0]:
     
                 # Tendencia 05HT               
                 
+                
+                
+                # Função para converter string percentual em número decimal
+                def converter_percentual(valor):
+                    try:
+                        if isinstance(valor, str) and '%' in valor:
+                            return float(valor.replace('%', '').strip()) / 100
+                        return float(valor) / 100 if float(valor) > 1 else float(valor)
+                    except Exception:
+                        return np.nan
+                
                 # Filtrar os dados das equipes
                 filtered = goals_half_df[goals_half_df['Team'].isin([equipe_home, equipe_away])]
                 
                 if not filtered.empty:
-                    def converter_percentual(valor):
-                        try:
-                            return float(str(valor).replace('%', '').strip()) / 100
-                        except:
-                            return np.nan
+                    # Aplicar a conversão e obter os valores de frequência
+                    freq_ht_home = filtered.loc[filtered['Team'] == equipe_home, '1st half'].map(converter_percentual).values
+                    freq_ht_away = filtered.loc[filtered['Team'] == equipe_away, '1st half'].map(converter_percentual).values
                 
-                    freq_ht_home = filtered.loc[filtered['Team'] == equipe_home, '1st half'].map(converter_percentual).mean()
-                    freq_ht_away = filtered.loc[filtered['Team'] == equipe_away, '1st half'].map(converter_percentual).mean()
-                
-                    if not np.isnan(freq_ht_home) and not np.isnan(freq_ht_away):
-                        media_freq_ht = (freq_ht_home + freq_ht_away) / 2
+                    # Verificar se os valores foram corretamente extraídos
+                    if freq_ht_home.size > 0 and freq_ht_away.size > 0 and not np.isnan(freq_ht_home[0]) and not np.isnan(freq_ht_away[0]):
+                        media_freq_ht = (freq_ht_home[0] + freq_ht_away[0]) / 2
                 
                         st.markdown("### Over/Under 0.5 Gols no 1º Tempo")
                         if media_freq_ht >= 0.65:
                             st.success(f"**✅ Tendência Over 0.5 HT (Média: {media_freq_ht*100:.1f}%)**")
                             st.markdown(f"""
                             📊 **Justificativa:**  
-                            • {equipe_home}: {freq_ht_home*100:.1f}%  
-                            • {equipe_away}: {freq_ht_away*100:.1f}%  
+                            • {equipe_home}: {freq_ht_home[0]*100:.1f}%  
+                            • {equipe_away}: {freq_ht_away[0]*100:.1f}%  
                             • Alta frequência de gols no 1º tempo para ambas as equipes.  
                             """)
                         else:
                             st.info(f"**🔍 Sem tendência clara para Over 0.5 HT (Média: {media_freq_ht*100:.1f}%)**")
                             st.markdown(f"""
                             📊 **Justificativa:**  
-                            • {equipe_home}: {freq_ht_home*100:.1f}%  
-                            • {equipe_away}: {freq_ht_away*100:.1f}%  
-                            • Frequência abaixo do ideal para apostar em Over 0.5 HT.  
+                            • {equipe_home}: {freq_ht_home[0]*100:.1f}%  
+                            • {equipe_away}: {freq_ht_away[0]*100:.1f}%  
+                            • Frequência abaixo do ideal para aposta em Over 0.5 HT.  
                             """)
                     else:
-                        st.warning("Dados inválidos ou ausentes para calcular a média de gols no 1º tempo.")
+                        st.warning("Não foi possível calcular a média — valores ausentes ou inválidos.")
                 else:
                     st.warning("Nenhuma estatística de '1st half' encontrada para as equipes selecionadas.")
+
 
 
             
