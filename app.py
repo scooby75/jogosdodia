@@ -601,7 +601,7 @@ with tabs[0]:
     with tabs[9]:
     
         # Verificar se temos dados suficientes
-        # Converter % em float
+        # Função para converter "60%", "42,7%" etc. em float
         def converter_percentual(valor):
             try:
                 return float(str(valor).replace('%', '').replace(',', '.'))
@@ -658,21 +658,6 @@ with tabs[0]:
             else:
                 desempenho_away = "fraco"
                 desempenho_fora = "dificuldade em jogos fora"
-        
-            # Análise de marcar primeiro gol
-            if home_fg_data is not None and away_fg_data is not None:
-                home_first_goal_percentage = converter_percentual(home_fg_data.get('First_Gol', 0))
-                away_first_goal_percentage = converter_percentual(away_fg_data.get('First_Gol', 0))
-        
-                if home_first_goal_percentage is not None and away_first_goal_percentage is not None:
-                    if home_first_goal_percentage >= 60 and away_first_goal_percentage <= 30:
-                        st.info("**🔍 Aposta sugerida:** Lay ao Visitante (HT) após o gol")
-                        st.markdown("""
-                        📊 **Justificativa:**
-                        • O time da casa marca o primeiro gol em **mais de 60% das vezes**, o que sugere que é provável que abram o placar.  
-                        • O time visitante marca o primeiro gol em **menos de 30% das vezes**, indicando uma dificuldade em iniciar as partidas com vantagem.  
-                        • A aposta deve ser feita no Lay ao Visitante no intervalo, fechando a aposta após o gol.
-                        """)
         
             # Texto de análise
             analise_home = f"""
@@ -738,10 +723,23 @@ with tabs[0]:
                     """)
         
                 st.markdown(f"📌 **Odd Justa:** Casa {odd_justa_home} | Fora {odd_justa_away}")
-
-
-
-    
+        
+                # Sugestão adicional: Lay ao Visitante (HT)
+                if home_fg_data is not None and away_fg_data is not None:
+                    home_first_goal_percentage = converter_percentual(home_fg_data.get('First_Gol', 0))
+                    away_first_goal_percentage = converter_percentual(away_fg_data.get('First_Gol', 0))
+        
+                    if home_first_goal_percentage is not None and away_first_goal_percentage is not None:
+                        if home_first_goal_percentage >= 60 and away_first_goal_percentage <= 30:
+                            st.info("**🔍 Aposta sugerida:** Lay ao Visitante (HT)")
+                            st.markdown("""
+                            📊 **Justificativa:**  
+                            • O time da casa marca o primeiro gol em **mais de 60%** das vezes, o que sugere que é provável que abram o placar.  
+                            • O time visitante marca o primeiro gol em **menos de 30%** das vezes, indicando uma dificuldade em iniciar as partidas com vantagem.  
+                            • A aposta deve ser feita no *Lay ao Visitante* no intervalo, **fechando a aposta após o gol**.
+                            """)
+        
+            
             with col2:
                 st.markdown("### Handicap Asiático (HA)")
                 diff_ppg = ppg_home - ppg_away
