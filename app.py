@@ -626,6 +626,11 @@ with tabs[0]:
                 rank_home = 999
                 rank_away = 999
                 rank_diff = 0
+            # Carregar dados
+            equipes_casa, equipes_fora, equipes_fora_fav, overall_stats = load_all_data()
+            
+            # Rodada atual a partir da coluna GP
+            rodada_atual = overall_stats['GP'].max()
         
             # Variáveis principais
             ppg_home = home_row.get("PPG_Home", 0)
@@ -662,6 +667,7 @@ with tabs[0]:
             # Texto de análise
             analise_home = f"""
             ### 🏠 {equipe_home} (Casa)
+            Estamos na **{rodada_atual}ª rodada** da competição. 
             O time da casa **{equipe_home}** apresenta um **{desempenho_home} desempenho** como mandante, com uma frequência de **{gf_avg_home:.2f} gols** por partida e uma média de pontos por jogo (PPG) de **{ppg_home:.2f}**. 
             """
         
@@ -672,6 +678,7 @@ with tabs[0]:
         
             analise_away = f"""
             ### ✈️ {equipe_away} (Visitante)
+            Estamos na **{rodada_atual}ª rodada** da competição. 
             O time visitante **{equipe_away}** tem mostrado um desempenho **{desempenho_away}** como visitante, com média de **{gf_avg_away:.2f} gols** por partida e PPG de **{ppg_away:.2f}**. 
             """
         
