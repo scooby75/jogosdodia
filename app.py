@@ -601,7 +601,7 @@ with tabs[0]:
     with tabs[9]:
     
         # Verificar se temos dados suficientes
-        # Função para converter "60%", "42,7%" etc. em float
+        # Converter % em float
         def converter_percentual(valor):
             try:
                 return float(str(valor).replace('%', '').replace(',', '.'))
@@ -697,50 +697,8 @@ with tabs[0]:
         
             st.markdown(analise_home)
             st.markdown(analise_away)
-
-    # Sugestões de apostas
-    col1, col2 = st.columns(2)
-
-    with col1:
-        st.markdown("### 1X2 (Resultado Final)")
-        rankings_validos = rank_home != 999 and rank_away != 999
-
-        if (ppg_home >= 1.8 and (ppg_home - ppg_away) >= 1 and rankings_validos and rank_diff >= 6):
-            st.success("**✅ Aposta sugerida:** Vitória do mandante (1)")
-            st.markdown(f"""
-            📊 **Justificativa:**  
-            • Excelente desempenho como mandante.  
-            • Superioridade clara sobre o visitante.  
-            • Time melhor posicionado no ranking (posição {rank_home} vs {rank_away}).  
-            """)
-        elif (ppg_away >= 1.8 and (ppg_away - ppg_home) >= 1 and rankings_validos and rank_diff <= -6):
-            st.success("**✅ Aposta sugerida:** Vitória do visitante (2)")
-            st.markdown(f"""
-            📊 **Justificativa:**  
-            • Excelente desempenho como visitante.  
-            • Superioridade clara sobre o mandante.  
-            • Time melhor posicionado no ranking (posição {rank_away} vs {rank_home}).  
-            """)
-        elif abs(ppg_home - ppg_away) < 0.5:
-            st.warning("**⚖️ Aposta sugerida:** Empate (X)")
-            st.markdown("""
-            📊 **Justificativa:**  
-            • Equilíbrio entre as equipes  
-            • Nenhum time com vantagem significativa.  
-            """)
-        else:
-            st.info("**🔍 Aposta não recomendada**")
-            st.markdown(f"""
-            📊 **Justificativa:**  
-            • Nenhum critério forte atendido.  
-            • Diferença de ranking: {abs(rank_diff)} posições.  
-            • Diferença de PPG: {abs(ppg_home - ppg_away):.2f}.  
-            """)
-
-        st.markdown(f"📌 **Odd Justa:** Casa {odd_justa_home} | Fora {odd_justa_away}")
-
         
-            # Sugestões de apostas           
+            # Sugestões de apostas
             col1, col2 = st.columns(2)
         
             with col1:
@@ -751,8 +709,8 @@ with tabs[0]:
                     st.success("**✅ Aposta sugerida:** Vitória do mandante (1)")
                     st.markdown(f"""
                     📊 **Justificativa:**  
-                    • Excelente desempenho como mandante.
-                    • Superioridade clara sobre o visitante.
+                    • Excelente desempenho como mandante.  
+                    • Superioridade clara sobre o visitante.  
                     • Time melhor posicionado no ranking (posição {rank_home} vs {rank_away}).  
                     """)
                 elif (ppg_away >= 1.8 and (ppg_away - ppg_home) >= 1 and rankings_validos and rank_diff <= -6):
@@ -765,9 +723,9 @@ with tabs[0]:
                     """)
                 elif abs(ppg_home - ppg_away) < 0.5:
                     st.warning("**⚖️ Aposta sugerida:** Empate (X)")
-                    st.markdown(""" 
+                    st.markdown("""
                     📊 **Justificativa:**  
-                    • Equilíbrio entre as equipes 
+                    • Equilíbrio entre as equipes  
                     • Nenhum time com vantagem significativa.  
                     """)
                 else:
@@ -780,6 +738,7 @@ with tabs[0]:
                     """)
         
                 st.markdown(f"📌 **Odd Justa:** Casa {odd_justa_home} | Fora {odd_justa_away}")
+
 
 
     
@@ -834,7 +793,7 @@ with tabs[0]:
                 if rankings_validos:
                     st.markdown(f"📊 **Ranking:** (Casa {rank_home} vs Fora {rank_away})")
     
-                # Tendencia 05HT               
+            # Tendencia 05HT               
 
             col1, col2 = st.columns(2)    
             
