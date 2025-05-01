@@ -853,72 +853,76 @@ with tabs[0]:
                     • Frequência de gols intermediária.  
                     • Sem tendências claras para gols.  
                     """)
-
-            # BTTS (Both Teams to Score)
-            st.markdown("### BTTS (Ambos Marcam)")
-
-            if gf_avg_home >= 1.2 and gf_avg_away >= 1.2 and total_avg_goals >= 2.5:
-                st.success("**✅ Sugerido: Sim (Ambos Marcam)**")
-                st.markdown(f"""
-                📊 **Justificativa:**  
-                • Ambos os times têm média de gols ≥ 1.2.  
-                • Frequência total de gols elevada ({total_avg_goals:.2f}).  
-                • Indicativo de jogo aberto e ofensivo.  
-                """)
-            elif gf_avg_home < 1.0 or gf_avg_away < 1.0:
-                st.warning("**⚠️ Sugerido: Não (Apenas um ou nenhum marca)**")
-                st.markdown(f"""
-                📊 **Justificativa:**  
-                • Um dos times apresenta baixa frequência de gols.  
-                • Tendência de apenas um time marcar.  
-                """)
-            else:
-                st.info("**🔍 Nenhuma tendência clara para BTTS**")
-                st.markdown(f"""
-                📊 **Justificativa:**  
-                • Frequência de gols equilibradas, mas não elevadas.  
-                • Jogo pode ter gols de apenas um dos lados.  
-                """)
-
-            st.markdown("### 📊 5 Placares Mais Prováveis")
+         
+            col1, col2 = st.columns(2)
             
-            # Cálculo da expectativa de gols com base no PPG e na média total de gols
-            if (ppg_home + ppg_away) > 0:
-                exp_gols_home = (ppg_home / (ppg_home + ppg_away)) * total_avg_goals
-            else:
-                exp_gols_home = 0
-            exp_gols_away = total_avg_goals - exp_gols_home
+            # Coluna 1: BTTS (Ambos Marcam)
+            with col1:
+                st.markdown("### BTTS (Ambos Marcam)")
+                
+                if gf_avg_home >= 1.2 and gf_avg_away >= 1.2 and total_avg_goals >= 2.5:
+                    st.success("**✅ Sugerido: Sim (Ambos Marcam)**")
+                    st.markdown(f"""
+                    📊 **Justificativa:**  
+                    • Ambos os times têm média de gols ≥ 1.2.  
+                    • Frequência total de gols elevada ({total_avg_goals:.2f}).  
+                    • Indicativo de jogo aberto e ofensivo.  
+                    """)
+                elif gf_avg_home < 1.0 or gf_avg_away < 1.0:
+                    st.warning("**⚠️ Sugerido: Não (Apenas um ou nenhum marca)**")
+                    st.markdown(f"""
+                    📊 **Justificativa:**  
+                    • Um dos times apresenta baixa frequência de gols.  
+                    • Tendência de apenas um time marcar.  
+                    """)
+                else:
+                    st.info("**🔍 Nenhuma tendência clara para BTTS**")
+                    st.markdown(f"""
+                    📊 **Justificativa:**  
+                    • Frequência de gols equilibradas, mas não elevadas.  
+                    • Jogo pode ter gols de apenas um dos lados.  
+                    """)
             
-            from scipy.stats import poisson
+            # Coluna 2: 5 Placares Mais Prováveis
+            with col2:
+                st.markdown("### 📊 5 Placares Mais Prováveis")
+                
+                # Cálculo da expectativa de gols com base no PPG e na média total de gols
+                if (ppg_home + ppg_away) > 0:
+                    exp_gols_home = (ppg_home / (ppg_home + ppg_away)) * total_avg_goals
+                else:
+                    exp_gols_home = 0
+                exp_gols_away = total_avg_goals - exp_gols_home
+                
+                # Probabilidade do placar 0x1 quando a casa é favorita
+                if ppg_home > ppg_away:
+                    prob_0_home = poisson.pmf(0, exp_gols_home)
+                    prob_1_away = poisson.pmf(1, exp_gols_away)
+                    prob_placar_0x1 = prob_0_home * prob_1_away
+                    st.write(f"🎯 Probabilidade do placar 0x1 (casa favorita): {prob_placar_0x1:.2%}")
+                else:
+                    st.write("⚠️ O time da casa não é favorito neste confronto.")
+                
+                # Gerar probabilidades de placares usando distribuição de Poisson
+                max_gols = 5
+                placares = []
+                
+                for gols_home in range(max_gols + 1):
+                    for gols_away in range(max_gols + 1):
+                        prob_home = poisson.pmf(gols_home, exp_gols_home)
+                        prob_away = poisson.pmf(gols_away, exp_gols_away)
+                        prob_placar = prob_home * prob_away
+                        placares.append(((gols_home, gols_away), prob_placar))
+                
+                # Ordenar pelos placares com maior probabilidade
+                placares.sort(key=lambda x: x[1], reverse=True)
+                
+                # Exibir os 5 placares mais prováveis
+                for i, ((gh, ga), prob) in enumerate(placares[:5], start=1):
+                    st.write(f"{i}. {equipe_home} {gh} x {ga} {equipe_away} — Probabilidade: {prob:.2%}")
             
-            # Probabilidade do placar 0x1 quando a casa é favorita
-            if ppg_home > ppg_away:
-                prob_0_home = poisson.pmf(0, exp_gols_home)
-                prob_1_away = poisson.pmf(1, exp_gols_away)
-                prob_placar_0x1 = prob_0_home * prob_1_away
-                st.write(f"🎯 Probabilidade do placar 0x1 (casa favorita): {prob_placar_0x1:.2%}")
-            else:
-                st.write("⚠️ O time da casa não é favorito neste confronto.")
             
-            # Gerar probabilidades de placares usando distribuição de Poisson
-            max_gols = 5
-            placares = []
             
-            for gols_home in range(max_gols + 1):
-                for gols_away in range(max_gols + 1):
-                    prob_home = poisson.pmf(gols_home, exp_gols_home)
-                    prob_away = poisson.pmf(gols_away, exp_gols_away)
-                    prob_placar = prob_home * prob_away
-                    placares.append(((gols_home, gols_away), prob_placar))
-            
-            # Ordenar pelos placares com maior probabilidade
-            placares.sort(key=lambda x: x[1], reverse=True)
-            
-            # Exibir os 5 placares mais prováveis
-            for i, ((gh, ga), prob) in enumerate(placares[:5], start=1):
-                st.write(f"{i}. {equipe_home} {gh} x {ga} {equipe_away} — Probabilidade: {prob:.2%}")
-
-
 
 # Executar com variável de ambiente PORT
 if __name__ == "__main__":
