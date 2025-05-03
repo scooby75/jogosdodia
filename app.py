@@ -62,7 +62,10 @@ def goals_ht_data():
         "https://raw.githubusercontent.com/scooby75/jogosdodia/refs/heads/main/CV_Goals_HT_Home.csv",
         "https://raw.githubusercontent.com/scooby75/jogosdodia/refs/heads/main/CV_Goals_HT_Away.csv"
     ]
-    return [load_csv(url) for url in urls]
+    df_home_ht = load_csv(urls[0])
+    df_away_ht = load_csv(urls[1])
+    return df_home_ht, df_away_ht
+
 
 @st.cache_data
 def goals_per_time_data():
@@ -596,28 +599,34 @@ with tabs[0]:
             st.warning("Nenhuma estatística encontrada para os times selecionados.")
 
 
-# ABA 10 - Síntese Detalhada
-# ABA 10 - Síntese Detalhada
+    # ABA 10 - Síntese Detalhada
     with tabs[9]:
     
-        # Verificar se temos dados suficientes
-        # Função para converter "60%", "42,7%" etc. em float
         def converter_percentual(valor):
             try:
                 return float(str(valor).replace('%', '').replace(',', '.'))
             except:
                 return None
-        
-        # Verificar se temos dados suficientes
+    
         if not home_filtered.empty and not away_filtered.empty:
             home_row = home_filtered.iloc[0]
             away_row = away_filtered.iloc[0]
-        
+    
+            # Carregar dados de gols no 1º tempo
+            df_home_ht, df_away_ht = goals_ht_data()
+            avg_gols_ht_home = None
+            avg_gols_ht_away = None
+    
+            if equipe_home in df_home_ht['Team'].values:
+                avg_gols_ht_home = df_home_ht[df_home_ht['Team'] == equipe_home]['AVG'].values[0]
+    
+            if equipe_away in df_away_ht['Team'].values:
+                avg_gols_ht_away = df_away_ht[df_away_ht['Team'] == equipe_away]['AVG'].values[0]
+    
             # Coletar dados adicionais
             home_fg_data = home_fg_df[home_fg_df['Team_Home'] == equipe_home].iloc[0] if not home_fg_df.empty and equipe_home in home_fg_df['Team_Home'].values else None
             away_fg_data = away_fg_df[away_fg_df['Team_Away'] == equipe_away].iloc[0] if not away_fg_df.empty and equipe_away in away_fg_df['Team_Away'].values else None
-        
-            # Dados de ranking
+    
             try:
                 rank_home = int(home_row.get('Rank_Home', 999))
                 rank_away = int(away_row.get('Rank_Away', 999))
@@ -626,21 +635,17 @@ with tabs[0]:
                 rank_home = 999
                 rank_away = 999
                 rank_diff = 0
-            # Carregar dados
+    
             equipes_casa, equipes_fora, equipes_fora_fav, overall_stats = load_all_data()
-            
-            # Rodada atual a partir da coluna GP
             rodada_atual = overall_stats['GP'].max()
-        
-            # Variáveis principais
+    
             ppg_home = home_row.get("PPG_Home", 0)
             ppg_away = away_row.get("PPG_Away", 0)
             gf_avg_home = home_row.get("GF_AVG_Home", 0)
             gf_avg_away = away_row.get("GF_AVG_Away", 0)
             odd_justa_home = home_row.get('Odd_Justa_MO', 'N/A')
             odd_justa_away = away_row.get('Odd_Justa_MO', 'N/A')
-        
-            # Análise qualitativa
+    
             if ppg_home >= 1.8:
                 desempenho_home = "excelente"
                 vantagem_home = "alta probabilidade de vitória"
@@ -653,7 +658,7 @@ with tabs[0]:
             else:
                 desempenho_home = "fraco"
                 vantagem_home = "dificuldade em vencer"
-        
+    
             if ppg_away >= 1.5:
                 desempenho_away = "forte"
                 desempenho_fora = "bom desempenho fora de casa"
@@ -663,32 +668,40 @@ with tabs[0]:
             else:
                 desempenho_away = "fraco"
                 desempenho_fora = "dificuldade em jogos fora"
-        
-            # Texto de análise
+    
+            # Texto de análise - CASA
             analise_home = f"""
             ### 🏠 {equipe_home} (Casa)
             Estamos na **{rodada_atual}ª rodada** da competição. 
             O time da casa **{equipe_home}** apresenta um **{desempenho_home} desempenho** como mandante, com uma frequência de **{gf_avg_home:.2f} gols** por partida e uma média de pontos por jogo (PPG) de **{ppg_home:.2f}**. 
             """
-        
+    
             if home_fg_data is not None:
                 analise_home += f"O time marca o primeiro gol em **{home_fg_data['First_Gol']}** das partidas e "
-        
+    
             analise_home += f"seu ranking como mandante é **{rank_home}**, indicando {vantagem_home} contra adversários de nível similar."
-        
+    
+            if avg_gols_ht_home is not None:
+                analise_home += f" Além disso, tem média de **{avg_gols_ht_home:.2f} gols no 1º tempo**, indicando boa presença ofensiva desde os minutos iniciais."
+    
+            # Texto de análise - VISITANTE
             analise_away = f"""
             ### ✈️ {equipe_away} (Visitante)
             Estamos na **{rodada_atual}ª rodada** da competição. 
             O time visitante **{equipe_away}** tem mostrado um desempenho **{desempenho_away}** como visitante, com média de **{gf_avg_away:.2f} gols** por partida e PPG de **{ppg_away:.2f}**. 
             """
-        
+    
             if away_fg_data is not None:
                 analise_away += f"O time marca o primeiro gol em **{away_fg_data['First_Gol']}** das partidas e "
-        
+    
             analise_away += f"seu ranking como visitante é **{rank_away}**, com {desempenho_fora}."
-        
+    
+            if avg_gols_ht_away is not None:
+                analise_away += f" Além disso, tem média de **{avg_gols_ht_away:.2f} gols no 1º tempo**, o que pode ser um indicativo de bom início fora de casa."
+    
             st.markdown(analise_home)
             st.markdown(analise_away)
+
         
             # Sugestões de apostas
             col1, col2 = st.columns(2)
