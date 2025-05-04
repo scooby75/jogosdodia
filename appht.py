@@ -137,3 +137,122 @@ with tabs[1]:
         st.dataframe(away_stats[['League','Team_Away','GP','PIA','PIA_HA','PPG_HT_Away','GF_AVG_Away','Odd_Justa_MO','Rank_Away']], use_container_width=True)
     else:
         st.warning(f"Nenhuma estatística encontrada para o time visitante: {equipe_away}")
+
+# ABA 2 - First Goal
+with tabs[2]:
+    def show_team_stats(team_name, df, col_name, local):
+        stats = df[df[col_name] == team_name]
+        if not stats.empty:
+            st.markdown(f"### {team_name} ({local})")
+            cols = ['Matches', 'First_Gol', 'Goals']
+            st.dataframe(stats[cols] if all(c in stats.columns for c in cols) else stats, use_container_width=True)
+        else:
+            st.warning(f"Nenhuma estatística encontrada para {team_name} ({local})")
+
+    show_team_stats(equipe_home, home_fg_df, 'Team_Home', 'Casa')
+    show_team_stats(equipe_away, away_fg_df, 'Team_Away', 'Fora')
+
+# ABA 3 - Goals Minute
+with tabs[3]:
+    home_team_data = goal_minute_home_df[goal_minute_home_df['Team_Home'] == equipe_home]
+    away_team_data = goal_minute_away_df[goal_minute_away_df['Team_Away'] == equipe_away]
+
+    if not home_team_data.empty:
+        st.success(f"🏠 **{equipe_home}** marca seu primeiro gol em média aos **{home_team_data['AVG_min_scored'].values[0]:.1f} min**.")
+    else:
+        st.warning("Nenhum dado encontrado para o time da casa.")
+
+    if not away_team_data.empty:
+        st.success(f"🛫 **{equipe_away}** marca seu primeiro gol em média aos **{away_team_data['AVG_min_scored'].values[0]:.1f} min**.")
+    else:
+        st.warning("Nenhum dado encontrado para o time visitante.")
+
+# ABA 4 - Goals Half
+with tabs[4]:
+    filtered = goals_half_df[goals_half_df['Team'].isin([equipe_home, equipe_away])]
+    if not filtered.empty:
+        st.dataframe(filtered[['League_Name', 'Team', 'Scored', '1st half', '2nd half']], use_container_width=True)
+    else:
+        st.warning("Nenhuma estatística de Goals Half encontrada.")
+
+# ABA 5 - Goals HT
+
+with tabs[5]:
+    def gerar_barra_frequencia(frequencia_dict):
+        cores = {
+            "0": "#d9534f",  # vermelho
+            "1": "#20de6e",  # verde
+            "2": "#16ed48",  # azul
+            "3": "#24da1e",  # laranja
+            "4": "#56b72d"   # roxo
+        }
+
+        html = '<div style="display:flex; flex-wrap: wrap;">'
+        for gols, freq in frequencia_dict.items():
+            blocos = int(freq)  # 1 bloco por %
+            for _ in range(blocos):
+                html += f'<div style="width: 6px; height: 20px; background-color: {cores[gols]}; margin: 1px;"></div>'
+        html += '</div>'
+        return html
+
+    # Time da casa
+    home_ht = cv_home_df[cv_home_df['Team_Home'] == equipe_home]
+    if not home_ht.empty:
+        df_home = home_ht.rename(columns={
+            "Avg.": "Avg",
+            "4+": "4",
+            "3": "3",
+            "2": "2",
+            "1": "1",
+            "0": "0"
+        })[["Team_Home", "Avg", "0", "1", "2", "3", "4", "Total_Jogos", "% Com Gols", "% Sem Gols", "Classificação Ofensiva"]]
+
+        st.dataframe(df_home, use_container_width=True)
+
+        freq_dict_home = {g: df_home[g].iloc[0] for g in ["0", "1", "2", "3", "4"]}
+        st.markdown(gerar_barra_frequencia(freq_dict_home), unsafe_allow_html=True)
+
+        col_a, col_b, col_c = st.columns(3)
+
+        try:
+            media = float(df_home["Avg"].iloc[0])
+            com_gols = int(df_home["% Com Gols"].iloc[0])  # Exibindo sem casas decimais
+            sem_gols = int(df_home["% Sem Gols"].iloc[0])  # Exibindo sem casas decimais
+
+            col_a.metric("Média 1T", f"{media:.2f}")
+            col_b.metric("Com Gols", f"{com_gols}%")
+            col_c.metric("Sem Gols", f"{sem_gols}%")
+        except Exception as e:
+            st.error(f"Erro ao calcular métricas: {e}")
+
+    else:
+        st.warning("Dados não encontrados para o time da casa.")
+
+    # Time visitante
+    away_ht = cv_away_df[cv_away_df['Team_Away'] == equipe_away]
+    if not away_ht.empty:
+        df_away = away_ht.rename(columns={
+            "Avg..1": "Avg",
+            "0.1": "0", "1.1": "1", "2.1": "2", "3.1": "3", "4+.1": "4"
+        })[["Team_Away", "Avg", "0", "1", "2", "3", "4", "Total_Jogos", "% Com Gols", "% Sem Gols", "Classificação Ofensiva"]]
+
+        st.dataframe(df_away, use_container_width=True)
+
+        freq_dict_away = {g: df_away[g].iloc[0] for g in ["0", "1", "2", "3", "4"]}
+        st.markdown(gerar_barra_frequencia(freq_dict_away), unsafe_allow_html=True)
+
+        col_a, col_b, col_c = st.columns(3)
+
+        try:
+            media = float(df_away["Avg"].iloc[0])
+            com_gols = int(df_away["% Com Gols"].iloc[0])  # Exibindo sem casas decimais
+            sem_gols = int(df_away["% Sem Gols"].iloc[0])  # Exibindo sem casas decimais
+
+            col_a.metric("Média 1T", f"{media:.2f}")
+            col_b.metric("Com Gols", f"{com_gols}%")
+            col_c.metric("Sem Gols", f"{sem_gols}%")
+        except Exception as e:
+            st.error(f"Erro ao calcular métricas: {e}")
+
+    else:
+        st.warning("Dados não encontrados para o time visitante.")
