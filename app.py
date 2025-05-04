@@ -978,9 +978,7 @@ with tabs[0]:
                 for i, ((gh, ga), prob) in enumerate(placares[:5], start=1):
                     st.write(f"{i}. {equipe_home} {gh} x {ga} {equipe_away} — Probabilidade: {prob:.2%}")
             
-# ABA 11
-
-    
+# ABA 11    
     with tabs[10]:
     
         def converter_percentual(valor):
@@ -1052,9 +1050,10 @@ with tabs[0]:
     
             if home_fg_data is not None:
                 analise_home += f"O time marca o primeiro gol em **{home_fg_data['First_Gol']}** das partidas e "
-    
-            analise_home += f"seu ranking como mandante é **{rank_home}**, indicando {vantagem_home}.  
-            Além disso, soma **{PIH} pontos** em média no 1º tempo jogando em casa."
+            
+            analise_home += f"seu ranking como mandante é **{rank_home}**, indicando {vantagem_home}.  \n"
+            analise_home += f"Além disso, soma **{PIH} pontos** em média no 1º tempo jogando em casa."
+
     
             analise_away = f"""
             ### ✈️ {equipe_away} (Visitante)
@@ -1064,9 +1063,10 @@ with tabs[0]:
     
             if away_fg_data is not None:
                 analise_away += f"O time marca o primeiro gol em **{away_fg_data['First_Gol']}** das partidas e "
-    
-            analise_away += f"seu ranking como visitante é **{rank_away}**, com {desempenho_fora}.  
-            Além disso, soma **{PIA} pontos** em média no 1º tempo jogando fora de casa."
+            
+            analise_away += f"seu ranking como visitante é **{rank_away}**, com {desempenho_fora}.  \n"
+            analise_away += f"Além disso, soma **{PIA} pontos** em média no 1º tempo jogando fora de casa."
+
     
             st.markdown(analise_home)
             st.markdown(analise_away)
