@@ -612,13 +612,13 @@ with tabs[0]:
         away_stats = ppg_ht_away_df[ppg_ht_away_df['Team_Away'] == equipe_away]
         
         if not home_stats.empty:
-            st.subheader("Estatísticas - Time da Casa")
+            #st.subheader("Estatísticas - Time da Casa")
             st.dataframe(home_stats[['League','Team_Home','GP','W','D','L','PPG_HT_Home','Rank_Home']], use_container_width=True)
         else:
             st.warning(f"Nenhuma estatística encontrada para o time da casa: {equipe_home}")
         
         if not away_stats.empty:
-            st.subheader("Estatísticas - Time Visitante")
+            #st.subheader("Estatísticas - Time Visitante")
             st.dataframe(away_stats[['League','Team_Away','GP','W','D','L','PPG_HT_Away','Rank_Away']], use_container_width=True)
         else:
             st.warning(f"Nenhuma estatística encontrada para o time visitante: {equipe_away}")
