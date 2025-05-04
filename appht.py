@@ -127,13 +127,13 @@ with tabs[1]:
     away_stats = ppg_ht_away_df[ppg_ht_away_df['Team_Away'] == equipe_away]
 
     if not home_stats.empty:
-        st.subheader(f"📋 Estatísticas do {equipe_home}")
+        
         st.dataframe(home_stats[['League','Team_Home','GP','PIH','PIH_HA','PPG_HT_Home','GF_AVG_Home','Odd_Justa_MO','Rank_Home']], use_container_width=True)
     else:
         st.warning(f"Nenhuma estatística encontrada para o time da casa: {equipe_home}")
 
     if not away_stats.empty:
-        st.subheader(f"📋 Estatísticas do {equipe_away}")
+        
         st.dataframe(away_stats[['League','Team_Away','GP','PIA','PIA_HA','PPG_HT_Away','GF_AVG_Away','Odd_Justa_MO','Rank_Away']], use_container_width=True)
     else:
         st.warning(f"Nenhuma estatística encontrada para o time visitante: {equipe_away}")
@@ -143,7 +143,7 @@ with tabs[2]:
     def show_team_stats(team_name, df, col_name, local):
         stats = df[df[col_name] == team_name]
         if not stats.empty:
-            st.markdown(f"### {team_name} ({local})")
+            
             cols = ['Matches', 'First_Gol', 'Goals']
             st.dataframe(stats[cols] if all(c in stats.columns for c in cols) else stats, use_container_width=True)
         else:
