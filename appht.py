@@ -8,8 +8,6 @@ import itertools
 import math
 from scipy.stats import poisson
 
-
-
 # Configuração da página
 st.set_page_config(page_title="Football Stats HT", layout="wide")
 
@@ -26,7 +24,6 @@ def load_csv(url):
 # ----------------------------
 # FUNÇÕES DE CARREGAMENTO DE DADOS
 # ----------------------------
-
 
 @st.cache_data
 def load_first_goal_data():
@@ -72,8 +69,6 @@ def ppg_ht_data():
     ]
     return [load_csv(url) for url in urls]
 
-
-
 # ----------------------------
 # NORMALIZAÇÃO DE COLUNAS
 # ----------------------------
@@ -101,10 +96,9 @@ for df in all_dfs:
     normalize_columns(df)
 
 # ----------------------------
-
-# Filtrando os nomes das equipes para garantir que são apenas letras e espaços
+# Lista de times para seleção
+# ----------------------------
 all_teams = sorted(set(
-    
     home_fg_df['Team_Home'].dropna().astype(str)[home_fg_df['Team_Home'].str.contains(r'^[A-Za-z\s]+$', na=False)].tolist() +
     away_fg_df['Team_Away'].dropna().astype(str)[away_fg_df['Team_Away'].str.contains(r'^[A-Za-z\s]+$', na=False)].tolist() +
     goal_minute_home_df['Team_Home'].dropna().astype(str)[goal_minute_home_df['Team_Home'].str.contains(r'^[A-Za-z\s]+$', na=False)].tolist() +
@@ -120,50 +114,26 @@ all_teams = sorted(set(
 equipe_home = st.sidebar.selectbox("🏠 Time da Casa:", all_teams, index=all_teams.index('Bayern Munich') if 'Bayern Munich' in all_teams else 0)
 equipe_away = st.sidebar.selectbox("🛫 Time Visitante:", all_teams, index=all_teams.index('Dortmund') if 'Dortmund' in all_teams else 0)
 
-
-# ----------------------------
-# APLICAR FILTROS
-# ----------------------------
-home_filtered = ppg_ht_home_df[ppg_ht_home_df['Team_Home'] == equipe_home][home_columns]
-away_filtered = ppg_ht_away_df[ppg_ht_away_df['Team_Away'] == equipe_away][away_columns]
-
-
 # ----------------------------
 # INTERFACE STREAMLIT
 # ----------------------------
 tabs = st.tabs([
-    "⚠️ Analitico","🧾 h2h", "⚽ First Goal", "⏱️ Goals_Minute", "⚡ Goals HT/FT", "📌 CV HT", "📊 Goals Per Time"
+    "⚠️ Analitico", "🧾 h2h", "⚽ First Goal", "⏱️ Goals_Minute", "⚡ Goals HT/FT", "📌 CV HT", "📊 Goals Per Time"
 ])
 
-# ABA 1 - h2h
+# ABA 1 - H2H (índice 1)
+with tabs[1]:
+    home_stats = ppg_ht_home_df[ppg_ht_home_df['Team_Home'] == equipe_home]
+    away_stats = ppg_ht_away_df[ppg_ht_away_df['Team_Away'] == equipe_away]
 
-with tabs[9]:
-    home_stats = ppg_ht_home_df[ppg_ht_home_df['Team_Home'] == equipe_home]
-    away_stats = ppg_ht_away_df[ppg_ht_away_df['Team_Away'] == equipe_away]
-        
     if not home_stats.empty:
-        #st.subheader("Estatísticas - Time da Casa")
+        st.subheader(f"📋 Estatísticas do {equipe_home}")
         st.dataframe(home_stats[['League','Team_Home','GP','PIH','PIH_HA','PPG_HT_Home','GF_AVG_Home','Odd_Justa_MO','Rank_Home']], use_container_width=True)
     else:
         st.warning(f"Nenhuma estatística encontrada para o time da casa: {equipe_home}")
-        
+
     if not away_stats.empty:
-        #st.subheader("Estatísticas - Time Visitante")
-        st.dataframe(away_stats[['League','Team_Away','GP','PIA','PIA_HA','PPG_HT_Away','GF_AVG_Away','Odd_Justa_MO','Rank_Away']], use_container_width=True)
-    else:
-       st.warning(f"Nenhuma estatística encontrada para o time visitante: {equipe_away}")
-        
-    home_stats = ppg_ht_home_df[ppg_ht_home_df['Team_Home'] == equipe_home]
-    away_stats = ppg_ht_away_df[ppg_ht_away_df['Team_Away'] == equipe_away]
-        
-    if not home_stats.empty:
-        #st.subheader("Estatísticas - Time da Casa")
-        st.dataframe(home_stats[['League','Team_Home','GP','PIH','PIH_HA','PPG_HT_Home','GF_AVG_Home','Odd_Justa_MO','Rank_Home']], use_container_width=True)
-    else:
-        st.warning(f"Nenhuma estatística encontrada para o time da casa: {equipe_home}")
-        
-    if not away_stats.empty:
-        #st.subheader("Estatísticas - Time Visitante")
+        st.subheader(f"📋 Estatísticas do {equipe_away}")
         st.dataframe(away_stats[['League','Team_Away','GP','PIA','PIA_HA','PPG_HT_Away','GF_AVG_Away','Odd_Justa_MO','Rank_Away']], use_container_width=True)
     else:
         st.warning(f"Nenhuma estatística encontrada para o time visitante: {equipe_away}")
