@@ -144,7 +144,7 @@ with tabs[2]:
         stats = df[df[col_name] == team_name]
         if not stats.empty:
             
-            cols = ['Matches', 'First_Gol', 'Goals']
+            cols = ['Team_Home','Matches', 'First_Gol', 'Goals']
             st.dataframe(stats[cols] if all(c in stats.columns for c in cols) else stats, use_container_width=True)
         else:
             st.warning(f"Nenhuma estatística encontrada para {team_name} ({local})")
