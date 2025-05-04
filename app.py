@@ -97,7 +97,7 @@ home_fg_df, away_fg_df = load_first_goal_data()
 goal_minute_home_df, goal_minute_away_df = load_goal_minute_data()
 goals_half_df = load_goals_half_data()
 cv_home_df, cv_away_df = goals_ht_data()
-goals_per_time_home_df, goals_per_time_away_df = load_goals_per_time_data()
+goals_per_time_home_df, goals_per_time_away_df = goals_per_time_data()
 ppg_ht_home_df, ppg_ht_away_df = load_ppg_ht_data()
 
 # Normalizar todas as tabelas
