@@ -259,7 +259,7 @@ with tabs[5]:
 
 # ABA 6 - Goals Per Time
 
-    with tabs[8]:
+    with tabs[6]:
         goals_per_time_home_df, goals_per_time_away_df = goals_per_time_data()
     
         # Limpeza dos nomes de times
