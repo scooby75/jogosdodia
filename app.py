@@ -150,7 +150,7 @@ overall_filtered = overall_df[overall_df['Team_Home_Overall'] == equipe_home][ov
 # ----------------------------
 tabs = st.tabs([
     "🧾 Resumo", "🏠 Home", "📊 Overall", "🛫 Away",
-    "⚽ First Goal", "⏱️ Goals_Minute", "⚡ Goals HT/FT", "📌 CV HT", "📊 Goals Per Time", "HTF" "Sintese"
+    "⚽ First Goal", "⏱️ Goals_Minute", "⚡ Goals HT/FT", "📌 CV HT", "📊 Goals Per Time", "⚠️ HTF", "Sintese"
 ])
 
 # ABA 1 - Home Favorito
@@ -605,19 +605,19 @@ with tabs[0]:
             st.warning("Nenhuma estatística encontrada para os times selecionados.")
 
 # ABA 11 - WTF
-with tabs[10]:
-    filtered = ppg_ht_df[ppg_ht_df['Team'].isin([equipe_home, equipe_away])]
-    
-    # Verificando se o DataFrame não está vazio
-    if not filtered.empty:
-        # Exibindo as estatísticas de "Team_Home"
-        st.dataframe(filtered[['League','Team_Home','GP','W','D','L','PPG_HT_Home','Rank_Home']], use_container_width=True)
+    with tabs[10]:
+        filtered = ppg_ht_df[ppg_ht_df['Team'].isin([equipe_home, equipe_away])]
         
-        # Exibindo as estatísticas de "Team_Away"
-        st.dataframe(filtered[['League','Team_Away','GP','W','D','L','PPG_HT_Away','Rank_Away']], use_container_width=True)
-    else:
-        # Mensagem de erro mais específica
-        st.warning(f"Nenhuma estatística encontrada para as equipes {equipe_home} e {equipe_away}.")
+        # Verificando se o DataFrame não está vazio
+        if not filtered.empty:
+            # Exibindo as estatísticas de "Team_Home"
+            st.dataframe(filtered[['League','Team_Home','GP','W','D','L','PPG_HT_Home','Rank_Home']], use_container_width=True)
+            
+            # Exibindo as estatísticas de "Team_Away"
+            st.dataframe(filtered[['League','Team_Away','GP','W','D','L','PPG_HT_Away','Rank_Away']], use_container_width=True)
+        else:
+            # Mensagem de erro mais específica
+            st.warning(f"Nenhuma estatística encontrada para as equipes {equipe_home} e {equipe_away}.")
 
 
 
