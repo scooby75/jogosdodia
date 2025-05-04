@@ -141,16 +141,21 @@ with tabs[1]:
 # ABA 2 - First Goal
 with tabs[2]:
     def show_team_stats(team_name, df, col_name, local):
-        stats = df[df[col_name] == team_name]
-        if not stats.empty:
-            
-            cols = ['Team_Home','Matches', 'First_Gol', 'Goals']
-            st.dataframe(stats[cols] if all(c in stats.columns for c in cols) else stats, use_container_width=True)
+    stats = df[df[col_name] == team_name]
+    if not stats.empty:
+        if col_name == 'Team_Home':
+            cols = ['Team_Home', 'Matches', 'First_Gol', 'Goals']
         else:
-            st.warning(f"Nenhuma estatística encontrada para {team_name} ({local})")
+            cols = ['Team_Away', 'Matches', 'First_Gol', 'Goals']
+        
+        st.dataframe(stats[cols] if all(c in stats.columns for c in cols) else stats, use_container_width=True)
+    else:
+        st.warning(f"Nenhuma estatística encontrada para {team_name} ({local})")
 
-    show_team_stats(equipe_home, home_fg_df, 'Team_Home', 'Casa')
-    show_team_stats(equipe_away, away_fg_df, 'Team_Away', 'Fora')
+# Call the function for both home and away teams
+show_team_stats(equipe_home, home_fg_df, 'Team_Home', 'Casa')
+show_team_stats(equipe_away, away_fg_df, 'Team_Away', 'Fora')
+
 
 # ABA 3 - Goals Minute
 with tabs[3]:
