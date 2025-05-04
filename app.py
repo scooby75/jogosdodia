@@ -606,7 +606,7 @@ with tabs[0]:
 
 # ABA 11 - WTF
     with tabs[10]:
-        filtered = ppg_ht_df[ppg_ht_df['Team'].isin([equipe_home, equipe_away])]
+        filtered = ppg_ht_df[ppg_ht_df['Team_Home'].isin([equipe_home, equipe_away])]
         
         # Verificando se o DataFrame não está vazio
         if not filtered.empty:
