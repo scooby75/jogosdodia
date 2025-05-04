@@ -72,6 +72,14 @@ def goals_per_time_data():
     ]
     return [load_csv(url) for url in urls]
 
+@st.cache_data
+def ppg_ht_data():
+    urls = [
+        "https://raw.githubusercontent.com/scooby75/jogosdodia/refs/heads/main/PPG_HT_Home.csv",
+        "https://raw.githubusercontent.com/scooby75/jogosdodia/refs/heads/main/PPG_HT_Away.csv"
+    ]
+    return [load_csv(url) for url in urls]
+
 
 
 # ----------------------------
@@ -90,12 +98,13 @@ goal_minute_home_df, goal_minute_away_df = load_goal_minute_data()
 goals_half_df = load_goals_half_data()
 cv_home_df, cv_away_df = goals_ht_data()
 goals_per_time_home_df, goals_per_time_away_df = goals_per_time_data()
+ppg_ht_home_df, ppg_ht_away_df = ppg_ht_data()
 
 # Normalizar todas as tabelas
 all_dfs = [
     home_df, away_df, away_fav_df, overall_df, home_fg_df, away_fg_df,
     goal_minute_home_df, goal_minute_away_df, goals_half_df, cv_home_df, cv_away_df,
-    goals_per_time_home_df, goals_per_time_away_df
+    goals_per_time_home_df, goals_per_time_away_df, ppg_ht_home_df, ppg_ht_away_df
 ]
 for df in all_dfs:
     normalize_columns(df)
@@ -141,7 +150,7 @@ overall_filtered = overall_df[overall_df['Team_Home_Overall'] == equipe_home][ov
 # ----------------------------
 tabs = st.tabs([
     "🧾 Resumo", "🏠 Home", "📊 Overall", "🛫 Away",
-    "⚽ First Goal", "⏱️ Goals_Minute", "⚡ Goals HT/FT", "📌 CV HT", "📊 Goals Per Time", "Sintese"
+    "⚽ First Goal", "⏱️ Goals_Minute", "⚡ Goals HT/FT", "📌 CV HT", "📊 Goals Per Time", "HTF" "Sintese"
 ])
 
 # ABA 1 - Home Favorito
@@ -595,8 +604,23 @@ with tabs[0]:
         else:
             st.warning("Nenhuma estatística encontrada para os times selecionados.")
 
+# ABA 11 - WTF
+with tabs[10]:
+    filtered = ppg_ht_df[ppg_ht_df['Team'].isin([equipe_home, equipe_away])]
+    
+    # Verificando se o DataFrame não está vazio
+    if not filtered.empty:
+        # Exibindo as estatísticas de "Team_Home"
+        st.dataframe(filtered[['League','Team_Home','GP','W','D','L','PPG_HT_Home','Rank_Home']], use_container_width=True)
+        
+        # Exibindo as estatísticas de "Team_Away"
+        st.dataframe(filtered[['League','Team_Away','GP','W','D','L','PPG_HT_Away','Rank_Away']], use_container_width=True)
+    else:
+        # Mensagem de erro mais específica
+        st.warning(f"Nenhuma estatística encontrada para as equipes {equipe_home} e {equipe_away}.")
 
-# ABA 10 - Síntese Detalhada
+
+
 # ABA 10 - Síntese Detalhada
     with tabs[9]:
     
