@@ -259,22 +259,22 @@ with tabs[5]:
 
 # ABA 6 - Goals Per Time
 
-    with tabs[6]:
-        goals_per_time_home_df, goals_per_time_away_df = goals_per_time_data()
+with tabs[6]:
+    goals_per_time_home_df, goals_per_time_away_df = goals_per_time_data()
     
-        # Limpeza dos nomes de times
-        goals_per_time_home_df['Team_Home'] = goals_per_time_home_df['Team_Home'].astype(str).str.strip()
-        goals_per_time_away_df['Team_Away'] = goals_per_time_away_df['Team_Away'].astype(str).str.strip()
+    # Limpeza dos nomes de times
+    goals_per_time_home_df['Team_Home'] = goals_per_time_home_df['Team_Home'].astype(str).str.strip()
+    goals_per_time_away_df['Team_Away'] = goals_per_time_away_df['Team_Away'].astype(str).str.strip()
     
-        # Filtrando os dados para os times selecionados
-        filtered_home = goals_per_time_home_df[goals_per_time_home_df['Team_Home'] == equipe_home]
-        filtered_away = goals_per_time_away_df[goals_per_time_away_df['Team_Away'] == equipe_away]
+    # Filtrando os dados para os times selecionados
+    filtered_home = goals_per_time_home_df[goals_per_time_home_df['Team_Home'] == equipe_home]
+    filtered_away = goals_per_time_away_df[goals_per_time_away_df['Team_Away'] == equipe_away]
     
-        # Verificando se ambos os dataframes têm dados
-        if not filtered_home.empty and not filtered_away.empty:
-            st.subheader("Gols por faixa de tempo (Home / Away)")
-            st.dataframe(filtered_home[['League', 'Team_Home', 'GP', '0-15', '16-30', '31-45', '46-60', '61-75', '76-90']])
-            st.dataframe(filtered_away[['League', 'Team_Away', 'GP', '0-15', '16-30', '31-45', '46-60', '61-75', '76-90']],
+    # Verificando se ambos os dataframes têm dados
+    if not filtered_home.empty and not filtered_away.empty:
+        st.subheader("Gols por faixa de tempo (Home / Away)")
+        st.dataframe(filtered_home[['League', 'Team_Home', 'GP', '0-15', '16-30', '31-45', '46-60', '61-75', '76-90']])
+        st.dataframe(filtered_away[['League', 'Team_Away', 'GP', '0-15', '16-30', '31-45', '46-60', '61-75', '76-90']],
                          use_container_width=True)
-        else:
-            st.warning("Nenhuma estatística encontrada para os times selecionados.")
+    else:
+        st.warning("Nenhuma estatística encontrada para os times selecionados.")
