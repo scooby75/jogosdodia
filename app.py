@@ -608,18 +608,21 @@ with tabs[0]:
 
 # ABA 11 - WTF
     with tabs[10]:
-        filtered = ppg_ht_df[ppg_ht_df['Team_Home'].isin([equipe_home, equipe_away])]
+        home_stats = ppg_ht_home_df[ppg_ht_home_df['Team_Home'] == equipe_home]
+        away_stats = ppg_ht_away_df[ppg_ht_away_df['Team_Away'] == equipe_away]
         
-        # Verificando se o DataFrame não está vazio
-        if not filtered.empty:
-            # Exibindo as estatísticas de "Team_Home"
-            st.dataframe(filtered[['League','Team_Home','GP','W','D','L','PPG_HT_Home','Rank_Home']], use_container_width=True)
-            
-            # Exibindo as estatísticas de "Team_Away"
-            st.dataframe(filtered[['League','Team_Away','GP','W','D','L','PPG_HT_Away','Rank_Away']], use_container_width=True)
+        if not home_stats.empty:
+            st.subheader("Estatísticas - Time da Casa")
+            st.dataframe(home_stats[['League','Team_Home','GP','W','D','L','PPG_HT_Home','Rank_Home']], use_container_width=True)
         else:
-            # Mensagem de erro mais específica
-            st.warning(f"Nenhuma estatística encontrada para as equipes {equipe_home} e {equipe_away}.")
+            st.warning(f"Nenhuma estatística encontrada para o time da casa: {equipe_home}")
+        
+        if not away_stats.empty:
+            st.subheader("Estatísticas - Time Visitante")
+            st.dataframe(away_stats[['League','Team_Away','GP','W','D','L','PPG_HT_Away','Rank_Away']], use_container_width=True)
+        else:
+            st.warning(f"Nenhuma estatística encontrada para o time visitante: {equipe_away}")
+
 
 
 
