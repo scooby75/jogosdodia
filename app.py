@@ -979,7 +979,7 @@ with tabs[0]:
                     st.write(f"{i}. {equipe_home} {gh} x {ga} {equipe_away} — Probabilidade: {prob:.2%}")
             
 # ABA 11    
-    with tabs[10]:
+    with tabs[11]:
     
         def converter_percentual(valor):
             try:
