@@ -613,13 +613,13 @@ with tabs[0]:
         
         if not home_stats.empty:
             #st.subheader("Estatísticas - Time da Casa")
-            st.dataframe(home_stats[['League','Team_Home','GP','W','D','L','PPG_HT_Home','Rank_Home']], use_container_width=True)
+            st.dataframe(home_stats[['League','Team_Home','GP','PIH','PIH_HA','PPG_HT_Home','GF_AVG_Home','Odd_Justa_MO','Rank_Home']], use_container_width=True)
         else:
             st.warning(f"Nenhuma estatística encontrada para o time da casa: {equipe_home}")
         
         if not away_stats.empty:
             #st.subheader("Estatísticas - Time Visitante")
-            st.dataframe(away_stats[['League','Team_Away','GP','W','D','L','PPG_HT_Away','Rank_Away']], use_container_width=True)
+            st.dataframe(away_stats[['League','Team_Away','GP','PIH','PIA_HA','PPG_HT_Away','GF_AVG_Away','Odd_Justa_MO','Rank_Away']], use_container_width=True)
         else:
             st.warning(f"Nenhuma estatística encontrada para o time visitante: {equipe_away}")
 
