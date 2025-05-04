@@ -96,9 +96,9 @@ home_df, away_df, away_fav_df, overall_df = load_all_data()
 home_fg_df, away_fg_df = load_first_goal_data()
 goal_minute_home_df, goal_minute_away_df = load_goal_minute_data()
 goals_half_df = load_goals_half_data()
-cv_home_df, cv_away_df = goals_ht_data()
-goals_per_time_home_df, goals_per_time_away_df = goals_per_time_data()
-ppg_ht_home_df, ppg_ht_away_df = ppg_ht_data()
+cv_home_df, cv_away_df = load_goals_ht_data()
+goals_per_time_home_df, goals_per_time_away_df = load_goals_per_time_data()
+ppg_ht_home_df, ppg_ht_away_df = load_ppg_ht_data()
 
 # Normalizar todas as tabelas
 all_dfs = [
@@ -129,7 +129,9 @@ all_teams = sorted(set(
     goal_minute_away_df['Team_Away'].dropna().astype(str)[goal_minute_away_df['Team_Away'].str.contains(r'^[A-Za-z\s]+$', na=False)].tolist() +
     goals_half_df['Team'].dropna().astype(str)[goals_half_df['Team'].str.contains(r'^[A-Za-z\s]+$', na=False)].tolist() +
     goals_per_time_home_df['Team_Home'].dropna().astype(str)[goals_per_time_home_df['Team_Home'].str.contains(r'^[A-Za-z\s]+$', na=False)].tolist() +
-    goals_per_time_away_df['Team_Away'].dropna().astype(str)[goals_per_time_away_df['Team_Away'].str.contains(r'^[A-Za-z\s]+$', na=False)].tolist()
+    goals_per_time_away_df['Team_Away'].dropna().astype(str)[goals_per_time_away_df['Team_Away'].str.contains(r'^[A-Za-z\s]+$', na=False)].tolist() +
+    ppg_ht_home_df['Team_Home'].dropna().astype(str)[ppg_ht_home_df['Team_Home'].str.contains(r'^[A-Za-z\s]+$', na=False)].tolist() +
+    ppg_ht_away_df['Team_Away'].dropna().astype(str)[ppg_ht_away_df['Team_Away'].str.contains(r'^[A-Za-z\s]+$', na=False)].tolist()
 ))
 
 # Seleção dos times para a interface
