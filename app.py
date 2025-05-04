@@ -619,7 +619,7 @@ with tabs[0]:
         
         if not away_stats.empty:
             #st.subheader("Estatísticas - Time Visitante")
-            st.dataframe(away_stats[['League','Team_Away','GP','PIH','PIA_HA','PPG_HT_Away','GF_AVG_Away','Odd_Justa_MO','Rank_Away']], use_container_width=True)
+            st.dataframe(away_stats[['League','Team_Away','GP','PIA','PIA_HA','PPG_HT_Away','GF_AVG_Away','Odd_Justa_MO','Rank_Away']], use_container_width=True)
         else:
             st.warning(f"Nenhuma estatística encontrada para o time visitante: {equipe_away}")
 
