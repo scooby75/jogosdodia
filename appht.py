@@ -143,7 +143,16 @@ with tabs[0]:
         st.metric("📊 AVG GF", round(home_data['GF_AVG_Home'].values[0], 2) if not home_data.empty else 0)
         st.metric("📈 GD", round(home_data['GD_Home'].values[0], 2) if not home_data.empty else 0)
         st.metric("🏆 Rank", int(home_data['Rank_Home'].values[0]) if not home_data.empty else "—")
-        st.metric("⚽ 1º Gol", f"{fg_home['First_Gol'].values[0]:.2f}%" if not fg_home.empty else "—")
+
+        if not fg_home.empty and pd.notnull(fg_home['First_Gol'].values[0]):
+            try:
+                fg_val_home = float(fg_home['First_Gol'].values[0]) * 100
+                st.metric("⚽ 1º Gol", f"{fg_val_home:.2f}%")
+            except:
+                st.metric("⚽ 1º Gol", "—")
+        else:
+            st.metric("⚽ 1º Gol", "—")
+
         st.metric("⏱️ Min. Médio Gol", round(gm_home['AVG_min_scored'].values[0], 1) if not gm_home.empty else "—")
 
     with col_away:
@@ -154,7 +163,16 @@ with tabs[0]:
         st.metric("📊 AVG GF", round(away_data['GF_AVG_Away'].values[0], 2) if not away_data.empty else 0)
         st.metric("📉 GD", round(away_data['GD_Away'].values[0], 2) if not away_data.empty else 0)
         st.metric("🏆 Rank", int(away_data['Rank_Away'].values[0]) if not away_data.empty else "—")
-        st.metric("⚽ 1º Gol", f"{fg_away['First_Gol'].values[0]:.2f}%" if not fg_away.empty else "—")
+
+        if not fg_away.empty and pd.notnull(fg_away['First_Gol'].values[0]):
+            try:
+                fg_val_away = float(fg_away['First_Gol'].values[0]) * 100
+                st.metric("⚽ 1º Gol", f"{fg_val_away:.2f}%")
+            except:
+                st.metric("⚽ 1º Gol", "—")
+        else:
+            st.metric("⚽ 1º Gol", "—")
+
         st.metric("⏱️ Min. Médio Gol", round(gm_away['AVG_min_scored'].values[0], 1) if not gm_away.empty else "—")
 
     # CV/HT AVG e % combinados
@@ -167,6 +185,7 @@ with tabs[0]:
     else:
         col15.metric("📊 Média CV/HT", "—")
         col16.metric("🔥 % com Gols (CV/HT)", "—")
+
 
 # ABA 1 - H2H (índice 1)
 with tabs[1]:
