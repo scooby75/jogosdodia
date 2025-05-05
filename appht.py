@@ -136,50 +136,37 @@ with tabs[0]:
     col_home, col_away = st.columns(2)
 
     with col_home:
-        st.subheader(f"🏠 {equipe_home}")
-
+        st.markdown(f"### 🏠 {equipe_home}")
         st.metric("📅 Jogos (GP)", int(home_data['GP'].values[0]) if not home_data.empty else 0)
         st.metric("📈 PIH", round(home_data['PIH'].values[0], 2) if not home_data.empty else 0)
         st.metric("🏠 PPG HT", round(home_data['PPG_HT_Home'].values[0], 2) if not home_data.empty else 0)
         st.metric("📊 AVG GF", round(home_data['GF_AVG_Home'].values[0], 2) if not home_data.empty else 0)
         st.metric("📈 GD", round(home_data['GD_Home'].values[0], 2) if not home_data.empty else 0)
         st.metric("🏆 Rank", int(home_data['Rank_Home'].values[0]) if not home_data.empty else "—")
-
-        fg_val = fg_home['First_Gol'].values[0] if not fg_home.empty else 0
-        st.metric("⚽ Primeiro Gol", f"{fg_val:.2f}%" if fg_val != "—" else "—")
-
-        min_gol = gm_home['AVG_min_scored'].values[0] if not gm_home.empty else 0
-        st.metric("⏱️ Minuto Médio Gol", round(min_gol, 1))
+        st.metric("⚽ 1º Gol", f"{fg_home['First_Gol'].values[0]:.2f}%" if not fg_home.empty else "—")
+        st.metric("⏱️ Min. Médio Gol", round(gm_home['AVG_min_scored'].values[0], 1) if not gm_home.empty else "—")
 
     with col_away:
-        st.subheader(f"🛫 {equipe_away}")
-
+        st.markdown(f"### 🛫 {equipe_away}")
         st.metric("📅 Jogos (GP)", int(away_data['GP'].values[0]) if not away_data.empty else 0)
         st.metric("📉 PIA", round(away_data['PIA'].values[0], 2) if not away_data.empty else 0)
         st.metric("🛫 PPG HT", round(away_data['PPG_HT_Away'].values[0], 2) if not away_data.empty else 0)
-        st.metric("📊 AVG GF", round(away_data['GF_AVG_Home'].values[0], 2) if not away_data.empty else 0)
+        st.metric("📊 AVG GF", round(away_data['GF_AVG_Away'].values[0], 2) if not away_data.empty else 0)
         st.metric("📉 GD", round(away_data['GD_Away'].values[0], 2) if not away_data.empty else 0)
         st.metric("🏆 Rank", int(away_data['Rank_Away'].values[0]) if not away_data.empty else "—")
+        st.metric("⚽ 1º Gol", f"{fg_away['First_Gol'].values[0]:.2f}%" if not fg_away.empty else "—")
+        st.metric("⏱️ Min. Médio Gol", round(gm_away['AVG_min_scored'].values[0], 1) if not gm_away.empty else "—")
 
-        fg_val = fg_away['First_Gol'].values[0] if not fg_away.empty else 0
-        st.metric("⚽ Primeiro Gol", f"{fg_val:.2f}%" if fg_val != "—" else "—")
-
-        min_gol = gm_away['AVG_min_scored'].values[0] if not gm_away.empty else 0
-        st.metric("⏱️ Minuto Médio Gol", round(min_gol, 1))
-
-    # CV/HT AVG e %
-    st.markdown("### ⚖️ CV/HT (Comparativo Geral)")
-    col1, col2 = st.columns(2)
-
+    # CV/HT AVG e % combinados
+    col15, col16 = st.columns(2)
     if not cv_home_data.empty and not cv_away_data.empty:
         avg_cv = round((cv_home_data['AVG'].values[0] + cv_away_data['AVG'].values[0]) / 2, 2)
         perc_cv = round((cv_home_data['%_Com_Gol'].values[0] + cv_away_data['%_Com_Gol'].values[0]) / 2, 2)
-        col1.metric("📊 Média CV/HT", avg_cv)
-        col2.metric("🔥 % com Gols (CV/HT)", f"{perc_cv:.2f}%")
+        col15.metric("📊 Média CV/HT", avg_cv)
+        col16.metric("🔥 % com Gols (CV/HT)", f"{perc_cv:.2f}%")
     else:
-        col1.metric("📊 Média CV/HT", "—")
-        col2.metric("🔥 % com Gols (CV/HT)", "—")
-
+        col15.metric("📊 Média CV/HT", "—")
+        col16.metric("🔥 % com Gols (CV/HT)", "—")
 
 # ABA 1 - H2H (índice 1)
 with tabs[1]:
