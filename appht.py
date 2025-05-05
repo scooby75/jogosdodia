@@ -121,6 +121,56 @@ tabs = st.tabs([
     "⚠️ Analitico", "🧾 h2h", "⚽ First Goal", "⏱️ Goals_Minute", "⚡ Goals HT/FT", "📌 CV HT", "📊 Goals Per Time"
 ])
 
+#ABA 0 - Analitico
+with tabs[0]:
+    #st.markdown(f"## 📊 Análise Geral - {equipe_home} x {equipe_away}")
+    
+    # Coleta de dados
+    home_data = ppg_ht_home_df[ppg_ht_home_df['Team_Home'] == equipe_home]
+    away_data = ppg_ht_away_df[ppg_ht_away_df['Team_Away'] == equipe_away]
+    cv_home_data = cv_home_df[cv_home_df['Team_Home'] == equipe_home]
+    cv_away_data = cv_away_df[cv_away_df['Team_Away'] == equipe_away]
+    fg_home = home_fg_df[home_fg_df['Team_Home'] == equipe_home]
+    fg_away = away_fg_df[away_fg_df['Team_Away'] == equipe_away]
+    gm_home = goal_minute_home_df[goal_minute_home_df['Team_Home'] == equipe_home]
+    gm_away = goal_minute_away_df[goal_minute_away_df['Team_Away'] == equipe_away]
+
+    col1, col2, col3 = st.columns(3)
+    col1.metric("📅 Jogos (GP)", int(home_data['GP'].values[0]) if not home_data.empty else 0)
+    col2.metric("📈 PIH", round(home_data['PIH'].values[0], 2) if not home_data.empty else 0)
+    col3.metric("📉 PIA", round(away_data['PIA'].values[0], 2) if not away_data.empty else 0)
+
+    col4, col5, col6 = st.columns(3)
+    col4.metric("🏠 PPG HT (Home)", round(home_data['PPG_HT_Home'].values[0], 2) if not home_data.empty else 0)
+    col5.metric("🛫 PPG HT (Away)", round(away_data['PPG_HT_Away'].values[0], 2) if not away_data.empty else 0)
+    col6.metric("📊 AVG GF Home", round(home_data['GF_AVG_Home'].values[0], 2) if not home_data.empty else 0)
+
+    col7, col8, col9 = st.columns(3)
+    col7.metric("📈 GD Home", round(home_data['GD_Home'].values[0], 2) if not home_data.empty else 0)
+    col8.metric("📉 GD Away", round(away_data['GD_Away'].values[0], 2) if not away_data.empty else 0)
+    col9.metric("🏆 Rank Home", int(home_data['Rank_Home'].values[0]) if not home_data.empty else "—")
+
+    col10, col11, col12 = st.columns(3)
+    col10.metric("🛫 Rank Away", int(away_data['Rank_Away'].values[0]) if not away_data.empty else "—")
+    col11.metric("⚽ First Gol Casa", int(fg_home['First_Gol'].values[0]) if not fg_home.empty else 0)
+    col12.metric("⚽ First Gol Visitante", int(fg_away['First_Gol'].values[0]) if not fg_away.empty else 0)
+
+    col13, col14 = st.columns(2)
+    col13.metric("⏱️ Minuto Médio Gol (Casa)", round(gm_home['AVG_min_scored'].values[0], 1) if not gm_home.empty else 0)
+    col14.metric("⏱️ Minuto Médio Gol (Fora)", round(gm_away['AVG_min_scored'].values[0], 1) if not gm_away.empty else 0)
+
+    # CV/HT AVG e %
+    col15, col16 = st.columns(2)
+    if not cv_home_data.empty and not cv_away_data.empty:
+        avg_cv = round((cv_home_data['AVG'].values[0] + cv_away_data['AVG'].values[0]) / 2, 2)
+        perc_cv = round((cv_home_data['%_Com_Gol'].values[0] + cv_away_data['%_Com_Gol'].values[0]) / 2, 2)
+        col15.metric("📊 Média CV/HT", avg_cv)
+        col16.metric("🔥 % com Gols (CV/HT)", f"{perc_cv}%")
+    else:
+        col15.metric("📊 Média CV/HT", "—")
+        col16.metric("🔥 % com Gols (CV/HT)", "—")
+
+
 # ABA 1 - H2H (índice 1)
 with tabs[1]:
     home_stats = ppg_ht_home_df[ppg_ht_home_df['Team_Home'] == equipe_home]
