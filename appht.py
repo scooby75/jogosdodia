@@ -162,7 +162,7 @@ with tabs[0]:
             st.metric("⚽ 1º Gol", "—")
 
         # Exibe o minuto médio para o time da casa
-        st.metric("⏱️ Min. Médio Gol", round(gm_home['AVG_min_scored'].values[0], 1) if not gm_home.empty else "—")
+        st.metric("⏱️ Tempo Médio 1º Gol", round(gm_home['AVG_min_scored'].values[0], 1) if not gm_home.empty else "—")
 
     with col_away:
         st.markdown(f"### 🛫 {equipe_away}")
@@ -191,7 +191,7 @@ with tabs[0]:
             st.metric("⚽ 1º Gol", "—")
 
         # Exibe o minuto médio para o time visitante
-        st.metric("⏱️ Min. Médio Gol", round(gm_away['AVG_min_scored'].values[0], 1) if not gm_away.empty else "—")
+        st.metric("⏱️ Tempo Médio 1º Gol", round(gm_away['AVG_min_scored'].values[0], 1) if not gm_away.empty else "—")
 
 
 # ABA 1 - H2H (índice 1)
