@@ -142,8 +142,8 @@ with tabs[0]:
         st.metric("📅 Jogos (GP)", int(home_data['GP'].values[0]) if not home_data.empty else 0)
         st.metric("📈 PIH", round(home_data['PIH'].values[0], 2) if not home_data.empty else 0)
         st.metric("🏠 PPG HT", round(home_data['PPG_HT_Home'].values[0], 2) if not home_data.empty else 0)
-        st.metric("📊 AVG GF", round(home_data['GF_AVG_Home'].values[0], 2) if not home_data.empty else 0)
-        st.metric("📈 GD", round(home_data['GD_Home'].values[0], 2) if not home_data.empty else 0)
+        st.metric("📊 Média Gols HT", round(home_data['GF_AVG_Home'].values[0], 2) if not home_data.empty else 0)
+        st.metric("📈 Saldo de Gols", round(home_data['GD_Home'].values[0], 2) if not home_data.empty else 0)
         st.metric("🏆 Rank", int(home_data['Rank_Home'].values[0]) if not home_data.empty else "—")
 
         # Verifica e extrai o primeiro gol se disponível
