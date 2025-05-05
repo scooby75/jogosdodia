@@ -137,6 +137,8 @@ with tabs[0]:
 
     with col_home:
         st.markdown(f"### 🏠 {equipe_home}")
+        
+        # Exibe as métricas para o time da casa
         st.metric("📅 Jogos (GP)", int(home_data['GP'].values[0]) if not home_data.empty else 0)
         st.metric("📈 PIH", round(home_data['PIH'].values[0], 2) if not home_data.empty else 0)
         st.metric("🏠 PPG HT", round(home_data['PPG_HT_Home'].values[0], 2) if not home_data.empty else 0)
@@ -144,19 +146,24 @@ with tabs[0]:
         st.metric("📈 GD", round(home_data['GD_Home'].values[0], 2) if not home_data.empty else 0)
         st.metric("🏆 Rank", int(home_data['Rank_Home'].values[0]) if not home_data.empty else "—")
 
-        if not fg_home.empty and pd.notnull(fg_home['Perc.'].values[0]):
+        # Verifica se a coluna 'Perc.' existe antes de tentar acessar
+        if not fg_home.empty and 'Perc.' in fg_home.columns:
             try:
-                fg_val_home = fg_home['Perc.'].values[0]  # Extraindo o valor de Perc. diretamente
+                fg_val_home = fg_home['Perc.'].values[0]  # Extraindo o valor de Perc.
                 st.metric("⚽ 1º Gol", f"{fg_val_home}")
-            except:
-                st.metric("⚽ 1º Gol", "—")
+            except Exception as e:
+                st.metric("⚽ 1º Gol", "Erro")
+                st.write(f"Erro ao processar 1º gol: {e}")
         else:
             st.metric("⚽ 1º Gol", "—")
 
+        # Exibe o minuto médio para o time da casa
         st.metric("⏱️ Min. Médio Gol", round(gm_home['AVG_min_scored'].values[0], 1) if not gm_home.empty else "—")
 
     with col_away:
         st.markdown(f"### 🛫 {equipe_away}")
+        
+        # Exibe as métricas para o time visitante
         st.metric("📅 Jogos (GP)", int(away_data['GP'].values[0]) if not away_data.empty else 0)
         st.metric("📉 PIA", round(away_data['PIA'].values[0], 2) if not away_data.empty else 0)
         st.metric("🛫 PPG HT", round(away_data['PPG_HT_Away'].values[0], 2) if not away_data.empty else 0)
@@ -164,17 +171,19 @@ with tabs[0]:
         st.metric("📉 GD", round(away_data['GD_Away'].values[0], 2) if not away_data.empty else 0)
         st.metric("🏆 Rank", int(away_data['Rank_Away'].values[0]) if not away_data.empty else "—")
 
-        if not fg_away.empty and pd.notnull(fg_away['Perc.'].values[0]):
+        # Verifica se a coluna 'Perc.' existe antes de tentar acessar
+        if not fg_away.empty and 'Perc.' in fg_away.columns:
             try:
-                fg_val_away = fg_away['Perc.'].values[0]  # Extraindo o valor de Perc. diretamente
+                fg_val_away = fg_away['Perc.'].values[0]  # Extraindo o valor de Perc.
                 st.metric("⚽ 1º Gol", f"{fg_val_away}")
-            except:
-                st.metric("⚽ 1º Gol", "—")
+            except Exception as e:
+                st.metric("⚽ 1º Gol", "Erro")
+                st.write(f"Erro ao processar 1º gol: {e}")
         else:
             st.metric("⚽ 1º Gol", "—")
 
+        # Exibe o minuto médio para o time visitante
         st.metric("⏱️ Min. Médio Gol", round(gm_away['AVG_min_scored'].values[0], 1) if not gm_away.empty else "—")
-  
 
 
 # ABA 1 - H2H (índice 1)
