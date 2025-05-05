@@ -144,10 +144,10 @@ with tabs[0]:
         st.metric("📈 GD", round(home_data['GD_Home'].values[0], 2) if not home_data.empty else 0)
         st.metric("🏆 Rank", int(home_data['Rank_Home'].values[0]) if not home_data.empty else "—")
 
-        if not fg_home.empty and pd.notnull(fg_home['First_Gol'].values[0]):
+        if not fg_home.empty and pd.notnull(fg_home['Perc.'].values[0]):
             try:
-                fg_val_home = float(fg_home['First_Gol'].values[0]) * 100
-                st.metric("⚽ 1º Gol", f"{fg_val_home:.2f}%")
+                fg_val_home = fg_home['Perc.'].values[0]  # Extraindo o valor de Perc. diretamente
+                st.metric("⚽ 1º Gol", f"{fg_val_home}")
             except:
                 st.metric("⚽ 1º Gol", "—")
         else:
@@ -164,17 +164,16 @@ with tabs[0]:
         st.metric("📉 GD", round(away_data['GD_Away'].values[0], 2) if not away_data.empty else 0)
         st.metric("🏆 Rank", int(away_data['Rank_Away'].values[0]) if not away_data.empty else "—")
 
-        if not fg_away.empty and pd.notnull(fg_away['First_Gol'].values[0]):
+        if not fg_away.empty and pd.notnull(fg_away['Perc.'].values[0]):
             try:
-                fg_val_away = float(fg_away['First_Gol'].values[0]) * 100
-                st.metric("⚽ 1º Gol", f"{fg_val_away:.2f}%")
+                fg_val_away = fg_away['Perc.'].values[0]  # Extraindo o valor de Perc. diretamente
+                st.metric("⚽ 1º Gol", f"{fg_val_away}")
             except:
                 st.metric("⚽ 1º Gol", "—")
         else:
             st.metric("⚽ 1º Gol", "—")
 
         st.metric("⏱️ Min. Médio Gol", round(gm_away['AVG_min_scored'].values[0], 1) if not gm_away.empty else "—")
-
   
 
 
