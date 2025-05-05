@@ -146,11 +146,15 @@ with tabs[0]:
         st.metric("📈 GD", round(home_data['GD_Home'].values[0], 2) if not home_data.empty else 0)
         st.metric("🏆 Rank", int(home_data['Rank_Home'].values[0]) if not home_data.empty else "—")
 
-        # Verifica se a coluna 'Perc.' existe antes de tentar acessar
-        if not fg_home.empty and 'Perc.' in fg_home.columns:
+        # Verifica e extrai o primeiro gol se disponível
+        if not fg_home.empty:
+            row = fg_home.iloc[0]
+            primeiro_gol = row['First_Gol']  # Valor como string (ex: "62%")
+            partidas = row['Matches']  # Para mostrar quantas partidas o time jogou
+
+            # Exibe o primeiro gol, removendo o símbolo de "%" caso necessário
             try:
-                fg_val_home = fg_home['Perc.'].values[0]  # Extraindo o valor de Perc.
-                st.metric("⚽ 1º Gol", f"{fg_val_home}")
+                st.metric("⚽ 1º Gol", primeiro_gol)
             except Exception as e:
                 st.metric("⚽ 1º Gol", "Erro")
                 st.write(f"Erro ao processar 1º gol: {e}")
@@ -171,11 +175,15 @@ with tabs[0]:
         st.metric("📉 GD", round(away_data['GD_Away'].values[0], 2) if not away_data.empty else 0)
         st.metric("🏆 Rank", int(away_data['Rank_Away'].values[0]) if not away_data.empty else "—")
 
-        # Verifica se a coluna 'Perc.' existe antes de tentar acessar
-        if not fg_away.empty and 'Perc.' in fg_away.columns:
+        # Verifica e extrai o primeiro gol se disponível
+        if not fg_away.empty:
+            row = fg_away.iloc[0]
+            primeiro_gol = row['First_Gol']  # Valor como string (ex: "62%")
+            partidas = row['Matches']  # Para mostrar quantas partidas o time jogou
+
+            # Exibe o primeiro gol, removendo o símbolo de "%" caso necessário
             try:
-                fg_val_away = fg_away['Perc.'].values[0]  # Extraindo o valor de Perc.
-                st.metric("⚽ 1º Gol", f"{fg_val_away}")
+                st.metric("⚽ 1º Gol", primeiro_gol)
             except Exception as e:
                 st.metric("⚽ 1º Gol", "Erro")
                 st.write(f"Erro ao processar 1º gol: {e}")
