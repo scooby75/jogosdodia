@@ -139,7 +139,7 @@ with tabs[0]:
         st.markdown(f"### 🏠 {equipe_home}")
         
         # Exibe as métricas para o time da casa
-        st.metric("📅 Jogos (GP)", int(home_data['GP'].values[0]) if not home_data.empty else 0)
+        #st.metric("📅 Jogos (GP)", int(home_data['GP'].values[0]) if not home_data.empty else 0)
         st.metric("📈 PIH", round(home_data['PIH'].values[0], 2) if not home_data.empty else 0)
         st.metric("🏠 PPG HT", round(home_data['PPG_HT_Home'].values[0], 2) if not home_data.empty else 0)
         st.metric("📊 Média Gols", round(home_data['GF_AVG_Home'].values[0], 2) if not home_data.empty else 0)
@@ -168,7 +168,7 @@ with tabs[0]:
         st.markdown(f"### 🛫 {equipe_away}")
         
         # Exibe as métricas para o time visitante
-        st.metric("📅 Jogos (GP)", int(away_data['GP'].values[0]) if not away_data.empty else 0)
+        #st.metric("📅 Jogos (GP)", int(away_data['GP'].values[0]) if not away_data.empty else 0)
         st.metric("📉 PIA", round(away_data['PIA'].values[0], 2) if not away_data.empty else 0)
         st.metric("🛫 PPG HT", round(away_data['PPG_HT_Away'].values[0], 2) if not away_data.empty else 0)
         st.metric("📊 Média de Gols", round(away_data['GF_AVG_Away'].values[0], 2) if not away_data.empty else 0)
