@@ -175,16 +175,7 @@ with tabs[0]:
 
         st.metric("⏱️ Min. Médio Gol", round(gm_away['AVG_min_scored'].values[0], 1) if not gm_away.empty else "—")
 
-    # CV/HT AVG e % combinados
-    col15, col16 = st.columns(2)
-    if not cv_home_data.empty and not cv_away_data.empty:
-        avg_cv = round((cv_home_data['AVG'].values[0] + cv_away_data['AVG'].values[0]) / 2, 2)
-        perc_cv = round((cv_home_data['%_Com_Gol'].values[0] + cv_away_data['%_Com_Gol'].values[0]) / 2, 2)
-        col15.metric("📊 Média CV/HT", avg_cv)
-        col16.metric("🔥 % com Gols (CV/HT)", f"{perc_cv:.2f}%")
-    else:
-        col15.metric("📊 Média CV/HT", "—")
-        col16.metric("🔥 % com Gols (CV/HT)", "—")
+  
 
 
 # ABA 1 - H2H (índice 1)
