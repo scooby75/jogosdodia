@@ -354,7 +354,7 @@ with tabs[7]:
 
 # ABA 7 - Descritiva
 
-with tabs[1]:
+with tabs[7]:
     st.markdown("## 📊 Análise Descritiva e Sugestões de Apostas")
 
     # Coleta de dados das equipes
