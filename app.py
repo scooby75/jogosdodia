@@ -995,35 +995,47 @@ with tabs[3]:
                 • Diferença de PPG HT: {abs(ppg_ht_home - ppg_ht_away):.2f}.  
                 """)
 
+      
         with col2:
             st.markdown("### Over/Under 0.5 HT")
-            
+        
             # Dados de frequência de gols no 1º tempo
             if not cv_home_data.empty and not cv_away_data.empty:
-                home_com_gols = float(cv_home_data.iloc[0]['% Com Gols'].replace('%', ''))
-                away_com_gols = float(cv_away_data.iloc[0]['% Com Gols'].replace('%', ''))
-                media_com_gols = (home_com_gols + away_com_gols) / 2
-                
-                if media_com_gols >= 70:
-                    st.success(f"**✅ Over 0.5 HT (Média: {media_com_gols:.1f}%)**")
-                    st.markdown(f"""
-                    📊 **Justificativa:**  
-                    • {equipe_home}: {home_com_gols:.1f}% de jogos com gol no 1º tempo  
-                    • {equipe_away}: {away_com_gols:.1f}% de jogos com gol no 1º tempo  
-                    • Alta probabilidade de pelo menos 1 gol no intervalo  
-                    """)
-                elif media_com_gols <= 50:
-                    st.warning(f"**⚠️ Under 0.5 HT (Média: {media_com_gols:.1f}%)**")
-                    st.markdown(f"""
-                    📊 **Justificativa:**  
-                    • {equipe_home}: {home_com_gols:.1f}%  
-                    • {equipe_away}: {away_com_gols:.1f}%  
-                    • Baixa probabilidade de gol no 1º tempo  
-                    """)
-                else:
-                    st.info(f"**🔍 Sem tendência clara (Média: {media_com_gols:.1f}%)**")
+                try:
+                    home_percent_raw = cv_home_data.iloc[0]['% Com Gols']
+                    away_percent_raw = cv_away_data.iloc[0]['% Com Gols']
+        
+                    if pd.notna(home_percent_raw) and pd.notna(away_percent_raw):
+                        home_com_gols = float(str(home_percent_raw).replace('%', '').strip())
+                        away_com_gols = float(str(away_percent_raw).replace('%', '').strip())
+        
+                        media_com_gols = (home_com_gols + away_com_gols) / 2
+        
+                        if media_com_gols >= 70:
+                            st.success(f"**✅ Over 0.5 HT (Média: {media_com_gols:.1f}%)**")
+                            st.markdown(f"""
+                            📊 **Justificativa:**
+                            • {equipe_home}: {home_com_gols:.1f}% de jogos com gol no 1º tempo  
+                            • {equipe_away}: {away_com_gols:.1f}% de jogos com gol no 1º tempo  
+                            • Alta probabilidade de pelo menos 1 gol no intervalo
+                            """)
+                        elif media_com_gols <= 50:
+                            st.warning(f"**⚠️ Under 0.5 HT (Média: {media_com_gols:.1f}%)**")
+                            st.markdown(f"""
+                            📊 **Justificativa:**
+                            • {equipe_home}: {home_com_gols:.1f}%  
+                            • {equipe_away}: {away_com_gols:.1f}%  
+                            • Baixa probabilidade de gol no 1º tempo
+                            """)
+                        else:
+                            st.info**🔍 Sem tendência clara (Média: {media_com_gols:.1f}%)**")
+                    else:
+                        st.warning("Valores nulos encontrados em '% Com Gols'.")
+                except Exception as e:
+                    st.error(f"Erro ao processar porcentagens de gols no 1º tempo: {e}")
             else:
                 st.warning("Dados de frequência de gols no 1º tempo não disponíveis")
+
 
         # Tendências adicionais HT
         col1, col2 = st.columns(2)
