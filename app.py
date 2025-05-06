@@ -445,7 +445,7 @@ with tabs[0]:
 
 
 # ABA 11 - WTF
-    with tabs[9]:
+    with tabs[1]:
         # Coleta de dados
         home_data = ppg_ht_home_df[ppg_ht_home_df['Team_Home'] == equipe_home]
         away_data = ppg_ht_away_df[ppg_ht_away_df['Team_Away'] == equipe_away]
@@ -519,7 +519,7 @@ with tabs[0]:
 
 
 # ABA 10 - Síntese Detalhada
-    with tabs[10]:
+    with tabs[2]:
     
         # Verificar se temos dados suficientes
         # Função para converter "60%", "42,7%" etc. em float
