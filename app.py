@@ -608,21 +608,75 @@ with tabs[0]:
 
 # ABA 11 - WTF
     with tabs[9]:
-        home_stats = ppg_ht_home_df[ppg_ht_home_df['Team_Home'] == equipe_home]
-        away_stats = ppg_ht_away_df[ppg_ht_away_df['Team_Away'] == equipe_away]
-        
-        if not home_stats.empty:
-            #st.subheader("Estatísticas - Time da Casa")
-            st.dataframe(home_stats[['League','Team_Home','GP','PIH','PIH_HA','PPG_HT_Home','GF_AVG_Home','Odd_Justa_MO','Rank_Home']], use_container_width=True)
-        else:
-            st.warning(f"Nenhuma estatística encontrada para o time da casa: {equipe_home}")
-        
-        if not away_stats.empty:
-            #st.subheader("Estatísticas - Time Visitante")
-            st.dataframe(away_stats[['League','Team_Away','GP','PIA','PIA_HA','PPG_HT_Away','GF_AVG_Away','Odd_Justa_MO','Rank_Away']], use_container_width=True)
-        else:
-            st.warning(f"Nenhuma estatística encontrada para o time visitante: {equipe_away}")
-
+        # Coleta de dados
+        home_data = ppg_ht_home_df[ppg_ht_home_df['Team_Home'] == equipe_home]
+        away_data = ppg_ht_away_df[ppg_ht_away_df['Team_Away'] == equipe_away]
+        cv_home_data = cv_home_df[cv_home_df['Team_Home'] == equipe_home]
+        cv_away_data = cv_away_df[cv_away_df['Team_Away'] == equipe_away]
+        fg_home = home_fg_df[home_fg_df['Team_Home'] == equipe_home]
+        fg_away = away_fg_df[away_fg_df['Team_Away'] == equipe_away]
+        gm_home = goal_minute_home_df[goal_minute_home_df['Team_Home'] == equipe_home]
+        gm_away = goal_minute_away_df[goal_minute_away_df['Team_Away'] == equipe_away]
+    
+        col_home, col_away = st.columns(2)
+    
+        with col_home:
+            st.markdown(f"### 🏠 {equipe_home}")
+            
+            # Exibe as métricas para o time da casa
+            #st.metric("📅 Jogos (GP)", int(home_data['GP'].values[0]) if not home_data.empty else 0)
+            st.metric("📈 PIH", round(home_data['PIH'].values[0], 2) if not home_data.empty else 0)
+            st.metric("🏠 PPG HT", round(home_data['PPG_HT_Home'].values[0], 2) if not home_data.empty else 0)
+            st.metric("📊 Média Gols", round(home_data['GF_AVG_Home'].values[0], 2) if not home_data.empty else 0)
+            st.metric("📈 Saldo de Gols", round(home_data['GD_Home'].values[0], 2) if not home_data.empty else 0)
+            st.metric("🏆 Rank", int(home_data['Rank_Home'].values[0]) if not home_data.empty else "—")
+    
+            # Verifica e extrai o primeiro gol se disponível
+            if not fg_home.empty:
+                row = fg_home.iloc[0]
+                primeiro_gol = row['First_Gol']  # Valor como string (ex: "62%")
+                partidas = row['Matches']  # Para mostrar quantas partidas o time jogou
+    
+                # Exibe o primeiro gol, removendo o símbolo de "%" caso necessário
+                try:
+                    st.metric("⚽ 1º Gol", primeiro_gol)
+                except Exception as e:
+                    st.metric("⚽ 1º Gol", "Erro")
+                    st.write(f"Erro ao processar 1º gol: {e}")
+            else:
+                st.metric("⚽ 1º Gol", "—")
+    
+            # Exibe o minuto médio para o time da casa
+            st.metric("⏱️ Tempo Médio 1º Gol", round(gm_home['AVG_min_scored'].values[0], 1) if not gm_home.empty else "—")
+    
+        with col_away:
+            st.markdown(f"### 🛫 {equipe_away}")
+            
+            # Exibe as métricas para o time visitante
+            #st.metric("📅 Jogos (GP)", int(away_data['GP'].values[0]) if not away_data.empty else 0)
+            st.metric("📉 PIA", round(away_data['PIA'].values[0], 2) if not away_data.empty else 0)
+            st.metric("🛫 PPG HT", round(away_data['PPG_HT_Away'].values[0], 2) if not away_data.empty else 0)
+            st.metric("📊 Média de Gols", round(away_data['GF_AVG_Away'].values[0], 2) if not away_data.empty else 0)
+            st.metric("📉 Saldo de Gols", round(away_data['GD_Away'].values[0], 2) if not away_data.empty else 0)
+            st.metric("🏆 Rank", int(away_data['Rank_Away'].values[0]) if not away_data.empty else "—")
+    
+            # Verifica e extrai o primeiro gol se disponível
+            if not fg_away.empty:
+                row = fg_away.iloc[0]
+                primeiro_gol = row['First_Gol']  # Valor como string (ex: "62%")
+                partidas = row['Matches']  # Para mostrar quantas partidas o time jogou
+    
+                # Exibe o primeiro gol, removendo o símbolo de "%" caso necessário
+                try:
+                    st.metric("⚽ 1º Gol", primeiro_gol)
+                except Exception as e:
+                    st.metric("⚽ 1º Gol", "Erro")
+                    st.write(f"Erro ao processar 1º gol: {e}")
+            else:
+                st.metric("⚽ 1º Gol", "—")
+    
+            # Exibe o minuto médio para o time visitante
+            st.metric("⏱️ Tempo Médio 1º Gol", round(gm_away['AVG_min_scored'].values[0], 1) if not gm_away.empty else "—")
 
 
 
