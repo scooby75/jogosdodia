@@ -241,25 +241,33 @@ def display_ht_frequency(team_name, ht_data, is_home=True):
     if not ht_data.empty:
         row = ht_data.iloc[0]
         
-        # Renomeia colunas para padronização
+        # Extrai valores com base no tipo de time (home/away)
         if is_home:
-            row = row.rename({
-                "Avg.": "Avg", 
-                "4+": "4"
-            })
+            # Home columns: 4+	3	2	1	0	Avg.	Team_Home...
+            avg_goals = float(str(row['Avg.']).replace(',', '.')) if row['Avg.'] else 0.0
+            goals_pct = f"{int(round(convert_percentage(row.get('% Com Gols', '0'))))}%"
+            no_goals_pct = f"{int(round(convert_percentage(row.get('% Sem Gols', '0'))))}%"
+            
+            freq_dict = {
+                "0": row['0'],
+                "1": row['1'],
+                "2": row['2'],
+                "3": row['3'],
+                "4": row['4+']  # Note que usamos 4+ aqui
+            }
         else:
-            row = row.rename({
-                "Avg..1": "Avg", 
-                "0.1": "0", 
-                "1.1": "1", 
-                "2.1": "2", 
-                "3.1": "3", 
-                "4+.1": "4"
-            })
-        
-        avg_goals = float(str(row['Avg']).replace(',', '.')) if row['Avg'] else 0.0
-        goals_pct = f"{int(round(convert_percentage(row.get('% Com Gols', '0'))))}%"
-        no_goals_pct = f"{int(round(convert_percentage(row.get('% Sem Gols', '0'))))}%"
+            # Away columns: Team_Away	Avg..1	0.1	1.1	2.1	3.1	4+.1...
+            avg_goals = float(str(row['Avg..1']).replace(',', '.')) if row['Avg..1'] else 0.0
+            goals_pct = f"{int(round(convert_percentage(row.get('% Com Gols', '0'))))}%"
+            no_goals_pct = f"{int(round(convert_percentage(row.get('% Sem Gols', '0'))))}%"
+            
+            freq_dict = {
+                "0": row['0.1'],
+                "1": row['1.1'],
+                "2": row['2.1'],
+                "3": row['3.1'],
+                "4": row['4+.1']  # Note que usamos 4+.1 aqui
+            }
         
         # Determina emojis baseado no contexto
         if is_home:
@@ -274,7 +282,6 @@ def display_ht_frequency(team_name, ht_data, is_home=True):
         cols[1].metric(f"{goals_emoji} Com Gols", goals_pct)
         cols[2].metric("Sem Gols", no_goals_pct)
         
-        freq_dict = {g: row[g] for g in ["0", "1", "2", "3", "4"]}
         st.markdown(generate_frequency_bar(freq_dict), unsafe_allow_html=True)
     else:
         st.warning(f"Dados não encontrados para {team_name}")
