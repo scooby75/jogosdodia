@@ -155,8 +155,8 @@ tabs = st.tabs([
 ])
 
 
-# ABA 8 - Resumo     
-# ABA 8 - Resumo     
+
+# ABA 1 - FT   
 with tabs[0]:
     # Definindo o emoji antes de usá-lo
     if not home_filtered.empty:
@@ -444,7 +444,7 @@ with tabs[0]:
 
 
 
-# ABA 11 - WTF
+# ABA 2 -HT
     with tabs[1]:
         # Coleta de dados
         home_data = ppg_ht_home_df[ppg_ht_home_df['Team_Home'] == equipe_home]
@@ -518,7 +518,7 @@ with tabs[0]:
 
 
 
-# ABA 10 - Síntese Detalhada
+# ABA 3 - Síntese Detalhada
     with tabs[2]:
     
         # Verificar se temos dados suficientes
