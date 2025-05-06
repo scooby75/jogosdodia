@@ -891,50 +891,7 @@ def display_ht_analysis_tab(data, home_team, away_team):
             else:
                 st.warning("Dados de tempo médio do primeiro gol não disponíveis")
 
-        # Gráfico de barras para frequência de gols no HT
-        if not cv_home_data.empty and not cv_away_data.empty:
-            st.markdown("### 📊 Frequência de Gols no 1º Tempo")
-            
-            fig = go.Figure()
-            
-            # Adicionando dados do time da casa
-            fig.add_trace(go.Bar(
-                x=['0', '1', '2', '3', '4+'],
-                y=[
-                    float(cv_home_data.iloc[0]['0']),
-                    float(cv_home_data.iloc[0]['1']),
-                    float(cv_home_data.iloc[0]['2']),
-                    float(cv_home_data.iloc[0]['3']),
-                    float(cv_home_data.iloc[0]['4'])
-                ],
-                name=home_team,
-                marker_color='blue'
-            ))
-            
-            # Adicionando dados do time visitante
-            fig.add_trace(go.Bar(
-                x=['0', '1', '2', '3', '4+'],
-                y=[
-                    float(cv_away_data.iloc[0]['0']),
-                    float(cv_away_data.iloc[0]['1']),
-                    float(cv_away_data.iloc[0]['2']),
-                    float(cv_away_data.iloc[0]['3']),
-                    float(cv_away_data.iloc[0]['4'])
-                ],
-                name=away_team,
-                marker_color='red'
-            ))
-            
-            fig.update_layout(
-                barmode='group',
-                title='Distribuição de Gols no 1º Tempo',
-                xaxis_title='Número de Gols',
-                yaxis_title='Frequência (%)'
-            )
-            
-            st.plotly_chart(fig, use_container_width=True)
-    else:
-        st.warning("Dados insuficientes para análise detalhada do 1º tempo")
+
 
 # ----------------------------
 # LAYOUT PRINCIPAL
