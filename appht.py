@@ -354,10 +354,10 @@ with tabs[7]:
 
 # ABA 7 - Descritiva
 
-with tabs[7]:
+with tabs[8]:
     st.markdown("## 📊 Análise Descritiva e Sugestões de Apostas")
 
-    # Coleta de dados das equipes
+    # Dados
     home_data = ppg_ht_home_df[ppg_ht_home_df['Team_Home'] == equipe_home]
     away_data = ppg_ht_away_df[ppg_ht_away_df['Team_Away'] == equipe_away]
     fg_home = home_fg_df[home_fg_df['Team_Home'] == equipe_home]
@@ -365,7 +365,7 @@ with tabs[7]:
     gm_home = goal_minute_home_df[goal_minute_home_df['Team_Home'] == equipe_home]
     gm_away = goal_minute_away_df[goal_minute_away_df['Team_Away'] == equipe_away]
 
-    # Variáveis seguras
+    # Variáveis
     pih = round(home_data['PIH'].values[0], 2) if not home_data.empty else 0
     pia = round(away_data['PIA'].values[0], 2) if not away_data.empty else 0
     ppg_home = round(home_data['PPG_HT_Home'].values[0], 2) if not home_data.empty else 0
@@ -376,57 +376,102 @@ with tabs[7]:
     gd_away = round(away_data['GD_Away'].values[0], 2) if not away_data.empty else 0
     rank_home = int(home_data['Rank_Home'].values[0]) if not home_data.empty else "—"
     rank_away = int(away_data['Rank_Away'].values[0]) if not away_data.empty else "—"
-    fg_percent_home = fg_home['First_Gol'].values[0] if not fg_home.empty else "—"
-    fg_percent_away = fg_away['First_Gol'].values[0] if not fg_away.empty else "—"
+    fg_percent_home = int(fg_home['First_Gol'].values[0]) if not fg_home.empty else "—"
+    fg_percent_away = int(fg_away['First_Gol'].values[0]) if not fg_away.empty else "—"
     min_gol_home = round(gm_home['AVG_min_scored'].values[0], 1) if not gm_home.empty else "—"
     min_gol_away = round(gm_away['AVG_min_scored'].values[0], 1) if not gm_away.empty else "—"
 
-    # Apresentação estruturada
-    st.markdown(f"### 🏠 {equipe_home}")
-    st.write(f"- **PIH:** {pih} {'(forte)' if pih >= 0.62 else '(fraco)'}")
-    st.write(f"- **PPG em casa:** {ppg_home}")
-    st.write(f"- **Média de gols:** {gf_home}")
-    st.write(f"- **Saldo de gols:** {gd_home}")
-    st.write(f"- **Ranking:** {rank_home}")
-    st.write(f"- **1º Gol (%):** {fg_percent_home}")
-    st.write(f"- **Minuto médio do 1º gol:** {min_gol_home}")
+    # Cabeçalho com definição
+    st.markdown("✅ **Definições Chave:**")
+    st.markdown("""
+- PIH (Power Index Home) e PIA (Power Index Away) ≥ 0.62 → indicam equipes fortes.  
+- Quanto mais próximo de 1.00, maior a força da equipe.  
+- PPG HT → Pontos por jogo em casa/fora.  
+- GF_AVG → Gols marcados em média.  
+- GD → Saldo de gols.  
+- Rank → Posição no campeonato.  
+- First_Gol → % de jogos em que marcou o 1º gol.  
+- AVG_min_scored → Minuto médio em que marca o primeiro gol.  
+    """)
 
-    st.markdown(f"### 🛫 {equipe_away}")
-    st.write(f"- **PIA:** {pia} {'(forte)' if pia >= 0.62 else '(fraco)'}")
-    st.write(f"- **PPG fora:** {ppg_away}")
-    st.write(f"- **Média de gols:** {gf_away}")
-    st.write(f"- **Saldo de gols:** {gd_away}")
-    st.write(f"- **Ranking:** {rank_away}")
-    st.write(f"- **1º Gol (%):** {fg_percent_away}")
-    st.write(f"- **Minuto médio do 1º gol:** {min_gol_away}")
+    # Time da casa
+    st.markdown(f"### 🏠 Time da Casa: {equipe_home}")
+    st.markdown(f"""
+**PIH:** {pih} → {"Equipe forte jogando em casa." if pih >= 0.62 else "Abaixo do índice de elite."}  
+**PPG HT:** {ppg_home} → {"Excelente" if ppg_home >= 2 else "Regular"} aproveitamento em casa.  
+**Média de Gols:** {gf_home} → {"Ofensivamente produtivo." if gf_home >= 1.5 else "Ataque modesto."}  
+**Saldo de Gols:** {gd_home:+} → {"Boa defesa e ataque eficaz." if gd_home > 0 else "Sofre mais do que marca."}  
+**Rank:** {rank_home}º lugar → {"Entre os líderes." if rank_home <= 6 else "Fora do G6."}  
+**1º Gol:** {fg_percent_home}% → {"Tendência alta de sair na frente." if fg_percent_home >= 60 else "Inconsistente ao iniciar vencendo."}  
+**Minuto Médio 1º Gol:** {min_gol_home} min → {"Equipe inicia bem as partidas." if isinstance(min_gol_home, (int, float)) and min_gol_home < 30 else "Demora a marcar."}  
+""")
 
-    # Análise de força e sugestões de apostas
-    st.markdown("### 💡 Sugestões de Apostas")
+    # Time visitante
+    st.markdown(f"### 🛫 Time Visitante: {equipe_away}")
+    st.markdown(f"""
+**PIA:** {pia} → {"Equipe forte fora de casa." if pia >= 0.62 else "Fora do padrão de elite."}  
+**PPG HT:** {ppg_away} → {"Bom desempenho fora." if ppg_away >= 1.5 else "Aproveitamento irregular fora de casa."}  
+**Média de Gols:** {gf_away} → {"Ofensiva perigosa." if gf_away >= 1.5 else "Ofensiva mais fraca."}  
+**Saldo de Gols:** {gd_away:+} → {"Boa consistência defensiva." if gd_away > 0 else "Defensivamente vulnerável fora de casa."}  
+**Rank:** {rank_away}º lugar → {"Entre os líderes." if rank_away <= 6 else "Equipe de meio de tabela."}  
+**1º Gol:** {fg_percent_away}% → {"Começa vencendo com frequência." if fg_percent_away >= 60 else "Dificuldade em começar vencendo."}  
+**Minuto Médio 1º Gol:** {min_gol_away} min → {"Início ofensivo rápido." if isinstance(min_gol_away, (int, float)) and min_gol_away < 30 else "Demora a marcar."}  
+""")
+
+    # Análise comparativa
+    st.markdown("### 💡 Análise e Sugestões de Apostas")
+
+    st.markdown("#### ⚖️ Força das Equipes")
+    if pih >= 0.62 and pia < 0.62:
+        st.markdown(f"- Com **PIH {pih}** vs **PIA {pia}**, clara vantagem para o time da casa.")
+        st.markdown("- O time da casa possui melhor desempenho ofensivo, defensivo e ranking.")
+    elif pia >= 0.62 and pih < 0.62:
+        st.markdown(f"- Com **PIH {pih}** vs **PIA {pia}**, vantagem técnica para o time visitante.")
+        st.markdown("- Visitante pode surpreender, especialmente se for ofensivo.")
+    elif pia >= 0.62 and pih >= 0.62:
+        st.markdown(f"- Ambos os times apresentam alto nível técnico (**PIH {pih}** vs **PIA {pia}**).")
+        st.markdown("- Jogo equilibrado com tendência a gols dos dois lados.")
+    else:
+        st.markdown("- Ambas as equipes estão abaixo do índice de força de elite (0.62).")
+        st.markdown("- Jogo de difícil leitura, com menor potencial técnico.")
+
+    # Tendência 1º gol
+    st.markdown("#### 🎯 Tendência de Primeiro Gol")
+    if fg_percent_home != "—" and fg_percent_home >= 60:
+        st.markdown(f"- Time da casa marca o 1º gol em {fg_percent_home}% dos jogos e muito cedo ({min_gol_home} min).")
+    if fg_percent_away != "—" and fg_percent_away < 60:
+        st.markdown(f"- Visitante marca menos o 1º gol e demora para balançar as redes ({min_gol_away} min).")
+
+    # Sugestões
+    st.markdown("#### 📈 Sugestões de Apostas")
 
     if pih >= 0.62 and pia < 0.62:
-        st.write(f"✅ O **{equipe_home}** é mais forte estatisticamente.")
-        st.write("- **Sugestões:**")
-        st.write("  - Vitória do time da casa")
-        st.write("  - Time da casa marca o 1º gol")
-        if isinstance(min_gol_home, (int, float)) and min_gol_home < 30:
-            st.write("  - Over 0.5 HT (1º Tempo)")
+        st.markdown("""
+- ✅ **Vitória do time da casa (1X2)** – forte favoritismo técnico e estatístico.  
+- ✅ **Time da casa marca o 1º gol** – tendência clara de abrir o placar cedo.  
+- ✅ **Menos de 2.5 gols do visitante** – baixa média ofensiva e saldo negativo.  
+- ✅ **Over 0.5 HT do time da casa** – boa chance de marcar no 1º tempo.  
+- 🚫 **Ambas Marcam (NÃO)** – se a defesa do mandante for sólida.  
+""")
     elif pia >= 0.62 and pih < 0.62:
-        st.write(f"⚠️ O **{equipe_away}** é mais forte estatisticamente.")
-        st.write("- **Sugestões:**")
-        st.write("  - Chance dupla (X2)")
-        st.write("  - Time visitante marca o 1º gol")
-    elif pia >= 0.62 and pih >= 0.62:
-        st.write("⚔️ Confronto entre duas equipes fortes.")
-        st.write("- **Sugestões:**")
-        st.write("  - Ambas marcam (BTTS)")
-        st.write("  - Over 2.5 gols se ambas têm boa média ofensiva")
+        st.markdown("""
+- ✅ **Dupla chance: X2** – visitante pode surpreender.  
+- ✅ **Ambas Marcam (SIM)** – se defesa do mandante for fraca.  
+- ✅ **Gols acima de 1.5** – possível jogo movimentado.  
+""")
+    elif pih >= 0.62 and pia >= 0.62:
+        st.markdown("""
+- ✅ **Ambas Marcam (SIM)** – poder ofensivo dos dois lados.  
+- ✅ **Over 2.5 gols** – jogo com alto potencial ofensivo.  
+- ⚠️ **Evite mercado de resultado** – equilíbrio técnico.  
+""")
     else:
-        st.write("🔍 Jogo entre equipes irregulares ou médias.")
-        st.write("- **Sugestões:**")
-        st.write("  - Under 2.5 gols")
-        st.write("  - Evitar mercados de resultado, preferir gols ou escanteios")
+        st.markdown("""
+- ⚠️ **Under 2.5 gols** – jogo de baixa intensidade.  
+- ⚠️ **Mercados alternativos (escanteios, cartões)** – imprevisibilidade no placar.  
+""")
 
-    # Informação adicional
-    st.info("Análise baseada em PIH, PIA, média de gols, saldo, ranking e tempo do 1º gol.")
+    st.info("Análise baseada em dados estatísticos recentes e indicadores de desempenho.")
+
 
 
