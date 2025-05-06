@@ -118,7 +118,7 @@ equipe_away = st.sidebar.selectbox("🛫 Time Visitante:", all_teams, index=all_
 # INTERFACE STREAMLIT
 # ----------------------------
 tabs = st.tabs([
-    "⚠️ Analitico", "🧾 h2h", "⚽ First Goal", "⏱️ Goals_Minute", "⚡ Goals HT/FT", "📌 CV HT", "📊 Goals Per Time"
+    "⚠️ Analitico", "🧾 h2h", "⚽ First Goal", "⏱️ Goals_Minute", "⚡ Goals HT/FT", "📌 CV HT", "📊 Goals Per Time", "Descritiva"
 ])
 
 #ABA 0 - Analitico
@@ -332,7 +332,7 @@ with tabs[5]:
 
 # ABA 6 - Goals Per Time
 
-with tabs[6]:
+with tabs[7]:
     goals_per_time_home_df, goals_per_time_away_df = goals_per_time_data()
     
     # Limpeza dos nomes de times
@@ -351,4 +351,82 @@ with tabs[6]:
                          use_container_width=True)
     else:
         st.warning("Nenhuma estatística encontrada para os times selecionados.")
+
+# ABA 7 - Descritiva
+
+with tabs[1]:
+    st.markdown("## 📊 Análise Descritiva e Sugestões de Apostas")
+
+    # Coleta de dados das equipes
+    home_data = ppg_ht_home_df[ppg_ht_home_df['Team_Home'] == equipe_home]
+    away_data = ppg_ht_away_df[ppg_ht_away_df['Team_Away'] == equipe_away]
+    fg_home = home_fg_df[home_fg_df['Team_Home'] == equipe_home]
+    fg_away = away_fg_df[away_fg_df['Team_Away'] == equipe_away]
+    gm_home = goal_minute_home_df[goal_minute_home_df['Team_Home'] == equipe_home]
+    gm_away = goal_minute_away_df[goal_minute_away_df['Team_Away'] == equipe_away]
+
+    # Variáveis seguras
+    pih = round(home_data['PIH'].values[0], 2) if not home_data.empty else 0
+    pia = round(away_data['PIA'].values[0], 2) if not away_data.empty else 0
+    ppg_home = round(home_data['PPG_HT_Home'].values[0], 2) if not home_data.empty else 0
+    ppg_away = round(away_data['PPG_HT_Away'].values[0], 2) if not away_data.empty else 0
+    gf_home = round(home_data['GF_AVG_Home'].values[0], 2) if not home_data.empty else 0
+    gf_away = round(away_data['GF_AVG_Away'].values[0], 2) if not away_data.empty else 0
+    gd_home = round(home_data['GD_Home'].values[0], 2) if not home_data.empty else 0
+    gd_away = round(away_data['GD_Away'].values[0], 2) if not away_data.empty else 0
+    rank_home = int(home_data['Rank_Home'].values[0]) if not home_data.empty else "—"
+    rank_away = int(away_data['Rank_Away'].values[0]) if not away_data.empty else "—"
+    fg_percent_home = fg_home['First_Gol'].values[0] if not fg_home.empty else "—"
+    fg_percent_away = fg_away['First_Gol'].values[0] if not fg_away.empty else "—"
+    min_gol_home = round(gm_home['AVG_min_scored'].values[0], 1) if not gm_home.empty else "—"
+    min_gol_away = round(gm_away['AVG_min_scored'].values[0], 1) if not gm_away.empty else "—"
+
+    # Apresentação estruturada
+    st.markdown(f"### 🏠 {equipe_home}")
+    st.write(f"- **PIH:** {pih} {'(forte)' if pih >= 0.62 else '(fraco)'}")
+    st.write(f"- **PPG em casa:** {ppg_home}")
+    st.write(f"- **Média de gols:** {gf_home}")
+    st.write(f"- **Saldo de gols:** {gd_home}")
+    st.write(f"- **Ranking:** {rank_home}")
+    st.write(f"- **1º Gol (%):** {fg_percent_home}")
+    st.write(f"- **Minuto médio do 1º gol:** {min_gol_home}")
+
+    st.markdown(f"### 🛫 {equipe_away}")
+    st.write(f"- **PIA:** {pia} {'(forte)' if pia >= 0.62 else '(fraco)'}")
+    st.write(f"- **PPG fora:** {ppg_away}")
+    st.write(f"- **Média de gols:** {gf_away}")
+    st.write(f"- **Saldo de gols:** {gd_away}")
+    st.write(f"- **Ranking:** {rank_away}")
+    st.write(f"- **1º Gol (%):** {fg_percent_away}")
+    st.write(f"- **Minuto médio do 1º gol:** {min_gol_away}")
+
+    # Análise de força e sugestões de apostas
+    st.markdown("### 💡 Sugestões de Apostas")
+
+    if pih >= 0.62 and pia < 0.62:
+        st.write(f"✅ O **{equipe_home}** é mais forte estatisticamente.")
+        st.write("- **Sugestões:**")
+        st.write("  - Vitória do time da casa")
+        st.write("  - Time da casa marca o 1º gol")
+        if isinstance(min_gol_home, (int, float)) and min_gol_home < 30:
+            st.write("  - Over 0.5 HT (1º Tempo)")
+    elif pia >= 0.62 and pih < 0.62:
+        st.write(f"⚠️ O **{equipe_away}** é mais forte estatisticamente.")
+        st.write("- **Sugestões:**")
+        st.write("  - Chance dupla (X2)")
+        st.write("  - Time visitante marca o 1º gol")
+    elif pia >= 0.62 and pih >= 0.62:
+        st.write("⚔️ Confronto entre duas equipes fortes.")
+        st.write("- **Sugestões:**")
+        st.write("  - Ambas marcam (BTTS)")
+        st.write("  - Over 2.5 gols se ambas têm boa média ofensiva")
+    else:
+        st.write("🔍 Jogo entre equipes irregulares ou médias.")
+        st.write("- **Sugestões:**")
+        st.write("  - Under 2.5 gols")
+        st.write("  - Evitar mercados de resultado, preferir gols ou escanteios")
+
+    # Informação adicional
+    st.info("Análise baseada em PIH, PIA, média de gols, saldo, ranking e tempo do 1º gol.")
+
 
