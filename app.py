@@ -151,7 +151,7 @@ overall_filtered = overall_df[overall_df['Team_Home_Overall'] == equipe_home][ov
 # INTERFACE STREAMLIT
 # ----------------------------
 tabs = st.tabs([
-    "🧾 h2h", "⚠️ HT", "Sintese"
+    "🎯 FT", "🎯 HT", "🧾 Analise"
 ])
 
 
