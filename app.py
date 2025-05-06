@@ -1028,7 +1028,7 @@ with tabs[3]:
                             • Baixa probabilidade de gol no 1º tempo
                             """)
                         else:
-                            st.info**🔍 Sem tendência clara (Média: {media_com_gols:.1f}%)**")
+                            st.info** Sem tendência clara (Média: {media_com_gols:.1f}%)**")
                     else:
                         st.warning("Valores nulos encontrados em '% Com Gols'.")
                 except Exception as e:
