@@ -151,7 +151,7 @@ overall_filtered = overall_df[overall_df['Team_Home_Overall'] == equipe_home][ov
 # INTERFACE STREAMLIT
 # ----------------------------
 tabs = st.tabs([
-    "🎯 FT", "🎯 HT", "🧾 Analise"
+    "🎯 FT", "🎯 HT", "🧾 Analise", "Analise HT"
 ])
 
 
@@ -870,7 +870,265 @@ with tabs[0]:
                 for i, ((gh, ga), prob) in enumerate(placares[:5], start=1):
                     st.write(f"{i}. {equipe_home} {gh} x {ga} {equipe_away} — Probabilidade: {prob:.2%}")
             
+# ABA 4 - Sintese HT
+
+with tabs[3]:
+    # Coleta de dados
+    home_data = ppg_ht_home_df[ppg_ht_home_df['Team_Home'] == equipe_home]
+    away_data = ppg_ht_away_df[ppg_ht_away_df['Team_Away'] == equipe_away]
+    cv_home_data = cv_home_df[cv_home_df['Team_Home'] == equipe_home]
+    cv_away_data = cv_away_df[cv_away_df['Team_Away'] == equipe_away]
+    fg_home = home_fg_df[home_fg_df['Team_Home'] == equipe_home]
+    fg_away = away_fg_df[away_fg_df['Team_Away'] == equipe_away]
+    gm_home = goal_minute_home_df[goal_minute_home_df['Team_Home'] == equipe_home]
+    gm_away = goal_minute_away_df[goal_minute_away_df['Team_Away'] == equipe_away]
+    
+    # Análise qualitativa
+    if not home_data.empty and not away_data.empty:
+        home_row = home_data.iloc[0]
+        away_row = away_data.iloc[0]
+        
+        # Variáveis principais
+        ppg_ht_home = home_row.get("PPG_HT_Home", 0)
+        ppg_ht_away = away_row.get("PPG_HT_Away", 0)
+        gf_avg_ht_home = home_row.get("GF_AVG_Home", 0)
+        gf_avg_ht_away = away_row.get("GF_AVG_Away", 0)
+        rank_home = home_row.get("Rank_Home", 999)
+        rank_away = away_row.get("Rank_Away", 999)
+        rank_diff = rank_away - rank_home
+        
+        # Análise qualitativa HT
+        if ppg_ht_home >= 1.5:
+            desempenho_ht_home = "excelente"
+            vantagem_ht_home = "alta probabilidade de liderar no intervalo"
+        elif ppg_ht_home >= 1.2:
+            desempenho_ht_home = "bom"
+            vantagem_ht_home = "boas chances de estar à frente no intervalo"
+        elif ppg_ht_home >= 0.8:
+            desempenho_ht_home = "regular"
+            vantagem_ht_home = "desempenho equilibrado no 1º tempo"
+        else:
+            desempenho_ht_home = "fraco"
+            vantagem_ht_home = "dificuldade em liderar no intervalo"
+
+        if ppg_ht_away >= 1.2:
+            desempenho_ht_away = "forte"
+            desempenho_ht_fora = "bom desempenho no 1º tempo fora de casa"
+        elif ppg_ht_away >= 0.8:
+            desempenho_ht_away = "regular"
+            desempenho_ht_fora = "resultados mistos no 1º tempo como visitante"
+        else:
+            desempenho_ht_away = "fraco"
+            desempenho_ht_fora = "dificuldade no 1º tempo em jogos fora"
+
+        # Texto de análise HT
+        analise_ht_home = f"""
+        ### 🏠 {equipe_home} (Casa - 1º Tempo)
+        O time da casa **{equipe_home}** apresenta um **{desempenho_ht_home} desempenho** no primeiro tempo como mandante, 
+        com média de **{gf_avg_ht_home:.2f} gols** no 1º tempo e PPG HT de **{ppg_ht_home:.2f}**. 
+        """
+        
+        if not fg_home.empty:
+            primeiro_gol_home = fg_home.iloc[0]['First_Gol']
+            analise_ht_home += f"O time marca o primeiro gol em **{primeiro_gol_home}** das partidas e "
+            
+        if not gm_home.empty:
+            avg_min_home = gm_home.iloc[0]['AVG_min_scored']
+            analise_ht_home += f"o tempo médio para marcar o primeiro gol é de **{avg_min_home:.1f} minutos**. "
+            
+        analise_ht_home += f"Seu ranking no 1º tempo como mandante é **{rank_home}**, indicando {vantagem_ht_home}."
+
+        analise_ht_away = f"""
+        ### ✈️ {equipe_away} (Visitante - 1º Tempo)
+        O time visitante **{equipe_away}** tem mostrado um desempenho **{desempenho_ht_away}** no primeiro tempo como visitante, 
+        com média de **{gf_avg_ht_away:.2f} gols** no 1º tempo e PPG HT de **{ppg_ht_away:.2f}**. 
+        """
+        
+        if not fg_away.empty:
+            primeiro_gol_away = fg_away.iloc[0]['First_Gol']
+            analise_ht_away += f"O time marca o primeiro gol em **{primeiro_gol_away}** das partidas e "
+            
+        if not gm_away.empty:
+            avg_min_away = gm_away.iloc[0]['AVG_min_scored']
+            analise_ht_away += f"o tempo médio para marcar o primeiro gol é de **{avg_min_away:.1f} minutos**. "
+            
+        analise_ht_away += f"Seu ranking no 1º tempo como visitante é **{rank_away}**, com {desempenho_ht_fora}."
+
+        st.markdown(analise_ht_home)
+        st.markdown(analise_ht_away)
+
+        # Sugestões de apostas HT
+        col1, col2 = st.columns(2)
+
+        with col1:
+            st.markdown("### 1X2 HT (Resultado no Intervalo)")
+            
+            if (ppg_ht_home >= 1.5 and (ppg_ht_home - ppg_ht_away) >= 0.8 and rank_diff >= 6):
+                st.success("**✅ Aposta sugerida:** Vitória do mandante no 1º tempo (1)")
+                st.markdown(f"""
+                📊 **Justificativa:**  
+                • Excelente desempenho no 1º tempo como mandante.  
+                • Superioridade clara sobre o visitante no 1º tempo.  
+                • Time melhor posicionado no ranking HT (posição {rank_home} vs {rank_away}).  
+                """)
+            elif (ppg_ht_away >= 1.5 and (ppg_ht_away - ppg_ht_home) >= 0.8 and rank_diff <= -6):
+                st.success("**✅ Aposta sugerida:** Vitória do visitante no 1º tempo (2)")
+                st.markdown(f"""
+                📊 **Justificativa:**  
+                • Excelente desempenho no 1º tempo como visitante.  
+                • Superioridade clara sobre o mandante no 1º tempo.  
+                • Time melhor posicionado no ranking HT (posição {rank_away} vs {rank_home}).  
+                """)
+            elif abs(ppg_ht_home - ppg_ht_away) < 0.3:
+                st.warning("**⚖️ Aposta sugerida:** Empate no intervalo (X)")
+                st.markdown("""
+                📊 **Justificativa:**  
+                • Equilíbrio entre as equipes no 1º tempo  
+                • Nenhum time com vantagem significativa no intervalo.  
+                """)
+            else:
+                st.info("**🔍 Aposta não recomendada**")
+                st.markdown(f"""
+                📊 **Justificativa:**  
+                • Nenhum critério forte atendido.  
+                • Diferença de ranking HT: {abs(rank_diff)} posições.  
+                • Diferença de PPG HT: {abs(ppg_ht_home - ppg_ht_away):.2f}.  
+                """)
+
+        with col2:
+            st.markdown("### Over/Under 0.5 HT")
+            
+            # Dados de frequência de gols no 1º tempo
+            if not cv_home_data.empty and not cv_away_data.empty:
+                home_com_gols = float(cv_home_data.iloc[0]['% Com Gols'].replace('%', ''))
+                away_com_gols = float(cv_away_data.iloc[0]['% Com Gols'].replace('%', ''))
+                media_com_gols = (home_com_gols + away_com_gols) / 2
                 
+                if media_com_gols >= 70:
+                    st.success(f"**✅ Over 0.5 HT (Média: {media_com_gols:.1f}%)**")
+                    st.markdown(f"""
+                    📊 **Justificativa:**  
+                    • {equipe_home}: {home_com_gols:.1f}% de jogos com gol no 1º tempo  
+                    • {equipe_away}: {away_com_gols:.1f}% de jogos com gol no 1º tempo  
+                    • Alta probabilidade de pelo menos 1 gol no intervalo  
+                    """)
+                elif media_com_gols <= 50:
+                    st.warning(f"**⚠️ Under 0.5 HT (Média: {media_com_gols:.1f}%)**")
+                    st.markdown(f"""
+                    📊 **Justificativa:**  
+                    • {equipe_home}: {home_com_gols:.1f}%  
+                    • {equipe_away}: {away_com_gols:.1f}%  
+                    • Baixa probabilidade de gol no 1º tempo  
+                    """)
+                else:
+                    st.info(f"**🔍 Sem tendência clara (Média: {media_com_gols:.1f}%)**")
+            else:
+                st.warning("Dados de frequência de gols no 1º tempo não disponíveis")
+
+        # Tendências adicionais HT
+        col1, col2 = st.columns(2)
+        
+        with col1:
+            st.markdown("### Primeiro a Marcar (HT)")
+            
+            if not fg_home.empty and not fg_away.empty:
+                home_fg_percent = float(fg_home.iloc[0]['First_Gol'].replace('%', ''))
+                away_fg_percent = float(fg_away.iloc[0]['First_Gol'].replace('%', ''))
+                
+                if home_fg_percent >= 60 and away_fg_percent <= 40:
+                    st.success(f"**✅ {equipe_home} marca primeiro (HT)**")
+                    st.markdown(f"""
+                    📊 **Justificativa:**  
+                    • Casa: {home_fg_percent}% de marcar primeiro  
+                    • Visitante: {away_fg_percent}% de marcar primeiro  
+                    • Alta vantagem para o mandante abrir o placar  
+                    """)
+                elif away_fg_percent >= 60 and home_fg_percent <= 40:
+                    st.success(f"**✅ {equipe_away} marca primeiro (HT)**")
+                    st.markdown(f"""
+                    📊 **Justificativa:**  
+                    • Visitante: {away_fg_percent}% de marcar primeiro  
+                    • Casa: {home_fg_percent}% de marcar primeiro  
+                    • Alta vantagem para o visitante abrir o placar  
+                    """)
+                else:
+                    st.info("**🔍 Sem vantagem clara para quem marca primeiro**")
+            else:
+                st.warning("Dados de primeiro gol não disponíveis")
+
+        with col2:
+            st.markdown("### Tempo do Primeiro Gol")
+            
+            if not gm_home.empty and not gm_away.empty:
+                avg_min_home = gm_home.iloc[0]['AVG_min_scored']
+                avg_min_away = gm_away.iloc[0]['AVG_min_scored']
+                media_avg_min = (avg_min_home + avg_min_away) / 2
+                
+                if media_avg_min <= 30:
+                    st.success(f"**✅ Primeiro gol antes de 30' (Média: {media_avg_min:.1f}')**")
+                    st.markdown(f"""
+                    📊 **Justificativa:**  
+                    • {equipe_home}: {avg_min_home:.1f}' (média)  
+                    • {equipe_away}: {avg_min_away:.1f}' (média)  
+                    • Tendência de gol precoce no jogo  
+                    """)
+                elif media_avg_min >= 40:
+                    st.warning(f"**⚠️ Primeiro gol após 40' (Média: {media_avg_min:.1f}')**")
+                    st.markdown(f"""
+                    📊 **Justificativa:**  
+                    • {equipe_home}: {avg_min_home:.1f}' (média)  
+                    • {equipe_away}: {avg_min_away:.1f}' (média)  
+                    • Tendência de gol tardio no jogo  
+                    """)
+                else:
+                    st.info(f"**🔍 Sem tendência clara (Média: {media_avg_min:.1f}')**")
+            else:
+                st.warning("Dados de tempo médio do primeiro gol não disponíveis")
+
+        # Gráfico de barras para frequência de gols no HT
+        if not cv_home_data.empty and not cv_away_data.empty:
+            st.markdown("### 📊 Frequência de Gols no 1º Tempo")
+            
+            fig = go.Figure()
+            
+            # Adicionando dados do time da casa
+            fig.add_trace(go.Bar(
+                x=['0', '1', '2', '3', '4+'],
+                y=[
+                    float(cv_home_data.iloc[0]['0']),
+                    float(cv_home_data.iloc[0]['1']),
+                    float(cv_home_data.iloc[0]['2']),
+                    float(cv_home_data.iloc[0]['3']),
+                    float(cv_home_data.iloc[0]['4'])
+                ],
+                name=equipe_home,
+                marker_color='blue'
+            ))
+            
+            # Adicionando dados do time visitante
+            fig.add_trace(go.Bar(
+                x=['0', '1', '2', '3', '4+'],
+                y=[
+                    float(cv_away_data.iloc[0]['0']),
+                    float(cv_away_data.iloc[0]['1']),
+                    float(cv_away_data.iloc[0]['2']),
+                    float(cv_away_data.iloc[0]['3']),
+                    float(cv_away_data.iloc[0]['4'])
+                ],
+                name=equipe_away,
+                marker_color='red'
+            ))
+            
+            fig.update_layout(
+                barmode='group',
+                title='Distribuição de Gols no 1º Tempo',
+                xaxis_title='Número de Gols',
+                yaxis_title='Frequência (%)'
+            )
+            
+            st.plotly_chart(fig, use_container_width=True)
+    else:
+        st.warning("Dados insuficientes para análise detalhada do 1º tempo")
 
 # Executar com variável de ambiente PORT
 if __name__ == "__main__":
