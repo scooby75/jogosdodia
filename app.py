@@ -151,8 +151,7 @@ overall_filtered = overall_df[overall_df['Team_Home_Overall'] == equipe_home][ov
 # INTERFACE STREAMLIT
 # ----------------------------
 tabs = st.tabs([
-    "🧾 Resumo", "🏠 Home", "📊 Overall", "🛫 Away",
-    "⚽ First Goal", "⏱️ Goals_Minute", "⚡ Goals HT/FT", "📌 CV HT", "📊 Goals Per Time", "⚠️ HTF", "Sintese"
+    "🧾 h2h", "⚠️ HT", "Sintese"
 ])
 
 # ABA 1 - Home Favorito
