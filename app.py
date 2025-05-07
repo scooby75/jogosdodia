@@ -535,7 +535,10 @@ def display_analysis_tab(data, home_team, away_team):
                 st.markdown(f"📊 **Ranking:** (Casa {rank_home} vs Fora {rank_away})")
         
              
-        # Tendência BTTS              
+        # Tendência BTTS   
+        
+        total_avg_goals = gf_avg_home + gf_avg_away        
+
         col1, col2 = st.columns(2)    
         
         with col1:
