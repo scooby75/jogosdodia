@@ -538,36 +538,30 @@ def display_analysis_tab(data, home_team, away_team):
         col1, col2 = st.columns(2)    
         
         with col1:
-            filtered = data["goals_half_df"][data["goals_half_df"]['Team'].isin([home_team, away_team])]
+            st.markdown("### BTTS (Ambos Marcam)")
             
-            if not filtered.empty:
-                freq_ht_home = filtered.loc[filtered['Team'] == home_team, '1st half'].map(convert_percentage).values
-                freq_ht_away = filtered.loc[filtered['Team'] == away_team, '1st half'].map(convert_percentage).values
-                
-                if freq_ht_home.size > 0 and freq_ht_away.size > 0 and not np.isnan(freq_ht_home[0]) and not np.isnan(freq_ht_away[0]):
-                    media_freq_ht = (freq_ht_home[0] + freq_ht_away[0]) / 2
-                    
-                    st.markdown("### Over/Under 05HT")
-                    if media_freq_ht >= 0.65:
-                        st.success(f"**✅ Tendência Over 0.5 HT (Média: {media_freq_ht*1:.1f}%)**")
-                        st.markdown(f"""
-                        📊 **Justificativa:**  
-                        • {home_team}: {freq_ht_home[0]*1:.1f}%  
-                        • {away_team}: {freq_ht_away[0]*1:.1f}%  
-                        • Alta frequência de gols no 1º tempo para ambas as equipes.  
-                        """)
-                    else:
-                        st.info(f"**🔍 Sem tendência clara para Over 0.5 HT (Média: {media_freq_ht*100:.1f}%)**")
-                        st.markdown(f"""
-                        📊 **Justificativa:**  
-                        • {home_team}: {freq_ht_home[0]*1:.1f}%  
-                        • {away_team}: {freq_ht_away[0]*1:.1f}%  
-                        • Frequência abaixo do ideal para aposta em Over 0.5 HT.  
-                        """)
-                else:
-                    st.warning("Não foi possível calcular a média — valores ausentes ou inválidos.")
+            if gf_avg_home >= 1.2 and gf_avg_away >= 1.2 and total_avg_goals >= 2.5:
+                st.success("**✅ Sugerido: Sim (Ambos Marcam)**")
+                st.markdown(f"""
+                📊 **Justificativa:**  
+                • Ambos os times têm média de gols ≥ 1.2.  
+                • Frequência total de gols elevada ({total_avg_goals:.2f}).  
+                • Indicativo de jogo aberto e ofensivo.  
+                """)
+            elif gf_avg_home < 1.0 or gf_avg_away < 1.0:
+                st.warning("**⚠️ Sugerido: Não (Apenas um ou nenhum marca)**")
+                st.markdown(f"""
+                📊 **Justificativa:**  
+                • Um dos times apresenta baixa frequência de gols.  
+                • Tendência de apenas um time marcar.  
+                """)
             else:
-                st.warning("Nenhuma estatística de '1st half' encontrada para as equipes selecionadas.")
+                st.info("**🔍 Nenhuma tendência clara para BTTS**")
+                st.markdown(f"""
+                📊 **Justificativa:**  
+                • Frequência de gols equilibradas, mas não elevadas.  
+                • Jogo pode ter gols de apenas um dos lados.  
+                """)
         
         with col2:
             # Over/Under Gols
@@ -597,37 +591,11 @@ def display_analysis_tab(data, home_team, away_team):
                 • Sem tendências claras para gols.  
                 """)
         
-        col1, col2 = st.columns(2)
+        col1, col2 = st.columns(2)      
+
         
-        # Coluna 1: BTTS (Ambos Marcam)
+        # Coluna 1: 5 Placares Mais Prováveis
         with col1:
-            st.markdown("### BTTS (Ambos Marcam)")
-            
-            if gf_avg_home >= 1.2 and gf_avg_away >= 1.2 and total_avg_goals >= 2.5:
-                st.success("**✅ Sugerido: Sim (Ambos Marcam)**")
-                st.markdown(f"""
-                📊 **Justificativa:**  
-                • Ambos os times têm média de gols ≥ 1.2.  
-                • Frequência total de gols elevada ({total_avg_goals:.2f}).  
-                • Indicativo de jogo aberto e ofensivo.  
-                """)
-            elif gf_avg_home < 1.0 or gf_avg_away < 1.0:
-                st.warning("**⚠️ Sugerido: Não (Apenas um ou nenhum marca)**")
-                st.markdown(f"""
-                📊 **Justificativa:**  
-                • Um dos times apresenta baixa frequência de gols.  
-                • Tendência de apenas um time marcar.  
-                """)
-            else:
-                st.info("**🔍 Nenhuma tendência clara para BTTS**")
-                st.markdown(f"""
-                📊 **Justificativa:**  
-                • Frequência de gols equilibradas, mas não elevadas.  
-                • Jogo pode ter gols de apenas um dos lados.  
-                """)
-        
-        # Coluna 2: 5 Placares Mais Prováveis
-        with col2:
             st.markdown("### 📊 5 Placares Mais Prováveis")
             
             # Cálculo da expectativa de gols com base no PPG e na média total de gols
