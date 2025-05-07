@@ -538,36 +538,43 @@ def display_analysis_tab(data, home_team, away_team):
         col1, col2 = st.columns(2)    
         
         with col1:
-            filtered = data["goals_half_df"][data["goals_half_df"]['Team'].isin([home_team, away_team])]
-            
-            if not filtered.empty:
-                freq_ht_home = filtered.loc[filtered['Team'] == home_team, '1st half'].map(convert_percentage).values
-                freq_ht_away = filtered.loc[filtered['Team'] == away_team, '1st half'].map(convert_percentage).values
-                
-                if freq_ht_home.size > 0 and freq_ht_away.size > 0 and not np.isnan(freq_ht_home[0]) and not np.isnan(freq_ht_away[0]):
-                    media_freq_ht = (freq_ht_home[0] + freq_ht_away[0]) / 2
+            # Dados de frequência de gols no 1º tempo
+            if not cv_home_data.empty and not cv_away_data.empty:
+                try:
+                    home_percent_raw = cv_home_data.iloc[0]['% Com Gols']
+                    away_percent_raw = cv_away_data.iloc[0]['% Com Gols']
                     
-                    st.markdown("### Over/Under 05HT")
-                    if media_freq_ht >= 0.65:
-                        st.success(f"**✅ Tendência Over 0.5 HT (Média: {media_freq_ht*1:.1f}%)**")
-                        st.markdown(f"""
-                        📊 **Justificativa:**  
-                        • {home_team}: {freq_ht_home[0]*1:.1f}%  
-                        • {away_team}: {freq_ht_away[0]*1:.1f}%  
-                        • Alta frequência de gols no 1º tempo para ambas as equipes.  
-                        """)
+                    if pd.notna(home_percent_raw) and pd.notna(away_percent_raw):
+                        home_com_gols = convert_percentage(home_percent_raw)
+                        away_com_gols = convert_percentage(away_percent_raw)
+                        
+                        media_com_gols = (home_com_gols + away_com_gols) / 2
+                        
+                        if media_com_gols >= 70:
+                            st.success(f"**✅ Over 0.5 HT (Média: {media_com_gols:.1f}%)**")
+                            st.markdown(f"""
+                                📊 **Justificativa:**
+                                • {home_team}: {home_com_gols:.1f}% de jogos com gol no 1º tempo  
+                                • {away_team}: {away_com_gols:.1f}% de jogos com gol no 1º tempo  
+                                • Alta probabilidade de pelo menos 1 gol no intervalo
+                            """)
+                        elif media_com_gols <= 50:
+                            st.warning(f"**⚠️ Under 0.5 HT (Média: {media_com_gols:.1f}%)**")
+                            st.markdown(f"""
+                                📊 **Justificativa:**
+                                • {home_team}: {home_com_gols:.1f}%  
+                                • {away_team}: {away_com_gols:.1f}%  
+                                • Baixa probabilidade de gol no 1º tempo
+                            """)
+                        else:
+                            st.info(f"**🔍 Sem tendência clara (Média: {media_com_gols:.1f}%)**")
                     else:
-                        st.info(f"**🔍 Sem tendência clara para Over 0.5 HT (Média: {media_freq_ht*100:.1f}%)**")
-                        st.markdown(f"""
-                        📊 **Justificativa:**  
-                        • {home_team}: {freq_ht_home[0]*1:.1f}%  
-                        • {away_team}: {freq_ht_away[0]*1:.1f}%  
-                        • Frequência abaixo do ideal para aposta em Over 0.5 HT.  
-                        """)
-                else:
-                    st.warning("Não foi possível calcular a média — valores ausentes ou inválidos.")
+                        st.warning("Valores nulos encontrados em '% Com Gols'.")
+                except Exception as e:
+                    st.error(f"Erro ao processar porcentagens de gols no 1º tempo: {e}")
             else:
-                st.warning("Nenhuma estatística de '1st half' encontrada para as equipes selecionadas.")
+                st.warning("Dados de frequência de gols no 1º tempo não disponíveis")
+
         
         with col2:
             # Over/Under Gols
