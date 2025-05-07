@@ -552,16 +552,16 @@ def display_analysis_tab(data, home_team, away_team):
                         st.success(f"**✅ Tendência Over 0.5 HT (Média: {media_freq_ht*1:.1f}%)**")
                         st.markdown(f"""
                         📊 **Justificativa:**  
-                        • {home_team}: {freq_ht_home[0]*100:.1f}%  
-                        • {away_team}: {freq_ht_away[0]*100:.1f}%  
+                        • {home_team}: {freq_ht_home[0]*1:.1f}%  
+                        • {away_team}: {freq_ht_away[0]*1:.1f}%  
                         • Alta frequência de gols no 1º tempo para ambas as equipes.  
                         """)
                     else:
                         st.info(f"**🔍 Sem tendência clara para Over 0.5 HT (Média: {media_freq_ht*100:.1f}%)**")
                         st.markdown(f"""
                         📊 **Justificativa:**  
-                        • {home_team}: {freq_ht_home[0]*100:.1f}%  
-                        • {away_team}: {freq_ht_away[0]*100:.1f}%  
+                        • {home_team}: {freq_ht_home[0]*1:.1f}%  
+                        • {away_team}: {freq_ht_away[0]*1:.1f}%  
                         • Frequência abaixo do ideal para aposta em Over 0.5 HT.  
                         """)
                 else:
