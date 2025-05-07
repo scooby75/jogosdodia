@@ -595,37 +595,12 @@ def display_analysis_tab(data, home_team, away_team):
                 • Sem tendências claras para gols.  
                 """)
 
-        col1, col2 = st.columns(2)
+        col1, col2 = st.columns(2)      
+
+
         
-        # Coluna 1: BTTS (Ambos Marcam)
+        # Coluna 1: 5 Placares Mais Prováveis
         with col1:
-            st.markdown("### BTTS (Ambos Marcam)")
-            
-            if gf_avg_home >= 1.2 and gf_avg_away >= 1.2 and total_avg_goals >= 2.5:
-                st.success("**✅ Sugerido: Sim (Ambos Marcam)**")
-                st.markdown(f"""
-                📊 **Justificativa:**  
-                • Ambos os times têm média de gols ≥ 1.2.  
-                • Frequência total de gols elevada ({total_avg_goals:.2f}).  
-                • Indicativo de jogo aberto e ofensivo.  
-                """)
-            elif gf_avg_home < 1.0 or gf_avg_away < 1.0:
-                st.warning("**⚠️ Sugerido: Não (Apenas um ou nenhum marca)**")
-                st.markdown(f"""
-                📊 **Justificativa:**  
-                • Um dos times apresenta baixa frequência de gols.  
-                • Tendência de apenas um time marcar.  
-                """)
-            else:
-                st.info("**🔍 Nenhuma tendência clara para BTTS**")
-                st.markdown(f"""
-                📊 **Justificativa:**  
-                • Frequência de gols equilibradas, mas não elevadas.  
-                • Jogo pode ter gols de apenas um dos lados.  
-                """)
-        
-        # Coluna 2: 5 Placares Mais Prováveis
-        with col2:
             st.markdown("### 📊 5 Placares Mais Prováveis")
             
             # Cálculo da expectativa de gols com base no PPG e na média total de gols
