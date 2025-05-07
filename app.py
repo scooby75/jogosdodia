@@ -694,7 +694,7 @@ def display_ht_analysis_tab(data, home_team, away_team):
         rank_diff = rank_away - rank_home
         
         # Análise qualitativa HT
-        if ppg_ht_home >= 1.5:
+        if ppg_ht_home >= 1.8:
             desempenho_ht_home = "excelente"
             vantagem_ht_home = "alta probabilidade de liderar no intervalo"
         elif ppg_ht_home >= 1.2:
@@ -708,7 +708,7 @@ def display_ht_analysis_tab(data, home_team, away_team):
             vantagem_ht_home = "dificuldade em liderar no intervalo"
 
         if ppg_ht_away >= 1.2:
-            desempenho_ht_away = "forte"
+            desempenho_ht_away = "bom"
             desempenho_ht_fora = "bom desempenho no 1º tempo fora de casa"
         elif ppg_ht_away >= 0.8:
             desempenho_ht_away = "regular"
