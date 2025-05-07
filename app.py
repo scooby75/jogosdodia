@@ -142,8 +142,6 @@ def get_all_teams(data):
         ('goal_minute_home_df', 'Team_Home'),
         ('goal_minute_away_df', 'Team_Away'),
         ('goals_half_df', 'Team'),
-        ('goals_ht_df', 'Team_Home'),
-        ('goals_ht_df', 'Team_Away'),
         ('goals_per_time_home_df', 'Team_Home'),
         ('goals_per_time_away_df', 'Team_Away'),
         ('ppg_ht_home_df', 'Team_Home'),
@@ -540,7 +538,7 @@ def display_analysis_tab(data, home_team, away_team):
         col1, col2 = st.columns(2)    
         
         with col1:
-            filtered = data["cv_home_df"][data["cv_away_df"]['Team'].isin([home_team, away_team])]
+            filtered = data["goals_half_df"][data["goals_half_df"]['Team'].isin([home_team, away_team])]
             
             if not filtered.empty:
                 freq_ht_home = filtered.loc[filtered['Team'] == home_team, '1st half'].map(convert_percentage).values
