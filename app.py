@@ -549,7 +549,7 @@ def display_analysis_tab(data, home_team, away_team):
                     
                     st.markdown("### Over/Under 05HT")
                     if media_freq_ht >= 0.65:
-                        st.success(f"**✅ Tendência Over 0.5 HT (Média: {media_freq_ht*100:.1f}%)**")
+                        st.success(f"**✅ Tendência Over 0.5 HT (Média: {media_freq_ht*1:.1f}%)**")
                         st.markdown(f"""
                         📊 **Justificativa:**  
                         • {home_team}: {freq_ht_home[0]*100:.1f}%  
