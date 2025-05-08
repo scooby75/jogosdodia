@@ -55,7 +55,7 @@ Armenia - Premier League,Ararat-Armenia,13,9,2,2,15,6,9,29,2.23,2,0.69,0.85,9,1.
 Armenia - Premier League,Van,14,7,3,4,18,10,8,24,1.71,3,0.5,0.71,8,1.29,2.0,1.41
 Armenia - Premier League,Urartu,13,6,5,2,15,5,10,23,1.77,4,0.46,0.85,10,1.15,2.17,1.18
 Armenia - Premier League,Pyunik,14,4,6,4,9,6,3,18,1.29,5,0.29,0.71,3,0.64,3.45,1.41
-Armenia - Premier League,Ararat Yerevan,13,4,4,5,8,10,-2,16,1.23,6,0.31,0.62,-2,0.62,3.23,1.61
+Armenia - Premier League,Ararat Yerevan,14,4,5,5,9,11,-2,17,1.21,6,0.29,0.64,-2,0.64,3.45,1.56
 Armenia - Premier League,BKMA,13,3,5,5,8,11,-3,14,1.08,7,0.23,0.62,-3,0.62,4.35,1.61
 Armenia - Premier League,Shirak,13,2,8,3,2,5,-3,14,1.08,7,0.15,0.77,-3,0.15,6.67,1.3
 Armenia - Premier League,West Armenia,13,3,4,6,5,12,-7,13,1.0,9,0.23,0.54,-7,0.38,4.35,1.85
@@ -283,15 +283,15 @@ Costa Rica - Primera Div. - Apertura,Santa Ana,11,2,7,2,7,7,0,13,1.18,10,0.18,0.
 Costa Rica - Primera Div. - Apertura,Herediano,11,3,4,4,7,8,-1,13,1.18,10,0.27,0.64,-1,0.64,3.7,1.56
 Costa Rica - Primera Div. - Apertura,Puntarenas,11,1,5,5,3,6,-3,8,0.73,12,0.09,0.55,-3,0.27,11.11,1.82
 Costa Rica - Primera Div. - Clausura,Saprissa,11,5,5,1,10,3,7,20,1.82,1,0.45,0.91,7,0.91,2.22,1.1
+Costa Rica - Primera Div. - Clausura,Cartagines,11,5,4,2,13,4,9,19,1.73,2,0.45,0.82,9,1.18,2.22,1.22
 Costa Rica - Primera Div. - Clausura,Herediano,11,5,4,2,10,6,4,19,1.73,2,0.45,0.82,4,0.91,2.22,1.22
-Costa Rica - Primera Div. - Clausura,Cartagines,10,5,3,2,12,3,9,18,1.8,3,0.5,0.8,9,1.2,2.0,1.25
-Costa Rica - Primera Div. - Clausura,Santos Guapiles,11,4,6,1,10,7,3,18,1.64,3,0.36,0.91,3,0.91,2.78,1.1
-Costa Rica - Primera Div. - Clausura,Alajuelense,10,3,7,0,7,3,4,16,1.6,5,0.3,1.0,4,0.7,3.33,1.0
-Costa Rica - Primera Div. - Clausura,Puntarenas,10,5,1,4,7,6,1,16,1.6,5,0.5,0.6,1,0.7,2.0,1.67
+Costa Rica - Primera Div. - Clausura,Puntarenas,11,6,1,4,8,6,2,19,1.73,2,0.55,0.64,2,0.73,1.82,1.56
+Costa Rica - Primera Div. - Clausura,Santos Guapiles,11,4,6,1,10,7,3,18,1.64,5,0.36,0.91,3,0.91,2.78,1.1
+Costa Rica - Primera Div. - Clausura,Alajuelense,11,3,8,0,7,3,4,17,1.55,6,0.27,1.0,4,0.64,3.7,1.0
 Costa Rica - Primera Div. - Clausura,Santa Ana,11,3,6,2,6,7,-1,15,1.36,7,0.27,0.82,-1,0.55,3.7,1.22
 Costa Rica - Primera Div. - Clausura,M. Liberia,11,3,4,4,7,6,1,13,1.18,8,0.27,0.64,1,0.64,3.7,1.56
 Costa Rica - Primera Div. - Clausura,Sporting SJ,11,2,6,3,5,7,-2,12,1.09,9,0.18,0.73,-2,0.45,5.56,1.37
-Costa Rica - Primera Div. - Clausura,Zeledon,10,2,3,5,3,7,-4,9,0.9,10,0.2,0.5,-4,0.3,5.0,2.0
+Costa Rica - Primera Div. - Clausura,Zeledon,11,2,3,6,3,9,-6,9,0.82,10,0.18,0.45,-6,0.27,5.56,2.22
 Costa Rica - Primera Div. - Clausura,Guanacasteca,10,1,5,4,3,6,-3,8,0.8,11,0.1,0.6,-3,0.3,10.0,1.67
 Costa Rica - Primera Div. - Clausura,San Carlos,10,0,5,5,0,5,-5,5,0.5,12,0.0,0.5,-5,0.0,0.0,2.0
 Croatia - 1. NL,Orijent,15,7,8,0,11,3,8,29,1.93,1,0.47,1.0,8,0.73,2.13,1.0
@@ -351,7 +351,7 @@ Denmark - Superligaen,Vejle BK,14,3,7,4,7,8,-1,16,1.14,10,0.21,0.71,-1,0.5,4.76,
 Denmark - Superligaen,Lyngby,15,3,7,5,4,8,-4,16,1.07,10,0.2,0.67,-4,0.27,5.0,1.49
 Denmark - Superligaen,Aalborg BK,15,3,6,6,5,13,-8,15,1.0,12,0.2,0.6,-8,0.33,5.0,1.67
 Denmark - 1st Division,Odense BK,15,7,6,2,16,10,6,27,1.8,1,0.47,0.87,6,1.07,2.13,1.15
-Denmark - 1st Division,Hillerod,14,7,4,3,13,9,4,25,1.79,2,0.5,0.79,4,0.93,2.0,1.27
+Denmark - 1st Division,Hillerod,15,7,5,3,15,11,4,26,1.73,2,0.47,0.8,4,1.0,2.13,1.25
 Denmark - 1st Division,Fredericia,14,6,5,3,17,8,9,23,1.64,3,0.43,0.79,9,1.21,2.33,1.27
 Denmark - 1st Division,Hvidovre,15,4,9,2,8,4,4,21,1.4,4,0.27,0.87,4,0.53,3.7,1.15
 Denmark - 1st Division,Kolding IF,14,5,6,3,6,6,0,21,1.5,4,0.36,0.79,0,0.43,2.78,1.27
@@ -391,7 +391,7 @@ Ecuador - Liga Pro,Tecnico U.,5,2,1,2,4,4,0,7,1.4,13,0.4,0.6,0,0.8,2.5,1.67
 Ecuador - Liga Pro,El Nacional,6,1,3,2,3,4,-1,6,1.0,15,0.17,0.67,-1,0.5,5.88,1.49
 Ecuador - Liga Pro,Macara,5,1,1,3,1,3,-2,4,0.8,16,0.2,0.4,-2,0.2,5.0,2.5
 Ecuador - Serie B,Vargas Torres,4,2,2,0,3,1,2,8,2.0,1,0.5,1.0,2,0.75,2.0,1.0
-Ecuador - Serie B,Cumbaya,4,2,1,1,4,1,3,7,1.75,2,0.5,0.75,3,1.0,2.0,1.33
+Ecuador - Serie B,Cumbaya,5,2,1,2,4,2,2,7,1.4,2,0.4,0.6,2,0.8,2.5,1.67
 Ecuador - Serie B,Guayaquil City,4,2,1,1,2,1,1,7,1.75,2,0.5,0.75,1,0.5,2.0,1.33
 Ecuador - Serie B,Nueve Octubre,4,1,3,0,2,1,1,6,1.5,4,0.25,1.0,1,0.5,4.0,1.0
 Ecuador - Serie B,Leones Norte,4,1,3,0,1,0,1,6,1.5,4,0.25,1.0,1,0.25,4.0,1.0
@@ -592,11 +592,11 @@ France - National,Nimes,15,3,10,2,5,4,1,19,1.27,15,0.2,0.87,1,0.33,5.0,1.15
 France - National,Sochaux,15,3,8,4,4,5,-1,17,1.13,16,0.2,0.73,-1,0.27,5.0,1.37
 France - National,Villefranche,15,1,12,2,6,7,-1,15,1.0,17,0.07,0.87,-1,0.4,14.29,1.15
 Georgia - Erovnuli Liga,Dinamo Batumi,7,5,2,0,8,3,5,17,2.43,1,0.71,1.0,5,1.14,1.41,1.0
-Georgia - Erovnuli Liga,Dila Gori,7,4,0,3,6,3,3,12,1.71,2,0.57,0.57,3,0.86,1.75,1.75
-Georgia - Erovnuli Liga,Dinamo Tbilisi,6,3,2,1,4,2,2,11,1.83,3,0.5,0.83,2,0.67,2.0,1.2
-Georgia - Erovnuli Liga,Iberia,6,3,2,1,3,1,2,11,1.83,3,0.5,0.83,2,0.5,2.0,1.2
-Georgia - Erovnuli Liga,Samgurali,7,2,4,1,8,2,6,10,1.43,5,0.29,0.86,6,1.14,3.45,1.16
-Georgia - Erovnuli Liga,Gareji Sagarejo,5,2,3,0,2,0,2,9,1.8,6,0.4,1.0,2,0.4,2.5,1.0
+Georgia - Erovnuli Liga,Dinamo Tbilisi,7,4,2,1,6,3,3,14,2.0,2,0.57,0.86,3,0.86,1.75,1.16
+Georgia - Erovnuli Liga,Gareji Sagarejo,6,3,3,0,4,0,4,12,2.0,3,0.5,1.0,4,0.67,2.0,1.0
+Georgia - Erovnuli Liga,Dila Gori,7,4,0,3,6,3,3,12,1.71,3,0.57,0.57,3,0.86,1.75,1.75
+Georgia - Erovnuli Liga,Iberia,6,3,2,1,3,1,2,11,1.83,5,0.5,0.83,2,0.5,2.0,1.2
+Georgia - Erovnuli Liga,Samgurali,7,2,4,1,8,2,6,10,1.43,6,0.29,0.86,6,1.14,3.45,1.16
 Georgia - Erovnuli Liga,Kolkheti Poti,7,1,5,1,2,2,0,8,1.14,7,0.14,0.86,0,0.29,7.14,1.16
 Georgia - Erovnuli Liga,Torpedo Kutaisi,6,2,1,3,4,4,0,7,1.17,8,0.33,0.5,0,0.67,3.03,2.0
 Georgia - Erovnuli Liga,Telavi,6,0,6,0,1,1,0,6,1.0,9,0.0,1.0,0,0.17,0.0,1.0
@@ -770,26 +770,6 @@ Italy - Serie A,Empoli,17,1,12,4,2,8,-6,15,0.88,16,0.06,0.76,-6,0.12,16.67,1.32
 Italy - Serie A,Genoa,18,1,11,6,4,9,-5,14,0.78,18,0.06,0.67,-5,0.22,16.67,1.49
 Italy - Serie A,Monza,18,1,8,9,7,16,-9,11,0.61,19,0.06,0.5,-9,0.39,16.67,2.0
 Italy - Serie A,Hellas Verona,17,1,7,9,5,24,-19,10,0.59,20,0.06,0.47,-19,0.29,16.67,2.13
-Italy - Serie B,Juve Stabia,17,10,4,3,14,6,8,34,2.0,1,0.59,0.82,8,0.82,1.69,1.22
-Italy - Serie B,Bari,19,9,6,4,14,8,6,33,1.74,2,0.47,0.79,6,0.74,2.13,1.27
-Italy - Serie B,Pisa,17,8,7,2,13,4,9,31,1.82,3,0.47,0.88,9,0.76,2.13,1.14
-Italy - Serie B,Carrarese,19,7,10,2,12,6,6,31,1.63,3,0.37,0.89,6,0.63,2.7,1.12
-Italy - Serie B,Sassuolo,17,8,6,3,16,9,7,30,1.76,5,0.47,0.82,7,0.94,2.13,1.22
-Italy - Serie B,Cesena,19,7,8,4,14,8,6,29,1.53,6,0.37,0.79,6,0.74,2.7,1.27
-Italy - Serie B,Palermo,17,7,7,3,12,6,6,28,1.65,7,0.41,0.82,6,0.71,2.44,1.22
-Italy - Serie B,Sampdoria,18,5,12,1,7,3,4,27,1.5,8,0.28,0.94,4,0.39,3.57,1.06
-Italy - Serie B,Modena,17,7,6,4,13,10,3,27,1.59,8,0.41,0.76,3,0.76,2.44,1.32
-Italy - Serie B,Frosinone,19,6,8,5,13,14,-1,26,1.37,10,0.32,0.74,-1,0.68,3.12,1.35
-Italy - Serie B,Spezia,17,6,6,5,12,8,4,24,1.41,11,0.35,0.71,4,0.71,2.86,1.41
-Italy - Serie B,Reggiana,19,5,9,5,12,12,0,24,1.26,11,0.26,0.74,0,0.63,3.85,1.35
-Italy - Serie B,Catanzaro,19,4,11,4,15,13,2,23,1.21,13,0.21,0.79,2,0.79,4.76,1.27
-Italy - Serie B,Cosenza,18,6,5,7,8,11,-3,23,1.28,13,0.33,0.61,-3,0.44,3.03,1.64
-Italy - Serie B,Sudtirol,18,4,10,4,13,13,0,22,1.22,15,0.22,0.78,0,0.72,4.55,1.28
-Italy - Serie B,Brescia,18,4,9,5,12,10,2,21,1.17,16,0.22,0.72,2,0.67,4.55,1.39
-Italy - Serie B,Cremonese,19,4,9,6,11,12,-1,21,1.11,16,0.21,0.68,-1,0.58,4.76,1.47
-Italy - Serie B,Mantova,17,4,8,5,9,7,2,20,1.18,18,0.24,0.71,2,0.53,4.17,1.41
-Italy - Serie B,Salernitana,19,2,10,7,7,15,-8,16,0.84,19,0.11,0.63,-8,0.37,9.09,1.59
-Italy - Serie B,Cittadella,17,1,10,6,4,10,-6,13,0.76,20,0.06,0.65,-6,0.24,16.67,1.54
 Italy - Serie C - Group A,Vicenza,19,11,7,1,17,3,14,40,2.11,1,0.58,0.95,14,0.89,1.72,1.05
 Italy - Serie C - Group A,Padova,19,12,4,3,16,3,13,40,2.11,1,0.63,0.84,13,0.84,1.59,1.19
 Italy - Serie C - Group A,Renate,19,7,9,3,9,5,4,30,1.58,3,0.37,0.84,4,0.47,2.7,1.19
@@ -1044,6 +1024,22 @@ Paraguay - Primera Div. - Apertura,Guarani,8,2,4,2,6,5,1,10,1.25,9,0.25,0.75,1,0
 Paraguay - Primera Div. - Apertura,S. Trinidense,8,1,6,1,4,4,0,9,1.12,10,0.12,0.88,0,0.5,8.33,1.14
 Paraguay - Primera Div. - Apertura,A. Tembetary,8,1,6,1,2,2,0,9,1.12,10,0.12,0.88,0,0.25,8.33,1.14
 Paraguay - Primera Div. - Apertura,S. Luqueno,8,0,6,2,1,3,-2,6,0.75,12,0.0,0.75,-2,0.12,0.0,1.33
+Paraguay - Division Intermedia,San Lorenzo,4,3,1,0,5,0,5,10,2.5,1,0.75,1.0,5,1.25,1.33,1.0
+Paraguay - Division Intermedia,Guarani de Fram,3,3,0,0,5,0,5,9,3.0,2,1.0,1.0,5,1.67,1.0,1.0
+Paraguay - Division Intermedia,Guairena,3,2,1,0,3,1,2,7,2.33,3,0.67,1.0,2,1.0,1.49,1.0
+Paraguay - Division Intermedia,Independiente,4,1,3,0,1,0,1,6,1.5,4,0.25,1.0,1,0.25,4.0,1.0
+Paraguay - Division Intermedia,D. Capiata,3,1,2,0,1,0,1,5,1.67,5,0.33,1.0,1,0.33,3.03,1.0
+Paraguay - Division Intermedia,Resistencia,3,1,2,0,1,0,1,5,1.67,5,0.33,1.0,1,0.33,3.03,1.0
+Paraguay - Division Intermedia,S. Carapegua,4,1,2,1,1,1,0,5,1.25,5,0.25,0.75,0,0.25,4.0,1.33
+Paraguay - Division Intermedia,Sol de America,4,1,2,1,1,1,0,5,1.25,5,0.25,0.75,0,0.25,4.0,1.33
+Paraguay - Division Intermedia,C. River Plate,2,1,1,0,1,0,1,4,2.0,9,0.5,1.0,1,0.5,2.0,1.0
+Paraguay - Division Intermedia,Pastoreo,2,1,1,0,1,0,1,4,2.0,9,0.5,1.0,1,0.5,2.0,1.0
+Paraguay - Division Intermedia,Rubio Nu,2,1,1,0,1,0,1,4,2.0,9,0.5,1.0,1,0.5,2.0,1.0
+Paraguay - Division Intermedia,12 de Junio VH,3,1,1,1,2,2,0,4,1.33,9,0.33,0.67,0,0.67,3.03,1.49
+Paraguay - Division Intermedia,Encarnacion,3,0,3,0,0,0,0,3,1.0,13,0.0,1.0,0,0.0,0.0,1.0
+Paraguay - Division Intermedia,D. Santani,3,0,2,1,0,1,-1,2,0.67,14,0.0,0.67,-1,0.0,0.0,1.49
+Paraguay - Division Intermedia,Tacuary,3,0,2,1,0,3,-3,2,0.67,14,0.0,0.67,-3,0.0,0.0,1.49
+Paraguay - Division Intermedia,F. de la Mora,3,0,1,2,1,3,-2,1,0.33,16,0.0,0.33,-2,0.33,0.0,3.03
 Peru - Liga 1 - Apertura,Alianza Lima,6,4,2,0,6,0,6,14,2.33,1,0.67,1.0,6,1.0,1.49,1.0
 Peru - Liga 1 - Apertura,FBC Melgar,6,4,1,1,6,2,4,13,2.17,2,0.67,0.83,4,1.0,1.49,1.2
 Peru - Liga 1 - Apertura,Cusco,5,4,0,1,5,1,4,12,2.4,3,0.8,0.8,4,1.0,1.25,1.25
