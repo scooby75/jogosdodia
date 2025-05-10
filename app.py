@@ -38,6 +38,10 @@ DATA_URLS = {
     "ppg_ht": [
         "https://raw.githubusercontent.com/scooby75/jogosdodia/refs/heads/main/PPG_HT_Home.csv",
         "https://raw.githubusercontent.com/scooby75/jogosdodia/refs/heads/main/PPG_HT_Away.csv"
+    ],
+     "relative_form": [
+        "https://raw.githubusercontent.com/scooby75/jogosdodia/refs/heads/main/Relative_Form.csv"
+        
     ]
 }
 
@@ -117,6 +121,7 @@ def load_all_data():
     data["cv_home_df"], data["cv_away_df"] = [load_csv(url) for url in DATA_URLS["goals_ht"]]
     data["goals_per_time_home_df"], data["goals_per_time_away_df"] = [load_csv(url) for url in DATA_URLS["goals_per_time"]]
     data["ppg_ht_home_df"], data["ppg_ht_away_df"] = [load_csv(url) for url in DATA_URLS["ppg_ht"]]
+    data["relative_form_df"] = load_csv(DATA_URLS["relative_form"][0]) 
     
     # Normaliza todas as tabelas
     for key in data:
@@ -353,7 +358,8 @@ def display_analysis_tab(data, home_team, away_team):
     away_filtered = data["away_df"][data["away_df"]['Team_Away'] == away_team][COLUMN_NAMES["away"]]
     home_fg_data = data["home_fg_df"][data["home_fg_df"]['Team_Home'] == home_team]
     away_fg_data = data["away_fg_df"][data["away_fg_df"]['Team_Away'] == away_team]
-    overall_stats = data["overall_df"]
+    relative_form_data = data["relative_form_df"][data["relative_form_df"]['Team'] == home_team]
+    relative_form_data = data["relative_form_df"][data["relative_form_df"]['Team'] == away_team]
     
     if not home_filtered.empty and not away_filtered.empty:
         home_row = home_filtered.iloc[0]
@@ -379,7 +385,8 @@ def display_analysis_tab(data, home_team, away_team):
             rankings_validos = False
         
         # Rodada atual
-        rodada_atual = overall_stats['GP'].max() if not overall_stats.empty else "N/A"
+        relative_form = data["relative_form_df"]
+        rodada_atual = relative_form['GP'].max() if not relative_form.empty else "N/A"
         
         # Análise qualitativa
         if ppg_home >= 1.8:
