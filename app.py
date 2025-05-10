@@ -158,7 +158,7 @@ def get_all_teams(data):
         df = data.get(df_name, pd.DataFrame())
         if not df.empty and col_name in df.columns:
             valid_teams = df[col_name].dropna().astype(str)
-            valid_teams = valid_teams[valid_teams.str.contains(r'^[A-Za-z\s]+$', na=False)]
+            #valid_teams = valid_teams[valid_teams.str.contains(r'^[A-Za-z\s]+$', na=False)]
             teams.update(valid_teams.tolist())
     
     return sorted(teams)
