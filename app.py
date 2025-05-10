@@ -385,8 +385,16 @@ def display_analysis_tab(data, home_team, away_team):
             rankings_validos = False
         
         # Rodada atual
-        relative_form = data["relative_form_df"]
-        rodada_atual = relative_form['GP'].max() if not relative_form.empty else "N/A"
+        def get_current_round(team_name, relative_form_df):
+            if not relative_form_df.empty and 'Team' in relative_form_df.columns and 'GP' in relative_form_df.columns:
+                team_data = relative_form_df[relative_form_df['Team'] == team_name]
+                if not team_data.empty:
+                    return team_data.iloc[0]['GP']
+            return "N/A"
+        
+        # E use assim:
+        rodada_home = get_current_round(home_team, data["relative_form_df"])
+        rodada_away = get_current_round(away_team, data["relative_form_df"])
         
         # Análise qualitativa
         if ppg_home >= 1.8:
