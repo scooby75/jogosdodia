@@ -385,17 +385,26 @@ def display_analysis_tab(data, home_team, away_team):
             rankings_validos = False
         
         # Rodada atual
-        def get_current_round(team_name, relative_form_df):
-            if not relative_form_df.empty and 'Team' in relative_form_df.columns and 'GP' in relative_form_df.columns:
-                team_data = relative_form_df[relative_form_df['Team'] == team_name]
-                if not team_data.empty:
-                    return team_data.iloc[0]['GP']
-            return "N/A"
+        def display_analysis_tab(data, home_team, away_team):
+            # Carregar os DataFrames necessários
+            relative_form = data["relative_form_df"]
+            home_filtered = data["home_df"][data["home_df"]['Team_Home'] == home_team][COLUMN_NAMES["home"]]
+            away_filtered = data["away_df"][data["away_df"]['Team_Away'] == away_team][COLUMN_NAMES["away"]]
+            home_fg_data = data["home_fg_df"][data["home_fg_df"]['Team_Home'] == home_team]
+            away_fg_data = data["away_fg_df"][data["away_fg_df"]['Team_Away'] == away_team]
         
-        # E use assim:
-        rodada_home = get_current_round(home_team, data["relative_form_df"])
-        rodada_away = get_current_round(away_team, data["relative_form_df"])
+            # Obter rodada atual para cada time
+            try:
+                rodada_home = relative_form[relative_form['Team'] == home_team].iloc[0]['GP']
+            except:
+                rodada_home = "N/A"
+            
+            try:
+                rodada_away = relative_form[relative_form['Team'] == away_team].iloc[0]['GP']
+            except:
+                rodada_away = "N/A"
         
+             
         # Análise qualitativa
         if ppg_home >= 1.8:
             desempenho_home = "excelente"
@@ -423,7 +432,7 @@ def display_analysis_tab(data, home_team, away_team):
         # Texto de análise
         analise_home = f"""
         ### 🏠 {home_team} (Casa)
-        Estamos na **{rodada_atual}ª rodada** da competição. 
+        Estamos na **{rodada_home}ª rodada** da competição. 
         O time da casa **{home_team}** apresenta um **{desempenho_home} desempenho** como mandante, com uma frequência de **{gf_avg_home:.2f} gols** por partida e uma média de pontos por jogo (PPG) de **{ppg_home:.2f}**. 
         """
         
@@ -434,7 +443,7 @@ def display_analysis_tab(data, home_team, away_team):
         
         analise_away = f"""
         ### ✈️ {away_team} (Visitante)
-        Estamos na **{rodada_atual}ª rodada** da competição. 
+        Estamos na **{rodada_away}ª rodada** da competição. 
         O time visitante **{away_team}** tem mostrado um desempenho **{desempenho_away}** como visitante, com média de **{gf_avg_away:.2f} gols** por partida e PPG de **{ppg_away:.2f}**. 
         """
         
