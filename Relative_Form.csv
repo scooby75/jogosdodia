@@ -239,12 +239,12 @@ China - League One,Liaoning Tieren,7,18,2.57,2.57
 China - League One,Guangdong GZP,7,16,2.29,2.29
 China - League One,S. Gongfu,7,14,2.0,2.0
 China - League One,Suzhou Dongwu,7,13,1.86,1.86
+China - League One,Shanghai Jiadin,8,11,1.38,1.38
 China - League One,Dalian Kuncheng,7,9,1.29,1.29
 China - League One,Shenzhen J.,7,9,1.29,1.29
-China - League One,Shanghai Jiadin,7,8,1.14,1.14
 China - League One,Nantong Zhiyun,7,8,1.14,1.14
 China - League One,Yanbian Longdin,7,8,1.14,1.14
-China - League One,Heilongjiang IC,7,7,1.0,1.0
+China - League One,Heilongjiang IC,8,7,0.88,0.88
 China - League One,Nanjing City,7,6,0.86,0.86
 China - League One,Shaanxi Union,7,5,0.71,0.71
 China - League One,Foshan Nanshi,7,5,0.71,0.71
@@ -709,11 +709,11 @@ Hong Kong - Premier League,LM Warriors,21,47,2.38,2.24
 Hong Kong - Premier League,Tai Po,21,46,2.13,2.19
 Hong Kong - Premier League,Eastern,21,44,2.13,2.1
 Hong Kong - Premier League,Kitchee,22,41,1.5,1.86
-Hong Kong - Premier League,Southern D.,22,22,1.13,1.0
+Hong Kong - Premier League,Southern D.,23,25,1.5,1.09
 Hong Kong - Premier League,Kowloon City,21,21,0.5,1.0
 Hong Kong - Premier League,HK Rangers,21,20,1.38,0.95
 Hong Kong - Premier League,North District,21,18,1.5,0.86
-Hong Kong - Premier League,Hong Kong FC,22,11,0.13,0.5
+Hong Kong - Premier League,Hong Kong FC,23,11,0.13,0.48
 Hungary - NB I,Ferencvaros,30,60,2.5,2.0
 Hungary - NB I,Puskas A.,30,57,1.63,1.9
 Hungary - NB I,Paks,30,55,2.13,1.83
@@ -881,7 +881,7 @@ Italy - Serie C - Group B,AC Milan B,38,34,1.38,0.89
 Italy - Serie C - Group B,Sestri Levante,38,31,1.0,0.82
 Italy - Serie C - Group B,Legnago Salus,38,29,0.75,0.76
 Japan - J1 League,Kashima Antlers,15,31,1.88,2.07
-Japan - J1 League,Kashiwa Reysol,14,27,2.0,1.93
+Japan - J1 League,Kashiwa Reysol,15,30,2.25,2.0
 Japan - J1 League,Kyoto Sanga,16,27,1.88,1.69
 Japan - J1 League,Urawa RD,15,25,2.25,1.67
 Japan - J1 League,S. Hiroshima,14,23,1.5,1.64
@@ -892,8 +892,8 @@ Japan - J1 League,Avispa Fukuoka,16,21,1.0,1.31
 Japan - J1 League,Machida Zelvia,15,20,0.88,1.33
 Japan - J1 League,Tokyo Verdy,15,20,1.5,1.33
 Japan - J1 League,Cerezo Osaka,15,19,1.63,1.27
-Japan - J1 League,Fagiano Okayama,15,19,1.0,1.27
 Japan - J1 League,FC Tokyo,15,19,1.5,1.27
+Japan - J1 League,Fagiano Okayama,16,19,1.0,1.19
 Japan - J1 League,K. Frontale,12,18,1.38,1.5
 Japan - J1 League,Shonan Bellmare,15,18,0.88,1.2
 Japan - J1 League,Nagoya G.,15,15,1.25,1.0
@@ -1264,6 +1264,15 @@ Serbia - Super Liga,Radnicki Nis,34,40,1.25,1.18
 Serbia - Super Liga,Napredak,34,38,1.25,1.12
 Serbia - Super Liga,T. Odzaci,34,34,1.13,1.0
 Serbia - Super Liga,Jedinstvo U.,34,22,1.0,0.65
+Singapore - Premier League,Lion City,29,68,2.13,2.34
+Singapore - Premier League,Tampines Rovers,29,60,2.25,2.07
+Singapore - Premier League,Geylang,29,50,1.25,1.72
+Singapore - Premier League,Khalsa,29,42,2.0,1.45
+Singapore - Premier League,A. Niigata (S),29,36,1.0,1.24
+Singapore - Premier League,DPMM FC,29,35,1.75,1.21
+Singapore - Premier League,Hougang,29,30,1.0,1.03
+Singapore - Premier League,Young Lions,29,26,0.5,0.9
+Singapore - Premier League,Tanjong Pagar,28,14,0.63,0.5
 Slovenia - Prva Liga,NK Olimpija,33,69,1.88,2.09
 Slovenia - Prva Liga,Maribor,33,63,1.88,1.91
 Slovenia - Prva Liga,Koper,33,59,2.25,1.79
@@ -1307,25 +1316,25 @@ South Korea - K League 1,Jeonbuk Motors,12,22,2.25,1.83
 South Korea - K League 1,Ulsan,14,21,1.38,1.5
 South Korea - K League 1,Gimcheon Sangmu,12,20,1.63,1.67
 South Korea - K League 1,Gwangju,12,19,1.63,1.58
+South Korea - K League 1,Pohang Steelers,13,19,1.75,1.46
 South Korea - K League 1,Gangwon,12,17,1.25,1.42
 South Korea - K League 1,Anyang,13,16,1.25,1.23
-South Korea - K League 1,Pohang Steelers,12,16,1.75,1.33
 South Korea - K League 1,Seoul,12,14,1.13,1.17
-South Korea - K League 1,Suwon City,12,11,1.13,0.92
 South Korea - K League 1,Jeju Utd,12,11,0.88,0.92
+South Korea - K League 1,Suwon City,13,11,1.0,0.85
 South Korea - K League 1,Daegu,12,10,0.38,0.83
 South Korea - K League 2,Incheon Utd,10,25,2.38,2.5
 South Korea - K League 2,Seoul E-Land,10,20,2.0,2.0
 South Korea - K League 2,Jeonnam,10,19,1.88,1.9
 South Korea - K League 2,Busan IPark,10,18,2.13,1.8
 South Korea - K League 2,Suwon Bluewings,10,18,1.88,1.8
+South Korea - K League 2,Bucheon FC,11,18,1.5,1.64
 South Korea - K League 2,Seongnam,10,16,1.5,1.6
-South Korea - K League 2,Bucheon FC,10,15,1.13,1.5
+South Korea - K League 2,Gimpo,11,12,1.0,1.09
 South Korea - K League 2,Asan,10,11,1.25,1.1
-South Korea - K League 2,Gyeongnam,10,11,1.0,1.1
 South Korea - K League 2,Cheongju,10,11,1.25,1.1
-South Korea - K League 2,Gimpo,10,9,0.63,0.9
-South Korea - K League 2,Hwaseong,10,9,1.0,0.9
+South Korea - K League 2,Gyeongnam,11,11,0.88,1.0
+South Korea - K League 2,Hwaseong,11,9,0.88,0.82
 South Korea - K League 2,Ansan Greeners,10,7,0.88,0.7
 South Korea - K League 2,Cheonan City,10,3,0.38,0.3
 Spain - La Liga,FC Barcelona,34,79,2.75,2.32
@@ -1592,3 +1601,14 @@ Vietnam - V League,Quang Nam,21,21,0.75,1.0
 Vietnam - V League,Song Lam Nghe,21,20,1.0,0.95
 Vietnam - V League,Binh Dinh,20,19,0.88,0.95
 Vietnam - V League,Da Nang,21,14,0.75,0.67
+Vietnam - V League 2,Phu Dong,15,43,2.75,2.87
+Vietnam - V League 2,Binh Phuoc,16,37,2.13,2.31
+Vietnam - V League 2,PVF-CAND,15,33,2.38,2.2
+Vietnam - V League 2,Ba Ria Vung Tau,15,17,1.0,1.13
+Vietnam - V League 2,S. Khanh Hoa,15,16,0.88,1.07
+Vietnam - V League 2,Dong Thap,16,16,1.0,1.0
+Vietnam - V League 2,Long An,16,14,0.75,0.88
+Vietnam - V League 2,Dong Nai,16,14,1.25,0.88
+Vietnam - V League 2,Ho Chi Minh B,15,14,1.25,0.93
+Vietnam - V League 2,Hoa Binh,15,13,1.0,0.87
+Vietnam - V League 2,Hue,16,11,0.75,0.69
