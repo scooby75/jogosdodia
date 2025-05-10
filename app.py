@@ -385,25 +385,25 @@ def display_analysis_tab(data, home_team, away_team):
             rankings_validos = False
         
         # Rodada atual
-        def display_analysis_tab(data, home_team, away_team):
-            # Carregar os DataFrames necessários
-            relative_form = data["relative_form_df"]
-            home_filtered = data["home_df"][data["home_df"]['Team_Home'] == home_team][COLUMN_NAMES["home"]]
-            away_filtered = data["away_df"][data["away_df"]['Team_Away'] == away_team][COLUMN_NAMES["away"]]
-            home_fg_data = data["home_fg_df"][data["home_fg_df"]['Team_Home'] == home_team]
-            away_fg_data = data["away_fg_df"][data["away_fg_df"]['Team_Away'] == away_team]
+
+def display_analysis_tab(data, home_team, away_team):
+    relative_form = data["relative_form_df"]
+    home_filtered = data["home_df"][data["home_df"]['Team_Home'] == home_team][COLUMN_NAMES["home"]]
+    away_filtered = data["away_df"][data["away_df"]['Team_Away'] == away_team][COLUMN_NAMES["away"]]
+    home_fg_data = data["home_fg_df"][data["home_fg_df"]['Team_Home'] == home_team]
+    away_fg_data = data["away_fg_df"][data["away_fg_df"]['Team_Away'] == away_team]
         
-            # Obter rodada atual para cada time
-            try:
-                rodada_home = relative_form[relative_form['Team'] == home_team].iloc[0]['GP']
-            except:
-                rodada_home = "N/A"
+    try:
+       rodada_home = relative_form[relative_form['Team'] == home_team].iloc[0]['GP']
+    except:
+        rodada_home = "N/A"
             
-            try:
-                rodada_away = relative_form[relative_form['Team'] == away_team].iloc[0]['GP']
-            except:
-                rodada_away = "N/A"
+    try:
+        rodada_away = relative_form[relative_form['Team'] == away_team].iloc[0]['GP']
+    except:
+        rodada_away = "N/A"
         
+       
              
         # Análise qualitativa
         if ppg_home >= 1.8:
