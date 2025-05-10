@@ -387,14 +387,17 @@ def display_analysis_tab(data, home_team, away_team):
         # Rodada atual
 
 def display_analysis_tab(data, home_team, away_team):
+    """Exibe a aba de análise detalhada"""
     relative_form = data["relative_form_df"]
     home_filtered = data["home_df"][data["home_df"]['Team_Home'] == home_team][COLUMN_NAMES["home"]]
     away_filtered = data["away_df"][data["away_df"]['Team_Away'] == away_team][COLUMN_NAMES["away"]]
     home_fg_data = data["home_fg_df"][data["home_fg_df"]['Team_Home'] == home_team]
     away_fg_data = data["away_fg_df"][data["away_fg_df"]['Team_Away'] == away_team]
-        
+    relative_form_data = data["relative_form_df"][data["relative_form_df"]['Team'] == home_team]
+    relative_form_data = data["relative_form_df"][data["relative_form_df"]['Team'] == away_team]
+    
     try:
-       rodada_home = relative_form[relative_form['Team'] == home_team].iloc[0]['GP']
+        rodada_home = relative_form[relative_form['Team'] == home_team].iloc[0]['GP']
     except:
         rodada_home = "N/A"
             
@@ -403,8 +406,29 @@ def display_analysis_tab(data, home_team, away_team):
     except:
         rodada_away = "N/A"
         
-       
-             
+    if not home_filtered.empty and not away_filtered.empty:
+        home_row = home_filtered.iloc[0]
+        away_row = away_filtered.iloc[0]
+        
+        # Coletar dados principais
+        ppg_home = home_row.get("PPG_Home", 0)
+        ppg_away = away_row.get("PPG_Away", 0)
+        gf_avg_home = home_row.get("GF_AVG_Home", 0)
+        gf_avg_away = away_row.get("GF_AVG_Away", 0)
+        odd_justa_home = home_row.get('Odd_Justa_MO', 'N/A')
+        odd_justa_away = away_row.get('Odd_Justa_MO', 'N/A')
+        
+        try:
+            rank_home = int(home_row.get('Rank_Home', 999))
+            rank_away = int(away_row.get('Rank_Away', 999))
+            rank_diff = rank_away - rank_home
+            rankings_validos = rank_home != 999 and rank_away != 999
+        except:
+            rank_home = 999
+            rank_away = 999
+            rank_diff = 0
+            rankings_validos = False
+        
         # Análise qualitativa
         if ppg_home >= 1.8:
             desempenho_home = "excelente"
@@ -558,9 +582,7 @@ def display_analysis_tab(data, home_team, away_team):
             if rankings_validos:
                 st.markdown(f"📊 **Ranking:** (Casa {rank_home} vs Fora {rank_away})")
         
-             
         # Tendência BTTS   
-        
         total_avg_goals = gf_avg_home + gf_avg_away        
 
         col1, col2 = st.columns(2)    
@@ -621,8 +643,6 @@ def display_analysis_tab(data, home_team, away_team):
 
         col1, col2 = st.columns(2)      
 
-
-        
         # Coluna 1: 5 Placares Mais Prováveis
         with col1:
             st.markdown("### 📊 5 Placares Mais Prováveis")
