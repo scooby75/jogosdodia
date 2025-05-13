@@ -1088,6 +1088,20 @@ with tabs[4]:
                 if not df_lay_ht.empty:
                     st.dataframe(df_lay_ht[['League', 'Date', 'Time', 'Home', 'Away', 'Odd_H_FT', 'Odd_D_FT', 'Odd_A_FT']],
                                 use_container_width=True)
+
+             # 🎯 Back Home
+                with col4:
+                    st.info("🎯 Back Home")
+                    df_lay_ht = df_footystats[
+                        (df_footystats['Rodada'] >= 10) &
+                        (df_footystats['Odd_H_FT'] >= 1.9) &
+                        (df_footystats['Odd_H_FT'] <= 2.20) &
+                        (df_footystats['PPG_Home'] >= 1.8)
+                    ]
+                    st.metric("Jogos encontrados", len(df_lay_ht))
+                    if not df_lay_ht.empty:
+                        st.dataframe(df_lay_ht[['League', 'Date', 'Time', 'Home', 'Away', 'Odd_H_FT', 'Odd_D_FT', 'Odd_A_FT']],
+                                    use_container_width=True)
         else:
             st.error("❌ As colunas necessárias não estão presentes no arquivo do FootyStats.")
     else:
