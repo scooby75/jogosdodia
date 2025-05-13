@@ -1058,7 +1058,7 @@ with tabs[4]:
                 ]
                 st.metric("Jogos encontrados", len(df_ha))
                 if not df_ha.empty:
-                    st.dataframe(df_ha[['League', 'Date', 'Time', 'Home', 'Away', 'Odd_H_FT', 'Odd_D_FT', 'Odd_A_FT', 'Odd_DC_1X']],
+                    st.dataframe(df_ha[['League', 'Time', 'Home', 'Away', 'Odd_H_FT', 'Odd_D_FT', 'Odd_A_FT', 'Odd_DC_1X']],
                                 use_container_width=True)
 
             # 🚫 Lay Visitante
@@ -1072,7 +1072,7 @@ with tabs[4]:
                 ]
                 st.metric("Jogos encontrados", len(df_lay_visit))
                 if not df_lay_visit.empty:
-                    st.dataframe(df_lay_visit[['League', 'Date', 'Time', 'Home', 'Away', 'Odd_H_FT', 'Odd_D_FT', 'Odd_A_FT']],
+                    st.dataframe(df_lay_visit[['League', 'Time', 'Home', 'Away', 'Odd_H_FT', 'Odd_D_FT', 'Odd_A_FT']],
                                 use_container_width=True)
 
             # 💣 Lay 0x1 HT
@@ -1086,7 +1086,7 @@ with tabs[4]:
                 ]
                 st.metric("Jogos encontrados", len(df_lay_ht))
                 if not df_lay_ht.empty:
-                    st.dataframe(df_lay_ht[['League', 'Date', 'Time', 'Home', 'Away', 'Odd_H_FT', 'Odd_D_FT', 'Odd_A_FT']],
+                    st.dataframe(df_lay_ht[['League', 'Time', 'Home', 'Away', 'Odd_H_FT', 'Odd_D_FT', 'Odd_A_FT']],
                                 use_container_width=True)
 
              # 🎯 Back Home
@@ -1100,7 +1100,7 @@ with tabs[4]:
                     ]
                     st.metric("Jogos encontrados", len(df_lay_ht))
                     if not df_lay_ht.empty:
-                        st.dataframe(df_lay_ht[['League', 'Date', 'Time', 'Home', 'Away', 'Odd_H_FT', 'Odd_D_FT', 'Odd_A_FT']],
+                        st.dataframe(df_lay_ht[['League', 'Time', 'Home', 'Away', 'Odd_H_FT', 'Odd_D_FT', 'Odd_A_FT']],
                                     use_container_width=True)
         else:
             st.error("❌ As colunas necessárias não estão presentes no arquivo do FootyStats.")
