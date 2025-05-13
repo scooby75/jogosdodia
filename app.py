@@ -1115,7 +1115,7 @@ with tabs[4]:
                         ]
                         st.metric("Jogos encontrados", len(df_white_flag))
                         if not df_white_flag.empty:
-                            st.dataframe(df_white_flagt[['League', 'Time', 'Home', 'Away', 'Odd_H_FT', 'Odd_D_FT', 'Odd_A_FT']],
+                            st.dataframe(df_white_flag[['League', 'Time', 'Home', 'Away', 'Odd_H_FT', 'Odd_D_FT', 'Odd_A_FT']],
                                         use_container_width=True)
         else:
             st.error("❌ As colunas necessárias não estão presentes no arquivo do FootyStats.")
