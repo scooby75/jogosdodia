@@ -1109,8 +1109,8 @@ with tabs[4]:
                         st.info("🏳️ White Flag")
                         df_white_flag = df_footystats[
                             (df_footystats['Rodada'] >= 10) &                            
-                            (df_footystats['Odd_H_FT'] <= 1.40) 
-                            
+                            (df_footystats['Odd_H_FT'] <= 1.50) & 
+                            (df_footystats['XG_Home_Pre'] >= 1.80) 
                             
                         ]
                         st.metric("Jogos encontrados", len(df_white_flag))
