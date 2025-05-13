@@ -1069,7 +1069,7 @@ with tabs[4]:
                     (df_footystats['Odd_H_FT'] <= 2.4) &
                     (df_footystats['Odd_A_FT'] <= 12) &
                     (df_footystats['PPG_Home'] >= 1.8) &
-                    (df_footystats['XG_Home_Pre'] >= 1.80
+                    (df_footystats['XG_Home_Pre'] >= 1.80)
                 ]
                 st.metric("Jogos encontrados", len(df_lay_visit))
                 if not df_lay_visit.empty:
