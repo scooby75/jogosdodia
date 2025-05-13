@@ -1045,7 +1045,7 @@ with tabs[4]:
                                'Date', 'Time', 'Home', 'Away', 'Odd_D_FT', 'Odd_A_FT', 'Odd_A_HT'}
         
         if colunas_necessarias.issubset(df_footystats.columns):
-            col1, col2, col3, col4 = st.columns(4)
+            col1, col2, col3, col4, col5 = st.columns(5)
 
             # 📈 HA 0.25
             with col1:
