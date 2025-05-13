@@ -1025,7 +1025,8 @@ with tabs[4]:
                 'ENGLAND 3': 'England EFL League One',
                 'SERBIA 1': 'Serbia SuperLiga',
                 'TURKEY 1': 'Turkey Süper Lig',
-                'PARAGUAY 1': 'Paraguay Division Profesional'
+                'PARAGUAY 1': 'Paraguay Division Profesional',
+                'ITALY 2': 'Italy - Serie B'
             }
             df['League'] = df['League'].replace(rename_leagues)
             ligas_excluidas = {
