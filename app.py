@@ -1001,21 +1001,24 @@ with tabs[3]:
     display_ht_analysis_tab(data, equipe_home, equipe_away)
 
 # ABA 5 - Jogos do Dia
+with tabs[4]:
+    import pandas as pd
+    import streamlit as st
+    import requests
+    from io import StringIO
+    from datetime import datetime
 
-with tabs[4] if len(tabs) > 4 else st.tabs(["🎯 FT", "🎯 HT", "🧾 Analise", "Analise HT", "5 - Jogos do Dia"])[4]:
-    st.title("Jogos do Dia - Filtros FootyStats")
-    
-    # Carregar dados do FootyStats (do primeiro código)
-    @st.cache_data(ttl=3600)  # Atualiza a cada hora
+    st.title("🎯 Jogos do Dia - Filtros FootyStats")
+
+    @st.cache_data(ttl=3600)
     def carregar_dados_footystats():
         data_atual = datetime.today().strftime('%Y-%m-%d')
         url = f"https://github.com/futpythontrader/YouTube/raw/main/Jogos_do_Dia/FootyStats/Jogos_do_Dia_FootyStats_{data_atual}.csv"
         response = requests.get(url)
         if response.status_code == 200:
             csv_data = StringIO(response.text)
-            df = pd.read_csv(csv_data, sep=',')
-            
-            # Tratamento dos dados (do primeiro código)
+            df = pd.read_csv(csv_data)
+            # Ajuste ligas padrão
             rename_leagues = {
                 'SWITZERLAND 1': 'Switzerland Super League',
                 'SPAIN 1': 'Spain La Liga',
@@ -1028,118 +1031,70 @@ with tabs[4] if len(tabs) > 4 else st.tabs(["🎯 FT", "🎯 HT", "🧾 Analise"
             ligas_excluidas = {
                 'Brazil Serie A', 'Brazil Serie B', 'Chile Primera División', 'Czech Republic First League',
                 'France Ligue 1', 'Italy Serie A', 'Japan J1 League', 'Paraguay Division Profesional',
-                'Romania Liga I', 'Sweden Allsvenskan', 'Turkey Süper Lig', 'USA MLS', 'TURKEY 1'
+                'Romania Liga I', 'Sweden Allsvenskan', 'Turkey Süper Lig', 'USA MLS'
             }
             df = df[~df['League'].isin(ligas_excluidas)]
-            
             return df
         else:
-            st.error(f"Erro ao baixar o arquivo: {response.status_code}")
+            st.error(f"Erro ao baixar o arquivo do FootyStats: {response.status_code}")
             return None
-    
+
     df_footystats = carregar_dados_footystats()
-    
+
     if df_footystats is not None:
         colunas_necessarias = {'PPG_Home', 'PPG_Away', 'Rodada', 'Odd_H_FT', 'Odd_DC_1X', 'League',
                                'Date', 'Time', 'Home', 'Away', 'Odd_D_FT', 'Odd_A_FT', 'Odd_A_HT'}
         
         if colunas_necessarias.issubset(df_footystats.columns):
-            # Criar abas para cada filtro (como no primeiro código)
-            tab_f1, tab_f2, tab_f3 = st.tabs(["📈 HA 0.25", "🚫 Lay Visitante", "💣 Lay 0x1 HT"])
-            
-            with tab_f1:
-                st.header("Filtro HA 0.25")
+            col1, col2, col3 = st.columns(3)
+
+            # 📈 HA 0.25
+            with col1:
+                st.info("📈 HA 0.25")
                 df_ha = df_footystats[
                     (df_footystats['Rodada'] >= 10) &
-                    (df_footystats['Odd_H_FT'] >= 1.8) & (df_footystats['Odd_H_FT'] <= 2) &
+                    (df_footystats['Odd_H_FT'].between(1.8, 2.0)) &
                     (df_footystats['PPG_Home'] >= 1.8) &
                     (df_footystats['PPG_Away'] <= 1.3)
                 ]
-                st.dataframe(df_ha[['League', 'Date', 'Time', 'Rodada', 'Home', 'Away', 'Odd_H_FT', 'Odd_D_FT', 'Odd_A_FT']],
-                            use_container_width=True)
-            
-            with tab_f2:
-                st.header("Filtro Lay Visitante")
-                df_lay_visitante = df_footystats[
+                st.metric("Jogos encontrados", len(df_ha))
+                if not df_ha.empty:
+                    st.dataframe(df_ha[['League', 'Date', 'Time', 'Home', 'Away', 'Odd_H_FT', 'Odd_D_FT', 'Odd_A_FT', 'Odd_DC_1X']],
+                                use_container_width=True)
+
+            # 🚫 Lay Visitante
+            with col2:
+                st.info("🚫 Lay Visitante")
+                df_lay_visit = df_footystats[
                     (df_footystats['Rodada'] >= 10) &
                     (df_footystats['Odd_H_FT'] <= 2.4) &
                     (df_footystats['Odd_A_FT'] <= 12) &
                     (df_footystats['PPG_Home'] >= 1.8)
                 ]
-                st.dataframe(df_lay_visitante[['League', 'Date', 'Time', 'Rodada', 'Home', 'Away', 'Odd_H_FT', 'Odd_D_FT', 'Odd_A_FT']],
-                            use_container_width=True)
-            
-            with tab_f3:
-                st.header("Filtro Lay 0x1 HT")
+                st.metric("Jogos encontrados", len(df_lay_visit))
+                if not df_lay_visit.empty:
+                    st.dataframe(df_lay_visit[['League', 'Date', 'Time', 'Home', 'Away', 'Odd_H_FT', 'Odd_D_FT', 'Odd_A_FT']],
+                                use_container_width=True)
+
+            # 💣 Lay 0x1 HT
+            with col3:
+                st.info("💣 Lay 0x1 HT")
                 df_lay_ht = df_footystats[
                     (df_footystats['Rodada'] >= 10) &
                     (df_footystats['Odd_H_FT'] <= 1.8) &
-                    (df_footystats['Odd_A_HT'] >= 4.00) &
+                    (df_footystats['Odd_A_HT'] >= 4.0) &
                     (df_footystats['PPG_Home'] >= 1.8)
                 ]
-                st.dataframe(df_lay_ht[['League', 'Date', 'Time', 'Rodada', 'Home', 'Away', 'Odd_H_FT', 'Odd_D_FT', 'Odd_A_FT']],
-                            use_container_width=True)
-            
-            # Adicionar análise combinada com os dados do segundo código
-            st.divider()
-            st.header("Análise Combinada dos Jogos")
-            
-            # Obter lista de jogos do dia
-            jogos_do_dia = df_footystats[['League', 'Home', 'Away']].drop_duplicates()
-            
-            # Adicionar seleção de jogo específico
-            jogo_selecionado = st.selectbox(
-                "Selecione um jogo para análise detalhada:",
-                options=[f"{row['Home']} vs {row['Away']} ({row['League']})" for _, row in jogos_do_dia.iterrows()]
-            )
-            
-            if jogo_selecionado:
-                # Extrair informações do jogo selecionado
-                home_team = jogo_selecionado.split(" vs ")[0]
-                away_info = jogo_selecionado.split(" vs ")[1]
-                away_team = away_info.split(" (")[0]
-                league = away_info.split(" (")[1].replace(")", "")
-                
-                # Mostrar análise para o jogo selecionado
-                st.subheader(f"Análise Detalhada: {home_team} vs {away_team}")
-                
-                col1, col2 = st.columns(2)
-                
-                with col1:
-                    # Dados do FootyStats para este jogo
-                    jogo_data = df_footystats[
-                        (df_footystats['Home'] == home_team) & 
-                        (df_footystats['Away'] == away_team) &
-                        (df_footystats['League'] == league)
-                    ].iloc[0]
-                    
-                    st.metric("PPG Home", jogo_data['PPG_Home'])
-                    st.metric("PPG Away", jogo_data['PPG_Away'])
-                    st.metric("Odd Casa", jogo_data['Odd_H_FT'])
-                    st.metric("Odd Empate", jogo_data['Odd_D_FT'])
-                    st.metric("Odd Visitante", jogo_data['Odd_A_FT'])
-                
-                with col2:
-                    # Tentar encontrar os times nos dados do segundo código
-                    home_data = data["home_df"][data["home_df"]['Team_Home'] == home_team][COLUMN_NAMES["home"]]
-                    away_data = data["away_df"][data["away_df"]['Team_Away'] == away_team][COLUMN_NAMES["away"]]
-                    
-                    if not home_data.empty:
-                        st.metric("Ranking Casa", home_data.iloc[0]['Rank_Home'])
-                        st.metric("Média Gols Casa", home_data.iloc[0]['GF_AVG_Home'])
-                    else:
-                        st.warning(f"Dados não encontrados para {home_team}")
-                    
-                    if not away_data.empty:
-                        st.metric("Ranking Visitante", away_data.iloc[0]['Rank_Away'])
-                        st.metric("Média Gols Visitante", away_data.iloc[0]['GF_AVG_Away'])
-                    else:
-                        st.warning(f"Dados não encontrados para {away_team}")
+                st.metric("Jogos encontrados", len(df_lay_ht))
+                if not df_lay_ht.empty:
+                    st.dataframe(df_lay_ht[['League', 'Date', 'Time', 'Home', 'Away', 'Odd_H_FT', 'Odd_D_FT', 'Odd_A_FT']],
+                                use_container_width=True)
         else:
-            st.error("Erro: As colunas necessárias não foram encontradas no arquivo do FootyStats.")
+            st.error("❌ As colunas necessárias não estão presentes no arquivo do FootyStats.")
     else:
-        st.warning("Não foi possível carregar os dados do FootyStats para hoje.")
+        st.warning("⚠️ Não foi possível carregar os dados do FootyStats para hoje.")
 
+    
 # Executar com variável de ambiente PORT
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 10000))
