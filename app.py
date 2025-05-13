@@ -1099,7 +1099,7 @@ with tabs[4]:
                         (df_footystats['Odd_H_FT'] <= 2.20) &
                         (df_footystats['PPG_Home'] >= 1.8)
                     ]
-                    st.metric("Jogos encontrados", len(back_home))
+                    st.metric("Jogos encontrados", len(df_back_home))
                     if not df_back_home.empty:
                         st.dataframe(df_back_home[['League', 'Time', 'Home', 'Away', 'Odd_H_FT', 'Odd_D_FT', 'Odd_A_FT']],
                                     use_container_width=True)
