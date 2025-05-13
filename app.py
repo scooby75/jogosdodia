@@ -915,7 +915,7 @@ def display_ht_analysis_tab(data, home_team, away_team):
 # ----------------------------
 # LAYOUT PRINCIPAL
 # ----------------------------
-tabs = st.tabs(["🎯 FT", "🎯 HT", "🧾 Analise", "Analise HT"])
+tabs = st.tabs(["🎯 FT", "🎯 HT", "🧾 Analise", "🧾 Analise HT", "⚽️ Jogos do Dia"])
 
 # ABA 1 - FT   
 with tabs[0]:
