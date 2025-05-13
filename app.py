@@ -1030,9 +1030,7 @@ with tabs[4]:
             }
             df['League'] = df['League'].replace(rename_leagues)
             ligas_excluidas = {
-                'Brazil Serie A', 'Brazil Serie B', 'Chile Primera División', 'Czech Republic First League',
-                'France Ligue 1', 'Italy Serie A', 'Japan J1 League', 'Paraguay Division Profesional',
-                'Romania Liga I', 'Sweden Allsvenskan', 'Turkey Süper Lig', 'USA MLS'
+                'USA MLS'
             }
             df = df[~df['League'].isin(ligas_excluidas)]
             return df
