@@ -1008,7 +1008,7 @@ with tabs[4]:
     from io import StringIO
     from datetime import datetime
 
-    st.title("🎯 Jogos do Dia - Filtros FootyStats")
+    #st.title("🎯 Jogos do Dia - Filtros FootyStats")
 
     @st.cache_data(ttl=3600)
     def carregar_dados_footystats():
