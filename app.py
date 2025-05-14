@@ -1026,6 +1026,9 @@ with tabs[4]:
                 'SERBIA 1': 'Serbia SuperLiga',
                 'TURKEY 1': 'Turkey Süper Lig',
                 'PARAGUAY 1': 'Paraguay Division Profesional',
+                'POLAND 1': 'Poland Ekstraklasa',
+                'SCOTLAND 1': 'Scotland Premiership',
+                'NETHERLANDS 1': 'Netherlands Eredivisie',
                 'ITALY 2': 'Italy - Serie B'
             }
             df['League'] = df['League'].replace(rename_leagues)
