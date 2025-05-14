@@ -1068,7 +1068,7 @@ with tabs[4]:
             with col2:
                 st.info("⚠️ Lay Visitante")
                 df_lay_visit = df_footystats[
-                    (df_footystats['Rodada'] >= 10) &
+                    (df_footystats['Rodada'] >= 5) &
                     (df_footystats['Odd_H_FT'] <= 2.4) &
                     (df_footystats['Odd_A_FT'] <= 12) &
                     (df_footystats['PPG_Home'] >= 1.8) &
@@ -1083,7 +1083,7 @@ with tabs[4]:
             with col3:
                 st.info("💣 Lay 0x1 HT")
                 df_lay_ht = df_footystats[
-                    (df_footystats['Rodada'] >= 10) &
+                    (df_footystats['Rodada'] >= 5) &
                     (df_footystats['Odd_H_FT'] <= 1.8) &
                     (df_footystats['Odd_A_HT'] >= 4.0) &
                     (df_footystats['PPG_Home'] >= 1.8)
@@ -1097,7 +1097,7 @@ with tabs[4]:
                 with col4:
                     st.info("🎯 Back Home")
                     df_back_home = df_footystats[
-                        (df_footystats['Rodada'] >= 10) &
+                        (df_footystats['Rodada'] >= 5) &
                         (df_footystats['Odd_H_FT'] >= 1.9) &
                         (df_footystats['Odd_H_FT'] <= 2.20) &
                         (df_footystats['PPG_Home'] >= 1.8)
@@ -1111,7 +1111,7 @@ with tabs[4]:
                     with col5:
                         st.info("🏳️ White Flag")
                         df_white_flag = df_footystats[
-                            (df_footystats['Rodada'] >= 10) &                            
+                            (df_footystats['Rodada'] >= 5) &                            
                             (df_footystats['Odd_H_FT'] <= 1.50) & 
                             (df_footystats['XG_Home_Pre'] >= 1.80) 
                             
