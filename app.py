@@ -189,7 +189,7 @@ def display_team_performance(team_name, team_data, is_home=True):
         metrics = [
             ("PIH" if is_home else "PIA", row.get("PIH" if is_home else "PIA", "N/A")),
             ("Média Gols", row.get("GF_AVG_Home" if is_home else "GF_AVG_Away", "N/A")),
-            ("Saldo de Gols", row.get("GD" if is_home else "GD", "N/A")),
+            ("Saldo de Gols", row.get("GD_Home" if is_home else "GD_Away", "N/A")),            
             (f"PPG {'Casa' if is_home else 'Fora'}", row.get("PPG_Home" if is_home else "PPG_Away", "N/A")),
             ("Odd Justa", row.get("Odd_Justa_MO", "N/A")),
             (f"Rank {'Home' if is_home else 'Away'}", row.get("Rank_Home" if is_home else "Rank_Away", "N/A"))
