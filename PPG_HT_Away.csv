@@ -56,8 +56,8 @@ Armenia - Premier League,,0,0,0,0,0,0,0,0,,,0.0,0.0,0,0.0,0.0,0.0
 Armenia - Premier League,Noah,13,9,1,3,15,3,12,28,2.15,1.0,0.69,0.77,12,1.15,1.45,1.3
 Armenia - Premier League,Pyunik,14,8,3,3,14,6,8,27,1.93,2.0,0.57,0.79,8,1.0,1.75,1.27
 Armenia - Premier League,Ararat-Armenia,13,6,4,3,14,8,6,22,1.69,3.0,0.46,0.77,6,1.08,2.17,1.3
-Armenia - Premier League,Urartu,14,4,9,1,7,4,3,21,1.5,4.0,0.29,0.93,3,0.5,3.45,1.08
-Armenia - Premier League,Van,13,5,4,4,8,7,1,19,1.46,5.0,0.38,0.69,1,0.62,2.63,1.45
+Armenia - Premier League,Van,14,6,4,4,10,8,2,22,1.57,3.0,0.43,0.71,2,0.71,2.33,1.41
+Armenia - Premier League,Urartu,14,4,9,1,7,4,3,21,1.5,5.0,0.29,0.93,3,0.5,3.45,1.08
 Armenia - Premier League,BKMA,13,3,4,6,12,14,-2,13,1.0,6.0,0.23,0.54,-2,0.92,4.35,1.85
 Armenia - Premier League,Alashkert,14,3,4,7,6,13,-7,13,0.93,6.0,0.21,0.5,-7,0.43,4.76,2.0
 Armenia - Premier League,Shirak,14,2,7,5,4,11,-7,13,0.93,6.0,0.14,0.64,-7,0.29,7.14,1.56
@@ -128,13 +128,13 @@ Belgium - First Division A,Beerschot,15,1,6,8,4,14,-10,9,0.6,16.0,0.07,0.47,-10,
 Brazil - Serie A,,0,0,0,0,0,0,0,0,,,0.0,0.0,0,0.0,0.0,0.0
 Brazil - Serie A,Sport Recife,4,2,1,1,2,2,0,7,1.75,1.0,0.5,0.75,0,0.5,2.0,1.33
 Brazil - Serie A,Internacional,5,2,1,2,3,4,-1,7,1.4,1.0,0.4,0.6,-1,0.6,2.5,1.67
+Brazil - Serie A,Ceara,4,1,3,0,3,2,1,6,1.5,3.0,0.25,1.0,1,0.75,4.0,1.0
 Brazil - Serie A,Sao Paulo,4,1,3,0,3,2,1,6,1.5,3.0,0.25,1.0,1,0.75,4.0,1.0
 Brazil - Serie A,Flamengo,4,1,3,0,2,1,1,6,1.5,3.0,0.25,1.0,1,0.5,4.0,1.0
 Brazil - Serie A,Palmeiras,4,1,3,0,2,1,1,6,1.5,3.0,0.25,1.0,1,0.5,4.0,1.0
-Brazil - Serie A,Ceara,3,1,2,0,3,2,1,5,1.67,6.0,0.33,1.0,1,1.0,3.03,1.0
-Brazil - Serie A,Santos,4,1,2,1,2,2,0,5,1.25,6.0,0.25,0.75,0,0.5,4.0,1.33
-Brazil - Serie A,Bragantino,4,1,2,1,1,1,0,5,1.25,6.0,0.25,0.75,0,0.25,4.0,1.33
-Brazil - Serie A,Fortaleza,4,1,2,1,1,1,0,5,1.25,6.0,0.25,0.75,0,0.25,4.0,1.33
+Brazil - Serie A,Santos,4,1,2,1,2,2,0,5,1.25,7.0,0.25,0.75,0,0.5,4.0,1.33
+Brazil - Serie A,Bragantino,4,1,2,1,1,1,0,5,1.25,7.0,0.25,0.75,0,0.25,4.0,1.33
+Brazil - Serie A,Fortaleza,4,1,2,1,1,1,0,5,1.25,7.0,0.25,0.75,0,0.25,4.0,1.33
 Brazil - Serie A,Cruzeiro,4,1,1,2,3,3,0,4,1.0,10.0,0.25,0.5,0,0.75,4.0,2.0
 Brazil - Serie A,Bahia,4,1,1,2,1,2,-1,4,1.0,10.0,0.25,0.5,-1,0.25,4.0,2.0
 Brazil - Serie A,Vasco da Gama,4,1,1,2,1,3,-2,4,1.0,10.0,0.25,0.5,-2,0.25,4.0,2.0
@@ -150,22 +150,22 @@ Brazil - Serie B,,0,0,0,0,0,0,0,0,,,0.0,0.0,0,0.0,0.0,0.0
 Brazil - Serie B,Chapecoense,4,1,2,1,2,1,1,5,1.25,1.0,0.25,0.75,1,0.5,4.0,1.33
 Brazil - Serie B,Remo,3,1,2,0,2,1,1,5,1.67,1.0,0.33,1.0,1,0.67,3.03,1.0
 Brazil - Serie B,Coritiba,4,1,2,1,1,1,0,5,1.25,1.0,0.25,0.75,0,0.25,4.0,1.33
-Brazil - Serie B,Athletico PR,3,1,1,1,2,2,0,4,1.33,4.0,0.33,0.67,0,0.67,3.03,1.49
-Brazil - Serie B,Criciuma,3,1,1,1,2,2,0,4,1.33,4.0,0.33,0.67,0,0.67,3.03,1.49
-Brazil - Serie B,Cuiaba,3,1,1,1,2,2,0,4,1.33,4.0,0.33,0.67,0,0.67,3.03,1.49
-Brazil - Serie B,Ferroviaria,4,0,4,0,1,1,0,4,1.0,4.0,0.0,1.0,0,0.25,0.0,1.0
-Brazil - Serie B,Goias,3,1,1,1,1,1,0,4,1.33,4.0,0.33,0.67,0,0.33,3.03,1.49
-Brazil - Serie B,Operario PR,4,1,1,2,3,4,-1,4,1.0,4.0,0.25,0.5,-1,0.75,4.0,2.0
-Brazil - Serie B,Botafogo SP,3,1,1,1,2,3,-1,4,1.33,4.0,0.33,0.67,-1,0.67,3.03,1.49
-Brazil - Serie B,Atletico GO,4,1,1,2,1,2,-1,4,1.0,4.0,0.25,0.5,-1,0.25,4.0,2.0
-Brazil - Serie B,Avai,3,1,0,2,3,3,0,3,1.0,12.0,0.33,0.33,0,1.0,3.03,3.03
-Brazil - Serie B,Vila Nova,3,0,3,0,1,1,0,3,1.0,12.0,0.0,1.0,0,0.33,0.0,1.0
-Brazil - Serie B,Novorizontino,3,0,2,1,1,2,-1,2,0.67,14.0,0.0,0.67,-1,0.33,0.0,1.49
-Brazil - Serie B,Paysandu,3,0,2,1,0,1,-1,2,0.67,14.0,0.0,0.67,-1,0.0,0.0,1.49
-Brazil - Serie B,Volta Redonda,4,0,2,2,0,2,-2,2,0.5,14.0,0.0,0.5,-2,0.0,0.0,2.0
-Brazil - Serie B,Athletic Club,3,0,2,1,1,4,-3,2,0.67,14.0,0.0,0.67,-3,0.33,0.0,1.49
+Brazil - Serie B,Athletic Club,4,1,2,1,3,4,-1,5,1.25,1.0,0.25,0.75,-1,0.75,4.0,1.33
+Brazil - Serie B,Athletico PR,3,1,1,1,2,2,0,4,1.33,5.0,0.33,0.67,0,0.67,3.03,1.49
+Brazil - Serie B,Criciuma,3,1,1,1,2,2,0,4,1.33,5.0,0.33,0.67,0,0.67,3.03,1.49
+Brazil - Serie B,Cuiaba,3,1,1,1,2,2,0,4,1.33,5.0,0.33,0.67,0,0.67,3.03,1.49
+Brazil - Serie B,Ferroviaria,4,0,4,0,1,1,0,4,1.0,5.0,0.0,1.0,0,0.25,0.0,1.0
+Brazil - Serie B,Goias,3,1,1,1,1,1,0,4,1.33,5.0,0.33,0.67,0,0.33,3.03,1.49
+Brazil - Serie B,Operario PR,4,1,1,2,3,4,-1,4,1.0,5.0,0.25,0.5,-1,0.75,4.0,2.0
+Brazil - Serie B,Botafogo SP,3,1,1,1,2,3,-1,4,1.33,5.0,0.33,0.67,-1,0.67,3.03,1.49
+Brazil - Serie B,Atletico GO,4,1,1,2,1,2,-1,4,1.0,5.0,0.25,0.5,-1,0.25,4.0,2.0
+Brazil - Serie B,Avai,3,1,0,2,3,3,0,3,1.0,13.0,0.33,0.33,0,1.0,3.03,3.03
+Brazil - Serie B,Vila Nova,4,0,3,1,1,2,-1,3,0.75,13.0,0.0,0.75,-1,0.25,0.0,1.33
+Brazil - Serie B,Paysandu,4,0,3,1,0,1,-1,3,0.75,13.0,0.0,0.75,-1,0.0,0.0,1.33
+Brazil - Serie B,Novorizontino,3,0,2,1,1,2,-1,2,0.67,16.0,0.0,0.67,-1,0.33,0.0,1.49
+Brazil - Serie B,Volta Redonda,4,0,2,2,0,2,-2,2,0.5,16.0,0.0,0.5,-2,0.0,0.0,2.0
 Brazil - Serie B,Amazonas,3,0,1,2,1,3,-2,1,0.33,18.0,0.0,0.33,-2,0.33,0.0,3.03
-Brazil - Serie B,CRB,3,0,1,2,1,3,-2,1,0.33,18.0,0.0,0.33,-2,0.33,0.0,3.03
+Brazil - Serie B,CRB,4,0,1,3,1,4,-3,1,0.25,18.0,0.0,0.25,-3,0.25,0.0,4.0
 Brazil - Serie B,America MG,3,0,0,3,0,3,-3,0,0.0,20.0,0.0,0.0,-3,0.0,0.0,0.0
 Brazil - Serie C,,0,0,0,0,0,0,0,0,,,0.0,0.0,0,0.0,0.0,0.0
 Brazil - Serie C,Maringa,3,3,0,0,5,2,3,9,3.0,1.0,1.0,1.0,3,1.67,1.0,1.0
@@ -175,43 +175,43 @@ Brazil - Serie C,Caxias,2,1,1,0,3,2,1,4,2.0,4.0,0.5,1.0,1,1.5,2.0,1.0
 Brazil - Serie C,Ituano,2,1,1,0,2,1,1,4,2.0,4.0,0.5,1.0,1,1.0,2.0,1.0
 Brazil - Serie C,Nautico,2,1,1,0,2,1,1,4,2.0,4.0,0.5,1.0,1,1.0,2.0,1.0
 Brazil - Serie C,ABC,3,0,3,0,0,0,0,3,1.0,7.0,0.0,1.0,0,0.0,0.0,1.0
-Brazil - Serie C,Figueirense,2,1,0,1,2,3,-1,3,1.5,7.0,0.5,0.5,-1,1.0,2.0,2.0
 Brazil - Serie C,Retro,3,1,0,2,1,2,-1,3,1.0,7.0,0.33,0.33,-1,0.33,3.03,3.03
+Brazil - Serie C,Figueirense,3,1,0,2,2,4,-2,3,1.0,7.0,0.33,0.33,-2,0.67,3.03,3.03
 Brazil - Serie C,Brusque,2,0,2,0,0,0,0,2,1.0,10.0,0.0,1.0,0,0.0,0.0,1.0
 Brazil - Serie C,Londrina,2,0,2,0,0,0,0,2,1.0,10.0,0.0,1.0,0,0.0,0.0,1.0
+Brazil - Serie C,Ponte Preta,3,0,2,1,0,1,-1,2,0.67,10.0,0.0,0.67,-1,0.0,0.0,1.49
 Brazil - Serie C,Tombense,3,0,2,1,0,1,-1,2,0.67,10.0,0.0,0.67,-1,0.0,0.0,1.49
 Brazil - Serie C,Ypiranga,3,0,2,1,0,2,-2,2,0.67,10.0,0.0,0.67,-2,0.0,0.0,1.49
-Brazil - Serie C,Botafogo PB,2,0,1,1,0,1,-1,1,0.5,14.0,0.0,0.5,-1,0.0,0.0,2.0
-Brazil - Serie C,CSA,2,0,1,1,0,1,-1,1,0.5,14.0,0.0,0.5,-1,0.0,0.0,2.0
-Brazil - Serie C,Ponte Preta,2,0,1,1,0,1,-1,1,0.5,14.0,0.0,0.5,-1,0.0,0.0,2.0
-Brazil - Serie C,Anapolis,2,0,1,1,1,3,-2,1,0.5,14.0,0.0,0.5,-2,0.5,0.0,2.0
-Brazil - Serie C,Confianca,3,0,1,2,1,4,-3,1,0.33,14.0,0.0,0.33,-3,0.33,0.0,3.03
+Brazil - Serie C,Botafogo PB,2,0,1,1,0,1,-1,1,0.5,15.0,0.0,0.5,-1,0.0,0.0,2.0
+Brazil - Serie C,CSA,2,0,1,1,0,1,-1,1,0.5,15.0,0.0,0.5,-1,0.0,0.0,2.0
+Brazil - Serie C,Anapolis,2,0,1,1,1,3,-2,1,0.5,15.0,0.0,0.5,-2,0.5,0.0,2.0
+Brazil - Serie C,Confianca,3,0,1,2,1,4,-3,1,0.33,15.0,0.0,0.33,-3,0.33,0.0,3.03
 Brazil - Serie C,Itabaiana,2,0,0,2,1,3,-2,0,0.0,19.0,0.0,0.0,-2,0.5,0.0,0.0
 Brazil - Serie C,Guarani,2,0,0,2,0,2,-2,0,0.0,19.0,0.0,0.0,-2,0.0,0.0,0.0
 Bulgaria - Parva Liga,,0,0,0,0,0,0,0,0,,,0.0,0.0,0,0.0,0.0,0.0
-Bulgaria - Parva Liga,Ludogorets,16,8,6,2,15,6,9,30,1.88,1.0,0.5,0.88,9,0.94,2.0,1.14
-Bulgaria - Parva Liga,Levski Sofia,16,7,6,3,13,6,7,27,1.69,2.0,0.44,0.81,7,0.81,2.27,1.23
+Bulgaria - Parva Liga,Ludogorets,17,8,7,2,15,6,9,31,1.82,1.0,0.47,0.88,9,0.88,2.13,1.14
+Bulgaria - Parva Liga,Levski Sofia,17,8,6,3,16,6,10,30,1.76,2.0,0.47,0.82,10,0.94,2.13,1.22
 Bulgaria - Parva Liga,CSKA Sofia,17,6,8,3,9,6,3,26,1.53,3.0,0.35,0.82,3,0.53,2.86,1.22
-Bulgaria - Parva Liga,Cherno More,17,5,7,5,9,9,0,22,1.29,4.0,0.29,0.71,0,0.53,3.45,1.41
-Bulgaria - Parva Liga,Arda,17,5,6,6,9,10,-1,21,1.24,5.0,0.29,0.65,-1,0.53,3.45,1.54
-Bulgaria - Parva Liga,Slavia Sofia,16,6,3,7,8,10,-2,21,1.31,5.0,0.38,0.56,-2,0.5,2.63,1.79
-Bulgaria - Parva Liga,CSKA 1948 Sofia,16,5,5,6,9,9,0,20,1.25,7.0,0.31,0.62,0,0.56,3.23,1.61
+Bulgaria - Parva Liga,CSKA 1948 Sofia,17,6,5,6,10,9,1,23,1.35,4.0,0.35,0.65,1,0.59,2.86,1.54
+Bulgaria - Parva Liga,Cherno More,17,5,7,5,9,9,0,22,1.29,5.0,0.29,0.71,0,0.53,3.45,1.41
+Bulgaria - Parva Liga,Arda,17,5,6,6,9,10,-1,21,1.24,6.0,0.29,0.65,-1,0.53,3.45,1.54
+Bulgaria - Parva Liga,Slavia Sofia,16,6,3,7,8,10,-2,21,1.31,6.0,0.38,0.56,-2,0.5,2.63,1.79
+Bulgaria - Parva Liga,Botev Plovdiv,17,3,10,4,5,6,-1,19,1.12,8.0,0.18,0.76,-1,0.29,5.56,1.32
 Bulgaria - Parva Liga,Lokomotiv Sofia,17,5,4,8,10,15,-5,19,1.12,8.0,0.29,0.53,-5,0.59,3.45,1.89
-Bulgaria - Parva Liga,Botev Plovdiv,16,2,10,4,3,6,-3,16,1.0,9.0,0.12,0.75,-3,0.19,8.33,1.33
 Bulgaria - Parva Liga,Beroe,17,2,9,6,6,9,-3,15,0.88,10.0,0.12,0.65,-3,0.35,8.33,1.54
 Bulgaria - Parva Liga,Lok. Plovdiv,18,2,9,7,5,10,-5,15,0.83,10.0,0.11,0.61,-5,0.28,9.09,1.64
 Bulgaria - Parva Liga,L. Krumovgrad,18,3,5,10,6,14,-8,14,0.78,12.0,0.17,0.44,-8,0.33,5.88,2.27
 Bulgaria - Parva Liga,Septemvri Sofia,17,2,6,9,6,17,-11,12,0.71,13.0,0.12,0.47,-11,0.35,8.33,2.13
-Bulgaria - Parva Liga,Spartak Varna,16,2,5,9,7,14,-7,11,0.69,14.0,0.12,0.44,-7,0.44,8.33,2.27
+Bulgaria - Parva Liga,Spartak Varna,17,2,5,10,7,15,-8,11,0.65,14.0,0.12,0.41,-8,0.41,8.33,2.44
 Bulgaria - Parva Liga,Hebar,17,1,6,10,8,21,-13,9,0.53,15.0,0.06,0.41,-13,0.47,16.67,2.44
 Bulgaria - Parva Liga,Botev Vratsa,17,1,4,12,3,17,-14,7,0.41,16.0,0.06,0.29,-14,0.18,16.67,3.45
 Canada - Premier League,,0,0,0,0,0,0,0,0,,,0.0,0.0,0,0.0,0.0,0.0
 Canada - Premier League,Vancouver FC,2,2,0,0,3,0,3,6,3.0,1.0,1.0,1.0,3,1.5,1.0,1.0
+Canada - Premier League,A. Ottawa,3,1,2,0,4,1,3,5,1.67,2.0,0.33,1.0,3,1.33,3.03,1.0
 Canada - Premier League,Forge,3,1,2,0,3,2,1,5,1.67,2.0,0.33,1.0,1,1.0,3.03,1.0
 Canada - Premier League,Cavalry,3,1,2,0,2,1,1,5,1.67,2.0,0.33,1.0,1,0.67,3.03,1.0
 Canada - Premier League,York Utd,3,1,2,0,2,1,1,5,1.67,2.0,0.33,1.0,1,0.67,3.03,1.0
-Canada - Premier League,A. Ottawa,2,1,1,0,3,0,3,4,2.0,5.0,0.5,1.0,3,1.5,2.0,1.0
-Canada - Premier League,HFX Wanderers,3,1,1,1,1,1,0,4,1.33,5.0,0.33,0.67,0,0.33,3.03,1.49
+Canada - Premier League,HFX Wanderers,3,1,1,1,1,1,0,4,1.33,6.0,0.33,0.67,0,0.33,3.03,1.49
 Canada - Premier League,Pacific,3,1,0,2,1,2,-1,3,1.0,7.0,0.33,0.33,-1,0.33,3.03,3.03
 Canada - Premier League,Valour,3,1,0,2,2,5,-3,3,1.0,7.0,0.33,0.33,-3,0.67,3.03,3.03
 China - Super League,,0,0,0,0,0,0,0,0,,,0.0,0.0,0,0.0,0.0,0.0
@@ -262,9 +262,9 @@ Colombia - Primera A - Apertura,Union Magdalena,9,2,4,3,3,6,-3,10,1.11,6.0,0.22,
 Colombia - Primera A - Apertura,A. Petrolera,9,1,5,3,3,5,-2,8,0.89,11.0,0.11,0.67,-2,0.33,9.09,1.49
 Colombia - Primera A - Apertura,Deportivo Cali,9,1,5,3,2,5,-3,8,0.89,11.0,0.11,0.67,-3,0.22,9.09,1.49
 Colombia - Primera A - Apertura,Fortaleza CEIF,9,1,4,4,2,6,-4,7,0.78,13.0,0.11,0.56,-4,0.22,9.09,1.79
-Colombia - Primera A - Apertura,Deportivo Pasto,8,1,3,4,2,5,-3,6,0.75,14.0,0.12,0.5,-3,0.25,8.33,2.0
 Colombia - Primera A - Apertura,R. Aguilas,9,0,6,3,1,4,-3,6,0.67,14.0,0.0,0.67,-3,0.11,0.0,1.49
 Colombia - Primera A - Apertura,Deportes Tolima,8,1,3,4,4,8,-4,6,0.75,14.0,0.12,0.5,-4,0.5,8.33,2.0
+Colombia - Primera A - Apertura,Deportivo Pasto,9,1,3,5,2,6,-4,6,0.67,14.0,0.11,0.44,-4,0.22,9.09,2.27
 Colombia - Primera A - Apertura,D. Pereira,9,0,5,4,4,8,-4,5,0.56,17.0,0.0,0.56,-4,0.44,0.0,1.79
 Colombia - Primera A - Apertura,Boyaca Chico,9,0,5,4,0,7,-7,5,0.56,17.0,0.0,0.56,-7,0.0,0.0,1.79
 Colombia - Primera A - Apertura,Once Caldas,8,0,3,5,1,7,-6,3,0.38,19.0,0.0,0.38,-6,0.12,0.0,2.63
@@ -274,14 +274,14 @@ Colombia - Primera B - Apertura,Jaguares de C.,7,3,4,0,7,4,3,13,1.86,1.0,0.43,1.
 Colombia - Primera B - Apertura,Cucuta,7,4,1,2,6,4,2,13,1.86,1.0,0.57,0.71,2,0.86,1.75,1.41
 Colombia - Primera B - Apertura,Patriotas,8,3,4,1,3,1,2,13,1.62,1.0,0.38,0.88,2,0.38,2.63,1.14
 Colombia - Primera B - Apertura,R. Cundinamarca,7,4,1,2,6,5,1,13,1.86,1.0,0.57,0.71,1,0.86,1.75,1.41
+Colombia - Primera B - Apertura,Atletico Huila,8,3,3,2,7,2,5,12,1.5,5.0,0.38,0.75,5,0.88,2.63,1.33
 Colombia - Primera B - Apertura,Real Cartagena,8,3,3,2,6,5,1,12,1.5,5.0,0.38,0.75,1,0.75,2.63,1.33
-Colombia - Primera B - Apertura,Atletico Huila,7,3,2,2,7,2,5,11,1.57,6.0,0.43,0.71,5,1.0,2.33,1.41
-Colombia - Primera B - Apertura,D. Quindio,7,3,2,2,3,4,-1,11,1.57,6.0,0.43,0.71,-1,0.43,2.33,1.41
+Colombia - Primera B - Apertura,D. Quindio,7,3,2,2,3,4,-1,11,1.57,7.0,0.43,0.71,-1,0.43,2.33,1.41
 Colombia - Primera B - Apertura,Leones,8,1,5,2,5,5,0,8,1.0,8.0,0.12,0.75,0,0.62,8.33,1.33
-Colombia - Primera B - Apertura,Orsomarso,7,0,7,0,3,3,0,7,1.0,9.0,0.0,1.0,0,0.43,0.0,1.0
-Colombia - Primera B - Apertura,Boca Juniors,8,0,7,1,2,3,-1,7,0.88,9.0,0.0,0.88,-1,0.25,0.0,1.14
-Colombia - Primera B - Apertura,Inter Palmira,8,1,4,3,4,6,-2,7,0.88,9.0,0.12,0.62,-2,0.5,8.33,1.61
-Colombia - Primera B - Apertura,Bogota,7,2,1,4,3,6,-3,7,1.0,9.0,0.29,0.43,-3,0.43,3.45,2.33
+Colombia - Primera B - Apertura,Orsomarso,8,0,8,0,3,3,0,8,1.0,8.0,0.0,1.0,0,0.38,0.0,1.0
+Colombia - Primera B - Apertura,Boca Juniors,8,0,7,1,2,3,-1,7,0.88,10.0,0.0,0.88,-1,0.25,0.0,1.14
+Colombia - Primera B - Apertura,Inter Palmira,8,1,4,3,4,6,-2,7,0.88,10.0,0.12,0.62,-2,0.5,8.33,1.61
+Colombia - Primera B - Apertura,Bogota,7,2,1,4,3,6,-3,7,1.0,10.0,0.29,0.43,-3,0.43,3.45,2.33
 Colombia - Primera B - Apertura,Real Santander,7,1,3,3,3,6,-3,6,0.86,13.0,0.14,0.57,-3,0.43,7.14,1.75
 Colombia - Primera B - Apertura,Tigres,8,1,3,4,2,5,-3,6,0.75,13.0,0.12,0.5,-3,0.25,8.33,2.0
 Colombia - Primera B - Apertura,Atletico Cali,7,1,3,3,5,10,-5,6,0.86,13.0,0.14,0.57,-5,0.71,7.14,1.75
@@ -310,8 +310,8 @@ Costa Rica - Primera Div. - Clausura,San Carlos,11,3,4,4,5,5,0,13,1.18,7.0,0.27,
 Costa Rica - Primera Div. - Clausura,Zeledon,11,2,4,5,3,9,-6,10,0.91,8.0,0.18,0.55,-6,0.27,5.56,1.82
 Costa Rica - Primera Div. - Clausura,Herediano,10,1,5,4,3,6,-3,8,0.8,9.0,0.1,0.6,-3,0.3,10.0,1.67
 Costa Rica - Primera Div. - Clausura,Guanacasteca,11,1,5,5,5,12,-7,8,0.73,9.0,0.09,0.55,-7,0.45,11.11,1.82
-Costa Rica - Primera Div. - Clausura,Santos Guapiles,10,1,4,5,3,10,-7,7,0.7,11.0,0.1,0.5,-7,0.3,10.0,2.0
 Costa Rica - Primera Div. - Clausura,Santa Ana,11,1,4,6,5,15,-10,7,0.64,11.0,0.09,0.45,-10,0.45,11.11,2.22
+Costa Rica - Primera Div. - Clausura,Santos Guapiles,11,1,4,6,3,13,-10,7,0.64,11.0,0.09,0.45,-10,0.27,11.11,2.22
 Croatia - 1. NL,,0,0,0,0,0,0,0,0,,,0.0,0.0,0,0.0,0.0,0.0
 Croatia - 1. NL,Jarun,16,7,7,2,9,2,7,28,1.75,1.0,0.44,0.88,7,0.56,2.27,1.14
 Croatia - 1. NL,Vukovar,15,6,7,2,6,2,4,25,1.67,2.0,0.4,0.87,4,0.4,2.5,1.15
@@ -404,7 +404,7 @@ Ecuador - Liga Pro,Barcelona SC,6,3,2,1,5,3,2,11,1.83,2.0,0.5,0.83,2,0.83,2.0,1.
 Ecuador - Liga Pro,El Nacional,5,2,3,0,4,2,2,9,1.8,3.0,0.4,1.0,2,0.8,2.5,1.0
 Ecuador - Liga Pro,Macara,6,2,3,1,4,3,1,9,1.5,3.0,0.33,0.83,1,0.67,3.03,1.2
 Ecuador - Liga Pro,D. Cuenca,7,2,3,2,3,4,-1,9,1.29,3.0,0.29,0.71,-1,0.43,3.45,1.41
-Ecuador - Liga Pro,Cuniburo,6,2,2,2,5,4,1,8,1.33,6.0,0.33,0.67,1,0.83,3.03,1.49
+Ecuador - Liga Pro,Cuniburo,7,2,2,3,5,5,0,8,1.14,6.0,0.29,0.57,0,0.71,3.45,1.75
 Ecuador - Liga Pro,Emelec,5,2,2,1,2,2,0,8,1.6,6.0,0.4,0.8,0,0.4,2.5,1.25
 Ecuador - Liga Pro,Tecnico U.,6,2,2,2,4,5,-1,8,1.33,6.0,0.33,0.67,-1,0.67,3.03,1.49
 Ecuador - Liga Pro,LDU Quito,6,1,3,2,3,4,-1,6,1.0,9.0,0.17,0.67,-1,0.5,5.88,1.49
@@ -416,16 +416,16 @@ Ecuador - Liga Pro,Delfin,7,1,0,6,2,8,-6,3,0.43,13.0,0.14,0.14,-6,0.29,7.14,7.14
 Ecuador - Liga Pro,Libertad,5,0,2,3,1,4,-3,2,0.4,15.0,0.0,0.4,-3,0.2,0.0,2.5
 Ecuador - Liga Pro,Manta,5,0,1,4,0,6,-6,1,0.2,16.0,0.0,0.2,-6,0.0,0.0,5.0
 Ecuador - Serie B,,0,0,0,0,0,0,0,0,,,0.0,0.0,0,0.0,0.0,0.0
-Ecuador - Serie B,Gualaceo,3,2,1,0,3,1,2,7,2.33,1.0,0.67,1.0,2,1.0,1.49,1.0
-Ecuador - Serie B,Leones Norte,4,2,1,1,3,2,1,7,1.75,1.0,0.5,0.75,1,0.75,2.0,1.33
-Ecuador - Serie B,San Antonio,4,2,1,1,2,1,1,7,1.75,1.0,0.5,0.75,1,0.5,2.0,1.33
+Ecuador - Serie B,Gualaceo,4,2,2,0,3,1,2,8,2.0,1.0,0.5,1.0,2,0.75,2.0,1.0
+Ecuador - Serie B,Leones Norte,4,2,1,1,3,2,1,7,1.75,2.0,0.5,0.75,1,0.75,2.0,1.33
+Ecuador - Serie B,San Antonio,4,2,1,1,2,1,1,7,1.75,2.0,0.5,0.75,1,0.5,2.0,1.33
 Ecuador - Serie B,Vargas Torres,4,1,3,0,2,1,1,6,1.5,4.0,0.25,1.0,1,0.5,4.0,1.0
-Ecuador - Serie B,Cumbaya,3,1,2,0,3,1,2,5,1.67,5.0,0.33,1.0,2,1.0,3.03,1.0
-Ecuador - Serie B,Imbabura,4,1,2,1,1,1,0,5,1.25,5.0,0.25,0.75,0,0.25,4.0,1.33
+Ecuador - Serie B,Cumbaya,4,1,2,1,3,3,0,5,1.25,5.0,0.25,0.75,0,0.75,4.0,1.33
+Ecuador - Serie B,Imbabura,5,1,2,2,2,3,-1,5,1.0,5.0,0.2,0.6,-1,0.4,5.0,1.67
 Ecuador - Serie B,Nueve Octubre,4,0,4,0,1,1,0,4,1.0,7.0,0.0,1.0,0,0.25,0.0,1.0
 Ecuador - Serie B,I. Juniors,4,1,1,2,2,3,-1,4,1.0,7.0,0.25,0.5,-1,0.5,4.0,2.0
 Ecuador - Serie B,Guayaquil City,4,1,1,2,1,2,-1,4,1.0,7.0,0.25,0.5,-1,0.25,4.0,2.0
-Ecuador - Serie B,22 de Julio,4,1,1,2,1,4,-3,4,1.0,7.0,0.25,0.5,-3,0.25,4.0,2.0
+Ecuador - Serie B,22 de Julio,5,1,1,3,1,7,-6,4,0.8,7.0,0.2,0.4,-6,0.2,5.0,2.5
 Ecuador - Serie B,Chacaritas,5,0,3,2,1,5,-4,3,0.6,11.0,0.0,0.6,-4,0.2,0.0,1.67
 Ecuador - Serie B,Vinotinto,5,0,2,3,0,3,-3,2,0.4,12.0,0.0,0.4,-3,0.0,0.0,2.5
 England - Premier League,,0,0,0,0,0,0,0,0,,,0.0,0.0,0,0.0,0.0,0.0
@@ -550,14 +550,14 @@ Finland - Veikkausliiga,SJK,3,0,1,2,0,2,-2,1,0.33,9.0,0.0,0.33,-2,0.0,0.0,3.03
 Finland - Veikkausliiga,Haka,2,0,0,2,1,3,-2,0,0.0,12.0,0.0,0.0,-2,0.5,0.0,0.0
 Finland - Ykkonen,,0,0,0,0,0,0,0,0,,,0.0,0.0,0,0.0,0.0,0.0
 Finland - Ykkonen,TPS,2,2,0,0,8,2,6,6,3.0,1.0,1.0,1.0,6,4.0,1.0,1.0
-Finland - Ykkonen,Lahti,2,1,1,0,2,0,2,4,2.0,2.0,0.5,1.0,2,1.0,2.0,1.0
 Finland - Ykkonen,Klubi-04,2,1,1,0,2,1,1,4,2.0,2.0,0.5,1.0,1,1.0,2.0,1.0
-Finland - Ykkonen,Ekenas IF,1,1,0,0,2,1,1,3,3.0,4.0,1.0,1.0,1,2.0,1.0,1.0
-Finland - Ykkonen,PK-35,1,1,0,0,1,0,1,3,3.0,4.0,1.0,1.0,1,1.0,1.0,1.0
-Finland - Ykkonen,SJK Akatemia,1,1,0,0,1,0,1,3,3.0,4.0,1.0,1.0,1,1.0,1.0,1.0
-Finland - Ykkonen,KaPa,1,0,1,0,1,1,0,1,1.0,7.0,0.0,1.0,0,1.0,0.0,1.0
-Finland - Ykkonen,SalPa,2,0,1,1,0,1,-1,1,0.5,7.0,0.0,0.5,-1,0.0,0.0,2.0
-Finland - Ykkonen,JaPS,3,0,1,2,3,6,-3,1,0.33,7.0,0.0,0.33,-3,1.0,0.0,3.03
+Finland - Ykkonen,Lahti,3,1,1,1,2,1,1,4,1.33,2.0,0.33,0.67,1,0.67,3.03,1.49
+Finland - Ykkonen,PK-35,2,1,1,0,1,0,1,4,2.0,2.0,0.5,1.0,1,0.5,2.0,1.0
+Finland - Ykkonen,Ekenas IF,1,1,0,0,2,1,1,3,3.0,5.0,1.0,1.0,1,2.0,1.0,1.0
+Finland - Ykkonen,SJK Akatemia,1,1,0,0,1,0,1,3,3.0,5.0,1.0,1.0,1,1.0,1.0,1.0
+Finland - Ykkonen,KaPa,2,0,2,0,3,3,0,2,1.0,7.0,0.0,1.0,0,1.5,0.0,1.0
+Finland - Ykkonen,SalPa,2,0,1,1,0,1,-1,1,0.5,8.0,0.0,0.5,-1,0.0,0.0,2.0
+Finland - Ykkonen,JaPS,3,0,1,2,3,6,-3,1,0.33,8.0,0.0,0.33,-3,1.0,0.0,3.03
 Finland - Ykkonen,JIPPO,2,0,0,2,0,2,-2,0,0.0,10.0,0.0,0.0,-2,0.0,0.0,0.0
 Finland - Kakkonen,,0,0,0,0,0,0,0,0,,,0.0,0.0,0,0.0,0.0,0.0
 Finland - Kakkonen,Atlantis,3,2,1,0,4,1,3,7,2.33,1.0,0.67,1.0,3,1.33,1.49,1.0
@@ -706,12 +706,12 @@ Greece - Super League,Atromitos,13,5,3,5,11,10,1,18,1.38,4.0,0.38,0.62,1,0.85,2.
 Greece - Super League,Aris,13,4,6,3,6,6,0,18,1.38,4.0,0.31,0.77,0,0.46,3.23,1.3
 Greece - Super League,Levadiakos,17,4,6,7,10,12,-2,18,1.06,4.0,0.24,0.59,-2,0.59,4.17,1.69
 Greece - Super League,Panathinaikos,16,4,6,6,7,9,-2,18,1.12,4.0,0.25,0.62,-2,0.44,4.0,1.61
-Greece - Super League,Volos,17,4,5,8,7,12,-5,17,1.0,8.0,0.24,0.53,-5,0.41,4.17,1.89
-Greece - Super League,A. Kallithea,17,3,7,7,6,10,-4,16,0.94,9.0,0.18,0.59,-4,0.35,5.56,1.69
-Greece - Super League,OFI Crete,13,3,6,4,9,8,1,15,1.15,10.0,0.23,0.69,1,0.69,4.35,1.45
-Greece - Super League,Panaitolikos,16,2,9,5,4,7,-3,15,0.94,10.0,0.12,0.69,-3,0.25,8.33,1.45
-Greece - Super League,Panserraikos,16,3,6,7,6,13,-7,15,0.94,10.0,0.19,0.56,-7,0.38,5.26,1.79
-Greece - Super League,Lamia,16,1,8,7,3,11,-8,11,0.69,13.0,0.06,0.56,-8,0.19,16.67,1.79
+Greece - Super League,Panaitolikos,17,3,9,5,6,8,-2,18,1.06,4.0,0.18,0.71,-2,0.35,5.56,1.41
+Greece - Super League,Volos,17,4,5,8,7,12,-5,17,1.0,9.0,0.24,0.53,-5,0.41,4.17,1.89
+Greece - Super League,A. Kallithea,17,3,7,7,6,10,-4,16,0.94,10.0,0.18,0.59,-4,0.35,5.56,1.69
+Greece - Super League,OFI Crete,13,3,6,4,9,8,1,15,1.15,11.0,0.23,0.69,1,0.69,4.35,1.45
+Greece - Super League,Panserraikos,17,3,6,8,6,14,-8,15,0.88,11.0,0.18,0.53,-8,0.35,5.56,1.89
+Greece - Super League,Lamia,17,1,8,8,3,14,-11,11,0.65,13.0,0.06,0.53,-11,0.18,16.67,1.89
 Greece - Super League,Asteras T.,13,0,10,3,4,8,-4,10,0.77,14.0,0.0,0.77,-4,0.31,0.0,1.3
 Hong Kong - Premier League,,0,0,0,0,0,0,0,0,,,0.0,0.0,0,0.0,0.0,0.0
 Hong Kong - Premier League,Tai Po,11,8,1,2,18,8,10,25,2.27,1.0,0.73,0.82,10,1.64,1.37,1.22
@@ -825,22 +825,22 @@ Italy - Serie B,Sassuolo,19,8,9,2,14,10,4,33,1.74,1.0,0.42,0.89,4,0.74,2.38,1.12
 Italy - Serie B,Pisa,19,8,8,3,18,9,9,32,1.68,2.0,0.42,0.84,9,0.95,2.38,1.19
 Italy - Serie B,Palermo,19,7,10,2,17,8,9,31,1.63,3.0,0.37,0.89,9,0.89,2.7,1.12
 Italy - Serie B,Spezia,19,7,8,4,14,9,5,29,1.53,4.0,0.37,0.79,5,0.74,2.7,1.27
-Italy - Serie B,Bari,18,6,9,3,11,7,4,27,1.5,5.0,0.33,0.83,4,0.61,3.03,1.2
+Italy - Serie B,Bari,19,6,10,3,11,7,4,28,1.47,5.0,0.32,0.84,4,0.58,3.12,1.19
 Italy - Serie B,Modena,19,7,5,7,13,13,0,26,1.37,6.0,0.37,0.63,0,0.68,2.7,1.59
 Italy - Serie B,Cittadella,19,5,10,4,7,12,-5,25,1.32,7.0,0.26,0.79,-5,0.37,3.85,1.27
 Italy - Serie B,Brescia,19,5,9,5,10,9,1,24,1.26,8.0,0.26,0.74,1,0.53,3.85,1.35
-Italy - Serie B,Cremonese,18,4,10,4,14,12,2,22,1.22,9.0,0.22,0.78,2,0.78,4.55,1.28
-Italy - Serie B,Sampdoria,18,5,7,6,12,13,-1,22,1.22,9.0,0.28,0.67,-1,0.67,3.57,1.49
-Italy - Serie B,Cosenza,18,5,6,7,9,12,-3,21,1.17,11.0,0.28,0.61,-3,0.5,3.57,1.64
-Italy - Serie B,Reggiana,18,5,6,7,8,12,-4,21,1.17,11.0,0.28,0.61,-4,0.44,3.57,1.64
-Italy - Serie B,Sudtirol,19,5,6,8,9,15,-6,21,1.11,11.0,0.26,0.58,-6,0.47,3.85,1.72
-Italy - Serie B,Frosinone,18,4,6,8,4,12,-8,18,1.0,14.0,0.22,0.56,-8,0.22,4.55,1.79
+Italy - Serie B,Sampdoria,19,5,8,6,12,13,-1,23,1.21,9.0,0.26,0.68,-1,0.63,3.85,1.47
+Italy - Serie B,Cremonese,19,4,10,5,14,13,1,22,1.16,10.0,0.21,0.74,1,0.74,4.76,1.35
+Italy - Serie B,Reggiana,19,5,7,7,9,13,-4,22,1.16,10.0,0.26,0.63,-4,0.47,3.85,1.59
+Italy - Serie B,Cosenza,19,5,6,8,9,15,-6,21,1.11,12.0,0.26,0.58,-6,0.47,3.85,1.72
+Italy - Serie B,Sudtirol,19,5,6,8,9,15,-6,21,1.11,12.0,0.26,0.58,-6,0.47,3.85,1.72
+Italy - Serie B,Frosinone,19,5,6,8,5,12,-7,21,1.11,12.0,0.26,0.58,-7,0.26,3.85,1.72
 Italy - Serie B,Juve Stabia,19,2,11,6,7,12,-5,17,0.89,15.0,0.11,0.68,-5,0.37,9.09,1.47
-Italy - Serie B,Salernitana,18,1,11,6,2,9,-7,14,0.78,16.0,0.06,0.67,-7,0.11,16.67,1.49
-Italy - Serie B,Carrarese,18,2,8,8,6,14,-8,14,0.78,16.0,0.11,0.56,-8,0.33,9.09,1.79
-Italy - Serie B,Mantova,19,2,8,9,9,18,-9,14,0.74,16.0,0.11,0.53,-9,0.47,9.09,1.89
-Italy - Serie B,Cesena,18,2,7,9,7,16,-9,13,0.72,19.0,0.11,0.5,-9,0.39,9.09,2.0
-Italy - Serie B,Catanzaro,18,0,9,9,4,14,-10,9,0.5,20.0,0.0,0.5,-10,0.22,0.0,2.0
+Italy - Serie B,Salernitana,19,2,11,6,3,9,-6,17,0.89,15.0,0.11,0.68,-6,0.16,9.09,1.47
+Italy - Serie B,Carrarese,19,3,8,8,7,14,-7,17,0.89,15.0,0.16,0.58,-7,0.37,6.25,1.72
+Italy - Serie B,Mantova,19,2,8,9,9,18,-9,14,0.74,18.0,0.11,0.53,-9,0.47,9.09,1.89
+Italy - Serie B,Cesena,19,2,8,9,7,16,-9,14,0.74,18.0,0.11,0.53,-9,0.37,9.09,1.89
+Italy - Serie B,Catanzaro,19,0,10,9,4,14,-10,10,0.53,20.0,0.0,0.53,-10,0.21,0.0,1.89
 Italy - Serie C - Group A,,0,0,0,0,0,0,0,0,,,0.0,0.0,0,0.0,0.0,0.0
 Italy - Serie C - Group A,Vicenza,19,9,6,4,12,7,5,33,1.74,1.0,0.47,0.79,5,0.63,2.13,1.27
 Italy - Serie C - Group A,Padova,19,9,5,5,11,7,4,32,1.68,2.0,0.47,0.74,4,0.58,2.13,1.35
@@ -885,9 +885,9 @@ Italy - Serie C - Group B,Campobasso,19,2,10,7,4,12,-8,16,0.84,19.0,0.11,0.63,-8
 Italy - Serie C - Group B,Gubbio,19,2,8,9,4,15,-11,14,0.74,20.0,0.11,0.53,-11,0.21,9.09,1.89
 Japan - J1 League,,0,0,0,0,0,0,0,0,,,0.0,0.0,0,0.0,0.0,0.0
 Japan - J1 League,Machida Zelvia,9,2,6,1,4,3,1,12,1.33,1.0,0.22,0.89,1,0.44,4.55,1.12
-Japan - J1 League,Kashiwa Reysol,7,2,4,1,4,2,2,10,1.43,2.0,0.29,0.86,2,0.57,3.45,1.16
-Japan - J1 League,Urawa RD,8,2,4,2,3,2,1,10,1.25,2.0,0.25,0.75,1,0.38,4.0,1.33
-Japan - J1 League,Nagoya G.,9,2,4,3,3,4,-1,10,1.11,2.0,0.22,0.67,-1,0.33,4.55,1.49
+Japan - J1 League,Kashiwa Reysol,8,2,5,1,4,2,2,11,1.38,2.0,0.25,0.88,2,0.5,4.0,1.14
+Japan - J1 League,Urawa RD,8,2,4,2,3,2,1,10,1.25,3.0,0.25,0.75,1,0.38,4.0,1.33
+Japan - J1 League,Nagoya G.,9,2,4,3,3,4,-1,10,1.11,3.0,0.22,0.67,-1,0.33,4.55,1.49
 Japan - J1 League,FC Tokyo,7,1,6,0,3,2,1,9,1.29,5.0,0.14,1.0,1,0.43,7.14,1.0
 Japan - J1 League,Albirex Niigata,7,2,3,2,4,4,0,9,1.29,5.0,0.29,0.71,0,0.57,3.45,1.41
 Japan - J1 League,Kashima Antlers,7,2,3,2,2,2,0,9,1.29,5.0,0.29,0.71,0,0.29,3.45,1.41
@@ -903,7 +903,7 @@ Japan - J1 League,Shonan Bellmare,9,1,4,4,1,8,-7,7,0.78,13.0,0.11,0.56,-7,0.11,9
 Japan - J1 League,Gamba Osaka,8,0,6,2,2,4,-2,6,0.75,17.0,0.0,0.75,-2,0.25,0.0,1.33
 Japan - J1 League,Fagiano Okayama,8,0,6,2,1,3,-2,6,0.75,17.0,0.0,0.75,-2,0.12,0.0,1.33
 Japan - J1 League,Yokohama M.,7,0,5,2,2,4,-2,5,0.71,19.0,0.0,0.71,-2,0.29,0.0,1.41
-Japan - J1 League,Yokohama FC,6,0,3,3,0,3,-3,3,0.5,20.0,0.0,0.5,-3,0.0,0.0,2.0
+Japan - J1 League,Yokohama FC,7,0,4,3,1,4,-3,4,0.57,20.0,0.0,0.57,-3,0.14,0.0,1.75
 Japan - J2 League,,0,0,0,0,0,0,0,0,,,0.0,0.0,0,0.0,0.0,0.0
 Japan - J2 League,M. Yamagata,9,4,3,2,7,5,2,15,1.67,1.0,0.44,0.78,2,0.78,2.27,1.28
 Japan - J2 League,R. Kumamoto,6,4,1,1,4,1,3,13,2.17,2.0,0.67,0.83,3,0.67,1.49,1.2
@@ -934,12 +934,12 @@ Japan - J3 League,Tochigi City,7,2,3,2,4,4,0,9,1.29,4.0,0.29,0.71,0,0.57,3.45,1.
 Japan - J3 League,Kusatsu,6,2,2,2,7,5,2,8,1.33,6.0,0.33,0.67,2,1.17,3.03,1.49
 Japan - J3 League,SC Sagamihara,6,2,2,2,4,3,1,8,1.33,6.0,0.33,0.67,1,0.67,3.03,1.49
 Japan - J3 League,Kagoshima Utd,6,1,5,0,2,1,1,8,1.33,6.0,0.17,1.0,1,0.33,5.88,1.0
-Japan - J3 League,FC Ryukyu,6,1,4,1,2,2,0,7,1.17,9.0,0.17,0.83,0,0.33,5.88,1.2
-Japan - J3 League,Z. Kanazawa,8,1,4,3,4,5,-1,7,0.88,9.0,0.12,0.62,-1,0.5,8.33,1.61
-Japan - J3 League,Gifu,5,1,3,1,3,2,1,6,1.2,11.0,0.2,0.8,1,0.6,5.0,1.25
-Japan - J3 League,V. Hachinohe,6,1,3,2,1,2,-1,6,1.0,11.0,0.17,0.67,-1,0.17,5.88,1.49
-Japan - J3 League,Tochigi SC,5,1,2,2,1,2,-1,5,1.0,13.0,0.2,0.6,-1,0.2,5.0,1.67
-Japan - J3 League,Nagano Parceiro,5,1,2,2,1,3,-2,5,1.0,13.0,0.2,0.6,-2,0.2,5.0,1.67
+Japan - J3 League,Nagano Parceiro,6,2,2,2,2,3,-1,8,1.33,6.0,0.33,0.67,-1,0.33,3.03,1.49
+Japan - J3 League,FC Ryukyu,6,1,4,1,2,2,0,7,1.17,10.0,0.17,0.83,0,0.33,5.88,1.2
+Japan - J3 League,Z. Kanazawa,8,1,4,3,4,5,-1,7,0.88,10.0,0.12,0.62,-1,0.5,8.33,1.61
+Japan - J3 League,Gifu,5,1,3,1,3,2,1,6,1.2,12.0,0.2,0.8,1,0.6,5.0,1.25
+Japan - J3 League,V. Hachinohe,6,1,3,2,1,2,-1,6,1.0,12.0,0.17,0.67,-1,0.17,5.88,1.49
+Japan - J3 League,Tochigi SC,5,1,2,2,1,2,-1,5,1.0,14.0,0.2,0.6,-1,0.2,5.0,1.67
 Japan - J3 League,Osaka,5,0,4,1,0,2,-2,4,0.8,15.0,0.0,0.8,-2,0.0,0.0,1.25
 Japan - J3 League,T. Miyazaki,6,0,4,2,1,5,-4,4,0.67,15.0,0.0,0.67,-4,0.17,0.0,1.49
 Japan - J3 League,Gainare Tottori,7,0,4,3,1,6,-5,4,0.57,15.0,0.0,0.57,-5,0.14,0.0,1.75
@@ -949,8 +949,8 @@ Japan - J3 League,Nara Club,5,0,2,3,1,4,-3,2,0.4,20.0,0.0,0.4,-3,0.2,0.0,2.5
 Kazakhstan - Premier League,,0,0,0,0,0,0,0,0,,,0.0,0.0,0,0.0,0.0,0.0
 Kazakhstan - Premier League,Kairat Almaty,6,3,2,1,4,1,3,11,1.83,1.0,0.5,0.83,3,0.67,2.0,1.2
 Kazakhstan - Premier League,FC Astana,4,3,1,0,4,0,4,10,2.5,2.0,0.75,1.0,4,1.0,1.33,1.0
-Kazakhstan - Premier League,Aktobe,4,2,1,1,3,1,2,7,1.75,3.0,0.5,0.75,2,0.75,2.0,1.33
-Kazakhstan - Premier League,Okzhetpes,5,2,1,2,3,4,-1,7,1.4,3.0,0.4,0.6,-1,0.6,2.5,1.67
+Kazakhstan - Premier League,Aktobe,5,3,1,1,4,1,3,10,2.0,2.0,0.6,0.8,3,0.8,1.67,1.25
+Kazakhstan - Premier League,Okzhetpes,5,2,1,2,3,4,-1,7,1.4,4.0,0.4,0.6,-1,0.6,2.5,1.67
 Kazakhstan - Premier League,Yelimay Semey,5,1,3,1,3,2,1,6,1.2,5.0,0.2,0.8,1,0.6,5.0,1.25
 Kazakhstan - Premier League,Tobol,4,1,2,1,3,1,2,5,1.25,6.0,0.25,0.75,2,0.75,4.0,1.33
 Kazakhstan - Premier League,Kyzylzhar,3,1,2,0,2,1,1,5,1.67,6.0,0.33,1.0,1,0.67,3.03,1.0
@@ -1011,24 +1011,24 @@ Mexico - Liga MX - Clausura,Pumas UNAM,8,1,2,5,5,12,-7,5,0.62,16.0,0.12,0.38,-7,
 Mexico - Liga MX - Clausura,A. San Luis,8,1,2,5,4,11,-7,5,0.62,16.0,0.12,0.38,-7,0.5,8.33,2.63
 Mexico - Liga MX - Clausura,Queretaro,8,0,3,5,1,9,-8,3,0.38,18.0,0.0,0.38,-8,0.12,0.0,2.63
 Netherlands - Eredivisie,,0,0,0,0,0,0,0,0,,,0.0,0.0,0,0.0,0.0,0.0
-Netherlands - Eredivisie,Feyenoord,16,9,3,4,17,8,9,30,1.88,1.0,0.56,0.75,9,1.06,1.79,1.33
-Netherlands - Eredivisie,AZ Alkmaar,16,8,6,2,13,4,9,30,1.88,1.0,0.5,0.88,9,0.81,2.0,1.14
+Netherlands - Eredivisie,AZ Alkmaar,17,8,7,2,15,6,9,31,1.82,1.0,0.47,0.88,9,0.88,2.13,1.14
+Netherlands - Eredivisie,Feyenoord,16,9,3,4,17,8,9,30,1.88,2.0,0.56,0.75,9,1.06,1.79,1.33
 Netherlands - Eredivisie,PSV Eindhoven,16,6,7,3,17,11,6,25,1.56,3.0,0.38,0.81,6,1.06,2.63,1.23
-Netherlands - Eredivisie,FC Utrecht,16,6,5,5,14,11,3,23,1.44,4.0,0.38,0.69,3,0.88,2.63,1.45
-Netherlands - Eredivisie,Go Ahead Eagles,16,5,7,4,9,10,-1,22,1.38,5.0,0.31,0.75,-1,0.56,3.23,1.33
-Netherlands - Eredivisie,Ajax Amsterdam,16,4,9,3,8,6,2,21,1.31,6.0,0.25,0.81,2,0.5,4.0,1.23
-Netherlands - Eredivisie,Fortuna Sittard,16,4,8,4,8,10,-2,20,1.25,7.0,0.25,0.75,-2,0.5,4.0,1.33
-Netherlands - Eredivisie,PEC Zwolle,16,4,7,5,11,12,-1,19,1.19,8.0,0.25,0.69,-1,0.69,4.0,1.45
-Netherlands - Eredivisie,FC Twente,16,4,7,5,12,14,-2,19,1.19,8.0,0.25,0.69,-2,0.75,4.0,1.45
-Netherlands - Eredivisie,Heracles Almelo,16,4,6,6,8,13,-5,18,1.12,10.0,0.25,0.62,-5,0.5,4.0,1.61
-Netherlands - Eredivisie,Sparta,16,3,8,5,5,6,-1,17,1.06,11.0,0.19,0.69,-1,0.31,5.26,1.45
+Netherlands - Eredivisie,Ajax Amsterdam,17,5,9,3,9,6,3,24,1.41,4.0,0.29,0.82,3,0.53,3.45,1.22
+Netherlands - Eredivisie,FC Utrecht,16,6,5,5,14,11,3,23,1.44,5.0,0.38,0.69,3,0.88,2.63,1.45
+Netherlands - Eredivisie,PEC Zwolle,17,5,7,5,12,12,0,22,1.29,6.0,0.29,0.71,0,0.71,3.45,1.41
+Netherlands - Eredivisie,Go Ahead Eagles,16,5,7,4,9,10,-1,22,1.38,6.0,0.31,0.75,-1,0.56,3.23,1.33
+Netherlands - Eredivisie,Fortuna Sittard,17,4,8,5,8,11,-3,20,1.18,8.0,0.24,0.71,-3,0.47,4.17,1.41
+Netherlands - Eredivisie,FC Twente,16,4,7,5,12,14,-2,19,1.19,9.0,0.25,0.69,-2,0.75,4.0,1.45
+Netherlands - Eredivisie,Sparta,17,3,9,5,6,7,-1,18,1.06,10.0,0.18,0.71,-1,0.35,5.56,1.41
+Netherlands - Eredivisie,Heracles Almelo,17,4,6,7,8,17,-9,18,1.06,10.0,0.24,0.59,-9,0.47,4.17,1.69
 Netherlands - Eredivisie,Willem II,16,3,7,6,9,12,-3,16,1.0,12.0,0.19,0.62,-3,0.56,5.26,1.61
-Netherlands - Eredivisie,NAC Breda,16,3,6,7,6,14,-8,15,0.94,13.0,0.19,0.56,-8,0.38,5.26,1.79
+Netherlands - Eredivisie,NAC Breda,17,3,6,8,6,15,-9,15,0.88,13.0,0.18,0.53,-9,0.35,5.56,1.89
 Netherlands - Eredivisie,Almere City,16,3,5,8,7,16,-9,14,0.88,14.0,0.19,0.5,-9,0.44,5.26,2.0
 Netherlands - Eredivisie,NEC Nijmegen,16,2,7,7,4,13,-9,13,0.81,15.0,0.12,0.56,-9,0.25,8.33,1.79
 Netherlands - Eredivisie,FC Groningen,16,2,5,9,8,18,-10,11,0.69,16.0,0.12,0.44,-10,0.5,8.33,2.27
-Netherlands - Eredivisie,Heerenveen,16,1,4,11,5,16,-11,7,0.44,17.0,0.06,0.31,-11,0.31,16.67,3.23
-Netherlands - Eredivisie,RKC Waalwijk,16,0,4,12,4,22,-18,4,0.25,18.0,0.0,0.25,-18,0.25,0.0,4.0
+Netherlands - Eredivisie,Heerenveen,17,1,5,11,5,16,-11,8,0.47,17.0,0.06,0.35,-11,0.29,16.67,2.86
+Netherlands - Eredivisie,RKC Waalwijk,17,0,4,13,4,23,-19,4,0.24,18.0,0.0,0.24,-19,0.24,0.0,4.17
 Netherlands - Eerste Divisie,,0,0,0,0,0,0,0,0,,,0.0,0.0,0,0.0,0.0,0.0
 Netherlands - Eerste Divisie,ADO Den Haag,19,11,3,5,23,6,17,36,1.89,1.0,0.58,0.74,17,1.21,1.72,1.35
 Netherlands - Eerste Divisie,Telstar,19,9,5,5,16,10,6,32,1.68,2.0,0.47,0.74,6,0.84,2.13,1.35
@@ -1112,21 +1112,21 @@ Paraguay - Primera Div. - Apertura,A. Tembetary,9,0,7,2,3,7,-4,7,0.78,9.0,0.0,0.
 Paraguay - Primera Div. - Apertura,S. Luqueno,9,0,3,6,2,9,-7,3,0.33,12.0,0.0,0.33,-7,0.22,0.0,3.03
 Paraguay - Division Intermedia,,0,0,0,0,0,0,0,0,,,0.0,0.0,0,0.0,0.0,0.0
 Paraguay - Division Intermedia,D. Capiata,4,2,2,0,4,0,4,8,2.0,1.0,0.5,1.0,4,1.0,2.0,1.0
-Paraguay - Division Intermedia,Tacuary,3,1,1,1,2,2,0,4,1.33,2.0,0.33,0.67,0,0.67,3.03,1.49
-Paraguay - Division Intermedia,Guairena,3,1,1,1,1,1,0,4,1.33,2.0,0.33,0.67,0,0.33,3.03,1.49
-Paraguay - Division Intermedia,Resistencia,3,1,1,1,1,1,0,4,1.33,2.0,0.33,0.67,0,0.33,3.03,1.49
-Paraguay - Division Intermedia,Encarnacion,4,1,1,2,2,3,-1,4,1.0,2.0,0.25,0.5,-1,0.5,4.0,2.0
-Paraguay - Division Intermedia,Independiente,3,1,1,1,2,4,-2,4,1.33,2.0,0.33,0.67,-2,0.67,3.03,1.49
-Paraguay - Division Intermedia,Guarani de Fram,4,1,1,2,1,3,-2,4,1.0,2.0,0.25,0.5,-2,0.25,4.0,2.0
-Paraguay - Division Intermedia,Pastoreo,4,1,1,2,1,4,-3,4,1.0,2.0,0.25,0.5,-3,0.25,4.0,2.0
-Paraguay - Division Intermedia,D. Santani,3,0,3,0,0,0,0,3,1.0,9.0,0.0,1.0,0,0.0,0.0,1.0
-Paraguay - Division Intermedia,F. de la Mora,4,0,3,1,0,1,-1,3,0.75,9.0,0.0,0.75,-1,0.0,0.0,1.33
-Paraguay - Division Intermedia,Rubio Nu,4,0,3,1,0,1,-1,3,0.75,9.0,0.0,0.75,-1,0.0,0.0,1.33
-Paraguay - Division Intermedia,S. Carapegua,3,0,2,1,0,1,-1,2,0.67,12.0,0.0,0.67,-1,0.0,0.0,1.49
-Paraguay - Division Intermedia,San Lorenzo,3,0,2,1,0,1,-1,2,0.67,12.0,0.0,0.67,-1,0.0,0.0,1.49
-Paraguay - Division Intermedia,Sol de America,3,0,2,1,0,1,-1,2,0.67,12.0,0.0,0.67,-1,0.0,0.0,1.49
-Paraguay - Division Intermedia,12 de Junio VH,4,0,1,3,0,4,-4,1,0.25,15.0,0.0,0.25,-4,0.0,0.0,4.0
-Paraguay - Division Intermedia,C. River Plate,4,0,1,3,0,4,-4,1,0.25,15.0,0.0,0.25,-4,0.0,0.0,4.0
+Paraguay - Division Intermedia,San Lorenzo,4,1,2,1,2,1,1,5,1.25,2.0,0.25,0.75,1,0.5,4.0,1.33
+Paraguay - Division Intermedia,Tacuary,4,1,2,1,2,2,0,5,1.25,2.0,0.25,0.75,0,0.5,4.0,1.33
+Paraguay - Division Intermedia,Guairena,3,1,1,1,1,1,0,4,1.33,4.0,0.33,0.67,0,0.33,3.03,1.49
+Paraguay - Division Intermedia,Resistencia,3,1,1,1,1,1,0,4,1.33,4.0,0.33,0.67,0,0.33,3.03,1.49
+Paraguay - Division Intermedia,Encarnacion,4,1,1,2,2,3,-1,4,1.0,4.0,0.25,0.5,-1,0.5,4.0,2.0
+Paraguay - Division Intermedia,Independiente,3,1,1,1,2,4,-2,4,1.33,4.0,0.33,0.67,-2,0.67,3.03,1.49
+Paraguay - Division Intermedia,Pastoreo,4,1,1,2,1,4,-3,4,1.0,4.0,0.25,0.5,-3,0.25,4.0,2.0
+Paraguay - Division Intermedia,Guarani de Fram,5,1,1,3,1,5,-4,4,0.8,4.0,0.2,0.4,-4,0.2,5.0,2.5
+Paraguay - Division Intermedia,D. Santani,3,0,3,0,0,0,0,3,1.0,10.0,0.0,1.0,0,0.0,0.0,1.0
+Paraguay - Division Intermedia,F. de la Mora,4,0,3,1,0,1,-1,3,0.75,10.0,0.0,0.75,-1,0.0,0.0,1.33
+Paraguay - Division Intermedia,Rubio Nu,4,0,3,1,0,1,-1,3,0.75,10.0,0.0,0.75,-1,0.0,0.0,1.33
+Paraguay - Division Intermedia,S. Carapegua,3,0,2,1,0,1,-1,2,0.67,13.0,0.0,0.67,-1,0.0,0.0,1.49
+Paraguay - Division Intermedia,Sol de America,3,0,2,1,0,1,-1,2,0.67,13.0,0.0,0.67,-1,0.0,0.0,1.49
+Paraguay - Division Intermedia,C. River Plate,5,0,2,3,1,5,-4,2,0.4,13.0,0.0,0.4,-4,0.2,0.0,2.5
+Paraguay - Division Intermedia,12 de Junio VH,4,0,1,3,0,4,-4,1,0.25,16.0,0.0,0.25,-4,0.0,0.0,4.0
 Peru - Liga 1 - Apertura,,0,0,0,0,0,0,0,0,,,0.0,0.0,0,0.0,0.0,0.0
 Peru - Liga 1 - Apertura,Cusco,6,3,2,1,5,4,1,11,1.83,1.0,0.5,0.83,1,0.83,2.0,1.2
 Peru - Liga 1 - Apertura,FBC Melgar,5,3,1,1,5,3,2,10,2.0,2.0,0.6,0.8,2,1.0,1.67,1.25
@@ -1155,7 +1155,7 @@ Poland - Ekstraklasa,Stal Mielec,16,5,6,5,12,9,3,21,1.31,4.0,0.31,0.69,3,0.75,3.
 Poland - Ekstraklasa,Katowice,16,6,3,7,12,11,1,21,1.31,4.0,0.38,0.56,1,0.75,2.63,1.79
 Poland - Ekstraklasa,Gornik Zabrze,16,5,6,5,8,8,0,21,1.31,4.0,0.31,0.69,0,0.5,3.23,1.45
 Poland - Ekstraklasa,Piast Gliwice,16,5,6,5,8,9,-1,21,1.31,4.0,0.31,0.69,-1,0.5,3.23,1.45
-Poland - Ekstraklasa,Motor Lublin,15,4,7,4,10,10,0,19,1.27,8.0,0.27,0.73,0,0.67,3.7,1.37
+Poland - Ekstraklasa,Motor Lublin,16,4,7,5,10,11,-1,19,1.19,8.0,0.25,0.69,-1,0.62,4.0,1.45
 Poland - Ekstraklasa,Lechia Gdansk,16,4,7,5,10,15,-5,19,1.19,8.0,0.25,0.69,-5,0.62,4.0,1.45
 Poland - Ekstraklasa,Pogon Szczecin,16,3,7,6,8,10,-2,16,1.0,10.0,0.19,0.62,-2,0.5,5.26,1.61
 Poland - Ekstraklasa,Cracovia Krakow,16,2,9,5,12,15,-3,15,0.94,11.0,0.12,0.69,-3,0.75,8.33,1.45
@@ -1224,18 +1224,18 @@ Portugal - Liga Portugal 2,FC Porto B,17,4,4,9,7,15,-8,16,0.94,16.0,0.24,0.47,-8
 Portugal - Liga Portugal 2,Portimonense,16,2,9,5,5,13,-8,15,0.94,17.0,0.12,0.69,-8,0.31,8.33,1.45
 Portugal - Liga Portugal 2,Oliveirense,16,3,3,10,7,15,-8,12,0.75,18.0,0.19,0.38,-8,0.44,5.26,2.63
 Scotland - Premiership,,0,0,0,0,0,0,0,0,,,0.0,0.0,0,0.0,0.0,0.0
-Scotland - Premiership,Celtic,18,9,4,5,18,9,9,31,1.72,1.0,0.5,0.72,9,1.0,2.0,1.39
+Scotland - Premiership,Celtic,19,10,4,5,20,10,10,34,1.79,1.0,0.53,0.74,10,1.05,1.89,1.35
 Scotland - Premiership,St. Mirren,17,8,4,5,15,11,4,28,1.65,2.0,0.47,0.71,4,0.88,2.13,1.41
-Scotland - Premiership,Hibernian,18,5,8,5,12,12,0,23,1.28,3.0,0.28,0.72,0,0.67,3.57,1.39
+Scotland - Premiership,Hibernian,19,6,8,5,14,13,1,26,1.37,3.0,0.32,0.74,1,0.74,3.12,1.35
 Scotland - Premiership,Rangers,18,5,6,7,13,16,-3,21,1.17,4.0,0.28,0.61,-3,0.72,3.57,1.64
 Scotland - Premiership,Hearts,18,4,8,6,9,14,-5,20,1.11,5.0,0.22,0.67,-5,0.5,4.55,1.49
 Scotland - Premiership,Aberdeen,18,5,5,8,6,13,-7,20,1.11,5.0,0.28,0.56,-7,0.33,3.57,1.79
 Scotland - Premiership,Dundee FC,18,4,7,7,12,15,-3,19,1.06,7.0,0.22,0.61,-3,0.67,4.55,1.64
-Scotland - Premiership,Dundee Utd,18,3,9,6,5,10,-5,18,1.0,8.0,0.17,0.67,-5,0.28,5.88,1.49
-Scotland - Premiership,Ross County,18,3,9,6,7,18,-11,18,1.0,8.0,0.17,0.67,-11,0.39,5.88,1.49
+Scotland - Premiership,Dundee Utd,19,3,10,6,6,11,-5,19,1.0,7.0,0.16,0.68,-5,0.32,6.25,1.47
+Scotland - Premiership,Ross County,19,3,10,6,7,18,-11,19,1.0,7.0,0.16,0.68,-11,0.37,6.25,1.47
 Scotland - Premiership,Motherwell,19,3,6,10,8,15,-7,15,0.79,10.0,0.16,0.47,-7,0.42,6.25,2.13
-Scotland - Premiership,Kilmarnock,18,3,3,12,6,19,-13,12,0.67,11.0,0.17,0.33,-13,0.33,5.88,3.03
-Scotland - Premiership,St. Johnstone,18,2,5,11,7,19,-12,11,0.61,12.0,0.11,0.39,-12,0.39,9.09,2.56
+Scotland - Premiership,Kilmarnock,19,3,4,12,6,19,-13,13,0.68,11.0,0.16,0.37,-13,0.32,6.25,2.7
+Scotland - Premiership,St. Johnstone,19,2,5,12,7,21,-14,11,0.58,12.0,0.11,0.37,-14,0.37,9.09,2.7
 Scotland - Championship,,0,0,0,0,0,0,0,0,,,0.0,0.0,0,0.0,0.0,0.0
 Scotland - Championship,Falkirk,18,8,6,4,19,11,8,30,1.67,1.0,0.44,0.78,8,1.06,2.27,1.28
 Scotland - Championship,Raith Rovers,18,7,6,5,11,8,3,27,1.5,2.0,0.39,0.72,3,0.61,2.56,1.39
@@ -1289,7 +1289,7 @@ Slovakia - Fortuna Liga,Trencin,16,2,9,5,7,13,-6,15,0.94,9.0,0.12,0.69,-6,0.44,8
 Slovakia - Fortuna Liga,Skalica,15,3,4,8,6,19,-13,13,0.87,11.0,0.2,0.47,-13,0.4,5.0,2.13
 Slovakia - Fortuna Liga,Ruzomberok,15,2,5,8,6,14,-8,11,0.73,12.0,0.13,0.47,-8,0.4,7.69,2.13
 South Africa - Premier Division ,,0,0,0,0,0,0,0,0,,,0.0,0.0,0,0.0,0.0,0.0
-South Africa - Premier Division ,Mamelodi S.,13,6,3,4,10,8,2,21,1.62,1.0,0.46,0.69,2,0.77,2.17,1.45
+South Africa - Premier Division ,Mamelodi S.,14,7,3,4,11,8,3,24,1.71,1.0,0.5,0.71,3,0.79,2.0,1.41
 South Africa - Premier Division ,Stellenbosch,12,4,8,0,10,5,5,20,1.67,2.0,0.33,1.0,5,0.83,3.03,1.0
 South Africa - Premier Division ,Sekhukhune,14,4,7,3,7,5,2,19,1.36,3.0,0.29,0.79,2,0.5,3.45,1.27
 South Africa - Premier Division ,TS Galaxy,14,4,6,4,12,11,1,18,1.29,4.0,0.29,0.71,1,0.86,3.45,1.41
@@ -1303,7 +1303,7 @@ South Africa - Premier Division ,Magesi,12,2,6,4,3,6,-3,12,1.0,10.0,0.17,0.67,-3
 South Africa - Premier Division ,Chippa Utd,13,2,6,5,5,9,-4,12,0.92,10.0,0.15,0.62,-4,0.38,6.67,1.61
 South Africa - Premier Division ,Cape Town City,14,2,5,7,2,10,-8,11,0.79,13.0,0.14,0.5,-8,0.14,7.14,2.0
 South Africa - Premier Division ,Richards Bay,14,1,7,6,2,8,-6,10,0.71,14.0,0.07,0.57,-6,0.14,14.29,1.75
-South Africa - Premier Division ,Golden Arrows,12,1,4,7,1,7,-6,7,0.58,15.0,0.08,0.42,-6,0.08,12.5,2.38
+South Africa - Premier Division ,Golden Arrows,13,1,4,8,1,8,-7,7,0.54,15.0,0.08,0.38,-7,0.08,12.5,2.63
 South Africa - Premier Division ,Royal AM,5,0,2,3,0,4,-4,2,0.4,16.0,0.0,0.4,-4,0.0,0.0,2.5
 South Korea - K League 1,,0,0,0,0,0,0,0,0,,,0.0,0.0,0,0.0,0.0,0.0
 South Korea - K League 1,Daejeon Citizen,7,4,3,0,8,2,6,15,2.14,1.0,0.57,1.0,6,1.14,1.75,1.0
@@ -1339,20 +1339,20 @@ Spain - La Liga,Atletico Madrid,17,5,9,3,11,6,5,24,1.41,2.0,0.29,0.82,5,0.65,3.4
 Spain - La Liga,Real Betis,17,5,9,3,11,8,3,24,1.41,2.0,0.29,0.82,3,0.65,3.45,1.22
 Spain - La Liga,Alaves,18,5,8,5,10,11,-1,23,1.28,4.0,0.28,0.72,-1,0.56,3.57,1.39
 Spain - La Liga,FC Barcelona,17,5,7,5,13,11,2,22,1.29,5.0,0.29,0.71,2,0.76,3.45,1.41
-Spain - La Liga,Leganes,17,4,9,4,10,11,-1,21,1.24,6.0,0.24,0.76,-1,0.59,4.17,1.32
 Spain - La Liga,Villarreal,18,4,9,5,11,13,-2,21,1.17,6.0,0.22,0.72,-2,0.61,4.55,1.39
 Spain - La Liga,Rayo Vallecano,18,4,9,5,7,9,-2,21,1.17,6.0,0.22,0.72,-2,0.39,4.55,1.39
+Spain - La Liga,Leganes,18,4,9,5,10,14,-4,21,1.17,6.0,0.22,0.72,-4,0.56,4.55,1.39
 Spain - La Liga,Real Sociedad,18,5,6,7,6,13,-7,21,1.17,6.0,0.28,0.61,-7,0.33,3.57,1.64
 Spain - La Liga,Athletic Bilbao,17,2,13,2,7,6,1,19,1.12,10.0,0.12,0.88,1,0.41,8.33,1.14
 Spain - La Liga,Osasuna,18,3,10,5,5,9,-4,19,1.06,10.0,0.17,0.72,-4,0.28,5.88,1.39
 Spain - La Liga,Espanyol,18,4,7,7,5,15,-10,19,1.06,10.0,0.22,0.61,-10,0.28,4.55,1.64
-Spain - La Liga,Sevilla FC,18,3,7,8,10,16,-6,16,0.89,13.0,0.17,0.56,-6,0.56,5.88,1.79
-Spain - La Liga,Girona,17,3,6,8,4,10,-6,15,0.88,14.0,0.18,0.53,-6,0.24,5.56,1.89
-Spain - La Liga,Mallorca,17,2,9,6,3,10,-7,15,0.88,14.0,0.12,0.65,-7,0.18,8.33,1.54
-Spain - La Liga,Celta Vigo,17,2,8,7,9,15,-6,14,0.82,16.0,0.12,0.59,-6,0.53,8.33,1.69
-Spain - La Liga,Getafe,18,3,5,10,5,13,-8,14,0.78,16.0,0.17,0.44,-8,0.28,5.88,2.27
-Spain - La Liga,Las Palmas,17,2,6,9,5,15,-10,12,0.71,18.0,0.12,0.47,-10,0.29,8.33,2.13
-Spain - La Liga,Valencia,17,2,5,10,7,19,-12,11,0.65,19.0,0.12,0.41,-12,0.41,8.33,2.44
+Spain - La Liga,Mallorca,18,3,9,6,4,10,-6,18,1.0,13.0,0.17,0.67,-6,0.22,5.88,1.49
+Spain - La Liga,Celta Vigo,18,3,8,7,10,15,-5,17,0.94,14.0,0.17,0.61,-5,0.56,5.88,1.64
+Spain - La Liga,Sevilla FC,18,3,7,8,10,16,-6,16,0.89,15.0,0.17,0.56,-6,0.56,5.88,1.79
+Spain - La Liga,Girona,18,3,7,8,4,10,-6,16,0.89,15.0,0.17,0.56,-6,0.22,5.88,1.79
+Spain - La Liga,Getafe,18,3,5,10,5,13,-8,14,0.78,17.0,0.17,0.44,-8,0.28,5.88,2.27
+Spain - La Liga,Las Palmas,18,2,7,9,5,15,-10,13,0.72,18.0,0.11,0.5,-10,0.28,9.09,2.0
+Spain - La Liga,Valencia,18,2,6,10,7,19,-12,12,0.67,19.0,0.11,0.44,-12,0.39,9.09,2.27
 Spain - La Liga,Valladolid,18,0,8,10,6,23,-17,8,0.44,20.0,0.0,0.44,-17,0.33,0.0,2.27
 Spain - La Liga 2,,0,0,0,0,0,0,0,0,,,0.0,0.0,0,0.0,0.0,0.0
 Spain - La Liga 2,Levante,20,7,11,2,11,3,8,32,1.6,1.0,0.35,0.9,8,0.55,2.86,1.11
@@ -1380,13 +1380,13 @@ Spain - La Liga 2,Cartagena,20,2,6,12,7,21,-14,12,0.6,22.0,0.1,0.4,-14,0.35,10.0
 Sweden - Allsvenskan,,0,0,0,0,0,0,0,0,,,0.0,0.0,0,0.0,0.0,0.0
 Sweden - Allsvenskan,Mjallby,4,2,2,0,5,2,3,8,2.0,1.0,0.5,1.0,3,1.25,2.0,1.0
 Sweden - Allsvenskan,Malmo FF,4,2,2,0,3,0,3,8,2.0,1.0,0.5,1.0,3,0.75,2.0,1.0
-Sweden - Allsvenskan,Norrkoping,4,2,1,1,4,2,2,7,1.75,3.0,0.5,0.75,2,1.0,2.0,1.33
-Sweden - Allsvenskan,Brommapojkarna,4,1,3,0,1,0,1,6,1.5,4.0,0.25,1.0,1,0.25,4.0,1.0
-Sweden - Allsvenskan,Degerfors,4,2,0,2,2,5,-3,6,1.5,4.0,0.5,0.5,-3,0.5,2.0,2.0
-Sweden - Allsvenskan,Hammarby,4,1,2,1,4,3,1,5,1.25,6.0,0.25,0.75,1,1.0,4.0,1.33
-Sweden - Allsvenskan,Sirius,4,1,2,1,3,3,0,5,1.25,6.0,0.25,0.75,0,0.75,4.0,1.33
-Sweden - Allsvenskan,AIK,4,1,2,1,1,1,0,5,1.25,6.0,0.25,0.75,0,0.25,4.0,1.33
-Sweden - Allsvenskan,GAIS,4,1,2,1,1,1,0,5,1.25,6.0,0.25,0.75,0,0.25,4.0,1.33
+Sweden - Allsvenskan,AIK,5,2,2,1,2,1,1,8,1.6,1.0,0.4,0.8,1,0.4,2.5,1.25
+Sweden - Allsvenskan,Norrkoping,4,2,1,1,4,2,2,7,1.75,4.0,0.5,0.75,2,1.0,2.0,1.33
+Sweden - Allsvenskan,Brommapojkarna,4,1,3,0,1,0,1,6,1.5,5.0,0.25,1.0,1,0.25,4.0,1.0
+Sweden - Allsvenskan,Sirius,5,1,3,1,4,4,0,6,1.2,5.0,0.2,0.8,0,0.8,5.0,1.25
+Sweden - Allsvenskan,GAIS,5,1,3,1,2,2,0,6,1.2,5.0,0.2,0.8,0,0.4,5.0,1.25
+Sweden - Allsvenskan,Degerfors,4,2,0,2,2,5,-3,6,1.5,5.0,0.5,0.5,-3,0.5,2.0,2.0
+Sweden - Allsvenskan,Hammarby,4,1,2,1,4,3,1,5,1.25,9.0,0.25,0.75,1,1.0,4.0,1.33
 Sweden - Allsvenskan,Halmstad,4,0,4,0,1,1,0,4,1.0,10.0,0.0,1.0,0,0.25,0.0,1.0
 Sweden - Allsvenskan,Hacken,4,1,1,2,3,4,-1,4,1.0,10.0,0.25,0.5,-1,0.75,4.0,2.0
 Sweden - Allsvenskan,Elfsborg,4,0,3,1,0,2,-2,3,0.75,12.0,0.0,0.75,-2,0.0,0.0,1.33
@@ -1409,21 +1409,21 @@ Sweden - Superettan,Trelleborg,4,1,1,2,1,2,-1,4,1.0,8.0,0.25,0.5,-1,0.25,4.0,2.0
 Sweden - Superettan,Sandviken,3,0,3,0,2,2,0,3,1.0,12.0,0.0,1.0,0,0.67,0.0,1.0
 Sweden - Superettan,Helsingborg,3,0,3,0,0,0,0,3,1.0,12.0,0.0,1.0,0,0.0,0.0,1.0
 Sweden - Superettan,Orebro,4,0,3,1,3,5,-2,3,0.75,12.0,0.0,0.75,-2,0.75,0.0,1.33
-Sweden - Superettan,Brage,3,0,2,1,0,1,-1,2,0.67,15.0,0.0,0.67,-1,0.0,0.0,1.49
+Sweden - Superettan,Brage,4,0,2,2,0,2,-2,2,0.5,15.0,0.0,0.5,-2,0.0,0.0,2.0
 Sweden - Superettan,Umea,3,0,0,3,0,4,-4,0,0.0,16.0,0.0,0.0,-4,0.0,0.0,0.0
 Switzerland - Super League,,0,0,0,0,0,0,0,0,,,0.0,0.0,0,0.0,0.0,0.0
-Switzerland - Super League,FC Basel,17,9,6,2,18,7,11,33,1.94,1.0,0.53,0.88,11,1.06,1.89,1.14
+Switzerland - Super League,FC Basel,18,10,6,2,20,8,12,36,2.0,1.0,0.56,0.89,12,1.11,1.79,1.12
 Switzerland - Super League,Servette,18,7,6,5,11,10,1,27,1.5,2.0,0.39,0.72,1,0.61,2.56,1.39
 Switzerland - Super League,Lugano,17,6,7,4,10,9,1,25,1.47,3.0,0.35,0.76,1,0.59,2.86,1.32
-Switzerland - Super League,Grasshopper,18,5,8,5,8,10,-2,23,1.28,4.0,0.28,0.72,-2,0.44,3.57,1.39
-Switzerland - Super League,BSC Young Boys,18,5,8,5,8,13,-5,23,1.28,4.0,0.28,0.72,-5,0.44,3.57,1.39
-Switzerland - Super League,St. Gallen,18,4,9,5,9,13,-4,21,1.17,6.0,0.22,0.72,-4,0.5,4.55,1.39
+Switzerland - Super League,St. Gallen,19,5,9,5,10,13,-3,24,1.26,4.0,0.26,0.74,-3,0.53,3.85,1.35
+Switzerland - Super League,Grasshopper,18,5,8,5,8,10,-2,23,1.28,5.0,0.28,0.72,-2,0.44,3.57,1.39
+Switzerland - Super League,BSC Young Boys,18,5,8,5,8,13,-5,23,1.28,5.0,0.28,0.72,-5,0.44,3.57,1.39
 Switzerland - Super League,Lausanne Sport,17,5,5,7,9,10,-1,20,1.18,7.0,0.29,0.59,-1,0.53,3.45,1.69
 Switzerland - Super League,FC Zurich,17,4,7,6,11,15,-4,19,1.12,8.0,0.24,0.65,-4,0.65,4.17,1.54
-Switzerland - Super League,Yverdon,17,5,3,9,9,18,-9,18,1.06,9.0,0.29,0.47,-9,0.53,3.45,2.13
+Switzerland - Super League,Yverdon,18,5,3,10,9,21,-12,18,1.0,9.0,0.28,0.44,-12,0.5,3.57,2.27
 Switzerland - Super League,Sion,18,3,8,7,7,13,-6,17,0.94,10.0,0.17,0.61,-6,0.39,5.88,1.64
 Switzerland - Super League,Luzern,17,3,7,7,11,15,-4,16,0.94,11.0,0.18,0.59,-4,0.65,5.56,1.69
-Switzerland - Super League,Winterthur,18,1,10,7,6,15,-9,13,0.72,12.0,0.06,0.61,-9,0.33,16.67,1.64
+Switzerland - Super League,Winterthur,19,2,10,7,7,15,-8,16,0.84,11.0,0.11,0.63,-8,0.37,9.09,1.59
 Switzerland - Challenge League,,0,0,0,0,0,0,0,0,,,0.0,0.0,0,0.0,0.0,0.0
 Switzerland - Challenge League,Wil,17,9,4,4,14,9,5,31,1.82,1.0,0.53,0.76,5,0.82,1.89,1.32
 Switzerland - Challenge League,Stade Nyonnais,17,6,8,3,13,9,4,26,1.53,2.0,0.35,0.82,4,0.76,2.86,1.22
@@ -1473,15 +1473,15 @@ Turkey - Super Lig,Antalyaspor,17,2,4,11,7,21,-14,10,0.59,17.0,0.12,0.35,-14,0.4
 Turkey - Super Lig,Adana Demirspor,17,2,2,13,6,19,-13,8,0.47,18.0,0.12,0.24,-13,0.35,8.33,4.17
 Turkey - Super Lig,Sivasspor,16,0,8,8,6,20,-14,8,0.5,18.0,0.0,0.5,-14,0.38,0.0,2.0
 UAE - Pro League,,0,0,0,0,0,0,0,0,,,0.0,0.0,0,0.0,0.0,0.0
-UAE - Pro League,Shabab Al Ahli,11,7,2,2,10,4,6,23,2.09,1.0,0.64,0.82,6,0.91,1.56,1.22
+UAE - Pro League,Shabab Al Ahli,12,7,3,2,10,4,6,24,2.0,1.0,0.58,0.83,6,0.83,1.72,1.2
 UAE - Pro League,Al Jazira,12,5,3,4,12,9,3,18,1.5,2.0,0.42,0.67,3,1.0,2.38,1.49
 UAE - Pro League,Al Ain,12,5,3,4,11,8,3,18,1.5,2.0,0.42,0.67,3,0.92,2.38,1.49
 UAE - Pro League,Bani Yas,12,5,3,4,10,8,2,18,1.5,2.0,0.42,0.67,2,0.83,2.38,1.49
+UAE - Pro League,Al Wasl,12,4,5,3,11,10,1,17,1.42,5.0,0.33,0.75,1,0.92,3.03,1.33
 UAE - Pro League,Al Wahda,12,4,5,3,10,9,1,17,1.42,5.0,0.33,0.75,1,0.83,3.03,1.33
-UAE - Pro League,Al Sharjah,12,3,7,2,7,5,2,16,1.33,6.0,0.25,0.83,2,0.58,4.0,1.2
-UAE - Pro League,Al Wasl,11,3,5,3,9,9,0,14,1.27,7.0,0.27,0.73,0,0.82,3.7,1.37
-UAE - Pro League,Al Bataeh,11,2,7,2,7,8,-1,13,1.18,8.0,0.18,0.82,-1,0.64,5.56,1.22
-UAE - Pro League,Ittihad Kalba,11,2,6,3,5,8,-3,12,1.09,9.0,0.18,0.73,-3,0.45,5.56,1.37
+UAE - Pro League,Al Sharjah,12,3,7,2,7,5,2,16,1.33,7.0,0.25,0.83,2,0.58,4.0,1.2
+UAE - Pro League,Ittihad Kalba,12,3,6,3,8,8,0,15,1.25,8.0,0.25,0.75,0,0.67,4.0,1.33
+UAE - Pro League,Al Bataeh,12,2,7,3,7,9,-2,13,1.08,9.0,0.17,0.75,-2,0.58,5.88,1.33
 UAE - Pro League,Al Nasr,12,2,4,6,6,12,-6,10,0.83,10.0,0.17,0.5,-6,0.5,5.88,2.0
 UAE - Pro League,Ajman,12,2,4,6,3,13,-10,10,0.83,10.0,0.17,0.5,-10,0.25,5.88,2.0
 UAE - Pro League,Dibba Al Hisn,12,2,3,7,6,13,-7,9,0.75,12.0,0.17,0.42,-7,0.5,5.88,2.38
@@ -1506,47 +1506,47 @@ Ukraine - Premier League,Vorskla Poltava,13,0,8,5,2,10,-8,8,0.62,15.0,0.0,0.62,-
 Ukraine - Premier League,Chornomorets,15,1,2,12,3,16,-13,5,0.33,16.0,0.07,0.2,-13,0.2,14.29,5.0
 Ukraine - Premier League,Dnipro-1,0,0,0,0,0,0,0,0,,17.0,0.0,0.0,0,0.0,0.0,0.0
 USA - MLS,,0,0,0,0,0,0,0,0,,,0.0,0.0,0,0.0,0.0,0.0
-USA - MLS,Minnesota Utd,6,4,2,0,7,0,7,14,2.33,1.0,0.67,1.0,7,1.17,1.49,1.0
+USA - MLS,Minnesota Utd,7,4,2,1,7,1,6,14,2.0,1.0,0.57,0.86,6,1.0,1.75,1.16
 USA - MLS,New England,7,2,5,0,6,3,3,11,1.57,2.0,0.29,1.0,3,0.86,3.45,1.0
-USA - MLS,Inter Miami,5,2,2,1,5,3,2,8,1.6,3.0,0.4,0.8,2,1.0,2.5,1.25
-USA - MLS,Los Angeles FC,6,2,2,2,7,7,0,8,1.33,3.0,0.33,0.67,0,1.17,3.03,1.49
-USA - MLS,Portland,6,2,2,2,5,6,-1,8,1.33,3.0,0.33,0.67,-1,0.83,3.03,1.49
-USA - MLS,Real Salt Lake,7,2,2,3,5,6,-1,8,1.14,3.0,0.29,0.57,-1,0.71,3.45,1.75
-USA - MLS,Cincinnati,6,2,2,2,4,5,-1,8,1.33,3.0,0.33,0.67,-1,0.67,3.03,1.49
-USA - MLS,SJ Earthquakes,5,2,2,1,4,5,-1,8,1.6,3.0,0.4,0.8,-1,0.8,2.5,1.25
-USA - MLS,Austin,6,2,2,2,2,3,-1,8,1.33,3.0,0.33,0.67,-1,0.33,3.03,1.49
+USA - MLS,Cincinnati,7,3,2,2,5,5,0,11,1.57,2.0,0.43,0.71,0,0.71,2.33,1.41
+USA - MLS,Portland,7,2,3,2,5,6,-1,9,1.29,4.0,0.29,0.71,-1,0.71,3.45,1.41
+USA - MLS,Inter Miami,6,2,2,2,7,6,1,8,1.33,5.0,0.33,0.67,1,1.17,3.03,1.49
+USA - MLS,Los Angeles FC,6,2,2,2,7,7,0,8,1.33,5.0,0.33,0.67,0,1.17,3.03,1.49
+USA - MLS,Real Salt Lake,7,2,2,3,5,6,-1,8,1.14,5.0,0.29,0.57,-1,0.71,3.45,1.75
+USA - MLS,SJ Earthquakes,5,2,2,1,4,5,-1,8,1.6,5.0,0.4,0.8,-1,0.8,2.5,1.25
+USA - MLS,Austin,6,2,2,2,2,3,-1,8,1.33,5.0,0.33,0.67,-1,0.33,3.03,1.49
 USA - MLS,Vancouver,5,1,4,0,2,0,2,7,1.4,10.0,0.2,1.0,2,0.4,5.0,1.0
-USA - MLS,Charlotte,6,1,4,1,3,3,0,7,1.17,10.0,0.17,0.83,0,0.5,5.88,1.2
 USA - MLS,Orlando City,6,1,4,1,2,2,0,7,1.17,10.0,0.17,0.83,0,0.33,5.88,1.2
 USA - MLS,St. Louis City,6,1,4,1,2,2,0,7,1.17,10.0,0.17,0.83,0,0.33,5.88,1.2
-USA - MLS,Seattle,7,2,1,4,3,7,-4,7,1.0,10.0,0.29,0.43,-4,0.43,3.45,2.33
-USA - MLS,Columbus Crew,5,1,3,1,3,3,0,6,1.2,15.0,0.2,0.8,0,0.6,5.0,1.25
-USA - MLS,Nashville SC,5,2,0,3,3,7,-4,6,1.2,15.0,0.4,0.4,-4,0.6,2.5,2.5
-USA - MLS,Houston Dynamo,5,1,2,2,2,3,-1,5,1.0,17.0,0.2,0.6,-1,0.4,5.0,1.67
-USA - MLS,New York City,6,0,5,1,2,3,-1,5,0.83,17.0,0.0,0.83,-1,0.33,0.0,1.2
-USA - MLS,Sporting KC,6,1,2,3,4,6,-2,5,0.83,17.0,0.17,0.5,-2,0.67,5.88,2.0
-USA - MLS,DC United,6,1,2,3,4,7,-3,5,0.83,17.0,0.17,0.5,-3,0.67,5.88,2.0
-USA - MLS,Colorado Rapids,6,1,2,3,3,6,-3,5,0.83,17.0,0.17,0.5,-3,0.5,5.88,2.0
-USA - MLS,Toronto,6,1,2,3,3,6,-3,5,0.83,17.0,0.17,0.5,-3,0.5,5.88,2.0
-USA - MLS,Dallas,7,1,2,4,4,8,-4,5,0.71,17.0,0.14,0.43,-4,0.57,7.14,2.33
-USA - MLS,CF Montreal,9,0,5,4,0,5,-5,5,0.56,17.0,0.0,0.56,-5,0.0,0.0,1.79
-USA - MLS,Chicago Fire,6,1,2,3,6,12,-6,5,0.83,17.0,0.17,0.5,-6,1.0,5.88,2.0
-USA - MLS,Philadelphia,5,0,4,1,2,3,-1,4,0.8,26.0,0.0,0.8,-1,0.4,0.0,1.25
-USA - MLS,New York RB,5,0,4,1,2,4,-2,4,0.8,26.0,0.0,0.8,-2,0.4,0.0,1.25
-USA - MLS,LA Galaxy,7,0,4,3,2,8,-6,4,0.57,26.0,0.0,0.57,-6,0.29,0.0,1.75
+USA - MLS,Charlotte,7,1,4,2,4,5,-1,7,1.0,10.0,0.14,0.71,-1,0.57,7.14,1.41
+USA - MLS,LA Galaxy,8,1,4,3,4,8,-4,7,0.88,10.0,0.12,0.62,-4,0.5,8.33,1.61
+USA - MLS,Seattle,8,2,1,5,3,8,-5,7,0.88,10.0,0.25,0.38,-5,0.38,4.0,2.63
+USA - MLS,Columbus Crew,6,1,3,2,3,4,-1,6,1.0,16.0,0.17,0.67,-1,0.5,5.88,1.49
+USA - MLS,New York City,7,0,6,1,2,3,-1,6,0.86,16.0,0.0,0.86,-1,0.29,0.0,1.16
+USA - MLS,Nashville SC,5,2,0,3,3,7,-4,6,1.2,16.0,0.4,0.4,-4,0.6,2.5,2.5
+USA - MLS,Houston Dynamo,5,1,2,2,2,3,-1,5,1.0,19.0,0.2,0.6,-1,0.4,5.0,1.67
+USA - MLS,DC United,6,1,2,3,4,7,-3,5,0.83,19.0,0.17,0.5,-3,0.67,5.88,2.0
+USA - MLS,Toronto,6,1,2,3,3,6,-3,5,0.83,19.0,0.17,0.5,-3,0.5,5.88,2.0
+USA - MLS,Dallas,7,1,2,4,4,8,-4,5,0.71,19.0,0.14,0.43,-4,0.57,7.14,2.33
+USA - MLS,Sporting KC,7,1,2,4,4,8,-4,5,0.71,19.0,0.14,0.43,-4,0.57,7.14,2.33
+USA - MLS,Colorado Rapids,7,1,2,4,3,7,-4,5,0.71,19.0,0.14,0.43,-4,0.43,7.14,2.33
+USA - MLS,CF Montreal,9,0,5,4,0,5,-5,5,0.56,19.0,0.0,0.56,-5,0.0,0.0,1.79
+USA - MLS,Chicago Fire,6,1,2,3,6,12,-6,5,0.83,19.0,0.17,0.5,-6,1.0,5.88,2.0
+USA - MLS,Philadelphia,5,0,4,1,2,3,-1,4,0.8,27.0,0.0,0.8,-1,0.4,0.0,1.25
+USA - MLS,New York RB,6,0,4,2,2,5,-3,4,0.67,27.0,0.0,0.67,-3,0.33,0.0,1.49
+USA - MLS,Atlanta Utd,6,0,3,3,0,3,-3,3,0.5,29.0,0.0,0.5,-3,0.0,0.0,2.0
 USA - MLS,San Diego,6,0,3,3,2,6,-4,3,0.5,29.0,0.0,0.5,-4,0.33,0.0,2.0
-USA - MLS,Atlanta Utd,5,0,2,3,0,3,-3,2,0.4,30.0,0.0,0.4,-3,0.0,0.0,2.5
 USL Championship,,0,0,0,0,0,0,0,0,,,0.0,0.0,0,0.0,0.0,0.0
-USL Championship,Phoenix Rising,5,2,2,1,4,3,1,8,1.6,1.0,0.4,0.8,1,0.8,2.5,1.25
-USL Championship,Detroit City,6,2,2,2,3,3,0,8,1.33,1.0,0.33,0.67,0,0.5,3.03,1.49
-USL Championship,FC Tulsa,3,2,1,0,4,0,4,7,2.33,3.0,0.67,1.0,4,1.33,1.49,1.0
-USL Championship,Indy Eleven,3,2,1,0,4,0,4,7,2.33,3.0,0.67,1.0,4,1.33,1.49,1.0
-USL Championship,Colorado S.,6,1,4,1,5,4,1,7,1.17,3.0,0.17,0.83,1,0.83,5.88,1.2
-USL Championship,El Paso,5,1,4,0,4,3,1,7,1.4,3.0,0.2,1.0,1,0.8,5.0,1.0
-USL Championship,Oakland Roots,4,2,1,1,4,3,1,7,1.75,3.0,0.5,0.75,1,1.0,2.0,1.33
-USL Championship,Charleston,3,2,0,1,6,2,4,6,2.0,8.0,0.67,0.67,4,2.0,1.49,1.49
-USL Championship,Monterey Bay,6,1,3,2,1,2,-1,6,1.0,8.0,0.17,0.67,-1,0.17,5.88,1.49
-USL Championship,Rhode Island,5,2,0,3,5,7,-2,6,1.2,8.0,0.4,0.4,-2,1.0,2.5,2.5
+USL Championship,Rhode Island,6,3,0,3,6,7,-1,9,1.5,1.0,0.5,0.5,-1,1.0,2.0,2.0
+USL Championship,Phoenix Rising,5,2,2,1,4,3,1,8,1.6,2.0,0.4,0.8,1,0.8,2.5,1.25
+USL Championship,Detroit City,6,2,2,2,3,3,0,8,1.33,2.0,0.33,0.67,0,0.5,3.03,1.49
+USL Championship,FC Tulsa,3,2,1,0,4,0,4,7,2.33,4.0,0.67,1.0,4,1.33,1.49,1.0
+USL Championship,Indy Eleven,3,2,1,0,4,0,4,7,2.33,4.0,0.67,1.0,4,1.33,1.49,1.0
+USL Championship,Colorado S.,6,1,4,1,5,4,1,7,1.17,4.0,0.17,0.83,1,0.83,5.88,1.2
+USL Championship,El Paso,5,1,4,0,4,3,1,7,1.4,4.0,0.2,1.0,1,0.8,5.0,1.0
+USL Championship,Oakland Roots,4,2,1,1,4,3,1,7,1.75,4.0,0.5,0.75,1,1.0,2.0,1.33
+USL Championship,Charleston,3,2,0,1,6,2,4,6,2.0,9.0,0.67,0.67,4,2.0,1.49,1.49
+USL Championship,Monterey Bay,6,1,3,2,1,2,-1,6,1.0,9.0,0.17,0.67,-1,0.17,5.88,1.49
 USL Championship,Sacramento R.,4,1,2,1,2,2,0,5,1.25,11.0,0.25,0.75,0,0.5,4.0,1.33
 USL Championship,Tampa Bay,4,1,2,1,2,2,0,5,1.25,11.0,0.25,0.75,0,0.5,4.0,1.33
 USL Championship,Loudoun Utd,5,1,2,2,3,4,-1,5,1.0,11.0,0.2,0.6,-1,0.6,5.0,1.67
@@ -1564,10 +1564,10 @@ USL Championship,Orange County,3,0,1,2,0,3,-3,1,0.33,23.0,0.0,0.33,-3,0.0,0.0,3.
 USA - USL League One,,0,0,0,0,0,0,0,0,,,0.0,0.0,0,0.0,0.0,0.0
 USA - USL League One,One Knoxville,5,3,1,1,4,2,2,10,2.0,1.0,0.6,0.8,2,0.8,1.67,1.25
 USA - USL League One,Spokane V.,3,3,0,0,5,0,5,9,3.0,2.0,1.0,1.0,5,1.67,1.0,1.0
+USA - USL League One,Naples,3,1,2,0,2,1,1,5,1.67,3.0,0.33,1.0,1,0.67,3.03,1.0
 USA - USL League One,Richmond K.,4,1,2,1,4,4,0,5,1.25,3.0,0.25,0.75,0,1.0,4.0,1.33
 USA - USL League One,Portland Hearts,4,1,2,1,1,1,0,5,1.25,3.0,0.25,0.75,0,0.25,4.0,1.33
 USA - USL League One,Forward Madison,4,1,2,1,1,2,-1,5,1.25,3.0,0.25,0.75,-1,0.25,4.0,1.33
-USA - USL League One,Naples,2,1,1,0,1,0,1,4,2.0,6.0,0.5,1.0,1,0.5,2.0,1.0
 USA - USL League One,Union Omaha,4,0,3,1,1,3,-2,3,0.75,7.0,0.0,0.75,-2,0.25,0.0,1.33
 USA - USL League One,Westchester SC,5,0,3,2,4,7,-3,3,0.6,7.0,0.0,0.6,-3,0.8,0.0,1.67
 USA - USL League One,Greenville,2,0,2,0,2,2,0,2,1.0,9.0,0.0,1.0,0,1.0,0.0,1.0
