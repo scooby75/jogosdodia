@@ -1113,7 +1113,7 @@ with tabs[4]:
                         df_white_flag = df_footystats[
                             (df_footystats['Rodada'] >= 5) &                            
                             (df_footystats['Odd_H_FT'] >= 1.80) & 
-                            (df_footystats['Odd_A_FT'] >= 1.80) & 
+                            (df_footystats['Odd_A_FT'] >= 2.80) & 
                             (df_footystats['XG_Away_Pre'] >= 2.00) 
                             
                         ]
