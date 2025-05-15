@@ -1107,13 +1107,14 @@ with tabs[4]:
                         st.dataframe(df_back_home[['Time', 'Home', 'Away', 'Odd_H_FT', 'Odd_D_FT', 'Odd_A_FT']],
                                     use_container_width=True)
     
-             # 🎯 White Flag
+             # 💰 Lay Goleada
                     with col5:
-                        st.info("🏳️ White Flag")
+                        st.info("💰 Lay Goleada")
                         df_white_flag = df_footystats[
                             (df_footystats['Rodada'] >= 5) &                            
-                            (df_footystats['Odd_H_FT'] <= 1.50) & 
-                            (df_footystats['XG_Home_Pre'] >= 1.80) 
+                            (df_footystats['Odd_H_FT'] >= 1.80) & 
+                            (df_footystats['Odd_A_FT'] >= 1.80) & 
+                            (df_footystats['XG_Away_Pre'] >= 2.00) 
                             
                         ]
                         st.metric("Jogos encontrados", len(df_white_flag))
