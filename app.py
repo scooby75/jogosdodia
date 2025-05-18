@@ -503,7 +503,7 @@ def display_analysis_tab(data, home_team, away_team):
         with col1:
             st.markdown("### 1X2 (Resultado Final)")
             
-            if (ppg_home >= 1.8 and (ppg_home - ppg_away) >= 1 and rankings_validos and rank_diff >= 6):
+            if (ppg_home >= 1.8 and (ppg_home - ppg_away) >= 1 and rankings_validos and rank_diff >= 5):
                 st.success("**✅ Aposta sugerida:** Vitória do mandante (1)")
                 st.markdown(f"""
                 📊 **Justificativa:**  
@@ -511,7 +511,7 @@ def display_analysis_tab(data, home_team, away_team):
                 • Superioridade clara sobre o visitante.  
                 • Time melhor posicionado no ranking (posição {rank_home} vs {rank_away}).  
                 """)
-            elif (ppg_away >= 1.8 and (ppg_away - ppg_home) >= 1 and rankings_validos and rank_diff <= -6):
+            elif (ppg_away >= 1.8 and (ppg_away - ppg_home) >= 1 and rankings_validos and rank_diff <= -5):
                 st.success("**✅ Aposta sugerida:** Vitória do visitante (2)")
                 st.markdown(f"""
                 📊 **Justificativa:**  
@@ -556,7 +556,7 @@ def display_analysis_tab(data, home_team, away_team):
             st.markdown("### Handicap Asiático (HA)")
             diff_ppg = ppg_home - ppg_away
             
-            if (ppg_home >= 1.8 and diff_ppg >= 1 and rankings_validos and rank_diff >= 6):
+            if (ppg_home >= 1.8 and diff_ppg >= 1 and rankings_validos and rank_diff >= 5):
                 st.success("**✅ HA -1.0 para o mandante**")
                 st.markdown(f"""
                 📊 **Justificativa:**  
@@ -572,7 +572,7 @@ def display_analysis_tab(data, home_team, away_team):
                 • Vantagem moderada jogando em casa.  
                 • Vantagem no ranking (posição {rank_home} vs {rank_away}).  
                 """)
-            elif (ppg_away >= 1.8 and -diff_ppg >= 1 and rankings_validos and rank_diff <= -6):
+            elif (ppg_away >= 1.8 and -diff_ppg >= 1 and rankings_validos and rank_diff <= -5):
                 st.success("**✅ HA +1.0 para o visitante**")
                 st.markdown(f"""
                 📊 **Justificativa:**  
@@ -636,7 +636,7 @@ def display_analysis_tab(data, home_team, away_team):
             st.markdown("### Over/Under 25FT")
             total_avg_goals = gf_avg_home + gf_avg_away
             
-            if ((ppg_home >= 1.8 or ppg_away >= 1.8) and rankings_validos and abs(rank_diff) >= 6 and total_avg_goals >= 2.8):
+            if ((ppg_home >= 1.8 or ppg_away >= 1.8) and rankings_validos and abs(rank_diff) >= 5 and total_avg_goals >= 2.8):
                 st.success(f"**✅ Over 2.5 Gols (Média: {total_avg_goals:.2f})**")
                 st.markdown("""
                 📊 **Justificativa:**  
@@ -794,7 +794,7 @@ def display_ht_analysis_tab(data, home_team, away_team):
         with col1:
             st.markdown("### 1X2 HT (Resultado no Intervalo)")
             
-            if (ppg_ht_home >= 1.5 and (ppg_ht_home - ppg_ht_away) >= 0.8 and rank_diff >= 6):
+            if (ppg_ht_home >= 1.5 and (ppg_ht_home - ppg_ht_away) >= 0.8 and rank_diff >= 5):
                 st.success("**✅ Aposta sugerida:** Vitória do mandante no 1º tempo (1)")
                 st.markdown(f"""
                 📊 **Justificativa:**  
@@ -802,7 +802,7 @@ def display_ht_analysis_tab(data, home_team, away_team):
                 • Superioridade clara sobre o visitante no 1º tempo.  
                 • Time melhor posicionado no ranking HT (posição {rank_home} vs {rank_away}).  
                 """)
-            elif (ppg_ht_away >= 1.5 and (ppg_ht_away - ppg_ht_home) >= 0.8 and rank_diff <= -6):
+            elif (ppg_ht_away >= 1.5 and (ppg_ht_away - ppg_ht_home) >= 0.8 and rank_diff <= -5):
                 st.success("**✅ Aposta sugerida:** Vitória do visitante no 1º tempo (2)")
                 st.markdown(f"""
                 📊 **Justificativa:**  
