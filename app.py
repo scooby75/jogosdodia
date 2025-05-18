@@ -875,65 +875,65 @@ def safe_convert_percentage(value):
         return 0.0
 
 # Tendências adicionais HT
-col1, col2 = st.columns(2)
-
-with col1:
-    st.markdown("### Primeiro a Marcar (HT)")
-    
-    if not fg_home.empty and not fg_away.empty:
-        home_fg_percent = safe_convert_percentage(fg_home.iloc[0]['First_Gol'])
-        away_fg_percent = safe_convert_percentage(fg_away.iloc[0]['First_Gol'])
+        col1, col2 = st.columns(2)
         
-        if home_fg_percent >= 60 and away_fg_percent <= 40:
-            st.success(f"**✅ {home_team} marca primeiro (HT)**")
-            st.markdown(f"""
-            📊 **Justificativa:**  
-            • Casa: {home_fg_percent}% de marcar primeiro  
-            • Visitante: {away_fg_percent}% de marcar primeiro  
-            • Alta vantagem para o mandante abrir o placar  
-            """)
-        elif away_fg_percent >= 60 and home_fg_percent <= 40:
-            st.success(f"**✅ {away_team} marca primeiro (HT)**")
-            st.markdown(f"""
-            📊 **Justificativa:**  
-            • Visitante: {away_fg_percent}% de marcar primeiro  
-            • Casa: {home_fg_percent}% de marcar primeiro  
-            • Alta vantagem para o visitante abrir o placar  
-            """)
-        else:
-            st.info("**🔍 Sem vantagem clara para quem marca primeiro**")
-    else:
-        st.warning("Dados de primeiro gol não disponíveis")
-
-with col2:
-    st.markdown("### Tempo do Primeiro Gol")
-    
-    if not gm_home.empty and not gm_away.empty:
-        avg_min_home = gm_home.iloc[0]['AVG_min_scored']
-        avg_min_away = gm_away.iloc[0]['AVG_min_scored']
-        media_avg_min = (avg_min_home + avg_min_away) / 2
+        with col1:
+            st.markdown("### Primeiro a Marcar (HT)")
+            
+            if not fg_home.empty and not fg_away.empty:
+                home_fg_percent = safe_convert_percentage(fg_home.iloc[0]['First_Gol'])
+                away_fg_percent = safe_convert_percentage(fg_away.iloc[0]['First_Gol'])
+                
+                if home_fg_percent >= 60 and away_fg_percent <= 40:
+                    st.success(f"**✅ {home_team} marca primeiro (HT)**")
+                    st.markdown(f"""
+                    📊 **Justificativa:**  
+                    • Casa: {home_fg_percent}% de marcar primeiro  
+                    • Visitante: {away_fg_percent}% de marcar primeiro  
+                    • Alta vantagem para o mandante abrir o placar  
+                    """)
+                elif away_fg_percent >= 60 and home_fg_percent <= 40:
+                    st.success(f"**✅ {away_team} marca primeiro (HT)**")
+                    st.markdown(f"""
+                    📊 **Justificativa:**  
+                    • Visitante: {away_fg_percent}% de marcar primeiro  
+                    • Casa: {home_fg_percent}% de marcar primeiro  
+                    • Alta vantagem para o visitante abrir o placar  
+                    """)
+                else:
+                    st.info("**🔍 Sem vantagem clara para quem marca primeiro**")
+            else:
+                st.warning("Dados de primeiro gol não disponíveis")
         
-        if media_avg_min <= 30:
-            st.success(f"**✅ Primeiro gol antes de 30' (Média: {media_avg_min:.1f}')**")
-            st.markdown(f"""
-            📊 **Justificativa:**  
-            • {home_team}: {avg_min_home:.1f}' (média)  
-            • {away_team}: {avg_min_away:.1f}' (média)  
-            • Tendência de gol precoce no jogo  
-            """)
-        elif media_avg_min >= 40:
-            st.warning(f"**⚠️ Primeiro gol após 40' (Média: {media_avg_min:.1f}')**")
-            st.markdown(f"""
-            📊 **Justificativa:**  
-            • {home_team}: {avg_min_home:.1f}' (média)  
-            • {away_team}: {avg_min_away:.1f}' (média)  
-            • Tendência de gol tardio no jogo  
-            """)
-        else:
-            st.info(f"**🔍 Sem tendência clara (Média: {media_avg_min:.1f}')**")
-    else:
-        st.warning("Dados de tempo médio do primeiro gol não disponíveis")
-
+        with col2:
+            st.markdown("### Tempo do Primeiro Gol")
+            
+            if not gm_home.empty and not gm_away.empty:
+                avg_min_home = gm_home.iloc[0]['AVG_min_scored']
+                avg_min_away = gm_away.iloc[0]['AVG_min_scored']
+                media_avg_min = (avg_min_home + avg_min_away) / 2
+                
+                if media_avg_min <= 30:
+                    st.success(f"**✅ Primeiro gol antes de 30' (Média: {media_avg_min:.1f}')**")
+                    st.markdown(f"""
+                    📊 **Justificativa:**  
+                    • {home_team}: {avg_min_home:.1f}' (média)  
+                    • {away_team}: {avg_min_away:.1f}' (média)  
+                    • Tendência de gol precoce no jogo  
+                    """)
+                elif media_avg_min >= 40:
+                    st.warning(f"**⚠️ Primeiro gol após 40' (Média: {media_avg_min:.1f}')**")
+                    st.markdown(f"""
+                    📊 **Justificativa:**  
+                    • {home_team}: {avg_min_home:.1f}' (média)  
+                    • {away_team}: {avg_min_away:.1f}' (média)  
+                    • Tendência de gol tardio no jogo  
+                    """)
+                else:
+                    st.info(f"**🔍 Sem tendência clara (Média: {media_avg_min:.1f}')**")
+            else:
+                st.warning("Dados de tempo médio do primeiro gol não disponíveis")
+        
 
 # ----------------------------
 # LAYOUT PRINCIPAL
