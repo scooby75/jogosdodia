@@ -257,40 +257,40 @@ def safe_convert_percentage(value):
     except (ValueError, TypeError):
         return 0.0
 
-if is_home:
-    avg_raw = row.get('Avg.', '0')
-    try:
-        avg_goals = float(str(avg_raw).replace(',', '.')) if avg_raw not in [None, ''] else 0.0
-    except ValueError:
-        avg_goals = 0.0
-
-    goals_pct = f"{int(round(safe_convert_percentage(row.get('% Com Gols', '0'))))}%"
-    no_goals_pct = f"{int(round(safe_convert_percentage(row.get('% Sem Gols', '0'))))}%"
-
-    freq_dict = {
-        "0": row.get('0', 0),
-        "1": row.get('1', 0),
-        "2": row.get('2', 0),
-        "3": row.get('3', 0),
-        "4": row.get('4+', 0)
-    }
-else:
-    avg_raw = row.get('Avg..1', '0')
-    try:
-        avg_goals = float(str(avg_raw).replace(',', '.')) if avg_raw not in [None, ''] else 0.0
-    except ValueError:
-        avg_goals = 0.0
-
-    goals_pct = f"{int(round(safe_convert_percentage(row.get('% Com Gols', '0'))))}%"
-    no_goals_pct = f"{int(round(safe_convert_percentage(row.get('% Sem Gols', '0'))))}%"
-
-    freq_dict = {
-        "0": row.get('0.1', 0),
-        "1": row.get('1.1', 0),
-        "2": row.get('2.1', 0),
-        "3": row.get('3.1', 0),
-        "4": row.get('4+.1', 0)
-    }
+        if is_home:
+            avg_raw = row.get('Avg.', '0')
+            try:
+                avg_goals = float(str(avg_raw).replace(',', '.')) if avg_raw not in [None, ''] else 0.0
+            except ValueError:
+                avg_goals = 0.0
+        
+            goals_pct = f"{int(round(safe_convert_percentage(row.get('% Com Gols', '0'))))}%"
+            no_goals_pct = f"{int(round(safe_convert_percentage(row.get('% Sem Gols', '0'))))}%"
+        
+            freq_dict = {
+                "0": row.get('0', 0),
+                "1": row.get('1', 0),
+                "2": row.get('2', 0),
+                "3": row.get('3', 0),
+                "4": row.get('4+', 0)
+            }
+        else:
+            avg_raw = row.get('Avg..1', '0')
+            try:
+                avg_goals = float(str(avg_raw).replace(',', '.')) if avg_raw not in [None, ''] else 0.0
+            except ValueError:
+                avg_goals = 0.0
+        
+            goals_pct = f"{int(round(safe_convert_percentage(row.get('% Com Gols', '0'))))}%"
+            no_goals_pct = f"{int(round(safe_convert_percentage(row.get('% Sem Gols', '0'))))}%"
+        
+            freq_dict = {
+                "0": row.get('0.1', 0),
+                "1": row.get('1.1', 0),
+                "2": row.get('2.1', 0),
+                "3": row.get('3.1', 0),
+                "4": row.get('4+.1', 0)
+            }
           
         # Determina emojis baseado no contexto
         if is_home:
