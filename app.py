@@ -249,34 +249,42 @@ def display_ht_frequency(team_name, ht_data, is_home=True):
     if not ht_data.empty:
         row = ht_data.iloc[0]
         
-        # Extrai valores com base no tipo de time (home/away)
+# Extrai valores com base no tipo de time (home/away)
         if is_home:
-            # Home columns: 4+	3	2	1	0	Avg.	Team_Home...
-            avg_goals = float(str(row['Avg.']).replace(',', '.')) if row['Avg.'] else 0.0
+            avg_raw = row.get('Avg.', '0')
+            try:
+                avg_goals = float(str(avg_raw).replace(',', '.')) if avg_raw not in [None, ''] else 0.0
+            except ValueError:
+                avg_goals = 0.0
+        
             goals_pct = f"{int(round(convert_percentage(row.get('% Com Gols', '0'))))}%"
             no_goals_pct = f"{int(round(convert_percentage(row.get('% Sem Gols', '0'))))}%"
-            
+        
             freq_dict = {
-                "0": row['0'],
-                "1": row['1'],
-                "2": row['2'],
-                "3": row['3'],
-                "4": row['4+']  # Note que usamos 4+ aqui
+                "0": row.get('0', 0),
+                "1": row.get('1', 0),
+                "2": row.get('2', 0),
+                "3": row.get('3', 0),
+                "4": row.get('4+', 0)
             }
         else:
-            # Away columns: Team_Away	Avg..1	0.1	1.1	2.1	3.1	4+.1...
-            avg_goals = float(str(row['Avg..1']).replace(',', '.')) if row['Avg..1'] else 0.0
+            avg_raw = row.get('Avg..1', '0')
+            try:
+                avg_goals = float(str(avg_raw).replace(',', '.')) if avg_raw not in [None, ''] else 0.0
+            except ValueError:
+                avg_goals = 0.0
+        
             goals_pct = f"{int(round(convert_percentage(row.get('% Com Gols', '0'))))}%"
             no_goals_pct = f"{int(round(convert_percentage(row.get('% Sem Gols', '0'))))}%"
-            
-            freq_dict = {
-                "0": row['0.1'],
-                "1": row['1.1'],
-                "2": row['2.1'],
-                "3": row['3.1'],
-                "4": row['4+.1']  # Note que usamos 4+.1 aqui
-            }
         
+            freq_dict = {
+                "0": row.get('0.1', 0),
+                "1": row.get('1.1', 0),
+                "2": row.get('2.1', 0),
+                "3": row.get('3.1', 0),
+                "4": row.get('4+.1', 0)
+            }
+          
         # Determina emojis baseado no contexto
         if is_home:
             avg_emoji = "🟩" if avg_goals >= 0.60 else "🟥"
