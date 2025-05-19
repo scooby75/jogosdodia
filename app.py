@@ -8,81 +8,9 @@ import requests
 from io import StringIO
 import hashlib
 
+
 # Configuração da página
 st.set_page_config(page_title="Football Stats", layout="wide")
-
-# ----------------------------
-# SISTEMA DE AUTENTICAÇÃO
-# ----------------------------
-
-def make_hashes(password):
-    return hashlib.sha256(str.encode(password)).hexdigest()
-
-def check_hashes(password, hashed_text):
-    if make_hashes(password) == hashed_text:
-        return hashed_text
-    return False
-
-# Dados de usuário (em um sistema real, isso viria de um banco de dados seguro)
-USER_CREDENTIALS = {
-    "admin": {
-        "password": make_hashes("admin123"),
-        "name": "Administrador",
-        "access_level": "full"
-    },
-    "user": {
-        "password": make_hashes("user123"),
-        "name": "Usuário Padrão",
-        "access_level": "basic"
-    }
-}
-
-def login():
-    """Tela de login"""
-    st.title("🔒 Acesso ao Football Stats")
-    
-    with st.form("login_form"):
-        username = st.text_input("Usuário")
-        password = st.text_input("Senha", type="password")
-        submitted = st.form_submit_button("Login")
-        
-        if submitted:
-            if username in USER_CREDENTIALS:
-                if check_hashes(password, USER_CREDENTIALS[username]["password"]):
-                    st.session_state["logged_in"] = True
-                    st.session_state["username"] = username
-                    st.session_state["user_info"] = USER_CREDENTIALS[username]
-                    st.success(f"Bem-vindo, {USER_CREDENTIALS[username]['name']}!")
-                    st.experimental_rerun()
-                else:
-                    st.error("Senha incorreta")
-            else:
-                st.error("Usuário não encontrado")
-
-def logout():
-    """Função de logout"""
-    st.session_state["logged_in"] = False
-    st.session_state["username"] = None
-    st.session_state["user_info"] = None
-    st.success("Você foi desconectado com sucesso!")
-    st.experimental_rerun()
-
-def show_auth():
-    """Mostra a interface de autenticação"""
-    if "logged_in" not in st.session_state:
-        st.session_state["logged_in"] = False
-    
-    if not st.session_state["logged_in"]:
-        login()
-        st.stop()
-    else:
-        # Mostrar botão de logout na sidebar
-        st.sidebar.markdown(f"**Usuário:** {st.session_state['user_info']['name']}")
-        if st.sidebar.button("🚪 Logout"):
-            logout()
-
-# Configuração da página
-#st.set_page_config(page_title="Football Stats", layout="wide")
 
 # ----------------------------
 # CONSTANTES E CONFIGURAÇÕES
