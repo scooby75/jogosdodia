@@ -477,7 +477,7 @@ def display_analysis_tab(data, home_team, away_team):
         analise_home = f"""
         ### 🏠 {home_team} (Casa)
         Estamos na **{rodada_home}ª rodada** da competição. 
-        O time da casa **{home_team}** apresenta um **{desempenho_home} desempenho** como mandante, com uma frequência de **{gf_avg_home:.2f} gols** por partida e uma média de pontos por jogo (PPG) de **{ppg_home:.2f}**. 
+        O time da casa **{home_team}** apresenta um **{desempenho_home} desempenho** como mandante, com uma frequência de **{gf_avg_home:.0f} gols** por partida e uma média de pontos por jogo (PPG) de **{ppg_home:.2f}**. 
         """
         
         if not home_fg_data.empty:
@@ -488,7 +488,7 @@ def display_analysis_tab(data, home_team, away_team):
         analise_away = f"""
         ### ✈️ {away_team} (Visitante)
         Estamos na **{rodada_away}ª rodada** da competição. 
-        O time visitante **{away_team}** tem mostrado um desempenho **{desempenho_away}** como visitante, com média de **{gf_avg_away:.2f} gols** por partida e PPG de **{ppg_away:.2f}**. 
+        O time visitante **{away_team}** tem mostrado um desempenho **{desempenho_away}** como visitante, com média de **{gf_avg_away:.0f} gols** por partida e PPG de **{ppg_away:.2f}**. 
         """
         
         if not away_fg_data.empty:
@@ -767,14 +767,14 @@ def display_ht_analysis_tab(data, home_team, away_team):
             
         if not gm_home.empty:
             avg_min_home = gm_home.iloc[0]['AVG_min_scored']
-            analise_ht_home += f"o tempo médio para marcar o primeiro gol é de **{avg_min_home:.1f} minutos**. "
+            analise_ht_home += f"o tempo médio para marcar o primeiro gol é de **{avg_min_home:.0f} minutos**. "
             
         analise_ht_home += f"Seu ranking no 1º tempo como mandante é **{rank_home}**, indicando {vantagem_ht_home}."
 
         analise_ht_away = f"""
         ### ✈️ {away_team} (Visitante - 1º Tempo)
         O time visitante **{away_team}** tem mostrado um desempenho **{desempenho_ht_away}** no primeiro tempo como visitante, 
-        com média de **{gf_avg_ht_away:.2f} gols** no 1º tempo e PPG HT de **{ppg_ht_away:.2f}**. 
+        com média de **{gf_avg_ht_away:.0f} gols** no 1º tempo e PPG HT de **{ppg_ht_away:.2f}**. 
         """
         
         if not fg_away.empty:
