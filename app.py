@@ -783,7 +783,7 @@ def display_ht_analysis_tab(data, home_team, away_team):
             
         if not gm_away.empty:
             avg_min_away = gm_away.iloc[0]['AVG_min_scored']
-            analise_ht_away += f"o tempo médio para marcar o primeiro gol é de **{avg_min_away:.1f} minutos**. "
+            analise_ht_away += f"o tempo médio para marcar o primeiro gol é de **{avg_min_away:.0f} minutos**. "
             
         analise_ht_away += f"Seu ranking no 1º tempo como visitante é **{rank_away}**, com {desempenho_ht_fora}."
 
@@ -916,23 +916,23 @@ def safe_convert_percentage(value):
                 media_avg_min = (avg_min_home + avg_min_away) / 2
                 
                 if media_avg_min <= 30:
-                    st.success(f"**✅ Primeiro gol antes de 30' (Média: {media_avg_min:.1f}')**")
+                    st.success(f"**✅ Primeiro gol antes de 30' (Média: {media_avg_min:.0f}')**")
                     st.markdown(f"""
                     📊 **Justificativa:**  
-                    • {home_team}: {avg_min_home:.1f}' (média)  
-                    • {away_team}: {avg_min_away:.1f}' (média)  
+                    • {home_team}: {avg_min_home:.0f}' (média)  
+                    • {away_team}: {avg_min_away:.0f}' (média)  
                     • Tendência de gol precoce no jogo  
                     """)
                 elif media_avg_min >= 40:
-                    st.warning(f"**⚠️ Primeiro gol após 40' (Média: {media_avg_min:.1f}')**")
+                    st.warning(f"**⚠️ Primeiro gol após 40' (Média: {media_avg_min:.0f}')**")
                     st.markdown(f"""
                     📊 **Justificativa:**  
-                    • {home_team}: {avg_min_home:.1f}' (média)  
-                    • {away_team}: {avg_min_away:.1f}' (média)  
+                    • {home_team}: {avg_min_home:.0f}' (média)  
+                    • {away_team}: {avg_min_away:.0f}' (média)  
                     • Tendência de gol tardio no jogo  
                     """)
                 else:
-                    st.info(f"**🔍 Sem tendência clara (Média: {media_avg_min:.1f}')**")
+                    st.info(f"**🔍 Sem tendência clara (Média: {media_avg_min:.0f}')**")
             else:
                 st.warning("Dados de tempo médio do primeiro gol não disponíveis")
         
