@@ -758,7 +758,7 @@ def display_ht_analysis_tab(data, home_team, away_team):
         analise_ht_home = f"""
         ### 🏠 {home_team} (Casa - 1º Tempo)
         O time da casa **{home_team}** apresenta um **{desempenho_ht_home} desempenho** no primeiro tempo como mandante, 
-        com média de **{gf_avg_ht_home:.2f} gols** no 1º tempo e PPG HT de **{ppg_ht_home:.2f}**. 
+        com frequência de **{gf_avg_ht_home:.2f} gols** no 1º tempo e PPG HT de **{ppg_ht_home:.2f}**. 
         """
         
         if not fg_home.empty:
@@ -774,7 +774,7 @@ def display_ht_analysis_tab(data, home_team, away_team):
         analise_ht_away = f"""
         ### ✈️ {away_team} (Visitante - 1º Tempo)
         O time visitante **{away_team}** tem mostrado um desempenho **{desempenho_ht_away}** no primeiro tempo como visitante, 
-        com média de **{gf_avg_ht_away:.0f} gols** no 1º tempo e PPG HT de **{ppg_ht_away:.2f}**. 
+        com frequência de **{gf_avg_ht_away:.0f} gols** no 1º tempo e PPG HT de **{ppg_ht_away:.2f}**. 
         """
         
         if not fg_away.empty:
