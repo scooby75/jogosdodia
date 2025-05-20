@@ -769,7 +769,7 @@ def display_ht_analysis_tab(data, home_team, away_team):
             avg_min_home = gm_home.iloc[0]['AVG_min_scored']
             analise_ht_home += f"o tempo médio para marcar o primeiro gol é de **{avg_min_home:.0f} minutos**. "
             
-        analise_ht_home += f"Seu ranking no 1º tempo como mandante é **{rank_home}**, indicando {vantagem_ht_home}."
+        analise_ht_home += f"Seu ranking no 1º tempo como mandante é **{rank_home:.0f}**, indicando {vantagem_ht_home}."
 
         analise_ht_away = f"""
         ### ✈️ {away_team} (Visitante - 1º Tempo)
@@ -785,7 +785,7 @@ def display_ht_analysis_tab(data, home_team, away_team):
             avg_min_away = gm_away.iloc[0]['AVG_min_scored']
             analise_ht_away += f"o tempo médio para marcar o primeiro gol é de **{avg_min_away:.0f} minutos**. "
             
-        analise_ht_away += f"Seu ranking no 1º tempo como visitante é **{rank_away}**, com {desempenho_ht_fora}."
+        analise_ht_away += f"Seu ranking no 1º tempo como visitante é **{rank_away:.0f}**, com {desempenho_ht_fora}."
 
         st.markdown(analise_ht_home)
         st.markdown(analise_ht_away)
