@@ -1132,13 +1132,14 @@ with tabs[4]:
                         st.dataframe(df_back_home[['Time', 'Home', 'Away', 'Odd_H_FT', 'Odd_D_FT', 'Odd_A_FT']],
                                     use_container_width=True)
     
-             # 💰 Lay Goleada
+             # 💰 HA +1
                     with col5:
-                        st.info("💰 Lay Goleada")
+                        st.info("💰 HA +1")
                         df_white_flag = df_footystats[                                                     
                             (df_footystats['Rodada'] >= 5) &
-                            (df_footystats['Odd_H_FT'] >= 1.8) & (df_footystats['Odd_A_FT'] >= 2.8) &
-                            (df_footystats['XG_Away_Pre'] <= 2)
+                            (df_footystats['Odd_H_FT'] >= 1.6) & (df_footystats['Odd_H_FT'] <= 2.4) &
+                            (df_footystats['Odd_D_FT'] >= 3.5) & (df_footystats['Odd_D_FT'] <= 5.5) &
+                            (df_footystats['PPG_Home'] <= 1.90) & (df_footystats['PPG_Away'] >= 1.30)
                             
                         ]
                         st.metric("Jogos encontrados", len(df_white_flag))
