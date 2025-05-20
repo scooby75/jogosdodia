@@ -477,7 +477,7 @@ def display_analysis_tab(data, home_team, away_team):
         analise_home = f"""
         ### 🏠 {home_team} (Casa)
         Estamos na **{rodada_home}ª rodada** da competição. 
-        O time da casa **{home_team}** apresenta um **{desempenho_home} desempenho** como mandante, com uma frequência de **{gf_avg_home:.0f} gols** por partida e uma média de pontos por jogo (PPG) de **{ppg_home:.2f}**. 
+        O time da casa **{home_team}** apresenta um **{desempenho_home} desempenho** como mandante, com uma frequência de **{gf_avg_home:.2f} gols** por partida e uma média de pontos por jogo (PPG) de **{ppg_home:.2f}**. 
         """
         
         if not home_fg_data.empty:
@@ -488,7 +488,7 @@ def display_analysis_tab(data, home_team, away_team):
         analise_away = f"""
         ### ✈️ {away_team} (Visitante)
         Estamos na **{rodada_away}ª rodada** da competição. 
-        O time visitante **{away_team}** tem mostrado um desempenho **{desempenho_away}** como visitante, com média de **{gf_avg_away:.0f} gols** por partida e PPG de **{ppg_away:.2f}**. 
+        O time visitante **{away_team}** tem mostrado um desempenho **{desempenho_away}** como visitante, com uma frequência de **{gf_avg_away:.2f} gols** por partida e PPG de **{ppg_away:.2f}**. 
         """
         
         if not away_fg_data.empty:
