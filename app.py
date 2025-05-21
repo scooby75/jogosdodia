@@ -373,7 +373,7 @@ def display_ht_tab(data, home_team, away_team):
             st.metric("⚽ 1º Gol", fg_away.iloc[0]['First_Gol'])
         
         if not gm_away.empty:
-            st.metric("⏱️ Tempo Médio 1º Gol", round(gm_away['AVG_min_scored'].values[0], 1))
+            st.metric("⏱️ Tempo Médio 1º Gol", round(gm_away['AVG_min_scored'].values[0]))
 
 def display_analysis_tab(data, home_team, away_team):
     """Exibe a aba de análise detalhada"""
