@@ -50,8 +50,8 @@ DATA_URLS = {
 }
 
 COLUMN_NAMES = {
-    "home": ["Liga", "PIH", "PIH_HA", "GD_Home", "PPG_Home", "GF_AVG_Home", "Odd_Justa_MO", "Odd_Justa_HA", "Rank_Home"],
-    "away": ["Liga", "PIA", "PIA_HA", "GD_Away", "PPG_Away", "GF_AVG_Away", "Odd_Justa_MO", "Odd_Justa_HA", "Rank_Away"],
+    "home": ["Liga", "PIH", "PIH_HA", "GD_Home", "PPG_Home", "GF_AVG_Home", "GA_AVG_Home", "Odd_Justa_MO", "Odd_Justa_HA", "Rank_Home"],
+    "away": ["Liga", "PIA", "PIA_HA", "GD_Away", "PPG_Away", "GF_AVG_Away", "GA_AVG_Away", "Odd_Justa_MO", "Odd_Justa_HA", "Rank_Away"],
     "overall": ["Liga", "PIO", "PIO_HA", "GD_Overall", "PPG_Overall", "GF_AVG_Overall", "Odd_Justa_MO", "Odd_Justa_HA", "Rank_Overall"]
 }
 
@@ -190,7 +190,8 @@ def display_team_performance(team_name, team_data, is_home=True):
         cols = st.columns(6)
         metrics = [
             ("PIH" if is_home else "PIA", row.get("PIH" if is_home else "PIA", "N/A")),
-            ("Média Gols", row.get("GF_AVG_Home" if is_home else "GF_AVG_Away", "N/A")),
+            ("Média Gols Marcado", row.get("GF_AVG_Home" if is_home else "GF_AVG_Away", "N/A")),
+            ("Média Gols Sofrido", row.get("GA_AVG_Home" if is_home else "GA_AVG_Away", "N/A")),
             ("Saldo de Gols", row.get("GD_Home" if is_home else "GD_Away", "N/A")),            
             (f"PPG {'Casa' if is_home else 'Fora'}", row.get("PPG_Home" if is_home else "PPG_Away", "N/A")),
             ("Odd Justa", row.get("Odd_Justa_MO", "N/A")),
@@ -346,7 +347,8 @@ def display_ht_tab(data, home_team, away_team):
         if not home_data.empty:
             st.metric("📈 PIH", round(home_data['PIH'].values[0], 2))
             st.metric("🏠 PPG HT", round(home_data['PPG_HT_Home'].values[0], 2))
-            st.metric("📊 Média Gols", round(home_data['GF_AVG_Home'].values[0], 2))
+            st.metric("📊 Média Gols Marcado", round(home_data['GF_AVG_Home'].values[0], 2))
+            st.metric("📊 Média Gols Sofrido", round(home_data['GA_AVG_Home'].values[0], 2))
             st.metric("📈 Saldo de Gols", round(home_data['GD_Home'].values[0], 2))
             st.metric("🏆 Rank", int(home_data['Rank_Home'].values[0]))
         
@@ -362,7 +364,8 @@ def display_ht_tab(data, home_team, away_team):
         if not away_data.empty:
             st.metric("📉 PIA", round(away_data['PIA'].values[0], 2))
             st.metric("🛫 PPG HT", round(away_data['PPG_HT_Away'].values[0], 2))
-            st.metric("📊 Média de Gols", round(away_data['GF_AVG_Away'].values[0], 2))
+            st.metric("📊 Média de Gols Marcado", round(away_data['GF_AVG_Away'].values[0], 2))
+            st.metric("📊 Média de Gols Sofrido", round(away_data['GA_AVG_Away'].values[0], 2))
             st.metric("📉 Saldo de Gols", round(away_data['GD_Away'].values[0], 2))
             st.metric("🏆 Rank", int(away_data['Rank_Away'].values[0]))
         
@@ -390,6 +393,8 @@ def display_analysis_tab(data, home_team, away_team):
         ppg_away = away_row.get("PPG_Away", 0)
         gf_avg_home = home_row.get("GF_AVG_Home", 0)
         gf_avg_away = away_row.get("GF_AVG_Away", 0)
+        ga_avg_home = home_row.get("GA_AVG_Home", 0)
+        ga_avg_away = away_row.get("GA_AVG_Away", 0)
         odd_justa_home = home_row.get('Odd_Justa_MO', 'N/A')
         odd_justa_away = away_row.get('Odd_Justa_MO', 'N/A')
         
@@ -435,6 +440,8 @@ def display_analysis_tab(data, home_team, away_team):
         ppg_away = away_row.get("PPG_Away", 0)
         gf_avg_home = home_row.get("GF_AVG_Home", 0)
         gf_avg_away = away_row.get("GF_AVG_Away", 0)
+        ga_avg_home = home_row.get("GA_AVG_Home", 0)
+        ga_avg_away = away_row.get("GA_AVG_Away", 0)
         odd_justa_home = home_row.get('Odd_Justa_MO', 'N/A')
         odd_justa_away = away_row.get('Odd_Justa_MO', 'N/A')
         
