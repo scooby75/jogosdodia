@@ -1111,14 +1111,14 @@ with tabs[4]:
                     st.dataframe(df_lay_visit[['Time', 'Home', 'Away', 'Odd_H_FT', 'Odd_D_FT', 'Odd_A_FT']],
                                 use_container_width=True)
 
-            # 💣 Lay 0x1 HT
+            # 💎 Back Casa
             with col3:
-                st.info("💣 Lay 0x1 HT")
+                st.info("💎 Back Home")
                 df_lay_ht = df_footystats[
                     (df_footystats['Rodada'] >= 5) &
-                    (df_footystats['Odd_H_FT'] <= 1.8) &
-                    (df_footystats['Odd_A_HT'] >= 4.0) &
-                    (df_footystats['PPG_Home'] >= 1.8)
+                    (df_footystats['Odd_H_FT'] >= 1.25) & (df_footystats['Odd_H_FT'] <= 1.9) &
+                    (df_footystats['PPG_Home'] >= 0.50) &
+                    (df_footystats['PPG_Home'] >= 1.50)
                 ]
                 st.metric("Jogos encontrados", len(df_lay_ht))
                 if not df_lay_ht.empty:
