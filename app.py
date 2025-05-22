@@ -1117,7 +1117,7 @@ with tabs[4]:
                 df_lay_ht = df_footystats[
                     (df_footystats['Rodada'] >= 5) &
                     (df_footystats['Odd_H_FT'] >= 1.25) & (df_footystats['Odd_H_FT'] <= 1.9) &
-                    (df_footystats['PPG_Home'] >= 0.50) &
+                    (df_footystats['PPG_Away'] <= 0.50) &
                     (df_footystats['PPG_Home'] >= 1.50)
                 ]
                 st.metric("Jogos encontrados", len(df_lay_ht))
