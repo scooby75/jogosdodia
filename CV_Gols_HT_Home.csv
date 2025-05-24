@@ -1,0 +1,1682 @@
+﻿4+,3,2,1,0,Avg.,Team_Home,Total_Jogos,% Com Gols,% Sem Gols,Classificação Ofensiva
+1.0,0.0,0.0,4.0,3.0,1.00,A. Tucuman,8.0,62.5,37.5,Média consistência ofensiva
+0.0,0.0,1.0,2.0,5.0,0.50,Aldosivi,8.0,37.5,62.5,Baixa consistência ofensiva
+1.0,0.0,2.0,2.0,4.0,1.11,Argentinos Jrs,9.0,55.56,44.44,Média consistência ofensiva
+0.0,0.0,2.0,3.0,3.0,0.88,Banfield,8.0,62.5,37.5,Média consistência ofensiva
+0.0,0.0,0.0,6.0,2.0,0.75,Barracas C.,8.0,75.0,25.0,Alta consistência ofensiva
+0.0,0.0,0.0,5.0,3.0,0.63,Belgrano,8.0,62.5,37.5,Média consistência ofensiva
+0.0,0.0,1.0,3.0,4.0,0.63,Boca Juniors,8.0,50.0,50.0,Média consistência ofensiva
+0.0,0.0,1.0,3.0,5.0,0.56,Central Cordoba,9.0,44.44,55.56,Baixa consistência ofensiva
+0.0,0.0,0.0,1.0,7.0,0.13,D. Riestra,8.0,12.5,87.5,Baixa consistência ofensiva
+0.0,0.0,0.0,1.0,6.0,0.14,Defensa y J.,7.0,14.29,85.71,Baixa consistência ofensiva
+0.0,1.0,0.0,2.0,4.0,0.71,Estudiantes,7.0,42.86,57.14,Baixa consistência ofensiva
+0.0,0.0,0.0,3.0,5.0,0.38,Gimnasia,8.0,37.5,62.5,Baixa consistência ofensiva
+0.0,0.0,0.0,2.0,6.0,0.25,Godoy Cruz,8.0,25.0,75.0,Baixa consistência ofensiva
+0.0,0.0,0.0,3.0,5.0,0.38,Huracan,8.0,37.5,62.5,Baixa consistência ofensiva
+0.0,0.0,0.0,3.0,5.0,0.38,I. Rivadavia,8.0,37.5,62.5,Baixa consistência ofensiva
+1.0,0.0,1.0,2.0,4.0,1.00,Independiente,8.0,50.0,50.0,Média consistência ofensiva
+0.0,0.0,0.0,3.0,4.0,0.43,Instituto,7.0,42.86,57.14,Baixa consistência ofensiva
+0.0,0.0,1.0,2.0,5.0,0.50,Lanus,8.0,37.5,62.5,Baixa consistência ofensiva
+0.0,0.0,1.0,2.0,5.0,0.50,Newells,8.0,37.5,62.5,Baixa consistência ofensiva
+0.0,0.0,0.0,2.0,6.0,0.25,Platense,8.0,25.0,75.0,Baixa consistência ofensiva
+0.0,0.0,0.0,4.0,3.0,0.57,Racing Club,7.0,57.14,42.86,Média consistência ofensiva
+0.0,1.0,1.0,1.0,6.0,0.67,River Plate,9.0,33.33,66.67,Baixa consistência ofensiva
+0.0,0.0,1.0,5.0,1.0,1.00,Rosario Central,7.0,85.71,14.29,Alta consistência ofensiva
+0.0,0.0,0.0,3.0,5.0,0.38,San Lorenzo,8.0,37.5,62.5,Baixa consistência ofensiva
+0.0,0.0,0.0,2.0,6.0,0.25,Sarmiento,8.0,25.0,75.0,Baixa consistência ofensiva
+0.0,0.0,0.0,1.0,8.0,0.11,SM San Juan,9.0,11.11,88.89,Baixa consistência ofensiva
+0.0,0.0,0.0,4.0,4.0,0.50,T. de Cordoba,8.0,50.0,50.0,Média consistência ofensiva
+0.0,0.0,1.0,3.0,4.0,0.63,Tigre,8.0,50.0,50.0,Média consistência ofensiva
+0.0,0.0,0.0,4.0,5.0,0.44,Union Santa Fe,9.0,44.44,55.56,Baixa consistência ofensiva
+0.0,0.0,0.0,0.0,8.0,0.00,Velez Sarsfield,8.0,0.0,100.0,Baixa consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,,,0.0,,,Baixa consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,0.52,League avg.,0.0,,,Baixa consistência ofensiva
+0.0,0.0,1.0,2.0,5.0,0.50,A. Quilmes,8.0,37.5,62.5,Baixa consistência ofensiva
+0.0,0.0,1.0,2.0,4.0,0.57,Acassuso,7.0,42.86,57.14,Baixa consistência ofensiva
+0.0,0.0,0.0,2.0,6.0,0.25,Argentino Merlo,8.0,25.0,75.0,Baixa consistência ofensiva
+0.0,0.0,0.0,1.0,6.0,0.14,Brown de A.,7.0,14.29,85.71,Baixa consistência ofensiva
+0.0,0.0,1.0,2.0,5.0,0.50,Comunicaciones,8.0,37.5,62.5,Baixa consistência ofensiva
+0.0,0.0,1.0,2.0,5.0,0.50,D. Armenio,8.0,37.5,62.5,Baixa consistência ofensiva
+0.0,1.0,1.0,1.0,5.0,0.75,D. Laferrere,8.0,37.5,62.5,Baixa consistência ofensiva
+0.0,0.0,1.0,0.0,7.0,0.25,Deportivo Merlo,8.0,12.5,87.5,Baixa consistência ofensiva
+0.0,0.0,2.0,3.0,3.0,0.88,Dock Sud,8.0,62.5,37.5,Média consistência ofensiva
+0.0,0.0,1.0,4.0,2.0,0.86,Excursionistas,7.0,71.43,28.57,Alta consistência ofensiva
+0.0,0.0,0.0,1.0,7.0,0.13,Fenix,8.0,12.5,87.5,Baixa consistência ofensiva
+0.0,0.0,0.0,1.0,7.0,0.13,Flandria,8.0,12.5,87.5,Baixa consistência ofensiva
+0.0,0.0,1.0,1.0,6.0,0.38,Liniers,8.0,25.0,75.0,Baixa consistência ofensiva
+0.0,0.0,1.0,2.0,4.0,0.57,Midland,7.0,42.86,57.14,Baixa consistência ofensiva
+0.0,0.0,3.0,2.0,3.0,1.00,Real Pilar,8.0,62.5,37.5,Média consistência ofensiva
+0.0,0.0,0.0,1.0,6.0,0.14,S. Italiano,7.0,14.29,85.71,Baixa consistência ofensiva
+0.0,0.0,0.0,2.0,5.0,0.29,Sacachispas,7.0,28.57,71.43,Baixa consistência ofensiva
+0.0,0.0,0.0,4.0,4.0,0.50,SM Burzaco,8.0,50.0,50.0,Média consistência ofensiva
+0.0,0.0,0.0,3.0,4.0,0.43,UAI Urquiza,7.0,42.86,57.14,Baixa consistência ofensiva
+0.0,0.0,2.0,3.0,2.0,1.00,V. San Carlos,7.0,71.43,28.57,Alta consistência ofensiva
+0.0,1.0,0.0,2.0,5.0,0.63,Villa Dalmine,8.0,37.5,62.5,Baixa consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,,,0.0,,,Baixa consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,0.49,League avg.,0.0,,,Baixa consistência ofensiva
+0.0,1.0,0.0,3.0,10.0,0.43,Alashkert,14.0,28.57,71.43,Baixa consistência ofensiva
+0.0,0.0,2.0,5.0,7.0,0.64,Ararat Yerevan,14.0,50.0,50.0,Média consistência ofensiva
+0.0,0.0,5.0,7.0,2.0,1.21,Ararat-Armenia,14.0,85.71,14.29,Alta consistência ofensiva
+0.0,0.0,1.0,7.0,7.0,0.60,BKMA,15.0,53.33,46.67,Média consistência ofensiva
+0.0,0.0,0.0,3.0,11.0,0.21,Gandzasar,14.0,21.43,78.57,Baixa consistência ofensiva
+0.0,2.0,7.0,2.0,3.0,1.57,Noah,14.0,78.57,21.43,Alta consistência ofensiva
+0.0,1.0,2.0,4.0,8.0,0.73,Pyunik,15.0,46.67,53.33,Baixa consistência ofensiva
+0.0,0.0,1.0,2.0,11.0,0.29,Shirak,14.0,21.43,78.57,Baixa consistência ofensiva
+1.0,2.0,0.0,6.0,5.0,1.29,Urartu,14.0,64.29,35.71,Média consistência ofensiva
+2.0,0.0,4.0,4.0,5.0,1.33,Van,15.0,66.67,33.33,Média consistência ofensiva
+0.0,0.0,0.0,5.0,10.0,0.33,West Armenia,15.0,33.33,66.67,Baixa consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,,,0.0,,,Baixa consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,0.78,League avg.,0.0,,,Baixa consistência ofensiva
+0.0,1.0,4.0,4.0,4.0,1.15,Adelaide Utd,13.0,69.23,30.77,Média consistência ofensiva
+0.0,2.0,1.0,5.0,5.0,1.00,Auckland,13.0,61.54,38.46,Média consistência ofensiva
+0.0,0.0,2.0,2.0,9.0,0.46,Brisbane Roar,13.0,30.77,69.23,Baixa consistência ofensiva
+0.0,0.0,2.0,3.0,8.0,0.54,Central Coast,13.0,38.46,61.54,Baixa consistência ofensiva
+1.0,0.0,0.0,6.0,6.0,0.85,Macarthur FC,13.0,53.85,46.15,Média consistência ofensiva
+0.0,1.0,0.0,6.0,6.0,0.69,Melbourne City,13.0,53.85,46.15,Média consistência ofensiva
+0.0,0.0,3.0,5.0,5.0,0.85,Melbourne V.,13.0,61.54,38.46,Média consistência ofensiva
+0.0,0.0,2.0,4.0,7.0,0.62,Newcastle Jets,13.0,46.15,53.85,Baixa consistência ofensiva
+0.0,0.0,1.0,4.0,8.0,0.46,Perth Glory,13.0,38.46,61.54,Baixa consistência ofensiva
+0.0,0.0,4.0,7.0,2.0,1.15,Sydney FC,13.0,84.62,15.38,Alta consistência ofensiva
+0.0,0.0,0.0,5.0,8.0,0.38,Wellington,13.0,38.46,61.54,Baixa consistência ofensiva
+0.0,0.0,3.0,6.0,4.0,0.92,Western United,13.0,69.23,30.77,Média consistência ofensiva
+0.0,0.0,5.0,4.0,4.0,1.08,WS Wanderers,13.0,69.23,30.77,Média consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,,,0.0,,,Baixa consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,0.78,League avg.,0.0,,,Baixa consistência ofensiva
+0.0,0.0,1.0,5.0,5.0,0.64,A. Klagenfurt,11.0,54.55,45.45,Média consistência ofensiva
+0.0,0.0,0.0,3.0,8.0,0.27,Altach,11.0,27.27,72.73,Baixa consistência ofensiva
+0.0,0.0,1.0,4.0,6.0,0.55,Austria Wien,11.0,45.45,54.55,Baixa consistência ofensiva
+0.0,0.0,1.0,6.0,4.0,0.73,BW Linz,11.0,63.64,36.36,Média consistência ofensiva
+0.0,1.0,1.0,2.0,7.0,0.64,Grazer AK,11.0,36.36,63.64,Baixa consistência ofensiva
+0.0,0.0,0.0,2.0,9.0,0.18,Hartberg,11.0,18.18,81.82,Baixa consistência ofensiva
+0.0,0.0,1.0,4.0,6.0,0.55,LASK Linz,11.0,45.45,54.55,Baixa consistência ofensiva
+0.0,1.0,2.0,7.0,1.0,1.27,Rapid Wien,11.0,90.91,9.09,Alta consistência ofensiva
+0.0,0.0,3.0,3.0,5.0,0.82,Salzburg,11.0,54.55,45.45,Média consistência ofensiva
+1.0,0.0,3.0,4.0,3.0,1.27,Sturm Graz,11.0,72.73,27.27,Alta consistência ofensiva
+0.0,0.0,0.0,3.0,8.0,0.27,Tirol,11.0,27.27,72.73,Baixa consistência ofensiva
+0.0,1.0,1.0,1.0,8.0,0.55,Wolfsberger AC,11.0,27.27,72.73,Baixa consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,,,0.0,,,Baixa consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,0.64,League avg.,0.0,,,Baixa consistência ofensiva
+0.0,0.0,0.0,4.0,10.0,0.29,A. Lustenau,14.0,28.57,71.43,Baixa consistência ofensiva
+0.0,1.0,2.0,7.0,4.0,1.00,Admira Wacker,14.0,71.43,28.57,Alta consistência ofensiva
+0.0,0.0,3.0,5.0,6.0,0.79,Amstetten,14.0,57.14,42.86,Média consistência ofensiva
+0.0,0.0,3.0,5.0,7.0,0.73,Bregenz,15.0,53.33,46.67,Média consistência ofensiva
+0.0,2.0,2.0,2.0,9.0,0.80,First Vienna,15.0,40.0,60.0,Baixa consistência ofensiva
+0.0,0.0,0.0,6.0,8.0,0.43,Floridsdorfer,14.0,42.86,57.14,Baixa consistência ofensiva
+1.0,0.0,2.0,6.0,5.0,1.07,Kapfenberger,14.0,64.29,35.71,Média consistência ofensiva
+0.0,0.0,1.0,8.0,5.0,0.71,Lafnitz,14.0,64.29,35.71,Média consistência ofensiva
+0.0,0.0,2.0,6.0,7.0,0.67,Liefering,15.0,53.33,46.67,Média consistência ofensiva
+1.0,2.0,0.0,5.0,6.0,1.07,Rapid Wien B,14.0,57.14,42.86,Média consistência ofensiva
+0.0,0.0,5.0,4.0,5.0,1.00,Ried,14.0,64.29,35.71,Média consistência ofensiva
+1.0,0.0,1.0,3.0,10.0,0.60,St. Polten,15.0,33.33,66.67,Baixa consistência ofensiva
+0.0,0.0,1.0,4.0,10.0,0.40,Stripfing,15.0,33.33,66.67,Baixa consistência ofensiva
+0.0,1.0,2.0,6.0,6.0,0.87,Sturm Graz B,15.0,60.0,40.0,Média consistência ofensiva
+0.0,1.0,3.0,4.0,7.0,0.87,SV Horn,15.0,53.33,46.67,Média consistência ofensiva
+0.0,0.0,0.0,5.0,10.0,0.33,Voitsberg,15.0,33.33,66.67,Baixa consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,,,0.0,,,Baixa consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,0.72,League avg.,0.0,,,Baixa consistência ofensiva
+0.0,1.0,3.0,5.0,6.0,0.93,Anderlecht,15.0,60.0,40.0,Média consistência ofensiva
+0.0,0.0,4.0,4.0,7.0,0.80,Antwerp,15.0,53.33,46.67,Média consistência ofensiva
+0.0,0.0,0.0,5.0,10.0,0.33,Beerschot,15.0,33.33,66.67,Baixa consistência ofensiva
+0.0,1.0,1.0,3.0,10.0,0.53,Cercle Brugge,15.0,33.33,66.67,Baixa consistência ofensiva
+0.0,1.0,0.0,5.0,9.0,0.53,Charleroi,15.0,40.0,60.0,Baixa consistência ofensiva
+0.0,1.0,4.0,4.0,6.0,1.00,Club Brugge,15.0,60.0,40.0,Média consistência ofensiva
+0.0,0.0,1.0,5.0,9.0,0.47,Dender,15.0,40.0,60.0,Baixa consistência ofensiva
+0.0,1.0,3.0,5.0,6.0,0.93,Gent,15.0,60.0,40.0,Média consistência ofensiva
+0.0,0.0,2.0,3.0,10.0,0.47,Kortrijk,15.0,33.33,66.67,Baixa consistência ofensiva
+0.0,1.0,1.0,5.0,8.0,0.67,KRC Genk,15.0,46.67,53.33,Baixa consistência ofensiva
+0.0,1.0,1.0,7.0,6.0,0.80,KV Mechelen,15.0,60.0,40.0,Média consistência ofensiva
+0.0,0.0,1.0,6.0,8.0,0.53,OH Leuven,15.0,46.67,53.33,Baixa consistência ofensiva
+0.0,0.0,4.0,6.0,5.0,0.93,Royale Union SG,15.0,66.67,33.33,Média consistência ofensiva
+0.0,0.0,3.0,6.0,6.0,0.80,Sint-Truiden,15.0,60.0,40.0,Média consistência ofensiva
+0.0,0.0,2.0,2.0,11.0,0.40,Standard Liege,15.0,26.67,73.33,Baixa consistência ofensiva
+0.0,1.0,2.0,8.0,4.0,1.00,Westerlo,15.0,73.33,26.67,Alta consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,,,0.0,,,Baixa consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,0.70,League avg.,0.0,,,Baixa consistência ofensiva
+0.0,0.0,0.0,0.0,4.0,0.00,Atletico MG,4.0,0.0,100.0,Baixa consistência ofensiva
+0.0,0.0,0.0,4.0,1.0,0.80,Bahia,5.0,80.0,20.0,Alta consistência ofensiva
+0.0,0.0,1.0,3.0,0.0,1.25,Botafogo,4.0,100.0,0.0,Alta consistência ofensiva
+0.0,0.0,0.0,4.0,1.0,0.80,Bragantino,5.0,80.0,20.0,Alta consistência ofensiva
+0.0,0.0,0.0,4.0,1.0,0.80,Ceara,5.0,80.0,20.0,Alta consistência ofensiva
+0.0,0.0,1.0,1.0,3.0,0.60,Corinthians,5.0,40.0,60.0,Baixa consistência ofensiva
+0.0,0.0,1.0,2.0,2.0,0.80,Cruzeiro,5.0,60.0,40.0,Média consistência ofensiva
+0.0,2.0,0.0,1.0,2.0,1.40,Flamengo,5.0,60.0,40.0,Média consistência ofensiva
+0.0,0.0,0.0,2.0,2.0,0.50,Fluminense,4.0,50.0,50.0,Média consistência ofensiva
+0.0,0.0,1.0,1.0,2.0,0.75,Fortaleza,4.0,50.0,50.0,Média consistência ofensiva
+0.0,0.0,1.0,1.0,3.0,0.60,Gremio,5.0,40.0,60.0,Baixa consistência ofensiva
+0.0,0.0,2.0,0.0,2.0,1.00,Internacional,4.0,50.0,50.0,Média consistência ofensiva
+0.0,0.0,1.0,2.0,2.0,0.80,Juventude,5.0,60.0,40.0,Média consistência ofensiva
+0.0,0.0,1.0,1.0,2.0,0.75,Mirassol,4.0,50.0,50.0,Média consistência ofensiva
+0.0,0.0,1.0,0.0,3.0,0.50,Palmeiras,4.0,25.0,75.0,Baixa consistência ofensiva
+0.0,0.0,1.0,0.0,3.0,0.50,Santos,4.0,25.0,75.0,Baixa consistência ofensiva
+0.0,0.0,1.0,0.0,4.0,0.40,Sao Paulo,5.0,20.0,80.0,Baixa consistência ofensiva
+0.0,0.0,0.0,1.0,3.0,0.25,Sport Recife,4.0,25.0,75.0,Baixa consistência ofensiva
+0.0,0.0,1.0,1.0,3.0,0.60,Vasco da Gama,5.0,40.0,60.0,Baixa consistência ofensiva
+0.0,0.0,0.0,1.0,3.0,0.25,Vitoria,4.0,25.0,75.0,Baixa consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,,,0.0,,,Baixa consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,0.68,League avg.,0.0,,,Baixa consistência ofensiva
+0.0,0.0,0.0,1.0,3.0,0.25,Amazonas,4.0,25.0,75.0,Baixa consistência ofensiva
+0.0,0.0,0.0,2.0,2.0,0.50,America MG,4.0,50.0,50.0,Média consistência ofensiva
+0.0,0.0,0.0,2.0,2.0,0.50,Athletic Club,4.0,50.0,50.0,Média consistência ofensiva
+0.0,0.0,0.0,3.0,1.0,0.75,Athletico PR,4.0,75.0,25.0,Alta consistência ofensiva
+0.0,0.0,0.0,3.0,1.0,0.75,Atletico GO,4.0,75.0,25.0,Alta consistência ofensiva
+0.0,0.0,0.0,3.0,1.0,0.75,Avai,4.0,75.0,25.0,Alta consistência ofensiva
+0.0,0.0,0.0,2.0,2.0,0.50,Botafogo SP,4.0,50.0,50.0,Média consistência ofensiva
+0.0,0.0,0.0,2.0,2.0,0.50,Chapecoense,4.0,50.0,50.0,Média consistência ofensiva
+0.0,0.0,1.0,1.0,2.0,0.75,Coritiba,4.0,50.0,50.0,Média consistência ofensiva
+0.0,0.0,0.0,3.0,1.0,0.75,CRB,4.0,75.0,25.0,Alta consistência ofensiva
+0.0,1.0,0.0,1.0,2.0,1.00,Criciuma,4.0,50.0,50.0,Média consistência ofensiva
+0.0,0.0,0.0,1.0,3.0,0.25,Cuiaba,4.0,25.0,75.0,Baixa consistência ofensiva
+0.0,0.0,0.0,2.0,2.0,0.50,Ferroviaria,4.0,50.0,50.0,Média consistência ofensiva
+0.0,0.0,1.0,3.0,1.0,1.00,Goias,5.0,80.0,20.0,Alta consistência ofensiva
+0.0,0.0,0.0,2.0,2.0,0.50,Novorizontino,4.0,50.0,50.0,Média consistência ofensiva
+0.0,0.0,0.0,1.0,3.0,0.25,Operario PR,4.0,25.0,75.0,Baixa consistência ofensiva
+0.0,0.0,0.0,2.0,2.0,0.50,Paysandu,4.0,50.0,50.0,Média consistência ofensiva
+0.0,0.0,0.0,4.0,0.0,1.00,Remo,4.0,100.0,0.0,Alta consistência ofensiva
+0.0,0.0,2.0,1.0,1.0,1.25,Vila Nova,4.0,75.0,25.0,Alta consistência ofensiva
+0.0,0.0,0.0,0.0,4.0,0.00,Volta Redonda,4.0,0.0,100.0,Baixa consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,,,0.0,,,Baixa consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,0.62,League avg.,0.0,,,Baixa consistência ofensiva
+0.0,0.0,1.0,1.0,1.0,1.00,ABC,3.0,66.67,33.33,Média consistência ofensiva
+0.0,0.0,0.0,0.0,3.0,0.00,Anapolis,3.0,0.0,100.0,Baixa consistência ofensiva
+0.0,0.0,0.0,1.0,2.0,0.33,Botafogo PB,3.0,33.33,66.67,Baixa consistência ofensiva
+0.0,0.0,0.0,1.0,2.0,0.33,Brusque,3.0,33.33,66.67,Baixa consistência ofensiva
+0.0,0.0,0.0,1.0,2.0,0.33,Caxias,3.0,33.33,66.67,Baixa consistência ofensiva
+0.0,0.0,0.0,2.0,1.0,0.67,Confianca,3.0,66.67,33.33,Média consistência ofensiva
+0.0,0.0,0.0,3.0,0.0,1.00,CSA,3.0,100.0,0.0,Alta consistência ofensiva
+0.0,0.0,0.0,2.0,1.0,0.67,Figueirense,3.0,66.67,33.33,Média consistência ofensiva
+0.0,0.0,0.0,1.0,2.0,0.33,Floresta,3.0,33.33,66.67,Baixa consistência ofensiva
+0.0,0.0,0.0,2.0,1.0,0.67,Guarani,3.0,66.67,33.33,Média consistência ofensiva
+0.0,0.0,0.0,1.0,2.0,0.33,Itabaiana,3.0,33.33,66.67,Baixa consistência ofensiva
+0.0,0.0,0.0,1.0,2.0,0.33,Ituano,3.0,33.33,66.67,Baixa consistência ofensiva
+0.0,0.0,1.0,0.0,2.0,0.67,Londrina,3.0,33.33,66.67,Baixa consistência ofensiva
+0.0,0.0,0.0,1.0,2.0,0.33,Maringa,3.0,33.33,66.67,Baixa consistência ofensiva
+0.0,0.0,1.0,0.0,2.0,0.67,Nautico,3.0,33.33,66.67,Baixa consistência ofensiva
+0.0,0.0,1.0,1.0,1.0,1.00,Ponte Preta,3.0,66.67,33.33,Média consistência ofensiva
+0.0,0.0,0.0,0.0,3.0,0.00,Retro,3.0,0.0,100.0,Baixa consistência ofensiva
+0.0,0.0,0.0,0.0,3.0,0.00,Sao Bernardo,3.0,0.0,100.0,Baixa consistência ofensiva
+0.0,1.0,0.0,1.0,1.0,1.33,Tombense,3.0,66.67,33.33,Média consistência ofensiva
+0.0,0.0,1.0,1.0,1.0,1.00,Ypiranga,3.0,66.67,33.33,Média consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,,,0.0,,,Baixa consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,0.55,League avg.,0.0,,,Baixa consistência ofensiva
+0.0,3.0,1.0,7.0,7.0,1.00,Arda,18.0,61.11,38.89,Média consistência ofensiva
+0.0,0.0,2.0,4.0,11.0,0.47,Beroe,17.0,35.29,64.71,Baixa consistência ofensiva
+0.0,0.0,2.0,7.0,8.0,0.65,Botev Plovdiv,17.0,52.94,47.06,Média consistência ofensiva
+0.0,0.0,3.0,4.0,10.0,0.59,Botev Vratsa,17.0,41.18,58.82,Baixa consistência ofensiva
+0.0,0.0,2.0,5.0,10.0,0.53,Cherno More,17.0,41.18,58.82,Baixa consistência ofensiva
+0.0,1.0,1.0,7.0,10.0,0.63,CSKA 1948 Sofia,19.0,47.37,52.63,Baixa consistência ofensiva
+0.0,0.0,2.0,10.0,6.0,0.78,CSKA Sofia,18.0,66.67,33.33,Média consistência ofensiva
+0.0,0.0,0.0,6.0,12.0,0.33,Hebar,18.0,33.33,66.67,Baixa consistência ofensiva
+0.0,0.0,0.0,5.0,12.0,0.29,L. Krumovgrad,17.0,29.41,70.59,Baixa consistência ofensiva
+0.0,0.0,2.0,12.0,4.0,0.89,Levski Sofia,18.0,77.78,22.22,Alta consistência ofensiva
+0.0,0.0,1.0,6.0,10.0,0.47,Lok. Plovdiv,17.0,41.18,58.82,Baixa consistência ofensiva
+0.0,1.0,2.0,4.0,11.0,0.61,Lokomotiv Sofia,18.0,38.89,61.11,Baixa consistência ofensiva
+0.0,1.0,2.0,8.0,6.0,0.88,Ludogorets,17.0,64.71,35.29,Média consistência ofensiva
+0.0,1.0,1.0,7.0,10.0,0.63,Septemvri Sofia,19.0,47.37,52.63,Baixa consistência ofensiva
+0.0,2.0,3.0,5.0,9.0,0.89,Slavia Sofia,19.0,52.63,47.37,Média consistência ofensiva
+0.0,0.0,4.0,6.0,8.0,0.78,Spartak Varna,18.0,55.56,44.44,Média consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,,,0.0,,,Baixa consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,0.65,League avg.,0.0,,,Baixa consistência ofensiva
+0.0,1.0,0.0,0.0,3.0,0.75,A. Ottawa,4.0,25.0,75.0,Baixa consistência ofensiva
+0.0,0.0,0.0,1.0,2.0,0.33,Cavalry,3.0,33.33,66.67,Baixa consistência ofensiva
+0.0,0.0,0.0,1.0,2.0,0.33,Forge,3.0,33.33,66.67,Baixa consistência ofensiva
+0.0,0.0,0.0,1.0,2.0,0.33,HFX Wanderers,3.0,33.33,66.67,Baixa consistência ofensiva
+0.0,0.0,1.0,1.0,1.0,1.00,Pacific,3.0,66.67,33.33,Média consistência ofensiva
+0.0,0.0,0.0,0.0,3.0,0.00,Valour,3.0,0.0,100.0,Baixa consistência ofensiva
+0.0,0.0,0.0,1.0,3.0,0.25,Vancouver FC,4.0,25.0,75.0,Baixa consistência ofensiva
+0.0,0.0,1.0,2.0,0.0,1.33,York Utd,3.0,100.0,0.0,Alta consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,,,0.0,,,Baixa consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,0.54,League avg.,0.0,,,Baixa consistência ofensiva
+0.0,0.0,2.0,3.0,0.0,1.40,Beijing Guoan,5.0,100.0,0.0,Alta consistência ofensiva
+0.0,0.0,0.0,1.0,5.0,0.17,Changchun Yatai,6.0,16.67,83.33,Baixa consistência ofensiva
+0.0,0.0,0.0,6.0,1.0,0.86,Chengdu,7.0,85.71,14.29,Alta consistência ofensiva
+0.0,0.0,1.0,1.0,4.0,0.50,Dalian Yingbo,6.0,33.33,66.67,Baixa consistência ofensiva
+0.0,0.0,1.0,2.0,2.0,0.80,Henan SL,5.0,60.0,40.0,Média consistência ofensiva
+0.0,1.0,0.0,1.0,5.0,0.57,Meizhou Hakka,7.0,28.57,71.43,Baixa consistência ofensiva
+0.0,0.0,1.0,0.0,6.0,0.29,Qingdao Hainiu,7.0,14.29,85.71,Baixa consistência ofensiva
+0.0,1.0,0.0,3.0,3.0,0.86,Qingdao West C.,7.0,57.14,42.86,Média consistência ofensiva
+0.0,1.0,2.0,3.0,1.0,1.43,S. Shenhua,7.0,85.71,14.29,Alta consistência ofensiva
+1.0,0.0,0.0,2.0,4.0,0.86,Shandong T.,7.0,42.86,57.14,Baixa consistência ofensiva
+0.0,0.0,1.0,5.0,2.0,0.88,Shanghai Port,8.0,75.0,25.0,Alta consistência ofensiva
+0.0,0.0,0.0,3.0,2.0,0.60,Sichuan Jiuniu,5.0,60.0,40.0,Média consistência ofensiva
+0.0,0.0,0.0,1.0,5.0,0.17,Tianjin T.,6.0,16.67,83.33,Baixa consistência ofensiva
+0.0,1.0,0.0,1.0,4.0,0.67,Wuhan Three T.,6.0,33.33,66.67,Baixa consistência ofensiva
+0.0,0.0,0.0,1.0,5.0,0.17,Yunnan Yukun,6.0,16.67,83.33,Baixa consistência ofensiva
+0.0,1.0,2.0,2.0,1.0,1.50,Zhejiang,6.0,83.33,16.67,Alta consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,,,0.0,,,Baixa consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,0.73,League avg.,0.0,,,Baixa consistência ofensiva
+0.0,0.0,0.0,3.0,2.0,0.60,Chongqing T.,5.0,60.0,40.0,Média consistência ofensiva
+0.0,0.0,0.0,2.0,3.0,0.40,Dalian Kuncheng,5.0,40.0,60.0,Baixa consistência ofensiva
+0.0,0.0,1.0,2.0,2.0,0.80,Foshan Nanshi,5.0,60.0,40.0,Média consistência ofensiva
+0.0,0.0,1.0,1.0,3.0,0.60,Guangdong GZP,5.0,40.0,60.0,Baixa consistência ofensiva
+0.0,0.0,0.0,1.0,4.0,0.20,Guangxi Baoyun,5.0,20.0,80.0,Baixa consistência ofensiva
+0.0,0.0,0.0,1.0,5.0,0.17,Heilongjiang IC,6.0,16.67,83.33,Baixa consistência ofensiva
+0.0,1.0,0.0,2.0,1.0,1.25,Liaoning Tieren,4.0,75.0,25.0,Alta consistência ofensiva
+0.0,0.0,0.0,1.0,4.0,0.20,Nanjing City,5.0,20.0,80.0,Baixa consistência ofensiva
+0.0,0.0,2.0,1.0,2.0,1.00,Nantong Zhiyun,5.0,60.0,40.0,Média consistência ofensiva
+0.0,0.0,0.0,1.0,3.0,0.25,Qingdao RL,4.0,25.0,75.0,Baixa consistência ofensiva
+0.0,0.0,1.0,2.0,1.0,1.00,S. Gongfu,4.0,75.0,25.0,Alta consistência ofensiva
+0.0,0.0,1.0,1.0,2.0,0.75,Shaanxi Union,4.0,50.0,50.0,Média consistência ofensiva
+0.0,0.0,0.0,2.0,2.0,0.50,Shanghai Jiadin,4.0,50.0,50.0,Média consistência ofensiva
+0.0,1.0,1.0,1.0,1.0,1.50,Shenzhen J.,4.0,75.0,25.0,Alta consistência ofensiva
+0.0,0.0,1.0,0.0,3.0,0.50,Suzhou Dongwu,4.0,25.0,75.0,Baixa consistência ofensiva
+0.0,0.0,0.0,2.0,1.0,0.67,Yanbian Longdin,3.0,66.67,33.33,Média consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,,,0.0,,,Baixa consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,0.63,League avg.,0.0,,,Baixa consistência ofensiva
+0.0,0.0,0.0,5.0,4.0,0.56,A. Bucaramanga,9.0,55.56,44.44,Média consistência ofensiva
+1.0,0.0,1.0,5.0,2.0,1.22,A. Nacional,9.0,77.78,22.22,Alta consistência ofensiva
+0.0,0.0,2.0,2.0,5.0,0.67,A. Petrolera,9.0,44.44,55.56,Baixa consistência ofensiva
+0.0,0.0,1.0,4.0,4.0,0.67,America de Cali,9.0,55.56,44.44,Média consistência ofensiva
+0.0,0.0,0.0,4.0,6.0,0.40,Boyaca Chico,10.0,40.0,60.0,Baixa consistência ofensiva
+0.0,0.0,3.0,5.0,2.0,1.10,D. Pereira,10.0,80.0,20.0,Alta consistência ofensiva
+0.0,0.0,3.0,2.0,4.0,0.89,Deportes Tolima,9.0,55.56,44.44,Média consistência ofensiva
+0.0,0.0,1.0,3.0,6.0,0.50,Deportivo Cali,10.0,40.0,60.0,Baixa consistência ofensiva
+0.0,2.0,1.0,5.0,2.0,1.30,Deportivo Pasto,10.0,80.0,20.0,Alta consistência ofensiva
+0.0,0.0,0.0,4.0,5.0,0.44,Envigado,9.0,44.44,55.56,Baixa consistência ofensiva
+0.0,1.0,0.0,3.0,5.0,0.67,Fortaleza CEIF,9.0,44.44,55.56,Baixa consistência ofensiva
+0.0,0.0,1.0,2.0,7.0,0.40,I. Medelin,10.0,30.0,70.0,Baixa consistência ofensiva
+0.0,0.0,0.0,7.0,3.0,0.70,Junior,10.0,70.0,30.0,Alta consistência ofensiva
+0.0,0.0,0.0,3.0,7.0,0.30,La Equidad,10.0,30.0,70.0,Baixa consistência ofensiva
+0.0,0.0,1.0,4.0,5.0,0.60,Llaneros,10.0,50.0,50.0,Média consistência ofensiva
+0.0,0.0,0.0,4.0,5.0,0.44,Millonarios,9.0,44.44,55.56,Baixa consistência ofensiva
+0.0,0.0,1.0,6.0,2.0,0.89,Once Caldas,9.0,77.78,22.22,Alta consistência ofensiva
+0.0,0.0,1.0,2.0,7.0,0.40,R. Aguilas,10.0,30.0,70.0,Baixa consistência ofensiva
+0.0,0.0,3.0,2.0,5.0,0.80,Santa Fe,10.0,50.0,50.0,Média consistência ofensiva
+0.0,0.0,0.0,1.0,9.0,0.10,Union Magdalena,10.0,10.0,90.0,Baixa consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,,,0.0,,,Baixa consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,0.65,League avg.,0.0,,,Baixa consistência ofensiva
+0.0,0.0,1.0,2.0,5.0,0.50,Atletico Cali,8.0,37.5,62.5,Baixa consistência ofensiva
+0.0,0.0,0.0,3.0,5.0,0.38,Atletico Huila,8.0,37.5,62.5,Baixa consistência ofensiva
+0.0,0.0,0.0,2.0,6.0,0.25,Barranquilla,8.0,25.0,75.0,Baixa consistência ofensiva
+0.0,0.0,1.0,0.0,7.0,0.25,Boca Juniors,8.0,12.5,87.5,Baixa consistência ofensiva
+0.0,0.0,0.0,4.0,4.0,0.50,Bogota,8.0,50.0,50.0,Média consistência ofensiva
+0.0,1.0,1.0,3.0,3.0,1.00,Cucuta,8.0,62.5,37.5,Média consistência ofensiva
+0.0,0.0,1.0,2.0,5.0,0.50,D. Quindio,8.0,37.5,62.5,Baixa consistência ofensiva
+0.0,0.0,1.0,4.0,3.0,0.75,Inter Palmira,8.0,62.5,37.5,Média consistência ofensiva
+0.0,1.0,1.0,2.0,4.0,0.88,Jaguares de C.,8.0,50.0,50.0,Média consistência ofensiva
+0.0,1.0,1.0,3.0,3.0,1.00,Leones,8.0,62.5,37.5,Média consistência ofensiva
+0.0,0.0,1.0,3.0,4.0,0.63,Orsomarso,8.0,50.0,50.0,Média consistência ofensiva
+0.0,0.0,2.0,3.0,3.0,0.88,Patriotas,8.0,62.5,37.5,Média consistência ofensiva
+1.0,0.0,2.0,0.0,5.0,1.00,R. Cundinamarca,8.0,37.5,62.5,Baixa consistência ofensiva
+0.0,1.0,1.0,5.0,1.0,1.25,Real Cartagena,8.0,87.5,12.5,Alta consistência ofensiva
+0.0,0.0,0.0,3.0,5.0,0.38,Real Santander,8.0,37.5,62.5,Baixa consistência ofensiva
+0.0,0.0,1.0,3.0,4.0,0.63,Tigres,8.0,50.0,50.0,Média consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,,,0.0,,,Baixa consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,0.67,League avg.,0.0,,,Baixa consistência ofensiva
+0.0,2.0,0.0,4.0,5.0,0.91,Alajuelense,11.0,54.55,45.45,Média consistência ofensiva
+0.0,0.0,1.0,6.0,4.0,0.73,Cartagines,11.0,63.64,36.36,Média consistência ofensiva
+0.0,0.0,1.0,5.0,5.0,0.64,Guanacasteca,11.0,54.55,45.45,Média consistência ofensiva
+0.0,0.0,1.0,5.0,5.0,0.64,Herediano,11.0,54.55,45.45,Média consistência ofensiva
+0.0,0.0,1.0,5.0,5.0,0.64,M. Liberia,11.0,54.55,45.45,Média consistência ofensiva
+0.0,0.0,1.0,1.0,9.0,0.27,Puntarenas,11.0,18.18,81.82,Baixa consistência ofensiva
+0.0,1.0,2.0,2.0,6.0,0.82,San Carlos,11.0,45.45,54.55,Baixa consistência ofensiva
+0.0,0.0,1.0,5.0,5.0,0.64,Santa Ana,11.0,54.55,45.45,Média consistência ofensiva
+0.0,0.0,2.0,4.0,5.0,0.73,Santos Guapiles,11.0,54.55,45.45,Média consistência ofensiva
+0.0,0.0,4.0,4.0,3.0,1.09,Saprissa,11.0,72.73,27.27,Alta consistência ofensiva
+1.0,0.0,1.0,2.0,7.0,0.73,Sporting SJ,11.0,36.36,63.64,Baixa consistência ofensiva
+0.0,0.0,2.0,2.0,7.0,0.55,Zeledon,11.0,36.36,63.64,Baixa consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,,,0.0,,,Baixa consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,0.70,League avg.,0.0,,,Baixa consistência ofensiva
+1.0,0.0,0.0,3.0,7.0,0.64,Alajuelense,11.0,36.36,63.64,Baixa consistência ofensiva
+0.0,2.0,2.0,3.0,4.0,1.18,Cartagines,11.0,63.64,36.36,Média consistência ofensiva
+0.0,0.0,1.0,1.0,9.0,0.27,Guanacasteca,11.0,18.18,81.82,Baixa consistência ofensiva
+0.0,0.0,4.0,2.0,5.0,0.91,Herediano,11.0,54.55,45.45,Média consistência ofensiva
+0.0,0.0,2.0,3.0,6.0,0.64,M. Liberia,11.0,45.45,54.55,Baixa consistência ofensiva
+0.0,0.0,1.0,6.0,4.0,0.73,Puntarenas,11.0,63.64,36.36,Média consistência ofensiva
+0.0,1.0,0.0,0.0,10.0,0.27,San Carlos,11.0,9.09,90.91,Baixa consistência ofensiva
+0.0,0.0,0.0,6.0,5.0,0.55,Santa Ana,11.0,54.55,45.45,Média consistência ofensiva
+0.0,0.0,1.0,8.0,2.0,0.91,Santos Guapiles,11.0,81.82,18.18,Alta consistência ofensiva
+0.0,1.0,1.0,5.0,4.0,0.91,Saprissa,11.0,63.64,36.36,Média consistência ofensiva
+0.0,0.0,1.0,3.0,7.0,0.45,Sporting SJ,11.0,36.36,63.64,Baixa consistência ofensiva
+0.0,0.0,1.0,1.0,9.0,0.27,Zeledon,11.0,18.18,81.82,Baixa consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,,,0.0,,,Baixa consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,0.64,League avg.,0.0,,,Baixa consistência ofensiva
+0.0,0.0,1.0,4.0,10.0,0.40,Bijelo Brdo,15.0,33.33,66.67,Baixa consistência ofensiva
+0.0,0.0,0.0,5.0,10.0,0.33,C. Zmijavci,15.0,33.33,66.67,Baixa consistência ofensiva
+0.0,0.0,0.0,5.0,11.0,0.31,Cibalia,16.0,31.25,68.75,Baixa consistência ofensiva
+0.0,1.0,3.0,2.0,10.0,0.69,Dubrava Zagreb,16.0,37.5,62.5,Baixa consistência ofensiva
+0.0,0.0,1.0,3.0,11.0,0.33,Dugopolje,15.0,26.67,73.33,Baixa consistência ofensiva
+0.0,0.0,0.0,5.0,10.0,0.33,Jarun,15.0,33.33,66.67,Baixa consistência ofensiva
+1.0,0.0,0.0,4.0,11.0,0.50,Opatija,16.0,31.25,68.75,Baixa consistência ofensiva
+0.0,0.0,2.0,8.0,6.0,0.75,Orijent,16.0,62.5,37.5,Média consistência ofensiva
+0.0,0.0,1.0,4.0,10.0,0.40,Rudes,15.0,33.33,66.67,Baixa consistência ofensiva
+0.0,0.0,3.0,6.0,8.0,0.71,Sesvete,17.0,52.94,47.06,Média consistência ofensiva
+0.0,1.0,2.0,4.0,9.0,0.69,Vukovar,16.0,43.75,56.25,Baixa consistência ofensiva
+0.0,0.0,0.0,3.0,12.0,0.20,Zrinski,15.0,20.0,80.0,Baixa consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,,,0.0,,,Baixa consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,0.48,League avg.,0.0,,,Baixa consistência ofensiva
+0.0,2.0,3.0,4.0,9.0,0.89,Banik Ostrava,18.0,50.0,50.0,Média consistência ofensiva
+0.0,1.0,1.0,5.0,10.0,0.59,Bohemians,17.0,41.18,58.82,Baixa consistência ofensiva
+0.0,0.0,1.0,1.0,15.0,0.18,C. Budejovice,17.0,11.76,88.24,Baixa consistência ofensiva
+0.0,0.0,0.0,4.0,12.0,0.25,Dukla Praha,16.0,25.0,75.0,Baixa consistência ofensiva
+0.0,0.0,2.0,5.0,9.0,0.56,Hradec Kralove,16.0,43.75,56.25,Baixa consistência ofensiva
+1.0,0.0,4.0,3.0,9.0,0.88,Jablonec,17.0,47.06,52.94,Baixa consistência ofensiva
+0.0,0.0,2.0,7.0,7.0,0.69,Karvina,16.0,56.25,43.75,Média consistência ofensiva
+0.0,0.0,1.0,7.0,9.0,0.53,Mlada Boleslav,17.0,47.06,52.94,Baixa consistência ofensiva
+0.0,0.0,0.0,3.0,14.0,0.18,Pardubice,17.0,17.65,82.35,Baixa consistência ofensiva
+0.0,0.0,2.0,9.0,6.0,0.76,Sigma Olomouc,17.0,64.71,35.29,Média consistência ofensiva
+0.0,2.0,2.0,10.0,3.0,1.18,Slavia Prague,17.0,82.35,17.65,Alta consistência ofensiva
+0.0,0.0,0.0,6.0,12.0,0.33,Slovacko,18.0,33.33,66.67,Baixa consistência ofensiva
+0.0,1.0,3.0,5.0,7.0,0.88,Slovan Liberec,16.0,56.25,43.75,Média consistência ofensiva
+0.0,1.0,0.0,9.0,6.0,0.75,Sparta Prague,16.0,62.5,37.5,Média consistência ofensiva
+0.0,0.0,1.0,6.0,10.0,0.47,Teplice,17.0,41.18,58.82,Baixa consistência ofensiva
+1.0,0.0,5.0,5.0,6.0,1.12,Viktoria Plzen,17.0,64.71,35.29,Média consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,,,0.0,,,Baixa consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,0.64,League avg.,0.0,,,Baixa consistência ofensiva
+0.0,0.0,1.0,4.0,9.0,0.43,Banik Ostrava B,14.0,35.71,64.29,Baixa consistência ofensiva
+1.0,0.0,3.0,7.0,4.0,1.13,Chrudim,15.0,73.33,26.67,Alta consistência ofensiva
+0.0,0.0,3.0,6.0,6.0,0.80,Jihlava,15.0,60.0,40.0,Média consistência ofensiva
+0.0,0.0,2.0,3.0,10.0,0.47,Lisen,15.0,33.33,66.67,Baixa consistência ofensiva
+0.0,0.0,2.0,5.0,8.0,0.60,Opava,15.0,46.67,53.33,Baixa consistência ofensiva
+0.0,1.0,0.0,5.0,8.0,0.57,Prostejov,14.0,42.86,57.14,Baixa consistência ofensiva
+0.0,0.0,1.0,5.0,8.0,0.50,Sigma Olomouc B,14.0,42.86,57.14,Baixa consistência ofensiva
+0.0,0.0,2.0,6.0,6.0,0.71,Slavia Prague B,14.0,57.14,42.86,Média consistência ofensiva
+0.0,1.0,3.0,4.0,7.0,0.87,Sparta Prague B,15.0,53.33,46.67,Média consistência ofensiva
+0.0,0.0,0.0,6.0,9.0,0.40,Taborsko,15.0,40.0,60.0,Baixa consistência ofensiva
+0.0,0.0,4.0,4.0,7.0,0.80,Varnsdorf,15.0,53.33,46.67,Média consistência ofensiva
+0.0,1.0,2.0,6.0,5.0,0.93,Vikto Zizkov,14.0,64.29,35.71,Média consistência ofensiva
+0.0,0.0,0.0,8.0,6.0,0.57,Vlasim,14.0,57.14,42.86,Média consistência ofensiva
+0.0,0.0,1.0,4.0,10.0,0.40,Vyskov,15.0,33.33,66.67,Baixa consistência ofensiva
+0.0,1.0,0.0,3.0,10.0,0.43,Zbrojovka Brno,14.0,28.57,71.43,Baixa consistência ofensiva
+0.0,0.0,2.0,9.0,3.0,0.93,Zlin,14.0,78.57,21.43,Alta consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,,,0.0,,,Baixa consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,0.66,League avg.,0.0,,,Baixa consistência ofensiva
+0.0,0.0,1.0,4.0,11.0,0.38,Aalborg BK,16.0,31.25,68.75,Baixa consistência ofensiva
+0.0,1.0,1.0,9.0,4.0,0.93,AGF Aarhus,15.0,73.33,26.67,Alta consistência ofensiva
+0.0,0.0,1.0,7.0,8.0,0.56,Brondby IF,16.0,50.0,50.0,Média consistência ofensiva
+0.0,0.0,1.0,8.0,6.0,0.67,FC Kobenhavn,15.0,60.0,40.0,Média consistência ofensiva
+1.0,1.0,1.0,9.0,3.0,1.20,FC Midtjylland,15.0,80.0,20.0,Alta consistência ofensiva
+0.0,0.0,0.0,4.0,11.0,0.27,Lyngby,15.0,26.67,73.33,Baixa consistência ofensiva
+1.0,2.0,4.0,5.0,4.0,1.44,Nordsjaelland,16.0,75.0,25.0,Alta consistência ofensiva
+0.0,0.0,4.0,6.0,6.0,0.88,Randers FC,16.0,62.5,37.5,Média consistência ofensiva
+1.0,1.0,3.0,3.0,7.0,1.07,Silkeborg,15.0,53.33,46.67,Média consistência ofensiva
+0.0,1.0,3.0,9.0,3.0,1.13,SonderjyskE,16.0,81.25,18.75,Alta consistência ofensiva
+0.0,0.0,1.0,6.0,8.0,0.53,Vejle BK,15.0,46.67,53.33,Baixa consistência ofensiva
+0.0,2.0,3.0,5.0,6.0,1.06,Viborg,16.0,62.5,37.5,Média consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,,,0.0,,,Baixa consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,0.84,League avg.,0.0,,,Baixa consistência ofensiva
+0.0,0.0,1.0,6.0,9.0,0.50,AC Horsens,16.0,43.75,56.25,Baixa consistência ofensiva
+0.0,1.0,2.0,3.0,10.0,0.63,B 93,16.0,37.5,62.5,Baixa consistência ofensiva
+0.0,0.0,1.0,6.0,9.0,0.50,Esbjerg,16.0,43.75,56.25,Baixa consistência ofensiva
+1.0,2.0,2.0,4.0,7.0,1.13,Fredericia,16.0,56.25,43.75,Média consistência ofensiva
+0.0,1.0,2.0,2.0,11.0,0.56,HB Koge,16.0,31.25,68.75,Baixa consistência ofensiva
+0.0,0.0,4.0,7.0,5.0,0.94,Hillerod,16.0,68.75,31.25,Média consistência ofensiva
+0.0,1.0,1.0,6.0,8.0,0.69,Hobro,16.0,50.0,50.0,Média consistência ofensiva
+0.0,1.0,0.0,6.0,9.0,0.56,Hvidovre,16.0,43.75,56.25,Baixa consistência ofensiva
+0.0,0.0,0.0,6.0,10.0,0.38,Kolding IF,16.0,37.5,62.5,Baixa consistência ofensiva
+0.0,1.0,6.0,4.0,5.0,1.19,Odense BK,16.0,68.75,31.25,Média consistência ofensiva
+0.0,0.0,1.0,6.0,9.0,0.50,Roskilde,16.0,43.75,56.25,Baixa consistência ofensiva
+0.0,0.0,1.0,5.0,10.0,0.44,Vendsyssel,16.0,37.5,62.5,Baixa consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,,,0.0,,,Baixa consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,0.67,League avg.,0.0,,,Baixa consistência ofensiva
+0.0,1.0,1.0,4.0,5.0,0.82,Aarhus Fremad,11.0,54.55,45.45,Média consistência ofensiva
+0.0,1.0,2.0,3.0,5.0,0.91,AB Copenhagen,11.0,54.55,45.45,Média consistência ofensiva
+0.0,0.0,0.0,6.0,5.0,0.55,BK Frem,11.0,54.55,45.45,Média consistência ofensiva
+0.0,0.0,0.0,3.0,8.0,0.27,Fremad Amager,11.0,27.27,72.73,Baixa consistência ofensiva
+0.0,0.0,0.0,3.0,8.0,0.27,Hellerup IK,11.0,27.27,72.73,Baixa consistência ofensiva
+0.0,0.0,0.0,5.0,6.0,0.45,Helsingor,11.0,45.45,54.55,Baixa consistência ofensiva
+0.0,0.0,1.0,2.0,8.0,0.36,Ishoj,11.0,27.27,72.73,Baixa consistência ofensiva
+0.0,0.0,3.0,5.0,3.0,1.00,Middelfart,11.0,72.73,27.27,Alta consistência ofensiva
+0.0,0.0,2.0,3.0,6.0,0.64,Naestved,11.0,45.45,54.55,Baixa consistência ofensiva
+0.0,0.0,1.0,3.0,7.0,0.45,Nykobing,11.0,36.36,63.64,Baixa consistência ofensiva
+0.0,0.0,1.0,4.0,6.0,0.55,Skive,11.0,45.45,54.55,Baixa consistência ofensiva
+0.0,0.0,1.0,4.0,6.0,0.55,Thisted,11.0,45.45,54.55,Baixa consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,,,0.0,,,Baixa consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,0.57,League avg.,0.0,,,Baixa consistência ofensiva
+0.0,1.0,1.0,3.0,2.0,1.14,Aucas,7.0,71.43,28.57,Alta consistência ofensiva
+0.0,0.0,0.0,3.0,4.0,0.43,Barcelona SC,7.0,42.86,57.14,Baixa consistência ofensiva
+0.0,0.0,2.0,2.0,2.0,1.00,Cuniburo,6.0,66.67,33.33,Média consistência ofensiva
+0.0,0.0,1.0,3.0,2.0,0.83,D. Cuenca,6.0,66.67,33.33,Média consistência ofensiva
+0.0,0.0,0.0,1.0,5.0,0.17,Delfin,6.0,16.67,83.33,Baixa consistência ofensiva
+0.0,0.0,1.0,2.0,4.0,0.57,El Nacional,7.0,42.86,57.14,Baixa consistência ofensiva
+0.0,0.0,0.0,2.0,5.0,0.29,Emelec,7.0,28.57,71.43,Baixa consistência ofensiva
+0.0,0.0,2.0,3.0,2.0,1.00,I. del Valle,7.0,71.43,28.57,Alta consistência ofensiva
+0.0,0.0,1.0,2.0,3.0,0.67,LDU Quito,6.0,50.0,50.0,Média consistência ofensiva
+0.0,0.0,0.0,4.0,3.0,0.57,Libertad,7.0,57.14,42.86,Média consistência ofensiva
+0.0,0.0,0.0,1.0,6.0,0.14,Macara,7.0,14.29,85.71,Baixa consistência ofensiva
+0.0,0.0,2.0,5.0,0.0,1.29,Manta,7.0,100.0,0.0,Alta consistência ofensiva
+0.0,0.0,2.0,2.0,3.0,0.86,Mushuc Runa,7.0,57.14,42.86,Média consistência ofensiva
+0.0,0.0,2.0,2.0,2.0,1.00,Orense,6.0,66.67,33.33,Média consistência ofensiva
+0.0,0.0,0.0,4.0,2.0,0.67,Tecnico U.,6.0,66.67,33.33,Média consistência ofensiva
+0.0,0.0,0.0,4.0,2.0,0.67,U. Catolica,6.0,66.67,33.33,Média consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,,,0.0,,,Baixa consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,0.70,League avg.,0.0,,,Baixa consistência ofensiva
+0.0,0.0,0.0,1.0,3.0,0.25,22 de Julio,4.0,25.0,75.0,Baixa consistência ofensiva
+0.0,1.0,0.0,1.0,2.0,1.00,Chacaritas,4.0,50.0,50.0,Média consistência ofensiva
+0.0,1.0,0.0,1.0,4.0,0.67,Cumbaya,6.0,33.33,66.67,Baixa consistência ofensiva
+0.0,0.0,0.0,3.0,3.0,0.50,Gualaceo,6.0,50.0,50.0,Média consistência ofensiva
+0.0,0.0,0.0,2.0,3.0,0.40,Guayaquil City,5.0,40.0,60.0,Baixa consistência ofensiva
+0.0,0.0,1.0,0.0,4.0,0.40,I. Juniors,5.0,20.0,80.0,Baixa consistência ofensiva
+0.0,1.0,0.0,1.0,3.0,0.80,Imbabura,5.0,40.0,60.0,Baixa consistência ofensiva
+0.0,0.0,0.0,2.0,3.0,0.40,Leones Norte,5.0,40.0,60.0,Baixa consistência ofensiva
+0.0,0.0,1.0,2.0,2.0,0.80,Nueve Octubre,5.0,60.0,40.0,Média consistência ofensiva
+0.0,0.0,0.0,1.0,4.0,0.20,San Antonio,5.0,20.0,80.0,Baixa consistência ofensiva
+0.0,0.0,1.0,3.0,2.0,0.83,Vargas Torres,6.0,66.67,33.33,Média consistência ofensiva
+0.0,0.0,2.0,2.0,0.0,1.50,Vinotinto,4.0,100.0,0.0,Alta consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,,,0.0,,,Baixa consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,0.63,League avg.,0.0,,,Baixa consistência ofensiva
+0.0,0.0,4.0,9.0,6.0,0.89,Arsenal,19.0,68.42,31.58,Média consistência ofensiva
+0.0,1.0,2.0,8.0,8.0,0.79,Aston Villa,19.0,57.89,42.11,Média consistência ofensiva
+0.0,1.0,0.0,7.0,10.0,0.56,Bournemouth,18.0,44.44,55.56,Baixa consistência ofensiva
+1.0,1.0,4.0,7.0,6.0,1.16,Brentford,19.0,68.42,31.58,Média consistência ofensiva
+0.0,0.0,2.0,9.0,8.0,0.68,Brighton,19.0,57.89,42.11,Média consistência ofensiva
+1.0,1.0,1.0,8.0,8.0,0.89,Chelsea,19.0,57.89,42.11,Média consistência ofensiva
+0.0,0.0,1.0,6.0,12.0,0.42,Crystal Palace,19.0,36.84,63.16,Baixa consistência ofensiva
+0.0,2.0,4.0,1.0,12.0,0.79,Everton,19.0,36.84,63.16,Baixa consistência ofensiva
+0.0,1.0,1.0,10.0,6.0,0.83,Fulham,18.0,66.67,33.33,Média consistência ofensiva
+0.0,0.0,0.0,8.0,10.0,0.44,Ipswich Town,18.0,44.44,55.56,Baixa consistência ofensiva
+0.0,0.0,1.0,4.0,14.0,0.32,Leicester City,19.0,26.32,73.68,Baixa consistência ofensiva
+0.0,3.0,2.0,7.0,6.0,1.11,Liverpool,18.0,66.67,33.33,Média consistência ofensiva
+0.0,2.0,7.0,8.0,2.0,1.47,Manchester City,19.0,89.47,10.53,Alta consistência ofensiva
+0.0,0.0,3.0,3.0,12.0,0.50,Manchester Utd,18.0,33.33,66.67,Baixa consistência ofensiva
+2.0,0.0,0.0,13.0,3.0,1.17,Newcastle Utd,18.0,83.33,16.67,Alta consistência ofensiva
+0.0,2.0,0.0,8.0,8.0,0.78,Nottm Forest,18.0,55.56,44.44,Média consistência ofensiva
+0.0,0.0,1.0,6.0,11.0,0.44,Southampton,18.0,38.89,61.11,Baixa consistência ofensiva
+0.0,0.0,5.0,5.0,8.0,0.83,Tottenham,18.0,55.56,44.44,Média consistência ofensiva
+0.0,0.0,4.0,3.0,12.0,0.58,West Ham Utd,19.0,36.84,63.16,Baixa consistência ofensiva
+0.0,0.0,2.0,9.0,7.0,0.72,Wolverhampton,18.0,61.11,38.89,Média consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,,,0.0,,,Baixa consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,0.77,League avg.,0.0,,,Baixa consistência ofensiva
+0.0,0.0,2.0,8.0,13.0,0.52,Blackburn,23.0,43.48,56.52,Baixa consistência ofensiva
+0.0,1.0,3.0,4.0,15.0,0.57,Bristol City,23.0,34.78,65.22,Baixa consistência ofensiva
+0.0,0.0,5.0,9.0,9.0,0.83,Burnley,23.0,60.87,39.13,Média consistência ofensiva
+0.0,0.0,2.0,4.0,17.0,0.35,Cardiff City,23.0,26.09,73.91,Baixa consistência ofensiva
+1.0,0.0,4.0,9.0,9.0,0.91,Coventry City,23.0,60.87,39.13,Média consistência ofensiva
+0.0,1.0,1.0,7.0,14.0,0.52,Derby County,23.0,39.13,60.87,Baixa consistência ofensiva
+0.0,0.0,1.0,7.0,15.0,0.39,Hull City,23.0,34.78,65.22,Baixa consistência ofensiva
+1.0,1.0,5.0,11.0,5.0,1.26,Leeds Utd,23.0,78.26,21.74,Alta consistência ofensiva
+0.0,0.0,1.0,7.0,15.0,0.39,Luton Town,23.0,34.78,65.22,Baixa consistência ofensiva
+0.0,1.0,2.0,10.0,10.0,0.74,Middlesbrough,23.0,56.52,43.48,Média consistência ofensiva
+0.0,0.0,4.0,4.0,15.0,0.52,Millwall,23.0,34.78,65.22,Baixa consistência ofensiva
+0.0,1.0,6.0,8.0,8.0,1.00,Norwich City,23.0,65.22,34.78,Média consistência ofensiva
+0.0,0.0,0.0,10.0,13.0,0.43,Oxford Utd,23.0,43.48,56.52,Baixa consistência ofensiva
+0.0,0.0,3.0,6.0,14.0,0.52,Plymouth,23.0,39.13,60.87,Baixa consistência ofensiva
+0.0,0.0,5.0,4.0,14.0,0.61,Portsmouth,23.0,39.13,60.87,Baixa consistência ofensiva
+0.0,0.0,1.0,8.0,14.0,0.43,Preston,23.0,39.13,60.87,Baixa consistência ofensiva
+0.0,0.0,4.0,8.0,11.0,0.70,QP Rangers,23.0,52.17,47.83,Média consistência ofensiva
+0.0,0.0,3.0,11.0,9.0,0.74,Sheffield Utd,23.0,60.87,39.13,Média consistência ofensiva
+0.0,0.0,2.0,7.0,14.0,0.48,Sheffield Wed,23.0,39.13,60.87,Baixa consistência ofensiva
+0.0,1.0,2.0,8.0,12.0,0.65,Stoke City,23.0,47.83,52.17,Baixa consistência ofensiva
+0.0,1.0,2.0,11.0,9.0,0.78,Sunderland,23.0,60.87,39.13,Média consistência ofensiva
+0.0,2.0,3.0,10.0,8.0,0.96,Swansea City,23.0,65.22,34.78,Média consistência ofensiva
+0.0,0.0,1.0,9.0,13.0,0.48,Watford,23.0,43.48,56.52,Baixa consistência ofensiva
+1.0,2.0,2.0,6.0,12.0,0.87,West Brom,23.0,47.83,52.17,Baixa consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,,,0.0,,,Baixa consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,0.65,League avg.,0.0,,,Baixa consistência ofensiva
+0.0,0.0,3.0,10.0,10.0,0.70,Barnsley,23.0,56.52,43.48,Média consistência ofensiva
+0.0,1.0,3.0,11.0,8.0,0.87,Birmingham City,23.0,65.22,34.78,Média consistência ofensiva
+0.0,0.0,2.0,8.0,13.0,0.52,Blackpool,23.0,43.48,56.52,Baixa consistência ofensiva
+1.0,0.0,1.0,4.0,17.0,0.43,Bolton,23.0,26.09,73.91,Baixa consistência ofensiva
+0.0,0.0,0.0,13.0,10.0,0.57,Bristol Rovers,23.0,56.52,43.48,Média consistência ofensiva
+0.0,1.0,4.0,6.0,12.0,0.74,Burton Albion,23.0,47.83,52.17,Baixa consistência ofensiva
+0.0,0.0,4.0,5.0,14.0,0.57,Cambridge Utd,23.0,39.13,60.87,Baixa consistência ofensiva
+0.0,0.0,5.0,6.0,12.0,0.70,Charlton,23.0,47.83,52.17,Baixa consistência ofensiva
+0.0,1.0,2.0,7.0,13.0,0.61,Crawley Town,23.0,43.48,56.52,Baixa consistência ofensiva
+0.0,0.0,1.0,8.0,14.0,0.43,Exeter City,23.0,39.13,60.87,Baixa consistência ofensiva
+1.0,0.0,1.0,6.0,15.0,0.52,Huddersfield,23.0,34.78,65.22,Baixa consistência ofensiva
+0.0,2.0,1.0,8.0,12.0,0.70,Leyton Orient,23.0,47.83,52.17,Baixa consistência ofensiva
+0.0,1.0,3.0,9.0,10.0,0.78,Lincoln City,23.0,56.52,43.48,Média consistência ofensiva
+0.0,1.0,4.0,8.0,10.0,0.83,Mansfield,23.0,56.52,43.48,Média consistência ofensiva
+0.0,0.0,3.0,5.0,15.0,0.48,Northampton,23.0,34.78,65.22,Baixa consistência ofensiva
+1.0,1.0,4.0,8.0,9.0,1.00,Peterborough,23.0,60.87,39.13,Média consistência ofensiva
+0.0,0.0,3.0,6.0,14.0,0.52,Reading,23.0,39.13,60.87,Baixa consistência ofensiva
+0.0,1.0,3.0,6.0,13.0,0.65,Rotherham,23.0,43.48,56.52,Baixa consistência ofensiva
+0.0,0.0,1.0,7.0,15.0,0.39,Shrewsbury,23.0,34.78,65.22,Baixa consistência ofensiva
+0.0,0.0,1.0,7.0,15.0,0.39,Stevenage,23.0,34.78,65.22,Baixa consistência ofensiva
+0.0,1.0,2.0,10.0,10.0,0.74,Stockport,23.0,56.52,43.48,Média consistência ofensiva
+0.0,0.0,2.0,8.0,13.0,0.52,Wigan Athletic,23.0,43.48,56.52,Baixa consistência ofensiva
+0.0,0.0,6.0,7.0,10.0,0.83,Wrexham,23.0,56.52,43.48,Média consistência ofensiva
+0.0,0.0,1.0,7.0,15.0,0.39,Wycombe,23.0,34.78,65.22,Baixa consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,,,0.0,,,Baixa consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,0.62,League avg.,0.0,,,Baixa consistência ofensiva
+0.0,1.0,2.0,8.0,12.0,0.65,AFC Fylde,23.0,47.83,52.17,Baixa consistência ofensiva
+0.0,1.0,4.0,7.0,11.0,0.78,Aldershot Town,23.0,52.17,47.83,Média consistência ofensiva
+1.0,1.0,3.0,9.0,9.0,0.96,Altrincham,23.0,60.87,39.13,Média consistência ofensiva
+1.0,2.0,5.0,9.0,6.0,1.26,Barnet,23.0,73.91,26.09,Alta consistência ofensiva
+0.0,0.0,3.0,10.0,10.0,0.70,Boston Utd,23.0,56.52,43.48,Média consistência ofensiva
+0.0,0.0,2.0,7.0,14.0,0.48,Braintree Town,23.0,39.13,60.87,Baixa consistência ofensiva
+1.0,0.0,3.0,8.0,11.0,0.78,Dagenham & R.,23.0,52.17,47.83,Média consistência ofensiva
+0.0,0.0,4.0,14.0,5.0,0.96,Eastleigh,23.0,78.26,21.74,Alta consistência ofensiva
+0.0,0.0,0.0,4.0,19.0,0.17,Ebbsfleet Utd,23.0,17.39,82.61,Baixa consistência ofensiva
+0.0,1.0,3.0,8.0,11.0,0.74,Forest Green,23.0,52.17,47.83,Média consistência ofensiva
+0.0,2.0,6.0,5.0,10.0,1.00,Gateshead FC,23.0,56.52,43.48,Média consistência ofensiva
+0.0,0.0,1.0,6.0,16.0,0.35,Halifax Town,23.0,30.43,69.57,Baixa consistência ofensiva
+0.0,0.0,2.0,5.0,16.0,0.39,Hartlepool,23.0,30.43,69.57,Baixa consistência ofensiva
+0.0,0.0,3.0,8.0,12.0,0.61,Maidenhead Utd,23.0,47.83,52.17,Baixa consistência ofensiva
+0.0,1.0,2.0,9.0,11.0,0.70,Oldham,23.0,52.17,47.83,Média consistência ofensiva
+0.0,1.0,3.0,5.0,14.0,0.61,Rochdale,23.0,39.13,60.87,Baixa consistência ofensiva
+0.0,0.0,3.0,9.0,11.0,0.65,Solihull Moors,23.0,52.17,47.83,Média consistência ofensiva
+0.0,0.0,4.0,9.0,10.0,0.74,Southend Utd,23.0,56.52,43.48,Média consistência ofensiva
+1.0,0.0,0.0,7.0,15.0,0.48,Sutton Utd,23.0,34.78,65.22,Baixa consistência ofensiva
+0.0,1.0,3.0,7.0,12.0,0.70,Tamworth,23.0,47.83,52.17,Baixa consistência ofensiva
+0.0,1.0,3.0,7.0,12.0,0.70,Wealdstone,23.0,47.83,52.17,Baixa consistência ofensiva
+0.0,1.0,0.0,6.0,16.0,0.39,Woking,23.0,30.43,69.57,Baixa consistência ofensiva
+0.0,0.0,2.0,7.0,14.0,0.48,Yeovil Town,23.0,39.13,60.87,Baixa consistência ofensiva
+2.0,0.0,3.0,10.0,8.0,1.04,York City,23.0,65.22,34.78,Média consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,,,0.0,,,Baixa consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,0.68,League avg.,0.0,,,Baixa consistência ofensiva
+1.0,0.0,0.0,3.0,1.0,1.40,07 Vestur,5.0,80.0,20.0,Alta consistência ofensiva
+0.0,0.0,0.0,2.0,3.0,0.40,B36 Torshavn,5.0,40.0,60.0,Baixa consistência ofensiva
+0.0,0.0,0.0,1.0,4.0,0.20,B68 Toftir,5.0,20.0,80.0,Baixa consistência ofensiva
+0.0,1.0,0.0,3.0,2.0,1.00,HB Torshavn,6.0,66.67,33.33,Média consistência ofensiva
+1.0,0.0,1.0,3.0,0.0,2.00,Klaksvik,5.0,100.0,0.0,Alta consistência ofensiva
+1.0,0.0,1.0,1.0,2.0,1.40,NSI Runavik,5.0,60.0,40.0,Média consistência ofensiva
+0.0,0.0,0.0,2.0,3.0,0.40,Streymur,5.0,40.0,60.0,Baixa consistência ofensiva
+0.0,0.0,0.0,1.0,4.0,0.20,Suduroy,5.0,20.0,80.0,Baixa consistência ofensiva
+0.0,0.0,0.0,1.0,4.0,0.20,TB Tvoroyri,5.0,20.0,80.0,Baixa consistência ofensiva
+0.0,0.0,0.0,0.0,4.0,0.00,Vikingur,4.0,0.0,100.0,Baixa consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,,,0.0,,,Baixa consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,0.74,League avg.,0.0,,,Baixa consistência ofensiva
+0.0,0.0,1.0,2.0,0.0,1.33,Gnistan,3.0,100.0,0.0,Alta consistência ofensiva
+0.0,0.0,0.0,1.0,4.0,0.20,Haka,5.0,20.0,80.0,Baixa consistência ofensiva
+0.0,1.0,1.0,1.0,1.0,1.50,HJK Helsinki,4.0,75.0,25.0,Alta consistência ofensiva
+0.0,0.0,2.0,1.0,1.0,1.25,Ilves,4.0,75.0,25.0,Alta consistência ofensiva
+0.0,0.0,0.0,2.0,2.0,0.50,Inter Turku,4.0,50.0,50.0,Média consistência ofensiva
+0.0,0.0,0.0,1.0,1.0,0.50,Jaro,2.0,50.0,50.0,Média consistência ofensiva
+0.0,0.0,0.0,1.0,4.0,0.20,KTP,5.0,20.0,80.0,Baixa consistência ofensiva
+0.0,0.0,2.0,2.0,1.0,1.20,KuPS,5.0,80.0,20.0,Alta consistência ofensiva
+0.0,0.0,1.0,2.0,1.0,1.00,Mariehamn,4.0,75.0,25.0,Alta consistência ofensiva
+0.0,0.0,0.0,1.0,2.0,0.33,Oulu,3.0,33.33,66.67,Baixa consistência ofensiva
+0.0,0.0,0.0,3.0,1.0,0.75,SJK,4.0,75.0,25.0,Alta consistência ofensiva
+0.0,0.0,0.0,0.0,4.0,0.00,VPS,4.0,0.0,100.0,Baixa consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,,,0.0,,,Baixa consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,0.72,League avg.,0.0,,,Baixa consistência ofensiva
+0.0,1.0,0.0,2.0,0.0,1.67,Ekenas IF,3.0,100.0,0.0,Alta consistência ofensiva
+0.0,0.0,0.0,0.0,2.0,0.00,JaPS,2.0,0.0,100.0,Baixa consistência ofensiva
+0.0,0.0,0.0,2.0,1.0,0.67,JIPPO,3.0,66.67,33.33,Média consistência ofensiva
+0.0,0.0,0.0,1.0,2.0,0.33,KaPa,3.0,33.33,66.67,Baixa consistência ofensiva
+0.0,0.0,1.0,1.0,1.0,1.00,Klubi-04,3.0,66.67,33.33,Média consistência ofensiva
+0.0,0.0,0.0,1.0,1.0,0.50,Lahti,2.0,50.0,50.0,Média consistência ofensiva
+0.0,0.0,1.0,2.0,1.0,1.00,PK-35,4.0,75.0,25.0,Alta consistência ofensiva
+0.0,0.0,0.0,1.0,2.0,0.33,SalPa,3.0,33.33,66.67,Baixa consistência ofensiva
+0.0,0.0,1.0,0.0,3.0,0.50,SJK Akatemia,4.0,25.0,75.0,Baixa consistência ofensiva
+0.0,0.0,1.0,2.0,0.0,1.33,TPS,3.0,100.0,0.0,Alta consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,,,0.0,,,Baixa consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,0.77,League avg.,0.0,,,Baixa consistência ofensiva
+0.0,0.0,0.0,1.0,2.0,0.33,Atlantis,3.0,33.33,66.67,Baixa consistência ofensiva
+0.0,0.0,1.0,1.0,1.0,1.00,EPS,3.0,66.67,33.33,Média consistência ofensiva
+0.0,0.0,1.0,2.0,1.0,1.00,Inter Turku B,4.0,75.0,25.0,Alta consistência ofensiva
+0.0,0.0,1.0,1.0,1.0,1.00,Jazz Pori,3.0,66.67,33.33,Média consistência ofensiva
+1.0,0.0,1.0,1.0,0.0,2.33,JJK,3.0,100.0,0.0,Alta consistência ofensiva
+0.0,1.0,0.0,3.0,0.0,1.50,KPV Kokkola,4.0,100.0,0.0,Alta consistência ofensiva
+0.0,0.0,0.0,1.0,2.0,0.33,KuPS Ak.,3.0,33.33,66.67,Baixa consistência ofensiva
+0.0,0.0,1.0,0.0,2.0,0.67,Mikkelin,3.0,33.33,66.67,Baixa consistência ofensiva
+0.0,0.0,1.0,1.0,1.0,1.00,OLS Oulu,3.0,66.67,33.33,Média consistência ofensiva
+0.0,0.0,1.0,0.0,1.0,1.00,PKKU,2.0,50.0,50.0,Média consistência ofensiva
+0.0,0.0,1.0,0.0,2.0,0.67,Rovaniemi,3.0,33.33,66.67,Baixa consistência ofensiva
+0.0,0.0,0.0,1.0,3.0,0.25,Tampere Utd,4.0,25.0,75.0,Baixa consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,,,0.0,,,Baixa consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,0.92,League avg.,0.0,,,Baixa consistência ofensiva
+0.0,0.0,2.0,4.0,11.0,0.47,Angers,17.0,35.29,64.71,Baixa consistência ofensiva
+0.0,0.0,2.0,6.0,9.0,0.59,Auxerre,17.0,47.06,52.94,Baixa consistência ofensiva
+0.0,0.0,4.0,8.0,5.0,0.94,Brest,17.0,70.59,29.41,Alta consistência ofensiva
+0.0,0.0,1.0,6.0,10.0,0.47,Le Havre,17.0,41.18,58.82,Baixa consistência ofensiva
+0.0,0.0,2.0,4.0,11.0,0.47,Lens,17.0,35.29,64.71,Baixa consistência ofensiva
+0.0,0.0,4.0,7.0,6.0,0.88,Lille,17.0,64.71,35.29,Média consistência ofensiva
+0.0,2.0,0.0,8.0,7.0,0.82,Lyon,17.0,58.82,41.18,Média consistência ofensiva
+0.0,3.0,0.0,6.0,8.0,0.88,Marseille,17.0,52.94,47.06,Média consistência ofensiva
+0.0,0.0,3.0,6.0,8.0,0.71,Monaco,17.0,52.94,47.06,Média consistência ofensiva
+0.0,0.0,1.0,4.0,12.0,0.35,Montpellier,17.0,29.41,70.59,Baixa consistência ofensiva
+0.0,0.0,1.0,6.0,10.0,0.47,Nantes,17.0,41.18,58.82,Baixa consistência ofensiva
+1.0,2.0,0.0,9.0,5.0,1.24,Nice,17.0,70.59,29.41,Alta consistência ofensiva
+1.0,0.0,4.0,9.0,3.0,1.24,Paris SG,17.0,82.35,17.65,Alta consistência ofensiva
+0.0,0.0,1.0,8.0,8.0,0.59,Reims,17.0,52.94,47.06,Média consistência ofensiva
+0.0,0.0,3.0,7.0,7.0,0.76,Rennes,17.0,58.82,41.18,Média consistência ofensiva
+0.0,0.0,1.0,7.0,9.0,0.53,Saint-Etienne,17.0,47.06,52.94,Baixa consistência ofensiva
+0.0,0.0,1.0,10.0,6.0,0.71,Strasbourg,17.0,64.71,35.29,Média consistência ofensiva
+0.0,0.0,1.0,4.0,12.0,0.35,Toulouse,17.0,29.41,70.59,Baixa consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,,,0.0,,,Baixa consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,0.69,League avg.,0.0,,,Baixa consistência ofensiva
+0.0,0.0,1.0,4.0,12.0,0.35,AC Ajaccio,17.0,29.41,70.59,Baixa consistência ofensiva
+0.0,1.0,2.0,6.0,8.0,0.76,Amiens,17.0,52.94,47.06,Média consistência ofensiva
+0.0,0.0,0.0,10.0,7.0,0.59,Annecy,17.0,58.82,41.18,Média consistência ofensiva
+0.0,0.0,0.0,5.0,12.0,0.29,Caen,17.0,29.41,70.59,Baixa consistência ofensiva
+0.0,0.0,2.0,5.0,10.0,0.53,Clermont,17.0,41.18,58.82,Baixa consistência ofensiva
+0.0,0.0,2.0,7.0,8.0,0.65,Grenoble,17.0,52.94,47.06,Média consistência ofensiva
+0.0,0.0,4.0,6.0,7.0,0.82,Guingamp,17.0,58.82,41.18,Média consistência ofensiva
+0.0,1.0,1.0,8.0,7.0,0.76,Laval,17.0,58.82,41.18,Média consistência ofensiva
+0.0,0.0,4.0,8.0,5.0,0.94,Lorient,17.0,70.59,29.41,Alta consistência ofensiva
+0.0,1.0,1.0,4.0,11.0,0.53,Martigues,17.0,35.29,64.71,Baixa consistência ofensiva
+0.0,2.0,2.0,6.0,7.0,0.94,Metz,17.0,58.82,41.18,Média consistência ofensiva
+0.0,2.0,1.0,8.0,6.0,0.94,Paris FC,17.0,64.71,35.29,Média consistência ofensiva
+0.0,0.0,0.0,8.0,9.0,0.47,Pau FC,17.0,47.06,52.94,Baixa consistência ofensiva
+0.0,1.0,0.0,8.0,8.0,0.65,Red Star,17.0,52.94,47.06,Média consistência ofensiva
+0.0,0.0,1.0,4.0,12.0,0.35,Rodez Aveyron,17.0,29.41,70.59,Baixa consistência ofensiva
+0.0,1.0,2.0,7.0,7.0,0.82,SC Bastia,17.0,58.82,41.18,Média consistência ofensiva
+0.0,0.0,1.0,4.0,12.0,0.35,Troyes,17.0,29.41,70.59,Baixa consistência ofensiva
+0.0,0.0,3.0,3.0,11.0,0.53,USL Dunkerque,17.0,35.29,64.71,Baixa consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,,,0.0,,,Baixa consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,0.63,League avg.,0.0,,,Baixa consistência ofensiva
+0.0,1.0,2.0,8.0,5.0,0.94,Aubagne,16.0,68.75,31.25,Média consistência ofensiva
+0.0,0.0,4.0,5.0,7.0,0.81,Boulogne,16.0,56.25,43.75,Média consistência ofensiva
+0.0,0.0,0.0,5.0,11.0,0.31,Bourg-en-Bresse,16.0,31.25,68.75,Baixa consistência ofensiva
+0.0,1.0,2.0,7.0,6.0,0.88,Chateauroux,16.0,62.5,37.5,Média consistência ofensiva
+1.0,1.0,1.0,6.0,7.0,0.94,Concarneau,16.0,56.25,43.75,Média consistência ofensiva
+0.0,0.0,2.0,6.0,8.0,0.63,Dijon,16.0,50.0,50.0,Média consistência ofensiva
+0.0,0.0,2.0,9.0,5.0,0.81,Le Mans,16.0,68.75,31.25,Média consistência ofensiva
+0.0,0.0,1.0,7.0,8.0,0.56,Nancy,16.0,50.0,50.0,Média consistência ofensiva
+0.0,0.0,0.0,5.0,11.0,0.31,Nimes,16.0,31.25,68.75,Baixa consistência ofensiva
+0.0,0.0,3.0,5.0,8.0,0.69,Orleans,16.0,50.0,50.0,Média consistência ofensiva
+0.0,0.0,1.0,6.0,9.0,0.50,Paris 13 A.,16.0,43.75,56.25,Baixa consistência ofensiva
+0.0,0.0,2.0,6.0,8.0,0.63,Quevilly Rouen,16.0,50.0,50.0,Média consistência ofensiva
+1.0,1.0,2.0,4.0,8.0,0.94,Rouen,16.0,50.0,50.0,Média consistência ofensiva
+0.0,0.0,0.0,4.0,12.0,0.25,Sochaux,16.0,25.0,75.0,Baixa consistência ofensiva
+0.0,1.0,2.0,5.0,8.0,0.75,Valenciennes,16.0,50.0,50.0,Média consistência ofensiva
+0.0,0.0,2.0,5.0,9.0,0.56,Versailles,16.0,43.75,56.25,Baixa consistência ofensiva
+0.0,0.0,1.0,4.0,11.0,0.38,Villefranche,16.0,31.25,68.75,Baixa consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,,,0.0,,,Baixa consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,0.64,League avg.,0.0,,,Baixa consistência ofensiva
+0.0,1.0,1.0,3.0,3.0,1.00,Dila Gori,8.0,62.5,37.5,Média consistência ofensiva
+0.0,0.0,2.0,4.0,2.0,1.00,Dinamo Batumi,8.0,75.0,25.0,Alta consistência ofensiva
+0.0,0.0,2.0,2.0,3.0,0.86,Dinamo Tbilisi,7.0,57.14,42.86,Média consistência ofensiva
+0.0,0.0,0.0,3.0,6.0,0.33,Gagra,9.0,33.33,66.67,Baixa consistência ofensiva
+0.0,0.0,1.0,2.0,5.0,0.50,Gareji Sagarejo,8.0,37.5,62.5,Baixa consistência ofensiva
+0.0,0.0,0.0,3.0,5.0,0.38,Iberia,8.0,37.5,62.5,Baixa consistência ofensiva
+0.0,0.0,0.0,3.0,5.0,0.38,Kolkheti Poti,8.0,37.5,62.5,Baixa consistência ofensiva
+1.0,1.0,0.0,0.0,6.0,1.00,Samgurali,8.0,25.0,75.0,Baixa consistência ofensiva
+0.0,0.0,1.0,2.0,5.0,0.50,Telavi,8.0,37.5,62.5,Baixa consistência ofensiva
+0.0,0.0,1.0,3.0,4.0,0.63,Torpedo Kutaisi,8.0,50.0,50.0,Média consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,,,0.0,,,Baixa consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,0.65,League avg.,0.0,,,Baixa consistência ofensiva
+0.0,2.0,5.0,6.0,4.0,1.29,Bayern Munich,17.0,76.47,23.53,Alta consistência ofensiva
+0.0,0.0,3.0,0.0,14.0,0.35,Bochum,17.0,17.65,82.35,Baixa consistência ofensiva
+0.0,2.0,3.0,8.0,4.0,1.18,Dortmund,17.0,76.47,23.53,Alta consistência ofensiva
+1.0,0.0,4.0,8.0,4.0,1.18,E. Frankfurt,17.0,76.47,23.53,Alta consistência ofensiva
+0.0,0.0,1.0,7.0,9.0,0.53,FC Augsburg,17.0,47.06,52.94,Baixa consistência ofensiva
+0.0,1.0,3.0,7.0,6.0,0.94,Freiburg,17.0,64.71,35.29,Média consistência ofensiva
+0.0,0.0,3.0,6.0,8.0,0.71,FSV Mainz,17.0,52.94,47.06,Média consistência ofensiva
+0.0,0.0,1.0,3.0,13.0,0.29,Heidenheim,17.0,23.53,76.47,Baixa consistência ofensiva
+0.0,1.0,2.0,4.0,10.0,0.65,Hoffenheim,17.0,41.18,58.82,Baixa consistência ofensiva
+1.0,1.0,1.0,6.0,8.0,0.88,Holstein Kiel,17.0,52.94,47.06,Média consistência ofensiva
+0.0,0.0,7.0,5.0,5.0,1.12,Leverkusen,17.0,70.59,29.41,Alta consistência ofensiva
+0.0,2.0,2.0,5.0,8.0,0.88,Monchengladbach,17.0,52.94,47.06,Média consistência ofensiva
+0.0,0.0,6.0,5.0,6.0,1.00,RB Leipzig,17.0,64.71,35.29,Média consistência ofensiva
+0.0,0.0,0.0,3.0,14.0,0.18,Sankt Pauli,17.0,17.65,82.35,Baixa consistência ofensiva
+0.0,1.0,2.0,5.0,9.0,0.71,Stuttgart,17.0,47.06,52.94,Baixa consistência ofensiva
+1.0,0.0,3.0,3.0,10.0,0.76,Union Berlin,17.0,41.18,58.82,Baixa consistência ofensiva
+0.0,1.0,1.0,6.0,9.0,0.65,Werder Bremen,17.0,47.06,52.94,Baixa consistência ofensiva
+0.0,0.0,0.0,5.0,12.0,0.29,Wolfsburg,17.0,29.41,70.59,Baixa consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,,,0.0,,,Baixa consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,0.75,League avg.,0.0,,,Baixa consistência ofensiva
+0.0,0.0,0.0,8.0,9.0,0.47,Braunschweig,17.0,47.06,52.94,Baixa consistência ofensiva
+0.0,0.0,3.0,7.0,7.0,0.76,Darmstadt,17.0,58.82,41.18,Média consistência ofensiva
+0.0,1.0,2.0,6.0,8.0,0.76,Dusseldorf,17.0,52.94,47.06,Média consistência ofensiva
+1.0,2.0,4.0,5.0,5.0,1.35,Elversberg,17.0,70.59,29.41,Alta consistência ofensiva
+1.0,1.0,3.0,3.0,9.0,0.94,FC Koln,17.0,47.06,52.94,Baixa consistência ofensiva
+0.0,2.0,0.0,6.0,9.0,0.71,FC Nurnberg,17.0,47.06,52.94,Baixa consistência ofensiva
+0.0,0.0,2.0,9.0,6.0,0.76,Greuther Furth,17.0,64.71,35.29,Média consistência ofensiva
+0.0,4.0,4.0,5.0,4.0,1.47,Hamburger SV,17.0,76.47,23.53,Alta consistência ofensiva
+0.0,0.0,1.0,6.0,10.0,0.47,Hannover 96,17.0,41.18,58.82,Baixa consistência ofensiva
+0.0,0.0,0.0,6.0,11.0,0.35,Hertha Berlin,17.0,35.29,64.71,Baixa consistência ofensiva
+0.0,1.0,3.0,8.0,5.0,1.00,Kaiserslautern,17.0,70.59,29.41,Alta consistência ofensiva
+0.0,0.0,2.0,9.0,6.0,0.76,Karlsruher SC,17.0,64.71,35.29,Média consistência ofensiva
+0.0,0.0,3.0,4.0,10.0,0.59,Magdeburg,17.0,41.18,58.82,Baixa consistência ofensiva
+0.0,1.0,0.0,8.0,8.0,0.65,Paderborn,17.0,52.94,47.06,Média consistência ofensiva
+0.0,0.0,0.0,9.0,8.0,0.53,Preuss. Munster,17.0,52.94,47.06,Média consistência ofensiva
+0.0,0.0,0.0,7.0,10.0,0.41,Regensburg,17.0,41.18,58.82,Baixa consistência ofensiva
+0.0,2.0,3.0,4.0,8.0,0.94,Schalke 04,17.0,52.94,47.06,Média consistência ofensiva
+0.0,1.0,1.0,6.0,9.0,0.65,Ulm,17.0,47.06,52.94,Baixa consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,,,0.0,,,Baixa consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,0.75,League avg.,0.0,,,Baixa consistência ofensiva
+0.0,1.0,1.0,8.0,9.0,0.68,1860 Munchen,19.0,52.63,47.37,Média consistência ofensiva
+0.0,0.0,1.0,8.0,10.0,0.53,Alemannia A.,19.0,47.37,52.63,Baixa consistência ofensiva
+0.0,2.0,2.0,5.0,10.0,0.79,Bielefeld,19.0,47.37,52.63,Baixa consistência ofensiva
+0.0,2.0,2.0,4.0,11.0,0.74,Dortmund B,19.0,42.11,57.89,Baixa consistência ofensiva
+0.0,1.0,3.0,8.0,7.0,0.89,Dynamo Dresden,19.0,63.16,36.84,Média consistência ofensiva
+1.0,0.0,4.0,9.0,5.0,1.11,Energie Cottbus,19.0,73.68,26.32,Alta consistência ofensiva
+0.0,0.0,5.0,10.0,4.0,1.05,Erzgebirge Aue,19.0,78.95,21.05,Alta consistência ofensiva
+0.0,0.0,4.0,7.0,8.0,0.79,FC Ingolstadt,19.0,57.89,42.11,Média consistência ofensiva
+0.0,0.0,0.0,7.0,12.0,0.37,Hannover 96 B,19.0,36.84,63.16,Baixa consistência ofensiva
+0.0,1.0,3.0,9.0,6.0,0.95,Hansa Rostock,19.0,68.42,31.58,Média consistência ofensiva
+0.0,2.0,1.0,6.0,10.0,0.74,Mannheim,19.0,47.37,52.63,Baixa consistência ofensiva
+0.0,0.0,2.0,9.0,8.0,0.68,Osnabruck,19.0,57.89,42.11,Média consistência ofensiva
+1.0,1.0,2.0,6.0,9.0,0.89,RW Essen,19.0,52.63,47.37,Média consistência ofensiva
+0.0,0.0,5.0,8.0,6.0,0.95,Saarbrucken,19.0,68.42,31.58,Média consistência ofensiva
+0.0,0.0,1.0,9.0,9.0,0.58,Sandhausen,19.0,52.63,47.37,Média consistência ofensiva
+0.0,0.0,1.0,8.0,10.0,0.53,Unterhaching,19.0,47.37,52.63,Baixa consistência ofensiva
+1.0,0.0,2.0,7.0,9.0,0.79,Verl,19.0,52.63,47.37,Média consistência ofensiva
+0.0,1.0,5.0,7.0,6.0,1.05,VfB Stuttgart B,19.0,68.42,31.58,Média consistência ofensiva
+0.0,1.0,1.0,8.0,9.0,0.68,Viktoria Koln,19.0,52.63,47.37,Média consistência ofensiva
+0.0,0.0,2.0,10.0,7.0,0.74,Wehen Wiesbaden,19.0,63.16,36.84,Média consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,,,0.0,,,Baixa consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,0.78,League avg.,0.0,,,Baixa consistência ofensiva
+0.0,0.0,0.0,8.0,10.0,0.44,A. Kallithea,18.0,44.44,55.56,Baixa consistência ofensiva
+0.0,0.0,4.0,7.0,5.0,0.94,AEK Athens,16.0,68.75,31.25,Média consistência ofensiva
+0.0,0.0,5.0,1.0,7.0,0.85,Aris,13.0,46.15,53.85,Baixa consistência ofensiva
+0.0,0.0,0.0,5.0,8.0,0.38,Asteras T.,13.0,38.46,61.54,Baixa consistência ofensiva
+0.0,0.0,0.0,3.0,10.0,0.23,Atromitos,13.0,23.08,76.92,Baixa consistência ofensiva
+0.0,0.0,0.0,7.0,11.0,0.39,Lamia,18.0,38.89,61.11,Baixa consistência ofensiva
+0.0,0.0,1.0,9.0,8.0,0.61,Levadiakos,18.0,55.56,44.44,Média consistência ofensiva
+0.0,0.0,3.0,5.0,5.0,0.85,OFI Crete,13.0,61.54,38.46,Média consistência ofensiva
+0.0,0.0,5.0,7.0,4.0,1.06,Olympiakos,16.0,75.0,25.0,Alta consistência ofensiva
+0.0,0.0,0.0,7.0,11.0,0.39,Panaitolikos,18.0,38.89,61.11,Baixa consistência ofensiva
+0.0,0.0,1.0,8.0,7.0,0.63,Panathinaikos,16.0,56.25,43.75,Média consistência ofensiva
+0.0,0.0,2.0,9.0,7.0,0.72,Panserraikos,18.0,61.11,38.89,Média consistência ofensiva
+0.0,0.0,3.0,6.0,7.0,0.75,PAOK,16.0,56.25,43.75,Média consistência ofensiva
+0.0,1.0,1.0,3.0,13.0,0.44,Volos,18.0,27.78,72.22,Baixa consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,,,0.0,,,Baixa consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,0.62,League avg.,0.0,,,Baixa consistência ofensiva
+0.0,1.0,1.0,7.0,2.0,1.09,Eastern,11.0,81.82,18.18,Alta consistência ofensiva
+0.0,0.0,0.0,6.0,5.0,0.55,HK Rangers,11.0,54.55,45.45,Média consistência ofensiva
+0.0,0.0,3.0,3.0,6.0,0.75,Hong Kong FC,12.0,50.0,50.0,Média consistência ofensiva
+1.0,2.0,1.0,5.0,3.0,1.42,Kitchee,12.0,75.0,25.0,Alta consistência ofensiva
+0.0,0.0,3.0,4.0,4.0,0.91,Kowloon City,11.0,63.64,36.36,Média consistência ofensiva
+0.0,0.0,1.0,3.0,8.0,0.42,LM Warriors,12.0,33.33,66.67,Baixa consistência ofensiva
+1.0,2.0,1.0,2.0,6.0,1.17,North District,12.0,50.0,50.0,Média consistência ofensiva
+0.0,1.0,0.0,6.0,5.0,0.75,Southern D.,12.0,58.33,41.67,Média consistência ofensiva
+0.0,0.0,3.0,5.0,3.0,1.00,Tai Po,11.0,72.73,27.27,Alta consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,,,0.0,,,Baixa consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,0.89,League avg.,0.0,,,Baixa consistência ofensiva
+0.0,1.0,0.0,7.0,8.0,0.63,Debrecen,16.0,50.0,50.0,Média consistência ofensiva
+0.0,0.0,1.0,6.0,10.0,0.47,DVTK,17.0,41.18,58.82,Baixa consistência ofensiva
+0.0,0.0,0.0,6.0,9.0,0.40,Fehervar,15.0,40.0,60.0,Baixa consistência ofensiva
+0.0,1.0,2.0,6.0,7.0,0.81,Ferencvaros,16.0,56.25,43.75,Média consistência ofensiva
+0.0,0.0,3.0,5.0,8.0,0.69,Gyor,16.0,50.0,50.0,Média consistência ofensiva
+0.0,1.0,2.0,4.0,10.0,0.65,Kecskemeti TE,17.0,41.18,58.82,Baixa consistência ofensiva
+0.0,0.0,2.0,7.0,6.0,0.73,MTK Budapest,15.0,60.0,40.0,Média consistência ofensiva
+0.0,1.0,3.0,1.0,11.0,0.63,Nyiregyhaza,16.0,31.25,68.75,Baixa consistência ofensiva
+0.0,0.0,4.0,9.0,3.0,1.06,Paks,16.0,81.25,18.75,Alta consistência ofensiva
+0.0,1.0,3.0,6.0,5.0,1.00,Puskas A.,15.0,66.67,33.33,Média consistência ofensiva
+0.0,1.0,2.0,2.0,12.0,0.53,Ujpest,17.0,29.41,70.59,Baixa consistência ofensiva
+0.0,1.0,1.0,5.0,10.0,0.59,Zalaegerszegi,17.0,41.18,58.82,Baixa consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,,,0.0,,,Baixa consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,0.68,League avg.,0.0,,,Baixa consistência ofensiva
+0.0,0.0,0.0,2.0,2.0,0.50,Afturelding,4.0,50.0,50.0,Média consistência ofensiva
+0.0,0.0,1.0,2.0,1.0,1.00,Breidablik,4.0,75.0,25.0,Alta consistência ofensiva
+0.0,0.0,1.0,1.0,2.0,0.75,Fram,4.0,50.0,50.0,Média consistência ofensiva
+0.0,0.0,1.0,1.0,0.0,1.50,Hafnarfjordur,2.0,100.0,0.0,Alta consistência ofensiva
+0.0,0.0,1.0,0.0,2.0,0.67,IA Akranes,3.0,33.33,66.67,Baixa consistência ofensiva
+0.0,0.0,1.0,0.0,2.0,0.67,IBV,3.0,33.33,66.67,Baixa consistência ofensiva
+0.0,0.0,1.0,1.0,1.0,1.00,KA Akureyri,3.0,66.67,33.33,Média consistência ofensiva
+0.0,0.0,2.0,2.0,0.0,1.50,KR Reykjavik,4.0,100.0,0.0,Alta consistência ofensiva
+0.0,0.0,0.0,3.0,2.0,0.60,Stjarnan,5.0,60.0,40.0,Média consistência ofensiva
+0.0,0.0,1.0,1.0,2.0,0.75,Valur,4.0,50.0,50.0,Média consistência ofensiva
+0.0,0.0,0.0,2.0,1.0,0.67,Vestri,3.0,66.67,33.33,Média consistência ofensiva
+0.0,1.0,2.0,0.0,1.0,1.75,Vikingur R.,4.0,75.0,25.0,Alta consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,,,0.0,,,Baixa consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,0.93,League avg.,0.0,,,Baixa consistência ofensiva
+0.0,0.0,0.0,2.0,0.0,1.00,Fjolnir,2.0,100.0,0.0,Alta consistência ofensiva
+0.0,0.0,0.0,1.0,1.0,0.50,Fylkir,2.0,50.0,50.0,Média consistência ofensiva
+0.0,0.0,0.0,1.0,0.0,1.00,Grindavik,1.0,100.0,0.0,Alta consistência ofensiva
+0.0,0.0,0.0,1.0,1.0,0.50,HK Kopavogur,2.0,50.0,50.0,Média consistência ofensiva
+0.0,0.0,0.0,1.0,1.0,0.50,IR Reykjavik,2.0,50.0,50.0,Média consistência ofensiva
+0.0,0.0,1.0,0.0,1.0,1.00,Keflavik,2.0,50.0,50.0,Média consistência ofensiva
+0.0,0.0,0.0,0.0,2.0,0.00,Leiknir R.,2.0,0.0,100.0,Baixa consistência ofensiva
+0.0,1.0,0.0,1.0,1.0,1.33,Njardvik,3.0,66.67,33.33,Média consistência ofensiva
+0.0,0.0,0.0,1.0,1.0,0.50,Selfoss,2.0,50.0,50.0,Média consistência ofensiva
+0.0,0.0,0.0,2.0,0.0,1.00,Thor Akureyri,2.0,100.0,0.0,Alta consistência ofensiva
+0.0,0.0,0.0,2.0,0.0,1.00,Throttur R.,2.0,100.0,0.0,Alta consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,-,Volsungur,0.0,,,Baixa consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,,,0.0,,,Baixa consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,0.77,League avg.,0.0,,,Baixa consistência ofensiva
+0.0,0.0,1.0,2.0,5.0,0.50,Bohemians,8.0,37.5,62.5,Baixa consistência ofensiva
+0.0,0.0,0.0,3.0,5.0,0.38,Cork City,8.0,37.5,62.5,Baixa consistência ofensiva
+0.0,0.0,2.0,1.0,6.0,0.56,Derry City,9.0,33.33,66.67,Baixa consistência ofensiva
+0.0,0.0,1.0,6.0,2.0,0.89,Drogheda Utd,9.0,77.78,22.22,Alta consistência ofensiva
+0.0,0.0,1.0,2.0,6.0,0.44,Galway Utd,9.0,33.33,66.67,Baixa consistência ofensiva
+0.0,0.0,4.0,2.0,3.0,1.11,Shamrock Rovers,9.0,66.67,33.33,Média consistência ofensiva
+0.0,1.0,1.0,2.0,6.0,0.70,Shelbourne,10.0,40.0,60.0,Baixa consistência ofensiva
+0.0,0.0,0.0,2.0,6.0,0.25,Sligo Rovers,8.0,25.0,75.0,Baixa consistência ofensiva
+0.0,0.0,3.0,4.0,2.0,1.11,St. Patricks,9.0,77.78,22.22,Alta consistência ofensiva
+0.0,0.0,0.0,4.0,4.0,0.50,Waterford,8.0,50.0,50.0,Média consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,,,0.0,,,Baixa consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,0.66,League avg.,0.0,,,Baixa consistência ofensiva
+0.0,0.0,0.0,1.0,7.0,0.13,Athlone Town,8.0,12.5,87.5,Baixa consistência ofensiva
+0.0,0.0,3.0,2.0,3.0,1.00,Bray Wanderers,8.0,62.5,37.5,Média consistência ofensiva
+0.0,1.0,1.0,2.0,4.0,0.88,Cobh Ramblers,8.0,50.0,50.0,Média consistência ofensiva
+0.0,0.0,0.0,5.0,3.0,0.63,Dundalk,8.0,62.5,37.5,Média consistência ofensiva
+0.0,1.0,0.0,2.0,5.0,0.63,Finn Harps,8.0,37.5,62.5,Baixa consistência ofensiva
+0.0,0.0,1.0,3.0,4.0,0.63,Kerry,8.0,50.0,50.0,Média consistência ofensiva
+0.0,0.0,0.0,2.0,6.0,0.25,Longford Town,8.0,25.0,75.0,Baixa consistência ofensiva
+0.0,0.0,0.0,5.0,3.0,0.63,Treaty Utd,8.0,62.5,37.5,Média consistência ofensiva
+0.0,0.0,0.0,2.0,6.0,0.25,UC Dublin,8.0,25.0,75.0,Baixa consistência ofensiva
+0.0,0.0,1.0,3.0,4.0,0.63,Wexford,8.0,50.0,50.0,Média consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,,,0.0,,,Baixa consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,0.56,League avg.,0.0,,,Baixa consistência ofensiva
+0.0,0.0,4.0,3.0,9.0,0.69,Ashdod,16.0,43.75,56.25,Baixa consistência ofensiva
+1.0,0.0,0.0,6.0,11.0,0.61,B. Jerusalem,18.0,38.89,61.11,Baixa consistência ofensiva
+1.0,1.0,2.0,3.0,10.0,0.82,H. Beer Sheva,17.0,41.18,58.82,Baixa consistência ofensiva
+0.0,1.0,2.0,7.0,7.0,0.82,H. Jerusalem,17.0,58.82,41.18,Média consistência ofensiva
+0.0,0.0,1.0,3.0,12.0,0.31,Hapoel Hadera,16.0,25.0,75.0,Baixa consistência ofensiva
+0.0,3.0,1.0,9.0,5.0,1.11,Hapoel Haifa,18.0,72.22,27.78,Alta consistência ofensiva
+0.0,0.0,2.0,4.0,11.0,0.47,Ironi Tiberias,17.0,35.29,64.71,Baixa consistência ofensiva
+0.0,1.0,1.0,3.0,12.0,0.47,Kiryat Shmona,17.0,29.41,70.59,Baixa consistência ofensiva
+1.0,0.0,0.0,4.0,12.0,0.47,M. Bnei Raina,17.0,29.41,70.59,Baixa consistência ofensiva
+0.0,0.0,0.0,4.0,12.0,0.25,M. Petah Tikva,16.0,25.0,75.0,Baixa consistência ofensiva
+0.0,2.0,3.0,6.0,6.0,1.06,M. Tel Aviv,17.0,64.71,35.29,Média consistência ofensiva
+0.0,1.0,2.0,5.0,10.0,0.67,Maccabi Haifa,18.0,44.44,55.56,Baixa consistência ofensiva
+0.0,0.0,2.0,8.0,7.0,0.71,Maccabi Netanya,17.0,58.82,41.18,Média consistência ofensiva
+0.0,0.0,1.0,5.0,10.0,0.44,Sakhnin,16.0,37.5,62.5,Baixa consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,,,0.0,,,Baixa consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,0.64,League avg.,0.0,,,Baixa consistência ofensiva
+1.0,1.0,1.0,5.0,10.0,0.78,AC Milan,18.0,44.44,55.56,Baixa consistência ofensiva
+0.0,0.0,3.0,7.0,9.0,0.68,AS Roma,19.0,52.63,47.37,Média consistência ofensiva
+1.0,1.0,2.0,6.0,8.0,1.00,Atalanta,18.0,55.56,44.44,Média consistência ofensiva
+0.0,0.0,1.0,6.0,11.0,0.44,Bologna,18.0,38.89,61.11,Baixa consistência ofensiva
+0.0,0.0,1.0,6.0,12.0,0.42,Cagliari,19.0,36.84,63.16,Baixa consistência ofensiva
+0.0,0.0,2.0,8.0,9.0,0.63,Como,19.0,52.63,47.37,Média consistência ofensiva
+0.0,0.0,0.0,3.0,15.0,0.17,Empoli,18.0,16.67,83.33,Baixa consistência ofensiva
+0.0,1.0,3.0,9.0,6.0,0.95,Fiorentina,19.0,68.42,31.58,Média consistência ofensiva
+0.0,0.0,1.0,3.0,15.0,0.26,Genoa,19.0,21.05,78.95,Baixa consistência ofensiva
+0.0,0.0,1.0,4.0,14.0,0.32,Hellas Verona,19.0,26.32,73.68,Baixa consistência ofensiva
+0.0,1.0,5.0,8.0,5.0,1.11,Inter Milan,19.0,73.68,26.32,Alta consistência ofensiva
+0.0,0.0,3.0,6.0,10.0,0.63,Juventus,19.0,47.37,52.63,Baixa consistência ofensiva
+0.0,0.0,2.0,8.0,8.0,0.67,Lazio,18.0,55.56,44.44,Média consistência ofensiva
+0.0,0.0,1.0,3.0,15.0,0.26,Lecce,19.0,21.05,78.95,Baixa consistência ofensiva
+0.0,0.0,1.0,6.0,12.0,0.42,Monza,19.0,36.84,63.16,Baixa consistência ofensiva
+0.0,0.0,3.0,8.0,8.0,0.74,Napoli,19.0,57.89,42.11,Média consistência ofensiva
+0.0,0.0,1.0,7.0,11.0,0.47,Parma,19.0,42.11,57.89,Baixa consistência ofensiva
+0.0,0.0,0.0,6.0,12.0,0.33,Torino,18.0,33.33,66.67,Baixa consistência ofensiva
+0.0,0.0,0.0,9.0,9.0,0.50,Udinese,18.0,50.0,50.0,Média consistência ofensiva
+0.0,0.0,0.0,6.0,12.0,0.33,Venezia,18.0,33.33,66.67,Baixa consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,,,0.0,,,Baixa consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,0.56,League avg.,0.0,,,Baixa consistência ofensiva
+0.0,1.0,1.0,9.0,8.0,0.74,Bari,19.0,57.89,42.11,Média consistência ofensiva
+0.0,2.0,0.0,7.0,10.0,0.68,Brescia,19.0,47.37,52.63,Baixa consistência ofensiva
+0.0,1.0,2.0,5.0,11.0,0.63,Carrarese,19.0,42.11,57.89,Baixa consistência ofensiva
+0.0,2.0,1.0,7.0,9.0,0.79,Catanzaro,19.0,52.63,47.37,Média consistência ofensiva
+0.0,1.0,3.0,5.0,10.0,0.74,Cesena,19.0,47.37,52.63,Baixa consistência ofensiva
+0.0,0.0,1.0,2.0,16.0,0.21,Cittadella,19.0,15.79,84.21,Baixa consistência ofensiva
+0.0,0.0,1.0,6.0,12.0,0.42,Cosenza,19.0,36.84,63.16,Baixa consistência ofensiva
+0.0,0.0,1.0,9.0,9.0,0.58,Cremonese,19.0,52.63,47.37,Média consistência ofensiva
+0.0,0.0,3.0,7.0,9.0,0.68,Frosinone,19.0,52.63,47.37,Média consistência ofensiva
+0.0,0.0,2.0,10.0,7.0,0.74,Juve Stabia,19.0,63.16,36.84,Média consistência ofensiva
+0.0,1.0,2.0,3.0,13.0,0.53,Mantova,19.0,31.58,68.42,Baixa consistência ofensiva
+0.0,0.0,4.0,6.0,9.0,0.74,Modena,19.0,52.63,47.37,Média consistência ofensiva
+0.0,1.0,1.0,8.0,9.0,0.68,Palermo,19.0,52.63,47.37,Média consistência ofensiva
+0.0,0.0,3.0,9.0,7.0,0.79,Pisa,19.0,63.16,36.84,Média consistência ofensiva
+0.0,0.0,2.0,8.0,9.0,0.63,Reggiana,19.0,52.63,47.37,Média consistência ofensiva
+0.0,0.0,1.0,5.0,13.0,0.37,Salernitana,19.0,31.58,68.42,Baixa consistência ofensiva
+0.0,0.0,0.0,8.0,11.0,0.42,Sampdoria,19.0,42.11,57.89,Baixa consistência ofensiva
+1.0,0.0,1.0,10.0,7.0,0.84,Sassuolo,19.0,63.16,36.84,Média consistência ofensiva
+0.0,2.0,1.0,7.0,9.0,0.79,Spezia,19.0,52.63,47.37,Média consistência ofensiva
+0.0,0.0,1.0,11.0,7.0,0.68,Sudtirol,19.0,63.16,36.84,Média consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,,,0.0,,,Baixa consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,0.63,League avg.,0.0,,,Baixa consistência ofensiva
+0.0,0.0,1.0,6.0,12.0,0.42,AlbinoLeffe,19.0,36.84,63.16,Baixa consistência ofensiva
+0.0,0.0,1.0,5.0,13.0,0.37,Alcione,19.0,31.58,68.42,Baixa consistência ofensiva
+0.0,0.0,2.0,3.0,14.0,0.37,Arzignano,19.0,26.32,73.68,Baixa consistência ofensiva
+0.0,1.0,3.0,4.0,11.0,0.68,Atalanta B,19.0,42.11,57.89,Baixa consistência ofensiva
+0.0,0.0,1.0,7.0,11.0,0.47,Caldiero Terme,19.0,42.11,57.89,Baixa consistência ofensiva
+0.0,0.0,3.0,3.0,13.0,0.47,Clodiense,19.0,31.58,68.42,Baixa consistência ofensiva
+0.0,0.0,3.0,3.0,13.0,0.47,FeralpiSalo,19.0,31.58,68.42,Baixa consistência ofensiva
+0.0,0.0,2.0,6.0,11.0,0.53,Giana Erminio,19.0,42.11,57.89,Baixa consistência ofensiva
+0.0,0.0,0.0,9.0,10.0,0.47,Lecco,19.0,47.37,52.63,Baixa consistência ofensiva
+0.0,0.0,1.0,5.0,13.0,0.37,Lumezzane,19.0,31.58,68.42,Baixa consistência ofensiva
+0.0,0.0,1.0,7.0,11.0,0.47,Novara,19.0,42.11,57.89,Baixa consistência ofensiva
+0.0,1.0,2.0,9.0,7.0,0.84,Padova,19.0,63.16,36.84,Média consistência ofensiva
+0.0,1.0,2.0,5.0,11.0,0.63,Pergolettese,19.0,42.11,57.89,Baixa consistência ofensiva
+0.0,0.0,0.0,7.0,12.0,0.37,Pro Patria,19.0,36.84,63.16,Baixa consistência ofensiva
+0.0,0.0,2.0,4.0,13.0,0.42,Pro Vercelli,19.0,31.58,68.42,Baixa consistência ofensiva
+0.0,0.0,1.0,7.0,11.0,0.47,Renate,19.0,42.11,57.89,Baixa consistência ofensiva
+0.0,0.0,0.0,9.0,10.0,0.47,Trento,19.0,47.37,52.63,Baixa consistência ofensiva
+1.0,0.0,0.0,4.0,14.0,0.47,Triestina,19.0,26.32,73.68,Baixa consistência ofensiva
+0.0,0.0,5.0,7.0,7.0,0.89,Vicenza,19.0,63.16,36.84,Média consistência ofensiva
+0.0,2.0,0.0,7.0,10.0,0.68,Virtus Verona,19.0,47.37,52.63,Baixa consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,,,0.0,,,Baixa consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,0.52,League avg.,0.0,,,Baixa consistência ofensiva
+0.0,0.0,3.0,4.0,12.0,0.53,AC Milan B,19.0,36.84,63.16,Baixa consistência ofensiva
+0.0,0.0,1.0,7.0,11.0,0.47,Arezzo,19.0,42.11,57.89,Baixa consistência ofensiva
+0.0,0.0,0.0,6.0,13.0,0.32,Ascoli,19.0,31.58,68.42,Baixa consistência ofensiva
+0.0,0.0,0.0,8.0,11.0,0.42,Athletic Carpi,19.0,42.11,57.89,Baixa consistência ofensiva
+0.0,1.0,1.0,4.0,13.0,0.47,Campobasso,19.0,31.58,68.42,Baixa consistência ofensiva
+0.0,1.0,2.0,9.0,7.0,0.84,Entella,19.0,63.16,36.84,Média consistência ofensiva
+0.0,0.0,2.0,4.0,13.0,0.42,Gubbio,19.0,31.58,68.42,Baixa consistência ofensiva
+0.0,0.0,1.0,4.0,14.0,0.32,Legnago Salus,19.0,26.32,73.68,Baixa consistência ofensiva
+0.0,2.0,1.0,5.0,11.0,0.68,Lucchese,19.0,42.11,57.89,Baixa consistência ofensiva
+0.0,0.0,1.0,7.0,11.0,0.47,Perugia,19.0,42.11,57.89,Baixa consistência ofensiva
+0.0,2.0,1.0,5.0,11.0,0.68,Pescara,19.0,42.11,57.89,Baixa consistência ofensiva
+0.0,1.0,5.0,5.0,8.0,0.95,Pianese,19.0,57.89,42.11,Média consistência ofensiva
+0.0,1.0,1.0,9.0,8.0,0.74,Pineto,19.0,57.89,42.11,Média consistência ofensiva
+0.0,1.0,3.0,7.0,8.0,0.84,Pontedera,19.0,57.89,42.11,Média consistência ofensiva
+0.0,1.0,1.0,3.0,14.0,0.42,Rimini,19.0,26.32,73.68,Baixa consistência ofensiva
+0.0,0.0,1.0,6.0,12.0,0.42,Sestri Levante,19.0,36.84,63.16,Baixa consistência ofensiva
+0.0,0.0,1.0,4.0,14.0,0.32,SPAL,19.0,26.32,73.68,Baixa consistência ofensiva
+0.0,1.0,5.0,2.0,11.0,0.79,Ternana,19.0,42.11,57.89,Baixa consistência ofensiva
+0.0,0.0,0.0,6.0,13.0,0.32,Torres,19.0,31.58,68.42,Baixa consistência ofensiva
+0.0,0.0,2.0,7.0,10.0,0.58,Vis Pesaro,19.0,47.37,52.63,Baixa consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,,,0.0,,,Baixa consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,0.55,League avg.,0.0,,,Baixa consistência ofensiva
+0.0,0.0,0.0,4.0,4.0,0.50,Albirex Niigata,8.0,50.0,50.0,Média consistência ofensiva
+0.0,0.0,0.0,4.0,5.0,0.44,Avispa Fukuoka,9.0,44.44,55.56,Baixa consistência ofensiva
+0.0,0.0,1.0,4.0,4.0,0.67,Cerezo Osaka,9.0,55.56,44.44,Média consistência ofensiva
+0.0,0.0,1.0,3.0,5.0,0.56,Fagiano Okayama,9.0,44.44,55.56,Baixa consistência ofensiva
+0.0,0.0,0.0,2.0,6.0,0.25,FC Tokyo,8.0,25.0,75.0,Baixa consistência ofensiva
+1.0,0.0,1.0,3.0,3.0,1.13,Gamba Osaka,8.0,62.5,37.5,Média consistência ofensiva
+0.0,0.0,0.0,3.0,5.0,0.38,K. Frontale,8.0,37.5,62.5,Baixa consistência ofensiva
+0.0,1.0,1.0,5.0,3.0,1.00,Kashima Antlers,10.0,70.0,30.0,Alta consistência ofensiva
+0.0,0.0,0.0,1.0,7.0,0.13,Kashiwa Reysol,8.0,12.5,87.5,Baixa consistência ofensiva
+0.0,0.0,1.0,2.0,5.0,0.50,Kyoto Sanga,8.0,37.5,62.5,Baixa consistência ofensiva
+0.0,1.0,0.0,4.0,3.0,0.88,Machida Zelvia,8.0,62.5,37.5,Média consistência ofensiva
+0.0,0.0,0.0,4.0,3.0,0.57,Nagoya G.,7.0,57.14,42.86,Média consistência ofensiva
+0.0,0.0,0.0,2.0,7.0,0.22,S. Hiroshima,9.0,22.22,77.78,Baixa consistência ofensiva
+0.0,1.0,1.0,2.0,4.0,0.88,Shimizu S-Pulse,8.0,50.0,50.0,Média consistência ofensiva
+0.0,0.0,1.0,1.0,6.0,0.38,Shonan Bellmare,8.0,25.0,75.0,Baixa consistência ofensiva
+0.0,0.0,0.0,3.0,5.0,0.38,Tokyo Verdy,8.0,37.5,62.5,Baixa consistência ofensiva
+0.0,0.0,1.0,4.0,4.0,0.67,Urawa RD,9.0,55.56,44.44,Média consistência ofensiva
+0.0,0.0,1.0,1.0,7.0,0.33,Vissel Kobe,9.0,22.22,77.78,Baixa consistência ofensiva
+0.0,0.0,0.0,2.0,7.0,0.22,Yokohama FC,9.0,22.22,77.78,Baixa consistência ofensiva
+0.0,0.0,0.0,4.0,5.0,0.44,Yokohama M.,9.0,44.44,55.56,Baixa consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,,,0.0,,,Baixa consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,0.53,League avg.,0.0,,,Baixa consistência ofensiva
+0.0,0.0,0.0,1.0,6.0,0.14,Blaublitz Akita,7.0,14.29,85.71,Baixa consistência ofensiva
+0.0,0.0,0.0,2.0,5.0,0.29,C. Sapporo,7.0,28.57,71.43,Baixa consistência ofensiva
+0.0,0.0,0.0,3.0,6.0,0.33,Ehime FC,9.0,33.33,66.67,Baixa consistência ofensiva
+0.0,0.0,0.0,1.0,7.0,0.13,FC Imabari,8.0,12.5,87.5,Baixa consistência ofensiva
+0.0,0.0,3.0,1.0,4.0,0.88,Fujieda MYFC,8.0,50.0,50.0,Média consistência ofensiva
+0.0,0.0,0.0,1.0,7.0,0.13,Iwaki,8.0,12.5,87.5,Baixa consistência ofensiva
+0.0,0.0,2.0,4.0,2.0,1.00,JEF Utd Chiba,8.0,75.0,25.0,Alta consistência ofensiva
+0.0,0.0,0.0,3.0,6.0,0.33,Jubilo Iwata,9.0,33.33,66.67,Baixa consistência ofensiva
+0.0,0.0,0.0,6.0,2.0,0.75,Kataller Toyama,8.0,75.0,25.0,Alta consistência ofensiva
+0.0,0.0,1.0,2.0,3.0,0.67,M. Yamagata,6.0,50.0,50.0,Média consistência ofensiva
+0.0,0.0,2.0,3.0,4.0,0.78,Mito Hollyhock,9.0,55.56,44.44,Média consistência ofensiva
+0.0,0.0,0.0,3.0,5.0,0.38,Oita Trinita,8.0,37.5,62.5,Baixa consistência ofensiva
+0.0,0.0,1.0,3.0,4.0,0.63,Omiya Ardija,8.0,50.0,50.0,Média consistência ofensiva
+0.0,0.0,1.0,2.0,6.0,0.44,R. Kumamoto,9.0,33.33,66.67,Baixa consistência ofensiva
+0.0,0.0,0.0,6.0,2.0,0.75,R. Yamaguchi,8.0,75.0,25.0,Alta consistência ofensiva
+0.0,0.0,1.0,4.0,4.0,0.67,Sagan Tosu,9.0,55.56,44.44,Média consistência ofensiva
+0.0,0.0,1.0,0.0,6.0,0.29,Tokushima V.,7.0,14.29,85.71,Baixa consistência ofensiva
+0.0,0.0,2.0,3.0,3.0,0.88,Vegalta Sendai,8.0,62.5,37.5,Média consistência ofensiva
+0.0,0.0,1.0,2.0,5.0,0.50,Ventforet Kofu,8.0,37.5,62.5,Baixa consistência ofensiva
+0.0,0.0,0.0,3.0,5.0,0.38,V-V. Nagasaki,8.0,37.5,62.5,Baixa consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,,,0.0,,,Baixa consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,0.52,League avg.,0.0,,,Baixa consistência ofensiva
+0.0,0.0,0.0,2.0,5.0,0.29,AC Numazu,7.0,28.57,71.43,Baixa consistência ofensiva
+0.0,0.0,0.0,4.0,3.0,0.57,FC Ryukyu,7.0,57.14,42.86,Média consistência ofensiva
+0.0,0.0,1.0,2.0,3.0,0.67,Fukushima Utd,6.0,50.0,50.0,Média consistência ofensiva
+0.0,0.0,1.0,0.0,6.0,0.29,G. Kitakyushu,7.0,14.29,85.71,Baixa consistência ofensiva
+0.0,0.0,0.0,3.0,2.0,0.60,Gainare Tottori,5.0,60.0,40.0,Média consistência ofensiva
+0.0,1.0,0.0,2.0,4.0,0.71,Gifu,7.0,42.86,57.14,Baixa consistência ofensiva
+0.0,0.0,1.0,2.0,4.0,0.57,Kagoshima Utd,7.0,42.86,57.14,Baixa consistência ofensiva
+0.0,0.0,1.0,2.0,4.0,0.57,Kamatamare S.,7.0,42.86,57.14,Baixa consistência ofensiva
+0.0,0.0,0.0,1.0,5.0,0.17,Kochi United,6.0,16.67,83.33,Baixa consistência ofensiva
+0.0,0.0,2.0,1.0,4.0,0.71,Kusatsu,7.0,42.86,57.14,Baixa consistência ofensiva
+0.0,0.0,0.0,2.0,4.0,0.33,Matsumoto Y.,6.0,33.33,66.67,Baixa consistência ofensiva
+0.0,0.0,0.0,2.0,4.0,0.33,Nagano Parceiro,6.0,33.33,66.67,Baixa consistência ofensiva
+0.0,0.0,1.0,3.0,4.0,0.63,Nara Club,8.0,50.0,50.0,Média consistência ofensiva
+0.0,0.0,0.0,3.0,4.0,0.43,Osaka,7.0,42.86,57.14,Baixa consistência ofensiva
+0.0,0.0,0.0,4.0,3.0,0.57,SC Sagamihara,7.0,57.14,42.86,Média consistência ofensiva
+0.0,0.0,0.0,2.0,5.0,0.29,T. Miyazaki,7.0,28.57,71.43,Baixa consistência ofensiva
+0.0,1.0,1.0,2.0,2.0,1.17,Tochigi City,6.0,66.67,33.33,Média consistência ofensiva
+0.0,0.0,0.0,3.0,4.0,0.43,Tochigi SC,7.0,42.86,57.14,Baixa consistência ofensiva
+0.0,0.0,0.0,3.0,3.0,0.50,V. Hachinohe,6.0,50.0,50.0,Média consistência ofensiva
+0.0,0.0,1.0,1.0,2.0,0.75,Z. Kanazawa,4.0,50.0,50.0,Média consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,,,0.0,,,Baixa consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,0.52,League avg.,0.0,,,Baixa consistência ofensiva
+0.0,0.0,1.0,1.0,2.0,0.75,Aktobe,4.0,50.0,50.0,Média consistência ofensiva
+0.0,0.0,0.0,1.0,6.0,0.14,Atyrau,7.0,14.29,85.71,Baixa consistência ofensiva
+0.0,0.0,2.0,2.0,1.0,1.20,FC Astana,5.0,80.0,20.0,Alta consistência ofensiva
+0.0,1.0,1.0,1.0,0.0,2.00,Kairat Almaty,3.0,100.0,0.0,Alta consistência ofensiva
+0.0,0.0,1.0,0.0,5.0,0.33,Kaisar K.,6.0,16.67,83.33,Baixa consistência ofensiva
+0.0,0.0,1.0,2.0,2.0,0.80,Kyzylzhar,5.0,60.0,40.0,Média consistência ofensiva
+0.0,0.0,0.0,3.0,1.0,0.75,Okzhetpes,4.0,75.0,25.0,Alta consistência ofensiva
+0.0,0.0,1.0,2.0,2.0,0.80,Ordabasy,5.0,60.0,40.0,Média consistência ofensiva
+0.0,0.0,0.0,4.0,0.0,1.00,Tobol,4.0,100.0,0.0,Alta consistência ofensiva
+0.0,0.0,0.0,2.0,3.0,0.40,Turan,5.0,40.0,60.0,Baixa consistência ofensiva
+0.0,0.0,0.0,0.0,4.0,0.00,Ulytau,4.0,0.0,100.0,Baixa consistência ofensiva
+0.0,0.0,0.0,1.0,3.0,0.25,Yelimay Semey,4.0,25.0,75.0,Baixa consistência ofensiva
+0.0,0.0,0.0,0.0,5.0,0.00,Zhenys,5.0,0.0,100.0,Baixa consistência ofensiva
+0.0,0.0,0.0,1.0,3.0,0.25,Zhetysu,4.0,25.0,75.0,Baixa consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,,,0.0,,,Baixa consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,0.57,League avg.,0.0,,,Baixa consistência ofensiva
+0.0,0.0,0.0,4.0,4.0,0.50,Banga,8.0,50.0,50.0,Média consistência ofensiva
+0.0,0.0,0.0,3.0,4.0,0.43,Dainava,7.0,42.86,57.14,Baixa consistência ofensiva
+0.0,0.0,1.0,0.0,3.0,0.50,Dziugas Telsiai,4.0,25.0,75.0,Baixa consistência ofensiva
+0.0,0.0,2.0,2.0,2.0,1.00,Hegelmann L.,6.0,66.67,33.33,Média consistência ofensiva
+0.0,0.0,1.0,4.0,2.0,0.86,Kauno Zalgiris,7.0,71.43,28.57,Alta consistência ofensiva
+0.0,0.0,1.0,1.0,5.0,0.43,Panevezys,7.0,28.57,71.43,Baixa consistência ofensiva
+0.0,0.0,1.0,1.0,3.0,0.60,Riteriai,5.0,40.0,60.0,Baixa consistência ofensiva
+0.0,0.0,2.0,3.0,1.0,1.17,Siauliai,6.0,83.33,16.67,Alta consistência ofensiva
+1.0,0.0,0.0,3.0,2.0,1.17,Suduva,6.0,66.67,33.33,Média consistência ofensiva
+0.0,0.0,1.0,3.0,2.0,0.83,Zalgiris,6.0,66.67,33.33,Média consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,,,0.0,,,Baixa consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,0.74,League avg.,0.0,,,Baixa consistência ofensiva
+0.0,0.0,2.0,5.0,1.0,1.13,A. San Luis,8.0,87.5,12.5,Alta consistência ofensiva
+0.0,0.0,1.0,3.0,4.0,0.63,Atlas,8.0,50.0,50.0,Média consistência ofensiva
+0.0,0.0,1.0,3.0,4.0,0.63,CF America,8.0,50.0,50.0,Média consistência ofensiva
+0.0,0.0,0.0,4.0,5.0,0.44,Club Leon,9.0,44.44,55.56,Baixa consistência ofensiva
+0.0,0.0,4.0,1.0,4.0,1.00,Cruz Azul,9.0,55.56,44.44,Média consistência ofensiva
+1.0,0.0,0.0,2.0,6.0,0.67,Guadalajara,9.0,33.33,66.67,Baixa consistência ofensiva
+0.0,0.0,0.0,3.0,5.0,0.38,Juarez,8.0,37.5,62.5,Baixa consistência ofensiva
+0.0,1.0,1.0,1.0,5.0,0.75,Mazatlan,8.0,37.5,62.5,Baixa consistência ofensiva
+0.0,2.0,0.0,3.0,4.0,1.00,Monterrey,9.0,55.56,44.44,Média consistência ofensiva
+0.0,0.0,1.0,3.0,5.0,0.56,Necaxa,9.0,44.44,55.56,Baixa consistência ofensiva
+0.0,0.0,2.0,1.0,5.0,0.63,Pachuca,8.0,37.5,62.5,Baixa consistência ofensiva
+0.0,0.0,0.0,4.0,5.0,0.44,Puebla,9.0,44.44,55.56,Baixa consistência ofensiva
+0.0,0.0,1.0,4.0,3.0,0.75,Pumas UNAM,8.0,62.5,37.5,Média consistência ofensiva
+0.0,0.0,0.0,2.0,6.0,0.25,Queretaro,8.0,25.0,75.0,Baixa consistência ofensiva
+0.0,0.0,0.0,2.0,7.0,0.22,Santos Laguna,9.0,22.22,77.78,Baixa consistência ofensiva
+0.0,0.0,0.0,5.0,3.0,0.63,Tigres,8.0,62.5,37.5,Média consistência ofensiva
+0.0,0.0,1.0,5.0,3.0,0.78,Tijuana,9.0,66.67,33.33,Média consistência ofensiva
+0.0,0.0,4.0,4.0,1.0,1.33,Toluca,9.0,88.89,11.11,Alta consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,,,0.0,,,Baixa consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,0.68,League avg.,0.0,,,Baixa consistência ofensiva
+0.0,0.0,1.0,3.0,5.0,0.56,A. San Luis,9.0,44.44,55.56,Baixa consistência ofensiva
+0.0,0.0,2.0,2.0,5.0,0.67,Atlas,9.0,44.44,55.56,Baixa consistência ofensiva
+0.0,0.0,4.0,2.0,3.0,1.11,CF America,9.0,66.67,33.33,Média consistência ofensiva
+0.0,0.0,1.0,4.0,3.0,0.75,Club Leon,8.0,62.5,37.5,Média consistência ofensiva
+0.0,0.0,2.0,4.0,2.0,1.00,Cruz Azul,8.0,75.0,25.0,Alta consistência ofensiva
+0.0,0.0,2.0,3.0,3.0,0.88,Guadalajara,8.0,62.5,37.5,Média consistência ofensiva
+0.0,0.0,1.0,5.0,3.0,0.78,Juarez,9.0,66.67,33.33,Média consistência ofensiva
+0.0,0.0,1.0,3.0,5.0,0.56,Mazatlan,9.0,44.44,55.56,Baixa consistência ofensiva
+0.0,0.0,2.0,5.0,1.0,1.13,Monterrey,8.0,87.5,12.5,Alta consistência ofensiva
+0.0,0.0,2.0,4.0,2.0,1.00,Necaxa,8.0,75.0,25.0,Alta consistência ofensiva
+0.0,0.0,3.0,2.0,4.0,0.89,Pachuca,9.0,55.56,44.44,Média consistência ofensiva
+0.0,0.0,0.0,3.0,5.0,0.38,Puebla,8.0,37.5,62.5,Baixa consistência ofensiva
+0.0,0.0,1.0,1.0,7.0,0.33,Pumas UNAM,9.0,22.22,77.78,Baixa consistência ofensiva
+0.0,0.0,0.0,5.0,4.0,0.56,Queretaro,9.0,55.56,44.44,Média consistência ofensiva
+0.0,0.0,1.0,2.0,5.0,0.50,Santos Laguna,8.0,37.5,62.5,Baixa consistência ofensiva
+0.0,0.0,0.0,4.0,5.0,0.44,Tigres,9.0,44.44,55.56,Baixa consistência ofensiva
+0.0,1.0,0.0,5.0,2.0,1.00,Tijuana,8.0,75.0,25.0,Alta consistência ofensiva
+1.0,1.0,2.0,3.0,1.0,1.75,Toluca,8.0,87.5,12.5,Alta consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,,,0.0,,,Baixa consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,0.78,League avg.,0.0,,,Baixa consistência ofensiva
+0.0,0.0,6.0,7.0,4.0,1.12,Ajax Amsterdam,17.0,76.47,23.53,Alta consistência ofensiva
+0.0,0.0,0.0,5.0,12.0,0.29,Almere City,17.0,29.41,70.59,Baixa consistência ofensiva
+0.0,0.0,2.0,5.0,10.0,0.53,AZ Alkmaar,17.0,41.18,58.82,Baixa consistência ofensiva
+0.0,1.0,3.0,4.0,9.0,0.76,FC Groningen,17.0,47.06,52.94,Baixa consistência ofensiva
+0.0,0.0,4.0,10.0,3.0,1.06,FC Twente,17.0,82.35,17.65,Alta consistência ofensiva
+0.0,1.0,1.0,9.0,6.0,0.82,FC Utrecht,17.0,64.71,35.29,Média consistência ofensiva
+0.0,2.0,4.0,6.0,5.0,1.18,Feyenoord,17.0,70.59,29.41,Alta consistência ofensiva
+0.0,1.0,0.0,4.0,12.0,0.41,Fortuna Sittard,17.0,29.41,70.59,Baixa consistência ofensiva
+1.0,0.0,2.0,5.0,9.0,0.76,Go Ahead Eagles,17.0,47.06,52.94,Baixa consistência ofensiva
+0.0,0.0,3.0,9.0,5.0,0.88,Heerenveen,17.0,70.59,29.41,Alta consistência ofensiva
+0.0,0.0,2.0,9.0,6.0,0.76,Heracles Almelo,17.0,64.71,35.29,Média consistência ofensiva
+0.0,0.0,2.0,6.0,9.0,0.59,NAC Breda,17.0,47.06,52.94,Baixa consistência ofensiva
+0.0,1.0,0.0,9.0,7.0,0.71,NEC Nijmegen,17.0,58.82,41.18,Média consistência ofensiva
+0.0,0.0,2.0,3.0,12.0,0.41,PEC Zwolle,17.0,29.41,70.59,Baixa consistência ofensiva
+2.0,2.0,8.0,2.0,3.0,1.88,PSV Eindhoven,17.0,82.35,17.65,Alta consistência ofensiva
+0.0,1.0,0.0,7.0,9.0,0.59,RKC Waalwijk,17.0,47.06,52.94,Baixa consistência ofensiva
+0.0,0.0,0.0,7.0,10.0,0.41,Sparta,17.0,41.18,58.82,Baixa consistência ofensiva
+0.0,0.0,3.0,2.0,12.0,0.47,Willem II,17.0,29.41,70.59,Baixa consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,,,0.0,,,Baixa consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,0.76,League avg.,0.0,,,Baixa consistência ofensiva
+0.0,0.0,3.0,11.0,5.0,0.89,ADO Den Haag,19.0,73.68,26.32,Alta consistência ofensiva
+0.0,0.0,2.0,9.0,8.0,0.68,Cambuur,19.0,57.89,42.11,Média consistência ofensiva
+1.0,1.0,5.0,8.0,4.0,1.32,De Graafschap,19.0,78.95,21.05,Alta consistência ofensiva
+0.0,1.0,5.0,6.0,7.0,1.00,Excelsior,19.0,63.16,36.84,Média consistência ofensiva
+0.0,1.0,2.0,7.0,9.0,0.74,FC Den Bosch,19.0,52.63,47.37,Média consistência ofensiva
+0.0,2.0,3.0,10.0,4.0,1.16,FC Dordrecht,19.0,78.95,21.05,Alta consistência ofensiva
+0.0,0.0,2.0,8.0,9.0,0.63,FC Eindhoven,19.0,52.63,47.37,Média consistência ofensiva
+0.0,0.0,1.0,8.0,10.0,0.53,FC Emmen,19.0,47.37,52.63,Baixa consistência ofensiva
+0.0,3.0,3.0,6.0,7.0,1.11,FC Volendam,19.0,63.16,36.84,Média consistência ofensiva
+0.0,1.0,3.0,8.0,7.0,0.89,Helmond Sport,19.0,63.16,36.84,Média consistência ofensiva
+0.0,0.0,2.0,5.0,12.0,0.47,Jong Ajax,19.0,36.84,63.16,Baixa consistência ofensiva
+1.0,0.0,0.0,8.0,10.0,0.63,Jong AZ,19.0,47.37,52.63,Baixa consistência ofensiva
+0.0,1.0,1.0,8.0,9.0,0.68,Jong PSV,19.0,52.63,47.37,Média consistência ofensiva
+0.0,0.0,2.0,5.0,12.0,0.47,Jong Utrecht,19.0,36.84,63.16,Baixa consistência ofensiva
+1.0,1.0,2.0,5.0,10.0,0.84,MVV Maastricht,19.0,47.37,52.63,Baixa consistência ofensiva
+0.0,0.0,2.0,7.0,10.0,0.58,Roda JC,19.0,47.37,52.63,Baixa consistência ofensiva
+1.0,0.0,6.0,5.0,7.0,1.11,Telstar,19.0,63.16,36.84,Média consistência ofensiva
+0.0,0.0,1.0,5.0,13.0,0.37,TOP Oss,19.0,31.58,68.42,Baixa consistência ofensiva
+0.0,0.0,1.0,8.0,10.0,0.53,Vitesse Arnhem,19.0,47.37,52.63,Baixa consistência ofensiva
+0.0,0.0,2.0,3.0,14.0,0.37,VVV,19.0,26.32,73.68,Baixa consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,,,0.0,,,Baixa consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,0.75,League avg.,0.0,,,Baixa consistência ofensiva
+0.0,2.0,1.0,4.0,11.0,0.67,Ballymena Utd,18.0,38.89,61.11,Baixa consistência ofensiva
+0.0,1.0,3.0,5.0,11.0,0.70,Carrick Rangers,20.0,45.0,55.0,Baixa consistência ofensiva
+0.0,0.0,0.0,10.0,8.0,0.56,Cliftonville,18.0,55.56,44.44,Média consistência ofensiva
+0.0,0.0,1.0,8.0,10.0,0.53,Coleraine,19.0,47.37,52.63,Baixa consistência ofensiva
+0.0,0.0,2.0,6.0,12.0,0.50,Crusaders,20.0,40.0,60.0,Baixa consistência ofensiva
+0.0,1.0,2.0,10.0,7.0,0.85,Dungannon,20.0,65.0,35.0,Média consistência ofensiva
+0.0,0.0,1.0,2.0,16.0,0.21,Glenavon,19.0,15.79,84.21,Baixa consistência ofensiva
+0.0,0.0,0.0,6.0,11.0,0.35,Glentoran,17.0,35.29,64.71,Baixa consistência ofensiva
+0.0,0.0,1.0,3.0,14.0,0.28,Larne,18.0,22.22,77.78,Baixa consistência ofensiva
+1.0,1.0,2.0,7.0,9.0,0.90,Linfield,20.0,55.0,45.0,Média consistência ofensiva
+0.0,0.0,3.0,7.0,9.0,0.68,Loughgall,19.0,52.63,47.37,Média consistência ofensiva
+0.0,0.0,3.0,6.0,11.0,0.60,Portadown,20.0,45.0,55.0,Baixa consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,,,0.0,,,Baixa consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,0.57,League avg.,0.0,,,Baixa consistência ofensiva
+0.0,0.0,0.0,1.0,1.0,0.50,Bodo.Glimt,2.0,50.0,50.0,Média consistência ofensiva
+0.0,0.0,0.0,2.0,3.0,0.40,Brann,5.0,40.0,60.0,Baixa consistência ofensiva
+0.0,0.0,1.0,0.0,2.0,0.67,Bryne,3.0,33.33,66.67,Baixa consistência ofensiva
+0.0,1.0,1.0,2.0,0.0,1.75,Fredrikstad,4.0,100.0,0.0,Alta consistência ofensiva
+0.0,0.0,0.0,1.0,2.0,0.33,HamKam,3.0,33.33,66.67,Baixa consistência ofensiva
+0.0,0.0,0.0,0.0,3.0,0.00,Haugesund,3.0,0.0,100.0,Baixa consistência ofensiva
+0.0,0.0,0.0,2.0,1.0,0.67,KFUM Oslo,3.0,66.67,33.33,Média consistência ofensiva
+0.0,0.0,0.0,1.0,2.0,0.33,Kristiansund,3.0,33.33,66.67,Baixa consistência ofensiva
+0.0,0.0,0.0,1.0,3.0,0.25,Molde,4.0,25.0,75.0,Baixa consistência ofensiva
+0.0,0.0,0.0,3.0,2.0,0.60,Rosenborg,5.0,60.0,40.0,Média consistência ofensiva
+0.0,0.0,1.0,2.0,0.0,1.33,Sandefjord,3.0,100.0,0.0,Alta consistência ofensiva
+0.0,0.0,0.0,1.0,2.0,0.33,Sarpsborg 08,3.0,33.33,66.67,Baixa consistência ofensiva
+0.0,0.0,0.0,2.0,2.0,0.50,Stromsgodset,4.0,50.0,50.0,Média consistência ofensiva
+0.0,0.0,0.0,2.0,2.0,0.50,Tromso,4.0,50.0,50.0,Média consistência ofensiva
+0.0,0.0,0.0,2.0,2.0,0.50,Valerenga,4.0,50.0,50.0,Média consistência ofensiva
+0.0,0.0,1.0,1.0,4.0,0.50,Viking,6.0,33.33,66.67,Baixa consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,,,0.0,,,Baixa consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,0.58,League avg.,0.0,,,Baixa consistência ofensiva
+0.0,0.0,1.0,1.0,2.0,0.75,Aalesund,4.0,50.0,50.0,Média consistência ofensiva
+0.0,0.0,0.0,0.0,3.0,0.00,Asane,3.0,0.0,100.0,Baixa consistência ofensiva
+0.0,0.0,0.0,2.0,0.0,1.00,Egersund,2.0,100.0,0.0,Alta consistência ofensiva
+0.0,0.0,0.0,1.0,2.0,0.33,Hodd,3.0,33.33,66.67,Baixa consistência ofensiva
+0.0,0.0,1.0,1.0,1.0,1.00,Kongsvinger,3.0,66.67,33.33,Média consistência ofensiva
+0.0,0.0,2.0,0.0,1.0,1.33,Lillestrom,3.0,66.67,33.33,Média consistência ofensiva
+0.0,0.0,0.0,1.0,3.0,0.25,Lyn,4.0,25.0,75.0,Baixa consistência ofensiva
+0.0,0.0,0.0,0.0,3.0,0.00,Mjondalen,3.0,0.0,100.0,Baixa consistência ofensiva
+0.0,1.0,0.0,2.0,0.0,1.67,Moss,3.0,100.0,0.0,Alta consistência ofensiva
+0.0,0.0,1.0,0.0,3.0,0.50,Odd,4.0,25.0,75.0,Baixa consistência ofensiva
+0.0,0.0,0.0,1.0,3.0,0.25,Ranheim,4.0,25.0,75.0,Baixa consistência ofensiva
+0.0,1.0,1.0,0.0,2.0,1.25,Raufoss,4.0,50.0,50.0,Média consistência ofensiva
+0.0,0.0,0.0,1.0,2.0,0.33,Skeid,3.0,33.33,66.67,Baixa consistência ofensiva
+0.0,0.0,1.0,0.0,3.0,0.50,Sogndal,4.0,25.0,75.0,Baixa consistência ofensiva
+0.0,0.0,0.0,0.0,4.0,0.00,Stabaek,4.0,0.0,100.0,Baixa consistência ofensiva
+0.0,0.0,0.0,2.0,2.0,0.50,Start,4.0,50.0,50.0,Média consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,,,0.0,,,Baixa consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,0.58,League avg.,0.0,,,Baixa consistência ofensiva
+0.0,0.0,0.0,5.0,5.0,0.50,2 de Mayo,10.0,50.0,50.0,Média consistência ofensiva
+0.0,0.0,0.0,3.0,7.0,0.30,A. Tembetary,10.0,30.0,70.0,Baixa consistência ofensiva
+0.0,0.0,1.0,4.0,5.0,0.60,Cerro Porteno,10.0,50.0,50.0,Média consistência ofensiva
+0.0,0.0,0.0,2.0,8.0,0.20,D. Recoleta,10.0,20.0,80.0,Baixa consistência ofensiva
+0.0,0.0,2.0,3.0,5.0,0.70,G. Caballero,10.0,50.0,50.0,Média consistência ofensiva
+0.0,0.0,1.0,4.0,5.0,0.60,Guarani,10.0,50.0,50.0,Média consistência ofensiva
+0.0,0.0,0.0,4.0,6.0,0.40,Libertad,10.0,40.0,60.0,Baixa consistência ofensiva
+1.0,0.0,0.0,5.0,4.0,0.90,Nacional,10.0,60.0,40.0,Média consistência ofensiva
+0.0,2.0,2.0,1.0,5.0,1.10,Olimpia,10.0,50.0,50.0,Média consistência ofensiva
+0.0,0.0,2.0,1.0,7.0,0.50,S. Ameliano,10.0,30.0,70.0,Baixa consistência ofensiva
+0.0,0.0,0.0,1.0,9.0,0.10,S. Luqueno,10.0,10.0,90.0,Baixa consistência ofensiva
+0.0,0.0,0.0,5.0,5.0,0.50,S. Trinidense,10.0,50.0,50.0,Média consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,,,0.0,,,Baixa consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,0.53,League avg.,0.0,,,Baixa consistência ofensiva
+0.0,0.0,0.0,3.0,2.0,0.60,12 de Junio VH,5.0,60.0,40.0,Média consistência ofensiva
+0.0,0.0,0.0,1.0,3.0,0.25,C. River Plate,4.0,25.0,75.0,Baixa consistência ofensiva
+0.0,0.0,1.0,1.0,2.0,0.75,D. Capiata,4.0,50.0,50.0,Média consistência ofensiva
+0.0,0.0,0.0,2.0,3.0,0.40,D. Santani,5.0,40.0,60.0,Baixa consistência ofensiva
+0.0,0.0,0.0,0.0,5.0,0.00,Encarnacion,5.0,0.0,100.0,Baixa consistência ofensiva
+0.0,0.0,0.0,1.0,3.0,0.25,F. de la Mora,4.0,25.0,75.0,Baixa consistência ofensiva
+0.0,0.0,1.0,2.0,2.0,0.80,Guairena,5.0,60.0,40.0,Média consistência ofensiva
+0.0,1.0,0.0,2.0,1.0,1.25,Guarani de Fram,4.0,75.0,25.0,Alta consistência ofensiva
+0.0,0.0,0.0,1.0,4.0,0.20,Independiente,5.0,20.0,80.0,Baixa consistência ofensiva
+0.0,0.0,0.0,1.0,3.0,0.25,Pastoreo,4.0,25.0,75.0,Baixa consistência ofensiva
+0.0,1.0,0.0,2.0,2.0,1.00,Resistencia,5.0,60.0,40.0,Média consistência ofensiva
+0.0,0.0,1.0,2.0,1.0,1.00,Rubio Nu,4.0,75.0,25.0,Alta consistência ofensiva
+0.0,0.0,0.0,2.0,3.0,0.40,S. Carapegua,5.0,40.0,60.0,Baixa consistência ofensiva
+0.0,0.0,2.0,1.0,2.0,1.00,San Lorenzo,5.0,60.0,40.0,Média consistência ofensiva
+0.0,0.0,0.0,2.0,3.0,0.40,Sol de America,5.0,40.0,60.0,Baixa consistência ofensiva
+0.0,0.0,0.0,0.0,5.0,0.00,Tacuary,5.0,0.0,100.0,Baixa consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,,,0.0,,,Baixa consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,0.53,League avg.,0.0,,,Baixa consistência ofensiva
+0.0,0.0,2.0,1.0,4.0,0.71,A. Huanuco,7.0,42.86,57.14,Baixa consistência ofensiva
+0.0,0.0,1.0,3.0,2.0,0.83,ADT,6.0,66.67,33.33,Média consistência ofensiva
+0.0,0.0,2.0,2.0,2.0,1.00,Alianza A.,6.0,66.67,33.33,Média consistência ofensiva
+0.0,0.0,2.0,3.0,2.0,1.00,Alianza Lima,7.0,71.43,28.57,Alta consistência ofensiva
+0.0,0.0,0.0,4.0,1.0,0.80,Atletico Grau,5.0,80.0,20.0,Alta consistência ofensiva
+0.0,0.0,2.0,2.0,2.0,1.00,Ayacucho,6.0,66.67,33.33,Média consistência ofensiva
+0.0,0.0,0.0,2.0,4.0,0.33,Binacional,6.0,33.33,66.67,Baixa consistência ofensiva
+0.0,1.0,0.0,2.0,3.0,0.83,Cajamarca,6.0,50.0,50.0,Média consistência ofensiva
+0.0,0.0,0.0,4.0,2.0,0.67,Cienciano,6.0,66.67,33.33,Média consistência ofensiva
+0.0,0.0,0.0,0.0,5.0,0.00,Comerciantes U.,5.0,0.0,100.0,Baixa consistência ofensiva
+0.0,0.0,2.0,3.0,1.0,1.17,Cusco,6.0,83.33,16.67,Alta consistência ofensiva
+0.0,0.0,0.0,2.0,4.0,0.33,D. Garcilaso,6.0,33.33,66.67,Baixa consistência ofensiva
+0.0,0.0,1.0,5.0,1.0,1.00,FBC Melgar,7.0,85.71,14.29,Alta consistência ofensiva
+0.0,0.0,1.0,2.0,2.0,0.80,Juan Pablo II C,5.0,60.0,40.0,Média consistência ofensiva
+0.0,0.0,0.0,3.0,3.0,0.50,Los Chankas,6.0,50.0,50.0,Média consistência ofensiva
+0.0,1.0,0.0,4.0,1.0,1.17,S. Cristal,6.0,83.33,16.67,Alta consistência ofensiva
+0.0,0.0,2.0,2.0,3.0,0.86,Sport Boys,7.0,57.14,42.86,Média consistência ofensiva
+0.0,0.0,1.0,2.0,4.0,0.57,Sport Huancayo,7.0,42.86,57.14,Baixa consistência ofensiva
+0.0,0.0,1.0,3.0,3.0,0.71,Universitario,7.0,57.14,42.86,Média consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,,,0.0,,,Baixa consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,0.76,League avg.,0.0,,,Baixa consistência ofensiva
+0.0,0.0,2.0,8.0,7.0,0.71,Cracovia Krakow,17.0,58.82,41.18,Média consistência ofensiva
+0.0,0.0,2.0,6.0,8.0,0.63,Gornik Zabrze,16.0,50.0,50.0,Média consistência ofensiva
+1.0,0.0,1.0,12.0,2.0,1.19,Jagiellonia,16.0,87.5,12.5,Alta consistência ofensiva
+0.0,0.0,2.0,6.0,9.0,0.59,Katowice,17.0,47.06,52.94,Baixa consistência ofensiva
+0.0,0.0,1.0,7.0,9.0,0.53,Korona Kielce,17.0,47.06,52.94,Baixa consistência ofensiva
+1.0,1.0,5.0,6.0,3.0,1.50,Lech Poznan,16.0,81.25,18.75,Alta consistência ofensiva
+0.0,0.0,2.0,4.0,10.0,0.50,Lechia Gdansk,16.0,37.5,62.5,Baixa consistência ofensiva
+0.0,1.0,4.0,6.0,5.0,1.06,Legia Warsaw,16.0,68.75,31.25,Média consistência ofensiva
+0.0,1.0,2.0,5.0,9.0,0.71,Motor Lublin,17.0,47.06,52.94,Baixa consistência ofensiva
+0.0,0.0,1.0,7.0,9.0,0.53,Piast Gliwice,17.0,47.06,52.94,Baixa consistência ofensiva
+0.0,1.0,2.0,8.0,6.0,0.88,Pogon Szczecin,17.0,64.71,35.29,Média consistência ofensiva
+0.0,0.0,4.0,5.0,7.0,0.81,Puszcza Niepolo,16.0,56.25,43.75,Média consistência ofensiva
+0.0,0.0,2.0,4.0,10.0,0.50,Radomiak Radom,16.0,37.5,62.5,Baixa consistência ofensiva
+0.0,0.0,4.0,5.0,7.0,0.81,Rakow C.,16.0,56.25,43.75,Média consistência ofensiva
+0.0,0.0,2.0,6.0,9.0,0.59,Slask Wroclaw,17.0,47.06,52.94,Baixa consistência ofensiva
+0.0,0.0,1.0,6.0,10.0,0.47,Stal Mielec,17.0,41.18,58.82,Baixa consistência ofensiva
+0.0,0.0,3.0,5.0,9.0,0.65,Widzew Lodz,17.0,47.06,52.94,Baixa consistência ofensiva
+0.0,0.0,2.0,3.0,11.0,0.44,Zaglebie Lubin,16.0,31.25,68.75,Baixa consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,,,0.0,,,Baixa consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,0.72,League avg.,0.0,,,Baixa consistência ofensiva
+0.0,2.0,5.0,5.0,5.0,1.24,Arka Gdynia,17.0,70.59,29.41,Alta consistência ofensiva
+0.0,0.0,1.0,6.0,10.0,0.47,Chrobry Glogow,17.0,41.18,58.82,Baixa consistência ofensiva
+0.0,0.0,1.0,6.0,10.0,0.47,Gornik Leczna,17.0,41.18,58.82,Baixa consistência ofensiva
+0.0,0.0,0.0,6.0,11.0,0.35,K. Kolobrzeg,17.0,35.29,64.71,Baixa consistência ofensiva
+0.0,0.0,4.0,3.0,9.0,0.69,LKS Lodz,16.0,43.75,56.25,Baixa consistência ofensiva
+0.0,3.0,1.0,8.0,5.0,1.12,Miedz Legnica,17.0,70.59,29.41,Alta consistência ofensiva
+0.0,0.0,3.0,4.0,9.0,0.63,Odra Opole,16.0,43.75,56.25,Baixa consistência ofensiva
+0.0,0.0,0.0,6.0,10.0,0.38,Pogon Siedlce,16.0,37.5,62.5,Baixa consistência ofensiva
+0.0,0.0,6.0,4.0,7.0,0.94,Polonia Warszaw,17.0,58.82,41.18,Média consistência ofensiva
+1.0,1.0,0.0,7.0,7.0,0.88,Ruch Chorzow,16.0,56.25,43.75,Média consistência ofensiva
+0.0,1.0,2.0,3.0,10.0,0.63,Stal Rzeszow,16.0,37.5,62.5,Baixa consistência ofensiva
+0.0,0.0,1.0,5.0,10.0,0.44,Stalowa Wola,16.0,37.5,62.5,Baixa consistência ofensiva
+0.0,1.0,1.0,9.0,5.0,0.88,T. Nieciecza,16.0,68.75,31.25,Média consistência ofensiva
+0.0,0.0,3.0,3.0,10.0,0.56,Tychy,16.0,37.5,62.5,Baixa consistência ofensiva
+0.0,0.0,0.0,5.0,12.0,0.29,Warta Poznan,17.0,29.41,70.59,Baixa consistência ofensiva
+0.0,0.0,1.0,6.0,10.0,0.47,Wisla Krakow,17.0,41.18,58.82,Baixa consistência ofensiva
+0.0,1.0,2.0,7.0,6.0,0.88,Wisla Plock,16.0,62.5,37.5,Média consistência ofensiva
+0.0,0.0,3.0,7.0,7.0,0.76,Znicz Pruszkow,17.0,58.82,41.18,Média consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,,,0.0,,,Baixa consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,0.67,League avg.,0.0,,,Baixa consistência ofensiva
+0.0,1.0,0.0,3.0,13.0,0.35,Arouca,17.0,23.53,76.47,Baixa consistência ofensiva
+0.0,0.0,1.0,1.0,15.0,0.18,AVS,17.0,11.76,88.24,Baixa consistência ofensiva
+1.0,2.0,5.0,5.0,4.0,1.47,Benfica,17.0,76.47,23.53,Alta consistência ofensiva
+0.0,0.0,0.0,3.0,14.0,0.18,Boavista,17.0,17.65,82.35,Baixa consistência ofensiva
+0.0,0.0,1.0,11.0,5.0,0.76,Casa Pia,17.0,70.59,29.41,Alta consistência ofensiva
+1.0,0.0,3.0,4.0,9.0,0.82,Estoril,17.0,47.06,52.94,Baixa consistência ofensiva
+0.0,0.0,1.0,5.0,11.0,0.41,Estrela Amadora,17.0,35.29,64.71,Baixa consistência ofensiva
+0.0,0.0,0.0,7.0,10.0,0.41,Famalicao,17.0,41.18,58.82,Baixa consistência ofensiva
+0.0,0.0,0.0,5.0,12.0,0.29,Farense,17.0,29.41,70.59,Baixa consistência ofensiva
+0.0,0.0,2.0,8.0,7.0,0.71,FC Porto,17.0,58.82,41.18,Média consistência ofensiva
+0.0,0.0,2.0,5.0,10.0,0.53,Gil Vicente,17.0,41.18,58.82,Baixa consistência ofensiva
+0.0,1.0,1.0,8.0,7.0,0.76,Guimaraes,17.0,58.82,41.18,Média consistência ofensiva
+0.0,1.0,2.0,5.0,9.0,0.71,Moreirense,17.0,47.06,52.94,Baixa consistência ofensiva
+0.0,1.0,2.0,6.0,8.0,0.76,Nacional,17.0,52.94,47.06,Média consistência ofensiva
+0.0,0.0,2.0,9.0,6.0,0.76,Rio Ave,17.0,64.71,35.29,Média consistência ofensiva
+0.0,0.0,2.0,6.0,9.0,0.59,Santa Clara,17.0,47.06,52.94,Baixa consistência ofensiva
+0.0,1.0,4.0,8.0,4.0,1.12,Sporting Braga,17.0,76.47,23.53,Alta consistência ofensiva
+0.0,1.0,5.0,7.0,4.0,1.18,Sporting CP,17.0,76.47,23.53,Alta consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,,,0.0,,,Baixa consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,0.67,League avg.,0.0,,,Baixa consistência ofensiva
+0.0,0.0,3.0,9.0,5.0,0.88,Academico Viseu,17.0,70.59,29.41,Alta consistência ofensiva
+1.0,1.0,1.0,8.0,6.0,1.00,Alverca,17.0,64.71,35.29,Média consistência ofensiva
+0.0,0.0,4.0,5.0,8.0,0.76,Benfica B,17.0,52.94,47.06,Média consistência ofensiva
+0.0,0.0,1.0,5.0,11.0,0.41,Chaves,17.0,35.29,64.71,Baixa consistência ofensiva
+0.0,0.0,1.0,5.0,11.0,0.41,FC Porto B,17.0,35.29,64.71,Baixa consistência ofensiva
+0.0,0.0,3.0,4.0,10.0,0.59,Feirense,17.0,41.18,58.82,Baixa consistência ofensiva
+0.0,0.0,1.0,6.0,10.0,0.47,Felgueiras,17.0,41.18,58.82,Baixa consistência ofensiva
+0.0,1.0,2.0,4.0,10.0,0.65,Leixoes,17.0,41.18,58.82,Baixa consistência ofensiva
+0.0,0.0,2.0,4.0,11.0,0.47,Mafra,17.0,35.29,64.71,Baixa consistência ofensiva
+0.0,0.0,1.0,5.0,11.0,0.41,Maritimo,17.0,35.29,64.71,Baixa consistência ofensiva
+0.0,0.0,1.0,4.0,12.0,0.35,Oliveirense,17.0,29.41,70.59,Baixa consistência ofensiva
+0.0,0.0,1.0,7.0,9.0,0.53,Pacos Ferreira,17.0,47.06,52.94,Baixa consistência ofensiva
+0.0,1.0,4.0,6.0,6.0,1.00,Penafiel,17.0,64.71,35.29,Média consistência ofensiva
+0.0,1.0,1.0,6.0,9.0,0.65,Portimonense,17.0,47.06,52.94,Baixa consistência ofensiva
+0.0,1.0,2.0,6.0,8.0,0.76,Tondela,17.0,52.94,47.06,Média consistência ofensiva
+0.0,0.0,3.0,7.0,7.0,0.76,Torreense,17.0,58.82,41.18,Média consistência ofensiva
+0.0,0.0,1.0,6.0,10.0,0.47,Uniao de Leiria,17.0,41.18,58.82,Baixa consistência ofensiva
+0.0,1.0,0.0,7.0,9.0,0.59,Vizela,17.0,47.06,52.94,Baixa consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,,,0.0,,,Baixa consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,0.62,League avg.,0.0,,,Baixa consistência ofensiva
+0.0,0.0,2.0,8.0,9.0,0.63,Aberdeen,19.0,52.63,47.37,Média consistência ofensiva
+2.0,2.0,7.0,4.0,4.0,1.74,Celtic,19.0,78.95,21.05,Alta consistência ofensiva
+0.0,2.0,1.0,11.0,5.0,1.00,Dundee FC,19.0,73.68,26.32,Alta consistência ofensiva
+0.0,0.0,1.0,7.0,11.0,0.47,Dundee Utd,19.0,42.11,57.89,Baixa consistência ofensiva
+0.0,0.0,2.0,8.0,9.0,0.63,Hearts,19.0,52.63,47.37,Média consistência ofensiva
+0.0,0.0,4.0,11.0,4.0,1.00,Hibernian,19.0,78.95,21.05,Alta consistência ofensiva
+0.0,0.0,1.0,7.0,11.0,0.47,Kilmarnock,19.0,42.11,57.89,Baixa consistência ofensiva
+0.0,1.0,5.0,5.0,7.0,1.00,Motherwell,18.0,61.11,38.89,Média consistência ofensiva
+0.0,2.0,2.0,9.0,6.0,1.00,Rangers,19.0,68.42,31.58,Média consistência ofensiva
+0.0,0.0,1.0,6.0,12.0,0.42,Ross County,19.0,36.84,63.16,Baixa consistência ofensiva
+0.0,0.0,1.0,4.0,14.0,0.32,St. Johnstone,19.0,26.32,73.68,Baixa consistência ofensiva
+0.0,0.0,3.0,8.0,9.0,0.70,St. Mirren,20.0,55.0,45.0,Média consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,,,0.0,,,Baixa consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,0.78,League avg.,0.0,,,Baixa consistência ofensiva
+0.0,0.0,2.0,2.0,14.0,0.33,Airdrieonians,18.0,22.22,77.78,Baixa consistência ofensiva
+0.0,3.0,3.0,6.0,6.0,1.17,Ayr Utd,18.0,66.67,33.33,Média consistência ofensiva
+0.0,0.0,0.0,4.0,14.0,0.22,Dunfermline,18.0,22.22,77.78,Baixa consistência ofensiva
+0.0,2.0,1.0,9.0,6.0,0.94,Falkirk,18.0,66.67,33.33,Média consistência ofensiva
+0.0,0.0,2.0,8.0,8.0,0.67,Greenock Morton,18.0,55.56,44.44,Média consistência ofensiva
+0.0,0.0,3.0,2.0,13.0,0.44,Hamilton,18.0,27.78,72.22,Baixa consistência ofensiva
+0.0,3.0,1.0,4.0,10.0,0.83,Livingston,18.0,44.44,55.56,Baixa consistência ofensiva
+0.0,0.0,2.0,8.0,8.0,0.67,Partick Thistle,18.0,55.56,44.44,Média consistência ofensiva
+0.0,0.0,1.0,6.0,11.0,0.44,Queens Park,18.0,38.89,61.11,Baixa consistência ofensiva
+0.0,0.0,4.0,9.0,5.0,0.94,Raith Rovers,18.0,72.22,27.78,Alta consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,,,0.0,,,Baixa consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,0.67,League avg.,0.0,,,Baixa consistência ofensiva
+0.0,0.0,2.0,6.0,10.0,0.56,Backa Topola,18.0,44.44,55.56,Baixa consistência ofensiva
+0.0,1.0,3.0,4.0,11.0,0.68,Cukaricki,19.0,42.11,57.89,Baixa consistência ofensiva
+0.0,1.0,2.0,6.0,9.0,0.72,IMT N. Beograd,18.0,50.0,50.0,Média consistência ofensiva
+1.0,0.0,2.0,3.0,12.0,0.61,Jedinstvo U.,18.0,33.33,66.67,Baixa consistência ofensiva
+0.0,0.0,1.0,7.0,10.0,0.50,Mladost Lucani,18.0,44.44,55.56,Baixa consistência ofensiva
+0.0,0.0,1.0,8.0,10.0,0.53,Napredak,19.0,47.37,52.63,Baixa consistência ofensiva
+0.0,1.0,4.0,8.0,5.0,1.06,Novi Pazar,18.0,72.22,27.78,Alta consistência ofensiva
+0.0,0.0,3.0,6.0,9.0,0.67,OFK Beograd,18.0,50.0,50.0,Média consistência ofensiva
+0.0,1.0,5.0,4.0,8.0,0.94,Partizan,18.0,55.56,44.44,Média consistência ofensiva
+0.0,1.0,1.0,8.0,8.0,0.72,Radnicki 1923,18.0,55.56,44.44,Média consistência ofensiva
+0.0,0.0,3.0,7.0,7.0,0.76,Radnicki Nis,17.0,58.82,41.18,Média consistência ofensiva
+0.0,5.0,3.0,6.0,4.0,1.50,Red Star,18.0,77.78,22.22,Alta consistência ofensiva
+0.0,0.0,0.0,6.0,11.0,0.35,S. Subotica,17.0,35.29,64.71,Baixa consistência ofensiva
+0.0,0.0,0.0,6.0,12.0,0.33,T. Odzaci,18.0,33.33,66.67,Baixa consistência ofensiva
+0.0,0.0,4.0,1.0,13.0,0.50,Vojvodina,18.0,27.78,72.22,Baixa consistência ofensiva
+0.0,0.0,2.0,8.0,9.0,0.63,Z. Pancevo,19.0,52.63,47.37,Média consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,,,0.0,,,Baixa consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,0.69,League avg.,0.0,,,Baixa consistência ofensiva
+0.0,2.0,1.0,4.0,9.0,0.75,A. Niigata (S),16.0,43.75,56.25,Baixa consistência ofensiva
+0.0,0.0,3.0,8.0,5.0,0.88,DPMM FC,16.0,68.75,31.25,Média consistência ofensiva
+0.0,1.0,5.0,5.0,5.0,1.13,Geylang,16.0,68.75,31.25,Média consistência ofensiva
+0.0,0.0,5.0,4.0,6.0,0.93,Hougang,15.0,60.0,40.0,Média consistência ofensiva
+0.0,2.0,1.0,6.0,6.0,0.93,Khalsa,15.0,60.0,40.0,Média consistência ofensiva
+1.0,1.0,8.0,1.0,5.0,1.50,Lion City,16.0,68.75,31.25,Média consistência ofensiva
+0.0,1.0,1.0,6.0,7.0,0.73,Tampines Rovers,15.0,53.33,46.67,Média consistência ofensiva
+0.0,0.0,2.0,3.0,10.0,0.47,Tanjong Pagar,15.0,33.33,66.67,Baixa consistência ofensiva
+0.0,0.0,1.0,7.0,8.0,0.56,Young Lions,16.0,50.0,50.0,Média consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,,,0.0,,,Baixa consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,0.88,League avg.,0.0,,,Baixa consistência ofensiva
+1.0,0.0,2.0,6.0,8.0,0.82,Bravo,17.0,52.94,47.06,Média consistência ofensiva
+0.0,0.0,0.0,5.0,13.0,0.28,Domzale,18.0,27.78,72.22,Baixa consistência ofensiva
+0.0,0.0,2.0,6.0,10.0,0.56,Koper,18.0,44.44,55.56,Baixa consistência ofensiva
+0.0,1.0,5.0,9.0,2.0,1.29,Maribor,17.0,88.24,11.76,Alta consistência ofensiva
+0.0,0.0,2.0,7.0,8.0,0.65,Mura,17.0,52.94,47.06,Média consistência ofensiva
+0.0,0.0,3.0,1.0,14.0,0.39,Nafta,18.0,22.22,77.78,Baixa consistência ofensiva
+1.0,0.0,2.0,7.0,7.0,0.88,NK Celje,17.0,58.82,41.18,Média consistência ofensiva
+0.0,0.0,3.0,10.0,5.0,0.89,NK Olimpija,18.0,72.22,27.78,Alta consistência ofensiva
+0.0,0.0,0.0,8.0,10.0,0.44,Primorje,18.0,44.44,55.56,Baixa consistência ofensiva
+0.0,0.0,1.0,5.0,12.0,0.39,Radomlje,18.0,33.33,66.67,Baixa consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,,,0.0,,,Baixa consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,0.65,League avg.,0.0,,,Baixa consistência ofensiva
+0.0,1.0,2.0,5.0,8.0,0.75,Banska Bystrica,16.0,50.0,50.0,Média consistência ofensiva
+0.0,2.0,2.0,7.0,5.0,1.06,DAC Streda,16.0,68.75,31.25,Média consistência ofensiva
+0.0,1.0,2.0,9.0,4.0,1.00,FC Kosice,16.0,75.0,25.0,Alta consistência ofensiva
+0.0,0.0,0.0,8.0,8.0,0.50,Komarno,16.0,50.0,50.0,Média consistência ofensiva
+0.0,1.0,1.0,4.0,10.0,0.56,Podbrezova,16.0,37.5,62.5,Baixa consistência ofensiva
+0.0,0.0,1.0,8.0,7.0,0.63,Ruzomberok,16.0,56.25,43.75,Média consistência ofensiva
+1.0,1.0,1.0,2.0,11.0,0.69,S. Bratislava,16.0,31.25,68.75,Baixa consistência ofensiva
+0.0,0.0,0.0,4.0,12.0,0.25,Skalica,16.0,25.0,75.0,Baixa consistência ofensiva
+0.0,0.0,3.0,3.0,10.0,0.56,Spartak Trnava,16.0,37.5,62.5,Baixa consistência ofensiva
+0.0,0.0,3.0,5.0,8.0,0.69,Trencin,16.0,50.0,50.0,Média consistência ofensiva
+0.0,1.0,3.0,4.0,8.0,0.81,Z. Michalovce,16.0,50.0,50.0,Média consistência ofensiva
+0.0,1.0,0.0,7.0,8.0,0.63,Zilina,16.0,50.0,50.0,Média consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,,,0.0,,,Baixa consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,0.68,League avg.,0.0,,,Baixa consistência ofensiva
+0.0,0.0,1.0,7.0,6.0,0.64,AmaZulu,14.0,57.14,42.86,Média consistência ofensiva
+0.0,0.0,0.0,3.0,10.0,0.23,Cape Town City,13.0,23.08,76.92,Baixa consistência ofensiva
+0.0,0.0,3.0,3.0,8.0,0.64,Chippa Utd,14.0,42.86,57.14,Baixa consistência ofensiva
+0.0,0.0,2.0,3.0,8.0,0.54,Golden Arrows,13.0,38.46,61.54,Baixa consistência ofensiva
+0.0,0.0,1.0,9.0,4.0,0.79,Kaizer Chiefs,14.0,71.43,28.57,Alta consistência ofensiva
+0.0,0.0,0.0,8.0,6.0,0.57,Magesi,14.0,57.14,42.86,Média consistência ofensiva
+0.0,2.0,6.0,5.0,2.0,1.53,Mamelodi S.,15.0,86.67,13.33,Alta consistência ofensiva
+0.0,0.0,0.0,7.0,7.0,0.50,Marumo G.,14.0,50.0,50.0,Média consistência ofensiva
+0.0,0.0,2.0,5.0,6.0,0.69,Orlando Pirates,13.0,53.85,46.15,Média consistência ofensiva
+0.0,0.0,0.0,8.0,6.0,0.57,Polokwane,14.0,57.14,42.86,Média consistência ofensiva
+0.0,0.0,0.0,1.0,13.0,0.07,Richards Bay,14.0,7.14,92.86,Baixa consistência ofensiva
+0.0,0.0,0.0,2.0,4.0,0.33,Royal AM,6.0,33.33,66.67,Baixa consistência ofensiva
+0.0,0.0,0.0,7.0,7.0,0.50,Sekhukhune,14.0,50.0,50.0,Média consistência ofensiva
+0.0,0.0,2.0,4.0,8.0,0.57,Stellenbosch,14.0,42.86,57.14,Baixa consistência ofensiva
+0.0,0.0,0.0,3.0,9.0,0.25,SuperSport Utd,12.0,25.0,75.0,Baixa consistência ofensiva
+0.0,0.0,2.0,4.0,8.0,0.57,TS Galaxy,14.0,42.86,57.14,Baixa consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,,,0.0,,,Baixa consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,0.58,League avg.,0.0,,,Baixa consistência ofensiva
+0.0,0.0,0.0,3.0,6.0,0.33,Anyang,9.0,33.33,66.67,Baixa consistência ofensiva
+0.0,0.0,1.0,1.0,5.0,0.43,Daegu,7.0,28.57,71.43,Baixa consistência ofensiva
+0.0,0.0,0.0,1.0,6.0,0.14,Daejeon Citizen,7.0,14.29,85.71,Baixa consistência ofensiva
+0.0,0.0,0.0,1.0,6.0,0.14,Gangwon,7.0,14.29,85.71,Baixa consistência ofensiva
+0.0,0.0,1.0,1.0,4.0,0.50,Gimcheon Sangmu,6.0,33.33,66.67,Baixa consistência ofensiva
+0.0,0.0,1.0,2.0,4.0,0.57,Gwangju,7.0,42.86,57.14,Baixa consistência ofensiva
+0.0,0.0,0.0,4.0,4.0,0.50,Jeju Utd,8.0,50.0,50.0,Média consistência ofensiva
+0.0,1.0,2.0,2.0,3.0,1.13,Jeonbuk Motors,8.0,62.5,37.5,Média consistência ofensiva
+0.0,0.0,0.0,2.0,6.0,0.25,Pohang Steelers,8.0,25.0,75.0,Baixa consistência ofensiva
+0.0,0.0,0.0,1.0,5.0,0.17,Seoul,6.0,16.67,83.33,Baixa consistência ofensiva
+0.0,0.0,0.0,4.0,3.0,0.57,Suwon City,7.0,57.14,42.86,Média consistência ofensiva
+0.0,0.0,1.0,4.0,3.0,0.75,Ulsan,8.0,62.5,37.5,Média consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,,,0.0,,,Baixa consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,0.47,League avg.,0.0,,,Baixa consistência ofensiva
+0.0,0.0,0.0,1.0,6.0,0.14,Ansan Greeners,7.0,14.29,85.71,Baixa consistência ofensiva
+0.0,0.0,1.0,1.0,3.0,0.60,Asan,5.0,40.0,60.0,Baixa consistência ofensiva
+0.0,0.0,1.0,3.0,3.0,0.71,Bucheon FC,7.0,57.14,42.86,Média consistência ofensiva
+0.0,0.0,1.0,3.0,4.0,0.63,Busan IPark,8.0,50.0,50.0,Média consistência ofensiva
+0.0,0.0,0.0,1.0,6.0,0.14,Cheonan City,7.0,14.29,85.71,Baixa consistência ofensiva
+0.0,1.0,0.0,0.0,1.0,1.50,Cheongju,2.0,50.0,50.0,Média consistência ofensiva
+0.0,0.0,0.0,3.0,4.0,0.43,Gimpo,7.0,42.86,57.14,Baixa consistência ofensiva
+0.0,0.0,0.0,1.0,5.0,0.17,Gyeongnam,6.0,16.67,83.33,Baixa consistência ofensiva
+0.0,0.0,0.0,1.0,5.0,0.17,Hwaseong,6.0,16.67,83.33,Baixa consistência ofensiva
+0.0,0.0,1.0,1.0,5.0,0.43,Incheon Utd,7.0,28.57,71.43,Baixa consistência ofensiva
+0.0,0.0,0.0,2.0,0.0,1.00,Jeonnam,2.0,100.0,0.0,Alta consistência ofensiva
+0.0,0.0,0.0,4.0,2.0,0.67,Seongnam,6.0,66.67,33.33,Média consistência ofensiva
+0.0,1.0,1.0,3.0,3.0,1.00,Seoul E-Land,8.0,62.5,37.5,Média consistência ofensiva
+1.0,1.0,1.0,0.0,3.0,1.50,Suwon Bluewings,6.0,50.0,50.0,Média consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,,,0.0,,,Baixa consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,0.58,League avg.,0.0,,,Baixa consistência ofensiva
+0.0,0.0,0.0,5.0,13.0,0.28,Alaves,18.0,27.78,72.22,Baixa consistência ofensiva
+1.0,1.0,2.0,6.0,8.0,0.94,Athletic Bilbao,18.0,55.56,44.44,Média consistência ofensiva
+1.0,0.0,3.0,6.0,9.0,0.84,Atletico Madrid,19.0,52.63,47.37,Média consistência ofensiva
+0.0,0.0,4.0,6.0,9.0,0.74,Celta Vigo,19.0,52.63,47.37,Média consistência ofensiva
+0.0,0.0,0.0,10.0,8.0,0.56,Espanyol,18.0,55.56,44.44,Média consistência ofensiva
+2.0,3.0,3.0,7.0,4.0,1.63,FC Barcelona,19.0,78.95,21.05,Alta consistência ofensiva
+0.0,0.0,0.0,6.0,12.0,0.33,Getafe,18.0,33.33,66.67,Baixa consistência ofensiva
+1.0,0.0,2.0,6.0,9.0,0.78,Girona,18.0,50.0,50.0,Média consistência ofensiva
+0.0,0.0,0.0,6.0,13.0,0.32,Las Palmas,19.0,31.58,68.42,Baixa consistência ofensiva
+0.0,0.0,4.0,0.0,14.0,0.44,Leganes,18.0,22.22,77.78,Baixa consistência ofensiva
+0.0,1.0,0.0,7.0,11.0,0.53,Mallorca,19.0,42.11,57.89,Baixa consistência ofensiva
+0.0,1.0,3.0,9.0,6.0,0.95,Osasuna,19.0,68.42,31.58,Média consistência ofensiva
+0.0,0.0,2.0,7.0,9.0,0.61,Rayo Vallecano,18.0,50.0,50.0,Média consistência ofensiva
+0.0,0.0,2.0,10.0,7.0,0.74,Real Betis,19.0,63.16,36.84,Média consistência ofensiva
+0.0,2.0,5.0,3.0,8.0,1.06,Real Madrid,18.0,55.56,44.44,Média consistência ofensiva
+0.0,0.0,2.0,6.0,11.0,0.53,Real Sociedad,19.0,42.11,57.89,Baixa consistência ofensiva
+0.0,0.0,0.0,9.0,10.0,0.47,Sevilla FC,19.0,47.37,52.63,Baixa consistência ofensiva
+0.0,1.0,1.0,9.0,8.0,0.74,Valencia,19.0,57.89,42.11,Média consistência ofensiva
+0.0,0.0,0.0,3.0,16.0,0.16,Valladolid,19.0,15.79,84.21,Baixa consistência ofensiva
+1.0,2.0,1.0,11.0,3.0,1.28,Villarreal,18.0,83.33,16.67,Alta consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,,,0.0,,,Baixa consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,0.70,League avg.,0.0,,,Baixa consistência ofensiva
+0.0,0.0,2.0,10.0,8.0,0.70,Albacete,20.0,60.0,40.0,Média consistência ofensiva
+0.0,1.0,2.0,7.0,10.0,0.70,Almeria,20.0,50.0,50.0,Média consistência ofensiva
+0.0,0.0,1.0,7.0,12.0,0.45,Burgos,20.0,40.0,60.0,Baixa consistência ofensiva
+0.0,1.0,3.0,4.0,12.0,0.65,Cadiz,20.0,40.0,60.0,Baixa consistência ofensiva
+0.0,0.0,1.0,6.0,13.0,0.40,Cartagena,20.0,35.0,65.0,Baixa consistência ofensiva
+0.0,0.0,3.0,8.0,9.0,0.70,Castellon,20.0,55.0,45.0,Média consistência ofensiva
+0.0,0.0,2.0,10.0,8.0,0.70,Cordoba,20.0,60.0,40.0,Média consistência ofensiva
+0.0,2.0,1.0,2.0,15.0,0.50,Deportivo,20.0,25.0,75.0,Baixa consistência ofensiva
+0.0,0.0,0.0,12.0,8.0,0.60,Eibar,20.0,60.0,40.0,Média consistência ofensiva
+0.0,0.0,3.0,8.0,9.0,0.70,Elche,20.0,55.0,45.0,Média consistência ofensiva
+0.0,0.0,1.0,8.0,11.0,0.50,Eldense,20.0,45.0,55.0,Baixa consistência ofensiva
+0.0,1.0,3.0,8.0,8.0,0.85,Granada,20.0,60.0,40.0,Média consistência ofensiva
+0.0,1.0,2.0,10.0,7.0,0.85,Huesca,20.0,65.0,35.0,Média consistência ofensiva
+0.0,0.0,5.0,6.0,9.0,0.80,Levante,20.0,55.0,45.0,Média consistência ofensiva
+0.0,0.0,2.0,7.0,11.0,0.55,Malaga,20.0,45.0,55.0,Baixa consistência ofensiva
+0.0,0.0,2.0,9.0,9.0,0.65,Mirandes,20.0,55.0,45.0,Média consistência ofensiva
+0.0,1.0,5.0,3.0,11.0,0.80,Racing,20.0,45.0,55.0,Baixa consistência ofensiva
+0.0,0.0,0.0,2.0,18.0,0.10,Racing Ferrol,20.0,10.0,90.0,Baixa consistência ofensiva
+0.0,0.0,3.0,6.0,11.0,0.60,Real Oviedo,20.0,45.0,55.0,Baixa consistência ofensiva
+0.0,0.0,2.0,6.0,12.0,0.50,Real Zaragoza,20.0,40.0,60.0,Baixa consistência ofensiva
+0.0,0.0,2.0,8.0,10.0,0.60,Sporting Gijon,20.0,50.0,50.0,Média consistência ofensiva
+0.0,0.0,1.0,8.0,11.0,0.50,Tenerife,20.0,45.0,55.0,Baixa consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,,,0.0,,,Baixa consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,0.61,League avg.,0.0,,,Baixa consistência ofensiva
+0.0,0.0,1.0,1.0,3.0,0.60,AIK,5.0,40.0,60.0,Baixa consistência ofensiva
+0.0,0.0,0.0,1.0,2.0,0.33,Brommapojkarna,3.0,33.33,66.67,Baixa consistência ofensiva
+0.0,0.0,0.0,2.0,3.0,0.40,Degerfors,5.0,40.0,60.0,Baixa consistência ofensiva
+0.0,0.0,0.0,2.0,3.0,0.40,Djurgarden,5.0,40.0,60.0,Baixa consistência ofensiva
+0.0,0.0,3.0,2.0,1.0,1.33,Elfsborg,6.0,83.33,16.67,Alta consistência ofensiva
+0.0,0.0,1.0,1.0,2.0,0.75,GAIS,4.0,50.0,50.0,Média consistência ofensiva
+0.0,0.0,0.0,1.0,5.0,0.17,Hacken,6.0,16.67,83.33,Baixa consistência ofensiva
+0.0,0.0,1.0,2.0,2.0,0.80,Halmstad,5.0,60.0,40.0,Média consistência ofensiva
+0.0,0.0,1.0,4.0,1.0,1.00,Hammarby,6.0,83.33,16.67,Alta consistência ofensiva
+0.0,0.0,1.0,1.0,3.0,0.60,IFK Goteborg,5.0,40.0,60.0,Baixa consistência ofensiva
+0.0,0.0,1.0,1.0,4.0,0.50,Malmo FF,6.0,33.33,66.67,Baixa consistência ofensiva
+0.0,2.0,0.0,2.0,1.0,1.60,Mjallby,5.0,80.0,20.0,Alta consistência ofensiva
+0.0,0.0,2.0,0.0,3.0,0.80,Norrkoping,5.0,40.0,60.0,Baixa consistência ofensiva
+0.0,0.0,0.0,1.0,4.0,0.20,Oster,5.0,20.0,80.0,Baixa consistência ofensiva
+0.0,0.0,0.0,3.0,2.0,0.60,Sirius,5.0,60.0,40.0,Média consistência ofensiva
+0.0,0.0,0.0,1.0,4.0,0.20,Varnamo,5.0,20.0,80.0,Baixa consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,,,0.0,,,Baixa consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,0.65,League avg.,0.0,,,Baixa consistência ofensiva
+0.0,0.0,0.0,1.0,3.0,0.25,Brage,4.0,25.0,75.0,Baixa consistência ofensiva
+0.0,0.0,1.0,3.0,1.0,1.00,Falkenberg,5.0,80.0,20.0,Alta consistência ofensiva
+0.0,0.0,0.0,1.0,4.0,0.20,GIF Sundsvall,5.0,20.0,80.0,Baixa consistência ofensiva
+0.0,0.0,0.0,4.0,1.0,0.80,Helsingborg,5.0,80.0,20.0,Alta consistência ofensiva
+0.0,0.0,0.0,3.0,1.0,0.75,Kalmar,4.0,75.0,25.0,Alta consistência ofensiva
+0.0,0.0,0.0,2.0,3.0,0.40,Landskrona,5.0,40.0,60.0,Baixa consistência ofensiva
+0.0,0.0,0.0,2.0,2.0,0.50,Oddevold,4.0,50.0,50.0,Média consistência ofensiva
+0.0,0.0,0.0,1.0,3.0,0.25,Orebro,4.0,25.0,75.0,Baixa consistência ofensiva
+0.0,0.0,3.0,0.0,3.0,1.00,Orgryte,6.0,50.0,50.0,Média consistência ofensiva
+0.0,0.0,1.0,2.0,1.0,1.00,Ostersunds,4.0,75.0,25.0,Alta consistência ofensiva
+0.0,0.0,0.0,2.0,2.0,0.50,Sandviken,4.0,50.0,50.0,Média consistência ofensiva
+0.0,0.0,1.0,0.0,3.0,0.50,Trelleborg,4.0,25.0,75.0,Baixa consistência ofensiva
+0.0,0.0,0.0,1.0,4.0,0.20,Umea,5.0,20.0,80.0,Baixa consistência ofensiva
+0.0,1.0,0.0,2.0,2.0,1.00,Utsikten,5.0,60.0,40.0,Média consistência ofensiva
+1.0,0.0,1.0,1.0,1.0,1.75,Varberg BoIS,4.0,75.0,25.0,Alta consistência ofensiva
+0.0,0.0,0.0,3.0,1.0,0.75,Vasteras,4.0,75.0,25.0,Alta consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,,,0.0,,,Baixa consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,0.68,League avg.,0.0,,,Baixa consistência ofensiva
+0.0,1.0,4.0,7.0,7.0,0.95,BSC Young Boys,19.0,63.16,36.84,Média consistência ofensiva
+1.0,2.0,2.0,7.0,6.0,1.17,FC Basel,18.0,66.67,33.33,Média consistência ofensiva
+0.0,0.0,3.0,6.0,10.0,0.63,FC Zurich,19.0,47.37,52.63,Baixa consistência ofensiva
+0.0,1.0,0.0,7.0,11.0,0.53,Grasshopper,19.0,42.11,57.89,Baixa consistência ofensiva
+0.0,2.0,3.0,8.0,7.0,1.00,Lausanne Sport,20.0,65.0,35.0,Média consistência ofensiva
+0.0,1.0,2.0,5.0,10.0,0.67,Lugano,18.0,44.44,55.56,Baixa consistência ofensiva
+0.0,0.0,2.0,7.0,10.0,0.58,Luzern,19.0,47.37,52.63,Baixa consistência ofensiva
+0.0,0.0,3.0,7.0,8.0,0.72,Servette,18.0,55.56,44.44,Média consistência ofensiva
+0.0,1.0,5.0,4.0,9.0,0.89,Sion,19.0,52.63,47.37,Média consistência ofensiva
+0.0,0.0,3.0,7.0,8.0,0.72,St. Gallen,18.0,55.56,44.44,Média consistência ofensiva
+0.0,2.0,2.0,1.0,14.0,0.58,Winterthur,19.0,26.32,73.68,Baixa consistência ofensiva
+0.0,0.0,0.0,7.0,12.0,0.37,Yverdon,19.0,36.84,63.16,Baixa consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,,,0.0,,,Baixa consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,0.73,League avg.,0.0,,,Baixa consistência ofensiva
+0.0,0.0,2.0,8.0,8.0,0.67,Aarau,18.0,55.56,44.44,Média consistência ofensiva
+0.0,0.0,1.0,9.0,8.0,0.61,Bellinzona,18.0,55.56,44.44,Média consistência ofensiva
+0.0,1.0,4.0,8.0,5.0,1.06,Etoile Carouge,18.0,72.22,27.78,Alta consistência ofensiva
+0.0,0.0,3.0,7.0,8.0,0.72,Lausanne Ouchy,18.0,55.56,44.44,Média consistência ofensiva
+0.0,0.0,5.0,5.0,8.0,0.83,Neuchatel Xamax,18.0,55.56,44.44,Média consistência ofensiva
+0.0,0.0,2.0,4.0,12.0,0.44,Schaffhausen,18.0,33.33,66.67,Baixa consistência ofensiva
+0.0,0.0,2.0,4.0,12.0,0.44,Stade Nyonnais,18.0,33.33,66.67,Baixa consistência ofensiva
+0.0,0.0,1.0,12.0,5.0,0.78,Thun,18.0,72.22,27.78,Alta consistência ofensiva
+0.0,1.0,4.0,4.0,9.0,0.83,Vaduz,18.0,50.0,50.0,Média consistência ofensiva
+0.0,0.0,3.0,6.0,9.0,0.67,Wil,18.0,50.0,50.0,Média consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,,,0.0,,,Baixa consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,0.71,League avg.,0.0,,,Baixa consistência ofensiva
+0.0,1.0,2.0,9.0,3.0,1.07,Bangkok Utd,15.0,80.0,20.0,Alta consistência ofensiva
+2.0,0.0,2.0,8.0,3.0,1.47,Buriram Utd,15.0,80.0,20.0,Alta consistência ofensiva
+0.0,0.0,0.0,8.0,7.0,0.53,Chiangrai Utd,15.0,53.33,46.67,Média consistência ofensiva
+0.0,1.0,1.0,4.0,9.0,0.60,Khon Kaen Utd,15.0,40.0,60.0,Baixa consistência ofensiva
+0.0,0.0,2.0,8.0,5.0,0.80,Lamphun Warrior,15.0,66.67,33.33,Média consistência ofensiva
+0.0,0.0,0.0,5.0,10.0,0.33,Muang Thong Utd,15.0,33.33,66.67,Baixa consistência ofensiva
+1.0,1.0,0.0,7.0,6.0,0.93,N. Bua Pitchaya,15.0,60.0,40.0,Média consistência ofensiva
+0.0,0.0,2.0,5.0,8.0,0.60,N. Ratchasima,15.0,46.67,53.33,Baixa consistência ofensiva
+0.0,0.0,1.0,7.0,7.0,0.60,Nakhon Pathom,15.0,53.33,46.67,Média consistência ofensiva
+1.0,0.0,1.0,6.0,7.0,0.80,Pathum Utd,15.0,53.33,46.67,Média consistência ofensiva
+0.0,0.0,2.0,5.0,8.0,0.60,Port FC,15.0,46.67,53.33,Baixa consistência ofensiva
+0.0,1.0,2.0,8.0,4.0,1.00,Prachuap,15.0,73.33,26.67,Alta consistência ofensiva
+0.0,1.0,3.0,10.0,1.0,1.27,Ratchaburi,15.0,93.33,6.67,Alta consistência ofensiva
+0.0,1.0,2.0,5.0,7.0,0.80,Rayong,15.0,53.33,46.67,Média consistência ofensiva
+0.0,0.0,4.0,5.0,6.0,0.87,Sukhothai,15.0,60.0,40.0,Média consistência ofensiva
+0.0,0.0,1.0,6.0,8.0,0.53,Uthai Thani,15.0,46.67,53.33,Baixa consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,,,0.0,,,Baixa consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,0.80,League avg.,0.0,,,Baixa consistência ofensiva
+0.0,0.0,2.0,4.0,11.0,0.47,Adana Demirspor,17.0,35.29,64.71,Baixa consistência ofensiva
+0.0,0.0,1.0,8.0,8.0,0.59,Alanyaspor,17.0,52.94,47.06,Média consistência ofensiva
+0.0,1.0,1.0,4.0,11.0,0.53,Antalyaspor,17.0,35.29,64.71,Baixa consistência ofensiva
+1.0,0.0,2.0,5.0,9.0,0.76,Basaksehir,17.0,47.06,52.94,Baixa consistência ofensiva
+0.0,0.0,5.0,8.0,4.0,1.06,Besiktas,17.0,76.47,23.53,Alta consistência ofensiva
+0.0,0.0,1.0,5.0,11.0,0.41,Bodrumspor,17.0,35.29,64.71,Baixa consistência ofensiva
+0.0,1.0,0.0,9.0,7.0,0.71,Eyupspor,17.0,58.82,41.18,Média consistência ofensiva
+0.0,1.0,1.0,10.0,5.0,0.88,Fenerbahce,17.0,70.59,29.41,Alta consistência ofensiva
+1.0,2.0,4.0,8.0,2.0,1.53,Galatasaray,17.0,88.24,11.76,Alta consistência ofensiva
+0.0,0.0,1.0,7.0,9.0,0.53,Gaziantep,17.0,47.06,52.94,Baixa consistência ofensiva
+0.0,0.0,5.0,5.0,7.0,0.88,Goztepe,17.0,58.82,41.18,Média consistência ofensiva
+0.0,0.0,2.0,9.0,6.0,0.76,Hatayspor,17.0,64.71,35.29,Média consistência ofensiva
+0.0,0.0,5.0,5.0,7.0,0.88,Kasimpasa,17.0,58.82,41.18,Média consistência ofensiva
+0.0,0.0,3.0,7.0,7.0,0.76,Kayserispor,17.0,58.82,41.18,Média consistência ofensiva
+0.0,0.0,2.0,7.0,8.0,0.65,Konyaspor,17.0,52.94,47.06,Média consistência ofensiva
+0.0,0.0,2.0,6.0,9.0,0.59,Rizespor,17.0,47.06,52.94,Baixa consistência ofensiva
+0.0,0.0,3.0,8.0,6.0,0.82,Samsunspor,17.0,64.71,35.29,Média consistência ofensiva
+0.0,1.0,1.0,5.0,11.0,0.56,Sivasspor,18.0,38.89,61.11,Baixa consistência ofensiva
+1.0,1.0,3.0,5.0,7.0,1.06,Trabzonspor,17.0,58.82,41.18,Média consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,,,0.0,,,Baixa consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,0.76,League avg.,0.0,,,Baixa consistência ofensiva
+0.0,1.0,1.0,4.0,6.0,0.75,Ajman,12.0,50.0,50.0,Média consistência ofensiva
+0.0,2.0,3.0,2.0,6.0,1.08,Al Ain,13.0,53.85,46.15,Média consistência ofensiva
+0.0,0.0,2.0,4.0,6.0,0.67,Al Bataeh,12.0,50.0,50.0,Média consistência ofensiva
+0.0,3.0,0.0,4.0,5.0,1.08,Al Jazira,12.0,58.33,41.67,Média consistência ofensiva
+0.0,1.0,1.0,4.0,7.0,0.69,Al Nasr,13.0,46.15,53.85,Baixa consistência ofensiva
+0.0,1.0,2.0,2.0,7.0,0.75,Al Sharjah,12.0,41.67,58.33,Baixa consistência ofensiva
+0.0,0.0,0.0,6.0,7.0,0.46,Al Urooba,13.0,46.15,53.85,Baixa consistência ofensiva
+0.0,0.0,5.0,5.0,3.0,1.15,Al Wahda,13.0,76.92,23.08,Alta consistência ofensiva
+1.0,1.0,1.0,6.0,4.0,1.15,Al Wasl,13.0,69.23,30.77,Média consistência ofensiva
+0.0,0.0,1.0,4.0,7.0,0.50,Bani Yas,12.0,41.67,58.33,Baixa consistência ofensiva
+0.0,0.0,1.0,4.0,7.0,0.50,Dibba Al Hisn,12.0,41.67,58.33,Baixa consistência ofensiva
+0.0,0.0,2.0,3.0,8.0,0.54,Ittihad Kalba,13.0,38.46,61.54,Baixa consistência ofensiva
+0.0,0.0,3.0,5.0,5.0,0.85,Khorfakkan,13.0,61.54,38.46,Média consistência ofensiva
+0.0,2.0,2.0,3.0,6.0,1.00,Shabab Al Ahli,13.0,53.85,46.15,Média consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,,,0.0,,,Baixa consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,0.80,League avg.,0.0,,,Baixa consistência ofensiva
+0.0,0.0,0.0,5.0,9.0,0.36,Chornomorets,14.0,35.71,64.29,Baixa consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,-,Dnipro-1,0.0,,,Baixa consistência ofensiva
+1.0,0.0,4.0,6.0,3.0,1.29,Dynamo Kyiv,14.0,78.57,21.43,Alta consistência ofensiva
+0.0,0.0,1.0,4.0,10.0,0.40,Inhulets,15.0,33.33,66.67,Baixa consistência ofensiva
+0.0,0.0,4.0,5.0,5.0,0.93,Karpaty Lviv,14.0,64.29,35.71,Média consistência ofensiva
+0.0,0.0,0.0,3.0,12.0,0.20,Kolos Kovalivka,15.0,20.0,80.0,Baixa consistência ofensiva
+0.0,0.0,0.0,8.0,7.0,0.53,Kryvbas KR,15.0,53.33,46.67,Média consistência ofensiva
+0.0,0.0,0.0,6.0,9.0,0.40,Livyi Bereh,15.0,40.0,60.0,Baixa consistência ofensiva
+0.0,0.0,0.0,4.0,11.0,0.27,LNZ Cherkasy,15.0,26.67,73.33,Baixa consistência ofensiva
+0.0,0.0,0.0,2.0,13.0,0.13,Obolon,15.0,13.33,86.67,Baixa consistência ofensiva
+0.0,2.0,2.0,5.0,6.0,1.00,Oleksandria,15.0,60.0,40.0,Média consistência ofensiva
+0.0,1.0,1.0,3.0,9.0,0.57,Polessya,14.0,35.71,64.29,Baixa consistência ofensiva
+0.0,0.0,0.0,4.0,10.0,0.29,Rukh Lviv,14.0,28.57,71.43,Baixa consistência ofensiva
+1.0,1.0,3.0,4.0,6.0,1.13,Shakhtar,15.0,60.0,40.0,Média consistência ofensiva
+0.0,0.0,2.0,5.0,7.0,0.64,Veres,14.0,50.0,50.0,Média consistência ofensiva
+0.0,0.0,0.0,4.0,11.0,0.27,Vorskla Poltava,15.0,26.67,73.33,Baixa consistência ofensiva
+0.0,0.0,0.0,7.0,8.0,0.47,Zorya Luhansk,15.0,46.67,53.33,Baixa consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,,,0.0,,,Baixa consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,0.55,League avg.,0.0,,,Baixa consistência ofensiva
+0.0,0.0,0.0,5.0,3.0,0.63,Atlanta Utd,8.0,62.5,37.5,Média consistência ofensiva
+0.0,0.0,1.0,0.0,7.0,0.25,Austin,8.0,12.5,87.5,Baixa consistência ofensiva
+0.0,0.0,0.0,2.0,3.0,0.40,CF Montreal,5.0,40.0,60.0,Baixa consistência ofensiva
+0.0,1.0,1.0,0.0,5.0,0.71,Charlotte,7.0,28.57,71.43,Baixa consistência ofensiva
+0.0,0.0,0.0,4.0,2.0,0.67,Chicago Fire,6.0,66.67,33.33,Média consistência ofensiva
+0.0,0.0,0.0,2.0,4.0,0.33,Cincinnati,6.0,33.33,66.67,Baixa consistência ofensiva
+0.0,0.0,1.0,1.0,5.0,0.43,Colorado Rapids,7.0,28.57,71.43,Baixa consistência ofensiva
+0.0,1.0,2.0,1.0,4.0,1.00,Columbus Crew,8.0,50.0,50.0,Média consistência ofensiva
+0.0,0.0,1.0,0.0,5.0,0.33,Dallas,6.0,16.67,83.33,Baixa consistência ofensiva
+0.0,0.0,2.0,1.0,4.0,0.71,DC United,7.0,42.86,57.14,Baixa consistência ofensiva
+0.0,0.0,0.0,5.0,3.0,0.63,Houston Dynamo,8.0,62.5,37.5,Média consistência ofensiva
+0.0,1.0,1.0,3.0,2.0,1.14,Inter Miami,7.0,71.43,28.57,Alta consistência ofensiva
+0.0,0.0,0.0,2.0,4.0,0.33,LA Galaxy,6.0,33.33,66.67,Baixa consistência ofensiva
+0.0,0.0,0.0,2.0,5.0,0.29,Los Angeles FC,7.0,28.57,71.43,Baixa consistência ofensiva
+0.0,0.0,1.0,3.0,3.0,0.71,Minnesota Utd,7.0,57.14,42.86,Média consistência ofensiva
+1.0,0.0,0.0,4.0,4.0,1.00,Nashville SC,9.0,55.56,44.44,Média consistência ofensiva
+0.0,0.0,0.0,2.0,3.0,0.40,New England,5.0,40.0,60.0,Baixa consistência ofensiva
+0.0,0.0,0.0,3.0,4.0,0.43,New York City,7.0,42.86,57.14,Baixa consistência ofensiva
+0.0,1.0,2.0,2.0,2.0,1.29,New York RB,7.0,71.43,28.57,Alta consistência ofensiva
+0.0,0.0,4.0,2.0,1.0,1.43,Orlando City,7.0,85.71,14.29,Alta consistência ofensiva
+0.0,0.0,1.0,5.0,2.0,0.88,Philadelphia,8.0,75.0,25.0,Alta consistência ofensiva
+0.0,0.0,2.0,2.0,3.0,0.86,Portland,7.0,57.14,42.86,Média consistência ofensiva
+0.0,0.0,1.0,2.0,3.0,0.67,Real Salt Lake,6.0,50.0,50.0,Média consistência ofensiva
+0.0,2.0,1.0,2.0,3.0,1.25,San Diego,8.0,62.5,37.5,Média consistência ofensiva
+0.0,1.0,0.0,3.0,1.0,1.20,Seattle,5.0,80.0,20.0,Alta consistência ofensiva
+0.0,3.0,1.0,3.0,1.0,1.75,SJ Earthquakes,8.0,87.5,12.5,Alta consistência ofensiva
+0.0,0.0,1.0,2.0,3.0,0.67,Sporting KC,6.0,50.0,50.0,Média consistência ofensiva
+0.0,0.0,1.0,2.0,4.0,0.57,St. Louis City,7.0,42.86,57.14,Baixa consistência ofensiva
+0.0,0.0,0.0,1.0,6.0,0.14,Toronto,7.0,14.29,85.71,Baixa consistência ofensiva
+0.0,0.0,2.0,5.0,0.0,1.29,Vancouver,7.0,100.0,0.0,Alta consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,,,0.0,,,Baixa consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,0.76,League avg.,0.0,,,Baixa consistência ofensiva
+0.0,0.0,0.0,3.0,2.0,0.60,Birmingham L.,5.0,60.0,40.0,Média consistência ofensiva
+0.0,0.0,3.0,1.0,2.0,1.17,Charleston,6.0,66.67,33.33,Média consistência ofensiva
+0.0,0.0,0.0,2.0,2.0,0.50,Colorado S.,4.0,50.0,50.0,Média consistência ofensiva
+0.0,0.0,2.0,0.0,1.0,1.33,Detroit City,3.0,66.67,33.33,Média consistência ofensiva
+0.0,0.0,3.0,2.0,0.0,1.60,El Paso,5.0,100.0,0.0,Alta consistência ofensiva
+0.0,0.0,0.0,1.0,4.0,0.20,FC Tulsa,5.0,20.0,80.0,Baixa consistência ofensiva
+0.0,0.0,0.0,1.0,3.0,0.25,Hartford A.,4.0,25.0,75.0,Baixa consistência ofensiva
+0.0,0.0,0.0,3.0,1.0,0.75,Indy Eleven,4.0,75.0,25.0,Alta consistência ofensiva
+0.0,0.0,0.0,1.0,5.0,0.17,Las Vegas L.,6.0,16.67,83.33,Baixa consistência ofensiva
+0.0,0.0,1.0,1.0,4.0,0.50,Lexington,6.0,33.33,66.67,Baixa consistência ofensiva
+0.0,0.0,1.0,2.0,1.0,1.00,Loudoun Utd,4.0,75.0,25.0,Alta consistência ofensiva
+0.0,0.0,0.0,2.0,2.0,0.50,Louisville City,4.0,50.0,50.0,Média consistência ofensiva
+0.0,0.0,2.0,1.0,3.0,0.83,Miami FC,6.0,50.0,50.0,Média consistência ofensiva
+0.0,0.0,0.0,3.0,1.0,0.75,Monterey Bay,4.0,75.0,25.0,Alta consistência ofensiva
+0.0,0.0,0.0,1.0,3.0,0.25,New Mexico,4.0,25.0,75.0,Baixa consistência ofensiva
+0.0,0.0,2.0,3.0,0.0,1.40,North Carolina,5.0,100.0,0.0,Alta consistência ofensiva
+0.0,0.0,1.0,1.0,3.0,0.60,Oakland Roots,5.0,40.0,60.0,Baixa consistência ofensiva
+0.0,0.0,0.0,3.0,3.0,0.50,Orange County,6.0,50.0,50.0,Média consistência ofensiva
+0.0,0.0,0.0,3.0,2.0,0.60,Phoenix Rising,5.0,60.0,40.0,Média consistência ofensiva
+0.0,0.0,0.0,1.0,2.0,0.33,Pittsburgh,3.0,33.33,66.67,Baixa consistência ofensiva
+0.0,0.0,0.0,0.0,2.0,0.00,Rhode Island,2.0,0.0,100.0,Baixa consistência ofensiva
+0.0,1.0,0.0,2.0,2.0,1.00,Sacramento R.,5.0,60.0,40.0,Média consistência ofensiva
+0.0,0.0,0.0,2.0,4.0,0.33,San Antonio,6.0,33.33,66.67,Baixa consistência ofensiva
+0.0,0.0,0.0,1.0,4.0,0.20,Tampa Bay,5.0,20.0,80.0,Baixa consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,,,0.0,,,Baixa consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,0.65,League avg.,0.0,,,Baixa consistência ofensiva
+0.0,0.0,2.0,0.0,2.0,1.00,Alta,4.0,50.0,50.0,Média consistência ofensiva
+0.0,0.0,0.0,2.0,3.0,0.40,Charlotte I.,5.0,40.0,60.0,Baixa consistência ofensiva
+0.0,0.0,0.0,1.0,3.0,0.25,Chattanooga RW,4.0,25.0,75.0,Baixa consistência ofensiva
+0.0,0.0,0.0,0.0,2.0,0.00,Forward Madison,2.0,0.0,100.0,Baixa consistência ofensiva
+0.0,0.0,1.0,1.0,4.0,0.50,Greenville,6.0,33.33,66.67,Baixa consistência ofensiva
+0.0,0.0,2.0,0.0,3.0,0.80,Naples,5.0,40.0,60.0,Baixa consistência ofensiva
+0.0,0.0,0.0,0.0,1.0,0.00,One Knoxville,1.0,0.0,100.0,Baixa consistência ofensiva
+0.0,0.0,0.0,2.0,0.0,1.00,Portland Hearts,2.0,100.0,0.0,Alta consistência ofensiva
+0.0,0.0,2.0,1.0,2.0,1.00,Richmond K.,5.0,60.0,40.0,Média consistência ofensiva
+0.0,0.0,0.0,4.0,2.0,0.67,Spokane V.,6.0,66.67,33.33,Média consistência ofensiva
+0.0,0.0,1.0,2.0,2.0,0.80,Texoma,5.0,60.0,40.0,Média consistência ofensiva
+0.0,0.0,2.0,2.0,1.0,1.20,Tormenta,5.0,80.0,20.0,Alta consistência ofensiva
+0.0,0.0,0.0,0.0,1.0,0.00,Union Omaha,1.0,0.0,100.0,Baixa consistência ofensiva
+0.0,0.0,1.0,1.0,0.0,1.50,Westchester SC,2.0,100.0,0.0,Alta consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,,,0.0,,,Baixa consistência ofensiva
+0.0,0.0,0.0,0.0,0.0,0.72,League avg.,0.0,,,Baixa consistência ofensiva
