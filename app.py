@@ -1133,7 +1133,14 @@ with tabs[4]:
                         (df_footystats['Odd_H_FT'] >= 1.9) &
                         (df_footystats['Odd_H_FT'] <= 2.20) &
                         (df_footystats['PPG_Home'] >= 1.8) &
-                        (df_footystats['League'] != 'SOUTH KOREA 1')
+                        (df_footystats['League'] != 'SOUTH KOREA 1') & 
+                        (df_footystats['League'] != 'AUSTRIA 1') &
+                        (df_footystats['League'] != 'ENGLAND 3') &
+                        (df_footystats['League'] != 'ENGLAND 4') &
+                        (df_footystats['League'] != 'GERMANY 2') &
+                        (df_footystats['League'] != 'PORTUGAL 2') &
+                        (df_footystats['League'] != 'SLOVENIA 1') &
+                        (df_footystats['League'] != 'SLOVAKIA 1') 
                     ]
                     st.metric("Jogos encontrados", len(df_back_home))
                     if not df_back_home.empty:
