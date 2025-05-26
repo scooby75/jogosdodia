@@ -1070,7 +1070,7 @@ with tabs[4]:
             df = df[~df['League'].isin(ligas_excluidas)]
             return df
         else:
-            st.error(f"Erro ao baixar o arquivo do FootyStats: {response.status_code}")
+            st.error(f"Erro ao atualizar os jogos: {response.status_code}")
             return None
 
     df_footystats = carregar_dados_footystats()
