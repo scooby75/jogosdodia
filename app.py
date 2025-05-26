@@ -1164,7 +1164,7 @@ with tabs[4]:
         else:
             st.error("❌ As colunas necessárias não estão presentes no arquivo do FootyStats.")
     else:
-        st.warning("⚠️ Não foi possível carregar os dados do FootyStats para hoje.")
+        st.warning("⚠️ Sem jogos para hoje.")
 
     
 # Executar com variável de ambiente PORT
