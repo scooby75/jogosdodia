@@ -1,1426 +1,1448 @@
 league,Team_Away,AVG_min_scored,AVG_min_conceded
-Argentina - Liga Profesional,A. Tucuman,36.0,53.0
-Argentina - Liga Profesional,Aldosivi,60.0,46.0
-Argentina - Liga Profesional,Argentinos Jrs,46.0,56.0
-Argentina - Liga Profesional,Banfield,72.0,55.0
-Argentina - Liga Profesional,Barracas C.,60.0,48.0
-Argentina - Liga Profesional,Belgrano,46.0,55.0
-Argentina - Liga Profesional,Boca Juniors,47.0,46.0
-Argentina - Liga Profesional,Central Cordoba,69.0,59.0
-Argentina - Liga Profesional,D. Riestra,49.0,77.0
-Argentina - Liga Profesional,Defensa y J.,45.0,44.0
-Argentina - Liga Profesional,Estudiantes,63.0,58.0
-Argentina - Liga Profesional,Gimnasia,22.0,56.0
-Argentina - Liga Profesional,Godoy Cruz,40.0,42.0
-Argentina - Liga Profesional,Huracan,43.0,42.0
-Argentina - Liga Profesional,I. Rivadavia,54.0,60.0
-Argentina - Liga Profesional,Independiente,44.0,53.0
-Argentina - Liga Profesional,Instituto,56.0,60.0
-Argentina - Liga Profesional,Lanus,70.0,54.0
-Argentina - Liga Profesional,Newells,33.0,47.0
-Argentina - Liga Profesional,Platense,42.0,73.0
-Argentina - Liga Profesional,Racing Club,49.0,52.0
-Argentina - Liga Profesional,River Plate,59.0,28.0
-Argentina - Liga Profesional,Rosario Central,44.0,44.0
-Argentina - Liga Profesional,San Lorenzo,72.0,46.0
-Argentina - Liga Profesional,Sarmiento,52.0,28.0
-Argentina - Liga Profesional,SM San Juan,15.0,67.0
-Argentina - Liga Profesional,T. de Cordoba,39.0,68.0
-Argentina - Liga Profesional,Tigre,50.0,43.0
-Argentina - Liga Profesional,Union Santa Fe,67.0,41.0
-Argentina - Liga Profesional,Velez Sarsfield,38.0,43.0
-Argentina - Primera B,A. Quilmes,52.0,51.0
-Argentina - Primera B,Acassuso,50.0,47.0
-Argentina - Primera B,Argentino Merlo,70.0,64.0
-Argentina - Primera B,Brown de A.,54.0,53.0
-Argentina - Primera B,Comunicaciones,39.0,59.0
-Argentina - Primera B,D. Armenio,63.0,60.0
-Argentina - Primera B,D. Laferrere,70.0,46.0
-Argentina - Primera B,Deportivo Merlo,53.0,29.0
-Argentina - Primera B,Dock Sud,50.0,50.0
-Argentina - Primera B,Excursionistas,49.0,57.0
-Argentina - Primera B,Fenix,32.0,51.0
-Argentina - Primera B,Flandria,40.0,23.0
-Argentina - Primera B,Liniers,54.0,46.0
-Argentina - Primera B,Midland,58.0,36.0
-Argentina - Primera B,Real Pilar,55.0,59.0
-Argentina - Primera B,S. Italiano,68.0,70.0
-Argentina - Primera B,Sacachispas,54.0,48.0
-Argentina - Primera B,SM Burzaco,55.0,60.0
-Argentina - Primera B,UAI Urquiza,68.0,50.0
-Argentina - Primera B,V. San Carlos,46.0,42.0
-Argentina - Primera B,Villa Dalmine,36.0,66.0
-Armenia - Premier League,Alashkert,34.0,49.0
-Armenia - Premier League,Ararat Yerevan,54.0,52.0
-Armenia - Premier League,Ararat-Armenia,53.0,45.0
-Armenia - Premier League,BKMA,52.0,43.0
-Armenia - Premier League,Gandzasar,35.0,55.0
-Armenia - Premier League,Noah,49.0,55.0
-Armenia - Premier League,Pyunik,52.0,49.0
-Armenia - Premier League,Shirak,57.0,53.0
-Armenia - Premier League,Urartu,60.0,57.0
-Armenia - Premier League,Van,51.0,53.0
-Armenia - Premier League,West Armenia,60.0,46.0
-Australia - A-League,Adelaide Utd,45.0,52.0
-Australia - A-League,Auckland,62.0,42.0
-Australia - A-League,Brisbane Roar,44.0,49.0
-Australia - A-League,Central Coast,60.0,50.0
-Australia - A-League,Macarthur FC,49.0,47.0
-Australia - A-League,Melbourne City,44.0,45.0
-Australia - A-League,Melbourne V.,38.0,58.0
-Australia - A-League,Newcastle Jets,48.0,52.0
-Australia - A-League,Perth Glory,51.0,42.0
-Australia - A-League,Sydney FC,63.0,51.0
-Australia - A-League,Wellington,49.0,44.0
-Australia - A-League,Western United,52.0,49.0
-Australia - A-League,WS Wanderers,46.0,48.0
-Austria - 2. Liga,A. Lustenau,56.0,50.0
-Austria - 2. Liga,Admira Wacker,47.0,49.0
-Austria - 2. Liga,Amstetten,52.0,54.0
-Austria - 2. Liga,Bregenz,55.0,44.0
-Austria - 2. Liga,First Vienna,49.0,44.0
-Austria - 2. Liga,Floridsdorfer,42.0,48.0
-Austria - 2. Liga,Kapfenberger,38.0,55.0
-Austria - 2. Liga,Lafnitz,62.0,54.0
-Austria - 2. Liga,Liefering,43.0,49.0
-Austria - 2. Liga,Rapid Wien B,46.0,48.0
-Austria - 2. Liga,Ried,55.0,49.0
-Austria - 2. Liga,St. Polten,51.0,56.0
-Austria - 2. Liga,Stripfing,48.0,42.0
-Austria - 2. Liga,Sturm Graz B,50.0,52.0
-Austria - 2. Liga,SV Horn,59.0,44.0
-Austria - 2. Liga,Voitsberg,43.0,53.0
-Brazil - Serie A,Atletico MG,64.0,38.0
-Brazil - Serie A,Bahia,66.0,54.0
-Brazil - Serie A,Bragantino,66.0,76.0
-Brazil - Serie A,Ceara,25.0,68.0
-Brazil - Serie A,Corinthians,68.0,39.0
-Brazil - Serie A,Cruzeiro,38.0,42.0
-Brazil - Serie A,Flamengo,53.0,61.0
-Brazil - Serie A,Fluminense,69.0,57.0
-Brazil - Serie A,Fortaleza,32.0,55.0
-Brazil - Serie A,Gremio,46.0,56.0
-Brazil - Serie A,Internacional,45.0,54.0
-Brazil - Serie A,Juventude,4.0,49.0
-Brazil - Serie A,Mirassol,35.0,45.0
-Brazil - Serie A,Palmeiras,62.0,44.0
-Brazil - Serie A,Santos,33.0,57.0
-Brazil - Serie A,Sao Paulo,37.0,50.0
-Brazil - Serie A,Sport Recife,41.0,54.0
-Brazil - Serie A,Vasco da Gama,66.0,57.0
-Brazil - Serie A,Vitoria,64.0,48.0
-Brazil - Serie B,Amazonas,30.0,38.0
-Brazil - Serie B,Athletic Club,43.0,58.0
-Brazil - Serie B,Athletico PR,52.0,43.0
-Brazil - Serie B,Atletico GO,68.0,50.0
-Brazil - Serie B,Avai,38.0,34.0
-Brazil - Serie B,Botafogo SP,49.0,48.0
-Brazil - Serie B,Chapecoense,50.0,49.0
-Brazil - Serie B,Coritiba,42.0,67.0
-Brazil - Serie B,CRB,68.0,34.0
-Brazil - Serie B,Criciuma,43.0,46.0
-Brazil - Serie B,Cuiaba,42.0,28.0
-Brazil - Serie B,Ferroviaria,42.0,49.0
-Brazil - Serie B,Goias,72.0,32.0
-Brazil - Serie B,Novorizontino,45.0,28.0
-Brazil - Serie B,Operario PR,40.0,44.0
-Brazil - Serie B,Paysandu,64.0,69.0
-Brazil - Serie B,Remo,62.0,57.0
-Brazil - Serie B,Vila Nova,73.0,59.0
-Brazil - Serie B,Volta Redonda,90.0,40.0
-Brazil - Serie C,ABC,80.0,90.0
-Brazil - Serie C,Anapolis,48.0,44.0
-Brazil - Serie C,Botafogo PB,52.0,62.0
-Brazil - Serie C,Brusque,64.0,63.0
-Brazil - Serie C,Caxias,34.0,60.0
-Brazil - Serie C,Confianca,28.0,51.0
-Brazil - Serie C,CSA,90.0,58.0
-Brazil - Serie C,Figueirense,54.0,39.0
-Brazil - Serie C,Floresta,52.0,74.0
-Brazil - Serie C,Itabaiana,51.0,38.0
-Brazil - Serie C,Ituano,60.0,52.0
-Brazil - Serie C,Maringa,41.0,52.0
-Brazil - Serie C,Nautico,46.0,56.0
-Brazil - Serie C,Ponte Preta,80.0,43.0
-Brazil - Serie C,Retro,24.0,41.0
-Brazil - Serie C,Sao Bernardo,10.0,63.0
-Brazil - Serie C,Tombense,61.0,58.0
-Brazil - Serie C,Ypiranga,88.0,44.0
-Bulgaria - Parva Liga,Arda,52.0,48.0
-Bulgaria - Parva Liga,Beroe,51.0,49.0
-Bulgaria - Parva Liga,Botev Plovdiv,56.0,40.0
-Bulgaria - Parva Liga,Botev Vratsa,51.0,51.0
-Bulgaria - Parva Liga,Cherno More,54.0,49.0
-Bulgaria - Parva Liga,CSKA 1948 Sofia,46.0,42.0
-Bulgaria - Parva Liga,CSKA Sofia,51.0,44.0
-Bulgaria - Parva Liga,Hebar,49.0,40.0
-Bulgaria - Parva Liga,L. Krumovgrad,46.0,44.0
-Bulgaria - Parva Liga,Levski Sofia,49.0,58.0
-Bulgaria - Parva Liga,Lok. Plovdiv,56.0,53.0
-Bulgaria - Parva Liga,Lokomotiv Sofia,37.0,51.0
-Bulgaria - Parva Liga,Ludogorets,52.0,55.0
-Bulgaria - Parva Liga,Septemvri Sofia,58.0,46.0
-Bulgaria - Parva Liga,Slavia Sofia,45.0,56.0
-Bulgaria - Parva Liga,Spartak Varna,55.0,47.0
-Canada - Premier League,A. Ottawa,54.0,66.0
-Canada - Premier League,Cavalry,65.0,52.0
-Canada - Premier League,Forge,37.0,22.0
-Canada - Premier League,HFX Wanderers,63.0,54.0
-Canada - Premier League,Pacific,59.0,55.0
-Canada - Premier League,Valour,22.0,40.0
-Canada - Premier League,Vancouver FC,45.0,78.0
-Canada - Premier League,York Utd,52.0,67.0
-China - Super League,Beijing Guoan,45.0,66.0
-China - Super League,Changchun Yatai,36.0,54.0
-China - Super League,Chengdu,36.0,34.0
-China - Super League,Dalian Yingbo,32.0,62.0
-China - Super League,Henan SL,60.0,51.0
-China - Super League,Meizhou Hakka,57.0,47.0
-China - Super League,Qingdao Hainiu,24.0,52.0
-China - Super League,Qingdao West C.,58.0,38.0
-China - Super League,S. Shenhua,66.0,40.0
-China - Super League,Shandong T.,57.0,53.0
-China - Super League,Shanghai Port,44.0,52.0
-China - Super League,Sichuan Jiuniu,62.0,47.0
-China - Super League,Tianjin T.,39.0,54.0
-China - Super League,Wuhan Three T.,53.0,52.0
-China - Super League,Yunnan Yukun,58.0,45.0
-China - Super League,Zhejiang,46.0,59.0
-China - League One,Chongqing T.,41.0,54.0
-China - League One,Dalian Kuncheng,54.0,50.0
-China - League One,Foshan Nanshi,13.0,45.0
-China - League One,Guangdong GZP,57.0,69.0
-China - League One,Guangxi Baoyun,8.0,49.0
-China - League One,Heilongjiang IC,80.0,45.0
-China - League One,Liaoning Tieren,43.0,44.0
-China - League One,Nanjing City,47.0,26.0
-China - League One,Nantong Zhiyun,30.0,68.0
-China - League One,Qingdao RL,42.0,42.0
-China - League One,S. Gongfu,51.0,51.0
-China - League One,Shaanxi Union,85.0,51.0
-China - League One,Shanghai Jiadin,60.0,64.0
-China - League One,Shenzhen J.,35.0,55.0
-China - League One,Suzhou Dongwu,60.0,62.0
-China - League One,Yanbian Longdin,62.0,41.0
-Colombia - Primera A - Apertura,A. Bucaramanga,53.0,52.0
-Colombia - Primera A - Apertura,A. Nacional,40.0,42.0
-Colombia - Primera A - Apertura,A. Petrolera,53.0,53.0
-Colombia - Primera A - Apertura,America de Cali,59.0,54.0
-Colombia - Primera A - Apertura,Boyaca Chico,80.0,53.0
-Colombia - Primera A - Apertura,D. Pereira,47.0,53.0
-Colombia - Primera A - Apertura,Deportes Tolima,48.0,45.0
-Colombia - Primera A - Apertura,Deportivo Cali,46.0,45.0
-Colombia - Primera A - Apertura,Deportivo Pasto,43.0,46.0
-Colombia - Primera A - Apertura,Envigado,30.0,39.0
-Colombia - Primera A - Apertura,Fortaleza CEIF,54.0,55.0
-Colombia - Primera A - Apertura,I. Medelin,35.0,53.0
-Colombia - Primera A - Apertura,Junior,45.0,44.0
-Colombia - Primera A - Apertura,La Equidad,48.0,43.0
-Colombia - Primera A - Apertura,Llaneros,40.0,47.0
-Colombia - Primera A - Apertura,Millonarios,44.0,37.0
-Colombia - Primera A - Apertura,Once Caldas,59.0,40.0
-Colombia - Primera A - Apertura,R. Aguilas,64.0,48.0
-Colombia - Primera A - Apertura,Santa Fe,53.0,49.0
-Colombia - Primera A - Apertura,Union Magdalena,53.0,64.0
-Colombia - Primera B - Apertura,Atletico Cali,35.0,42.0
-Colombia - Primera B - Apertura,Atletico Huila,42.0,64.0
-Colombia - Primera B - Apertura,Barranquilla,20.0,42.0
-Colombia - Primera B - Apertura,Boca Juniors,47.0,51.0
-Colombia - Primera B - Apertura,Bogota,49.0,50.0
-Colombia - Primera B - Apertura,Cucuta,43.0,48.0
-Colombia - Primera B - Apertura,D. Quindio,29.0,52.0
-Colombia - Primera B - Apertura,Inter Palmira,52.0,36.0
-Colombia - Primera B - Apertura,Jaguares de C.,49.0,49.0
-Colombia - Primera B - Apertura,Leones,49.0,50.0
-Colombia - Primera B - Apertura,Orsomarso,47.0,49.0
-Colombia - Primera B - Apertura,Patriotas,54.0,62.0
-Colombia - Primera B - Apertura,R. Cundinamarca,38.0,54.0
-Colombia - Primera B - Apertura,Real Cartagena,37.0,51.0
-Colombia - Primera B - Apertura,Real Santander,51.0,43.0
-Colombia - Primera B - Apertura,Tigres,57.0,56.0
-Costa Rica - Primera Div. - Clausura,Alajuelense,38.0,51.0
-Costa Rica - Primera Div. - Clausura,Cartagines,47.0,55.0
-Costa Rica - Primera Div. - Clausura,Guanacasteca,23.0,35.0
-Costa Rica - Primera Div. - Clausura,Herediano,64.0,32.0
-Costa Rica - Primera Div. - Clausura,M. Liberia,45.0,63.0
-Costa Rica - Primera Div. - Clausura,Puntarenas,41.0,68.0
-Costa Rica - Primera Div. - Clausura,San Carlos,48.0,54.0
-Costa Rica - Primera Div. - Clausura,Santa Ana,53.0,44.0
-Costa Rica - Primera Div. - Clausura,Santos Guapiles,60.0,40.0
-Costa Rica - Primera Div. - Clausura,Saprissa,41.0,46.0
-Costa Rica - Primera Div. - Clausura,Sporting SJ,32.0,47.0
-Costa Rica - Primera Div. - Clausura,Zeledon,49.0,43.0
-Croatia - 1. NL,Bijelo Brdo,47.0,45.0
-Croatia - 1. NL,C. Zmijavci,60.0,49.0
-Croatia - 1. NL,Cibalia,52.0,60.0
-Croatia - 1. NL,Dubrava Zagreb,51.0,53.0
-Croatia - 1. NL,Dugopolje,64.0,45.0
-Croatia - 1. NL,Jarun,50.0,61.0
-Croatia - 1. NL,Opatija,54.0,46.0
-Croatia - 1. NL,Orijent,52.0,54.0
-Croatia - 1. NL,Rudes,48.0,39.0
-Croatia - 1. NL,Sesvete,46.0,50.0
-Croatia - 1. NL,Vukovar,56.0,53.0
-Croatia - 1. NL,Zrinski,43.0,51.0
-CzechRepublic - 1. Liga,Banik Ostrava,54.0,51.0
-CzechRepublic - 1. Liga,Bohemians,34.0,49.0
-CzechRepublic - 1. Liga,C. Budejovice,58.0,46.0
-CzechRepublic - 1. Liga,Dukla Praha,54.0,49.0
-CzechRepublic - 1. Liga,Hradec Kralove,38.0,59.0
-CzechRepublic - 1. Liga,Jablonec,46.0,54.0
-CzechRepublic - 1. Liga,Karvina,44.0,52.0
-CzechRepublic - 1. Liga,Mlada Boleslav,46.0,49.0
-CzechRepublic - 1. Liga,Pardubice,29.0,51.0
-CzechRepublic - 1. Liga,Sigma Olomouc,53.0,56.0
-CzechRepublic - 1. Liga,Slavia Prague,44.0,60.0
-CzechRepublic - 1. Liga,Slovacko,59.0,50.0
-CzechRepublic - 1. Liga,Slovan Liberec,47.0,44.0
-CzechRepublic - 1. Liga,Sparta Prague,46.0,42.0
-CzechRepublic - 1. Liga,Teplice,58.0,57.0
-CzechRepublic - 1. Liga,Viktoria Plzen,47.0,48.0
-CzechRepublic - FNL,Banik Ostrava B,50.0,54.0
-CzechRepublic - FNL,Chrudim,45.0,40.0
-CzechRepublic - FNL,Jihlava,46.0,49.0
-CzechRepublic - FNL,Lisen,45.0,47.0
-CzechRepublic - FNL,Opava,55.0,55.0
-CzechRepublic - FNL,Prostejov,46.0,49.0
-CzechRepublic - FNL,Sigma Olomouc B,54.0,54.0
-CzechRepublic - FNL,Slavia Prague B,47.0,43.0
-CzechRepublic - FNL,Sparta Prague B,44.0,45.0
-CzechRepublic - FNL,Taborsko,46.0,45.0
-CzechRepublic - FNL,Varnsdorf,55.0,51.0
-CzechRepublic - FNL,Vikto Zizkov,44.0,46.0
-CzechRepublic - FNL,Vlasim,63.0,40.0
-CzechRepublic - FNL,Vyskov,58.0,43.0
-CzechRepublic - FNL,Zbrojovka Brno,44.0,50.0
-CzechRepublic - FNL,Zlin,57.0,60.0
-Denmark - Superligaen,Aalborg BK,49.0,46.0
-Denmark - Superligaen,AGF Aarhus,51.0,54.0
-Denmark - Superligaen,Brondby IF,52.0,49.0
-Denmark - Superligaen,FC Kobenhavn,52.0,47.0
-Denmark - Superligaen,FC Midtjylland,54.0,46.0
-Denmark - Superligaen,Lyngby,57.0,43.0
-Denmark - Superligaen,Nordsjaelland,49.0,50.0
-Denmark - Superligaen,Randers FC,49.0,52.0
-Denmark - Superligaen,Silkeborg,54.0,49.0
-Denmark - Superligaen,SonderjyskE,46.0,46.0
-Denmark - Superligaen,Vejle BK,47.0,43.0
-Denmark - Superligaen,Viborg,55.0,42.0
-Denmark - 1st Division,AC Horsens,48.0,47.0
-Denmark - 1st Division,B 93,49.0,47.0
-Denmark - 1st Division,Esbjerg,46.0,47.0
-Denmark - 1st Division,Fredericia,58.0,44.0
-Denmark - 1st Division,HB Koge,49.0,42.0
-Denmark - 1st Division,Hillerod,47.0,54.0
-Denmark - 1st Division,Hobro,52.0,48.0
-Denmark - 1st Division,Hvidovre,42.0,58.0
-Denmark - 1st Division,Kolding IF,55.0,57.0
-Denmark - 1st Division,Odense BK,50.0,49.0
-Denmark - 1st Division,Roskilde,40.0,55.0
-Denmark - 1st Division,Vendsyssel,47.0,48.0
-Denmark - 2nd Division,Aarhus Fremad,57.0,50.0
-Denmark - 2nd Division,AB Copenhagen,38.0,51.0
-Denmark - 2nd Division,BK Frem,44.0,49.0
-Denmark - 2nd Division,Fremad Amager,59.0,42.0
-Denmark - 2nd Division,Hellerup IK,65.0,56.0
-Denmark - 2nd Division,Helsingor,55.0,49.0
-Denmark - 2nd Division,Ishoj,50.0,47.0
-Denmark - 2nd Division,Middelfart,39.0,58.0
-Denmark - 2nd Division,Naestved,34.0,60.0
-Denmark - 2nd Division,Nykobing,40.0,54.0
-Denmark - 2nd Division,Skive,50.0,49.0
-Denmark - 2nd Division,Thisted,39.0,49.0
-Ecuador - Liga Pro,Aucas,62.0,49.0
-Ecuador - Liga Pro,Barcelona SC,52.0,48.0
-Ecuador - Liga Pro,Cuniburo,42.0,42.0
-Ecuador - Liga Pro,D. Cuenca,35.0,48.0
-Ecuador - Liga Pro,Delfin,56.0,48.0
-Ecuador - Liga Pro,El Nacional,50.0,58.0
-Ecuador - Liga Pro,Emelec,71.0,45.0
-Ecuador - Liga Pro,I. del Valle,46.0,46.0
-Ecuador - Liga Pro,LDU Quito,44.0,36.0
-Ecuador - Liga Pro,Libertad,63.0,38.0
-Ecuador - Liga Pro,Macara,40.0,53.0
-Ecuador - Liga Pro,Manta,62.0,48.0
-Ecuador - Liga Pro,Mushuc Runa,51.0,49.0
-Ecuador - Liga Pro,Orense,52.0,57.0
-Ecuador - Liga Pro,Tecnico U.,30.0,43.0
-Ecuador - Liga Pro,U. Catolica,59.0,42.0
-Ecuador - Serie B,22 de Julio,72.0,43.0
-Ecuador - Serie B,Chacaritas,61.0,47.0
-Ecuador - Serie B,Cumbaya,44.0,37.0
-Ecuador - Serie B,Gualaceo,52.0,53.0
-Ecuador - Serie B,Guayaquil City,62.0,34.0
-Ecuador - Serie B,I. Juniors,39.0,47.0
-Ecuador - Serie B,Imbabura,56.0,60.0
-Ecuador - Serie B,Leones Norte,54.0,44.0
-Ecuador - Serie B,Nueve Octubre,51.0,58.0
-Ecuador - Serie B,San Antonio,57.0,66.0
-Ecuador - Serie B,Vargas Torres,39.0,63.0
-Ecuador - Serie B,Vinotinto,76.0,45.0
-England - Premier League,Arsenal,49.0,40.0
-England - Premier League,Aston Villa,52.0,55.0
-England - Premier League,Bournemouth,59.0,47.0
-England - Premier League,Brentford,49.0,49.0
-England - Premier League,Brighton,48.0,50.0
-England - Premier League,Chelsea,47.0,47.0
-England - Premier League,Crystal Palace,52.0,48.0
-England - Premier League,Everton,47.0,49.0
-England - Premier League,Fulham,59.0,45.0
-England - Premier League,Ipswich Town,45.0,48.0
-England - Premier League,Leicester City,52.0,46.0
-England - Premier League,Liverpool,52.0,48.0
-England - Premier League,Manchester City,53.0,52.0
-England - Premier League,Manchester Utd,64.0,52.0
-England - Premier League,Newcastle Utd,41.0,40.0
-England - Premier League,Nottm Forest,44.0,47.0
-England - Premier League,Southampton,61.0,45.0
-England - Premier League,Tottenham,42.0,47.0
-England - Premier League,West Ham Utd,60.0,50.0
-England - Premier League,Wolverhampton,52.0,47.0
-England - Championship,Blackburn,53.0,48.0
-England - Championship,Bristol City,55.0,52.0
-England - Championship,Burnley,43.0,29.0
-England - Championship,Cardiff City,48.0,43.0
-England - Championship,Coventry City,48.0,52.0
-England - Championship,Derby County,58.0,56.0
-England - Championship,Hull City,55.0,50.0
-England - Championship,Leeds Utd,52.0,37.0
-England - Championship,Luton Town,42.0,49.0
-England - Championship,Middlesbrough,50.0,59.0
-England - Championship,Millwall,56.0,44.0
-England - Championship,Norwich City,54.0,38.0
-England - Championship,Oxford Utd,51.0,51.0
-England - Championship,Plymouth,48.0,48.0
-England - Championship,Portsmouth,45.0,47.0
-England - Championship,Preston,44.0,53.0
-England - Championship,QP Rangers,61.0,45.0
-England - Championship,Sheffield Utd,47.0,51.0
-England - Championship,Sheffield Wed,58.0,48.0
-England - Championship,Stoke City,54.0,44.0
-England - Championship,Sunderland,49.0,57.0
-England - Championship,Swansea City,48.0,55.0
-England - Championship,Watford,56.0,48.0
-England - Championship,West Brom,45.0,49.0
-England - League One,Barnsley,50.0,62.0
-England - League One,Birmingham City,43.0,43.0
-England - League One,Blackpool,47.0,49.0
-England - League One,Bolton,52.0,51.0
-England - League One,Bristol Rovers,53.0,49.0
-England - League One,Burton Albion,57.0,53.0
-England - League One,Cambridge Utd,50.0,49.0
-England - League One,Charlton,58.0,50.0
-England - League One,Crawley Town,53.0,46.0
-England - League One,Exeter City,47.0,48.0
-England - League One,Huddersfield,48.0,43.0
-England - League One,Leyton Orient,45.0,53.0
-England - League One,Lincoln City,53.0,54.0
-England - League One,Mansfield,44.0,42.0
-England - League One,Northampton,47.0,52.0
-England - League One,Peterborough,49.0,46.0
-England - League One,Reading,52.0,48.0
-England - League One,Rotherham,45.0,51.0
-England - League One,Shrewsbury,57.0,49.0
-England - League One,Stevenage,53.0,53.0
-England - League One,Stockport,50.0,38.0
-England - League One,Wigan Athletic,56.0,47.0
-England - League One,Wrexham,41.0,45.0
-England - League One,Wycombe,54.0,48.0
-England - National League,AFC Fylde,37.0,58.0
-England - National League,Aldershot Town,52.0,43.0
-England - National League,Altrincham,54.0,51.0
-England - National League,Barnet,50.0,48.0
-England - National League,Boston Utd,48.0,50.0
-England - National League,Braintree Town,38.0,44.0
-England - National League,Dagenham & R.,48.0,53.0
-England - National League,Eastleigh,51.0,56.0
-England - National League,Ebbsfleet Utd,54.0,48.0
-England - National League,Forest Green,51.0,48.0
-England - National League,Gateshead FC,47.0,53.0
-England - National League,Halifax Town,44.0,55.0
-England - National League,Hartlepool,49.0,52.0
-England - National League,Maidenhead Utd,49.0,43.0
-England - National League,Oldham,54.0,50.0
-England - National League,Rochdale,46.0,54.0
-England - National League,Solihull Moors,56.0,42.0
-England - National League,Southend Utd,48.0,52.0
-England - National League,Sutton Utd,43.0,51.0
-England - National League,Tamworth,55.0,48.0
-England - National League,Wealdstone,57.0,52.0
-England - National League,Woking,50.0,47.0
-England - National League,Yeovil Town,52.0,51.0
-England - National League,York City,59.0,50.0
-FaroeIslands - Premier League,07 Vestur,46.0,54.0
-FaroeIslands - Premier League,B36 Torshavn,41.0,60.0
-FaroeIslands - Premier League,B68 Toftir,40.0,51.0
-FaroeIslands - Premier League,HB Torshavn,50.0,44.0
-FaroeIslands - Premier League,Klaksvik,41.0,45.0
-FaroeIslands - Premier League,NSI Runavik,53.0,62.0
-FaroeIslands - Premier League,Streymur,51.0,60.0
-FaroeIslands - Premier League,Suduroy,44.0,53.0
-FaroeIslands - Premier League,TB Tvoroyri,26.0,45.0
-FaroeIslands - Premier League,Vikingur,36.0,42.0
-Finland - Veikkausliiga,Gnistan,69.0,62.0
-Finland - Veikkausliiga,Haka,77.0,45.0
-Finland - Veikkausliiga,HJK Helsinki,44.0,63.0
-Finland - Veikkausliiga,Ilves,50.0,53.0
-Finland - Veikkausliiga,Inter Turku,59.0,33.0
-Finland - Veikkausliiga,Jaro,58.0,41.0
-Finland - Veikkausliiga,KTP,51.0,52.0
-Finland - Veikkausliiga,KuPS,62.0,66.0
-Finland - Veikkausliiga,Mariehamn,52.0,42.0
-Finland - Veikkausliiga,Oulu,49.0,63.0
-Finland - Veikkausliiga,SJK,66.0,35.0
-Finland - Veikkausliiga,VPS,58.0,44.0
-Finland - Ykkonen,Ekenas IF,45.0,19.0
-Finland - Ykkonen,JaPS,52.0,38.0
-Finland - Ykkonen,JIPPO,69.0,58.0
-Finland - Ykkonen,KaPa,30.0,53.0
-Finland - Ykkonen,Klubi-04,51.0,78.0
-Finland - Ykkonen,Lahti,56.0,55.0
-Finland - Ykkonen,PK-35,44.0,60.0
-Finland - Ykkonen,SalPa,36.0,60.0
-Finland - Ykkonen,SJK Akatemia,41.0,29.0
-Finland - Ykkonen,TPS,35.0,37.0
-Finland - Kakkonen,Atlantis,45.0,53.0
-Finland - Kakkonen,EPS,85.0,55.0
-Finland - Kakkonen,Inter Turku B,36.0,40.0
-Finland - Kakkonen,Jazz Pori,69.0,61.0
-Finland - Kakkonen,JJK,40.0,65.0
-Finland - Kakkonen,KPV Kokkola,48.0,37.0
-Finland - Kakkonen,KuPS Ak.,36.0,52.0
-Finland - Kakkonen,Mikkelin,50.0,47.0
-Finland - Kakkonen,OLS Oulu,50.0,47.0
-Finland - Kakkonen,PKKU,51.0,57.0
-Finland - Kakkonen,Rovaniemi,53.0,50.0
-Finland - Kakkonen,Tampere Utd,50.0,42.0
-France - Ligue 1,Angers,48.0,55.0
-France - Ligue 1,Auxerre,46.0,55.0
-France - Ligue 1,Brest,39.0,46.0
-France - Ligue 1,Le Havre,56.0,53.0
-France - Ligue 1,Lens,50.0,42.0
-France - Ligue 1,Lille,54.0,49.0
-France - Ligue 1,Lyon,59.0,50.0
-France - Ligue 1,Marseille,52.0,56.0
-France - Ligue 1,Monaco,52.0,52.0
-France - Ligue 1,Montpellier,62.0,51.0
-France - Ligue 1,Nantes,44.0,51.0
-France - Ligue 1,Nice,44.0,52.0
-France - Ligue 1,Paris SG,56.0,56.0
-France - Ligue 1,Reims,50.0,52.0
-France - Ligue 1,Rennes,50.0,47.0
-France - Ligue 1,Saint-Etienne,39.0,47.0
-France - Ligue 1,Strasbourg,48.0,54.0
-France - Ligue 1,Toulouse,45.0,57.0
-France - Ligue 2,AC Ajaccio,49.0,49.0
-France - Ligue 2,Amiens,44.0,45.0
-France - Ligue 2,Annecy,47.0,52.0
-France - Ligue 2,Caen,64.0,51.0
-France - Ligue 2,Clermont,47.0,46.0
-France - Ligue 2,Grenoble,51.0,48.0
-France - Ligue 2,Guingamp,52.0,54.0
-France - Ligue 2,Laval,54.0,53.0
-France - Ligue 2,Lorient,54.0,52.0
-France - Ligue 2,Martigues,51.0,55.0
-France - Ligue 2,Metz,52.0,54.0
-France - Ligue 2,Paris FC,45.0,49.0
-France - Ligue 2,Pau FC,48.0,51.0
-France - Ligue 2,Red Star,43.0,51.0
-France - Ligue 2,Rodez Aveyron,46.0,57.0
-France - Ligue 2,SC Bastia,48.0,52.0
-France - Ligue 2,Troyes,50.0,55.0
-France - Ligue 2,USL Dunkerque,45.0,57.0
-France - National,Aubagne,50.0,57.0
-France - National,Boulogne,41.0,58.0
-France - National,Bourg-en-Bresse,41.0,42.0
-France - National,Chateauroux,53.0,53.0
-France - National,Concarneau,60.0,38.0
-France - National,Dijon,49.0,47.0
-France - National,Le Mans,51.0,53.0
-France - National,Nancy,54.0,42.0
-France - National,Nimes,45.0,54.0
-France - National,Orleans,49.0,41.0
-France - National,Paris 13 A.,44.0,51.0
-France - National,Quevilly Rouen,46.0,52.0
-France - National,Rouen,47.0,54.0
-France - National,Sochaux,59.0,50.0
-France - National,Valenciennes,48.0,45.0
-France - National,Versailles,35.0,51.0
-France - National,Villefranche,61.0,54.0
-Georgia - Erovnuli Liga,Dila Gori,64.0,40.0
-Georgia - Erovnuli Liga,Dinamo Batumi,56.0,53.0
-Georgia - Erovnuli Liga,Dinamo Tbilisi,44.0,32.0
-Georgia - Erovnuli Liga,Gagra,58.0,42.0
-Georgia - Erovnuli Liga,Gareji Sagarejo,56.0,41.0
-Georgia - Erovnuli Liga,Iberia,43.0,49.0
-Georgia - Erovnuli Liga,Kolkheti Poti,59.0,52.0
-Georgia - Erovnuli Liga,Samgurali,45.0,54.0
-Georgia - Erovnuli Liga,Telavi,49.0,49.0
-Georgia - Erovnuli Liga,Torpedo Kutaisi,48.0,45.0
-Germany - Bundesliga,Bayern Munich,51.0,51.0
-Germany - Bundesliga,Bochum,42.0,51.0
-Germany - Bundesliga,Dortmund,54.0,52.0
-Germany - Bundesliga,E. Frankfurt,47.0,61.0
-Germany - Bundesliga,FC Augsburg,45.0,49.0
-Germany - Bundesliga,Freiburg,56.0,53.0
-Germany - Bundesliga,FSV Mainz,44.0,44.0
-Germany - Bundesliga,Heidenheim,50.0,48.0
-Germany - Bundesliga,Hoffenheim,53.0,38.0
-Germany - Bundesliga,Holstein Kiel,61.0,45.0
-Germany - Bundesliga,Leverkusen,44.0,55.0
-Germany - Bundesliga,Monchengladbach,51.0,55.0
-Germany - Bundesliga,RB Leipzig,33.0,52.0
-Germany - Bundesliga,Sankt Pauli,51.0,47.0
-Germany - Bundesliga,Stuttgart,45.0,48.0
-Germany - Bundesliga,Union Berlin,55.0,53.0
-Germany - Bundesliga,Werder Bremen,48.0,44.0
-Germany - Bundesliga,Wolfsburg,45.0,55.0
-Germany - 2. Bundesliga,Braunschweig,55.0,46.0
-Germany - 2. Bundesliga,Darmstadt,53.0,53.0
-Germany - 2. Bundesliga,Dusseldorf,62.0,52.0
-Germany - 2. Bundesliga,Elversberg,58.0,46.0
-Germany - 2. Bundesliga,FC Koln,46.0,54.0
-Germany - 2. Bundesliga,FC Nurnberg,40.0,51.0
-Germany - 2. Bundesliga,Greuther Furth,41.0,45.0
-Germany - 2. Bundesliga,Hamburger SV,54.0,51.0
-Germany - 2. Bundesliga,Hannover 96,53.0,50.0
-Germany - 2. Bundesliga,Hertha Berlin,50.0,48.0
-Germany - 2. Bundesliga,Kaiserslautern,57.0,50.0
-Germany - 2. Bundesliga,Karlsruher SC,47.0,45.0
-Germany - 2. Bundesliga,Magdeburg,51.0,42.0
-Germany - 2. Bundesliga,Paderborn,59.0,58.0
-Germany - 2. Bundesliga,Preuss. Munster,50.0,46.0
-Germany - 2. Bundesliga,Regensburg,42.0,54.0
-Germany - 2. Bundesliga,Schalke 04,55.0,42.0
-Germany - 2. Bundesliga,Ulm,36.0,49.0
-Germany - 3. Liga,1860 Munchen,57.0,44.0
-Germany - 3. Liga,Alemannia A.,50.0,55.0
-Germany - 3. Liga,Bielefeld,59.0,42.0
-Germany - 3. Liga,Dortmund B,51.0,49.0
-Germany - 3. Liga,Dynamo Dresden,49.0,47.0
-Germany - 3. Liga,Energie Cottbus,47.0,47.0
-Germany - 3. Liga,Erzgebirge Aue,48.0,50.0
-Germany - 3. Liga,FC Ingolstadt,50.0,43.0
-Germany - 3. Liga,Hannover 96 B,42.0,51.0
-Germany - 3. Liga,Hansa Rostock,61.0,49.0
-Germany - 3. Liga,Mannheim,42.0,44.0
-Germany - 3. Liga,Osnabruck,58.0,51.0
-Germany - 3. Liga,RW Essen,50.0,58.0
-Germany - 3. Liga,Saarbrucken,50.0,48.0
-Germany - 3. Liga,Sandhausen,55.0,46.0
-Germany - 3. Liga,Unterhaching,37.0,57.0
-Germany - 3. Liga,Verl,48.0,50.0
-Germany - 3. Liga,VfB Stuttgart B,53.0,46.0
-Germany - 3. Liga,Viktoria Koln,53.0,48.0
-Germany - 3. Liga,Wehen Wiesbaden,53.0,46.0
-Greece - Super League,A. Kallithea,52.0,58.0
-Greece - Super League,AEK Athens,58.0,52.0
-Greece - Super League,Aris,54.0,57.0
-Greece - Super League,Asteras T.,60.0,45.0
-Greece - Super League,Atromitos,42.0,43.0
-Greece - Super League,Lamia,56.0,48.0
-Greece - Super League,Levadiakos,50.0,44.0
-Greece - Super League,OFI Crete,47.0,49.0
-Greece - Super League,Olympiakos,57.0,39.0
-Greece - Super League,Panaitolikos,52.0,38.0
-Greece - Super League,Panathinaikos,52.0,51.0
-Greece - Super League,Panserraikos,51.0,53.0
-Greece - Super League,PAOK,51.0,46.0
-Greece - Super League,Volos,54.0,52.0
-Hong Kong - Premier League,Eastern,54.0,39.0
-Hong Kong - Premier League,HK Rangers,51.0,39.0
-Hong Kong - Premier League,Hong Kong FC,46.0,53.0
-Hong Kong - Premier League,Kitchee,45.0,47.0
-Hong Kong - Premier League,Kowloon City,57.0,61.0
-Hong Kong - Premier League,LM Warriors,50.0,53.0
-Hong Kong - Premier League,North District,51.0,50.0
-Hong Kong - Premier League,Southern D.,48.0,50.0
-Hong Kong - Premier League,Tai Po,50.0,52.0
-Hungary - NB I,Debrecen,57.0,52.0
-Hungary - NB I,DVTK,33.0,56.0
-Hungary - NB I,Fehervar,59.0,46.0
-Hungary - NB I,Ferencvaros,50.0,37.0
-Hungary - NB I,Gyor,60.0,57.0
-Hungary - NB I,Kecskemeti TE,44.0,53.0
-Hungary - NB I,MTK Budapest,53.0,48.0
-Hungary - NB I,Nyiregyhaza,45.0,54.0
-Hungary - NB I,Paks,55.0,54.0
-Hungary - NB I,Puskas A.,51.0,54.0
-Hungary - NB I,Ujpest,38.0,50.0
-Hungary - NB I,Zalaegerszegi,47.0,60.0
-Iceland - Urvalsdeild,Breidablik,35.0,77.0
-Iceland - Urvalsdeild,Fram,40.0,46.0
-Iceland - Urvalsdeild,Hafnarfjordur,58.0,50.0
-Iceland - Urvalsdeild,IA Akranes,50.0,53.0
-Iceland - Urvalsdeild,IBV,38.0,58.0
-Iceland - Urvalsdeild,KA Akureyri,60.0,32.0
-Iceland - Urvalsdeild,KR Reykjavik,42.0,52.0
-Iceland - Urvalsdeild,Stjarnan,50.0,50.0
-Iceland - Urvalsdeild,Valur,46.0,50.0
-Iceland - Urvalsdeild,Vestri,50.0,52.0
-Iceland - Urvalsdeild,Vikingur R.,45.0,69.0
-Iceland - 1. Deild,Fjolnir,35.0,41.0
-Iceland - 1. Deild,Fylkir,67.0,22.0
-Iceland - 1. Deild,Grindavik,49.0,53.0
-Iceland - 1. Deild,HK Kopavogur,46.0,45.0
-Iceland - 1. Deild,IR Reykjavik,60.0,83.0
-Iceland - 1. Deild,Keflavik,36.0,44.0
-Iceland - 1. Deild,Leiknir R.,52.0,45.0
-Iceland - 1. Deild,Njardvik,48.0,41.0
-Iceland - 1. Deild,Thor Akureyri,31.0,52.0
-Iceland - 1. Deild,Throttur R.,56.0,90.0
-Iceland - 1. Deild,Volsungur,84.0,44.0
-Ireland - Premier Division,Bohemians,59.0,53.0
-Ireland - Premier Division,Cork City,52.0,66.0
-Ireland - Premier Division,Derry City,52.0,45.0
-Ireland - Premier Division,Drogheda Utd,49.0,63.0
-Ireland - Premier Division,Galway Utd,52.0,42.0
-Ireland - Premier Division,Shamrock Rovers,57.0,45.0
-Ireland - Premier Division,Shelbourne,36.0,38.0
-Ireland - Premier Division,Sligo Rovers,43.0,46.0
-Ireland - Premier Division,St. Patricks,50.0,51.0
-Ireland - Premier Division,Waterford,36.0,61.0
-Ireland - First Division,Athlone Town,47.0,48.0
-Ireland - First Division,Bray Wanderers,24.0,47.0
-Ireland - First Division,Cobh Ramblers,45.0,60.0
-Ireland - First Division,Dundalk,41.0,74.0
-Ireland - First Division,Finn Harps,65.0,53.0
-Ireland - First Division,Kerry,41.0,54.0
-Ireland - First Division,Longford Town,48.0,52.0
-Ireland - First Division,Treaty Utd,56.0,48.0
-Ireland - First Division,UC Dublin,62.0,58.0
-Ireland - First Division,Wexford,58.0,61.0
-Israel - Ligat HaAl,Ashdod,46.0,52.0
-Israel - Ligat HaAl,B. Jerusalem,53.0,44.0
-Israel - Ligat HaAl,H. Beer Sheva,55.0,55.0
-Israel - Ligat HaAl,H. Jerusalem,48.0,56.0
-Israel - Ligat HaAl,Hapoel Hadera,47.0,53.0
-Israel - Ligat HaAl,Hapoel Haifa,51.0,56.0
-Israel - Ligat HaAl,Ironi Tiberias,52.0,49.0
-Israel - Ligat HaAl,Kiryat Shmona,56.0,49.0
-Israel - Ligat HaAl,M. Bnei Raina,43.0,41.0
-Israel - Ligat HaAl,M. Petah Tikva,36.0,46.0
-Israel - Ligat HaAl,M. Tel Aviv,50.0,57.0
-Israel - Ligat HaAl,Maccabi Haifa,56.0,59.0
-Israel - Ligat HaAl,Maccabi Netanya,50.0,41.0
-Israel - Ligat HaAl,Sakhnin,55.0,52.0
-Italy - Serie A,AC Milan,58.0,47.0
-Italy - Serie A,AS Roma,47.0,52.0
-Italy - Serie A,Atalanta,51.0,38.0
-Italy - Serie A,Bologna,55.0,59.0
-Italy - Serie A,Cagliari,53.0,44.0
-Italy - Serie A,Como,50.0,54.0
-Italy - Serie A,Empoli,39.0,55.0
-Italy - Serie A,Fiorentina,45.0,47.0
-Italy - Serie A,Genoa,55.0,53.0
-Italy - Serie A,Hellas Verona,51.0,43.0
-Italy - Serie A,Inter Milan,48.0,68.0
-Italy - Serie A,Juventus,43.0,48.0
-Italy - Serie A,Lazio,55.0,54.0
-Italy - Serie A,Lecce,50.0,51.0
-Italy - Serie A,Monza,51.0,56.0
-Italy - Serie A,Napoli,44.0,52.0
-Italy - Serie A,Parma,51.0,56.0
-Italy - Serie A,Torino,55.0,51.0
-Italy - Serie A,Udinese,48.0,46.0
-Italy - Serie A,Venezia,49.0,53.0
-Italy - Serie B,Bari,45.0,56.0
-Italy - Serie B,Brescia,44.0,53.0
-Italy - Serie B,Carrarese,45.0,52.0
-Italy - Serie B,Catanzaro,59.0,47.0
-Italy - Serie B,Cesena,52.0,44.0
-Italy - Serie B,Cittadella,50.0,54.0
-Italy - Serie B,Cosenza,56.0,56.0
-Italy - Serie B,Cremonese,51.0,45.0
-Italy - Serie B,Frosinone,56.0,50.0
-Italy - Serie B,Juve Stabia,47.0,51.0
-Italy - Serie B,Mantova,51.0,45.0
-Italy - Serie B,Modena,44.0,52.0
-Italy - Serie B,Palermo,42.0,53.0
-Italy - Serie B,Pisa,38.0,51.0
-Italy - Serie B,Reggiana,54.0,51.0
-Italy - Serie B,Salernitana,52.0,58.0
-Italy - Serie B,Sampdoria,46.0,51.0
-Italy - Serie B,Sassuolo,53.0,49.0
-Italy - Serie B,Spezia,41.0,49.0
-Italy - Serie B,Sudtirol,51.0,48.0
-Italy - Serie C - Group A,AlbinoLeffe,58.0,63.0
-Italy - Serie C - Group A,Alcione,38.0,48.0
-Italy - Serie C - Group A,Arzignano,43.0,51.0
-Italy - Serie C - Group A,Atalanta B,56.0,44.0
-Italy - Serie C - Group A,Caldiero Terme,50.0,50.0
-Italy - Serie C - Group A,Clodiense,59.0,51.0
-Italy - Serie C - Group A,FeralpiSalo,45.0,53.0
-Italy - Serie C - Group A,Giana Erminio,54.0,52.0
-Italy - Serie C - Group A,Lecco,41.0,55.0
-Italy - Serie C - Group A,Lumezzane,44.0,56.0
-Italy - Serie C - Group A,Novara,42.0,47.0
-Italy - Serie C - Group A,Padova,55.0,51.0
-Italy - Serie C - Group A,Pergolettese,36.0,53.0
-Italy - Serie C - Group A,Pro Patria,39.0,58.0
-Italy - Serie C - Group A,Pro Vercelli,53.0,50.0
-Italy - Serie C - Group A,Renate,60.0,53.0
-Italy - Serie C - Group A,Trento,47.0,46.0
-Italy - Serie C - Group A,Triestina,49.0,47.0
-Italy - Serie C - Group A,Vicenza,46.0,54.0
-Italy - Serie C - Group A,Virtus Verona,48.0,59.0
-Italy - Serie C - Group B,AC Milan B,47.0,46.0
-Italy - Serie C - Group B,Arezzo,48.0,44.0
-Italy - Serie C - Group B,Ascoli,53.0,58.0
-Italy - Serie C - Group B,Athletic Carpi,50.0,58.0
-Italy - Serie C - Group B,Campobasso,55.0,52.0
-Italy - Serie C - Group B,Entella,50.0,54.0
-Italy - Serie C - Group B,Gubbio,61.0,43.0
-Italy - Serie C - Group B,Legnago Salus,64.0,50.0
-Italy - Serie C - Group B,Lucchese,37.0,51.0
-Italy - Serie C - Group B,Perugia,48.0,49.0
-Italy - Serie C - Group B,Pescara,55.0,52.0
-Italy - Serie C - Group B,Pianese,54.0,51.0
-Italy - Serie C - Group B,Pineto,45.0,46.0
-Italy - Serie C - Group B,Pontedera,56.0,48.0
-Italy - Serie C - Group B,Rimini,47.0,55.0
-Italy - Serie C - Group B,Sestri Levante,56.0,54.0
-Italy - Serie C - Group B,SPAL,54.0,53.0
-Italy - Serie C - Group B,Ternana,42.0,48.0
-Italy - Serie C - Group B,Torres,45.0,49.0
-Italy - Serie C - Group B,Vis Pesaro,48.0,53.0
-Japan - J1 League,Albirex Niigata,33.0,44.0
-Japan - J1 League,Avispa Fukuoka,58.0,56.0
-Japan - J1 League,Cerezo Osaka,50.0,48.0
-Japan - J1 League,Fagiano Okayama,64.0,50.0
-Japan - J1 League,FC Tokyo,48.0,63.0
-Japan - J1 League,Gamba Osaka,60.0,60.0
-Japan - J1 League,K. Frontale,54.0,45.0
-Japan - J1 League,Kashima Antlers,55.0,55.0
-Japan - J1 League,Kashiwa Reysol,53.0,38.0
-Japan - J1 League,Kyoto Sanga,63.0,42.0
-Japan - J1 League,Machida Zelvia,55.0,56.0
-Japan - J1 League,Nagoya G.,57.0,62.0
-Japan - J1 League,S. Hiroshima,54.0,40.0
-Japan - J1 League,Shimizu S-Pulse,65.0,45.0
-Japan - J1 League,Shonan Bellmare,63.0,40.0
-Japan - J1 League,Tokyo Verdy,48.0,48.0
-Japan - J1 League,Urawa RD,59.0,56.0
-Japan - J1 League,Vissel Kobe,50.0,60.0
-Japan - J1 League,Yokohama FC,42.0,53.0
-Japan - J1 League,Yokohama M.,58.0,57.0
-Japan - J2 League,Blaublitz Akita,51.0,52.0
-Japan - J2 League,C. Sapporo,40.0,54.0
-Japan - J2 League,Ehime FC,39.0,53.0
-Japan - J2 League,FC Imabari,62.0,62.0
-Japan - J2 League,Fujieda MYFC,37.0,53.0
-Japan - J2 League,Iwaki,52.0,47.0
-Japan - J2 League,JEF Utd Chiba,44.0,21.0
-Japan - J2 League,Jubilo Iwata,46.0,69.0
-Japan - J2 League,Kataller Toyama,50.0,46.0
-Japan - J2 League,M. Yamagata,44.0,51.0
-Japan - J2 League,Mito Hollyhock,56.0,69.0
-Japan - J2 League,Oita Trinita,41.0,44.0
-Japan - J2 League,Omiya Ardija,59.0,46.0
-Japan - J2 League,R. Kumamoto,40.0,60.0
-Japan - J2 League,R. Yamaguchi,56.0,48.0
-Japan - J2 League,Sagan Tosu,54.0,41.0
-Japan - J2 League,Tokushima V.,56.0,60.0
-Japan - J2 League,Vegalta Sendai,55.0,50.0
-Japan - J2 League,Ventforet Kofu,40.0,45.0
-Japan - J2 League,V-V. Nagasaki,45.0,44.0
-Japan - J3 League,AC Numazu,63.0,30.0
-Japan - J3 League,FC Ryukyu,32.0,64.0
-Japan - J3 League,Fukushima Utd,41.0,65.0
-Japan - J3 League,G. Kitakyushu,27.0,57.0
-Japan - J3 League,Gainare Tottori,34.0,47.0
-Japan - J3 League,Gifu,56.0,62.0
-Japan - J3 League,Kagoshima Utd,56.0,53.0
-Japan - J3 League,Kamatamare S.,59.0,17.0
-Japan - J3 League,Kochi United,35.0,62.0
-Japan - J3 League,Kusatsu,50.0,60.0
-Japan - J3 League,Matsumoto Y.,40.0,71.0
-Japan - J3 League,Nagano Parceiro,56.0,51.0
-Japan - J3 League,Nara Club,53.0,35.0
-Japan - J3 League,Osaka,72.0,54.0
-Japan - J3 League,SC Sagamihara,39.0,50.0
-Japan - J3 League,T. Miyazaki,69.0,26.0
-Japan - J3 League,Tochigi City,52.0,35.0
-Japan - J3 League,Tochigi SC,48.0,41.0
-Japan - J3 League,V. Hachinohe,44.0,42.0
-Japan - J3 League,Z. Kanazawa,59.0,47.0
-Kazakhstan - Premier League,Aktobe,48.0,49.0
-Kazakhstan - Premier League,Atyrau,74.0,29.0
-Kazakhstan - Premier League,FC Astana,55.0,72.0
-Kazakhstan - Premier League,Kairat Almaty,54.0,66.0
-Kazakhstan - Premier League,Kaisar K.,85.0,60.0
-Kazakhstan - Premier League,Kyzylzhar,51.0,62.0
-Kazakhstan - Premier League,Okzhetpes,53.0,38.0
-Kazakhstan - Premier League,Ordabasy,43.0,49.0
-Kazakhstan - Premier League,Tobol,46.0,50.0
-Kazakhstan - Premier League,Turan,69.0,48.0
-Kazakhstan - Premier League,Ulytau,60.0,63.0
-Kazakhstan - Premier League,Yelimay Semey,51.0,32.0
-Kazakhstan - Premier League,Zhenys,36.0,46.0
-Kazakhstan - Premier League,Zhetysu,64.0,46.0
-Lithuania - A Lyga,Banga,62.0,53.0
-Lithuania - A Lyga,Dainava,53.0,52.0
-Lithuania - A Lyga,Dziugas Telsiai,62.0,26.0
-Lithuania - A Lyga,Hegelmann L.,67.0,53.0
-Lithuania - A Lyga,Kauno Zalgiris,58.0,57.0
-Lithuania - A Lyga,Panevezys,48.0,52.0
-Lithuania - A Lyga,Riteriai,64.0,47.0
-Lithuania - A Lyga,Siauliai,51.0,31.0
-Lithuania - A Lyga,Suduva,50.0,55.0
-Lithuania - A Lyga,Zalgiris,38.0,41.0
-Mexico - Liga MX - Clausura,A. San Luis,52.0,40.0
-Mexico - Liga MX - Clausura,Atlas,60.0,47.0
-Mexico - Liga MX - Clausura,CF America,47.0,65.0
-Mexico - Liga MX - Clausura,Club Leon,47.0,52.0
-Mexico - Liga MX - Clausura,Cruz Azul,45.0,48.0
-Mexico - Liga MX - Clausura,Guadalajara,60.0,54.0
-Mexico - Liga MX - Clausura,Juarez,43.0,53.0
-Mexico - Liga MX - Clausura,Mazatlan,50.0,51.0
-Mexico - Liga MX - Clausura,Monterrey,45.0,56.0
-Mexico - Liga MX - Clausura,Necaxa,49.0,54.0
-Mexico - Liga MX - Clausura,Pachuca,61.0,46.0
-Mexico - Liga MX - Clausura,Puebla,40.0,51.0
-Mexico - Liga MX - Clausura,Pumas UNAM,61.0,36.0
-Mexico - Liga MX - Clausura,Queretaro,62.0,43.0
-Mexico - Liga MX - Clausura,Santos Laguna,50.0,48.0
-Mexico - Liga MX - Clausura,Tigres,58.0,46.0
-Mexico - Liga MX - Clausura,Tijuana,51.0,52.0
-Mexico - Liga MX - Clausura,Toluca,46.0,46.0
-Netherlands - Eredivisie,Ajax Amsterdam,57.0,56.0
-Netherlands - Eredivisie,Almere City,27.0,42.0
-Netherlands - Eredivisie,AZ Alkmaar,47.0,53.0
-Netherlands - Eredivisie,FC Groningen,37.0,48.0
-Netherlands - Eredivisie,FC Twente,49.0,45.0
-Netherlands - Eredivisie,FC Utrecht,56.0,48.0
-Netherlands - Eredivisie,Feyenoord,47.0,51.0
-Netherlands - Eredivisie,Fortuna Sittard,57.0,51.0
-Netherlands - Eredivisie,Go Ahead Eagles,51.0,58.0
-Netherlands - Eredivisie,Heerenveen,54.0,52.0
-Netherlands - Eredivisie,Heracles Almelo,40.0,51.0
-Netherlands - Eredivisie,NAC Breda,47.0,53.0
-Netherlands - Eredivisie,NEC Nijmegen,61.0,39.0
-Netherlands - Eredivisie,PEC Zwolle,40.0,49.0
-Netherlands - Eredivisie,PSV Eindhoven,51.0,51.0
-Netherlands - Eredivisie,RKC Waalwijk,65.0,45.0
-Netherlands - Eredivisie,Sparta,56.0,60.0
-Netherlands - Eredivisie,Willem II,45.0,47.0
-Netherlands - Eerste Divisie,ADO Den Haag,38.0,62.0
-Netherlands - Eerste Divisie,Cambuur,51.0,41.0
-Netherlands - Eerste Divisie,De Graafschap,52.0,47.0
-Netherlands - Eerste Divisie,Excelsior,48.0,60.0
-Netherlands - Eerste Divisie,FC Den Bosch,37.0,46.0
-Netherlands - Eerste Divisie,FC Dordrecht,47.0,44.0
-Netherlands - Eerste Divisie,FC Eindhoven,52.0,46.0
-Netherlands - Eerste Divisie,FC Emmen,47.0,46.0
-Netherlands - Eerste Divisie,FC Volendam,49.0,49.0
-Netherlands - Eerste Divisie,Helmond Sport,40.0,59.0
-Netherlands - Eerste Divisie,Jong Ajax,45.0,52.0
-Netherlands - Eerste Divisie,Jong AZ,55.0,46.0
-Netherlands - Eerste Divisie,Jong PSV,46.0,51.0
-Netherlands - Eerste Divisie,Jong Utrecht,55.0,49.0
-Netherlands - Eerste Divisie,MVV Maastricht,52.0,47.0
-Netherlands - Eerste Divisie,Roda JC,61.0,45.0
-Netherlands - Eerste Divisie,Telstar,48.0,56.0
-Netherlands - Eerste Divisie,TOP Oss,58.0,54.0
-Netherlands - Eerste Divisie,Vitesse Arnhem,48.0,55.0
-Netherlands - Eerste Divisie,VVV,54.0,53.0
-Northern Ireland - NIFL Premiership,Ballymena Utd,46.0,53.0
-Northern Ireland - NIFL Premiership,Carrick Rangers,54.0,58.0
-Northern Ireland - NIFL Premiership,Cliftonville,56.0,48.0
-Northern Ireland - NIFL Premiership,Coleraine,54.0,51.0
-Northern Ireland - NIFL Premiership,Crusaders,50.0,48.0
-Northern Ireland - NIFL Premiership,Dungannon,46.0,56.0
-Northern Ireland - NIFL Premiership,Glenavon,45.0,43.0
-Northern Ireland - NIFL Premiership,Glentoran,54.0,47.0
-Northern Ireland - NIFL Premiership,Larne,52.0,42.0
-Northern Ireland - NIFL Premiership,Linfield,45.0,60.0
-Northern Ireland - NIFL Premiership,Loughgall,68.0,47.0
-Northern Ireland - NIFL Premiership,Portadown,61.0,49.0
-Norway - Eliteserien,Bodo.Glimt,38.0,78.0
-Norway - Eliteserien,Brann,63.0,42.0
-Norway - Eliteserien,Bryne,22.0,64.0
-Norway - Eliteserien,Fredrikstad,70.0,40.0
-Norway - Eliteserien,HamKam,29.0,47.0
-Norway - Eliteserien,Haugesund,66.0,50.0
-Norway - Eliteserien,KFUM Oslo,29.0,65.0
-Norway - Eliteserien,Kristiansund,56.0,48.0
-Norway - Eliteserien,Molde,31.0,48.0
-Norway - Eliteserien,Rosenborg,39.0,90.0
-Norway - Eliteserien,Sandefjord,52.0,55.0
-Norway - Eliteserien,Sarpsborg 08,39.0,50.0
-Norway - Eliteserien,Stromsgodset,51.0,73.0
-Norway - Eliteserien,Tromso,53.0,63.0
-Norway - Eliteserien,Valerenga,62.0,60.0
-Norway - Eliteserien,Viking,43.0,70.0
-Norway - 1st Division,Aalesund,61.0,54.0
-Norway - 1st Division,Asane,66.0,39.0
-Norway - 1st Division,Egersund,39.0,78.0
-Norway - 1st Division,Hodd,28.0,57.0
-Norway - 1st Division,Kongsvinger,52.0,51.0
-Norway - 1st Division,Lillestrom,40.0,39.0
-Norway - 1st Division,Lyn,64.0,49.0
-Norway - 1st Division,Mjondalen,6.0,62.0
-Norway - 1st Division,Moss,86.0,53.0
-Norway - 1st Division,Odd,41.0,69.0
-Norway - 1st Division,Ranheim,47.0,49.0
-Norway - 1st Division,Raufoss,64.0,56.0
-Norway - 1st Division,Skeid,40.0,47.0
-Norway - 1st Division,Sogndal,38.0,50.0
-Norway - 1st Division,Stabaek,55.0,41.0
-Norway - 1st Division,Start,58.0,59.0
-Paraguay - Primera Div. - Apertura,2 de Mayo,66.0,44.0
-Paraguay - Primera Div. - Apertura,A. Tembetary,54.0,30.0
-Paraguay - Primera Div. - Apertura,Cerro Porteno,43.0,52.0
-Paraguay - Primera Div. - Apertura,D. Recoleta,46.0,53.0
-Paraguay - Primera Div. - Apertura,G. Caballero,51.0,49.0
-Paraguay - Primera Div. - Apertura,Guarani,51.0,60.0
-Paraguay - Primera Div. - Apertura,Libertad,48.0,44.0
-Paraguay - Primera Div. - Apertura,Nacional,48.0,65.0
-Paraguay - Primera Div. - Apertura,Olimpia,49.0,38.0
-Paraguay - Primera Div. - Apertura,S. Ameliano,46.0,54.0
-Paraguay - Primera Div. - Apertura,S. Luqueno,56.0,36.0
-Paraguay - Primera Div. - Apertura,S. Trinidense,56.0,49.0
-Paraguay - Division Intermedia,12 de Junio VH,54.0,16.0
-Paraguay - Division Intermedia,C. River Plate,54.0,50.0
-Paraguay - Division Intermedia,D. Capiata,45.0,77.0
-Paraguay - Division Intermedia,D. Santani,42.0,68.0
-Paraguay - Division Intermedia,Encarnacion,41.0,60.0
-Paraguay - Division Intermedia,Guairena,1.0,34.0
-Paraguay - Division Intermedia,Guarani de Fram,63.0,52.0
-Paraguay - Division Intermedia,Independiente,34.0,44.0
-Paraguay - Division Intermedia,Pastoreo,53.0,39.0
-Paraguay - Division Intermedia,Resistencia,48.0,55.0
-Paraguay - Division Intermedia,Rubio Nu,62.0,34.0
-Paraguay - Division Intermedia,S. Carapegua,57.0,54.0
-Paraguay - Division Intermedia,San Lorenzo,48.0,50.0
-Paraguay - Division Intermedia,Sol de America,78.0,64.0
-Paraguay - Division Intermedia,Tacuary,64.0,39.0
-Peru - Liga 1 - Apertura,A. Huanuco,57.0,48.0
-Peru - Liga 1 - Apertura,ADT,44.0,47.0
-Peru - Liga 1 - Apertura,Alianza A.,40.0,54.0
-Peru - Liga 1 - Apertura,Alianza Lima,52.0,46.0
-Peru - Liga 1 - Apertura,Atletico Grau,57.0,56.0
-Peru - Liga 1 - Apertura,Ayacucho,40.0,28.0
-Peru - Liga 1 - Apertura,Binacional,61.0,55.0
-Peru - Liga 1 - Apertura,Cajamarca,63.0,47.0
-Peru - Liga 1 - Apertura,Cienciano,52.0,60.0
-Peru - Liga 1 - Apertura,Comerciantes U.,54.0,50.0
-Peru - Liga 1 - Apertura,Cusco,46.0,52.0
-Peru - Liga 1 - Apertura,D. Garcilaso,49.0,52.0
-Peru - Liga 1 - Apertura,FBC Melgar,51.0,49.0
-Peru - Liga 1 - Apertura,Juan Pablo II C,69.0,39.0
-Peru - Liga 1 - Apertura,Los Chankas,40.0,49.0
-Peru - Liga 1 - Apertura,S. Cristal,30.0,44.0
-Peru - Liga 1 - Apertura,Sport Boys,57.0,48.0
-Peru - Liga 1 - Apertura,Sport Huancayo,68.0,46.0
-Peru - Liga 1 - Apertura,Universitario,47.0,59.0
-Poland - Ekstraklasa,Cracovia Krakow,45.0,38.0
-Poland - Ekstraklasa,Gornik Zabrze,47.0,54.0
-Poland - Ekstraklasa,Jagiellonia,42.0,55.0
-Poland - Ekstraklasa,Katowice,46.0,51.0
-Poland - Ekstraklasa,Korona Kielce,61.0,50.0
-Poland - Ekstraklasa,Lech Poznan,42.0,42.0
-Poland - Ekstraklasa,Lechia Gdansk,47.0,52.0
-Poland - Ekstraklasa,Legia Warsaw,42.0,45.0
-Poland - Ekstraklasa,Motor Lublin,47.0,54.0
-Poland - Ekstraklasa,Piast Gliwice,46.0,51.0
-Poland - Ekstraklasa,Pogon Szczecin,55.0,53.0
-Poland - Ekstraklasa,Puszcza Niepolo,43.0,54.0
-Poland - Ekstraklasa,Radomiak Radom,54.0,46.0
-Poland - Ekstraklasa,Rakow C.,59.0,52.0
-Poland - Ekstraklasa,Slask Wroclaw,52.0,52.0
-Poland - Ekstraklasa,Stal Mielec,46.0,59.0
-Poland - Ekstraklasa,Widzew Lodz,46.0,44.0
-Poland - Ekstraklasa,Zaglebie Lubin,55.0,48.0
-Poland - 1. Liga,Arka Gdynia,53.0,45.0
-Poland - 1. Liga,Chrobry Glogow,32.0,48.0
-Poland - 1. Liga,Gornik Leczna,60.0,44.0
-Poland - 1. Liga,K. Kolobrzeg,55.0,56.0
-Poland - 1. Liga,LKS Lodz,54.0,46.0
-Poland - 1. Liga,Miedz Legnica,44.0,60.0
-Poland - 1. Liga,Odra Opole,39.0,46.0
-Poland - 1. Liga,Pogon Siedlce,67.0,46.0
-Poland - 1. Liga,Polonia Warszaw,55.0,55.0
-Poland - 1. Liga,Ruch Chorzow,44.0,55.0
-Poland - 1. Liga,Stal Rzeszow,50.0,53.0
-Poland - 1. Liga,Stalowa Wola,48.0,52.0
-Poland - 1. Liga,T. Nieciecza,49.0,48.0
-Poland - 1. Liga,Tychy,40.0,45.0
-Poland - 1. Liga,Warta Poznan,66.0,44.0
-Poland - 1. Liga,Wisla Krakow,48.0,43.0
-Poland - 1. Liga,Wisla Plock,50.0,53.0
-Poland - 1. Liga,Znicz Pruszkow,49.0,38.0
-Portugal - Liga Portugal,Arouca,50.0,49.0
-Portugal - Liga Portugal,AVS,55.0,47.0
-Portugal - Liga Portugal,Benfica,46.0,56.0
-Portugal - Liga Portugal,Boavista,58.0,45.0
-Portugal - Liga Portugal,Casa Pia,53.0,52.0
-Portugal - Liga Portugal,Estoril,55.0,50.0
-Portugal - Liga Portugal,Estrela Amadora,51.0,46.0
-Portugal - Liga Portugal,Famalicao,49.0,49.0
-Portugal - Liga Portugal,Farense,53.0,53.0
-Portugal - Liga Portugal,FC Porto,46.0,49.0
-Portugal - Liga Portugal,Gil Vicente,47.0,58.0
-Portugal - Liga Portugal,Guimaraes,55.0,55.0
-Portugal - Liga Portugal,Moreirense,48.0,49.0
-Portugal - Liga Portugal,Nacional,47.0,47.0
-Portugal - Liga Portugal,Rio Ave,53.0,49.0
-Portugal - Liga Portugal,Santa Clara,49.0,48.0
-Portugal - Liga Portugal,Sporting Braga,54.0,45.0
-Portugal - Liga Portugal,Sporting CP,51.0,54.0
-Portugal - Liga Portugal 2,Academico Viseu,43.0,49.0
-Portugal - Liga Portugal 2,Alverca,37.0,41.0
-Portugal - Liga Portugal 2,Benfica B,55.0,47.0
-Portugal - Liga Portugal 2,Chaves,50.0,47.0
-Portugal - Liga Portugal 2,FC Porto B,48.0,43.0
-Portugal - Liga Portugal 2,Feirense,43.0,49.0
-Portugal - Liga Portugal 2,Felgueiras,49.0,54.0
-Portugal - Liga Portugal 2,Leixoes,29.0,52.0
-Portugal - Liga Portugal 2,Mafra,44.0,60.0
-Portugal - Liga Portugal 2,Maritimo,52.0,41.0
-Portugal - Liga Portugal 2,Oliveirense,45.0,51.0
-Portugal - Liga Portugal 2,Pacos Ferreira,25.0,39.0
-Portugal - Liga Portugal 2,Penafiel,48.0,52.0
-Portugal - Liga Portugal 2,Portimonense,52.0,45.0
-Portugal - Liga Portugal 2,Tondela,51.0,48.0
-Portugal - Liga Portugal 2,Torreense,57.0,50.0
-Portugal - Liga Portugal 2,Uniao de Leiria,52.0,60.0
-Portugal - Liga Portugal 2,Vizela,49.0,44.0
-Scotland - Premiership,Aberdeen,50.0,58.0
-Scotland - Premiership,Celtic,55.0,44.0
-Scotland - Premiership,Dundee FC,47.0,52.0
-Scotland - Premiership,Dundee Utd,59.0,54.0
-Scotland - Premiership,Hearts,52.0,46.0
-Scotland - Premiership,Hibernian,42.0,55.0
-Scotland - Premiership,Kilmarnock,57.0,50.0
-Scotland - Premiership,Motherwell,52.0,49.0
-Scotland - Premiership,Rangers,51.0,43.0
-Scotland - Premiership,Ross County,52.0,53.0
-Scotland - Premiership,St. Johnstone,53.0,45.0
-Scotland - Premiership,St. Mirren,42.0,55.0
-Scotland - Championship,Airdrieonians,43.0,45.0
-Scotland - Championship,Ayr Utd,53.0,45.0
-Scotland - Championship,Dunfermline,50.0,45.0
-Scotland - Championship,Falkirk,44.0,49.0
-Scotland - Championship,Greenock Morton,54.0,53.0
-Scotland - Championship,Hamilton,42.0,56.0
-Scotland - Championship,Livingston,49.0,42.0
-Scotland - Championship,Partick Thistle,55.0,47.0
-Scotland - Championship,Queens Park,44.0,41.0
-Scotland - Championship,Raith Rovers,53.0,52.0
-Serbia - Super Liga,Backa Topola,47.0,54.0
-Serbia - Super Liga,Cukaricki,46.0,46.0
-Serbia - Super Liga,IMT N. Beograd,49.0,50.0
-Serbia - Super Liga,Jedinstvo U.,40.0,50.0
-Serbia - Super Liga,Mladost Lucani,37.0,48.0
-Serbia - Super Liga,Napredak,55.0,52.0
-Serbia - Super Liga,Novi Pazar,50.0,55.0
-Serbia - Super Liga,OFK Beograd,58.0,42.0
-Serbia - Super Liga,Partizan,46.0,55.0
-Serbia - Super Liga,Radnicki 1923,48.0,51.0
-Serbia - Super Liga,Radnicki Nis,56.0,52.0
-Serbia - Super Liga,Red Star,52.0,53.0
-Serbia - Super Liga,S. Subotica,59.0,55.0
-Serbia - Super Liga,T. Odzaci,40.0,48.0
-Serbia - Super Liga,Vojvodina,50.0,43.0
-Serbia - Super Liga,Z. Pancevo,36.0,41.0
-Singapore - Premier League,A. Niigata (S),50.0,56.0
-Singapore - Premier League,DPMM FC,45.0,54.0
-Singapore - Premier League,Geylang,54.0,49.0
-Singapore - Premier League,Hougang,46.0,51.0
-Singapore - Premier League,Khalsa,54.0,51.0
-Singapore - Premier League,Lion City,52.0,52.0
-Singapore - Premier League,Tampines Rovers,46.0,48.0
-Singapore - Premier League,Tanjong Pagar,47.0,52.0
-Singapore - Premier League,Young Lions,45.0,48.0
-Slovenia - Prva Liga,Bravo,38.0,48.0
-Slovenia - Prva Liga,Domzale,44.0,50.0
-Slovenia - Prva Liga,Koper,48.0,50.0
-Slovenia - Prva Liga,Maribor,57.0,53.0
-Slovenia - Prva Liga,Mura,48.0,61.0
-Slovenia - Prva Liga,Nafta,54.0,58.0
-Slovenia - Prva Liga,NK Celje,48.0,47.0
-Slovenia - Prva Liga,NK Olimpija,49.0,50.0
-Slovenia - Prva Liga,Primorje,42.0,49.0
-Slovenia - Prva Liga,Radomlje,52.0,54.0
-Slovakia - Fortuna Liga,Banska Bystrica,44.0,61.0
-Slovakia - Fortuna Liga,DAC Streda,53.0,60.0
-Slovakia - Fortuna Liga,FC Kosice,51.0,45.0
-Slovakia - Fortuna Liga,Komarno,56.0,47.0
-Slovakia - Fortuna Liga,Podbrezova,55.0,54.0
-Slovakia - Fortuna Liga,Ruzomberok,52.0,40.0
-Slovakia - Fortuna Liga,S. Bratislava,58.0,53.0
-Slovakia - Fortuna Liga,Skalica,58.0,44.0
-Slovakia - Fortuna Liga,Spartak Trnava,51.0,44.0
-Slovakia - Fortuna Liga,Trencin,52.0,49.0
-Slovakia - Fortuna Liga,Z. Michalovce,48.0,60.0
-Slovakia - Fortuna Liga,Zilina,44.0,46.0
-South Africa - Premier Division ,AmaZulu,51.0,51.0
-South Africa - Premier Division ,Cape Town City,42.0,49.0
-South Africa - Premier Division ,Chippa Utd,42.0,47.0
-South Africa - Premier Division ,Golden Arrows,63.0,48.0
-South Africa - Premier Division ,Kaizer Chiefs,43.0,46.0
-South Africa - Premier Division ,Magesi,41.0,46.0
-South Africa - Premier Division ,Mamelodi S.,52.0,33.0
-South Africa - Premier Division ,Marumo G.,38.0,52.0
-South Africa - Premier Division ,Orlando Pirates,50.0,48.0
-South Africa - Premier Division ,Polokwane,55.0,61.0
-South Africa - Premier Division ,Richards Bay,46.0,47.0
-South Africa - Premier Division ,Royal AM,77.0,32.0
-South Africa - Premier Division ,Sekhukhune,52.0,53.0
-South Africa - Premier Division ,Stellenbosch,47.0,34.0
-South Africa - Premier Division ,SuperSport Utd,54.0,45.0
-South Africa - Premier Division ,TS Galaxy,44.0,41.0
-South Korea - K League 1,Anyang,54.0,57.0
-South Korea - K League 1,Daegu,69.0,47.0
-South Korea - K League 1,Daejeon Citizen,50.0,69.0
-South Korea - K League 1,Gangwon,47.0,74.0
-South Korea - K League 1,Gimcheon Sangmu,52.0,53.0
-South Korea - K League 1,Gwangju,51.0,54.0
-South Korea - K League 1,Jeju Utd,62.0,55.0
-South Korea - K League 1,Jeonbuk Motors,58.0,78.0
-South Korea - K League 1,Pohang Steelers,53.0,46.0
-South Korea - K League 1,Seoul,49.0,33.0
-South Korea - K League 1,Suwon City,64.0,50.0
-South Korea - K League 1,Ulsan,49.0,59.0
-South Korea - K League 2,Ansan Greeners,52.0,50.0
-South Korea - K League 2,Asan,54.0,66.0
-South Korea - K League 2,Bucheon FC,61.0,46.0
-South Korea - K League 2,Busan IPark,35.0,76.0
-South Korea - K League 2,Cheonan City,33.0,44.0
-South Korea - K League 2,Cheongju,48.0,58.0
-South Korea - K League 2,Gimpo,62.0,66.0
-South Korea - K League 2,Gyeongnam,58.0,52.0
-South Korea - K League 2,Hwaseong,30.0,45.0
-South Korea - K League 2,Incheon Utd,38.0,63.0
-South Korea - K League 2,Jeonnam,50.0,67.0
-South Korea - K League 2,Seongnam,53.0,63.0
-South Korea - K League 2,Seoul E-Land,44.0,63.0
-South Korea - K League 2,Suwon Bluewings,49.0,41.0
-Spain - La Liga,Alaves,48.0,56.0
-Spain - La Liga,Athletic Bilbao,60.0,57.0
-Spain - La Liga,Atletico Madrid,52.0,51.0
-Spain - La Liga,Celta Vigo,52.0,52.0
-Spain - La Liga,Espanyol,56.0,45.0
-Spain - La Liga,FC Barcelona,56.0,50.0
-Spain - La Liga,Getafe,59.0,43.0
-Spain - La Liga,Girona,61.0,55.0
-Spain - La Liga,Las Palmas,53.0,50.0
-Spain - La Liga,Leganes,37.0,51.0
-Spain - La Liga,Mallorca,55.0,50.0
-Spain - La Liga,Osasuna,52.0,56.0
-Spain - La Liga,Rayo Vallecano,43.0,49.0
-Spain - La Liga,Real Betis,49.0,50.0
-Spain - La Liga,Real Madrid,50.0,44.0
-Spain - La Liga,Real Sociedad,53.0,42.0
-Spain - La Liga,Sevilla FC,55.0,48.0
-Spain - La Liga,Valencia,52.0,49.0
-Spain - La Liga,Valladolid,51.0,55.0
-Spain - La Liga,Villarreal,53.0,41.0
-Spain - La Liga 2,Albacete,50.0,43.0
-Spain - La Liga 2,Almeria,52.0,42.0
-Spain - La Liga 2,Burgos,63.0,56.0
-Spain - La Liga 2,Cadiz,55.0,62.0
-Spain - La Liga 2,Cartagena,48.0,51.0
-Spain - La Liga 2,Castellon,48.0,49.0
-Spain - La Liga 2,Cordoba,55.0,54.0
-Spain - La Liga 2,Deportivo,53.0,46.0
-Spain - La Liga 2,Eibar,40.0,59.0
-Spain - La Liga 2,Elche,49.0,50.0
-Spain - La Liga 2,Eldense,56.0,58.0
-Spain - La Liga 2,Granada,57.0,55.0
-Spain - La Liga 2,Huesca,62.0,53.0
-Spain - La Liga 2,Levante,52.0,66.0
-Spain - La Liga 2,Malaga,61.0,54.0
-Spain - La Liga 2,Mirandes,55.0,57.0
-Spain - La Liga 2,Racing,51.0,46.0
-Spain - La Liga 2,Racing Ferrol,41.0,48.0
-Spain - La Liga 2,Real Oviedo,52.0,52.0
-Spain - La Liga 2,Real Zaragoza,65.0,44.0
-Spain - La Liga 2,Sporting Gijon,59.0,58.0
-Spain - La Liga 2,Tenerife,57.0,58.0
-Sweden - Allsvenskan,AIK,67.0,63.0
-Sweden - Allsvenskan,Brommapojkarna,54.0,54.0
-Sweden - Allsvenskan,Degerfors,68.0,48.0
-Sweden - Allsvenskan,Djurgarden,44.0,45.0
-Sweden - Allsvenskan,Elfsborg,58.0,37.0
-Sweden - Allsvenskan,GAIS,54.0,55.0
-Sweden - Allsvenskan,Hacken,53.0,46.0
-Sweden - Allsvenskan,Halmstad,38.0,54.0
-Sweden - Allsvenskan,Hammarby,49.0,43.0
-Sweden - Allsvenskan,IFK Goteborg,44.0,49.0
-Sweden - Allsvenskan,Malmo FF,37.0,65.0
-Sweden - Allsvenskan,Mjallby,49.0,46.0
-Sweden - Allsvenskan,Norrkoping,36.0,60.0
-Sweden - Allsvenskan,Oster,64.0,51.0
-Sweden - Allsvenskan,Sirius,46.0,50.0
-Sweden - Allsvenskan,Varnamo,71.0,42.0
-Sweden - Superettan,Brage,72.0,43.0
-Sweden - Superettan,Falkenberg,42.0,70.0
-Sweden - Superettan,GIF Sundsvall,57.0,32.0
-Sweden - Superettan,Helsingborg,56.0,71.0
-Sweden - Superettan,Kalmar,37.0,42.0
-Sweden - Superettan,Landskrona,64.0,32.0
-Sweden - Superettan,Oddevold,46.0,50.0
-Sweden - Superettan,Orebro,28.0,39.0
-Sweden - Superettan,Orgryte,20.0,40.0
-Sweden - Superettan,Ostersunds,59.0,59.0
-Sweden - Superettan,Sandviken,45.0,50.0
-Sweden - Superettan,Trelleborg,32.0,46.0
-Sweden - Superettan,Umea,86.0,45.0
-Sweden - Superettan,Utsikten,72.0,63.0
-Sweden - Superettan,Varberg BoIS,38.0,48.0
-Sweden - Superettan,Vasteras,50.0,46.0
-Switzerland - Super League,BSC Young Boys,45.0,46.0
-Switzerland - Super League,FC Basel,48.0,57.0
-Switzerland - Super League,FC Zurich,53.0,42.0
-Switzerland - Super League,Grasshopper,43.0,52.0
-Switzerland - Super League,Lausanne Sport,46.0,56.0
-Switzerland - Super League,Lugano,48.0,54.0
-Switzerland - Super League,Luzern,55.0,46.0
-Switzerland - Super League,Servette,48.0,59.0
-Switzerland - Super League,Sion,51.0,48.0
-Switzerland - Super League,St. Gallen,42.0,51.0
-Switzerland - Super League,Winterthur,56.0,56.0
-Switzerland - Super League,Yverdon,42.0,46.0
-Switzerland - Challenge League,Aarau,48.0,38.0
-Switzerland - Challenge League,Bellinzona,54.0,47.0
-Switzerland - Challenge League,Etoile Carouge,53.0,38.0
-Switzerland - Challenge League,Lausanne Ouchy,52.0,46.0
-Switzerland - Challenge League,Neuchatel Xamax,54.0,46.0
-Switzerland - Challenge League,Schaffhausen,52.0,50.0
-Switzerland - Challenge League,Stade Nyonnais,44.0,59.0
-Switzerland - Challenge League,Thun,55.0,54.0
-Switzerland - Challenge League,Vaduz,48.0,52.0
-Switzerland - Challenge League,Wil,49.0,55.0
-Thailand - Thai League 1,Bangkok Utd,50.0,53.0
-Thailand - Thai League 1,Buriram Utd,55.0,52.0
-Thailand - Thai League 1,Chiangrai Utd,60.0,49.0
-Thailand - Thai League 1,Khon Kaen Utd,53.0,53.0
-Thailand - Thai League 1,Lamphun Warrior,49.0,51.0
-Thailand - Thai League 1,Muang Thong Utd,41.0,38.0
-Thailand - Thai League 1,N. Bua Pitchaya,62.0,54.0
-Thailand - Thai League 1,N. Ratchasima,48.0,59.0
-Thailand - Thai League 1,Nakhon Pathom,54.0,55.0
-Thailand - Thai League 1,Pathum Utd,50.0,59.0
-Thailand - Thai League 1,Port FC,50.0,42.0
-Thailand - Thai League 1,Prachuap,55.0,50.0
-Thailand - Thai League 1,Ratchaburi,45.0,54.0
-Thailand - Thai League 1,Rayong,55.0,54.0
-Thailand - Thai League 1,Sukhothai,62.0,50.0
-Thailand - Thai League 1,Uthai Thani,47.0,54.0
-Turkey - Super Lig,Adana Demirspor,61.0,50.0
-Turkey - Super Lig,Alanyaspor,36.0,49.0
-Turkey - Super Lig,Antalyaspor,48.0,46.0
-Turkey - Super Lig,Basaksehir,57.0,56.0
-Turkey - Super Lig,Besiktas,55.0,40.0
-Turkey - Super Lig,Bodrumspor,54.0,47.0
-Turkey - Super Lig,Eyupspor,42.0,63.0
-Turkey - Super Lig,Fenerbahce,53.0,55.0
-Turkey - Super Lig,Galatasaray,49.0,52.0
-Turkey - Super Lig,Gaziantep,55.0,54.0
-Turkey - Super Lig,Goztepe,41.0,46.0
-Turkey - Super Lig,Hatayspor,40.0,52.0
-Turkey - Super Lig,Kasimpasa,62.0,50.0
-Turkey - Super Lig,Kayserispor,50.0,57.0
-Turkey - Super Lig,Konyaspor,53.0,45.0
-Turkey - Super Lig,Rizespor,53.0,49.0
-Turkey - Super Lig,Samsunspor,55.0,47.0
-Turkey - Super Lig,Sivasspor,52.0,43.0
-Turkey - Super Lig,Trabzonspor,44.0,54.0
-UAE - Pro League,Ajman,67.0,50.0
-UAE - Pro League,Al Ain,50.0,56.0
-UAE - Pro League,Al Bataeh,50.0,49.0
-UAE - Pro League,Al Jazira,43.0,54.0
-UAE - Pro League,Al Nasr,56.0,51.0
-UAE - Pro League,Al Sharjah,63.0,52.0
-UAE - Pro League,Al Urooba,64.0,52.0
-UAE - Pro League,Al Wahda,55.0,46.0
-UAE - Pro League,Al Wasl,52.0,49.0
-UAE - Pro League,Bani Yas,35.0,55.0
-UAE - Pro League,Dibba Al Hisn,54.0,45.0
-UAE - Pro League,Ittihad Kalba,45.0,53.0
-UAE - Pro League,Khorfakkan,51.0,48.0
-UAE - Pro League,Shabab Al Ahli,55.0,53.0
-Ukraine - Premier League,Chornomorets,62.0,43.0
-Ukraine - Premier League,Dynamo Kyiv,46.0,39.0
-Ukraine - Premier League,Inhulets,39.0,52.0
-Ukraine - Premier League,Karpaty Lviv,45.0,59.0
-Ukraine - Premier League,Kolos Kovalivka,48.0,51.0
-Ukraine - Premier League,Kryvbas KR,50.0,43.0
-Ukraine - Premier League,Livyi Bereh,64.0,58.0
-Ukraine - Premier League,LNZ Cherkasy,50.0,46.0
-Ukraine - Premier League,Obolon,44.0,50.0
-Ukraine - Premier League,Oleksandria,40.0,63.0
-Ukraine - Premier League,Polessya,49.0,48.0
-Ukraine - Premier League,Rukh Lviv,62.0,48.0
-Ukraine - Premier League,Shakhtar,52.0,63.0
-Ukraine - Premier League,Veres,40.0,46.0
-Ukraine - Premier League,Vorskla Poltava,65.0,49.0
-Ukraine - Premier League,Zorya Luhansk,42.0,52.0
-USA - MLS,Atlanta Utd,77.0,56.0
-USA - MLS,Austin,46.0,56.0
-USA - MLS,CF Montreal,53.0,51.0
-USA - MLS,Charlotte,47.0,49.0
-USA - MLS,Chicago Fire,55.0,37.0
-USA - MLS,Cincinnati,41.0,45.0
-USA - MLS,Colorado Rapids,51.0,46.0
-USA - MLS,Columbus Crew,51.0,38.0
-USA - MLS,Dallas,56.0,40.0
-USA - MLS,DC United,51.0,49.0
-USA - MLS,Houston Dynamo,43.0,41.0
-USA - MLS,Inter Miami,41.0,44.0
-USA - MLS,LA Galaxy,51.0,49.0
-USA - MLS,Los Angeles FC,44.0,48.0
-USA - MLS,Minnesota Utd,33.0,73.0
-USA - MLS,Nashville SC,48.0,39.0
-USA - MLS,New England,43.0,47.0
-USA - MLS,New York City,43.0,59.0
-USA - MLS,New York RB,48.0,45.0
-USA - MLS,Orlando City,60.0,44.0
-USA - MLS,Philadelphia,58.0,44.0
-USA - MLS,Portland,48.0,45.0
-USA - MLS,Real Salt Lake,42.0,52.0
-USA - MLS,San Diego,70.0,40.0
-USA - MLS,Seattle,43.0,42.0
-USA - MLS,SJ Earthquakes,49.0,45.0
-USA - MLS,Sporting KC,54.0,49.0
-USA - MLS,St. Louis City,58.0,64.0
-USA - MLS,Toronto,51.0,54.0
-USA - MLS,Vancouver,52.0,76.0
-USL Championship,Birmingham L.,63.0,49.0
-USL Championship,Charleston,23.0,56.0
-USL Championship,Colorado S.,53.0,57.0
-USL Championship,Detroit City,59.0,54.0
-USL Championship,El Paso,33.0,56.0
-USL Championship,FC Tulsa,48.0,62.0
-USL Championship,Hartford A.,34.0,54.0
-USL Championship,Indy Eleven,40.0,60.0
-USL Championship,Lexington,46.0,55.0
-USL Championship,Loudoun Utd,46.0,36.0
-USL Championship,Louisville City,62.0,65.0
-USL Championship,Miami FC,46.0,37.0
-USL Championship,Monterey Bay,60.0,60.0
-USL Championship,New Mexico,58.0,57.0
-USL Championship,North Carolina,68.0,42.0
-USL Championship,Oakland Roots,60.0,54.0
-USL Championship,Phoenix Rising,51.0,49.0
-USL Championship,Pittsburgh,56.0,55.0
-USL Championship,Rhode Island,44.0,32.0
-USL Championship,Sacramento R.,39.0,54.0
-USL Championship,San Antonio,41.0,34.0
-USL Championship,Tampa Bay,50.0,53.0
-USA - USL League One,Alta,38.0,49.0
-USA - USL League One,Charlotte I.,66.0,45.0
-USA - USL League One,Chattanooga RW,43.0,53.0
-USA - USL League One,Forward Madison,55.0,45.0
-USA - USL League One,Greenville,49.0,44.0
-USA - USL League One,Naples,48.0,67.0
-USA - USL League One,One Knoxville,44.0,49.0
-USA - USL League One,Portland Hearts,71.0,56.0
-USA - USL League One,Richmond K.,41.0,32.0
-USA - USL League One,Spokane V.,42.0,62.0
-USA - USL League One,Texoma,66.0,59.0
-USA - USL League One,Tormenta,66.0,58.0
-USA - USL League One,Union Omaha,60.0,51.0
-USA - USL League One,Westchester SC,46.0,38.0
+Argentina - Liga Profesional,A. Tucuman,36.0,53
+Argentina - Liga Profesional,Aldosivi,60.0,46
+Argentina - Liga Profesional,Argentinos Jrs,46.0,56
+Argentina - Liga Profesional,Banfield,72.0,55
+Argentina - Liga Profesional,Barracas C.,60.0,48
+Argentina - Liga Profesional,Belgrano,46.0,55
+Argentina - Liga Profesional,Boca Juniors,47.0,46
+Argentina - Liga Profesional,Central Cordoba,69.0,59
+Argentina - Liga Profesional,D. Riestra,49.0,77
+Argentina - Liga Profesional,Defensa y J.,45.0,44
+Argentina - Liga Profesional,Estudiantes,63.0,58
+Argentina - Liga Profesional,Gimnasia,22.0,56
+Argentina - Liga Profesional,Godoy Cruz,40.0,42
+Argentina - Liga Profesional,Huracan,43.0,42
+Argentina - Liga Profesional,I. Rivadavia,54.0,60
+Argentina - Liga Profesional,Independiente,44.0,53
+Argentina - Liga Profesional,Instituto,56.0,60
+Argentina - Liga Profesional,Lanus,70.0,54
+Argentina - Liga Profesional,Newells,33.0,47
+Argentina - Liga Profesional,Platense,42.0,73
+Argentina - Liga Profesional,Racing Club,49.0,52
+Argentina - Liga Profesional,River Plate,59.0,28
+Argentina - Liga Profesional,Rosario Central,44.0,44
+Argentina - Liga Profesional,San Lorenzo,72.0,46
+Argentina - Liga Profesional,Sarmiento,52.0,28
+Argentina - Liga Profesional,SM San Juan,15.0,67
+Argentina - Liga Profesional,T. de Cordoba,39.0,68
+Argentina - Liga Profesional,Tigre,50.0,43
+Argentina - Liga Profesional,Union Santa Fe,67.0,41
+Argentina - Liga Profesional,Velez Sarsfield,38.0,43
+Argentina - Primera B,A. Quilmes,52.0,48
+Argentina - Primera B,Acassuso,50.0,47
+Argentina - Primera B,Argentino Merlo,70.0,64
+Argentina - Primera B,Brown de A.,58.0,55
+Argentina - Primera B,Comunicaciones,39.0,62
+Argentina - Primera B,D. Armenio,63.0,63
+Argentina - Primera B,D. Laferrere,70.0,46
+Argentina - Primera B,Deportivo Merlo,53.0,26
+Argentina - Primera B,Dock Sud,50.0,50
+Argentina - Primera B,Excursionistas,49.0,59
+Argentina - Primera B,Fenix,32.0,50
+Argentina - Primera B,Flandria,40.0,31
+Argentina - Primera B,Liniers,54.0,53
+Argentina - Primera B,Midland,55.0,36
+Argentina - Primera B,Real Pilar,55.0,59
+Argentina - Primera B,S. Italiano,68.0,72
+Argentina - Primera B,Sacachispas,54.0,49
+Argentina - Primera B,SM Burzaco,49.0,55
+Argentina - Primera B,UAI Urquiza,64.0,44
+Argentina - Primera B,V. San Carlos,46.0,42
+Argentina - Primera B,Villa Dalmine,42.0,65
+Armenia - Premier League,Alashkert,34.0,49
+Armenia - Premier League,Ararat Yerevan,54.0,54
+Armenia - Premier League,Ararat-Armenia,53.0,44
+Armenia - Premier League,BKMA,55.0,45
+Armenia - Premier League,Gandzasar,35.0,55
+Armenia - Premier League,Noah,49.0,52
+Armenia - Premier League,Pyunik,52.0,49
+Armenia - Premier League,Shirak,57.0,53
+Armenia - Premier League,Urartu,59.0,58
+Armenia - Premier League,Van,49.0,53
+Armenia - Premier League,West Armenia,60.0,46
+Australia - A-League,Adelaide Utd,45.0,52
+Australia - A-League,Auckland,62.0,42
+Australia - A-League,Brisbane Roar,44.0,49
+Australia - A-League,Central Coast,60.0,50
+Australia - A-League,Macarthur FC,49.0,47
+Australia - A-League,Melbourne City,44.0,45
+Australia - A-League,Melbourne V.,38.0,58
+Australia - A-League,Newcastle Jets,48.0,52
+Australia - A-League,Perth Glory,51.0,42
+Australia - A-League,Sydney FC,63.0,51
+Australia - A-League,Wellington,49.0,44
+Australia - A-League,Western United,52.0,49
+Australia - A-League,WS Wanderers,46.0,48
+Austria - 2. Liga,A. Lustenau,56.0,50
+Austria - 2. Liga,Admira Wacker,47.0,49
+Austria - 2. Liga,Amstetten,52.0,54
+Austria - 2. Liga,Bregenz,55.0,46
+Austria - 2. Liga,First Vienna,51.0,45
+Austria - 2. Liga,Floridsdorfer,42.0,48
+Austria - 2. Liga,Kapfenberger,38.0,55
+Austria - 2. Liga,Lafnitz,62.0,54
+Austria - 2. Liga,Liefering,43.0,46
+Austria - 2. Liga,Rapid Wien B,46.0,48
+Austria - 2. Liga,Ried,55.0,49
+Austria - 2. Liga,St. Polten,48.0,56
+Austria - 2. Liga,Stripfing,45.0,41
+Austria - 2. Liga,Sturm Graz B,51.0,53
+Austria - 2. Liga,SV Horn,56.0,43
+Austria - 2. Liga,Voitsberg,43.0,49
+Brazil - Serie A,Atletico MG,67.0,38
+Brazil - Serie A,Bahia,66.0,55
+Brazil - Serie A,Botafogo,86.0,31
+Brazil - Serie A,Bragantino,52.0,76
+Brazil - Serie A,Ceara,44.0,66
+Brazil - Serie A,Corinthians,68.0,39
+Brazil - Serie A,Cruzeiro,38.0,42
+Brazil - Serie A,Flamengo,61.0,61
+Brazil - Serie A,Fluminense,63.0,57
+Brazil - Serie A,Fortaleza,32.0,55
+Brazil - Serie A,Gremio,38.0,56
+Brazil - Serie A,Internacional,46.0,49
+Brazil - Serie A,Juventude,4.0,49
+Brazil - Serie A,Mirassol,45.0,45
+Brazil - Serie A,Palmeiras,65.0,28
+Brazil - Serie A,Santos,29.0,57
+Brazil - Serie A,Sao Paulo,49.0,55
+Brazil - Serie A,Sport Recife,41.0,52
+Brazil - Serie A,Vasco da Gama,52.0,58
+Brazil - Serie A,Vitoria,64.0,48
+Brazil - Serie B,Amazonas,30.0,42
+Brazil - Serie B,Athletic Club,43.0,58
+Brazil - Serie B,Athletico PR,47.0,38
+Brazil - Serie B,Atletico GO,44.0,42
+Brazil - Serie B,Avai,43.0,42
+Brazil - Serie B,Botafogo SP,57.0,43
+Brazil - Serie B,Chapecoense,56.0,56
+Brazil - Serie B,Coritiba,46.0,67
+Brazil - Serie B,CRB,67.0,38
+Brazil - Serie B,Criciuma,45.0,46
+Brazil - Serie B,Cuiaba,45.0,28
+Brazil - Serie B,Ferroviaria,59.0,46
+Brazil - Serie B,Goias,58.0,25
+Brazil - Serie B,Novorizontino,45.0,28
+Brazil - Serie B,Operario PR,42.0,56
+Brazil - Serie B,Paysandu,47.0,66
+Brazil - Serie B,Remo,62.0,51
+Brazil - Serie B,Vila Nova,73.0,52
+Brazil - Serie B,Volta Redonda,60.0,44
+Brazil - Serie C,ABC,69.0,52
+Brazil - Serie C,Anapolis,53.0,38
+Brazil - Serie C,Botafogo PB,52.0,64
+Brazil - Serie C,Brusque,58.0,60
+Brazil - Serie C,Caxias,35.0,63
+Brazil - Serie C,Confianca,28.0,51
+Brazil - Serie C,CSA,50.0,62
+Brazil - Serie C,Figueirense,54.0,39
+Brazil - Serie C,Floresta,52.0,74
+Brazil - Serie C,Guarani,32.0,47
+Brazil - Serie C,Itabaiana,51.0,41
+Brazil - Serie C,Ituano,58.0,59
+Brazil - Serie C,Londrina,49.0,44
+Brazil - Serie C,Maringa,45.0,57
+Brazil - Serie C,Nautico,46.0,56
+Brazil - Serie C,Ponte Preta,81.0,43
+Brazil - Serie C,Retro,24.0,34
+Brazil - Serie C,Sao Bernardo,10.0,37
+Brazil - Serie C,Tombense,61.0,64
+Brazil - Serie C,Ypiranga,66.0,44
+Bulgaria - Parva Liga,Arda,51.0,49
+Bulgaria - Parva Liga,Beroe,51.0,49
+Bulgaria - Parva Liga,Botev Plovdiv,56.0,40
+Bulgaria - Parva Liga,Botev Vratsa,51.0,51
+Bulgaria - Parva Liga,Cherno More,54.0,49
+Bulgaria - Parva Liga,CSKA 1948 Sofia,44.0,42
+Bulgaria - Parva Liga,CSKA Sofia,51.0,44
+Bulgaria - Parva Liga,Hebar,49.0,43
+Bulgaria - Parva Liga,L. Krumovgrad,46.0,44
+Bulgaria - Parva Liga,Levski Sofia,49.0,58
+Bulgaria - Parva Liga,Lok. Plovdiv,56.0,52
+Bulgaria - Parva Liga,Lokomotiv Sofia,37.0,51
+Bulgaria - Parva Liga,Ludogorets,52.0,55
+Bulgaria - Parva Liga,Septemvri Sofia,61.0,47
+Bulgaria - Parva Liga,Slavia Sofia,45.0,56
+Bulgaria - Parva Liga,Spartak Varna,53.0,47
+Canada - Premier League,A. Ottawa,54.0,60
+Canada - Premier League,Cavalry,54.0,40
+Canada - Premier League,Forge,48.0,22
+Canada - Premier League,HFX Wanderers,65.0,54
+Canada - Premier League,Pacific,59.0,55
+Canada - Premier League,Valour,22.0,43
+Canada - Premier League,Vancouver FC,39.0,64
+Canada - Premier League,York Utd,52.0,58
+China - Super League,Beijing Guoan,45.0,66
+China - Super League,Changchun Yatai,36.0,54
+China - Super League,Chengdu,36.0,34
+China - Super League,Dalian Yingbo,32.0,62
+China - Super League,Henan SL,60.0,51
+China - Super League,Meizhou Hakka,57.0,47
+China - Super League,Qingdao Hainiu,24.0,52
+China - Super League,Qingdao West C.,58.0,38
+China - Super League,S. Shenhua,66.0,40
+China - Super League,Shandong T.,57.0,53
+China - Super League,Shanghai Port,44.0,52
+China - Super League,Sichuan Jiuniu,62.0,47
+China - Super League,Tianjin T.,39.0,54
+China - Super League,Wuhan Three T.,53.0,52
+China - Super League,Yunnan Yukun,58.0,45
+China - Super League,Zhejiang,46.0,59
+China - League One,Chongqing T.,42.0,42
+China - League One,Dalian Kuncheng,54.0,52
+China - League One,Foshan Nanshi,13.0,49
+China - League One,Guangdong GZP,63.0,47
+China - League One,Guangxi Baoyun,8.0,49
+China - League One,Heilongjiang IC,68.0,42
+China - League One,Liaoning Tieren,44.0,51
+China - League One,Nanjing City,47.0,33
+China - League One,Nantong Zhiyun,39.0,68
+China - League One,Qingdao RL,42.0,41
+China - League One,S. Gongfu,51.0,57
+China - League One,Shaanxi Union,54.0,54
+China - League One,Shanghai Jiadin,60.0,64
+China - League One,Shenzhen J.,43.0,52
+China - League One,Suzhou Dongwu,58.0,53
+China - League One,Yanbian Longdin,62.0,41
+Colombia - Primera A - Apertura,A. Bucaramanga,53.0,52
+Colombia - Primera A - Apertura,A. Nacional,40.0,42
+Colombia - Primera A - Apertura,A. Petrolera,53.0,53
+Colombia - Primera A - Apertura,America de Cali,59.0,54
+Colombia - Primera A - Apertura,Boyaca Chico,56.0,56
+Colombia - Primera A - Apertura,D. Pereira,47.0,53
+Colombia - Primera A - Apertura,Deportes Tolima,48.0,45
+Colombia - Primera A - Apertura,Deportivo Cali,46.0,42
+Colombia - Primera A - Apertura,Deportivo Pasto,34.0,48
+Colombia - Primera A - Apertura,Envigado,30.0,39
+Colombia - Primera A - Apertura,Fortaleza CEIF,54.0,55
+Colombia - Primera A - Apertura,I. Medelin,35.0,62
+Colombia - Primera A - Apertura,Junior,42.0,49
+Colombia - Primera A - Apertura,La Equidad,48.0,43
+Colombia - Primera A - Apertura,Llaneros,50.0,48
+Colombia - Primera A - Apertura,Millonarios,44.0,37
+Colombia - Primera A - Apertura,Once Caldas,59.0,40
+Colombia - Primera A - Apertura,R. Aguilas,64.0,50
+Colombia - Primera A - Apertura,Santa Fe,53.0,50
+Colombia - Primera A - Apertura,Union Magdalena,58.0,64
+Colombia - Primera B - Apertura,Atletico Cali,35.0,42
+Colombia - Primera B - Apertura,Atletico Huila,42.0,64
+Colombia - Primera B - Apertura,Barranquilla,20.0,42
+Colombia - Primera B - Apertura,Boca Juniors,47.0,51
+Colombia - Primera B - Apertura,Bogota,49.0,50
+Colombia - Primera B - Apertura,Cucuta,43.0,48
+Colombia - Primera B - Apertura,D. Quindio,29.0,52
+Colombia - Primera B - Apertura,Inter Palmira,52.0,36
+Colombia - Primera B - Apertura,Jaguares de C.,49.0,49
+Colombia - Primera B - Apertura,Leones,49.0,50
+Colombia - Primera B - Apertura,Orsomarso,47.0,49
+Colombia - Primera B - Apertura,Patriotas,54.0,62
+Colombia - Primera B - Apertura,R. Cundinamarca,38.0,54
+Colombia - Primera B - Apertura,Real Cartagena,37.0,51
+Colombia - Primera B - Apertura,Real Santander,51.0,43
+Colombia - Primera B - Apertura,Tigres,57.0,56
+Costa Rica - Primera Div. - Apertura,Alajuelense,39.0,36
+Costa Rica - Primera Div. - Apertura,Cartagines,47.0,43
+Costa Rica - Primera Div. - Apertura,Guanacasteca,67.0,57
+Costa Rica - Primera Div. - Apertura,Herediano,60.0,58
+Costa Rica - Primera Div. - Apertura,M. Liberia,52.0,54
+Costa Rica - Primera Div. - Apertura,Puntarenas,46.0,43
+Costa Rica - Primera Div. - Apertura,San Carlos,40.0,57
+Costa Rica - Primera Div. - Apertura,Santa Ana,47.0,53
+Costa Rica - Primera Div. - Apertura,Santos Guapiles,48.0,41
+Costa Rica - Primera Div. - Apertura,Saprissa,55.0,54
+Costa Rica - Primera Div. - Apertura,Sporting SJ,46.0,58
+Costa Rica - Primera Div. - Apertura,Zeledon,56.0,49
+Costa Rica - Primera Div. - Clausura,Alajuelense,38.0,51
+Costa Rica - Primera Div. - Clausura,Cartagines,47.0,55
+Costa Rica - Primera Div. - Clausura,Guanacasteca,23.0,35
+Costa Rica - Primera Div. - Clausura,Herediano,64.0,32
+Costa Rica - Primera Div. - Clausura,M. Liberia,45.0,63
+Costa Rica - Primera Div. - Clausura,Puntarenas,41.0,68
+Costa Rica - Primera Div. - Clausura,San Carlos,48.0,54
+Costa Rica - Primera Div. - Clausura,Santa Ana,53.0,44
+Costa Rica - Primera Div. - Clausura,Santos Guapiles,60.0,40
+Costa Rica - Primera Div. - Clausura,Saprissa,41.0,46
+Costa Rica - Primera Div. - Clausura,Sporting SJ,32.0,47
+Costa Rica - Primera Div. - Clausura,Zeledon,49.0,43
+Croatia - 1. NL,Bijelo Brdo,46.0,45
+Croatia - 1. NL,C. Zmijavci,56.0,52
+Croatia - 1. NL,Cibalia,52.0,60
+Croatia - 1. NL,Dubrava Zagreb,49.0,53
+Croatia - 1. NL,Dugopolje,64.0,45
+Croatia - 1. NL,Jarun,53.0,61
+Croatia - 1. NL,Opatija,54.0,45
+Croatia - 1. NL,Orijent,52.0,52
+Croatia - 1. NL,Rudes,48.0,39
+Croatia - 1. NL,Sesvete,43.0,47
+Croatia - 1. NL,Vukovar,56.0,53
+Croatia - 1. NL,Zrinski,43.0,51
+CzechRepublic - 1. Liga,Banik Ostrava,54.0,51
+CzechRepublic - 1. Liga,Bohemians,34.0,49
+CzechRepublic - 1. Liga,C. Budejovice,53.0,45
+CzechRepublic - 1. Liga,Dukla Praha,54.0,49
+CzechRepublic - 1. Liga,Hradec Kralove,38.0,59
+CzechRepublic - 1. Liga,Jablonec,48.0,50
+CzechRepublic - 1. Liga,Karvina,44.0,52
+CzechRepublic - 1. Liga,Mlada Boleslav,46.0,49
+CzechRepublic - 1. Liga,Pardubice,29.0,51
+CzechRepublic - 1. Liga,Sigma Olomouc,53.0,57
+CzechRepublic - 1. Liga,Slavia Prague,44.0,60
+CzechRepublic - 1. Liga,Slovacko,60.0,51
+CzechRepublic - 1. Liga,Slovan Liberec,47.0,44
+CzechRepublic - 1. Liga,Sparta Prague,46.0,42
+CzechRepublic - 1. Liga,Teplice,58.0,57
+CzechRepublic - 1. Liga,Viktoria Plzen,47.0,48
+CzechRepublic - FNL,Banik Ostrava B,50.0,54
+CzechRepublic - FNL,Chrudim,44.0,46
+CzechRepublic - FNL,Jihlava,47.0,48
+CzechRepublic - FNL,Lisen,44.0,50
+CzechRepublic - FNL,Opava,55.0,55
+CzechRepublic - FNL,Prostejov,46.0,49
+CzechRepublic - FNL,Sigma Olomouc B,54.0,54
+CzechRepublic - FNL,Slavia Prague B,47.0,43
+CzechRepublic - FNL,Sparta Prague B,44.0,45
+CzechRepublic - FNL,Taborsko,46.0,46
+CzechRepublic - FNL,Varnsdorf,54.0,52
+CzechRepublic - FNL,Vikto Zizkov,44.0,46
+CzechRepublic - FNL,Vlasim,63.0,40
+CzechRepublic - FNL,Vyskov,57.0,43
+CzechRepublic - FNL,Zbrojovka Brno,44.0,50
+CzechRepublic - FNL,Zlin,57.0,60
+Denmark - Superligaen,Aalborg BK,51.0,47
+Denmark - Superligaen,AGF Aarhus,51.0,54
+Denmark - Superligaen,Brondby IF,51.0,47
+Denmark - Superligaen,FC Kobenhavn,52.0,47
+Denmark - Superligaen,FC Midtjylland,54.0,46
+Denmark - Superligaen,Lyngby,57.0,43
+Denmark - Superligaen,Nordsjaelland,49.0,49
+Denmark - Superligaen,Randers FC,49.0,53
+Denmark - Superligaen,Silkeborg,54.0,49
+Denmark - Superligaen,SonderjyskE,49.0,48
+Denmark - Superligaen,Vejle BK,47.0,43
+Denmark - Superligaen,Viborg,53.0,41
+Denmark - 1st Division,AC Horsens,48.0,47
+Denmark - 1st Division,B 93,49.0,47
+Denmark - 1st Division,Esbjerg,46.0,47
+Denmark - 1st Division,Fredericia,58.0,44
+Denmark - 1st Division,HB Koge,49.0,42
+Denmark - 1st Division,Hillerod,47.0,54
+Denmark - 1st Division,Hobro,52.0,48
+Denmark - 1st Division,Hvidovre,42.0,58
+Denmark - 1st Division,Kolding IF,55.0,57
+Denmark - 1st Division,Odense BK,50.0,49
+Denmark - 1st Division,Roskilde,40.0,55
+Denmark - 1st Division,Vendsyssel,47.0,48
+Denmark - 2nd Division,Aarhus Fremad,57.0,50
+Denmark - 2nd Division,AB Copenhagen,38.0,51
+Denmark - 2nd Division,BK Frem,44.0,49
+Denmark - 2nd Division,Fremad Amager,59.0,42
+Denmark - 2nd Division,Hellerup IK,65.0,56
+Denmark - 2nd Division,Helsingor,55.0,49
+Denmark - 2nd Division,Ishoj,50.0,47
+Denmark - 2nd Division,Middelfart,39.0,58
+Denmark - 2nd Division,Naestved,34.0,60
+Denmark - 2nd Division,Nykobing,40.0,54
+Denmark - 2nd Division,Skive,50.0,49
+Denmark - 2nd Division,Thisted,39.0,49
+Ecuador - Liga Pro,Aucas,59.0,43
+Ecuador - Liga Pro,Barcelona SC,52.0,49
+Ecuador - Liga Pro,Cuniburo,37.0,46
+Ecuador - Liga Pro,D. Cuenca,35.0,48
+Ecuador - Liga Pro,Delfin,56.0,50
+Ecuador - Liga Pro,El Nacional,47.0,57
+Ecuador - Liga Pro,Emelec,71.0,39
+Ecuador - Liga Pro,I. del Valle,45.0,48
+Ecuador - Liga Pro,LDU Quito,46.0,50
+Ecuador - Liga Pro,Libertad,63.0,43
+Ecuador - Liga Pro,Macara,47.0,53
+Ecuador - Liga Pro,Manta,70.0,52
+Ecuador - Liga Pro,Mushuc Runa,51.0,49
+Ecuador - Liga Pro,Orense,52.0,58
+Ecuador - Liga Pro,Tecnico U.,28.0,43
+Ecuador - Liga Pro,U. Catolica,56.0,39
+England - Premier League,Arsenal,50.0,41
+England - Premier League,Aston Villa,52.0,56
+England - Premier League,Bournemouth,59.0,47
+England - Premier League,Brentford,48.0,50
+England - Premier League,Brighton,51.0,49
+England - Premier League,Chelsea,47.0,47
+England - Premier League,Crystal Palace,50.0,49
+England - Premier League,Everton,48.0,49
+England - Premier League,Fulham,59.0,45
+England - Premier League,Ipswich Town,45.0,48
+England - Premier League,Leicester City,52.0,48
+England - Premier League,Liverpool,52.0,48
+England - Premier League,Manchester City,53.0,52
+England - Premier League,Manchester Utd,64.0,52
+England - Premier League,Newcastle Utd,41.0,40
+England - Premier League,Nottm Forest,44.0,47
+England - Premier League,Southampton,61.0,45
+England - Premier League,Tottenham,42.0,47
+England - Premier League,West Ham Utd,60.0,50
+England - Premier League,Wolverhampton,52.0,47
+England - Championship,Blackburn,53.0,48
+England - Championship,Bristol City,55.0,52
+England - Championship,Burnley,43.0,29
+England - Championship,Cardiff City,48.0,43
+England - Championship,Coventry City,48.0,52
+England - Championship,Derby County,58.0,56
+England - Championship,Hull City,55.0,50
+England - Championship,Leeds Utd,52.0,37
+England - Championship,Luton Town,42.0,49
+England - Championship,Middlesbrough,50.0,59
+England - Championship,Millwall,56.0,44
+England - Championship,Norwich City,54.0,38
+England - Championship,Oxford Utd,51.0,51
+England - Championship,Plymouth,48.0,48
+England - Championship,Portsmouth,45.0,47
+England - Championship,Preston,44.0,53
+England - Championship,QP Rangers,61.0,45
+England - Championship,Sheffield Utd,47.0,51
+England - Championship,Sheffield Wed,58.0,48
+England - Championship,Stoke City,54.0,44
+England - Championship,Sunderland,49.0,57
+England - Championship,Swansea City,48.0,55
+England - Championship,Watford,56.0,48
+England - Championship,West Brom,45.0,49
+England - League One,Barnsley,50.0,62
+England - League One,Birmingham City,43.0,43
+England - League One,Blackpool,47.0,49
+England - League One,Bolton,52.0,51
+England - League One,Bristol Rovers,53.0,49
+England - League One,Burton Albion,57.0,53
+England - League One,Cambridge Utd,50.0,49
+England - League One,Charlton,58.0,50
+England - League One,Crawley Town,53.0,46
+England - League One,Exeter City,47.0,48
+England - League One,Huddersfield,48.0,43
+England - League One,Leyton Orient,45.0,53
+England - League One,Lincoln City,53.0,54
+England - League One,Mansfield,44.0,42
+England - League One,Northampton,47.0,52
+England - League One,Peterborough,49.0,46
+England - League One,Reading,52.0,48
+England - League One,Rotherham,45.0,51
+England - League One,Shrewsbury,57.0,49
+England - League One,Stevenage,53.0,53
+England - League One,Stockport,50.0,38
+England - League One,Wigan Athletic,56.0,47
+England - League One,Wrexham,41.0,45
+England - League One,Wycombe,54.0,48
+England - National League,AFC Fylde,37.0,58
+England - National League,Aldershot Town,52.0,43
+England - National League,Altrincham,54.0,51
+England - National League,Barnet,50.0,48
+England - National League,Boston Utd,48.0,50
+England - National League,Braintree Town,38.0,44
+England - National League,Dagenham & R.,48.0,53
+England - National League,Eastleigh,51.0,56
+England - National League,Ebbsfleet Utd,54.0,48
+England - National League,Forest Green,51.0,48
+England - National League,Gateshead FC,47.0,53
+England - National League,Halifax Town,44.0,55
+England - National League,Hartlepool,49.0,52
+England - National League,Maidenhead Utd,49.0,43
+England - National League,Oldham,54.0,50
+England - National League,Rochdale,46.0,54
+England - National League,Solihull Moors,56.0,42
+England - National League,Southend Utd,48.0,52
+England - National League,Sutton Utd,43.0,51
+England - National League,Tamworth,55.0,48
+England - National League,Wealdstone,57.0,52
+England - National League,Woking,50.0,47
+England - National League,Yeovil Town,52.0,51
+England - National League,York City,59.0,50
+FaroeIslands - Premier League,07 Vestur,46.0,57
+FaroeIslands - Premier League,B36 Torshavn,50.0,52
+FaroeIslands - Premier League,B68 Toftir,46.0,47
+FaroeIslands - Premier League,HB Torshavn,56.0,49
+FaroeIslands - Premier League,Klaksvik,46.0,45
+FaroeIslands - Premier League,NSI Runavik,53.0,53
+FaroeIslands - Premier League,Streymur,51.0,60
+FaroeIslands - Premier League,Suduroy,59.0,52
+FaroeIslands - Premier League,TB Tvoroyri,28.0,48
+FaroeIslands - Premier League,Vikingur,41.0,45
+Finland - Veikkausliiga,Gnistan,65.0,55
+Finland - Veikkausliiga,Haka,77.0,45
+Finland - Veikkausliiga,HJK Helsinki,51.0,63
+Finland - Veikkausliiga,Ilves,57.0,53
+Finland - Veikkausliiga,Inter Turku,55.0,33
+Finland - Veikkausliiga,Jaro,58.0,41
+Finland - Veikkausliiga,KTP,51.0,52
+Finland - Veikkausliiga,KuPS,62.0,66
+Finland - Veikkausliiga,Mariehamn,54.0,46
+Finland - Veikkausliiga,Oulu,49.0,63
+Finland - Veikkausliiga,SJK,68.0,43
+Finland - Veikkausliiga,VPS,57.0,48
+Finland - Ykkonen,Ekenas IF,45.0,53
+Finland - Ykkonen,JaPS,52.0,42
+Finland - Ykkonen,JIPPO,56.0,63
+Finland - Ykkonen,KaPa,36.0,56
+Finland - Ykkonen,Klubi-04,51.0,78
+Finland - Ykkonen,Lahti,62.0,55
+Finland - Ykkonen,PK-35,36.0,51
+Finland - Ykkonen,SalPa,36.0,60
+Finland - Ykkonen,SJK Akatemia,47.0,61
+Finland - Ykkonen,TPS,37.0,42
+Finland - Kakkonen,Atlantis,50.0,51
+Finland - Kakkonen,EPS,85.0,57
+Finland - Kakkonen,Inter Turku B,45.0,46
+Finland - Kakkonen,Jazz Pori,56.0,55
+Finland - Kakkonen,JJK,38.0,56
+Finland - Kakkonen,KPV Kokkola,62.0,39
+Finland - Kakkonen,KuPS Ak.,39.0,55
+Finland - Kakkonen,Mikkelin,58.0,47
+Finland - Kakkonen,OLS Oulu,48.0,45
+Finland - Kakkonen,PKKU,49.0,57
+Finland - Kakkonen,Rovaniemi,60.0,41
+Finland - Kakkonen,Tampere Utd,49.0,54
+France - Ligue 1,Angers,48.0,55
+France - Ligue 1,Auxerre,46.0,55
+France - Ligue 1,Brest,39.0,46
+France - Ligue 1,Le Havre,56.0,53
+France - Ligue 1,Lens,50.0,42
+France - Ligue 1,Lille,54.0,49
+France - Ligue 1,Lyon,59.0,50
+France - Ligue 1,Marseille,52.0,56
+France - Ligue 1,Monaco,52.0,52
+France - Ligue 1,Montpellier,62.0,51
+France - Ligue 1,Nantes,44.0,51
+France - Ligue 1,Nice,44.0,52
+France - Ligue 1,Paris SG,56.0,56
+France - Ligue 1,Reims,50.0,52
+France - Ligue 1,Rennes,50.0,47
+France - Ligue 1,Saint-Etienne,39.0,47
+France - Ligue 1,Strasbourg,48.0,54
+France - Ligue 1,Toulouse,45.0,57
+France - Ligue 2,AC Ajaccio,49.0,49
+France - Ligue 2,Amiens,44.0,45
+France - Ligue 2,Annecy,47.0,52
+France - Ligue 2,Caen,64.0,51
+France - Ligue 2,Clermont,47.0,46
+France - Ligue 2,Grenoble,51.0,48
+France - Ligue 2,Guingamp,52.0,54
+France - Ligue 2,Laval,54.0,53
+France - Ligue 2,Lorient,54.0,52
+France - Ligue 2,Martigues,51.0,55
+France - Ligue 2,Metz,52.0,54
+France - Ligue 2,Paris FC,45.0,49
+France - Ligue 2,Pau FC,48.0,51
+France - Ligue 2,Red Star,43.0,51
+France - Ligue 2,Rodez Aveyron,46.0,57
+France - Ligue 2,SC Bastia,48.0,52
+France - Ligue 2,Troyes,50.0,55
+France - Ligue 2,USL Dunkerque,45.0,57
+France - National,Aubagne,50.0,57
+France - National,Boulogne,41.0,58
+France - National,Bourg-en-Bresse,41.0,42
+France - National,Chateauroux,53.0,53
+France - National,Concarneau,60.0,38
+France - National,Dijon,49.0,47
+France - National,Le Mans,51.0,53
+France - National,Nancy,54.0,42
+France - National,Nimes,45.0,54
+France - National,Orleans,49.0,41
+France - National,Paris 13 A.,44.0,51
+France - National,Quevilly Rouen,46.0,52
+France - National,Rouen,47.0,54
+France - National,Sochaux,59.0,50
+France - National,Valenciennes,48.0,45
+France - National,Versailles,35.0,51
+France - National,Villefranche,61.0,54
+Georgia - Erovnuli Liga,Dila Gori,63.0,41
+Georgia - Erovnuli Liga,Dinamo Batumi,56.0,48
+Georgia - Erovnuli Liga,Dinamo Tbilisi,42.0,36
+Georgia - Erovnuli Liga,Gagra,55.0,46
+Georgia - Erovnuli Liga,Gareji Sagarejo,55.0,41
+Georgia - Erovnuli Liga,Iberia,40.0,55
+Georgia - Erovnuli Liga,Kolkheti Poti,59.0,51
+Georgia - Erovnuli Liga,Samgurali,43.0,51
+Georgia - Erovnuli Liga,Telavi,49.0,52
+Georgia - Erovnuli Liga,Torpedo Kutaisi,48.0,42
+Germany - Bundesliga,Bayern Munich,51.0,51
+Germany - Bundesliga,Bochum,42.0,51
+Germany - Bundesliga,Dortmund,54.0,52
+Germany - Bundesliga,E. Frankfurt,47.0,61
+Germany - Bundesliga,FC Augsburg,45.0,49
+Germany - Bundesliga,Freiburg,56.0,53
+Germany - Bundesliga,FSV Mainz,44.0,44
+Germany - Bundesliga,Heidenheim,50.0,48
+Germany - Bundesliga,Hoffenheim,53.0,38
+Germany - Bundesliga,Holstein Kiel,61.0,45
+Germany - Bundesliga,Leverkusen,44.0,55
+Germany - Bundesliga,Monchengladbach,51.0,55
+Germany - Bundesliga,RB Leipzig,33.0,52
+Germany - Bundesliga,Sankt Pauli,51.0,47
+Germany - Bundesliga,Stuttgart,45.0,48
+Germany - Bundesliga,Union Berlin,55.0,53
+Germany - Bundesliga,Werder Bremen,48.0,44
+Germany - Bundesliga,Wolfsburg,45.0,55
+Germany - 2. Bundesliga,Braunschweig,55.0,46
+Germany - 2. Bundesliga,Darmstadt,53.0,53
+Germany - 2. Bundesliga,Dusseldorf,62.0,52
+Germany - 2. Bundesliga,Elversberg,58.0,46
+Germany - 2. Bundesliga,FC Koln,46.0,54
+Germany - 2. Bundesliga,FC Nurnberg,40.0,51
+Germany - 2. Bundesliga,Greuther Furth,41.0,45
+Germany - 2. Bundesliga,Hamburger SV,54.0,51
+Germany - 2. Bundesliga,Hannover 96,53.0,50
+Germany - 2. Bundesliga,Hertha Berlin,50.0,48
+Germany - 2. Bundesliga,Kaiserslautern,57.0,50
+Germany - 2. Bundesliga,Karlsruher SC,47.0,45
+Germany - 2. Bundesliga,Magdeburg,51.0,42
+Germany - 2. Bundesliga,Paderborn,59.0,58
+Germany - 2. Bundesliga,Preuss. Munster,50.0,46
+Germany - 2. Bundesliga,Regensburg,42.0,54
+Germany - 2. Bundesliga,Schalke 04,55.0,42
+Germany - 2. Bundesliga,Ulm,36.0,49
+Germany - 3. Liga,1860 Munchen,57.0,44
+Germany - 3. Liga,Alemannia A.,50.0,55
+Germany - 3. Liga,Bielefeld,59.0,42
+Germany - 3. Liga,Dortmund B,51.0,49
+Germany - 3. Liga,Dynamo Dresden,49.0,47
+Germany - 3. Liga,Energie Cottbus,47.0,47
+Germany - 3. Liga,Erzgebirge Aue,48.0,50
+Germany - 3. Liga,FC Ingolstadt,50.0,43
+Germany - 3. Liga,Hannover 96 B,42.0,51
+Germany - 3. Liga,Hansa Rostock,61.0,49
+Germany - 3. Liga,Mannheim,42.0,44
+Germany - 3. Liga,Osnabruck,58.0,51
+Germany - 3. Liga,RW Essen,50.0,58
+Germany - 3. Liga,Saarbrucken,50.0,48
+Germany - 3. Liga,Sandhausen,55.0,46
+Germany - 3. Liga,Unterhaching,37.0,57
+Germany - 3. Liga,Verl,48.0,50
+Germany - 3. Liga,VfB Stuttgart B,53.0,46
+Germany - 3. Liga,Viktoria Koln,53.0,48
+Germany - 3. Liga,Wehen Wiesbaden,53.0,46
+Greece - Super League,A. Kallithea,52.0,58
+Greece - Super League,AEK Athens,58.0,52
+Greece - Super League,Aris,54.0,57
+Greece - Super League,Asteras T.,60.0,45
+Greece - Super League,Atromitos,42.0,43
+Greece - Super League,Lamia,56.0,48
+Greece - Super League,Levadiakos,50.0,44
+Greece - Super League,OFI Crete,47.0,49
+Greece - Super League,Olympiakos,57.0,39
+Greece - Super League,Panaitolikos,52.0,38
+Greece - Super League,Panathinaikos,52.0,51
+Greece - Super League,Panserraikos,51.0,53
+Greece - Super League,PAOK,51.0,46
+Greece - Super League,Volos,54.0,52
+Hong Kong - Premier League,Eastern,54.0,39
+Hong Kong - Premier League,HK Rangers,51.0,39
+Hong Kong - Premier League,Hong Kong FC,50.0,55
+Hong Kong - Premier League,Kitchee,47.0,50
+Hong Kong - Premier League,Kowloon City,57.0,61
+Hong Kong - Premier League,LM Warriors,50.0,60
+Hong Kong - Premier League,North District,52.0,49
+Hong Kong - Premier League,Southern D.,48.0,50
+Hong Kong - Premier League,Tai Po,50.0,52
+Hungary - NB I,Debrecen,57.0,52
+Hungary - NB I,DVTK,37.0,58
+Hungary - NB I,Fehervar,59.0,46
+Hungary - NB I,Ferencvaros,50.0,40
+Hungary - NB I,Gyor,60.0,57
+Hungary - NB I,Kecskemeti TE,44.0,53
+Hungary - NB I,MTK Budapest,53.0,48
+Hungary - NB I,Nyiregyhaza,45.0,54
+Hungary - NB I,Paks,55.0,54
+Hungary - NB I,Puskas A.,51.0,54
+Hungary - NB I,Ujpest,37.0,49
+Hungary - NB I,Zalaegerszegi,47.0,60
+Iceland - Urvalsdeild,Breidablik,35.0,70
+Iceland - Urvalsdeild,Fram,42.0,48
+Iceland - Urvalsdeild,Hafnarfjordur,55.0,54
+Iceland - Urvalsdeild,IA Akranes,48.0,48
+Iceland - Urvalsdeild,IBV,48.0,52
+Iceland - Urvalsdeild,KA Akureyri,65.0,31
+Iceland - Urvalsdeild,KR Reykjavik,46.0,43
+Iceland - Urvalsdeild,Stjarnan,30.0,61
+Iceland - Urvalsdeild,Valur,44.0,50
+Iceland - Urvalsdeild,Vestri,48.0,68
+Iceland - Urvalsdeild,Vikingur R.,50.0,54
+Iceland - 1. Deild,Fjolnir,41.0,43
+Iceland - 1. Deild,Fylkir,63.0,49
+Iceland - 1. Deild,Grindavik,46.0,63
+Iceland - 1. Deild,HK Kopavogur,41.0,72
+Iceland - 1. Deild,IR Reykjavik,34.0,79
+Iceland - 1. Deild,Keflavik,36.0,44
+Iceland - 1. Deild,Leiknir R.,44.0,47
+Iceland - 1. Deild,Njardvik,46.0,40
+Iceland - 1. Deild,Selfoss,84.0,53
+Iceland - 1. Deild,Thor Akureyri,38.0,47
+Iceland - 1. Deild,Throttur R.,56.0,56
+Iceland - 1. Deild,Volsungur,59.0,51
+Ireland - Premier Division,Bohemians,59.0,53
+Ireland - Premier Division,Cork City,52.0,66
+Ireland - Premier Division,Derry City,52.0,41
+Ireland - Premier Division,Drogheda Utd,50.0,60
+Ireland - Premier Division,Galway Utd,52.0,42
+Ireland - Premier Division,Shamrock Rovers,57.0,45
+Ireland - Premier Division,Shelbourne,40.0,40
+Ireland - Premier Division,Sligo Rovers,43.0,46
+Ireland - Premier Division,St. Patricks,45.0,51
+Ireland - Premier Division,Waterford,36.0,61
+Ireland - First Division,Athlone Town,47.0,51
+Ireland - First Division,Bray Wanderers,24.0,47
+Ireland - First Division,Cobh Ramblers,45.0,60
+Ireland - First Division,Dundalk,44.0,56
+Ireland - First Division,Finn Harps,58.0,52
+Ireland - First Division,Kerry,41.0,54
+Ireland - First Division,Longford Town,48.0,52
+Ireland - First Division,Treaty Utd,55.0,44
+Ireland - First Division,UC Dublin,62.0,58
+Ireland - First Division,Wexford,58.0,61
+Israel - Ligat HaAl,Ashdod,46.0,52
+Israel - Ligat HaAl,B. Jerusalem,53.0,44
+Israel - Ligat HaAl,H. Beer Sheva,55.0,55
+Israel - Ligat HaAl,H. Jerusalem,48.0,56
+Israel - Ligat HaAl,Hapoel Hadera,47.0,53
+Israel - Ligat HaAl,Hapoel Haifa,51.0,56
+Israel - Ligat HaAl,Ironi Tiberias,52.0,49
+Israel - Ligat HaAl,Kiryat Shmona,56.0,49
+Israel - Ligat HaAl,M. Bnei Raina,43.0,41
+Israel - Ligat HaAl,M. Petah Tikva,36.0,46
+Israel - Ligat HaAl,M. Tel Aviv,50.0,57
+Israel - Ligat HaAl,Maccabi Haifa,54.0,55
+Israel - Ligat HaAl,Maccabi Netanya,50.0,41
+Israel - Ligat HaAl,Sakhnin,55.0,52
+Italy - Serie A,AC Milan,58.0,47
+Italy - Serie A,AS Roma,46.0,52
+Italy - Serie A,Atalanta,51.0,38
+Italy - Serie A,Bologna,55.0,59
+Italy - Serie A,Cagliari,53.0,44
+Italy - Serie A,Como,50.0,54
+Italy - Serie A,Empoli,39.0,55
+Italy - Serie A,Fiorentina,47.0,46
+Italy - Serie A,Genoa,50.0,53
+Italy - Serie A,Hellas Verona,49.0,43
+Italy - Serie A,Inter Milan,48.0,68
+Italy - Serie A,Juventus,43.0,46
+Italy - Serie A,Lazio,55.0,54
+Italy - Serie A,Lecce,50.0,51
+Italy - Serie A,Monza,51.0,57
+Italy - Serie A,Napoli,44.0,52
+Italy - Serie A,Parma,54.0,54
+Italy - Serie A,Torino,55.0,51
+Italy - Serie A,Udinese,48.0,46
+Italy - Serie A,Venezia,49.0,53
+Italy - Serie B,Bari,45.0,56
+Italy - Serie B,Brescia,44.0,53
+Italy - Serie B,Carrarese,45.0,52
+Italy - Serie B,Catanzaro,59.0,47
+Italy - Serie B,Cesena,52.0,44
+Italy - Serie B,Cittadella,50.0,54
+Italy - Serie B,Cosenza,56.0,56
+Italy - Serie B,Cremonese,51.0,45
+Italy - Serie B,Frosinone,56.0,50
+Italy - Serie B,Juve Stabia,47.0,51
+Italy - Serie B,Mantova,51.0,45
+Italy - Serie B,Modena,44.0,52
+Italy - Serie B,Palermo,42.0,53
+Italy - Serie B,Pisa,38.0,51
+Italy - Serie B,Reggiana,54.0,51
+Italy - Serie B,Salernitana,52.0,58
+Italy - Serie B,Sampdoria,46.0,51
+Italy - Serie B,Sassuolo,53.0,49
+Italy - Serie B,Spezia,41.0,49
+Italy - Serie B,Sudtirol,51.0,48
+Italy - Serie C - Group A,AlbinoLeffe,58.0,63
+Italy - Serie C - Group A,Alcione,38.0,48
+Italy - Serie C - Group A,Arzignano,43.0,51
+Italy - Serie C - Group A,Atalanta B,56.0,44
+Italy - Serie C - Group A,Caldiero Terme,50.0,50
+Italy - Serie C - Group A,Clodiense,59.0,51
+Italy - Serie C - Group A,FeralpiSalo,45.0,53
+Italy - Serie C - Group A,Giana Erminio,54.0,52
+Italy - Serie C - Group A,Lecco,41.0,55
+Italy - Serie C - Group A,Lumezzane,44.0,56
+Italy - Serie C - Group A,Novara,42.0,47
+Italy - Serie C - Group A,Padova,55.0,51
+Italy - Serie C - Group A,Pergolettese,36.0,53
+Italy - Serie C - Group A,Pro Patria,39.0,58
+Italy - Serie C - Group A,Pro Vercelli,53.0,50
+Italy - Serie C - Group A,Renate,60.0,53
+Italy - Serie C - Group A,Trento,47.0,46
+Italy - Serie C - Group A,Triestina,49.0,47
+Italy - Serie C - Group A,Vicenza,46.0,54
+Italy - Serie C - Group A,Virtus Verona,48.0,59
+Italy - Serie C - Group B,AC Milan B,47.0,46
+Italy - Serie C - Group B,Arezzo,48.0,44
+Italy - Serie C - Group B,Ascoli,53.0,58
+Italy - Serie C - Group B,Athletic Carpi,50.0,58
+Italy - Serie C - Group B,Campobasso,55.0,52
+Italy - Serie C - Group B,Entella,50.0,54
+Italy - Serie C - Group B,Gubbio,61.0,43
+Italy - Serie C - Group B,Legnago Salus,64.0,50
+Italy - Serie C - Group B,Lucchese,37.0,51
+Italy - Serie C - Group B,Perugia,48.0,49
+Italy - Serie C - Group B,Pescara,55.0,52
+Italy - Serie C - Group B,Pianese,54.0,51
+Italy - Serie C - Group B,Pineto,45.0,46
+Italy - Serie C - Group B,Pontedera,56.0,48
+Italy - Serie C - Group B,Rimini,47.0,55
+Italy - Serie C - Group B,Sestri Levante,56.0,54
+Italy - Serie C - Group B,SPAL,54.0,53
+Italy - Serie C - Group B,Ternana,42.0,48
+Italy - Serie C - Group B,Torres,45.0,49
+Italy - Serie C - Group B,Vis Pesaro,48.0,53
+Japan - J1 League,Albirex Niigata,33.0,53
+Japan - J1 League,Avispa Fukuoka,58.0,56
+Japan - J1 League,Cerezo Osaka,50.0,48
+Japan - J1 League,Fagiano Okayama,57.0,52
+Japan - J1 League,FC Tokyo,48.0,62
+Japan - J1 League,Gamba Osaka,60.0,59
+Japan - J1 League,K. Frontale,57.0,49
+Japan - J1 League,Kashima Antlers,49.0,40
+Japan - J1 League,Kashiwa Reysol,51.0,35
+Japan - J1 League,Kyoto Sanga,63.0,46
+Japan - J1 League,Machida Zelvia,58.0,53
+Japan - J1 League,Nagoya G.,57.0,62
+Japan - J1 League,S. Hiroshima,57.0,40
+Japan - J1 League,Shimizu S-Pulse,61.0,43
+Japan - J1 League,Shonan Bellmare,57.0,42
+Japan - J1 League,Tokyo Verdy,48.0,48
+Japan - J1 League,Urawa RD,58.0,61
+Japan - J1 League,Vissel Kobe,54.0,49
+Japan - J1 League,Yokohama FC,43.0,56
+Japan - J1 League,Yokohama M.,54.0,57
+Japan - J2 League,Blaublitz Akita,54.0,50
+Japan - J2 League,C. Sapporo,49.0,51
+Japan - J2 League,Ehime FC,47.0,54
+Japan - J2 League,FC Imabari,62.0,62
+Japan - J2 League,Fujieda MYFC,37.0,53
+Japan - J2 League,Iwaki,52.0,47
+Japan - J2 League,JEF Utd Chiba,44.0,29
+Japan - J2 League,Jubilo Iwata,45.0,63
+Japan - J2 League,Kataller Toyama,44.0,49
+Japan - J2 League,M. Yamagata,44.0,52
+Japan - J2 League,Mito Hollyhock,54.0,69
+Japan - J2 League,Oita Trinita,39.0,47
+Japan - J2 League,Omiya Ardija,59.0,46
+Japan - J2 League,R. Kumamoto,46.0,63
+Japan - J2 League,R. Yamaguchi,56.0,48
+Japan - J2 League,Sagan Tosu,54.0,41
+Japan - J2 League,Tokushima V.,54.0,60
+Japan - J2 League,Vegalta Sendai,52.0,47
+Japan - J2 League,Ventforet Kofu,53.0,53
+Japan - J2 League,V-V. Nagasaki,45.0,38
+Japan - J3 League,AC Numazu,63.0,30
+Japan - J3 League,FC Ryukyu,41.0,56
+Japan - J3 League,Fukushima Utd,40.0,64
+Japan - J3 League,G. Kitakyushu,27.0,61
+Japan - J3 League,Gainare Tottori,34.0,47
+Japan - J3 League,Gifu,54.0,63
+Japan - J3 League,Kagoshima Utd,56.0,45
+Japan - J3 League,Kamatamare S.,59.0,28
+Japan - J3 League,Kochi United,35.0,59
+Japan - J3 League,Kusatsu,52.0,60
+Japan - J3 League,Matsumoto Y.,40.0,58
+Japan - J3 League,Nagano Parceiro,56.0,51
+Japan - J3 League,Nara Club,47.0,37
+Japan - J3 League,Osaka,71.0,54
+Japan - J3 League,SC Sagamihara,40.0,53
+Japan - J3 League,T. Miyazaki,67.0,36
+Japan - J3 League,Tochigi City,52.0,44
+Japan - J3 League,Tochigi SC,48.0,41
+Japan - J3 League,V. Hachinohe,44.0,42
+Japan - J3 League,Z. Kanazawa,58.0,49
+Kazakhstan - Premier League,Aktobe,47.0,55
+Kazakhstan - Premier League,Atyrau,74.0,35
+Kazakhstan - Premier League,FC Astana,53.0,72
+Kazakhstan - Premier League,Kairat Almaty,57.0,64
+Kazakhstan - Premier League,Kaisar K.,84.0,62
+Kazakhstan - Premier League,Kyzylzhar,60.0,60
+Kazakhstan - Premier League,Okzhetpes,49.0,41
+Kazakhstan - Premier League,Ordabasy,58.0,43
+Kazakhstan - Premier League,Tobol,49.0,58
+Kazakhstan - Premier League,Turan,59.0,53
+Kazakhstan - Premier League,Ulytau,52.0,63
+Kazakhstan - Premier League,Yelimay Semey,50.0,28
+Kazakhstan - Premier League,Zhenys,27.0,60
+Kazakhstan - Premier League,Zhetysu,71.0,53
+Lithuania - A Lyga,Banga,62.0,62
+Lithuania - A Lyga,Dainava,50.0,56
+Lithuania - A Lyga,Dziugas Telsiai,62.0,26
+Lithuania - A Lyga,Hegelmann L.,60.0,46
+Lithuania - A Lyga,Kauno Zalgiris,58.0,57
+Lithuania - A Lyga,Panevezys,48.0,56
+Lithuania - A Lyga,Riteriai,64.0,45
+Lithuania - A Lyga,Siauliai,51.0,31
+Lithuania - A Lyga,Suduva,48.0,57
+Lithuania - A Lyga,Zalgiris,38.0,39
+Mexico - Liga MX - Apertura,A. San Luis,51.0,63
+Mexico - Liga MX - Apertura,Atlas,50.0,46
+Mexico - Liga MX - Apertura,CF America,47.0,50
+Mexico - Liga MX - Apertura,Club Leon,48.0,56
+Mexico - Liga MX - Apertura,Cruz Azul,47.0,42
+Mexico - Liga MX - Apertura,Guadalajara,57.0,60
+Mexico - Liga MX - Apertura,Juarez,53.0,48
+Mexico - Liga MX - Apertura,Monterrey,50.0,59
+Mexico - Liga MX - Apertura,Necaxa,49.0,53
+Mexico - Liga MX - Apertura,Pachuca,46.0,44
+Mexico - Liga MX - Apertura,Puebla,51.0,46
+Mexico - Liga MX - Apertura,Pumas UNAM,55.0,43
+Mexico - Liga MX - Apertura,Queretaro,50.0,51
+Mexico - Liga MX - Apertura,Santos Laguna,34.0,61
+Mexico - Liga MX - Apertura,Tigres,61.0,50
+Mexico - Liga MX - Apertura,Tijuana,44.0,56
+Mexico - Liga MX - Apertura,Toluca,49.0,58
+Mexico - Liga MX - Clausura,A. San Luis,52.0,40
+Mexico - Liga MX - Clausura,Atlas,60.0,47
+Mexico - Liga MX - Clausura,CF America,47.0,65
+Mexico - Liga MX - Clausura,Club Leon,47.0,52
+Mexico - Liga MX - Clausura,Cruz Azul,45.0,48
+Mexico - Liga MX - Clausura,Guadalajara,60.0,54
+Mexico - Liga MX - Clausura,Juarez,43.0,53
+Mexico - Liga MX - Clausura,Mazatlan,50.0,51
+Mexico - Liga MX - Clausura,Monterrey,45.0,56
+Mexico - Liga MX - Clausura,Necaxa,49.0,54
+Mexico - Liga MX - Clausura,Pachuca,61.0,46
+Mexico - Liga MX - Clausura,Puebla,40.0,51
+Mexico - Liga MX - Clausura,Pumas UNAM,61.0,36
+Mexico - Liga MX - Clausura,Queretaro,62.0,43
+Mexico - Liga MX - Clausura,Santos Laguna,50.0,48
+Mexico - Liga MX - Clausura,Tigres,58.0,46
+Mexico - Liga MX - Clausura,Tijuana,51.0,52
+Mexico - Liga MX - Clausura,Toluca,46.0,46
+Netherlands - Eredivisie,Ajax Amsterdam,57.0,56
+Netherlands - Eredivisie,Almere City,27.0,42
+Netherlands - Eredivisie,AZ Alkmaar,47.0,53
+Netherlands - Eredivisie,FC Groningen,37.0,48
+Netherlands - Eredivisie,FC Twente,49.0,45
+Netherlands - Eredivisie,FC Utrecht,56.0,48
+Netherlands - Eredivisie,Feyenoord,47.0,51
+Netherlands - Eredivisie,Fortuna Sittard,57.0,51
+Netherlands - Eredivisie,Go Ahead Eagles,51.0,58
+Netherlands - Eredivisie,Heerenveen,54.0,52
+Netherlands - Eredivisie,Heracles Almelo,40.0,51
+Netherlands - Eredivisie,NAC Breda,47.0,53
+Netherlands - Eredivisie,NEC Nijmegen,61.0,39
+Netherlands - Eredivisie,PEC Zwolle,40.0,49
+Netherlands - Eredivisie,PSV Eindhoven,51.0,51
+Netherlands - Eredivisie,RKC Waalwijk,65.0,45
+Netherlands - Eredivisie,Sparta,56.0,60
+Netherlands - Eredivisie,Willem II,45.0,47
+Netherlands - Eerste Divisie,ADO Den Haag,38.0,62
+Netherlands - Eerste Divisie,Cambuur,51.0,41
+Netherlands - Eerste Divisie,De Graafschap,52.0,47
+Netherlands - Eerste Divisie,Excelsior,48.0,60
+Netherlands - Eerste Divisie,FC Den Bosch,37.0,46
+Netherlands - Eerste Divisie,FC Dordrecht,47.0,44
+Netherlands - Eerste Divisie,FC Eindhoven,52.0,46
+Netherlands - Eerste Divisie,FC Emmen,47.0,46
+Netherlands - Eerste Divisie,FC Volendam,49.0,49
+Netherlands - Eerste Divisie,Helmond Sport,40.0,59
+Netherlands - Eerste Divisie,Jong Ajax,45.0,52
+Netherlands - Eerste Divisie,Jong AZ,55.0,46
+Netherlands - Eerste Divisie,Jong PSV,46.0,51
+Netherlands - Eerste Divisie,Jong Utrecht,55.0,49
+Netherlands - Eerste Divisie,MVV Maastricht,52.0,47
+Netherlands - Eerste Divisie,Roda JC,61.0,45
+Netherlands - Eerste Divisie,Telstar,48.0,56
+Netherlands - Eerste Divisie,TOP Oss,58.0,54
+Netherlands - Eerste Divisie,Vitesse Arnhem,48.0,55
+Netherlands - Eerste Divisie,VVV,54.0,53
+Northern Ireland - NIFL Premiership,Ballymena Utd,46.0,53
+Northern Ireland - NIFL Premiership,Carrick Rangers,54.0,58
+Northern Ireland - NIFL Premiership,Cliftonville,56.0,48
+Northern Ireland - NIFL Premiership,Coleraine,54.0,51
+Northern Ireland - NIFL Premiership,Crusaders,50.0,48
+Northern Ireland - NIFL Premiership,Dungannon,46.0,56
+Northern Ireland - NIFL Premiership,Glenavon,45.0,43
+Northern Ireland - NIFL Premiership,Glentoran,54.0,47
+Northern Ireland - NIFL Premiership,Larne,52.0,42
+Northern Ireland - NIFL Premiership,Linfield,45.0,60
+Northern Ireland - NIFL Premiership,Loughgall,68.0,47
+Northern Ireland - NIFL Premiership,Portadown,61.0,49
+Norway - Eliteserien,Bodo/Glimt,45.0,78
+Norway - Eliteserien,Brann,66.0,42
+Norway - Eliteserien,Bryne,22.0,64
+Norway - Eliteserien,Fredrikstad,54.0,40
+Norway - Eliteserien,HamKam,45.0,47
+Norway - Eliteserien,Haugesund,66.0,50
+Norway - Eliteserien,KFUM Oslo,56.0,66
+Norway - Eliteserien,Kristiansund,52.0,40
+Norway - Eliteserien,Molde,39.0,44
+Norway - Eliteserien,Rosenborg,45.0,41
+Norway - Eliteserien,Sandefjord,61.0,53
+Norway - Eliteserien,Sarpsborg 08,45.0,57
+Norway - Eliteserien,Stromsgodset,52.0,58
+Norway - Eliteserien,Tromso,55.0,63
+Norway - Eliteserien,Valerenga,63.0,60
+Norway - Eliteserien,Viking,48.0,62
+Norway - 1st Division,Aalesund,50.0,57
+Norway - 1st Division,Asane,66.0,35
+Norway - 1st Division,Egersund,39.0,67
+Norway - 1st Division,Hodd,39.0,51
+Norway - 1st Division,Kongsvinger,53.0,47
+Norway - 1st Division,Lillestrom,41.0,39
+Norway - 1st Division,Lyn,70.0,59
+Norway - 1st Division,Mjondalen,12.0,63
+Norway - 1st Division,Moss,86.0,53
+Norway - 1st Division,Odd,45.0,56
+Norway - 1st Division,Ranheim,51.0,42
+Norway - 1st Division,Raufoss,60.0,55
+Norway - 1st Division,Skeid,42.0,51
+Norway - 1st Division,Sogndal,40.0,50
+Norway - 1st Division,Stabaek,55.0,36
+Norway - 1st Division,Start,59.0,60
+Paraguay - Primera Div. - Apertura,2 de Mayo,64.0,47
+Paraguay - Primera Div. - Apertura,A. Tembetary,54.0,35
+Paraguay - Primera Div. - Apertura,Cerro Porteno,46.0,52
+Paraguay - Primera Div. - Apertura,D. Recoleta,46.0,53
+Paraguay - Primera Div. - Apertura,G. Caballero,51.0,53
+Paraguay - Primera Div. - Apertura,Guarani,50.0,56
+Paraguay - Primera Div. - Apertura,Libertad,49.0,44
+Paraguay - Primera Div. - Apertura,Nacional,46.0,64
+Paraguay - Primera Div. - Apertura,Olimpia,53.0,35
+Paraguay - Primera Div. - Apertura,S. Ameliano,46.0,54
+Paraguay - Primera Div. - Apertura,S. Luqueno,59.0,37
+Paraguay - Primera Div. - Apertura,S. Trinidense,57.0,51
+Paraguay - Division Intermedia,12 de Junio VH,57.0,19
+Paraguay - Division Intermedia,C. River Plate,56.0,46
+Paraguay - Division Intermedia,D. Capiata,45.0,77
+Paraguay - Division Intermedia,D. Santani,42.0,59
+Paraguay - Division Intermedia,Encarnacion,53.0,57
+Paraguay - Division Intermedia,F. de la Mora,51.0,34
+Paraguay - Division Intermedia,Guairena,52.0,34
+Paraguay - Division Intermedia,Guarani de Fram,63.0,52
+Paraguay - Division Intermedia,Independiente,34.0,40
+Paraguay - Division Intermedia,Pastoreo,53.0,42
+Paraguay - Division Intermedia,Resistencia,58.0,50
+Paraguay - Division Intermedia,Rubio Nu,62.0,34
+Paraguay - Division Intermedia,S. Carapegua,55.0,57
+Paraguay - Division Intermedia,San Lorenzo,52.0,50
+Paraguay - Division Intermedia,Sol de America,78.0,54
+Paraguay - Division Intermedia,Tacuary,64.0,36
+Peru - Liga 1 - Apertura,A. Huanuco,57.0,48
+Peru - Liga 1 - Apertura,ADT,44.0,47
+Peru - Liga 1 - Apertura,Alianza A.,41.0,48
+Peru - Liga 1 - Apertura,Alianza Lima,52.0,46
+Peru - Liga 1 - Apertura,Atletico Grau,57.0,56
+Peru - Liga 1 - Apertura,Ayacucho,34.0,28
+Peru - Liga 1 - Apertura,Binacional,61.0,52
+Peru - Liga 1 - Apertura,Cajamarca,67.0,42
+Peru - Liga 1 - Apertura,Cienciano,52.0,60
+Peru - Liga 1 - Apertura,Comerciantes U.,54.0,50
+Peru - Liga 1 - Apertura,Cusco,50.0,53
+Peru - Liga 1 - Apertura,D. Garcilaso,49.0,52
+Peru - Liga 1 - Apertura,FBC Melgar,51.0,49
+Peru - Liga 1 - Apertura,Juan Pablo II C,69.0,41
+Peru - Liga 1 - Apertura,Los Chankas,40.0,49
+Peru - Liga 1 - Apertura,S. Cristal,30.0,44
+Peru - Liga 1 - Apertura,Sport Boys,57.0,48
+Peru - Liga 1 - Apertura,Sport Huancayo,68.0,46
+Peru - Liga 1 - Apertura,Universitario,47.0,59
+Poland - Ekstraklasa,Cracovia Krakow,44.0,39
+Poland - Ekstraklasa,Gornik Zabrze,47.0,54
+Poland - Ekstraklasa,Jagiellonia,42.0,55
+Poland - Ekstraklasa,Katowice,48.0,51
+Poland - Ekstraklasa,Korona Kielce,62.0,52
+Poland - Ekstraklasa,Lech Poznan,42.0,42
+Poland - Ekstraklasa,Lechia Gdansk,47.0,52
+Poland - Ekstraklasa,Legia Warsaw,42.0,45
+Poland - Ekstraklasa,Motor Lublin,47.0,54
+Poland - Ekstraklasa,Piast Gliwice,46.0,50
+Poland - Ekstraklasa,Pogon Szczecin,54.0,54
+Poland - Ekstraklasa,Puszcza Niepolo,43.0,54
+Poland - Ekstraklasa,Radomiak Radom,54.0,46
+Poland - Ekstraklasa,Rakow C.,59.0,52
+Poland - Ekstraklasa,Slask Wroclaw,53.0,51
+Poland - Ekstraklasa,Stal Mielec,48.0,60
+Poland - Ekstraklasa,Widzew Lodz,48.0,44
+Poland - Ekstraklasa,Zaglebie Lubin,55.0,48
+Poland - 1. Liga,Arka Gdynia,50.0,45
+Poland - 1. Liga,Chrobry Glogow,38.0,48
+Poland - 1. Liga,Gornik Leczna,61.0,44
+Poland - 1. Liga,K. Kolobrzeg,57.0,57
+Poland - 1. Liga,LKS Lodz,54.0,46
+Poland - 1. Liga,Miedz Legnica,45.0,58
+Poland - 1. Liga,Odra Opole,39.0,46
+Poland - 1. Liga,Pogon Siedlce,67.0,46
+Poland - 1. Liga,Polonia Warszaw,54.0,54
+Poland - 1. Liga,Ruch Chorzow,44.0,55
+Poland - 1. Liga,Stal Rzeszow,50.0,53
+Poland - 1. Liga,Stalowa Wola,48.0,52
+Poland - 1. Liga,T. Nieciecza,49.0,48
+Poland - 1. Liga,Tychy,40.0,45
+Poland - 1. Liga,Warta Poznan,68.0,45
+Poland - 1. Liga,Wisla Krakow,47.0,43
+Poland - 1. Liga,Wisla Plock,50.0,53
+Poland - 1. Liga,Znicz Pruszkow,50.0,39
+Portugal - Liga Portugal,Arouca,50.0,49
+Portugal - Liga Portugal,AVS,55.0,47
+Portugal - Liga Portugal,Benfica,46.0,56
+Portugal - Liga Portugal,Boavista,58.0,45
+Portugal - Liga Portugal,Casa Pia,53.0,52
+Portugal - Liga Portugal,Estoril,55.0,50
+Portugal - Liga Portugal,Estrela Amadora,51.0,46
+Portugal - Liga Portugal,Famalicao,49.0,49
+Portugal - Liga Portugal,Farense,53.0,53
+Portugal - Liga Portugal,FC Porto,46.0,49
+Portugal - Liga Portugal,Gil Vicente,47.0,58
+Portugal - Liga Portugal,Guimaraes,55.0,55
+Portugal - Liga Portugal,Moreirense,48.0,49
+Portugal - Liga Portugal,Nacional,47.0,47
+Portugal - Liga Portugal,Rio Ave,53.0,49
+Portugal - Liga Portugal,Santa Clara,49.0,48
+Portugal - Liga Portugal,Sporting Braga,54.0,45
+Portugal - Liga Portugal,Sporting CP,51.0,54
+Portugal - Liga Portugal 2,Academico Viseu,43.0,49
+Portugal - Liga Portugal 2,Alverca,37.0,41
+Portugal - Liga Portugal 2,Benfica B,55.0,47
+Portugal - Liga Portugal 2,Chaves,50.0,47
+Portugal - Liga Portugal 2,FC Porto B,48.0,43
+Portugal - Liga Portugal 2,Feirense,43.0,49
+Portugal - Liga Portugal 2,Felgueiras,49.0,54
+Portugal - Liga Portugal 2,Leixoes,29.0,52
+Portugal - Liga Portugal 2,Mafra,44.0,60
+Portugal - Liga Portugal 2,Maritimo,52.0,41
+Portugal - Liga Portugal 2,Oliveirense,45.0,51
+Portugal - Liga Portugal 2,Pacos Ferreira,25.0,39
+Portugal - Liga Portugal 2,Penafiel,48.0,52
+Portugal - Liga Portugal 2,Portimonense,52.0,45
+Portugal - Liga Portugal 2,Tondela,51.0,48
+Portugal - Liga Portugal 2,Torreense,57.0,50
+Portugal - Liga Portugal 2,Uniao de Leiria,52.0,60
+Portugal - Liga Portugal 2,Vizela,49.0,44
+Scotland - Premiership,Aberdeen,50.0,58
+Scotland - Premiership,Celtic,55.0,44
+Scotland - Premiership,Dundee FC,47.0,52
+Scotland - Premiership,Dundee Utd,59.0,54
+Scotland - Premiership,Hearts,52.0,46
+Scotland - Premiership,Hibernian,42.0,55
+Scotland - Premiership,Kilmarnock,57.0,50
+Scotland - Premiership,Motherwell,52.0,49
+Scotland - Premiership,Rangers,51.0,43
+Scotland - Premiership,Ross County,52.0,53
+Scotland - Premiership,St. Johnstone,53.0,45
+Scotland - Premiership,St. Mirren,42.0,55
+Scotland - Championship,Airdrieonians,43.0,45
+Scotland - Championship,Ayr Utd,53.0,45
+Scotland - Championship,Dunfermline,50.0,45
+Scotland - Championship,Falkirk,44.0,49
+Scotland - Championship,Greenock Morton,54.0,53
+Scotland - Championship,Hamilton,42.0,56
+Scotland - Championship,Livingston,49.0,42
+Scotland - Championship,Partick Thistle,55.0,47
+Scotland - Championship,Queens Park,44.0,41
+Scotland - Championship,Raith Rovers,53.0,52
+Serbia - Super Liga,Backa Topola,48.0,55
+Serbia - Super Liga,Cukaricki,46.0,46
+Serbia - Super Liga,IMT N. Beograd,49.0,50
+Serbia - Super Liga,Jedinstvo U.,41.0,49
+Serbia - Super Liga,Mladost Lucani,38.0,50
+Serbia - Super Liga,Napredak,54.0,54
+Serbia - Super Liga,Novi Pazar,51.0,55
+Serbia - Super Liga,OFK Beograd,58.0,42
+Serbia - Super Liga,Partizan,46.0,55
+Serbia - Super Liga,Radnicki 1923,48.0,51
+Serbia - Super Liga,Radnicki Nis,56.0,52
+Serbia - Super Liga,Red Star,52.0,53
+Serbia - Super Liga,S. Subotica,59.0,55
+Serbia - Super Liga,T. Odzaci,38.0,48
+Serbia - Super Liga,Vojvodina,51.0,42
+Serbia - Super Liga,Z. Pancevo,36.0,41
+Singapore - Premier League,A. Niigata (S),51.0,56
+Singapore - Premier League,DPMM FC,46.0,52
+Singapore - Premier League,Geylang,55.0,48
+Singapore - Premier League,Hougang,46.0,51
+Singapore - Premier League,Khalsa,54.0,51
+Singapore - Premier League,Lion City,52.0,52
+Singapore - Premier League,Tampines Rovers,46.0,48
+Singapore - Premier League,Tanjong Pagar,47.0,52
+Singapore - Premier League,Young Lions,45.0,48
+Slovenia - Prva Liga,Bravo,38.0,48
+Slovenia - Prva Liga,Domzale,43.0,51
+Slovenia - Prva Liga,Koper,47.0,50
+Slovenia - Prva Liga,Maribor,57.0,53
+Slovenia - Prva Liga,Mura,48.0,61
+Slovenia - Prva Liga,Nafta,50.0,58
+Slovenia - Prva Liga,NK Celje,48.0,47
+Slovenia - Prva Liga,NK Olimpija,49.0,50
+Slovenia - Prva Liga,Primorje,42.0,49
+Slovenia - Prva Liga,Radomlje,52.0,54
+Slovakia - Fortuna Liga,Banska Bystrica,44.0,61
+Slovakia - Fortuna Liga,DAC Streda,53.0,60
+Slovakia - Fortuna Liga,FC Kosice,51.0,45
+Slovakia - Fortuna Liga,Komarno,56.0,47
+Slovakia - Fortuna Liga,Podbrezova,55.0,54
+Slovakia - Fortuna Liga,Ruzomberok,52.0,40
+Slovakia - Fortuna Liga,S. Bratislava,58.0,53
+Slovakia - Fortuna Liga,Skalica,58.0,44
+Slovakia - Fortuna Liga,Spartak Trnava,51.0,44
+Slovakia - Fortuna Liga,Trencin,52.0,49
+Slovakia - Fortuna Liga,Z. Michalovce,48.0,60
+Slovakia - Fortuna Liga,Zilina,44.0,46
+South Africa - Premier Division ,AmaZulu,51.0,51
+South Africa - Premier Division ,Cape Town City,48.0,47
+South Africa - Premier Division ,Chippa Utd,42.0,47
+South Africa - Premier Division ,Golden Arrows,51.0,46
+South Africa - Premier Division ,Kaizer Chiefs,43.0,46
+South Africa - Premier Division ,Magesi,39.0,44
+South Africa - Premier Division ,Mamelodi S.,52.0,33
+South Africa - Premier Division ,Marumo G.,40.0,52
+South Africa - Premier Division ,Orlando Pirates,53.0,49
+South Africa - Premier Division ,Polokwane,50.0,61
+South Africa - Premier Division ,Richards Bay,46.0,47
+South Africa - Premier Division ,Sekhukhune,54.0,52
+South Africa - Premier Division ,Stellenbosch,47.0,34
+South Africa - Premier Division ,SuperSport Utd,54.0,45
+South Africa - Premier Division ,TS Galaxy,45.0,41
+South Korea - K League 1,Anyang,51.0,59
+South Korea - K League 1,Daegu,69.0,46
+South Korea - K League 1,Daejeon Citizen,47.0,67
+South Korea - K League 1,Gangwon,48.0,70
+South Korea - K League 1,Gimcheon Sangmu,51.0,60
+South Korea - K League 1,Gwangju,50.0,55
+South Korea - K League 1,Jeju Utd,53.0,56
+South Korea - K League 1,Jeonbuk Motors,55.0,78
+South Korea - K League 1,Pohang Steelers,52.0,43
+South Korea - K League 1,Seoul,57.0,33
+South Korea - K League 1,Suwon City,68.0,51
+South Korea - K League 1,Ulsan,45.0,59
+South Korea - K League 2,Ansan Greeners,61.0,50
+South Korea - K League 2,Asan,46.0,66
+South Korea - K League 2,Bucheon FC,56.0,53
+South Korea - K League 2,Busan IPark,44.0,75
+South Korea - K League 2,Cheonan City,36.0,38
+South Korea - K League 2,Cheongju,48.0,58
+South Korea - K League 2,Gimpo,59.0,63
+South Korea - K League 2,Gyeongnam,63.0,51
+South Korea - K League 2,Hwaseong,34.0,44
+South Korea - K League 2,Incheon Utd,39.0,62
+South Korea - K League 2,Jeonnam,50.0,61
+South Korea - K League 2,Seongnam,53.0,56
+South Korea - K League 2,Seoul E-Land,42.0,53
+South Korea - K League 2,Suwon Bluewings,49.0,40
+Spain - La Liga,Alaves,48.0,56
+Spain - La Liga,Athletic Bilbao,60.0,57
+Spain - La Liga,Atletico Madrid,57.0,51
+Spain - La Liga,Celta Vigo,52.0,51
+Spain - La Liga,Espanyol,56.0,45
+Spain - La Liga,FC Barcelona,55.0,50
+Spain - La Liga,Getafe,59.0,43
+Spain - La Liga,Girona,61.0,55
+Spain - La Liga,Las Palmas,53.0,51
+Spain - La Liga,Leganes,37.0,51
+Spain - La Liga,Mallorca,55.0,50
+Spain - La Liga,Osasuna,55.0,56
+Spain - La Liga,Rayo Vallecano,43.0,49
+Spain - La Liga,Real Betis,49.0,50
+Spain - La Liga,Real Madrid,50.0,44
+Spain - La Liga,Real Sociedad,53.0,44
+Spain - La Liga,Sevilla FC,55.0,45
+Spain - La Liga,Valencia,52.0,49
+Spain - La Liga,Valladolid,51.0,54
+Spain - La Liga,Villarreal,53.0,41
+Spain - La Liga 2,Albacete,47.0,44
+Spain - La Liga 2,Almeria,52.0,42
+Spain - La Liga 2,Burgos,59.0,59
+Spain - La Liga 2,Cadiz,54.0,60
+Spain - La Liga 2,Cartagena,49.0,51
+Spain - La Liga 2,Castellon,49.0,49
+Spain - La Liga 2,Cordoba,55.0,55
+Spain - La Liga 2,Deportivo,53.0,46
+Spain - La Liga 2,Eibar,40.0,60
+Spain - La Liga 2,Elche,47.0,50
+Spain - La Liga 2,Eldense,53.0,57
+Spain - La Liga 2,Granada,55.0,55
+Spain - La Liga 2,Huesca,62.0,48
+Spain - La Liga 2,Levante,53.0,61
+Spain - La Liga 2,Malaga,61.0,56
+Spain - La Liga 2,Mirandes,54.0,56
+Spain - La Liga 2,Racing,53.0,47
+Spain - La Liga 2,Racing Ferrol,41.0,48
+Spain - La Liga 2,Real Oviedo,53.0,52
+Spain - La Liga 2,Real Zaragoza,65.0,42
+Spain - La Liga 2,Sporting Gijon,60.0,58
+Spain - La Liga 2,Tenerife,57.0,56
+Sweden - Allsvenskan,AIK,64.0,53
+Sweden - Allsvenskan,Brommapojkarna,54.0,54
+Sweden - Allsvenskan,Degerfors,68.0,49
+Sweden - Allsvenskan,Djurgarden,38.0,48
+Sweden - Allsvenskan,Elfsborg,48.0,36
+Sweden - Allsvenskan,GAIS,55.0,55
+Sweden - Allsvenskan,Hacken,52.0,47
+Sweden - Allsvenskan,Halmstad,38.0,54
+Sweden - Allsvenskan,Hammarby,53.0,43
+Sweden - Allsvenskan,IFK Goteborg,46.0,50
+Sweden - Allsvenskan,Malmo FF,37.0,64
+Sweden - Allsvenskan,Mjallby,49.0,51
+Sweden - Allsvenskan,Norrkoping,36.0,60
+Sweden - Allsvenskan,Oster,57.0,43
+Sweden - Allsvenskan,Sirius,48.0,54
+Sweden - Allsvenskan,Varnamo,71.0,48
+Sweden - Superettan,Brage,74.0,41
+Sweden - Superettan,Falkenberg,41.0,70
+Sweden - Superettan,GIF Sundsvall,46.0,32
+Sweden - Superettan,Helsingborg,56.0,71
+Sweden - Superettan,Kalmar,34.0,43
+Sweden - Superettan,Landskrona,64.0,37
+Sweden - Superettan,Oddevold,46.0,50
+Sweden - Superettan,Orebro,32.0,41
+Sweden - Superettan,Orgryte,34.0,46
+Sweden - Superettan,Ostersunds,59.0,59
+Sweden - Superettan,Sandviken,45.0,50
+Sweden - Superettan,Trelleborg,32.0,50
+Sweden - Superettan,Umea,44.0,45
+Sweden - Superettan,Utsikten,67.0,62
+Sweden - Superettan,Varberg BoIS,40.0,50
+Sweden - Superettan,Vasteras,49.0,43
+Switzerland - Super League,BSC Young Boys,46.0,46
+Switzerland - Super League,FC Basel,48.0,57
+Switzerland - Super League,FC Zurich,53.0,42
+Switzerland - Super League,Grasshopper,43.0,52
+Switzerland - Super League,Lausanne Sport,49.0,56
+Switzerland - Super League,Lugano,48.0,54
+Switzerland - Super League,Luzern,55.0,46
+Switzerland - Super League,Servette,48.0,59
+Switzerland - Super League,Sion,51.0,48
+Switzerland - Super League,St. Gallen,42.0,51
+Switzerland - Super League,Winterthur,56.0,56
+Switzerland - Super League,Yverdon,42.0,46
+Switzerland - Challenge League,Aarau,48.0,38
+Switzerland - Challenge League,Bellinzona,54.0,47
+Switzerland - Challenge League,Etoile Carouge,53.0,38
+Switzerland - Challenge League,Lausanne Ouchy,52.0,46
+Switzerland - Challenge League,Neuchatel Xamax,54.0,46
+Switzerland - Challenge League,Schaffhausen,52.0,50
+Switzerland - Challenge League,Stade Nyonnais,44.0,59
+Switzerland - Challenge League,Thun,55.0,54
+Switzerland - Challenge League,Vaduz,48.0,52
+Switzerland - Challenge League,Wil,49.0,55
+Thailand - Thai League 1,Bangkok Utd,50.0,53
+Thailand - Thai League 1,Buriram Utd,55.0,52
+Thailand - Thai League 1,Chiangrai Utd,60.0,49
+Thailand - Thai League 1,Khon Kaen Utd,53.0,53
+Thailand - Thai League 1,Lamphun Warrior,49.0,51
+Thailand - Thai League 1,Muang Thong Utd,41.0,38
+Thailand - Thai League 1,N. Bua Pitchaya,62.0,54
+Thailand - Thai League 1,N. Ratchasima,48.0,59
+Thailand - Thai League 1,Nakhon Pathom,54.0,55
+Thailand - Thai League 1,Pathum Utd,50.0,59
+Thailand - Thai League 1,Port FC,50.0,42
+Thailand - Thai League 1,Prachuap,55.0,50
+Thailand - Thai League 1,Ratchaburi,45.0,54
+Thailand - Thai League 1,Rayong,55.0,54
+Thailand - Thai League 1,Sukhothai,62.0,50
+Thailand - Thai League 1,Uthai Thani,47.0,54
+Turkey - Super Lig,Adana Demirspor,61.0,49
+Turkey - Super Lig,Alanyaspor,37.0,49
+Turkey - Super Lig,Antalyaspor,51.0,45
+Turkey - Super Lig,Basaksehir,57.0,55
+Turkey - Super Lig,Besiktas,53.0,40
+Turkey - Super Lig,Bodrumspor,50.0,47
+Turkey - Super Lig,Eyupspor,42.0,63
+Turkey - Super Lig,Fenerbahce,53.0,55
+Turkey - Super Lig,Galatasaray,50.0,52
+Turkey - Super Lig,Gaziantep,54.0,53
+Turkey - Super Lig,Goztepe,43.0,46
+Turkey - Super Lig,Hatayspor,43.0,54
+Turkey - Super Lig,Kasimpasa,61.0,49
+Turkey - Super Lig,Kayserispor,49.0,59
+Turkey - Super Lig,Konyaspor,51.0,47
+Turkey - Super Lig,Rizespor,55.0,50
+Turkey - Super Lig,Samsunspor,55.0,51
+Turkey - Super Lig,Sivasspor,52.0,43
+Turkey - Super Lig,Trabzonspor,45.0,54
+UAE - Pro League,Ajman,67.0,50
+UAE - Pro League,Al Ain,50.0,56
+UAE - Pro League,Al Bataeh,50.0,49
+UAE - Pro League,Al Jazira,43.0,54
+UAE - Pro League,Al Nasr,56.0,51
+UAE - Pro League,Al Sharjah,63.0,52
+UAE - Pro League,Al Urooba,67.0,53
+UAE - Pro League,Al Wahda,51.0,45
+UAE - Pro League,Al Wasl,52.0,52
+UAE - Pro League,Bani Yas,35.0,55
+UAE - Pro League,Dibba Al Hisn,54.0,45
+UAE - Pro League,Ittihad Kalba,45.0,54
+UAE - Pro League,Khorfakkan,51.0,50
+UAE - Pro League,Shabab Al Ahli,56.0,49
+Ukraine - Premier League,Chornomorets,62.0,43
+Ukraine - Premier League,Dynamo Kyiv,46.0,39
+Ukraine - Premier League,Inhulets,39.0,52
+Ukraine - Premier League,Karpaty Lviv,45.0,59
+Ukraine - Premier League,Kolos Kovalivka,48.0,50
+Ukraine - Premier League,Kryvbas KR,49.0,43
+Ukraine - Premier League,Livyi Bereh,64.0,58
+Ukraine - Premier League,LNZ Cherkasy,53.0,48
+Ukraine - Premier League,Obolon,44.0,50
+Ukraine - Premier League,Oleksandria,40.0,63
+Ukraine - Premier League,Polessya,49.0,48
+Ukraine - Premier League,Rukh Lviv,62.0,48
+Ukraine - Premier League,Shakhtar,52.0,62
+Ukraine - Premier League,Veres,40.0,46
+Ukraine - Premier League,Vorskla Poltava,65.0,49
+Ukraine - Premier League,Zorya Luhansk,43.0,51
+USA - MLS,Atlanta Utd,77.0,50
+USA - MLS,Austin,40.0,56
+USA - MLS,CF Montreal,61.0,54
+USA - MLS,Charlotte,53.0,49
+USA - MLS,Chicago Fire,48.0,43
+USA - MLS,Cincinnati,44.0,46
+USA - MLS,Colorado Rapids,48.0,50
+USA - MLS,Columbus Crew,50.0,39
+USA - MLS,Dallas,59.0,45
+USA - MLS,DC United,41.0,48
+USA - MLS,Houston Dynamo,51.0,51
+USA - MLS,Inter Miami,49.0,43
+USA - MLS,LA Galaxy,49.0,50
+USA - MLS,Los Angeles FC,46.0,45
+USA - MLS,Minnesota Utd,39.0,72
+USA - MLS,Nashville SC,52.0,49
+USA - MLS,New England,47.0,55
+USA - MLS,New York City,50.0,55
+USA - MLS,New York RB,55.0,45
+USA - MLS,Orlando City,51.0,52
+USA - MLS,Philadelphia,63.0,49
+USA - MLS,Portland,48.0,45
+USA - MLS,Real Salt Lake,45.0,53
+USA - MLS,San Diego,70.0,42
+USA - MLS,Seattle,43.0,46
+USA - MLS,SJ Earthquakes,55.0,49
+USA - MLS,Sporting KC,55.0,49
+USA - MLS,St. Louis City,57.0,63
+USA - MLS,Toronto,51.0,54
+USA - MLS,Vancouver,50.0,40
+USL Championship,Birmingham L.,62.0,48
+USL Championship,Charleston,28.0,49
+USL Championship,Colorado S.,53.0,56
+USL Championship,Detroit City,59.0,53
+USL Championship,El Paso,38.0,50
+USL Championship,FC Tulsa,46.0,58
+USL Championship,Hartford A.,36.0,52
+USL Championship,Indy Eleven,34.0,60
+USL Championship,Lexington,38.0,54
+USL Championship,Loudoun Utd,46.0,36
+USL Championship,Louisville City,56.0,65
+USL Championship,Miami FC,48.0,37
+USL Championship,Monterey Bay,60.0,60
+USL Championship,New Mexico,51.0,57
+USL Championship,North Carolina,71.0,42
+USL Championship,Oakland Roots,60.0,54
+USL Championship,Orange County,58.0,48
+USL Championship,Phoenix Rising,49.0,49
+USL Championship,Pittsburgh,51.0,55
+USL Championship,Rhode Island,44.0,32
+USL Championship,Sacramento R.,39.0,54
+USL Championship,San Antonio,41.0,34
+USL Championship,Tampa Bay,49.0,40
+USA - USL League One,Alta,38.0,49
+USA - USL League One,Charlotte I.,58.0,50
+USA - USL League One,Chattanooga RW,42.0,60
+USA - USL League One,Forward Madison,55.0,45
+USA - USL League One,Greenville,49.0,53
+USA - USL League One,Naples,43.0,62
+USA - USL League One,One Knoxville,47.0,49
+USA - USL League One,Portland Hearts,50.0,42
+USA - USL League One,Richmond K.,40.0,29
+USA - USL League One,Spokane V.,42.0,62
+USA - USL League One,Texoma,56.0,50
+USA - USL League One,Tormenta,66.0,58
+USA - USL League One,Union Omaha,48.0,47
+USA - USL League One,Westchester SC,46.0,38
