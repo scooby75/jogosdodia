@@ -1146,7 +1146,7 @@ with tabs[4]:
                         (df_footystats['League'] != 'PORTUGAL 2') &
                         (df_footystats['League'] != 'SLOVENIA 1') &
                         (df_footystats['League'] != 'SLOVAKIA 1') &
-                        (df_footystats['League'] != 'SWITZERLAND 1') &
+                        (df_footystats['League'] != 'SWITZERLAND 1') 
                     ]
                     st.metric("Jogos encontrados", len(df_back_home))
                     if not df_back_home.empty:
